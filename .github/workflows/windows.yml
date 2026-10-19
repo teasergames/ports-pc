@@ -1,0 +1,29 @@
+name: Windows build
+on:
+  push:
+    branches: [main]
+    tags: ['v*']
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build and test
+        shell: pwsh
+        run: ./build.ps1 -Test
+      - name: Render interface smoke test
+        shell: pwsh
+        run: |
+          $testData = Join-Path $env:RUNNER_TEMP 'nexus-smoke'
+          $image = Join-Path $env:RUNNER_TEMP 'nexus-preview.png'
+          $process = Start-Process ./dist/Nexus/Nexus.exe -ArgumentList @('--data-dir', "`"$testData`"", '--smoke-test', "`"$image`"") -Wait -PassThru -WindowStyle Hidden
+          if ($process.ExitCode -ne 0 -or !(Test-Path $image)) { throw 'Interface smoke test failed' }
+      - uses: actions/upload-artifact@v4
+        with:
+          name: Nexus-Ports-PC-Windows-x64
+          path: dist/Nexus-Ports-PC-Windows-x64.zip
+          if-no-files-found: error

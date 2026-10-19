@@ -74,4 +74,3 @@ Testes de integração opcionais: `./tests/integration.ps1 -Mode online` verific
 - [Microsoft: .NET Framework no Windows 11](https://learn.microsoft.com/en-us/dotnet/framework/install/on-windows-and-server)
 - [MediaWiki PageImages API](https://www.mediawiki.org/wiki/API:Pageimages)
 - [SteamGridDB API](https://www.steamgriddb.com/api/v2)
-

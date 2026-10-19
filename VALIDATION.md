@@ -1,7 +1,13 @@
-# Validação da versão 1.0.2
+# Validação da versão 1.1.0
+
+- **96 verificações automatizadas**. O catálogo cobre seleção do ZIP correto, exclusão de código-fonte/Linux/prerelease, rejeição de pacotes ambíguos, download simulado, checksum, extração, nomes de executáveis, receipt, cancelamento, rollback e preservação de instalações existentes.
+- Cache auditado e datado dos 12 perfis; fallback em limite da API, reaproveitamento de consultas e refresh explícito testados. Durante os testes finais a API pública atingiu o limite; esses testes indicaram explicitamente o uso do cache de Releases previamente consultadas.
+- Os **sete pacotes novos reais** foram baixados do GitHub, verificados por SHA-256, extraídos e cadastrados: DRIVECLUB, inFAMOUS Second Son, The Last Guardian, CTR Nitro-Fueled, MediEvil, Gran Turismo Sport e The Order: 1886. Executáveis de jogar/configurar confirmados. Nenhum dos pacotes foi executado.
+- Dependências com caminhos acima de 260 caracteres extraídas com suporte explícito a caminhos estendidos, inclusive no ambiente de teste com LongPathsEnabled=0. Não foram feitas mudanças no Registro.
+- Catálogo WPF renderizado e inspecionado; o workflow inclui smoke test sem rede do catálogo, além da biblioteca.
 
 - Compilação Release x64 concluída com o compilador incluído no Windows.
-- 43 verificações automatizadas aprovadas: armazenamento, Unicode, argumentos, caminhos, backups, validação dos cadastros, DPAPI, detecção dos ports, leitura das configurações originais e cache de imagens. Inclui separação entre configuração e execução, compatibilidade do cadastro anterior, título de artwork independente e construção da inicialização de Uncharted com seleção/opções salvas e caminhos com espaços. Inclui padrões de visualização para bibliotecas anteriores, persistência independente de modo/tamanhos e normalização dos limites.
+- As 43 verificações anteriores continuam aprovadas: armazenamento, Unicode, argumentos, caminhos, backups, validação dos cadastros, DPAPI, detecção dos ports, leitura das configurações originais e cache de imagens. Inclui separação entre configuração e execução, compatibilidade do cadastro anterior, título de artwork independente e construção da inicialização de Uncharted com seleção/opções salvas e caminhos com espaços. Inclui padrões de visualização para bibliotecas anteriores, persistência independente de modo/tamanhos e normalização dos limites.
 - Smoke tests WPF de grade a 140/340 px e lista a 48/132 px, com troca real dos botões de visualização, controle de tamanho, seleção, busca e restauração de tamanho ao alternar modos. Renderizações com os quatro ports inspecionadas visualmente.
 - Integração local aprovada para God of War III, Shadow of the Colossus, Bloodborne e Uncharted: identificação dos executáveis diretos e dos launchers de configuração; recuperação e cache das imagens oficiais das instalações configuradas.
 - Integração online aprovada: download real da Wikipedia, decodificação, validação e cache.

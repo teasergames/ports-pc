@@ -6,6 +6,10 @@ Na versão **1.0.1**, **Configurar jogo** abre o launcher original de configura�
 
 Na **1.0.2**, escolha **Grade** ou **Lista** na barra da coleção. Use o controle **Tamanho** ou os botões **− / ＋** para ajustar as capas da grade (140–340 px) ou a altura das linhas da lista (48–132 px). O modo e o tamanho de cada visualização são lembrados separadamente ao trocar de modo e ao reabrir o aplicativo. Busca, favoritos e seleção funcionam nos dois modos. Na lista, cada linha mostra a imagem, o nome e a última abertura; em linhas maiores também aparece o estado de favorito.
 
+Na **1.1.0**, **Baixar ports**, ao lado de Detectar ports, abre o catálogo de **11 jogos / 12 fontes**. Consulta a última release estável, baixa o ZIP Windows, verifica SHA-256 quando publicado, extrai e adiciona à biblioteca. Há progresso, cancelamento e escolha do destino. Inclui GOW III, Bloodborne, Shadow (original/fork Oussama268), Uncharted e os sete novos projetos: DRIVECLUB, inFAMOUS Second Son, The Last Guardian, CTR Nitro-Fueled, MediEvil, Gran Turismo Sport e The Order: 1886. Veja [CATALOG.md](CATALOG.md) para fontes, funcionamento e diferenças de inicialização.
+
+Cada instalação usa uma pasta nova por versão; não substitui ports existentes nem migra automaticamente saves/configurações entre cópias. Após baixar, use Configurar jogo para indicar seus próprios arquivos. Se a API do GitHub estiver limitada, o catálogo sinaliza quando usa o cache verificado, com data visível. O suporte a caminhos longos da extração não exige editar o Registro do Windows.
+
 ## Usar
 
 1. Extraia `Nexus-Ports-PC-Windows-x64.zip` em uma pasta de sua preferência.
@@ -77,6 +81,8 @@ Os testes verificam persistência Unicode, argumentos, validação dos caminhos,
 O smoke test abre e renderiza a janela, salva a imagem e encerra, sem detecção ou consultas online. A compatibilidade é direcionada ao launcher no Windows 11 x64. Windows em ARM e a execução dos jogos não foram certificados nesta versão.
 
 Testes de integração opcionais: `./tests/integration.ps1 -Mode online` verifica o download público da Wikipedia; `-Mode local` verifica os ports conhecidos instalados em Downloads e suas imagens locais. O modo local requer esses ports e seus launchers originais configurados. Nenhum dos testes inicia jogos. Os dados ficam em `test-output/`, ignorado pelo Git.
+
+Para o catálogo: `-Mode catalog` verifica os 12 perfis de release, identificando se vieram da consulta ao vivo ou do cache auditado; `-Mode catalog-install` testa uma instalação real; `-Mode catalog-packages` baixa, verifica, extrai e cadastra os sete pacotes novos, sem executá-los. O último modo usa espaço em disco para os pacotes extraídos. O smoke test aceita `--catalog-smoke` para renderizar o catálogo sem rede.
 
 ## Referências
 

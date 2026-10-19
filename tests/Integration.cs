@@ -1,12 +1,25 @@
 using System;
 using System.IO;
 using System.Threading;
+using System.Linq;
 using Nexus;
 
 public static class Integration {
   public static int Main(string[] args){
     try{
       string root=Path.GetFullPath(args[0]);var store=new Store(root);var lib=new Library();
+      if(args[1].StartsWith("catalog")){
+        using(var catalog=new PortCatalog()){
+          foreach(var entry in catalog.Entries){
+            var latest=catalog.Latest(entry,CancellationToken.None).GetAwaiter().GetResult();Console.WriteLine("PASS release profile"+(latest.FromCache?" (audited cache)":" (live)")+": "+entry.Repository+" "+latest.Version+" "+latest.AssetName);
+            if(args[1]=="catalog-install"&&entry.Id=="last-guardian"||args[1]=="catalog-packages"&&new[]{"driveclub","infamous","last-guardian","ctr","medievil","gt-sport","the-order"}.Contains(entry.Id)){
+              string parent=Path.Combine(root,"ports"),existing=Path.Combine(parent,entry.Id+"-"+PortCatalog.VersionFolder(latest.Version));
+              var installed=Directory.Exists(existing)?PortCatalog.Register(entry,existing,latest.Version):catalog.Install(entry,latest,parent,null,CancellationToken.None).GetAwaiter().GetResult();if(!File.Exists(installed.Executable)||!File.Exists(installed.ConfigurationExecutable))throw new Exception("Real package installation failed");lib.Games.Add(installed);store.Save(lib);Console.WriteLine("PASS real package validation and library registration: "+entry.Name+" (no execution)");
+            }
+          }
+        }
+        return 0;
+      }
       using(var service=new ArtworkService(store)){
         if(args[1]=="local"){
           foreach(Game game in Ports.Detect(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.UserProfile),"Downloads"))){

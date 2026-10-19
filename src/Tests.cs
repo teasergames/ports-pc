@@ -51,11 +51,12 @@ namespace Nexus {
         lib.ViewMode="list";lib.GridSize=320;lib.ListSize=60;store.Save(lib);var view=store.Load();Check(view.ViewMode=="list"&&view.GridSize==320&&view.ListSize==60,"view and separate sizes persist");
         lib.ViewMode="invalid";lib.GridSize=900;lib.ListSize=-4;store.Save(lib);view=store.Load();Check(view.ViewMode=="grid"&&view.GridSize==340&&view.ListSize==76,"invalid view preferences normalized");
         lib.ViewMode="list";lib.GridSize=10;lib.ListSize=900;store.Save(lib);view=store.Load();Check(view.GridSize==140&&view.ListSize==132,"view sizes clamped to bounds");
+        count+=CatalogTests.Run(root);
         File.WriteAllText(Path.Combine(root,"results.txt"),"PASS "+count);System.Console.WriteLine("PASS "+count+" checks");
         string report=Environment.GetEnvironmentVariable("NEXUS_TEST_REPORT");if(!String.IsNullOrEmpty(report))File.WriteAllText(report,"PASS "+count+" checks"+Environment.NewLine);
         return 0;
       }catch(Exception ex){System.Console.Error.WriteLine(ex.ToString());string report=Environment.GetEnvironmentVariable("NEXUS_TEST_REPORT");if(!String.IsNullOrEmpty(report))File.WriteAllText(report,ex.ToString());return 1;}
-      finally{try{string resolved=Path.GetFullPath(root);string expected=Path.GetFullPath(testParent).TrimEnd(Path.DirectorySeparatorChar)+Path.DirectorySeparatorChar;if(resolved.StartsWith(expected,StringComparison.OrdinalIgnoreCase)&&Path.GetFileName(resolved).StartsWith("NexusTests-"))Directory.Delete(resolved,true);}catch{}}
+      finally{try{string resolved=Path.GetFullPath(root);string expected=Path.GetFullPath(testParent).TrimEnd(Path.DirectorySeparatorChar)+Path.DirectorySeparatorChar;if(resolved.StartsWith(expected,StringComparison.OrdinalIgnoreCase)&&Path.GetFileName(resolved).StartsWith("NexusTests-"))Directory.Delete(PortCatalog.FsPath(resolved),true);}catch{}}
     }
   }
 }

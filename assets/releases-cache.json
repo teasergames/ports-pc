@@ -1,0 +1,272 @@
+[
+  {
+    "Repository": "AjncSystem/ShadowOfTheColossus-PC",
+    "CheckedUtc": "2026-10-19T02:25:57.755914+00:00",
+    "Release": {
+      "tag_name": "v0.57",
+      "html_url": "https://github.com/AjncSystem/ShadowOfTheColossus-PC/releases/tag/v0.57",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "SotC-PC.zip",
+          "size": 82747248,
+          "browser_download_url": "https://github.com/AjncSystem/ShadowOfTheColossus-PC/releases/download/v0.57/SotC-PC.zip",
+          "digest": "sha256:2de65d695f55fb97a3b8685119ee96b2e34fb54c987c344f5246b1f79c80c433"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "Awakenchan/BloodBorneButPc",
+    "CheckedUtc": "2026-10-19T02:25:57.761913+00:00",
+    "Release": {
+      "tag_name": "v0.9.33",
+      "html_url": "https://github.com/Awakenchan/BloodBorneButPc/releases/tag/v0.9.33",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "Bloodborne.Launcher.exe",
+          "size": 75254745,
+          "browser_download_url": "https://github.com/Awakenchan/BloodBorneButPc/releases/download/v0.9.33/Bloodborne.Launcher.exe",
+          "digest": "sha256:06f3602aebc05bee9af693318b7e4b268fd79a9c58e2ce580495d19819eadd58"
+        },
+        {
+          "name": "BloodbornePC-v0.9.33-win64.zip",
+          "size": 191038870,
+          "browser_download_url": "https://github.com/Awakenchan/BloodBorneButPc/releases/download/v0.9.33/BloodbornePC-v0.9.33-win64.zip",
+          "digest": "sha256:78538a366731eea5071a9800fdd7b460e0037e67f578dcbff4bcfca44712b567"
+        },
+        {
+          "name": "package.json",
+          "size": 57,
+          "browser_download_url": "https://github.com/Awakenchan/BloodBorneButPc/releases/download/v0.9.33/package.json",
+          "digest": "sha256:4ca0f6b7c870a859b3f62640e40d52f42c4528c97b76bc9bb953ac4251a8dee0"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "bc160201983/medievil_2019_pc_port",
+    "CheckedUtc": "2026-10-19T02:25:57.768921+00:00",
+    "Release": {
+      "tag_name": "v1.3.3",
+      "html_url": "https://github.com/bc160201983/medievil_2019_pc_port/releases/tag/v1.3.3",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "medievil-windows.zip",
+          "size": 78104550,
+          "browser_download_url": "https://github.com/bc160201983/medievil_2019_pc_port/releases/download/v1.3.3/medievil-windows.zip",
+          "digest": "sha256:556ceecc6e02d016d5388f444f2366647728a2e6cc8222ad06287d2765d47e7f"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "bc160201983/Uncharted-The-Nathan-Drake-Collection-PC-port",
+    "CheckedUtc": "2026-10-19T02:25:57.775428+00:00",
+    "Release": {
+      "tag_name": "v0.3.0",
+      "html_url": "https://github.com/bc160201983/Uncharted-The-Nathan-Drake-Collection-PC-port/releases/tag/v0.3.0",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "Uncharted-windows.zip",
+          "size": 112050616,
+          "browser_download_url": "https://github.com/bc160201983/Uncharted-The-Nathan-Drake-Collection-PC-port/releases/download/v0.3.0/Uncharted-windows.zip",
+          "digest": "sha256:896713708eb176a238b31da53f7598222bbd026e4f6dc484e4d5ffb136e606d9"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "FelipePrado0/gow3_pc",
+    "CheckedUtc": "2026-10-19T02:25:57.782934+00:00",
+    "Release": {
+      "tag_name": "windows-v2.5.0",
+      "html_url": "https://github.com/FelipePrado0/gow3_pc/releases/tag/windows-v2.5.0",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "gow3-windows.zip",
+          "size": 75252856,
+          "browser_download_url": "https://github.com/FelipePrado0/gow3_pc/releases/download/windows-v2.5.0/gow3-windows.zip",
+          "digest": "sha256:41463b8dc4a2d66375f37f20c20d08c1dcc9260df48ef4dcb4911be0daade218"
+        },
+        {
+          "name": "gow3-windows.zip.sha256",
+          "size": 83,
+          "browser_download_url": "https://github.com/FelipePrado0/gow3_pc/releases/download/windows-v2.5.0/gow3-windows.zip.sha256",
+          "digest": "sha256:33bdc3a3a548117a77dba615158665a77bd822e824d01f5d5f63b9910e4de1c2"
+        },
+        {
+          "name": "gow3-x86_64.AppImage",
+          "size": 135371256,
+          "browser_download_url": "https://github.com/FelipePrado0/gow3_pc/releases/download/windows-v2.5.0/gow3-x86_64.AppImage",
+          "digest": "sha256:efc142f9abb4da0d73140054cdc09a863c0ee99e43c9532ed5df08fe0f005651"
+        },
+        {
+          "name": "gow3-x86_64.AppImage.sha256",
+          "size": 87,
+          "browser_download_url": "https://github.com/FelipePrado0/gow3_pc/releases/download/windows-v2.5.0/gow3-x86_64.AppImage.sha256",
+          "digest": "sha256:1cae714e6c5510de2f13260f4f8a77d94d7847221a8a9008ebc0ae795752f937"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "GetLostIn/CTR-NitroFueled-PC",
+    "CheckedUtc": "2026-10-19T02:25:57.788941+00:00",
+    "Release": {
+      "tag_name": "v0.3",
+      "html_url": "https://github.com/GetLostIn/CTR-NitroFueled-PC/releases/tag/v0.3",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "CTR-NitroFueled-PC-portable-windows.zip",
+          "size": 130118332,
+          "browser_download_url": "https://github.com/GetLostIn/CTR-NitroFueled-PC/releases/download/v0.3/CTR-NitroFueled-PC-portable-windows.zip",
+          "digest": "sha256:774cf70093b0868bd4498cd7e342fb2123a0ca4a56e144d1676c2ff9c9c708de"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "HayatoG/iss_pc",
+    "CheckedUtc": "2026-10-19T02:25:57.795444+00:00",
+    "Release": {
+      "tag_name": "v2026.10.18-27f8bba",
+      "html_url": "https://github.com/HayatoG/iss_pc/releases/tag/v2026.10.18-27f8bba",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "infamous-linux-x86_64.tar.gz",
+          "size": 85242512,
+          "browser_download_url": "https://github.com/HayatoG/iss_pc/releases/download/v2026.10.18-27f8bba/infamous-linux-x86_64.tar.gz",
+          "digest": "sha256:447fe13593f5485a5574dae08f68ecbd2bee4983b7c32fee08cc91faa1b29045"
+        },
+        {
+          "name": "infamous-windows-x86_64.zip",
+          "size": 118436641,
+          "browser_download_url": "https://github.com/HayatoG/iss_pc/releases/download/v2026.10.18-27f8bba/infamous-windows-x86_64.zip",
+          "digest": "sha256:57d90a722e0e76fd59d3d1388ab1111a23e714bbf4cccc76e0f177ce48bcf25c"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "HayatoG/tlg_pc",
+    "CheckedUtc": "2026-10-19T02:25:57.802949+00:00",
+    "Release": {
+      "tag_name": "v2026.10.17-b8d5f41",
+      "html_url": "https://github.com/HayatoG/tlg_pc/releases/tag/v2026.10.17-b8d5f41",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "tlg-linux-x86_64.tar.gz",
+          "size": 22676388,
+          "browser_download_url": "https://github.com/HayatoG/tlg_pc/releases/download/v2026.10.17-b8d5f41/tlg-linux-x86_64.tar.gz",
+          "digest": "sha256:81df9775be8c847c40ca1e830e6aaaa981ef58246e4563b3183abd79fc4130b8"
+        },
+        {
+          "name": "tlg-windows-x86_64.zip",
+          "size": 67567476,
+          "browser_download_url": "https://github.com/HayatoG/tlg_pc/releases/download/v2026.10.17-b8d5f41/tlg-windows-x86_64.zip",
+          "digest": "sha256:f4fe0dc3418cc21c300d39a4fcaf02277a801012fec31ab8509d11c9f381494a"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "mateussmeneses/theorder1886-port",
+    "CheckedUtc": "2026-10-19T02:25:57.809956+00:00",
+    "Release": {
+      "tag_name": "windows-v0.7.0",
+      "html_url": "https://github.com/mateussmeneses/theorder1886-port/releases/tag/windows-v0.7.0",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "theorder1886-windows.zip",
+          "size": 72835997,
+          "browser_download_url": "https://github.com/mateussmeneses/theorder1886-port/releases/download/windows-v0.7.0/theorder1886-windows.zip",
+          "digest": "sha256:7f800ecbf483cbffbb8a4a3bc29ce93aae972b541389769090ff91b47785c1bf"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "mlgprorektm8/RyGT",
+    "CheckedUtc": "2026-10-19T02:25:57.815964+00:00",
+    "Release": {
+      "tag_name": "gt-sport-2026-10-18-2",
+      "html_url": "https://github.com/mlgprorektm8/RyGT/releases/tag/gt-sport-2026-10-18-2",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "GTSport-Ryty-shadGT-2026-10-18-2.zip",
+          "size": 131191721,
+          "browser_download_url": "https://github.com/mlgprorektm8/RyGT/releases/download/gt-sport-2026-10-18-2/GTSport-Ryty-shadGT-2026-10-18-2.zip",
+          "digest": "sha256:e395f777215689b5ce6fb09c65b348f9edee6f6880647058bd95807f0c2fff66"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "Oussama268/ShadowOfTheColossus-PC",
+    "CheckedUtc": "2026-10-19T02:25:57.822964+00:00",
+    "Release": {
+      "tag_name": "v0.57-opt6",
+      "html_url": "https://github.com/Oussama268/ShadowOfTheColossus-PC/releases/tag/v0.57-opt6",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "SotC-PC.zip",
+          "size": 70648000,
+          "browser_download_url": "https://github.com/Oussama268/ShadowOfTheColossus-PC/releases/download/v0.57-opt6/SotC-PC.zip",
+          "digest": "sha256:268aee1ac60e01acdf0af8d85cf4a3f24e76afe230b99de7aed888bd05fcc5a4"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "OverkillLabs3/driveclub-recomp",
+    "CheckedUtc": "2026-10-19T02:25:57.873634+00:00",
+    "Release": {
+      "tag_name": "v0.2.4",
+      "html_url": "https://github.com/OverkillLabs3/driveclub-recomp/releases/tag/v0.2.4",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "driveclub-recomp-0.2.4-source.tar.gz",
+          "size": 11213709,
+          "browser_download_url": "https://github.com/OverkillLabs3/driveclub-recomp/releases/download/v0.2.4/driveclub-recomp-0.2.4-source.tar.gz",
+          "digest": "sha256:0747ce9ca4aea1f6f6531f829851fb727922112a6a4746b5eef89df9eb11c5b9"
+        },
+        {
+          "name": "driveclub-recomp-0.2.4-win64.zip",
+          "size": 91507608,
+          "browser_download_url": "https://github.com/OverkillLabs3/driveclub-recomp/releases/download/v0.2.4/driveclub-recomp-0.2.4-win64.zip",
+          "digest": "sha256:c39439d57eeb81e28837594dbac6dd7546d156d5240518f3e77b06a9bc1d8d8e"
+        },
+        {
+          "name": "SHA256SUMS.txt",
+          "size": 202,
+          "browser_download_url": "https://github.com/OverkillLabs3/driveclub-recomp/releases/download/v0.2.4/SHA256SUMS.txt",
+          "digest": "sha256:2e8bdcd2c17b3a0bec95985a622e390401d0bbfac1aa453d9b0d5440f825ec94"
+        }
+      ]
+    }
+  }
+]

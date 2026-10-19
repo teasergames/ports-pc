@@ -21,6 +21,9 @@ namespace Nexus {
     public string ArtworkSource { get; set; }
     public bool Favorite { get; set; }
     public string LastPlayed { get; set; }
+    public string Repository {get;set;}
+    public string InstalledVersion {get;set;}
+    public string ManagedInstallationRoot {get;set;}
     public Game() { Id=Guid.NewGuid().ToString("N"); Arguments=""; }
     public Game Copy() { return (Game)MemberwiseClone(); }
   }

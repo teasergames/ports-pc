@@ -24,6 +24,8 @@ jobs:
             $process = Start-Process ./dist/Nexus/Nexus.exe -ArgumentList @('--data-dir', "`"$testData`"", '--smoke-test', "`"$image`"", '--preview-view', $viewCase[0], '--preview-size', $viewCase[1]) -Wait -PassThru -WindowStyle Hidden
             if ($process.ExitCode -ne 0 -or !(Test-Path $image)) { throw 'Interface smoke test failed' }
           }
+          $catalog = Start-Process ./dist/Nexus/Nexus.exe -ArgumentList @('--data-dir', "`"$testData`"", '--smoke-test', "`"$image`"", '--catalog-smoke') -Wait -PassThru -WindowStyle Hidden
+          if ($catalog.ExitCode -ne 0 -or !(Test-Path $image)) { throw 'Catalog smoke test failed' }
       - uses: actions/upload-artifact@v4
         with:
           name: Nexus-Ports-PC-Windows-x64

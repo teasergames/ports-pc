@@ -1,4 +1,4 @@
-param([ValidateSet('local','online')][string]$Mode = 'online')
+param([ValidateSet('local','online','catalog','catalog-install','catalog-packages')][string]$Mode = 'online')
 $ErrorActionPreference = 'Stop'
 $repoRoot = Split-Path $PSScriptRoot -Parent
 $testOutput = Join-Path $repoRoot 'test-output'
@@ -6,6 +6,7 @@ New-Item -ItemType Directory -Path $testOutput -Force | Out-Null
 $framework = Join-Path $env:WINDIR 'Microsoft.NET\Framework64\v4.0.30319'
 Copy-Item (Join-Path $repoRoot 'dist/Nexus/Nexus.exe') $testOutput -Force
 Copy-Item (Join-Path $repoRoot 'dist/Nexus/Nexus.exe.config') $testOutput -Force
+Copy-Item (Join-Path $repoRoot 'dist/Nexus/Nexus.exe.config') (Join-Path $testOutput 'Integration.exe.config') -Force
 & (Join-Path $framework 'csc.exe') /nologo /target:exe ("/out:" + (Join-Path $testOutput 'Integration.exe')) ("/reference:" + (Join-Path $testOutput 'Nexus.exe')) ("/reference:" + (Join-Path $framework 'System.Net.Http.dll')) (Join-Path $PSScriptRoot 'Integration.cs')
 if ($LASTEXITCODE -ne 0) { throw 'Integration test compilation failed' }
 & (Join-Path $testOutput 'Integration.exe') (Join-Path $testOutput "data-$Mode") $Mode

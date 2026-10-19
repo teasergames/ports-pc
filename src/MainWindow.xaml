@@ -21,6 +21,7 @@
           <StackPanel Orientation="Horizontal"><TextBlock Text="◈" Foreground="{StaticResource Accent}" FontSize="29" Margin="0,0,11,0" VerticalAlignment="Center"/><TextBlock Text="N E X U S" FontWeight="SemiBold" FontSize="21" VerticalAlignment="Center"/><TextBlock Text="/   PORTS PC" Foreground="#9CA5B5" FontSize="12" Margin="24,0,0,0" VerticalAlignment="Center"/></StackPanel>
           <Button x:Name="SettingsButton" DockPanel.Dock="Right" Content="Configurações" Margin="8,0,0,0"/>
           <Button x:Name="DetectButton" DockPanel.Dock="Right" Content="Detectar ports"/>
+          <Button x:Name="DownloadPortsButton" DockPanel.Dock="Right" Content="↓ Baixar ports"/>
         </DockPanel>
       </Border>
       <ScrollViewer Grid.Row="1">

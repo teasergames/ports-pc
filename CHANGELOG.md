@@ -1,5 +1,15 @@
 # Alterações
 
+## v1.1.0
+
+- Botão Baixar ports e catálogo de 11 jogos / 12 fontes, incluindo as duas variantes de Shadow of the Colossus.
+- Download direto de ZIPs Windows da última release estável do projeto, progresso, cancelamento e escolha da pasta.
+- SHA-256, extração com validação dos caminhos e cadastro automático dos executáveis de jogar/configurar.
+- Instalações em pastas separadas por versão, sem sobrescrever as existentes; não migra saves/configurações entre cópias.
+- Cache de metadados auditados com data e sinalização quando o GitHub fica indisponível/limitado.
+- Extração de caminhos longos sem mudanças no Registro, necessária às dependências Qt do inFAMOUS.
+- 96 verificações automatizadas; instalação real dos sete novos pacotes validada sem executar seus programas.
+
 ## v1.0.2
 
 - Alternância entre visualização em grade e lista.

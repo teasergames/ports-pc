@@ -20,8 +20,10 @@ jobs:
         run: |
           $testData = Join-Path $env:RUNNER_TEMP 'nexus-smoke'
           $image = Join-Path $env:RUNNER_TEMP 'nexus-preview.png'
-          $process = Start-Process ./dist/Nexus/Nexus.exe -ArgumentList @('--data-dir', "`"$testData`"", '--smoke-test', "`"$image`"") -Wait -PassThru -WindowStyle Hidden
-          if ($process.ExitCode -ne 0 -or !(Test-Path $image)) { throw 'Interface smoke test failed' }
+          foreach ($viewCase in @(@('grid',140),@('grid',340),@('list',48),@('list',132))) {
+            $process = Start-Process ./dist/Nexus/Nexus.exe -ArgumentList @('--data-dir', "`"$testData`"", '--smoke-test', "`"$image`"", '--preview-view', $viewCase[0], '--preview-size', $viewCase[1]) -Wait -PassThru -WindowStyle Hidden
+            if ($process.ExitCode -ne 0 -or !(Test-Path $image)) { throw 'Interface smoke test failed' }
+          }
       - uses: actions/upload-artifact@v4
         with:
           name: Nexus-Ports-PC-Windows-x64

@@ -47,6 +47,10 @@ namespace Nexus {
         Check(Uncharted.Quote(@"C:\space path\")=="\"C:\\space path\\\\\"","quote trailing slash safely");Check(Uncharted.Quote("a\"b")=="\"a\\\"b\"","quote embedded quote safely");
         Directory.CreateDirectory(Path.Combine(configRoot,"Uncharted Launcher"));File.WriteAllText(Path.Combine(configRoot,@"Uncharted Launcher\launcher.json"),new System.Web.Script.Serialization.JavaScriptSerializer().Serialize(ucConfig));Check(Ports.ConfiguredGameDirectory("Uncharted: The Nathan Drake Collection",configRoot)==unchartedFolder,"Uncharted reads launcher.json");
         lib.Games[0].ConfigurationExecutable=custom.ConfigurationExecutable;lib.Games[0].ConfigurationArguments="--test";lib.Games[0].ArtworkSearchTitle="Test artwork";store.Save(lib);Check(store.Load().Games[0].ConfigurationArguments=="--test"&&store.Load().Games[0].ArtworkSearchTitle=="Test artwork","new fields persist in original library schema");
+        var oldView=Store.Parse("{\"Version\":1,\"Games\":[]}");Check(oldView.ViewMode=="grid"&&oldView.GridSize==220&&oldView.ListSize==76,"legacy library view defaults");
+        lib.ViewMode="list";lib.GridSize=320;lib.ListSize=60;store.Save(lib);var view=store.Load();Check(view.ViewMode=="list"&&view.GridSize==320&&view.ListSize==60,"view and separate sizes persist");
+        lib.ViewMode="invalid";lib.GridSize=900;lib.ListSize=-4;store.Save(lib);view=store.Load();Check(view.ViewMode=="grid"&&view.GridSize==340&&view.ListSize==76,"invalid view preferences normalized");
+        lib.ViewMode="list";lib.GridSize=10;lib.ListSize=900;store.Save(lib);view=store.Load();Check(view.GridSize==140&&view.ListSize==132,"view sizes clamped to bounds");
         File.WriteAllText(Path.Combine(root,"results.txt"),"PASS "+count);System.Console.WriteLine("PASS "+count+" checks");
         string report=Environment.GetEnvironmentVariable("NEXUS_TEST_REPORT");if(!String.IsNullOrEmpty(report))File.WriteAllText(report,"PASS "+count+" checks"+Environment.NewLine);
         return 0;

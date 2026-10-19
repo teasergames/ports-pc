@@ -18,8 +18,8 @@ using Microsoft.Win32;
 
 [assembly: AssemblyTitle("NEXUS · Ports PC")]
 [assembly: AssemblyProduct("NEXUS Ports PC")]
-[assembly: AssemblyVersion("1.0.1.0")]
-[assembly: AssemblyFileVersion("1.0.1.0")]
+[assembly: AssemblyVersion("1.0.2.0")]
+[assembly: AssemblyFileVersion("1.0.2.0")]
 namespace Nexus {
   public static class Program {
     [STAThread] public static int Main(string[] args) {
@@ -33,7 +33,7 @@ namespace Nexus {
           var app=new Application();app.ShutdownMode=ShutdownMode.OnMainWindowClose;
           app.DispatcherUnhandledException+=(sender,eventArgs)=>{store.Log(eventArgs.Exception.ToString());MessageBox.Show(eventArgs.Exception.Message,"Não foi possível concluir",MessageBoxButton.OK,MessageBoxImage.Warning);eventArgs.Handled=true;};
           var controller=new Launcher(store,smoke);app.MainWindow=controller.Window;
-          if(smoke){index=System.Array.IndexOf(args,"--smoke-test");string target=index+1<args.Length?args[index+1]:Path.Combine(root,"preview.png");controller.Window.Loaded+=delegate{controller.Window.Dispatcher.BeginInvoke(new Action(delegate{controller.Capture(target);app.Shutdown();}),System.Windows.Threading.DispatcherPriority.ApplicationIdle);};}
+          if(smoke){index=System.Array.IndexOf(args,"--smoke-test");string target=index+1<args.Length?args[index+1]:Path.Combine(root,"preview.png");int viewIndex=System.Array.IndexOf(args,"--preview-view"),sizeIndex=System.Array.IndexOf(args,"--preview-size");string view=viewIndex>=0&&viewIndex+1<args.Length?args[viewIndex+1]:null;int size=0;if(sizeIndex>=0&&sizeIndex+1<args.Length)Int32.TryParse(args[sizeIndex+1],out size);controller.Window.Loaded+=delegate{controller.Window.Dispatcher.BeginInvoke(new Action(delegate{if(view!=null)controller.PreviewView(view,size);controller.Capture(target);app.Shutdown();}),System.Windows.Threading.DispatcherPriority.ApplicationIdle);};}
           app.Run(controller.Window);return 0;
         }catch(Exception ex){store.Log(ex.ToString());if(smoke)File.WriteAllText(Path.Combine(root,"smoke-error.txt"),ex.ToString());else MessageBox.Show(ex.Message,"NEXUS",MessageBoxButton.OK,MessageBoxImage.Error);return 1;}
         finally{if(owns)mutex.ReleaseMutex();}
@@ -44,6 +44,9 @@ namespace Nexus {
     public readonly Window Window;
     readonly Store store;readonly Library library;readonly ArtworkService artwork;readonly CancellationTokenSource shutdown=new CancellationTokenSource();
     readonly SemaphoreSlim artQueue=new SemaphoreSlim(1,1);readonly HashSet<string> pending=new HashSet<string>();
+    readonly Dictionary<string,ImageSource> imageCache=new Dictionary<string,ImageSource>();
+    readonly System.Windows.Threading.DispatcherTimer viewSaveTimer=new System.Windows.Threading.DispatcherTimer();
+    bool updatingView;
     Game selected;bool smoke;bool closing;
     T Find<T>(string name) where T:class {return Window.FindName(name) as T;}
     [DllImport("dwmapi.dll")] static extern int DwmSetWindowAttribute(IntPtr hwnd,int attribute,ref int value,int size);
@@ -51,11 +54,16 @@ namespace Nexus {
       store=data;smoke=test;library=store.Load();artwork=new ArtworkService(store);
       using(var stream=Assembly.GetExecutingAssembly().GetManifestResourceStream("Nexus.MainWindow.xaml")){Window=(Window)XamlReader.Load(stream);}
       Window.SourceInitialized+=delegate{int value=1;DwmSetWindowAttribute(new WindowInteropHelper(Window).Handle,20,ref value,4);};
-      Window.Closed+=delegate{closing=true;shutdown.Cancel();artwork.Dispose();};
+      Window.Closed+=delegate{closing=true;viewSaveTimer.Stop();if(!smoke)Save();shutdown.Cancel();artwork.Dispose();};
       Find<Button>("AddButton").Click+=delegate{Add();};Find<Button>("EditButton").Click+=delegate{Edit();};Find<Button>("PlayButton").Click+=delegate{Launch();};Find<Button>("FavoriteButton").Click+=delegate{if(selected!=null){selected.Favorite=!selected.Favorite;Save();Refresh();}};
       Find<Button>("ConfigureButton").Click+=delegate{if(selected==null)return;try{Process.Start(Ports.ConfigurationStartInfo(selected));Status("Configuração aberta: "+selected.Name);}catch(Exception ex){MessageBox.Show(Window,ex.Message,"Configurar jogo",MessageBoxButton.OK,MessageBoxImage.Information);}};
       Find<Button>("SettingsButton").Click+=delegate{Settings();};Find<Button>("DetectButton").Click+=delegate{Detect(true);};
       Find<TextBox>("SearchBox").TextChanged+=delegate{RefreshGrid();};Find<CheckBox>("FavoritesOnly").Checked+=delegate{RefreshGrid();};Find<CheckBox>("FavoritesOnly").Unchecked+=delegate{RefreshGrid();};
+      viewSaveTimer.Interval=TimeSpan.FromMilliseconds(400);viewSaveTimer.Tick+=delegate{viewSaveTimer.Stop();if(!smoke)Save();};
+      Find<Button>("GridViewButton").Click+=delegate{SetView("grid");};Find<Button>("ListViewButton").Click+=delegate{SetView("list");};
+      Find<Button>("SizeDownButton").Click+=delegate{Find<Slider>("ViewSizeSlider").Value-=5;};Find<Button>("SizeUpButton").Click+=delegate{Find<Slider>("ViewSizeSlider").Value+=5;};
+      Find<Slider>("ViewSizeSlider").ValueChanged+=delegate{if(updatingView)return;double value=Find<Slider>("ViewSizeSlider").Value;if(library.ViewMode=="list")library.ListSize=(int)Math.Round(48+value*0.84);else library.GridSize=(int)Math.Round(140+value*2);UpdateViewControls();RefreshGrid();viewSaveTimer.Stop();viewSaveTimer.Start();};
+      UpdateViewControls();
       if(!File.Exists(store.FilePath)&&!smoke)Detect(false);
       selected=library.Games.FirstOrDefault();Refresh();
       Window.Loaded+=delegate{if(!smoke){foreach(Game g in library.Games.ToArray())if(String.IsNullOrEmpty(g.Artwork)||!File.Exists(g.Artwork))ResolveArtwork(g);}};
@@ -73,22 +81,38 @@ namespace Nexus {
       Find<TextBlock>("HeroMeta").Text=meta;
       Find<Image>("Backdrop").Source=has?LoadImage(selected.Artwork):null;RefreshGrid();
     }
-    static ImageSource LoadImage(string path){
+    ImageSource LoadImage(string path){
       if(String.IsNullOrWhiteSpace(path)||!File.Exists(path))return null;
-      try{var image=new BitmapImage();image.BeginInit();image.CacheOption=BitmapCacheOption.OnLoad;image.DecodePixelWidth=1600;image.UriSource=new Uri(Path.GetFullPath(path));image.EndInit();image.Freeze();return image;}catch{return null;}
+      ImageSource cached;if(imageCache.TryGetValue(path,out cached))return cached;
+      try{var image=new BitmapImage();image.BeginInit();image.CacheOption=BitmapCacheOption.OnLoad;image.DecodePixelWidth=1600;image.UriSource=new Uri(Path.GetFullPath(path));image.EndInit();image.Freeze();imageCache[path]=image;return image;}catch{return null;}
+    }
+    void SetView(string mode){library.ViewMode=mode;UpdateViewControls();RefreshGrid();if(!smoke)Save();}
+    void UpdateViewControls(){
+      updatingView=true;bool list=library.ViewMode=="list";
+      Find<Slider>("ViewSizeSlider").Value=list?(library.ListSize-48)/0.84:(library.GridSize-140)/2.0;
+      Find<TextBlock>("ViewSizeLabel").Text=(list?library.ListSize:library.GridSize)+" px";
+      Find<Button>("GridViewButton").Background=new SolidColorBrush(list?Color.FromRgb(40,44,53):Color.FromRgb(180,241,118));Find<Button>("GridViewButton").Foreground=list?Brushes.White:Brushes.Black;
+      Find<Button>("ListViewButton").Background=new SolidColorBrush(list?Color.FromRgb(180,241,118):Color.FromRgb(40,44,53));Find<Button>("ListViewButton").Foreground=list?Brushes.Black:Brushes.White;
+      Find<Button>("SizeDownButton").IsEnabled=Find<Slider>("ViewSizeSlider").Value>0;Find<Button>("SizeUpButton").IsEnabled=Find<Slider>("ViewSizeSlider").Value<100;updatingView=false;
     }
     void RefreshGrid(){
-      WrapPanel grid=Find<WrapPanel>("GameGrid");grid.Children.Clear();string search=Find<TextBox>("SearchBox").Text.Trim();bool favorite=Find<CheckBox>("FavoritesOnly").IsChecked==true;
+      bool list=library.ViewMode=="list";Panel grid=list?(Panel)Find<StackPanel>("GameList"):Find<WrapPanel>("GameGrid");Find<WrapPanel>("GameGrid").Children.Clear();Find<StackPanel>("GameList").Children.Clear();Find<WrapPanel>("GameGrid").Visibility=list?Visibility.Collapsed:Visibility.Visible;Find<StackPanel>("GameList").Visibility=list?Visibility.Visible:Visibility.Collapsed;string search=Find<TextBox>("SearchBox").Text.Trim();bool favorite=Find<CheckBox>("FavoritesOnly").IsChecked==true;
       List<Game> visible=library.Games.Where(g=>(!favorite||g.Favorite)&&g.Name.IndexOf(search,StringComparison.CurrentCultureIgnoreCase)>=0).OrderByDescending(g=>g.Favorite).ThenBy(g=>g.Name).ToList();
       foreach(Game g in visible){
-        var card=new StackPanel();var art=new Grid{Width=220,Height=135,Background=new SolidColorBrush(Color.FromRgb(37,43,53))};ImageSource source=LoadImage(g.Artwork);
+        var card=new StackPanel();var art=new Grid{Width=list?library.ListSize*1.6:library.GridSize,Height=list?library.ListSize:library.GridSize*135.0/220,Background=new SolidColorBrush(Color.FromRgb(37,43,53))};ImageSource source=LoadImage(g.Artwork);
         if(source!=null)art.Children.Add(new Image{Source=source,Stretch=Stretch.UniformToFill});
         else {var blank=new TextBlock{Text="◈",Foreground=new SolidColorBrush(Color.FromRgb(180,241,118)),FontSize=45,HorizontalAlignment=HorizontalAlignment.Center,VerticalAlignment=VerticalAlignment.Center};art.Children.Add(blank);}
         var shade=new System.Windows.Shapes.Rectangle{Fill=new LinearGradientBrush(Color.FromArgb(0,16,17,21),Color.FromArgb(225,16,17,21),90)};art.Children.Add(shade);
-        art.Children.Add(new TextBlock{Text=g.Name,TextWrapping=TextWrapping.Wrap,FontSize=17,FontWeight=FontWeights.SemiBold,Margin=new Thickness(14),VerticalAlignment=VerticalAlignment.Bottom});
+        if(!list)art.Children.Add(new TextBlock{Text=g.Name,TextWrapping=TextWrapping.Wrap,FontSize=library.GridSize<180?14:17,FontWeight=FontWeights.SemiBold,Margin=new Thickness(14),VerticalAlignment=VerticalAlignment.Bottom});
         var border=new Border{CornerRadius=new CornerRadius(8),ClipToBounds=true,Child=art};card.Children.Add(border);
         card.Children.Add(new TextBlock{Text=g.Favorite?"★  Favorito · Port local":"Port local · Windows",Foreground=new SolidColorBrush(Color.FromRgb(158,168,184)),Margin=new Thickness(2,10,0,0),FontSize=12});
-        var button=new Button{Content=card,Padding=new Thickness(4),Margin=new Thickness(0,0,17,18),BorderBrush=new SolidColorBrush(g==selected?Color.FromRgb(180,241,118):Color.FromRgb(48,53,63)),Background=Brushes.Transparent,ToolTip=g.Name};
+        FrameworkElement content=card;
+        if(list){
+          card.Children.Remove(border);var row=new Grid();row.ColumnDefinitions.Add(new ColumnDefinition{Width=GridLength.Auto});row.ColumnDefinitions.Add(new ColumnDefinition{Width=new GridLength(1,GridUnitType.Star)});row.ColumnDefinitions.Add(new ColumnDefinition{Width=new GridLength(140)});row.Children.Add(border);
+          var details=new StackPanel{Margin=new Thickness(16,0,12,0),VerticalAlignment=VerticalAlignment.Center};Grid.SetColumn(details,1);details.Children.Add(new TextBlock{Text=g.Name,FontSize=library.ListSize<60?14:17,FontWeight=FontWeights.SemiBold,TextTrimming=TextTrimming.CharacterEllipsis});if(library.ListSize>=60)details.Children.Add(new TextBlock{Text=g.Favorite?"★  Favorito · Port local":"Port local · Windows",FontSize=12,Foreground=new SolidColorBrush(Color.FromRgb(158,168,184)),Margin=new Thickness(0,5,0,0)});row.Children.Add(details);
+          DateTime last;string when=!String.IsNullOrEmpty(g.LastPlayed)&&DateTime.TryParse(g.LastPlayed,out last)?"Última abertura\n"+last.ToLocalTime().ToString("dd/MM/yyyy HH:mm"):"Nunca aberto";var played=new TextBlock{Text=when,FontSize=12,Foreground=new SolidColorBrush(Color.FromRgb(158,168,184)),TextAlignment=TextAlignment.Right,VerticalAlignment=VerticalAlignment.Center,Margin=new Thickness(0,0,12,0)};Grid.SetColumn(played,2);row.Children.Add(played);content=row;
+        }
+        var button=new Button{Content=content,HorizontalContentAlignment=list?HorizontalAlignment.Stretch:HorizontalAlignment.Center,HorizontalAlignment=list?HorizontalAlignment.Stretch:HorizontalAlignment.Left,Padding=new Thickness(4),Margin=list?new Thickness(0,0,0,9):new Thickness(0,0,17,18),BorderBrush=new SolidColorBrush(g==selected?Color.FromRgb(180,241,118):Color.FromRgb(48,53,63)),Background=list?new SolidColorBrush(Color.FromArgb(220,24,27,33)):Brushes.Transparent,ToolTip=g.Name};
         AutomationProperties.SetName(button,"Selecionar "+g.Name);Game current=g;button.Click+=delegate{selected=current;Refresh();};grid.Children.Add(button);
       }
       Find<TextBlock>("CountLabel").Text=library.Games.Count+" jogos";
@@ -149,6 +173,14 @@ namespace Nexus {
       save.Click+=delegate{library.OnlineArtwork=online.IsChecked==true;library.MinimizeOnLaunch=minimize.IsChecked==true;library.SetApiKey(key.Password);Save();dialog.DialogResult=true;};dialog.ShowDialog();
     }
     public void Capture(string target){CaptureWindow(Window,target);}
+    public void PreviewView(string mode,int size){
+      Find<Button>(mode=="list"?"ListViewButton":"GridViewButton").RaiseEvent(new RoutedEventArgs(Button.ClickEvent));
+      if(size>0)Find<Slider>("ViewSizeSlider").Value=mode=="list"?(size-48)/0.84:(size-140)/2.0;
+      if(library.ViewMode!=mode)throw new Exception("View switch failed");Panel visible=mode=="list"?(Panel)Find<StackPanel>("GameList"):Find<WrapPanel>("GameGrid");
+      if(visible.Visibility!=Visibility.Visible||visible.Children.Count!=library.Games.Count)throw new Exception("View rendering failed");
+      if(library.Games.Count>0){var lastButton=(Button)visible.Children[visible.Children.Count-1];string expected=(string)lastButton.ToolTip;lastButton.RaiseEvent(new RoutedEventArgs(Button.ClickEvent));if(selected==null||selected.Name!=expected)throw new Exception("Selection failed");Find<TextBox>("SearchBox").Text=expected;Panel filtered=mode=="list"?(Panel)Find<StackPanel>("GameList"):Find<WrapPanel>("GameGrid");if(filtered.Children.Count<1)throw new Exception("Search in view failed");Find<TextBox>("SearchBox").Text="";}
+      int beforeGrid=library.GridSize,beforeList=library.ListSize;SetView(mode=="list"?"grid":"list");SetView(mode);if(library.GridSize!=beforeGrid||library.ListSize!=beforeList)throw new Exception("Independent size restoration failed");
+    }
     public static void CaptureWindow(Window window,string target){window.UpdateLayout();var image=new RenderTargetBitmap((int)window.ActualWidth,(int)window.ActualHeight,96,96,PixelFormats.Pbgra32);image.Render(window);var encoder=new PngBitmapEncoder();encoder.Frames.Add(BitmapFrame.Create(image));Directory.CreateDirectory(Path.GetDirectoryName(Path.GetFullPath(target)));using(var output=File.Create(target))encoder.Save(output);}
   }
   public class GameEditor:Window {

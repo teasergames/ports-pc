@@ -4,6 +4,8 @@ Launcher de biblioteca para ports de PC, com interface imersiva e artwork do jog
 
 Na versão **1.0.1**, **Configurar jogo** abre o launcher original de configuração. **Editar cadastro** altera nome, executável, argumentos e artwork no NEXUS. **Jogar** usa a entrada direta do port. Você pode escolher manualmente um launcher de configuração em Editar cadastro.
 
+Na **1.0.2**, escolha **Grade** ou **Lista** na barra da coleção. Use o controle **Tamanho** ou os botões **− / ＋** para ajustar as capas da grade (140–340 px) ou a altura das linhas da lista (48–132 px). O modo e o tamanho de cada visualização são lembrados separadamente ao trocar de modo e ao reabrir o aplicativo. Busca, favoritos e seleção funcionam nos dois modos. Na lista, cada linha mostra a imagem, o nome e a última abertura; em linhas maiores também aparece o estado de favorito.
+
 ## Usar
 
 1. Extraia `Nexus-Ports-PC-Windows-x64.zip` em uma pasta de sua preferência.

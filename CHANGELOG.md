@@ -1,5 +1,14 @@
 # Alterações
 
+## v1.0.2
+
+- Alternância entre visualização em grade e lista.
+- Controle de tamanho e botões de aumentar/diminuir: capas de 140 a 340 px e linhas de 48 a 132 px.
+- Preferência de modo e tamanhos independentes persistidos na biblioteca, com compatibilidade dos cadastros anteriores.
+- Lista com miniaturas, títulos, favoritos e data da última abertura; filtros e seleção compartilhados com a grade.
+- Cache em memória das imagens para redimensionamento sem recarregar os arquivos a cada ajuste.
+- 43 verificações de dados e smoke tests da interface nos limites pequeno/grande dos dois modos.
+
 ## v1.0.1
 
 - Configurar jogo abre o launcher original do port; novo botão Editar cadastro mantém as opções da biblioteca separadas.

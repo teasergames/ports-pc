@@ -11,6 +11,8 @@ public static class Integration {
         if(args[1]=="local"){
           foreach(Game game in Ports.Detect(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.UserProfile),"Downloads"))){
             Ports.StartInfo(game);
+            var configuration=Ports.ConfigurationStartInfo(game);
+            if(!File.Exists(configuration.FileName))throw new Exception("Missing configuration launcher: "+game.Name);
             var art=service.Resolve(game,false,"",CancellationToken.None).GetAwaiter().GetResult();
             if(String.IsNullOrEmpty(art.File)||!File.Exists(art.File))throw new Exception("No local artwork: "+game.Name);
             game.Artwork=art.File;game.ArtworkSource=art.Source;lib.Games.Add(game);Console.WriteLine("PASS local artwork + launch configuration: "+game.Name);

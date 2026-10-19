@@ -21,14 +21,14 @@ namespace Nexus {
     public async Task<ArtworkResult> Resolve(Game game,bool online,string key,CancellationToken token) {
       string local=Ports.FindLocalArtwork(game);
       if(local!=null){try{return new ArtworkResult{File=store.ImportArtwork(local,game.Id),Source="Imagem local: "+Path.GetFileName(local)};}catch(Exception ex){store.Log("Imagem local: "+ex.Message);}}
-      if(!online)return new ArtworkResult{Message="Busca online desativada. Escolha uma artwork em Configurar jogo."};
+      if(!online)return new ArtworkResult{Message="Busca online desativada. Escolha uma artwork em Editar cadastro."};
       if(!String.IsNullOrWhiteSpace(key)){
         try {ArtworkResult found=await SteamGrid(game,key,token);if(found!=null)return found;}
         catch(OperationCanceledException){if(token.IsCancellationRequested)throw;}
         catch(Exception ex){store.Log("SteamGridDB: "+ex.Message);}
       }
       try {
-        string title=game.Name.Equals("Bloodborne",StringComparison.OrdinalIgnoreCase)?"Bloodborne":game.Name.Equals("God of War III",StringComparison.OrdinalIgnoreCase)?"God of War III":game.Name.Equals("Shadow of the Colossus",StringComparison.OrdinalIgnoreCase)?"Shadow of the Colossus (2018 video game)":game.Name;
+        string title=Ports.CanonicalTitle(game);if(title=="Shadow of the Colossus")title="Shadow of the Colossus (2018 video game)";
         string endpoint="https://en.wikipedia.org/w/api.php?action=query&format=json&formatversion=2&redirects=1&prop=pageimages&piprop=original&pilicense=any&titles="+Uri.EscapeDataString(title);
         var doc=await Json(endpoint,null,token);var query=Map(Get(doc,"query"));var pages=Array(Get(query,"pages"));
         foreach(object item in pages){var page=Map(item);var original=Map(Get(page,"original"));string url=Convert.ToString(Get(original,"source"));if(!String.IsNullOrWhiteSpace(url)){
@@ -39,9 +39,10 @@ namespace Nexus {
       return new ArtworkResult{Message="Nenhuma imagem encontrada. Escolha uma artwork ou configure o SteamGridDB para fundos panorâmicos."};
     }
     async Task<ArtworkResult> SteamGrid(Game game,string key,CancellationToken token) {
-      var search=await Json("https://www.steamgriddb.com/api/v2/search/autocomplete/"+Uri.EscapeDataString(game.Name),key,token);
+      string title=Ports.CanonicalTitle(game);
+      var search=await Json("https://www.steamgriddb.com/api/v2/search/autocomplete/"+Uri.EscapeDataString(title),key,token);
       var entries=Array(Get(search,"data"));Dictionary<string,object> exact=null;
-      foreach(object item in entries){var entry=Map(item);if(Ports.Normalize(Convert.ToString(Get(entry,"name")))==Ports.Normalize(game.Name)){exact=entry;break;}}
+      foreach(object item in entries){var entry=Map(item);if(Ports.Normalize(Convert.ToString(Get(entry,"name")))==Ports.Normalize(title)){exact=entry;break;}}
       if(exact==null)return null;
       string id=Convert.ToString(Get(exact,"id"));
       var response=await Json("https://www.steamgriddb.com/api/v2/heroes/game/"+Uri.EscapeDataString(id)+"?mimes=image/png,image/jpeg&nsfw=false&humor=false",key,token);

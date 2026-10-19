@@ -2,11 +2,13 @@
 
 Launcher de biblioteca para ports de PC, com interface imersiva e artwork do jogo selecionado. Aplicativo nativo WPF para **Windows 11 x64**, com .NET Framework 4.8, que já acompanha o Windows 11. Não precisa de Node, Python, navegador, conta ou permissão de administrador para executar.
 
+Na versão **1.0.1**, **Configurar jogo** abre o launcher original de configuração. **Editar cadastro** altera nome, executável, argumentos e artwork no NEXUS. **Jogar** usa a entrada direta do port. Você pode escolher manualmente um launcher de configuração em Editar cadastro.
+
 ## Usar
 
 1. Extraia `Nexus-Ports-PC-Windows-x64.zip` em uma pasta de sua preferência.
 2. Abra `Nexus.exe`, mantendo `Nexus.exe.config` ao lado dele.
-3. Na primeira execução, o launcher identifica os três ports conhecidos em Downloads. Para outras pastas, use **Adicionar jogo** e escolha um `.exe` ou atalho `.lnk`.
+3. Na primeira execução, o launcher identifica os quatro ports conhecidos em Downloads. Para outras pastas, use **Adicionar jogo** e escolha um `.exe` ou atalho `.lnk`.
 4. Confira nome, argumentos e pasta de trabalho. Clique em **Salvar** e depois **Jogar**.
 
 O launcher não inclui jogos, emuladores, firmware ou arquivos dos ports. Cada port precisa estar instalado e funcionar por conta própria. A compatibilidade dos próprios jogos, drivers e modificações depende de cada projeto. O executável desta versão não é assinado digitalmente.
@@ -29,6 +31,9 @@ O launcher não inclui jogos, emuladores, firmware ou arquivos dos ports. Cada p
 | God of War III | `gow3-windows/gow3-windows/` ou `gow3-windows/` | `Play God of War III.exe` |
 | Shadow of the Colossus | `SotC-PC/` | `SotC.exe --play` |
 | Bloodborne | `BBPORT/` | `Bloodborne.exe` |
+| Uncharted: The Nathan Drake Collection (BilalReloaded) | `Uncharted PC port Bila/` | Python incluído no próprio port + `tools/probe_uncharted.py` |
+
+Para Uncharted, **Configurar jogo** abre `Uncharted Launcher.exe`. **Jogar**, com os argumentos do cadastro vazios, lê a seleção e as opções salvas em `%APPDATA%/Uncharted Launcher/launcher.json` e inicia o jogo escolhido sem abrir a interface do launcher. Usa somente o Python já incluído no port; não precisa instalar Python. Configure a pasta do jogo uma vez no launcher original. Não execute diretamente `gow3_pc/out/Uncharted.exe`, pois essa entrada pula a preparação e as opções do port. Se preencher argumentos personalizados para `Uncharted Launcher.exe`, o NEXUS respeita essa inicialização personalizada.
 
 Você pode cadastrar qualquer outro executável. A detecção verifica esses caminhos, sem varrer o disco inteiro. Pastas Downloads redirecionadas ou instalações fora desses caminhos podem ser cadastradas manualmente. Nomes e argumentos são sugestões editáveis; a configuração original do port continua sendo usada pelo executável.
 
@@ -37,11 +42,13 @@ Você pode cadastrar qualquer outro executável. A detecção verifica esses cam
 Ao adicionar um jogo, o NEXUS procura, nesta ordem:
 
 1. Arquivos locais: `artwork.jpg/png`, `background.jpg/png`, `hero.jpg/png`, `sce_sys/pic1.png`, `sce_sys/pic0.png`, `assets/background.jpg`, `launcher/background.jpg` ao lado do executável.
-2. Para os três ports conhecidos, lê somente o campo `game_dir` das configurações originais em `%APPDATA%/gow3-launcher`, `sotc-launcher` ou `bbport-launcher` e procura `sce_sys/pic1.png`, `pic0.png` ou `icon0.png` na instalação do jogo. Não altera esses arquivos.
+2. Para os ports conhecidos, lê o campo `game_dir` das configurações originais em `%APPDATA%/gow3-launcher`, `sotc-launcher`, `bbport-launcher` ou `Uncharted Launcher/launcher.json` e procura `sce_sys/pic1.png`, `pic0.png` ou `icon0.png` na instalação do jogo. Não altera esses arquivos.
 3. **SteamGridDB**, se uma chave de API foi informada em Configurações: busca o título exato e uma hero panorâmica estática.
 4. **Wikipedia**, sem chave: imagem da página exata do título. Pode ser uma capa vertical ou imagem de resolução limitada; não existe garantia de fundo panorâmico para todo jogo.
 
-Também é possível escolher uma imagem em **Configurar jogo → Escolher imagem**, ou solicitar nova busca em **Buscar automaticamente**. Imagens são copiadas para o cache: não precisam permanecer na pasta de origem. A busca roda em segundo plano, com limite de tamanho e timeout; erros de rede não impedem jogar. Sem imagem, a interface mostra um fundo neutro.
+Também é possível escolher uma imagem em **Editar cadastro → Escolher imagem**, ou solicitar nova busca em **Buscar automaticamente**. Imagens são copiadas para o cache: não precisam permanecer na pasta de origem. A busca roda em segundo plano, com limite de tamanho e timeout; erros de rede não impedem jogar. Sem imagem, a interface mostra um fundo neutro.
+
+Na versão 1.0.1, as opções de artwork ficam em **Editar cadastro**. O campo **Título para buscar artwork** permite informar um nome de busca diferente do nome exibido. Nomes como “Uncharted Collection” são reconhecidos pelo port e associados a “Uncharted: The Nathan Drake Collection”. Cadastros existentes sem imagem recebem uma nova tentativa ao abrir o NEXUS atualizado.
 
 O SteamGridDB exige sua própria chave: [obter chave](https://www.steamgriddb.com/profile/preferences/api). Ela é criptografada com Windows DPAPI para o usuário atual e nunca incluída no repositório. A busca online envia **apenas o nome do jogo**; não envia caminhos, saves ou executáveis. É possível desativá-la. Credenciais são enviadas apenas à API SteamGridDB, nunca aos servidores das imagens. Imagens e jogos pertencem aos respectivos titulares; a licença MIT se aplica somente ao código do launcher. A fonte da imagem aparece na edição do cadastro.
 

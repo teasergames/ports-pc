@@ -14,6 +14,9 @@ namespace Nexus {
     public string Executable { get; set; }
     public string Arguments { get; set; }
     public string WorkingDirectory { get; set; }
+    public string ConfigurationExecutable { get; set; }
+    public string ConfigurationArguments { get; set; }
+    public string ArtworkSearchTitle { get; set; }
     public string Artwork { get; set; }
     public string ArtworkSource { get; set; }
     public bool Favorite { get; set; }
@@ -79,42 +82,75 @@ namespace Nexus {
     public static Game FromPath(string executable) {
       string full=Path.GetFullPath(executable);string dir=Path.GetDirectoryName(full);string name=Path.GetFileNameWithoutExtension(full);
       string marker=(name+" "+dir).ToLowerInvariant();Game g=new Game{Executable=full,WorkingDirectory=dir,Name=name};
-      if(marker.Contains("gow3")||marker.Contains("god of war iii")){
+      if(marker.Contains("uncharted")){
+        g.Name="Uncharted: The Nathan Drake Collection";
+      }else if(marker.Contains("gow3")||marker.Contains("god of war iii")){
         g.Name="God of War III";string direct=Path.Combine(dir,"Play God of War III.exe");if(File.Exists(direct))g.Executable=direct;
       }else if(marker.Contains("sotc")||marker.Contains("shadow of the colossus")){
         g.Name="Shadow of the Colossus";if(Path.GetExtension(full).Equals(".exe",StringComparison.OrdinalIgnoreCase))g.Arguments="--play";
       }else if(marker.Contains("bloodborne")||marker.Contains("bbport")){
         g.Name="Bloodborne";string direct=Path.Combine(dir,"Bloodborne.exe");if(File.Exists(direct))g.Executable=direct;
       }
+      g.ConfigurationExecutable=FindConfigurationExecutable(g);
       return g;
     }
     public static List<Game> Detect(string downloads) {
       List<Game> result=new List<Game>();if(!Directory.Exists(downloads))return result;
-      string[] relative={@"gow3-windows\gow3-windows\Play God of War III.exe",@"gow3-windows\Play God of War III.exe",@"SotC-PC\SotC.exe",@"BBPORT\Bloodborne.exe"};
+      string[] relative={@"gow3-windows\gow3-windows\Play God of War III.exe",@"gow3-windows\Play God of War III.exe",@"SotC-PC\SotC.exe",@"BBPORT\Bloodborne.exe",@"Uncharted PC port Bila\Uncharted Launcher.exe"};
       foreach(string rel in relative){string p=Path.Combine(downloads,rel);if(File.Exists(p))result.Add(FromPath(p));}return result;
     }
-    public static ProcessStartInfo StartInfo(Game game) {
+    public static ProcessStartInfo StartInfo(Game game,bool direct=true) {
       if(!Allowed(game.Executable))throw new InvalidDataException("Selecione um executável .exe ou atalho .lnk.");
-      if(!File.Exists(game.Executable))throw new FileNotFoundException("O executável foi movido ou removido. Atualize o caminho em Configurar jogo.",game.Executable);
+      if(!File.Exists(game.Executable))throw new FileNotFoundException("O executável foi movido ou removido. Atualize o caminho em Editar cadastro.",game.Executable);
       string dir=String.IsNullOrWhiteSpace(game.WorkingDirectory)?Path.GetDirectoryName(game.Executable):game.WorkingDirectory;
       if(!Directory.Exists(dir))throw new DirectoryNotFoundException("A pasta de trabalho não existe: "+dir);
+      if(direct&&Path.GetFileName(game.Executable).Equals("Uncharted Launcher.exe",StringComparison.OrdinalIgnoreCase)&&String.IsNullOrWhiteSpace(game.Arguments))return Uncharted.StartInfo(game,ReadPortConfig("Uncharted: The Nathan Drake Collection",Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData)));
       return new ProcessStartInfo{FileName=Path.GetFullPath(game.Executable),Arguments=game.Arguments??"",WorkingDirectory=Path.GetFullPath(dir),UseShellExecute=true};
+    }
+    public static string CanonicalTitle(Game game){
+      if(!String.IsNullOrWhiteSpace(game.ArtworkSearchTitle))return game.ArtworkSearchTitle.Trim();
+      return PortTitle(game);
+    }
+    public static string PortTitle(Game game){
+      string marker=(game.Name+" "+Path.GetFileName(game.Executable)+" "+Path.GetDirectoryName(game.Executable)).ToLowerInvariant();
+      if(marker.Contains("uncharted"))return "Uncharted: The Nathan Drake Collection";
+      if(marker.Contains("bloodborne")||marker.Contains("bbport"))return "Bloodborne";
+      if(marker.Contains("sotc")||marker.Contains("shadow of the colossus"))return "Shadow of the Colossus";
+      if(marker.Contains("gow3")||marker.Contains("god of war iii"))return "God of War III";
+      return game.Name;
+    }
+    public static string FindConfigurationExecutable(Game game){
+      if(!String.IsNullOrWhiteSpace(game.ConfigurationExecutable))return game.ConfigurationExecutable;
+      string root=Path.GetDirectoryName(game.Executable);string title=PortTitle(game);
+      string name=title=="God of War III"?"God of War III.exe":title=="Bloodborne"?"Bloodborne Launcher.exe":title=="Shadow of the Colossus"?"SotC.exe":title=="Uncharted: The Nathan Drake Collection"?"Uncharted Launcher.exe":null;
+      string candidate=name==null?null:Path.Combine(root,name);return candidate!=null&&File.Exists(candidate)?candidate:null;
+    }
+    public static ProcessStartInfo ConfigurationStartInfo(Game game){
+      string file=FindConfigurationExecutable(game);
+      if(String.IsNullOrWhiteSpace(file))throw new InvalidDataException("Escolha o launcher de configuração em Editar cadastro.");
+      Game config=game.Copy();config.Executable=file;config.Arguments=game.ConfigurationArguments??"";config.WorkingDirectory=Path.GetDirectoryName(file);
+      if(!Allowed(file)||!File.Exists(file))throw new FileNotFoundException("O launcher de configuração não foi encontrado. Atualize-o em Editar cadastro.",file);
+      return new ProcessStartInfo{FileName=Path.GetFullPath(file),Arguments=config.Arguments,WorkingDirectory=Path.GetFullPath(config.WorkingDirectory),UseShellExecute=true};
     }
     public static string FindLocalArtwork(Game game) {
       string root=Path.GetDirectoryName(game.Executable);
       string[] candidates={@"artwork.jpg",@"artwork.png",@"background.jpg",@"background.png",@"hero.jpg",@"hero.png",@"sce_sys\pic1.png",@"sce_sys\pic0.png",@"assets\background.jpg",@"launcher\background.jpg"};
       foreach(string rel in candidates){string p=Path.Combine(root,rel);if(File.Exists(p))return p;}
-      string configured=ConfiguredGameDirectory(game.Name,Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData));
+      string configured=ConfiguredGameDirectory(PortTitle(game),Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData));
       if(!String.IsNullOrEmpty(configured))foreach(string rel in new[]{@"sce_sys\pic1.png",@"sce_sys\pic0.png",@"sce_sys\icon0.png"}){string p=Path.Combine(configured,rel);if(File.Exists(p))return p;}
       return null;
     }
     public static string ConfiguredGameDirectory(string name,string appData) {
-      string folder=name=="God of War III"?"gow3-launcher":name=="Shadow of the Colossus"?"sotc-launcher":name=="Bloodborne"?"bbport-launcher":null;
-      if(folder==null)return null;
-      try{string file=Path.Combine(appData,folder,"settings.json");if(!File.Exists(file)||new FileInfo(file).Length>1024*1024)return null;
-        var config=new JavaScriptSerializer().Deserialize<Dictionary<string,object>>(File.ReadAllText(file));object value;
+      try{var config=ReadPortConfig(name,appData);object value;
         return config.TryGetValue("game_dir",out value)&&value is string&&Directory.Exists((string)value)?(string)value:null;
       }catch{return null;}
+    }
+    public static Dictionary<string,object> ReadPortConfig(string name,string appData){
+      string folder=name=="God of War III"?"gow3-launcher":name=="Shadow of the Colossus"?"sotc-launcher":name=="Bloodborne"?"bbport-launcher":name=="Uncharted: The Nathan Drake Collection"?"Uncharted Launcher":null;
+      if(folder==null)return new Dictionary<string,object>();
+      string file=Path.Combine(appData,folder,folder=="Uncharted Launcher"?"launcher.json":"settings.json");
+      if(!File.Exists(file)||new FileInfo(file).Length>1024*1024)return new Dictionary<string,object>();
+      try{return new JavaScriptSerializer().Deserialize<Dictionary<string,object>>(File.ReadAllText(file))??new Dictionary<string,object>();}catch{return new Dictionary<string,object>();}
     }
     public static string Normalize(string value){return new String(value.ToLowerInvariant().Where(Char.IsLetterOrDigit).ToArray());}
   }

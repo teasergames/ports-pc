@@ -1,8 +1,8 @@
-# Validação da versão 1.0
+# Validação da versão 1.0.1
 
 - Compilação Release x64 concluída com o compilador incluído no Windows.
-- 24 verificações automatizadas aprovadas: armazenamento, Unicode, argumentos, caminhos, backups, validação dos cadastros, DPAPI, detecção dos ports, leitura das configurações originais e cache de imagens.
-- Integração local aprovada para God of War III, Shadow of the Colossus e Bloodborne: identificação dos executáveis, argumentos e pasta de trabalho; recuperação e cache das imagens oficiais das instalações configuradas.
+- 39 verificações automatizadas aprovadas: armazenamento, Unicode, argumentos, caminhos, backups, validação dos cadastros, DPAPI, detecção dos ports, leitura das configurações originais e cache de imagens. Inclui separação entre configuração e execução, compatibilidade do cadastro anterior, título de artwork independente e construção da inicialização de Uncharted com seleção/opções salvas e caminhos com espaços.
+- Integração local aprovada para God of War III, Shadow of the Colossus, Bloodborne e Uncharted: identificação dos executáveis diretos e dos launchers de configuração; recuperação e cache das imagens oficiais das instalações configuradas.
 - Integração online aprovada: download real da Wikipedia, decodificação, validação e cache.
 - A janela WPF foi aberta, renderizada e encerrada com sucesso em Windows 11 x64, build 26200. A renderização com biblioteca vazia e com os três ports foi inspecionada visualmente.
 

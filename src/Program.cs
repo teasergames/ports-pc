@@ -18,8 +18,8 @@ using Microsoft.Win32;
 
 [assembly: AssemblyTitle("NEXUS · Ports PC")]
 [assembly: AssemblyProduct("NEXUS Ports PC")]
-[assembly: AssemblyVersion("1.0.0.0")]
-[assembly: AssemblyFileVersion("1.0.0.0")]
+[assembly: AssemblyVersion("1.0.1.0")]
+[assembly: AssemblyFileVersion("1.0.1.0")]
 namespace Nexus {
   public static class Program {
     [STAThread] public static int Main(string[] args) {
@@ -53,6 +53,7 @@ namespace Nexus {
       Window.SourceInitialized+=delegate{int value=1;DwmSetWindowAttribute(new WindowInteropHelper(Window).Handle,20,ref value,4);};
       Window.Closed+=delegate{closing=true;shutdown.Cancel();artwork.Dispose();};
       Find<Button>("AddButton").Click+=delegate{Add();};Find<Button>("EditButton").Click+=delegate{Edit();};Find<Button>("PlayButton").Click+=delegate{Launch();};Find<Button>("FavoriteButton").Click+=delegate{if(selected!=null){selected.Favorite=!selected.Favorite;Save();Refresh();}};
+      Find<Button>("ConfigureButton").Click+=delegate{if(selected==null)return;try{Process.Start(Ports.ConfigurationStartInfo(selected));Status("Configuração aberta: "+selected.Name);}catch(Exception ex){MessageBox.Show(Window,ex.Message,"Configurar jogo",MessageBoxButton.OK,MessageBoxImage.Information);}};
       Find<Button>("SettingsButton").Click+=delegate{Settings();};Find<Button>("DetectButton").Click+=delegate{Detect(true);};
       Find<TextBox>("SearchBox").TextChanged+=delegate{RefreshGrid();};Find<CheckBox>("FavoritesOnly").Checked+=delegate{RefreshGrid();};Find<CheckBox>("FavoritesOnly").Unchecked+=delegate{RefreshGrid();};
       if(!File.Exists(store.FilePath)&&!smoke)Detect(false);
@@ -63,6 +64,7 @@ namespace Nexus {
     void Status(string text){if(!closing)Find<TextBlock>("StatusLabel").Text=text;}
     public void Refresh(){
       bool has=selected!=null;Find<Button>("PlayButton").IsEnabled=has;Find<Button>("EditButton").IsEnabled=has;Find<Button>("FavoriteButton").IsEnabled=has;
+      Find<Button>("ConfigureButton").IsEnabled=has;
       Find<TextBlock>("HeroTitle").Text=has?selected.Name:"Seu próximo universo";
       Find<TextBlock>("HeroDescription").Text=!has?"Adicione seus ports e reúna suas aventuras em um só lugar.":selected.Name=="Bloodborne"?"As ruas de Yharnam estão à sua espera. Sua próxima caçada começa aqui.":selected.Name=="God of War III"?"Enfrente os deuses do Olimpo. Sua próxima aventura começa aqui.":selected.Name=="Shadow of the Colossus"?"Uma terra esquecida. Dezesseis colossos. Uma jornada para revisitar.":"Seu port, suas configurações. Pronto para a próxima aventura.";
       Find<Button>("FavoriteButton").Content=has&&selected.Favorite?"★ Favorito":"☆ Favoritar";
@@ -106,7 +108,7 @@ namespace Nexus {
       if(editor.ShowDialog()!=true)return;
       if(editor.Remove){library.Games.Remove(original);selected=library.Games.FirstOrDefault();Save();Refresh();Status("Removido da coleção. Os arquivos do port foram preservados.");return;}
       int index=library.Games.IndexOf(original);library.Games[index]=editor.Result;selected=editor.Result;Save();Refresh();Status("Configurações salvas.");
-      if(editor.RefreshArtwork)ResolveArtwork(selected);
+      if(editor.RefreshArtwork||String.IsNullOrEmpty(selected.Artwork)||!File.Exists(selected.Artwork))ResolveArtwork(selected);
     }
     void Launch(){
       if(selected==null)return;
@@ -127,7 +129,7 @@ namespace Nexus {
         bool online=library.OnlineArtwork;string key=library.ApiKey();
         ArtworkResult result=await Task.Run(()=>artwork.Resolve(snapshot,online,key,shutdown.Token));
         if(closing)return;Game live=library.Games.FirstOrDefault(g=>g.Id==snapshot.Id);
-        if(live==null||live.Artwork!=snapshot.Artwork||live.Name!=snapshot.Name||live.Executable!=snapshot.Executable)return;
+        if(live==null||live.Artwork!=snapshot.Artwork||live.Name!=snapshot.Name||live.Executable!=snapshot.Executable||live.ArtworkSearchTitle!=snapshot.ArtworkSearchTitle)return;
         if(!String.IsNullOrEmpty(result.File)){live.Artwork=result.File;live.ArtworkSource=result.Source;Save();Refresh();Status("Artwork pronta: "+live.Name+" · "+result.Source);}else Status(result.Message);
       }catch(OperationCanceledException){}catch(Exception ex){if(!closing){store.Log(ex.ToString());Status("Não foi possível buscar a artwork. Você pode escolher uma imagem local.");}}
       finally{pending.Remove(game.Id);if(entered)artQueue.Release();}
@@ -151,15 +153,20 @@ namespace Nexus {
   }
   public class GameEditor:Window {
     public Game Result;public bool Remove;public bool RefreshArtwork;
-    readonly TextBox name,exe,arguments,working;readonly Store store;readonly TextBlock artLabel;string picked;
+    readonly TextBox name,exe,arguments,working,configExe,configArgs,artTitle;readonly Store store;readonly TextBlock artLabel;string picked;
     public GameEditor(Window owner,Game game,Store data,bool existing){
-      Result=game;store=data;Owner=owner;Title=existing?"Configurar jogo · NEXUS":"Adicionar jogo · NEXUS";Width=660;Height=710;MinHeight=580;ResizeMode=ResizeMode.CanResize;WindowStartupLocation=WindowStartupLocation.CenterOwner;Background=owner.Background;Foreground=owner.Foreground;FontFamily=owner.FontFamily;Resources=owner.Resources;
+      Result=game;store=data;Owner=owner;Title=existing?"Editar cadastro · NEXUS":"Adicionar jogo · NEXUS";Width=700;Height=830;MinHeight=580;ResizeMode=ResizeMode.CanResize;WindowStartupLocation=WindowStartupLocation.CenterOwner;Background=owner.Background;Foreground=owner.Foreground;FontFamily=owner.FontFamily;Resources=owner.Resources;
       var scroll=new ScrollViewer();Content=scroll;var p=new StackPanel{Margin=new Thickness(26)};scroll.Content=p;
       p.Children.Add(new TextBlock{Text=existing?"Seu jogo, do seu jeito":"Adicionar à coleção",FontSize=25,Margin=new Thickness(0,0,0,20)});
       name=Field(p,"Nome do jogo",game.Name);exe=Field(p,"Executável ou atalho (.exe / .lnk)",game.Executable);
       var browse=new Button{Content="Escolher executável",HorizontalAlignment=HorizontalAlignment.Left,Margin=new Thickness(0,0,0,12)};p.Children.Add(browse);
       browse.Click+=delegate{var pick=new OpenFileDialog{Filter="Executáveis e atalhos|*.exe;*.lnk",CheckFileExists=true};if(pick.ShowDialog(this)==true){exe.Text=pick.FileName;working.Text=Path.GetDirectoryName(pick.FileName);}};
       arguments=Field(p,"Argumentos de inicialização",game.Arguments);working=Field(p,"Pasta de trabalho",game.WorkingDirectory);
+      configExe=Field(p,"Launcher de configuração (opcional)",Ports.FindConfigurationExecutable(game));
+      var configBrowse=new Button{Content="Escolher launcher de configuração",HorizontalAlignment=HorizontalAlignment.Left};p.Children.Add(configBrowse);
+      configBrowse.Click+=delegate{var pick=new OpenFileDialog{Filter="Executáveis e atalhos|*.exe;*.lnk",CheckFileExists=true};if(pick.ShowDialog(this)==true)configExe.Text=pick.FileName;};
+      configArgs=Field(p,"Argumentos do launcher de configuração",game.ConfigurationArguments);
+      artTitle=Field(p,"Título para buscar artwork (opcional)",game.ArtworkSearchTitle);
       p.Children.Add(new TextBlock{Text="Artwork",Margin=new Thickness(0,12,0,8)});
       artLabel=new TextBlock{Text=String.IsNullOrEmpty(game.Artwork)?"Busca automática ao adicionar o port.":game.ArtworkSource??"Imagem local",TextWrapping=TextWrapping.Wrap,Foreground=new SolidColorBrush(Color.FromRgb(167,177,192)),FontSize=12,Margin=new Thickness(0,0,0,10)};p.Children.Add(artLabel);
       var artActions=new WrapPanel();p.Children.Add(artActions);var choose=new Button{Content="Escolher imagem"};var auto=new Button{Content="Buscar automaticamente"};artActions.Children.Add(choose);artActions.Children.Add(auto);
@@ -170,7 +177,9 @@ namespace Nexus {
       save.Click+=delegate{
         try{
           if(String.IsNullOrWhiteSpace(name.Text))throw new InvalidDataException("Informe o nome do jogo.");
-          Game candidate=Result.Copy();candidate.Name=name.Text.Trim();candidate.Executable=exe.Text.Trim().Trim('"');candidate.Arguments=arguments.Text;candidate.WorkingDirectory=working.Text.Trim().Trim('"');Ports.StartInfo(candidate);
+          Game candidate=Result.Copy();candidate.Name=name.Text.Trim();candidate.Executable=exe.Text.Trim().Trim('"');candidate.Arguments=arguments.Text;candidate.WorkingDirectory=working.Text.Trim().Trim('"');Ports.StartInfo(candidate,false);
+          candidate.ConfigurationExecutable=configExe.Text.Trim().Trim('"');candidate.ConfigurationArguments=configArgs.Text;candidate.ArtworkSearchTitle=artTitle.Text.Trim();
+          if(!String.IsNullOrEmpty(candidate.ConfigurationExecutable))Ports.ConfigurationStartInfo(candidate);
           if(!String.IsNullOrEmpty(picked)){candidate.Artwork=store.ImportArtwork(picked,candidate.Id);candidate.ArtworkSource="Imagem escolhida por você";}
           Result=candidate;DialogResult=true;
         }catch(Exception ex){MessageBox.Show(this,ex.Message,"Confira o cadastro",MessageBoxButton.OK,MessageBoxImage.Warning);}

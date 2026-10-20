@@ -8,9 +8,14 @@ public static class Integration {
   public static int Main(string[] args){
     try{
       string root=Path.GetFullPath(args[0]);var store=new Store(root);var lib=new Library();
+      if(args[1]=="platform-packages"){
+        using(var catalog=new PortCatalog())foreach(var entry in catalog.Entries.Where(e=>new[]{"opence","unleashed","hwder","b2recomp","gravity-rush","gravity-rush-2"}.Contains(e.Id))){
+          var release=PortCatalog.BundledRelease(entry);string source=Path.Combine(args[2],release.AssetName);PortCatalog.VerifyDigest(source,release.Digest);string destination=Path.Combine(root,entry.Id);if(!Directory.Exists(destination)){Directory.CreateDirectory(destination);PortCatalog.Extract(source,destination,null,CancellationToken.None);}var game=PortCatalog.Register(entry,destination,release.Version);if(game.Platform!=entry.Platform||!File.Exists(game.Executable))throw new Exception("Platform package registration failed");if(entry.ConfigNames.Length>0)Ports.ConfigurationStartInfo(game);else if(!String.IsNullOrEmpty(game.ConfigurationExecutable))throw new Exception("Unexpected configuration launcher");Ports.StartInfo(game,false);lib.Games.Add(game);store.Save(lib);Console.WriteLine("PASS real package extract, platform, configuration and play paths: "+entry.Id);
+        }return 0;
+      }
       if(args[1].StartsWith("catalog")){
         using(var catalog=new PortCatalog()){
-          foreach(var entry in catalog.Entries){
+          foreach(var entry in catalog.Entries.Where(e=>!e.ProjectOnly)){
             var latest=catalog.Latest(entry,CancellationToken.None).GetAwaiter().GetResult();Console.WriteLine("PASS release profile"+(latest.FromCache?" (audited cache)":" (live)")+": "+entry.Repository+" "+latest.Version+" "+latest.AssetName);
             if(args[1]=="catalog-install"&&entry.Id=="last-guardian"||args[1]=="catalog-packages"&&new[]{"driveclub","infamous","last-guardian","ctr","medievil","gt-sport","the-order"}.Contains(entry.Id)){
               string parent=Path.Combine(root,"ports"),existing=Path.Combine(parent,entry.Id+"-"+PortCatalog.VersionFolder(latest.Version));

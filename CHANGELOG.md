@@ -1,4 +1,13 @@
-# Alterações
+# Changelog
+
+## 1.2.0 — 2026-10-20
+
+- Filtros de plataforma na biblioteca e no catálogo; plataforma editável por jogo e migração dos cadastros conhecidos.
+- Seis novos perfis de instalação: Halo/OpenCE, Sonic Unleashed, Hyrule Warriors, Bayonetta 2 e Gravity Rush 1/2.
+- Cinco projetos com links e limitações explícitas: Skate 3, GoldenEye 007, Link’s Awakening e dois projetos PS3. Xbox One com estado vazio explicado.
+- Launcher de configuração opcional: botão aparece somente quando há associação.
+- 115 verificações automatizadas; extração e cadastro dos seis pacotes reais e testes visuais dos filtros e modos.
+
 
 ## v1.1.0
 

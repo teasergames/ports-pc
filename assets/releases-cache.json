@@ -268,5 +268,191 @@
         }
       ]
     }
+  },
+  {
+    "Repository": "OpenCommunityEdition/OpenCE",
+    "CheckedUtc": "2026-10-20T00:00:00Z",
+    "Release": {
+      "tag_name": "build-244",
+      "html_url": "https://github.com/OpenCommunityEdition/OpenCE/releases/tag/build-244",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "halo-android-debug.zip",
+          "size": 18127138,
+          "browser_download_url": "https://github.com/OpenCommunityEdition/OpenCE/releases/download/build-244/halo-android-debug.zip",
+          "digest": "sha256:4d5bdeeb5c429c8da1a6653773f0f8cda4964c2623752764083acc841eb85dde"
+        },
+        {
+          "name": "halo-android-release.zip",
+          "size": 17932057,
+          "browser_download_url": "https://github.com/OpenCommunityEdition/OpenCE/releases/download/build-244/halo-android-release.zip",
+          "digest": "sha256:abd7b8cd0eaee8a6850941ffa0cd593001bef5c08baeb1764ccf90e8b77da461"
+        },
+        {
+          "name": "halo-linux-debug.zip",
+          "size": 21164277,
+          "browser_download_url": "https://github.com/OpenCommunityEdition/OpenCE/releases/download/build-244/halo-linux-debug.zip",
+          "digest": "sha256:6c5c0e397ade2c1fff1fab7167ad41770aec05925fbdeddeafbca7ba8c5ebc07"
+        },
+        {
+          "name": "halo-linux-release.zip",
+          "size": 22032084,
+          "browser_download_url": "https://github.com/OpenCommunityEdition/OpenCE/releases/download/build-244/halo-linux-release.zip",
+          "digest": "sha256:592d32efbd9d06c88484837f7a602518616e8cc72849492bf821e30687534326"
+        },
+        {
+          "name": "halo-web-debug.zip",
+          "size": 11506120,
+          "browser_download_url": "https://github.com/OpenCommunityEdition/OpenCE/releases/download/build-244/halo-web-debug.zip",
+          "digest": "sha256:8380f6d5f2bf010c0b0a9422035a9101855bac461946a2df6a7737b4a16e45b3"
+        },
+        {
+          "name": "halo-web-release.zip",
+          "size": 11477275,
+          "browser_download_url": "https://github.com/OpenCommunityEdition/OpenCE/releases/download/build-244/halo-web-release.zip",
+          "digest": "sha256:3ab9c7e59c960fb90c520a36bc5359ae2bf0406911dd8eb2b7abf43b7a089fb7"
+        },
+        {
+          "name": "halo-windows-debug-symbols.zip",
+          "size": 11443914,
+          "browser_download_url": "https://github.com/OpenCommunityEdition/OpenCE/releases/download/build-244/halo-windows-debug-symbols.zip",
+          "digest": "sha256:16df6bde960cad189c81ee1a3029c4ce4be85ce5f6a0f196cc98defb91a2c2cc"
+        },
+        {
+          "name": "halo-windows-debug.zip",
+          "size": 13443420,
+          "browser_download_url": "https://github.com/OpenCommunityEdition/OpenCE/releases/download/build-244/halo-windows-debug.zip",
+          "digest": "sha256:6cac57eb49b4de53ff0e475c102274f924e4a2b05899d974605e9c0b63bcb00a"
+        },
+        {
+          "name": "halo-windows-release-symbols.zip",
+          "size": 10558683,
+          "browser_download_url": "https://github.com/OpenCommunityEdition/OpenCE/releases/download/build-244/halo-windows-release-symbols.zip",
+          "digest": "sha256:87ad29e7d16e26874cd0c71d5a426b179342d579166ef7808e449bfd0bc5b846"
+        },
+        {
+          "name": "halo-windows-release.zip",
+          "size": 13488086,
+          "browser_download_url": "https://github.com/OpenCommunityEdition/OpenCE/releases/download/build-244/halo-windows-release.zip",
+          "digest": "sha256:fb0fde9e7ad2c7bdd5874cd5c91afc64bce968659f656e7a98a55739c5befb75"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "hedge-dev/UnleashedRecomp",
+    "CheckedUtc": "2026-10-20T00:00:00Z",
+    "Release": {
+      "tag_name": "v1.0.3",
+      "html_url": "https://github.com/hedge-dev/UnleashedRecomp/releases/tag/v1.0.3",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "UnleashedRecomp-Flatpak.zip",
+          "size": 36827696,
+          "browser_download_url": "https://github.com/hedge-dev/UnleashedRecomp/releases/download/v1.0.3/UnleashedRecomp-Flatpak.zip",
+          "digest": null
+        },
+        {
+          "name": "UnleashedRecomp-Windows.zip",
+          "size": 53386467,
+          "browser_download_url": "https://github.com/hedge-dev/UnleashedRecomp/releases/download/v1.0.3/UnleashedRecomp-Windows.zip",
+          "digest": null
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "sonsegajp/HWDER",
+    "CheckedUtc": "2026-10-20T00:00:00Z",
+    "Release": {
+      "tag_name": "v0.1.1",
+      "html_url": "https://github.com/sonsegajp/HWDER/releases/tag/v0.1.1",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "HWDER-v0.1.1-win64.zip",
+          "size": 87908325,
+          "browser_download_url": "https://github.com/sonsegajp/HWDER/releases/download/v0.1.1/HWDER-v0.1.1-win64.zip",
+          "digest": "sha256:a0707e5273ad244a8c92141964153f0665d26035c2e3dbea229894887ed0c8fb"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "K0NL/B2recomp",
+    "CheckedUtc": "2026-10-20T00:00:00Z",
+    "Release": {
+      "tag_name": "v0.2.7",
+      "html_url": "https://github.com/K0NL/B2recomp/releases/tag/v0.2.7",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "B2recomp-builder-b3a6dc6.zip",
+          "size": 105293711,
+          "browser_download_url": "https://github.com/K0NL/B2recomp/releases/download/v0.2.7/B2recomp-builder-b3a6dc6.zip",
+          "digest": "sha256:73c314ad08abe87295a7b021b9ac492e78e46a76aff4a5b2574356f817c657fa"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "LucaPazienza/gravityrush_pc",
+    "CheckedUtc": "2026-10-20T00:00:00Z",
+    "Release": {
+      "tag_name": "v0.1.5",
+      "html_url": "https://github.com/LucaPazienza/gravityrush_pc/releases/tag/v0.1.5",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "door-glitch-0.1.5.png",
+          "size": 1137971,
+          "browser_download_url": "https://github.com/LucaPazienza/gravityrush_pc/releases/download/v0.1.5/door-glitch-0.1.5.png",
+          "digest": "sha256:b9cf8c3dce7869060583d80727c38bd0d6ba6b15b1b5b51edd4c1ffb328e0cb1"
+        },
+        {
+          "name": "GravityRush-PC-0.1.5-Windows.zip",
+          "size": 112057430,
+          "browser_download_url": "https://github.com/LucaPazienza/gravityrush_pc/releases/download/v0.1.5/GravityRush-PC-0.1.5-Windows.zip",
+          "digest": "sha256:eff65c986cadfc22c74ee5317ac79960ab4fd835baeb3def3bab200412508da1"
+        },
+        {
+          "name": "GravityRush-PC-0.1.5-Windows.zip.sha256",
+          "size": 99,
+          "browser_download_url": "https://github.com/LucaPazienza/gravityrush_pc/releases/download/v0.1.5/GravityRush-PC-0.1.5-Windows.zip.sha256",
+          "digest": "sha256:1440775963e324bc2d89f3df0602767eed9b2206d64b11ef6a40c7bd0f8996a6"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "HayatoG/gr2_pc",
+    "CheckedUtc": "2026-10-20T00:00:00Z",
+    "Release": {
+      "tag_name": "v2026.10.17-fd637d0",
+      "html_url": "https://github.com/HayatoG/gr2_pc/releases/tag/v2026.10.17-fd637d0",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "gr2-linux-x86_64.tar.gz",
+          "size": 23273832,
+          "browser_download_url": "https://github.com/HayatoG/gr2_pc/releases/download/v2026.10.17-fd637d0/gr2-linux-x86_64.tar.gz",
+          "digest": "sha256:14d8d04de6103f6b1a32093822c1c500c21e08ed135e21fed262f26cbe52ec24"
+        },
+        {
+          "name": "gr2-windows-x86_64.zip",
+          "size": 67776361,
+          "browser_download_url": "https://github.com/HayatoG/gr2_pc/releases/download/v2026.10.17-fd637d0/gr2-windows-x86_64.zip",
+          "digest": "sha256:208d7e6901d13c110be89de552d92844c7c0cab78ad6531c4f93e98a762b15bb"
+        }
+      ]
+    }
   }
 ]

@@ -21,6 +21,7 @@ namespace Nexus {
     public string ArtworkSource { get; set; }
     public bool Favorite { get; set; }
     public string LastPlayed { get; set; }
+    public string Platform {get;set;}
     public string Repository {get;set;}
     public string InstalledVersion {get;set;}
     public string ManagedInstallationRoot {get;set;}
@@ -62,6 +63,7 @@ namespace Nexus {
       Library lib=new JavaScriptSerializer().Deserialize<Library>(json);
       if(lib==null||lib.Version!=1||lib.Games==null)throw new InvalidDataException("Formato de biblioteca não reconhecido.");
       lib.NormalizeView();
+      foreach(var game in lib.Games)if(game!=null)game.Platform=Platforms.Resolve(game);
       HashSet<string> ids=new HashSet<string>();
       foreach(Game g in lib.Games){if(g==null||String.IsNullOrWhiteSpace(g.Id)||!ids.Add(g.Id)||String.IsNullOrWhiteSpace(g.Name)||String.IsNullOrWhiteSpace(g.Executable))throw new InvalidDataException("Cadastro de jogo inválido.");}
       return lib;
@@ -100,7 +102,7 @@ namespace Nexus {
         g.Name="Bloodborne";string direct=Path.Combine(dir,"Bloodborne.exe");if(File.Exists(direct))g.Executable=direct;
       }
       g.ConfigurationExecutable=FindConfigurationExecutable(g);
-      return g;
+      foreach(var entry in PortCatalog.LoadEntries().Where(e=>!e.ProjectOnly))if(entry.PlayNames.Any(n=>Path.GetFileName(full).Equals(n,StringComparison.OrdinalIgnoreCase))){if(g.Name==name)g.Name=entry.Name;g.Platform=entry.Platform;g.ArtworkSearchTitle=entry.ArtworkTitle;string cfg=entry.ConfigNames.Select(n=>Path.Combine(dir,n)).FirstOrDefault(File.Exists);g.ConfigurationExecutable=cfg;g.Repository=entry.Repository;g.Arguments=entry.Arguments??"";break;}g.Platform=Platforms.Resolve(g);return g;
     }
     public static List<Game> Detect(string downloads) {
       List<Game> result=new List<Game>();if(!Directory.Exists(downloads))return result;

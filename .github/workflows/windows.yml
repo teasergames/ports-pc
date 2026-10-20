@@ -19,6 +19,11 @@ jobs:
         shell: pwsh
         run: |
           $testData = Join-Path $env:RUNNER_TEMP 'nexus-smoke'
+          New-Item -ItemType Directory -Path $testData -Force | Out-Null
+          $fixtureExe = (Resolve-Path ./dist/Nexus/Nexus.exe).Path
+          $platforms = @('PlayStation 4','PlayStation 3','Xbox','Xbox 360','Xbox One','Nintendo Switch','Outras')
+          $fixtures = foreach ($platform in $platforms) { @{Id=[guid]::NewGuid().ToString('N');Name="Fixture $platform";Executable=$fixtureExe;Platform=$platform;ConfigurationExecutable=$(if ($platform -eq 'PlayStation 4') {$fixtureExe} else {$null})} }
+          @{Version=1;Games=@($fixtures);OnlineArtwork=$false} | ConvertTo-Json -Depth 5 | Set-Content (Join-Path $testData 'library.json') -Encoding utf8
           $image = Join-Path $env:RUNNER_TEMP 'nexus-preview.png'
           foreach ($viewCase in @(@('grid',140),@('grid',340),@('list',48),@('list',132))) {
             $process = Start-Process ./dist/Nexus/Nexus.exe -ArgumentList @('--data-dir', "`"$testData`"", '--smoke-test', "`"$image`"", '--preview-view', $viewCase[0], '--preview-size', $viewCase[1]) -Wait -PassThru -WindowStyle Hidden

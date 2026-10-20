@@ -1,3 +1,15 @@
+# Validação 1.2.0 — 20/10/2026
+
+- Build Windows x64 / .NET Framework 4.8: PASS 115 verificações.
+- Migração de bibliotecas antigas, plataforma desconhecida, filtros exatos Xbox/Xbox 360 combinados com pesquisa e favoritos: PASS.
+- Configuração ausente, perfis manuais sem consulta/download, seleção de release estável excluindo pré-releases: PASS.
+- Seis ZIPs oficiais novos: SHA-256 quando publicado, extração com proteção de caminhos e limites, identificação de executáveis, cadastro, configuração e comando de inicialização sem executar o jogo: PASS.
+- Interface com os seis ports: grade 140/340 e lista 48/132; troca por todas as plataformas; botão Configurar opcional: PASS.
+- Catálogo: filtro de todas as plataformas, estado vazio Xbox One e projetos PS3 com instalação desabilitada: PASS.
+- Não houve teste de gameplay ou garantia de compatibilidade do jogo com GPUs/processadores. Skate 3 permaneceu manual porque seu ZIP não pôde ser validado no ambiente.
+
+Validação histórica:
+
 # Validação da versão 1.1.0
 
 - **96 verificações automatizadas**. O catálogo cobre seleção do ZIP correto, exclusão de código-fonte/Linux/prerelease, rejeição de pacotes ambíguos, download simulado, checksum, extração, nomes de executáveis, receipt, cancelamento, rollback e preservação de instalações existentes.

@@ -16,6 +16,7 @@ namespace Nexus {
   public class PortEntry {
     public string Id {get;set;}public string Name {get;set;}public string Repository {get;set;}public string AssetPattern {get;set;}
     public string[] PlayNames {get;set;}public string[] ConfigNames {get;set;}public string Arguments {get;set;}public string ArtworkTitle {get;set;}public string Notes {get;set;}
+    public string Platform {get;set;}public string Kind {get;set;}public bool ProjectOnly {get;set;}
     public override string ToString(){return Name;}
   }
   public class PortRelease {
@@ -28,17 +29,17 @@ namespace Nexus {
     readonly Dictionary<string,DateTime> memoTime=new Dictionary<string,DateTime>();
     public PortCatalog():this(new HttpClientHandler()){}
     public PortCatalog(HttpMessageHandler handler){
-      Entries=LoadEntries();ServicePointManager.SecurityProtocol|=SecurityProtocolType.Tls12;client=new HttpClient(handler);client.Timeout=Timeout.InfiniteTimeSpan;client.DefaultRequestHeaders.UserAgent.ParseAdd("NexusPortsPC/1.1 (https://github.com/teasergames/ports-pc)");
+      Entries=LoadEntries();ServicePointManager.SecurityProtocol|=SecurityProtocolType.Tls12;client=new HttpClient(handler);client.Timeout=Timeout.InfiniteTimeSpan;client.DefaultRequestHeaders.UserAgent.ParseAdd("NexusPortsPC/1.2 (https://github.com/teasergames/ports-pc)");
     }
     public static List<PortEntry> LoadEntries(){
       using(var stream=Assembly.GetExecutingAssembly().GetManifestResourceStream("Nexus.ports.json"))using(var reader=new StreamReader(stream)){
         var entries=new JavaScriptSerializer().Deserialize<List<PortEntry>>(reader.ReadToEnd());var ids=new HashSet<string>();
-        foreach(var e in entries){if(!Regex.IsMatch(e.Id??"",@"^[a-z0-9-]+$")||!ids.Add(e.Id)||!Regex.IsMatch(e.Repository??"",@"^[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+$")||e.PlayNames==null||e.ConfigNames==null)throw new InvalidDataException("Entrada do catálogo inválida.");new Regex(e.AssetPattern);}
+        foreach(var e in entries){if(!Regex.IsMatch(e.Id??"",@"^[a-z0-9-]+$")||!ids.Add(e.Id)||!Regex.IsMatch(e.Repository??"",@"^[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+$")||e.PlayNames==null||e.ConfigNames==null)throw new InvalidDataException("Entrada do catálogo inválida.");if(!Platforms.All.Skip(1).Contains(e.Platform))throw new InvalidDataException("Plataforma inválida.");if(!e.ProjectOnly){if(e.PlayNames.Length==0||!e.AssetPattern.EndsWith("zip$"))throw new InvalidDataException("Perfil Windows inválido.");new Regex(e.AssetPattern);}}
         return entries;
       }
     }
     public async Task<PortRelease> Latest(PortEntry entry,CancellationToken token,bool force=false){
-      token.ThrowIfCancellationRequested();PortRelease previous;DateTime checkedAt;
+      token.ThrowIfCancellationRequested();if(entry.ProjectOnly)throw new InvalidDataException("Este projeto não tem instalação automática validada. Abra o projeto para instruções.");PortRelease previous;DateTime checkedAt;
       if(!force&&memo.TryGetValue(entry.Repository,out previous)&&memoTime.TryGetValue(entry.Repository,out checkedAt)&&(DateTime.UtcNow-checkedAt).TotalMinutes<10)return previous;
       try{var current=await FetchLatest(entry,token);current.CheckedUtc=DateTime.UtcNow.ToString("o");memo[entry.Repository]=current;memoTime[entry.Repository]=DateTime.UtcNow;return current;}
       catch(HttpRequestException){var cached=BundledRelease(entry);if(cached==null)throw;memo[entry.Repository]=cached;memoTime[entry.Repository]=DateTime.UtcNow;return cached;}
@@ -87,7 +88,7 @@ namespace Nexus {
     }
     static string DisplayPath(string path){return path.StartsWith(@"\\?\UNC\")?@"\\"+path.Substring(8):path.StartsWith(@"\\?\")?path.Substring(4):path;}
     public async Task<Game> Install(PortEntry entry,PortRelease release,string parent,IProgress<InstallProgress> progress,CancellationToken token){
-      ValidateDownloadUrl(entry,release.DownloadUrl);string root=Path.GetFullPath(parent);Directory.CreateDirectory(FsPath(root));
+      if(entry.ProjectOnly)throw new InvalidDataException("Instalação automática indisponível para este projeto.");ValidateDownloadUrl(entry,release.DownloadUrl);string root=Path.GetFullPath(parent);Directory.CreateDirectory(FsPath(root));
       string final=ChildPath(root,entry.Id+"-"+VersionFolder(release.Version));if(Directory.Exists(FsPath(final))||File.Exists(FsPath(final)))throw new IOException("Esta pasta de versão já existe. Escolha outro destino; nenhum arquivo foi substituído.");
       string staging=ChildPath(root,".nexus-install-"+Guid.NewGuid().ToString("N")),download=staging+".zip";Directory.CreateDirectory(FsPath(staging));
       try{
@@ -108,9 +109,9 @@ namespace Nexus {
         await Task.Run(()=>Extract(download,staging,progress,token),token);
         Game game=Register(entry,staging,release.Version);token.ThrowIfCancellationRequested();
         // Paths are rewritten only after the complete package has been validated.
-        string exe=game.Executable.Substring(staging.Length),config=game.ConfigurationExecutable.Substring(staging.Length);
+        string exe=game.Executable.Substring(staging.Length),config=String.IsNullOrEmpty(game.ConfigurationExecutable)?null:game.ConfigurationExecutable.Substring(staging.Length);
         File.WriteAllText(FsPath(ChildPath(staging,".nexus-install.json")),new JavaScriptSerializer().Serialize(new {repository=entry.Repository,version=release.Version,asset=release.AssetName,digest=release.Digest,downloadedAt=DateTime.UtcNow.ToString("o")}));
-        Directory.Move(FsPath(staging),FsPath(final));game.Executable=final+exe;game.ConfigurationExecutable=final+config;game.WorkingDirectory=Path.GetDirectoryName(game.Executable);game.ManagedInstallationRoot=final;
+        Directory.Move(FsPath(staging),FsPath(final));game.Executable=final+exe;game.ConfigurationExecutable=config==null?null:final+config;game.WorkingDirectory=Path.GetDirectoryName(game.Executable);game.ManagedInstallationRoot=final;
         Report(progress,"Instalado e pronto para adicionar à biblioteca.",100);return game;
       }finally{
         if(File.Exists(FsPath(download)))File.Delete(FsPath(download));
@@ -141,8 +142,8 @@ namespace Nexus {
     }
     public static Game Register(PortEntry entry,string folder,string version){
       string exe=FindExecutable(folder,entry.PlayNames),config=FindExecutable(folder,entry.ConfigNames);
-      if(exe==null||config==null)throw new InvalidDataException("A estrutura deste pacote mudou: executáveis esperados não encontrados. Nada foi cadastrado; confira o projeto.");
-      return new Game{Name=entry.Name,Executable=exe,Arguments=entry.Arguments??"",WorkingDirectory=Path.GetDirectoryName(exe),ConfigurationExecutable=config,ArtworkSearchTitle=entry.ArtworkTitle,Repository=entry.Repository,InstalledVersion=version,ManagedInstallationRoot=folder};
+      if(entry.ProjectOnly||exe==null||(entry.ConfigNames.Length>0&&config==null))throw new InvalidDataException("A estrutura deste pacote mudou: executáveis esperados não encontrados. Nada foi cadastrado; confira o projeto.");
+      return new Game{Name=entry.Name,Platform=entry.Platform,Executable=exe,Arguments=entry.Arguments??"",WorkingDirectory=Path.GetDirectoryName(exe),ConfigurationExecutable=config,ArtworkSearchTitle=entry.ArtworkTitle,Repository=entry.Repository,InstalledVersion=version,ManagedInstallationRoot=folder};
     }
     static string FindExecutable(string root,string[] names){
       // Packages may have one or several enclosing folders. Never pick a runtime by extension alone.

@@ -43,6 +43,7 @@
                 <Grid Width="210" DockPanel.Dock="Right"><TextBox x:Name="SearchBox" ToolTip="Buscar na sua coleção" AutomationProperties.Name="Buscar na coleção"/><TextBlock Text="Buscar na coleção…" Foreground="#959FAF" Margin="12,0" VerticalAlignment="Center" IsHitTestVisible="False"><TextBlock.Style><Style TargetType="TextBlock"><Setter Property="Visibility" Value="Collapsed"/><Style.Triggers><DataTrigger Binding="{Binding Text, ElementName=SearchBox}" Value=""><Setter Property="Visibility" Value="Visible"/></DataTrigger></Style.Triggers></Style></TextBlock.Style></TextBlock></Grid>
               </DockPanel>
               <WrapPanel Margin="0,0,0,17" VerticalAlignment="Center">
+                <ComboBox x:Name="PlatformFilter" Width="185" Margin="0,0,18,8" Padding="8,6" Foreground="#101115" AutomationProperties.Name="Filtrar plataforma"/>
                 <CheckBox x:Name="FavoritesOnly" Content="Apenas favoritos" Margin="0,0,22,8" VerticalAlignment="Center"/>
                 <Button x:Name="GridViewButton" Content="▦  Grade" Padding="12,7" Margin="0,0,7,8" ToolTip="Visualizar em grade"/>
                 <Button x:Name="ListViewButton" Content="☷  Lista" Padding="12,7" Margin="0,0,20,8" ToolTip="Visualizar em lista"/>

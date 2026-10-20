@@ -2,13 +2,19 @@
 
 Launcher de biblioteca para ports de PC, com interface imersiva e artwork do jogo selecionado. Aplicativo nativo WPF para **Windows 11 x64**, com .NET Framework 4.8, que já acompanha o Windows 11. Não precisa de Node, Python, navegador, conta ou permissão de administrador para executar.
 
+Na **1.2.0**, a coleção e o catálogo têm filtros para **PlayStation 4, PlayStation 3, Xbox, Xbox 360, Xbox One, Nintendo Switch e Outras**. O filtro combina com busca, favoritos, grade e lista. Em **Editar cadastro**, escolha a plataforma de qualquer instalação manual. Os cadastros antigos conhecidos são classificados automaticamente; jogos desconhecidos ficam em Outras.
+
+O catálogo tem **23 perfis**, dos quais **18 permitem baixar e adicionar**. Novos downloads: Halo/OpenCE (Xbox), Sonic Unleashed Recompiled (Xbox 360), Hyrule Warriors e Bayonetta 2 (Switch), Gravity Rush Remastered e Gravity Rush 2 (PS4). Os demais projetos novos estão marcados como instalação manual/em desenvolvimento, com o motivo e link para a fonte. Xbox One ainda não tem port de jogo com pacote Windows validado nesta pesquisa; seu filtro aceita instalações adicionadas manualmente.
+
+**Configurar jogo** aparece quando há um launcher associado. Em ports com opções internas, use o menu do jogo. Bayonetta 2 exige preparação no builder e Jogar abre seu launcher. Esses detalhes aparecem antes de baixar. O NEXUS não transforma versões de console em ports nem garante a compatibilidade dos projetos de terceiros.
+
 Na versão **1.0.1**, **Configurar jogo** abre o launcher original de configuração. **Editar cadastro** altera nome, executável, argumentos e artwork no NEXUS. **Jogar** usa a entrada direta do port. Você pode escolher manualmente um launcher de configuração em Editar cadastro.
 
 Na **1.0.2**, escolha **Grade** ou **Lista** na barra da coleção. Use o controle **Tamanho** ou os botões **− / ＋** para ajustar as capas da grade (140–340 px) ou a altura das linhas da lista (48–132 px). O modo e o tamanho de cada visualização são lembrados separadamente ao trocar de modo e ao reabrir o aplicativo. Busca, favoritos e seleção funcionam nos dois modos. Na lista, cada linha mostra a imagem, o nome e a última abertura; em linhas maiores também aparece o estado de favorito.
 
 Na **1.1.0**, **Baixar ports**, ao lado de Detectar ports, abre o catálogo de **11 jogos / 12 fontes**. Consulta a última release estável, baixa o ZIP Windows, verifica SHA-256 quando publicado, extrai e adiciona à biblioteca. Há progresso, cancelamento e escolha do destino. Inclui GOW III, Bloodborne, Shadow (original/fork Oussama268), Uncharted e os sete novos projetos: DRIVECLUB, inFAMOUS Second Son, The Last Guardian, CTR Nitro-Fueled, MediEvil, Gran Turismo Sport e The Order: 1886. Veja [CATALOG.md](CATALOG.md) para fontes, funcionamento e diferenças de inicialização.
 
-Cada instalação usa uma pasta nova por versão; não substitui ports existentes nem migra automaticamente saves/configurações entre cópias. Após baixar, use Configurar jogo para indicar seus próprios arquivos. Se a API do GitHub estiver limitada, o catálogo sinaliza quando usa o cache verificado, com data visível. O suporte a caminhos longos da extração não exige editar o Registro do Windows.
+Cada instalação usa uma pasta nova por versão; não substitui ports existentes nem migra automaticamente saves/configurações entre cópias. Após baixar, siga as instruções do perfil para preparar seus próprios arquivos. Se a API do GitHub estiver limitada, o catálogo sinaliza quando usa o cache verificado, com data visível. O suporte a caminhos longos da extração não exige editar o Registro do Windows.
 
 ## Usar
 

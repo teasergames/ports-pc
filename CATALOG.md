@@ -2,6 +2,30 @@
 
 O NEXUS consulta a última **release estável** de cada repositório e seleciona somente o ZIP Windows definido pelo perfil. Não escolhe arquivos de código-fonte, Linux ou atualizadores isolados. Os projetos abaixo são ports/forks independentes, sem vínculo oficial com os detentores dos jogos.
 
+## Catálogo multiplataforma — pesquisa de 20/10/2026
+
+A plataforma é a versão de origem usada por cada port. Uma versão Switch de um jogo lançado também no Wii U continua classificada como Switch. Não foram adicionados emuladores genéricos como se fossem ports nativos. O tipo e o estágio do projeto ficam visíveis no catálogo; uma release sem a marcação prerelease não implica que o jogo esteja finalizado.
+
+| Plataforma | Projeto / fonte primária | Instalação no NEXUS | Preparação e configuração |
+| --- | --- | --- | --- |
+| Xbox | [Halo: Combat Evolved · OpenCE](https://github.com/OpenCommunityEdition/OpenCE) | Baixar e adicionar | Port do Xbox original. Na primeira abertura, selecione sua imagem do disco. Opções no menu do jogo; não possui launcher de configuração separado. |
+| Xbox 360 | [Sonic Unleashed · Unleashed Recompiled](https://github.com/hedge-dev/UnleashedRecomp) | Baixar e adicionar | Recompilação da versão Xbox 360. Primeira abertura guia a instalação dos seus arquivos. Configurações dentro do jogo. Requer CPU AVX e GPU Direct3D 12 ou Vulkan 1.2. |
+| Nintendo Switch | [Hyrule Warriors: Definitive Edition](https://github.com/sonsegajp/HWDER) | Baixar e adicionar | Projeto inicial. Coloque seu NSP base e suas prod.keys ao lado do hwder.exe. F1 abre as opções dentro do jogo. Requer AVX2, Vulkan 1.2 e Media Foundation. Instala somente releases sem marcação pré-release. |
+| Nintendo Switch | [Bayonetta 2](https://github.com/K0NL/B2recomp) | Baixar e adicionar | Builder e launcher: prepara o jogo localmente a partir do seu próprio dump. Jogar abre o launcher e você clica em Play. Configurar abre a mesma interface. Requer Vulkan 1.3; preparação inicial pode demorar. |
+| PlayStation 4 | [Gravity Rush Remastered](https://github.com/LucaPazienza/gravityrush_pc) | Baixar e adicionar | Configure seu dump PS4 no launcher original. Jogar usa o executável direto e os ajustes salvos. Projeto em desenvolvimento. |
+| PlayStation 4 | [Gravity Rush 2](https://github.com/HayatoG/gr2_pc) | Baixar e adicionar | Jogar usa a entrada direta e Configurar abre o launcher bilíngue. Forneça seus arquivos PS4. |
+| Xbox 360 | [Skate 3](https://github.com/mchughalex/skate3recomp) | Manual / projeto | Existe release Windows, mas o pacote não pôde ser validado neste ambiente. Instalação automática indisponível nesta versão. Consulte o projeto e adicione sua instalação manualmente. |
+| Xbox 360 | [GoldenEye 007 · Xbox 360](https://github.com/SunJaycy/GoldenEye-Recomp) | Manual / projeto | Em desenvolvimento; a release publica RAR, formato ainda não suportado pelo instalador NEXUS. Extraia manualmente, forneça seus próprios arquivos em assets e adicione ge.exe. Opções dentro do jogo. O projeto relata problemas em GPUs AMD. |
+| Nintendo Switch | [The Legend of Zelda: Link’s Awakening](https://github.com/kaliszmichal/lasrecomp) | Manual / projeto | Sem release publicada na data da pesquisa. Requer compilação e seu próprio dump. Consulte o projeto; adicione o executável manualmente após preparar sua instalação. |
+| PlayStation 3 | [The Simpsons Arcade Game · PS3](https://github.com/sp00nznet/simpsonsarcade-ps3) | Manual / projeto | Experimental. Sem release Windows pronta publicada na data da pesquisa. Requer compilação com ps3recomp e seus próprios arquivos PS3. Abra o projeto para o estado e as instruções atuais. |
+| PlayStation 3 | [Tornado Outbreak · PS3](https://github.com/sp00nznet/tornado) | Manual / projeto | Experimental: o autor relata que chega ao jogo, ainda com desempenho limitado. Sem release Windows pronta publicada na data da pesquisa. Requer compilação e seus próprios arquivos. |
+
+**Xbox One:** a organização [XWine1](https://github.com/XWine1) publica componentes de pesquisa da camada de compatibilidade, como [SlimEra](https://github.com/XWine1/SlimEra). Não foi identificado nesta pesquisa um instalador de port de jogo Windows pronto que possa ser cadastrado automaticamente. O filtro existe, aceita cadastros manuais e apresenta esse limite.
+
+PS3: os dois projetos selecionados documentam progresso em jogo, mas não publicavam uma release Windows pronta na consulta. Não instalamos o SDK ps3recomp como se fosse o jogo. Link’s Awakening também não publicava releases. GoldenEye usa RAR; o instalador aceita somente ZIP. O pacote de Skate 3 não pôde ser lido/validado no ambiente de teste e não recebeu instalação automática. Isso não é uma conclusão sobre a segurança desse projeto.
+
+Foram baixados os seis ZIPs novos habilitados para instalação, conferidos os SHA-256 quando publicados, extraídos pelo código do NEXUS e cadastrados com os executáveis reais. Nenhum jogo de terceiros foi executado. Não houve teste de gameplay, GPU, ROM, chave ou firmware. Os requisitos dos ports são independentes dos requisitos do launcher.
+
 ## Identificados nas instalações existentes
 
 | Jogo | Repositório | Observação |

@@ -345,5 +345,116 @@
     "Notes": "Experimental: o autor relata que chega ao jogo, ainda com desempenho limitado. Sem release Windows pronta publicada na data da pesquisa. Requer compilação e seus próprios arquivos.",
     "ArtworkTitle": "Tornado Outbreak",
     "ProjectOnly": true
+  },
+  {
+    "Id": "black",
+    "Name": "BLACK · XBERecomp",
+    "Repository": "TGP482/BLACK-XBERecomp",
+    "Platform": "Xbox",
+    "ArtworkTitle": "Black (video game)",
+    "AssetPattern": "^BLACK-XBERecomp\\.zip$",
+    "PlayNames": [
+      "BLACK.exe"
+    ],
+    "ConfigNames": [],
+    "Notes": "Xbox original. Forneça seu ISO ou arquivos extraídos em assets ao lado de BLACK.exe. A primeira abertura prepara o código localmente. Opções no jogo e na sobreposição F10; não tem launcher de configuração separado.",
+    "Kind": "Recompilação"
+  },
+  {
+    "Id": "darkwatch",
+    "Name": "Darkwatch · Arizona Vamp",
+    "Repository": "Clergyman0013/arizona-vamp-recomp",
+    "Platform": "Xbox",
+    "ArtworkTitle": "Darkwatch",
+    "AssetPattern": "^ArizonaVampRecomp-.*-windows-x64\\.zip$",
+    "PlayNames": [
+      "Darkwatch.exe"
+    ],
+    "ConfigNames": [],
+    "AllowPrerelease": true,
+    "Notes": "BETA: projeto em desenvolvimento. Coloque seu ISO ou arquivos do Xbox em assets ao lado de Darkwatch.exe. F1 abre as opções dentro do jogo. A instalação exige marcar a aceitação da versão beta.",
+    "Kind": "Recompilação"
+  },
+  {
+    "Id": "forza2",
+    "Name": "Forza Motorsport 2",
+    "Repository": "0herculabs/hl360-forza2",
+    "Platform": "Xbox 360",
+    "AssetPattern": "^Forza2-Native-.*-windows-x64\\.zip$",
+    "PlayNames": [
+      "forza2.exe"
+    ],
+    "ConfigNames": [
+      "Forza2Launcher.exe"
+    ],
+    "Notes": "Configure seu ISO, perfil e gráficos no launcher. Na primeira execução e após alterar a resolução, use Play no launcher para preparar shaders. Depois, Jogar abre forza2.exe com os ajustes salvos. Projeto em desenvolvimento.",
+    "Kind": "Recompilação",
+    "ArtworkTitle": "Forza Motorsport 2"
+  },
+  {
+    "Id": "forza3",
+    "Name": "Forza Motorsport 3",
+    "Repository": "0herculabs/hl360-forza3",
+    "Platform": "Xbox 360",
+    "AssetPattern": "^FM3\\.zip$",
+    "PlayNames": [
+      "fm3.exe"
+    ],
+    "ConfigNames": [
+      "fm3-launcher.exe"
+    ],
+    "Notes": "Configure os dois discos da Ultimate Collection e o perfil no launcher original. Jogar abre fm3.exe com os arquivos TOML salvos. Prefira uma pasta curta de instalação para os arquivos dos discos.",
+    "Kind": "Recompilação",
+    "ArtworkTitle": "Forza Motorsport 3"
+  },
+  {
+    "Id": "forza4",
+    "Name": "Forza Motorsport 4",
+    "Repository": "0herculabs/hl360-forza4",
+    "Platform": "Xbox 360",
+    "AssetPattern": "^FM4-.*-windows-x64\\.zip$",
+    "PlayNames": [
+      "fm4.exe"
+    ],
+    "ConfigNames": [
+      "fm4-launcher.exe"
+    ],
+    "Notes": "Prepare os dois discos USA Rev 1 e seu perfil em Configurar jogo. Jogar abre fm4.exe com os ajustes salvos. Algumas alterações de mods/120 FPS são aplicadas no Play do launcher: use-o ao mudar essas opções. Prefira uma pasta curta.",
+    "Kind": "Recompilação",
+    "ArtworkTitle": "Forza Motorsport 4"
+  },
+  {
+    "Id": "forza-horizon",
+    "Name": "Forza Horizon · Pinyon Shift",
+    "Repository": "arcanite24/pinyon-shift",
+    "Platform": "Xbox 360",
+    "ArtworkTitle": "Forza Horizon",
+    "AssetPattern": "^PinyonShift-Launcher\\.zip$",
+    "PlayNames": [
+      "PinyonShiftLauncher.exe"
+    ],
+    "ConfigNames": [
+      "PinyonShiftLauncher.exe"
+    ],
+    "Kind": "Builder / recompilação",
+    "Notes": "Prévia jogável. Jogar e Configurar abrem o launcher original. Forneça seu disco e use Verify and build; a preparação pode levar 20–60 minutos e requer cerca de 30 GB. O NEXUS não inicia a compilação nem instala ferramentas automaticamente."
+  },
+  {
+    "Id": "azimuth",
+    "Name": "Forza Horizon 2 · Azimuth",
+    "Repository": null,
+    "SourceUrl": "https://almost-there-games.itch.io/azimuth",
+    "ManualPackage": true,
+    "Platform": "Xbox One",
+    "ArtworkTitle": "Forza Horizon 2",
+    "AssetPattern": "^azimuth-windows(?:\\s*\\(\\d+\\))?\\.zip$",
+    "PlayNames": [
+      "azimuth.exe"
+    ],
+    "ConfigNames": [
+      "azimuth.exe"
+    ],
+    "Kind": "Camada de compatibilidade",
+    "Notes": "Distribuição oficial no itch.io. Use Baixar no site oficial e depois Importar ZIP e adicionar. Jogar e Configurar abrem o Azimuth: indique seus arquivos Xbox One 1.0.0.64 na página Game e inicie por ali. Suporta Storm Island; Fast & Furious é experimental. O NEXUS não redistribui o wrapper nem os jogos."
   }
 ]

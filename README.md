@@ -2,6 +2,16 @@
 
 Launcher de biblioteca para ports de PC, com interface imersiva e artwork do jogo selecionado. Aplicativo nativo WPF para **Windows 11 x64**, com .NET Framework 4.8, que já acompanha o Windows 11. Não precisa de Node, Python, navegador, conta ou permissão de administrador para executar.
 
+Na **1.3.0**, foram integrados **BLACK**, **Darkwatch**, **Forza Motorsport 2, 3 e 4**, **Forza Horizon / Pinyon Shift** e **Forza Horizon 2 / Azimuth**. São **30 perfis**: 24 com download GitHub, 1 com importação do ZIP oficial do itch.io e 5 com instruções manuais.
+
+- Darkwatch está em beta. O catálogo mostra o aviso e só habilita a instalação após marcar a aceitação. Os demais perfis continuam consultando apenas releases estáveis.
+- Azimuth: filtre **Xbox One**, escolha **Forza Horizon 2 · Azimuth**, clique **Baixar no site oficial** e obtenha `azimuth-windows.zip` no itch.io. Depois clique **Importar ZIP e adicionar** no NEXUS e escolha o arquivo. A extração e o cadastro são automáticos. O download e a versão atual são controlados pelo autor; não há espelho ou redistribuição no NEXUS.
+- Forza Motorsport 2/3/4 têm entradas de Jogar e Configurar separadas. Prepare seus discos e perfis no launcher antes de jogar. Em FM2, use o Play do launcher na preparação de shaders; em FM4, use-o quando alterar opções de mods/120 FPS que são aplicadas ao iniciar.
+- Forza Horizon e Azimuth abrem seus launchers originais em ambos os botões. Pinyon Shift compila a partir do seu disco, processo que pode levar 20–60 minutos e requer cerca de 30 GB. NEXUS não executa essa preparação por conta própria.
+- BLACK e Darkwatch possuem configurações internas, sem botão de launcher separado.
+
+Histórico de recursos:
+
 Na **1.2.0**, a coleção e o catálogo têm filtros para **PlayStation 4, PlayStation 3, Xbox, Xbox 360, Xbox One, Nintendo Switch e Outras**. O filtro combina com busca, favoritos, grade e lista. Em **Editar cadastro**, escolha a plataforma de qualquer instalação manual. Os cadastros antigos conhecidos são classificados automaticamente; jogos desconhecidos ficam em Outras.
 
 O catálogo tem **23 perfis**, dos quais **18 permitem baixar e adicionar**. Novos downloads: Halo/OpenCE (Xbox), Sonic Unleashed Recompiled (Xbox 360), Hyrule Warriors e Bayonetta 2 (Switch), Gravity Rush Remastered e Gravity Rush 2 (PS4). Os demais projetos novos estão marcados como instalação manual/em desenvolvimento, com o motivo e link para a fonte. Xbox One ainda não tem port de jogo com pacote Windows validado nesta pesquisa; seu filtro aceita instalações adicionadas manualmente.

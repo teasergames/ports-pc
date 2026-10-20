@@ -18,8 +18,8 @@ using Microsoft.Win32;
 
 [assembly: AssemblyTitle("NEXUS · Ports PC")]
 [assembly: AssemblyProduct("NEXUS Ports PC")]
-[assembly: AssemblyVersion("1.2.0.0")]
-[assembly: AssemblyFileVersion("1.2.0.0")]
+[assembly: AssemblyVersion("1.3.0.0")]
+[assembly: AssemblyFileVersion("1.3.0.0")]
 [assembly: System.Runtime.Versioning.TargetFramework(".NETFramework,Version=v4.8")]
 namespace Nexus {
   public static class Program {
@@ -32,7 +32,7 @@ namespace Nexus {
         bool owns=false;try{try{owns=mutex.WaitOne(0);}catch(AbandonedMutexException){owns=true;}
           if(!owns){MessageBox.Show("O NEXUS já está aberto.","NEXUS");return 0;}
           var app=new Application();app.ShutdownMode=ShutdownMode.OnMainWindowClose;
-          app.DispatcherUnhandledException+=(sender,eventArgs)=>{store.Log(eventArgs.Exception.ToString());MessageBox.Show(eventArgs.Exception.Message,"Não foi possível concluir",MessageBoxButton.OK,MessageBoxImage.Warning);eventArgs.Handled=true;};
+          app.DispatcherUnhandledException+=(sender,eventArgs)=>{store.Log(eventArgs.Exception.ToString());if(smoke){File.WriteAllText(Path.Combine(root,"smoke-error.txt"),eventArgs.Exception.ToString());eventArgs.Handled=true;app.Shutdown(1);return;}MessageBox.Show(eventArgs.Exception.Message,"Não foi possível concluir",MessageBoxButton.OK,MessageBoxImage.Warning);eventArgs.Handled=true;};
           var controller=new Launcher(store,smoke);app.MainWindow=controller.Window;
           if(smoke){index=System.Array.IndexOf(args,"--smoke-test");string target=index+1<args.Length?args[index+1]:Path.Combine(root,"preview.png");int viewIndex=System.Array.IndexOf(args,"--preview-view"),sizeIndex=System.Array.IndexOf(args,"--preview-size");string view=viewIndex>=0&&viewIndex+1<args.Length?args[viewIndex+1]:null;int size=0;if(sizeIndex>=0&&sizeIndex+1<args.Length)Int32.TryParse(args[sizeIndex+1],out size);controller.Window.Loaded+=delegate{controller.Window.Dispatcher.BeginInvoke(new Action(delegate{if(view!=null)controller.PreviewView(view,size);controller.Capture(target);app.Shutdown();}),System.Windows.Threading.DispatcherPriority.ApplicationIdle);};}
           app.Run(controller.Window);return 0;

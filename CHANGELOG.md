@@ -1,5 +1,13 @@
 # Changelog
 
+## 1.3.0 — 2026-10-20
+
+- Sete novos perfis Xbox: BLACK, Darkwatch, Forza Motorsport 2/3/4, Forza Horizon e Forza Horizon 2 / Azimuth.
+- Darkwatch beta com aceitação explícita, mantendo exclusão de pré-releases nos demais perfis.
+- Download oficial do Azimuth via navegador e importação do ZIP com extração, cadastro e configuração associados ao Xbox One.
+- Importação com cópia temporária, identificação SHA-256, cancelamento, limites de extração e proteção contra sobrescrita.
+- 140 verificações automatizadas e instalação dos sete pacotes reais sem executar jogos.
+
 ## 1.2.0 — 2026-10-20
 
 - Filtros de plataforma na biblioteca e no catálogo; plataforma editável por jogo e migração dos cadastros conhecidos.

@@ -102,7 +102,7 @@ namespace Nexus {
         g.Name="Bloodborne";string direct=Path.Combine(dir,"Bloodborne.exe");if(File.Exists(direct))g.Executable=direct;
       }
       g.ConfigurationExecutable=FindConfigurationExecutable(g);
-      foreach(var entry in PortCatalog.LoadEntries().Where(e=>!e.ProjectOnly))if(entry.PlayNames.Any(n=>Path.GetFileName(full).Equals(n,StringComparison.OrdinalIgnoreCase))){if(g.Name==name)g.Name=entry.Name;g.Platform=entry.Platform;g.ArtworkSearchTitle=entry.ArtworkTitle;string cfg=entry.ConfigNames.Select(n=>Path.Combine(dir,n)).FirstOrDefault(File.Exists);g.ConfigurationExecutable=cfg;g.Repository=entry.Repository;g.Arguments=entry.Arguments??"";break;}g.Platform=Platforms.Resolve(g);return g;
+      foreach(var entry in PortCatalog.LoadEntries().Where(e=>!e.ProjectOnly))if(entry.PlayNames.Any(n=>Path.GetFileName(full).Equals(n,StringComparison.OrdinalIgnoreCase))){if(g.Name==name)g.Name=entry.Name;g.Platform=entry.Platform;g.ArtworkSearchTitle=entry.ArtworkTitle;string cfg=entry.ConfigNames.Select(n=>Path.Combine(dir,n)).FirstOrDefault(File.Exists);g.ConfigurationExecutable=cfg;g.Repository=entry.Identity;g.Arguments=entry.Arguments??"";break;}g.Platform=Platforms.Resolve(g);return g;
     }
     public static List<Game> Detect(string downloads) {
       List<Game> result=new List<Game>();if(!Directory.Exists(downloads))return result;

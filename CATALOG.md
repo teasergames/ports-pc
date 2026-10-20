@@ -1,6 +1,20 @@
 # Catálogo de ports
 
-O NEXUS consulta a última **release estável** de cada repositório e seleciona somente o ZIP Windows definido pelo perfil. Não escolhe arquivos de código-fonte, Linux ou atualizadores isolados. Os projetos abaixo são ports/forks independentes, sem vínculo oficial com os detentores dos jogos.
+O NEXUS consulta a última **release estável** dos perfis GitHub e seleciona somente o ZIP Windows definido. Darkwatch consulta também pré-releases, com identificação BETA e aceitação explícita antes de instalar. Azimuth usa sua página oficial no itch.io e importação local do ZIP. Não escolhe arquivos de código-fonte, Linux ou atualizadores isolados. Os projetos abaixo são ports/forks independentes, sem vínculo oficial com os detentores dos jogos.
+
+## Novos perfis Xbox — versão 1.3.0
+
+| Jogo / fonte primária | Origem | Jogar | Configurar / preparação |
+| --- | --- | --- | --- |
+| [BLACK · XBERecomp](https://github.com/TGP482/BLACK-XBERecomp) | Xbox | `BLACK.exe` | Xbox original. Forneça seu ISO ou arquivos extraídos em assets ao lado de BLACK.exe. A primeira abertura prepara o código localmente. Opções no jogo e na sobreposição F10; não tem launcher de configuração separado. |
+| [Darkwatch · Arizona Vamp](https://github.com/Clergyman0013/arizona-vamp-recomp) | Xbox | `Darkwatch.exe` | BETA: projeto em desenvolvimento. Coloque seu ISO ou arquivos do Xbox em assets ao lado de Darkwatch.exe. F1 abre as opções dentro do jogo. A instalação exige marcar a aceitação da versão beta. |
+| [Forza Motorsport 2](https://github.com/0herculabs/hl360-forza2) | Xbox 360 | `forza2.exe` | Configure seu ISO, perfil e gráficos no launcher. Na primeira execução e após alterar a resolução, use Play no launcher para preparar shaders. Depois, Jogar abre forza2.exe com os ajustes salvos. Projeto em desenvolvimento. |
+| [Forza Motorsport 3](https://github.com/0herculabs/hl360-forza3) | Xbox 360 | `fm3.exe` | Configure os dois discos da Ultimate Collection e o perfil no launcher original. Jogar abre fm3.exe com os arquivos TOML salvos. Prefira uma pasta curta de instalação para os arquivos dos discos. |
+| [Forza Motorsport 4](https://github.com/0herculabs/hl360-forza4) | Xbox 360 | `fm4.exe` | Prepare os dois discos USA Rev 1 e seu perfil em Configurar jogo. Jogar abre fm4.exe com os ajustes salvos. Algumas alterações de mods/120 FPS são aplicadas no Play do launcher: use-o ao mudar essas opções. Prefira uma pasta curta. |
+| [Forza Horizon · Pinyon Shift](https://github.com/arcanite24/pinyon-shift) | Xbox 360 | `PinyonShiftLauncher.exe` | Prévia jogável. Jogar e Configurar abrem o launcher original. Forneça seu disco e use Verify and build; a preparação pode levar 20–60 minutos e requer cerca de 30 GB. O NEXUS não inicia a compilação nem instala ferramentas automaticamente. |
+| [Forza Horizon 2 · Azimuth](https://almost-there-games.itch.io/azimuth) | Xbox One | `azimuth.exe` | Distribuição oficial no itch.io. Use Baixar no site oficial e depois Importar ZIP e adicionar. Jogar e Configurar abrem o Azimuth: indique seus arquivos Xbox One 1.0.0.64 na página Game e inicie por ali. Suporta Storm Island; Fast & Furious é experimental. O NEXUS não redistribui o wrapper nem os jogos. |
+
+Os seis ZIPs GitHub e o ZIP oficial Azimuth 0.9.10 foram obtidos e validados estruturalmente; os SHA-256 publicados pelo GitHub foram conferidos. Foram extraídos e cadastrados pelo código do NEXUS, sem executar jogos, compiladores ou launchers de terceiros. O SHA-256 calculado na importação do Azimuth identifica o arquivo local e evita sobrescrever a mesma instalação; não é uma assinatura nem uma verificação de autenticidade pelo autor. O NEXUS não redistribui nenhum desses ZIPs.
 
 ## Catálogo multiplataforma — pesquisa de 20/10/2026
 
@@ -20,7 +34,7 @@ A plataforma é a versão de origem usada por cada port. Uma versão Switch de u
 | PlayStation 3 | [The Simpsons Arcade Game · PS3](https://github.com/sp00nznet/simpsonsarcade-ps3) | Manual / projeto | Experimental. Sem release Windows pronta publicada na data da pesquisa. Requer compilação com ps3recomp e seus próprios arquivos PS3. Abra o projeto para o estado e as instruções atuais. |
 | PlayStation 3 | [Tornado Outbreak · PS3](https://github.com/sp00nznet/tornado) | Manual / projeto | Experimental: o autor relata que chega ao jogo, ainda com desempenho limitado. Sem release Windows pronta publicada na data da pesquisa. Requer compilação e seus próprios arquivos. |
 
-**Xbox One:** a organização [XWine1](https://github.com/XWine1) publica componentes de pesquisa da camada de compatibilidade, como [SlimEra](https://github.com/XWine1/SlimEra). Não foi identificado nesta pesquisa um instalador de port de jogo Windows pronto que possa ser cadastrado automaticamente. O filtro existe, aceita cadastros manuais e apresenta esse limite.
+**Xbox One:** Forza Horizon 2 / Azimuth está integrado na versão 1.3.0. A distribuição oficial é no [itch.io](https://almost-there-games.itch.io/azimuth). O NEXUS abre a página e importa o ZIP escolhido pelo usuário, sem espelhos ou links temporários embutidos. O wrapper usa seus arquivos Xbox One (1.0.0.64); Storm Island é suportado, Fast & Furious é experimental. Jogar e Configurar abrem `azimuth.exe`.
 
 PS3: os dois projetos selecionados documentam progresso em jogo, mas não publicavam uma release Windows pronta na consulta. Não instalamos o SDK ps3recomp como se fosse o jogo. Link’s Awakening também não publicava releases. GoldenEye usa RAR; o instalador aceita somente ZIP. O pacote de Skate 3 não pôde ser lido/validado no ambiente de teste e não recebeu instalação automática. Isso não é uma conclusão sobre a segurança desse projeto.
 

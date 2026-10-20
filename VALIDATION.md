@@ -1,3 +1,15 @@
+# Validação 1.3.0 — 20/10/2026
+
+- Build Windows 11 x64 / .NET Framework 4.8: PASS 140 verificações.
+- Novos perfis: seis ZIPs oficiais GitHub, checksums publicados, extração e cadastro via pipeline completo de instalação; comandos de Jogar/Configurar validados sem execução: PASS.
+- Azimuth 0.9.10 baixado pelo fluxo gratuito oficial do itch.io; ZIP importado pelo NEXUS, com origem, plataforma Xbox One e configuração preservadas: PASS.
+- Importação: nomes de download duplicados, rejeição de pacote incorreto, arquivo de origem preservado, cancelamento, falha de cadastro, limpeza de temporários e proteção contra sobrescrita: PASS.
+- Beta: rejeição de drafts, seleção com sinalização de pré-release e recusa de instalação sem aceitação: PASS.
+- Interface: grade 140/340 e lista 48/132 com os sete novos cadastros; filtros, botão de configuração opcional, beta desmarcada por padrão e importação do site oficial: PASS.
+- Gameplay, compilação dos ports, desempenho de GPU e compatibilidade dos discos não foram testados.
+
+Histórico:
+
 # Validação 1.2.0 — 20/10/2026
 
 - Build Windows x64 / .NET Framework 4.8: PASS 115 verificações.

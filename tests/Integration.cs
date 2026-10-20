@@ -8,6 +8,13 @@ public static class Integration {
   public static int Main(string[] args){
     try{
       string root=Path.GetFullPath(args[0]);var store=new Store(root);var lib=new Library();
+      if(args[1]=="xbox-packages"){
+        foreach(var entry in PortCatalog.LoadEntries().Where(e=>new[]{"black","darkwatch","forza2","forza3","forza4","forza-horizon","azimuth"}.Contains(e.Id))){
+          Game game;string parent=Path.Combine(root,"ports");if(entry.ManualPackage){using(var catalog=new PortCatalog())game=catalog.ImportZip(entry,Path.Combine(args[2],"azimuth-windows.zip"),parent,null,CancellationToken.None).GetAwaiter().GetResult();}
+          else {var release=PortCatalog.BundledRelease(entry);byte[] bytes=File.ReadAllBytes(Path.Combine(args[2],release.AssetName));using(var catalog=new PortCatalog(new PackageHandler(bytes)))game=catalog.Install(entry,release,parent,null,CancellationToken.None,entry.AllowPrerelease).GetAwaiter().GetResult();}
+          if(game.Platform!=entry.Platform||!File.Exists(game.Executable))throw new Exception("Package registration failed");if(entry.ConfigNames.Length>0)Ports.ConfigurationStartInfo(game);Ports.StartInfo(game,false);lib.Games.Add(game);store.Save(lib);Console.WriteLine("PASS real package install, configuration and platform: "+entry.Id);
+        }return 0;
+      }
       if(args[1]=="platform-packages"){
         using(var catalog=new PortCatalog())foreach(var entry in catalog.Entries.Where(e=>new[]{"opence","unleashed","hwder","b2recomp","gravity-rush","gravity-rush-2"}.Contains(e.Id))){
           var release=PortCatalog.BundledRelease(entry);string source=Path.Combine(args[2],release.AssetName);PortCatalog.VerifyDigest(source,release.Digest);string destination=Path.Combine(root,entry.Id);if(!Directory.Exists(destination)){Directory.CreateDirectory(destination);PortCatalog.Extract(source,destination,null,CancellationToken.None);}var game=PortCatalog.Register(entry,destination,release.Version);if(game.Platform!=entry.Platform||!File.Exists(game.Executable))throw new Exception("Platform package registration failed");if(entry.ConfigNames.Length>0)Ports.ConfigurationStartInfo(game);else if(!String.IsNullOrEmpty(game.ConfigurationExecutable))throw new Exception("Unexpected configuration launcher");Ports.StartInfo(game,false);lib.Games.Add(game);store.Save(lib);Console.WriteLine("PASS real package extract, platform, configuration and play paths: "+entry.Id);
@@ -15,7 +22,7 @@ public static class Integration {
       }
       if(args[1].StartsWith("catalog")){
         using(var catalog=new PortCatalog()){
-          foreach(var entry in catalog.Entries.Where(e=>!e.ProjectOnly)){
+          foreach(var entry in catalog.Entries.Where(e=>!e.ProjectOnly&&!e.ManualPackage)){
             var latest=catalog.Latest(entry,CancellationToken.None).GetAwaiter().GetResult();Console.WriteLine("PASS release profile"+(latest.FromCache?" (audited cache)":" (live)")+": "+entry.Repository+" "+latest.Version+" "+latest.AssetName);
             if(args[1]=="catalog-install"&&entry.Id=="last-guardian"||args[1]=="catalog-packages"&&new[]{"driveclub","infamous","last-guardian","ctr","medievil","gt-sport","the-order"}.Contains(entry.Id)){
               string parent=Path.Combine(root,"ports"),existing=Path.Combine(parent,entry.Id+"-"+PortCatalog.VersionFolder(latest.Version));
@@ -46,4 +53,9 @@ public static class Integration {
       return 0;
     }catch(Exception ex){Console.Error.WriteLine(ex);return 1;}
   }
+  class PackageHandler:System.Net.Http.HttpMessageHandler {
+    readonly byte[] bytes;public PackageHandler(byte[] content){bytes=content;}
+    protected override System.Threading.Tasks.Task<System.Net.Http.HttpResponseMessage> SendAsync(System.Net.Http.HttpRequestMessage request,CancellationToken token){return System.Threading.Tasks.Task.FromResult(new System.Net.Http.HttpResponseMessage(System.Net.HttpStatusCode.OK){RequestMessage=request,Content=new System.Net.Http.ByteArrayContent(bytes)});}
+  }
+
 }

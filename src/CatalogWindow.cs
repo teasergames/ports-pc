@@ -87,8 +87,8 @@ namespace Nexus {
     public void CaptureSmoke(string path){
       foreach(string name in Platforms.All){platform.SelectedItem=name;int expected=catalog.Entries.Count(e=>name==Platforms.All[0]||e.Platform==name);if(list.Items.Count!=expected)throw new Exception("Catalog platform filter failed");}
       platform.SelectedItem="PlayStation 3";list.SelectedIndex=0;LoadSelected();if(download.IsEnabled||release!=null)throw new Exception("Project-only download must remain disabled");
-      platform.SelectedItem="Xbox";list.SelectedItem=list.Items.Cast<ListBoxItem>().First(i=>((PortEntry)i.Tag).Id=="darkwatch");selected=(PortEntry)((ListBoxItem)list.SelectedItem).Tag;acceptBeta.IsChecked=false;var sample=PortCatalog.BundledRelease(selected);sample.Version="smoke-beta";PresentRelease(selected,sample);
-      if(download.IsEnabled||acceptBeta.Visibility!=Visibility.Visible||!version.Text.Contains("BETA"))throw new Exception("Beta acceptance must be explicit");acceptBeta.IsChecked=true;if(!download.IsEnabled)throw new Exception("Accepted beta should be available");
+      platform.SelectedItem="Xbox";list.SelectedItem=list.Items.Cast<ListBoxItem>().First(i=>((PortEntry)i.Tag).Id=="darkwatch");selected=(PortEntry)((ListBoxItem)list.SelectedItem).Tag;acceptBeta.IsChecked=false;var sample=PortCatalog.BundledRelease(selected);sample.Version="smoke-stable";PresentRelease(selected,sample);
+      if(acceptBeta.Visibility!=Visibility.Collapsed||!download.IsEnabled)throw new Exception("Stable Darker Edition profile must not require beta acceptance");
       platform.SelectedItem="Xbox One";list.SelectedIndex=0;LoadSelected();if(!importZip.IsVisible||!download.IsEnabled||acceptBeta.IsChecked==true)throw new Exception("Official-site import UI failed");
       Launcher.CaptureWindow(this,path);}
   }

@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.3.2 — 2026-10-20
+
+- Corrige o catálogo Darkwatch para linkssy2/DarkwatchDarkerEdition, com ZIP Windows x64 e cache auditado.
+- Configurar abre o importador ISO/XISO original; Jogar usa Play Darkwatch.exe.
+- Mantém instalações e dados da fonte anterior separados. Darker Edition não usa a cópia legacy para assets nem exige aceitação de beta.
+- 158 verificações automatizadas e validação do pacote real 0.3.
+
 ## 1.3.1 — 2026-10-20
 
 - Menu integrado para selecionar pasta extraída ou ISO do Xbox em BLACK e Darkwatch.

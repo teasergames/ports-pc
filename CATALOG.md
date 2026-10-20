@@ -1,8 +1,12 @@
 # Catálogo de ports
 
-O NEXUS consulta a última **release estável** dos perfis GitHub e seleciona somente o ZIP Windows definido. Darkwatch consulta também pré-releases, com identificação BETA e aceitação explícita antes de instalar. Azimuth usa sua página oficial no itch.io e importação local do ZIP. Não escolhe arquivos de código-fonte, Linux ou atualizadores isolados. Os projetos abaixo são ports/forks independentes, sem vínculo oficial com os detentores dos jogos.
+O NEXUS consulta a última **release estável** dos perfis GitHub e seleciona somente o ZIP Windows definido. Darkwatch: Darker Edition usa releases estáveis do repositório linkssy2/DarkwatchDarkerEdition. Azimuth usa sua página oficial no itch.io e importação local do ZIP. Não escolhe arquivos de código-fonte, Linux ou atualizadores isolados. Os projetos abaixo são ports/forks independentes, sem vínculo oficial com os detentores dos jogos.
 
-## Preparação integrada de BLACK e Darkwatch — 1.3.1
+## Darkwatch corrigido — 1.3.2
+
+O catálogo usa linkssy2/DarkwatchDarkerEdition e escolhe somente o ZIP Windows x64, excluindo o arquivo Source.zip. O pacote 0.3 foi baixado, conferido com SHA-256 e cadastrado sem executar o jogo. Instalações anteriores Arizona Vamp ficam preservadas com sua origem original; não há migração automática de saves entre projetos.
+
+## Histórico: preparação integrada de BLACK e Arizona Vamp — 1.3.1
 
 Configurar jogo abre o menu do NEXUS com seleção de pasta extraída ou ISO. O runtime de BLACK [procura assets junto do executável](https://github.com/TGP482/BLACK-XBERecomp/blob/main/src/common/game_files.cpp); o pacote Darkwatch documenta a mesma estrutura. O NEXUS prepara essa pasta por cópia, sem comandos de inicialização não documentados ou alterações no port. A primeira abertura sem arquivos encaminha para esse menu. Regiões, revisão do disco e conteúdo válido continuam sendo responsabilidade do runtime original. As opções gráficas continuam internas (BLACK: F10; Darkwatch: F1).
 
@@ -11,7 +15,7 @@ Configurar jogo abre o menu do NEXUS com seleção de pasta extraída ou ISO. O 
 | Jogo / fonte primária | Origem | Jogar | Configurar / preparação |
 | --- | --- | --- | --- |
 | [BLACK · XBERecomp](https://github.com/TGP482/BLACK-XBERecomp) | Xbox | `BLACK.exe` | Xbox original. Forneça seu ISO ou arquivos extraídos em assets ao lado de BLACK.exe. A primeira abertura prepara o código localmente. Opções no jogo e na sobreposição F10; não tem launcher de configuração separado. |
-| [Darkwatch · Arizona Vamp](https://github.com/Clergyman0013/arizona-vamp-recomp) | Xbox | `Darkwatch.exe` | BETA: projeto em desenvolvimento. Coloque seu ISO ou arquivos do Xbox em assets ao lado de Darkwatch.exe. F1 abre as opções dentro do jogo. A instalação exige marcar a aceitação da versão beta. |
+| [Darkwatch: Darker Edition](https://github.com/linkssy2/DarkwatchDarkerEdition) | Xbox | `Play Darkwatch.exe` | Configurar abre `Darkwatch Darker Edition.exe`: importe sua ISO/XISO pelo launcher e aguarde a preparação. Mantenha payload e GameData junto dos EXEs. |
 | [Forza Motorsport 2](https://github.com/0herculabs/hl360-forza2) | Xbox 360 | `forza2.exe` | Configure seu ISO, perfil e gráficos no launcher. Na primeira execução e após alterar a resolução, use Play no launcher para preparar shaders. Depois, Jogar abre forza2.exe com os ajustes salvos. Projeto em desenvolvimento. |
 | [Forza Motorsport 3](https://github.com/0herculabs/hl360-forza3) | Xbox 360 | `fm3.exe` | Configure os dois discos da Ultimate Collection e o perfil no launcher original. Jogar abre fm3.exe com os arquivos TOML salvos. Prefira uma pasta curta de instalação para os arquivos dos discos. |
 | [Forza Motorsport 4](https://github.com/0herculabs/hl360-forza4) | Xbox 360 | `fm4.exe` | Prepare os dois discos USA Rev 1 e seu perfil em Configurar jogo. Jogar abre fm4.exe com os ajustes salvos. Algumas alterações de mods/120 FPS são aplicadas no Play do launcher: use-o ao mudar essas opções. Prefira uma pasta curta. |

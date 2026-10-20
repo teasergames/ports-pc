@@ -474,24 +474,6 @@
     }
   },
   {
-    "Repository": "Clergyman0013/arizona-vamp-recomp",
-    "CheckedUtc": "2026-10-20T22:45:00Z",
-    "Release": {
-      "tag_name": "v0.2.0-beta.4",
-      "html_url": "https://github.com/Clergyman0013/arizona-vamp-recomp/releases/tag/v0.2.0-beta.4",
-      "draft": false,
-      "prerelease": true,
-      "assets": [
-        {
-          "name": "ArizonaVampRecomp-v0.2.0-beta.4-windows-x64.zip",
-          "size": 59007890,
-          "browser_download_url": "https://github.com/Clergyman0013/arizona-vamp-recomp/releases/download/v0.2.0-beta.4/ArizonaVampRecomp-v0.2.0-beta.4-windows-x64.zip",
-          "digest": "sha256:ec7c657eadb44709eb63f79dda3a639132f0085f2f7ed0a644d27e9ba937045d"
-        }
-      ]
-    }
-  },
-  {
     "Repository": "0herculabs/hl360-forza2",
     "CheckedUtc": "2026-10-20T22:45:00Z",
     "Release": {
@@ -589,6 +571,36 @@
           "size": 67541966,
           "browser_download_url": "https://github.com/arcanite24/pinyon-shift/releases/download/v0.6.0/PinyonShift-Launcher.zip",
           "digest": "sha256:d4996a1355f8d9bcb196f17e05d398d0c9ed08decbafba2b7ae510c173993ba3"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "linkssy2/DarkwatchDarkerEdition",
+    "CheckedUtc": "2026-10-20T23:30:00Z",
+    "Release": {
+      "tag_name": "v0.3",
+      "html_url": "https://github.com/linkssy2/DarkwatchDarkerEdition/releases/tag/v0.3",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "Darkwatch-Darker-Edition-0.3-Source.zip",
+          "size": 132646642,
+          "browser_download_url": "https://github.com/linkssy2/DarkwatchDarkerEdition/releases/download/v0.3/Darkwatch-Darker-Edition-0.3-Source.zip",
+          "digest": "sha256:2bf316e4135fb2129c159a8dcac70c857f12ab2650ee7c1d81985198d81db934"
+        },
+        {
+          "name": "Darkwatch-Darker-Edition-0.3-Windows-x64.zip",
+          "size": 156352731,
+          "browser_download_url": "https://github.com/linkssy2/DarkwatchDarkerEdition/releases/download/v0.3/Darkwatch-Darker-Edition-0.3-Windows-x64.zip",
+          "digest": "sha256:1fa0ad784d969e0164719444163b204f88942d06628805e729d2e0ba40b5e89f"
+        },
+        {
+          "name": "SHA256SUMS.txt",
+          "size": 217,
+          "browser_download_url": "https://github.com/linkssy2/DarkwatchDarkerEdition/releases/download/v0.3/SHA256SUMS.txt",
+          "digest": "sha256:b04090b3f6548d88d10867ffc1de0ae48c2f363a613549bdb25689d478940b2a"
         }
       ]
     }

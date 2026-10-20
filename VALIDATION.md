@@ -1,3 +1,12 @@
+# Validação 1.3.2 — 20/10/2026
+
+- PASS 158 verificações, incluindo origem correta, executáveis separados e uso do importador original em Darker Edition.
+- ZIP Windows x64 0.3 baixado; SHA-256 publicado conferido; arquivo Source.zip excluído pelo perfil.
+- Biblioteca existente Arizona Vamp preserva sua origem; não é convertida ou sobrescrita.
+- Não houve teste de gameplay ou importação de discos reais.
+
+Histórico:
+
 # Validação 1.3.1 — 20/10/2026
 
 - PASS 156 verificações: cópia de pasta e ISO com Unicode/espaços, backup de assets, origem preservada, dados existentes reutilizados e argumentos de Jogar mantidos.

@@ -2,6 +2,8 @@
 
 Launcher de biblioteca para ports de PC, com interface imersiva e artwork do jogo selecionado. Aplicativo nativo WPF para **Windows 11 x64**, com .NET Framework 4.8, que já acompanha o Windows 11. Não precisa de Node, Python, navegador, conta ou permissão de administrador para executar.
 
+Na **1.3.1**, **BLACK e Darkwatch** têm um menu integrado em **Configurar jogo**: escolha uma pasta extraída com `default.xbe` e todos os arquivos do jogo, ou uma **ISO do Xbox original**, e pressione **Preparar arquivos**. O NEXUS copia para `assets` ao lado do port e mostra progresso e cancelamento. A origem permanece no lugar; se houver uma pasta `assets` anterior, ela fica preservada em `assets.nexus-backup-…`. A cópia pode ocupar vários GB. Se os arquivos ainda não estiverem preparados, **Jogar** abre esse menu antes de iniciar. Após concluir, Jogar continua abrindo o executável direto. O port ainda valida a região e a revisão do seu jogo.
+
 Na **1.3.0**, foram integrados **BLACK**, **Darkwatch**, **Forza Motorsport 2, 3 e 4**, **Forza Horizon / Pinyon Shift** e **Forza Horizon 2 / Azimuth**. São **30 perfis**: 24 com download GitHub, 1 com importação do ZIP oficial do itch.io e 5 com instruções manuais.
 
 - Darkwatch está em beta. O catálogo mostra o aviso e só habilita a instalação após marcar a aceitação. Os demais perfis continuam consultando apenas releases estáveis.

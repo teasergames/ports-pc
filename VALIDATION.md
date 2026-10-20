@@ -1,3 +1,12 @@
+# Validação 1.3.1 — 20/10/2026
+
+- PASS 156 verificações: cópia de pasta e ISO com Unicode/espaços, backup de assets, origem preservada, dados existentes reutilizados e argumentos de Jogar mantidos.
+- Cancelamento durante cópia: arquivos anteriores preservados e temporários removidos. Pastas incompletas e ISO ausente recusadas.
+- Seleção persistida na biblioteca; preparação reconhecida em BLACK e Darkwatch.
+- Menu integrado renderizado e inspecionado; não foram executados jogos nem copiados arquivos reais do usuário durante os testes.
+
+Histórico:
+
 # Validação 1.3.0 — 20/10/2026
 
 - Build Windows 11 x64 / .NET Framework 4.8: PASS 140 verificações.

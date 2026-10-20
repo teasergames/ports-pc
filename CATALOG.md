@@ -2,6 +2,10 @@
 
 O NEXUS consulta a última **release estável** dos perfis GitHub e seleciona somente o ZIP Windows definido. Darkwatch consulta também pré-releases, com identificação BETA e aceitação explícita antes de instalar. Azimuth usa sua página oficial no itch.io e importação local do ZIP. Não escolhe arquivos de código-fonte, Linux ou atualizadores isolados. Os projetos abaixo são ports/forks independentes, sem vínculo oficial com os detentores dos jogos.
 
+## Preparação integrada de BLACK e Darkwatch — 1.3.1
+
+Configurar jogo abre o menu do NEXUS com seleção de pasta extraída ou ISO. O runtime de BLACK [procura assets junto do executável](https://github.com/TGP482/BLACK-XBERecomp/blob/main/src/common/game_files.cpp); o pacote Darkwatch documenta a mesma estrutura. O NEXUS prepara essa pasta por cópia, sem comandos de inicialização não documentados ou alterações no port. A primeira abertura sem arquivos encaminha para esse menu. Regiões, revisão do disco e conteúdo válido continuam sendo responsabilidade do runtime original. As opções gráficas continuam internas (BLACK: F10; Darkwatch: F1).
+
 ## Novos perfis Xbox — versão 1.3.0
 
 | Jogo / fonte primária | Origem | Jogar | Configurar / preparação |

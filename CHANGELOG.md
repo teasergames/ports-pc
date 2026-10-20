@@ -1,5 +1,13 @@
 # Changelog
 
+## 1.3.1 — 2026-10-20
+
+- Menu integrado para selecionar pasta extraída ou ISO do Xbox em BLACK e Darkwatch.
+- Preparação automática da pasta assets com progresso, cancelamento e preservação da seleção.
+- Backup de assets existentes e limpeza apenas dos temporários criados pelo NEXUS em caso de falha/cancelamento.
+- Jogar abre a preparação quando faltam arquivos e continua usando a entrada direta após concluir.
+- 156 verificações automatizadas e renderização do menu integrado.
+
 ## 1.3.0 — 2026-10-20
 
 - Sete novos perfis Xbox: BLACK, Darkwatch, Forza Motorsport 2/3/4, Forza Horizon e Forza Horizon 2 / Azimuth.

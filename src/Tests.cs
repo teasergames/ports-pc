@@ -51,7 +51,7 @@ namespace Nexus {
         lib.ViewMode="list";lib.GridSize=320;lib.ListSize=60;store.Save(lib);var view=store.Load();Check(view.ViewMode=="list"&&view.GridSize==320&&view.ListSize==60,"view and separate sizes persist");
         lib.ViewMode="invalid";lib.GridSize=900;lib.ListSize=-4;store.Save(lib);view=store.Load();Check(view.ViewMode=="grid"&&view.GridSize==340&&view.ListSize==76,"invalid view preferences normalized");
         lib.ViewMode="list";lib.GridSize=10;lib.ListSize=900;store.Save(lib);view=store.Load();Check(view.GridSize==140&&view.ListSize==132,"view sizes clamped to bounds");
-        count+=CatalogTests.Run(root);
+        count+=CatalogTests.Run(root);count+=GameContentTests.Run(root);
         File.WriteAllText(Path.Combine(root,"results.txt"),"PASS "+count);System.Console.WriteLine("PASS "+count+" checks");
         string report=Environment.GetEnvironmentVariable("NEXUS_TEST_REPORT");if(!String.IsNullOrEmpty(report))File.WriteAllText(report,"PASS "+count+" checks"+Environment.NewLine);
         return 0;

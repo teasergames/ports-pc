@@ -18,8 +18,8 @@ using Microsoft.Win32;
 
 [assembly: AssemblyTitle("NEXUS · Ports PC")]
 [assembly: AssemblyProduct("NEXUS Ports PC")]
-[assembly: AssemblyVersion("1.3.0.0")]
-[assembly: AssemblyFileVersion("1.3.0.0")]
+[assembly: AssemblyVersion("1.3.1.0")]
+[assembly: AssemblyFileVersion("1.3.1.0")]
 [assembly: System.Runtime.Versioning.TargetFramework(".NETFramework,Version=v4.8")]
 namespace Nexus {
   public static class Program {
@@ -57,7 +57,7 @@ namespace Nexus {
       Window.SourceInitialized+=delegate{int value=1;DwmSetWindowAttribute(new WindowInteropHelper(Window).Handle,20,ref value,4);};
       Window.Closed+=delegate{closing=true;viewSaveTimer.Stop();if(!smoke)Save();shutdown.Cancel();artwork.Dispose();};
       Find<Button>("AddButton").Click+=delegate{Add();};Find<Button>("EditButton").Click+=delegate{Edit();};Find<Button>("PlayButton").Click+=delegate{Launch();};Find<Button>("FavoriteButton").Click+=delegate{if(selected!=null){selected.Favorite=!selected.Favorite;Save();Refresh();}};
-      Find<Button>("ConfigureButton").Click+=delegate{if(selected==null)return;try{Process.Start(Ports.ConfigurationStartInfo(selected));Status("Configuração aberta: "+selected.Name);}catch(Exception ex){MessageBox.Show(Window,ex.Message,"Configurar jogo",MessageBoxButton.OK,MessageBoxImage.Information);}};
+      Find<Button>("ConfigureButton").Click+=delegate{if(selected==null)return;try{if(GameContent.Supports(selected)){ConfigureContent();return;}Process.Start(Ports.ConfigurationStartInfo(selected));Status("Configuração aberta: "+selected.Name);}catch(Exception ex){MessageBox.Show(Window,ex.Message,"Configurar jogo",MessageBoxButton.OK,MessageBoxImage.Information);}};
       Find<Button>("SettingsButton").Click+=delegate{Settings();};Find<Button>("DetectButton").Click+=delegate{Detect(true);};
       Find<Button>("DownloadPortsButton").Click+=delegate{new CatalogWindow(Window,store.Root,library.Games,delegate(Game game){library.Games.Add(game);selected=game;Save();Refresh();ResolveArtwork(game);}).ShowDialog();};
       Find<TextBox>("SearchBox").TextChanged+=delegate{RefreshGrid();};Find<CheckBox>("FavoritesOnly").Checked+=delegate{RefreshGrid();};Find<CheckBox>("FavoritesOnly").Unchecked+=delegate{RefreshGrid();};
@@ -75,7 +75,7 @@ namespace Nexus {
     void Status(string text){if(!closing)Find<TextBlock>("StatusLabel").Text=text;}
     public void Refresh(){
       bool has=selected!=null;Find<Button>("PlayButton").IsEnabled=has;Find<Button>("EditButton").IsEnabled=has;Find<Button>("FavoriteButton").IsEnabled=has;
-      Find<Button>("ConfigureButton").IsEnabled=has;Find<Button>("ConfigureButton").Visibility=has&&!String.IsNullOrEmpty(Ports.FindConfigurationExecutable(selected))?Visibility.Visible:Visibility.Collapsed;
+      Find<Button>("ConfigureButton").IsEnabled=has;Find<Button>("ConfigureButton").Visibility=has&&(GameContent.Supports(selected)||!String.IsNullOrEmpty(Ports.FindConfigurationExecutable(selected)))?Visibility.Visible:Visibility.Collapsed;
       Find<TextBlock>("HeroTitle").Text=has?selected.Name:"Seu próximo universo";
       Find<TextBlock>("HeroDescription").Text=!has?"Adicione seus ports e reúna suas aventuras em um só lugar.":selected.Name=="Bloodborne"?"As ruas de Yharnam estão à sua espera. Sua próxima caçada começa aqui.":selected.Name=="God of War III"?"Enfrente os deuses do Olimpo. Sua próxima aventura começa aqui.":selected.Name=="Shadow of the Colossus"?"Uma terra esquecida. Dezesseis colossos. Uma jornada para revisitar.":"Seu port, suas configurações. Pronto para a próxima aventura.";
       Find<Button>("FavoriteButton").Content=has&&selected.Favorite?"★ Favorito":"☆ Favoritar";
@@ -137,9 +137,10 @@ namespace Nexus {
       int index=library.Games.IndexOf(original);library.Games[index]=editor.Result;selected=editor.Result;Save();Refresh();Status("Configurações salvas.");
       if(editor.RefreshArtwork||String.IsNullOrEmpty(selected.Artwork)||!File.Exists(selected.Artwork))ResolveArtwork(selected);
     }
+    bool ConfigureContent(){var dialog=new GameContentWindow(Window,selected);dialog.ShowDialog();if(dialog.PreparedPath!=null){Save();Refresh();Status("Arquivos preparados para "+selected.Name);return true;}return !GameContent.NeedsSetup(selected);}
     void Launch(){
       if(selected==null)return;
-      try{Process.Start(Ports.StartInfo(selected));selected.LastPlayed=DateTime.UtcNow.ToString("o");Save();Refresh();Status("Inicialização solicitada: "+selected.Name);if(library.MinimizeOnLaunch)Window.WindowState=WindowState.Minimized;}
+      try{if(GameContent.NeedsSetup(selected)&&!ConfigureContent())return;Process.Start(Ports.StartInfo(selected));selected.LastPlayed=DateTime.UtcNow.ToString("o");Save();Refresh();Status("Inicialização solicitada: "+selected.Name);if(library.MinimizeOnLaunch)Window.WindowState=WindowState.Minimized;}
       catch(Exception ex){Status("Não foi possível abrir o port.");MessageBox.Show(Window,ex.Message,"Falha ao iniciar",MessageBoxButton.OK,MessageBoxImage.Warning);}
     }
     void Detect(bool notify){
@@ -175,7 +176,7 @@ namespace Nexus {
       folder.Click+=delegate{Process.Start(new ProcessStartInfo("explorer.exe", "\""+store.Root+"\""){UseShellExecute=true});};
       save.Click+=delegate{library.OnlineArtwork=online.IsChecked==true;library.MinimizeOnLaunch=minimize.IsChecked==true;library.SetApiKey(key.Password);Save();dialog.DialogResult=true;};dialog.ShowDialog();
     }
-    public void Capture(string target){if(Environment.GetCommandLineArgs().Contains("--catalog-smoke")){var catalogWindow=new CatalogWindow(Window,store.Root,library.Games,delegate(Game g){}){IsSmoke=true};catalogWindow.Show();catalogWindow.UpdateLayout();catalogWindow.CaptureSmoke(target);catalogWindow.Close();}else CaptureWindow(Window,target);}
+    public void Capture(string target){if(Environment.GetCommandLineArgs().Contains("--content-smoke")){Game sample=library.Games.FirstOrDefault(GameContent.Supports)??new Game{Name="BLACK",Executable=Path.Combine(store.Root,"BLACK.exe")};var dialog=new GameContentWindow(Window,sample);dialog.Show();dialog.UpdateLayout();CaptureWindow(dialog,target);dialog.Close();return;}if(Environment.GetCommandLineArgs().Contains("--catalog-smoke")){var catalogWindow=new CatalogWindow(Window,store.Root,library.Games,delegate(Game g){}){IsSmoke=true};catalogWindow.Show();catalogWindow.UpdateLayout();catalogWindow.CaptureSmoke(target);catalogWindow.Close();}else CaptureWindow(Window,target);}
     public void PreviewView(string mode,int size){
       Find<Button>(mode=="list"?"ListViewButton":"GridViewButton").RaiseEvent(new RoutedEventArgs(Button.ClickEvent));
       if(size>0)Find<Slider>("ViewSizeSlider").Value=mode=="list"?(size-48)/0.84:(size-140)/2.0;
@@ -184,7 +185,7 @@ namespace Nexus {
       if(library.Games.Count>0){var lastButton=(Button)visible.Children[visible.Children.Count-1];string expected=(string)lastButton.ToolTip;lastButton.RaiseEvent(new RoutedEventArgs(Button.ClickEvent));if(selected==null||selected.Name!=expected)throw new Exception("Selection failed");Find<TextBox>("SearchBox").Text=expected;Panel filtered=mode=="list"?(Panel)Find<StackPanel>("GameList"):Find<WrapPanel>("GameGrid");if(filtered.Children.Count<1)throw new Exception("Search in view failed");Find<TextBox>("SearchBox").Text="";}
       foreach(string platform in Platforms.All){Find<ComboBox>("PlatformFilter").SelectedItem=platform;Panel filtered=mode=="list"?(Panel)Find<StackPanel>("GameList"):Find<WrapPanel>("GameGrid");if(filtered.Children.Count!=Platforms.Filter(library.Games,platform,"",false).Count)throw new Exception("Platform rendering failed: "+platform);}
       Find<ComboBox>("PlatformFilter").SelectedIndex=0;
-      foreach(Game game in library.Games){selected=game;Refresh();bool configured=!String.IsNullOrEmpty(Ports.FindConfigurationExecutable(game));if((Find<Button>("ConfigureButton").Visibility==Visibility.Visible)!=configured)throw new Exception("Optional configuration action failed");}
+      foreach(Game game in library.Games){selected=game;Refresh();bool configured=GameContent.Supports(game)||!String.IsNullOrEmpty(Ports.FindConfigurationExecutable(game));if((Find<Button>("ConfigureButton").Visibility==Visibility.Visible)!=configured)throw new Exception("Optional configuration action failed");}
       int beforeGrid=library.GridSize,beforeList=library.ListSize;SetView(mode=="list"?"grid":"list");SetView(mode);if(library.GridSize!=beforeGrid||library.ListSize!=beforeList)throw new Exception("Independent size restoration failed");
     }
     public static void CaptureWindow(Window window,string target){window.UpdateLayout();var image=new RenderTargetBitmap((int)window.ActualWidth,(int)window.ActualHeight,96,96,PixelFormats.Pbgra32);image.Render(window);var encoder=new PngBitmapEncoder();encoder.Frames.Add(BitmapFrame.Create(image));Directory.CreateDirectory(Path.GetDirectoryName(Path.GetFullPath(target)));using(var output=File.Create(target))encoder.Save(output);}

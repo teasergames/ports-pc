@@ -357,7 +357,7 @@
       "BLACK.exe"
     ],
     "ConfigNames": [],
-    "Notes": "Xbox original. Forneça seu ISO ou arquivos extraídos em assets ao lado de BLACK.exe. A primeira abertura prepara o código localmente. Opções no jogo e na sobreposição F10; não tem launcher de configuração separado.",
+    "Notes": "Xbox original. Use Configurar jogo no NEXUS para selecionar sua ISO ou a pasta extraída com default.xbe e os demais arquivos. O NEXUS copia para assets com progresso e backup. No primeiro Jogar sem arquivos, o menu abre automaticamente. Opções gráficas dentro do jogo, F10.",
     "Kind": "Recompilação"
   },
   {
@@ -372,7 +372,7 @@
     ],
     "ConfigNames": [],
     "AllowPrerelease": true,
-    "Notes": "BETA: projeto em desenvolvimento. Coloque seu ISO ou arquivos do Xbox em assets ao lado de Darkwatch.exe. F1 abre as opções dentro do jogo. A instalação exige marcar a aceitação da versão beta.",
+    "Notes": "BETA. Use Configurar jogo no NEXUS para selecionar a ISO ou pasta extraída do Xbox. Os arquivos são copiados para assets com progresso, cancelamento e backup. O menu também abre no primeiro Jogar sem arquivos. F1 abre as opções internas. Instalar a beta exige aceitação no catálogo.",
     "Kind": "Recompilação"
   },
   {

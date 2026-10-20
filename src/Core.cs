@@ -16,6 +16,8 @@ namespace Nexus {
     public string WorkingDirectory { get; set; }
     public string ConfigurationExecutable { get; set; }
     public string ConfigurationArguments { get; set; }
+    public string GameContentSource {get;set;}
+    public bool GameContentIsIso {get;set;}
     public string ArtworkSearchTitle { get; set; }
     public string Artwork { get; set; }
     public string ArtworkSource { get; set; }

@@ -2,6 +2,17 @@
 
 Launcher de biblioteca para ports de PC, com interface imersiva e artwork do jogo selecionado. Aplicativo nativo WPF para **Windows 11 x64**, com .NET Framework 4.8, que já acompanha o Windows 11. Não precisa de Node, Python, navegador, conta ou permissão de administrador para executar.
 
+Na **1.4.0**, a pesquisa de **28/10/2026** acrescenta **12 perfis** ao catálogo, agora com **42 fontes**: 34 com download GitHub, 1 com importação do ZIP oficial e 7 com preparação manual.
+
+- **PS4:** Knack, Knack II e WipEout Omega Collection.
+- **PS3:** Resident Evil Code: Veronica X HD e Drakengard 3.
+- **Xbox 360:** Blue Dragon (re:Blue), Lost Odyssey e Project Gotham Racing 4.
+- **Xbox original:** Conker: Live & Reloaded.
+- **Switch:** Link’s Awakening (LAS Recomp / peiikai), como fonte separada do projeto já listado.
+- **Projetos com instruções manuais:** Burnout 3: Takedown (instalador EXE) e Super Mario Odyssey (sem release Windows pronta na consulta).
+
+Knack II, Drakengard 3, Conker e LAS Recomp usam pré-releases sinalizadas e exigem aceitação antes da instalação. O estágio experimental não é uma garantia de campanha completa. Para PGR4 e Conker, **Configurar jogo** escolhe a pasta extraída; o NEXUS salva o caminho e passa os parâmetros/ambiente documentados ao abrir. Para Lost Odyssey, Configurar abre a página de preparação (`--setup-only`). Os demais perfis usam seus launchers ou menus internos conforme indicado no catálogo. A lista completa de fontes e limites está em [CATALOG.md](CATALOG.md).
+
 Na **1.3.2**, o perfil Darkwatch foi corrigido para **[linkssy2/DarkwatchDarkerEdition](https://github.com/linkssy2/DarkwatchDarkerEdition)**. **Configurar jogo** abre `Darkwatch Darker Edition.exe` para importar sua ISO/XISO e **Jogar** abre `Play Darkwatch.exe`. O perfil consulta releases estáveis. A cópia para assets descrita no histórico se aplica ao port antigo Arizona Vamp; instalações antigas permanecem separadas e não são renomeadas como Darker Edition. Baixe a nova fonte pelo catálogo e prepare seus arquivos no launcher original.
 
 Na **1.3.1**, **BLACK e Darkwatch** têm um menu integrado em **Configurar jogo**: escolha uma pasta extraída com `default.xbe` e todos os arquivos do jogo, ou uma **ISO do Xbox original**, e pressione **Preparar arquivos**. O NEXUS copia para `assets` ao lado do port e mostra progresso e cancelamento. A origem permanece no lugar; se houver uma pasta `assets` anterior, ela fica preservada em `assets.nexus-backup-…`. A cópia pode ocupar vários GB. Se os arquivos ainda não estiverem preparados, **Jogar** abre esse menu antes de iniciar. Após concluir, Jogar continua abrindo o executável direto. O port ainda valida a região e a revisão do seu jogo.

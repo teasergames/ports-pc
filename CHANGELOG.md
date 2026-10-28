@@ -1,5 +1,13 @@
 # Changelog
 
+## 1.4.0 — 2026-10-28
+
+- 12 novos perfis: Knack, Knack II, WipEout Omega Collection, Code: Veronica X HD, Drakengard 3, Lost Odyssey, re:Blue, PGR4, Conker, LAS Recomp, Burnout 3 e Super Mario Odyssey.
+- Dez pacotes Windows com instalação pelo NEXUS; Burnout 3 e Odyssey com instruções manuais por limites dos pacotes publicados.
+- Pré-releases experimentais com aceitação explícita; filtros de plataforma mantidos.
+- Seleção de pasta para PGR4/Conker, argumentos de configuração por perfil e --setup-only em Lost Odyssey.
+- 189 verificações automatizadas, dez pacotes reais instalados sem execução dos jogos e inspeção da interface.
+
 ## 1.3.2 — 2026-10-20
 
 - Corrige o catálogo Darkwatch para linkssy2/DarkwatchDarkerEdition, com ZIP Windows x64 e cache auditado.

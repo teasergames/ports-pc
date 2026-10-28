@@ -16,6 +16,7 @@ namespace Nexus {
     public string WorkingDirectory { get; set; }
     public string ConfigurationExecutable { get; set; }
     public string ConfigurationArguments { get; set; }
+    public string SourceGameDirectory {get;set;}
     public string GameContentSource {get;set;}
     public bool GameContentIsIso {get;set;}
     public string ArtworkSearchTitle { get; set; }
@@ -104,7 +105,7 @@ namespace Nexus {
         g.Name="Bloodborne";string direct=Path.Combine(dir,"Bloodborne.exe");if(File.Exists(direct))g.Executable=direct;
       }
       g.ConfigurationExecutable=FindConfigurationExecutable(g);
-      foreach(var entry in PortCatalog.LoadEntries().Where(e=>!e.ProjectOnly))if(entry.PlayNames.Any(n=>Path.GetFileName(full).Equals(n,StringComparison.OrdinalIgnoreCase))){if(g.Name==name)g.Name=entry.Name;g.Platform=entry.Platform;g.ArtworkSearchTitle=entry.ArtworkTitle;string cfg=entry.ConfigNames.Select(n=>Path.Combine(dir,n)).FirstOrDefault(File.Exists);g.ConfigurationExecutable=cfg;g.Repository=entry.Identity;g.Arguments=entry.Arguments??"";break;}g.Platform=Platforms.Resolve(g);return g;
+      foreach(var entry in PortCatalog.LoadEntries().Where(e=>!e.ProjectOnly))if(entry.PlayNames.Any(n=>Path.GetFileName(full).Equals(n,StringComparison.OrdinalIgnoreCase))){if(g.Name==name)g.Name=entry.Name;g.Platform=entry.Platform;g.ArtworkSearchTitle=entry.ArtworkTitle;string cfg=entry.ConfigNames.Select(n=>Path.Combine(dir,n)).FirstOrDefault(File.Exists);g.ConfigurationExecutable=cfg;g.ConfigurationArguments=entry.ConfigurationArguments;g.Repository=entry.Identity;g.Arguments=entry.Arguments??"";break;}g.Platform=Platforms.Resolve(g);return g;
     }
     public static List<Game> Detect(string downloads) {
       List<Game> result=new List<Game>();if(!Directory.Exists(downloads))return result;
@@ -116,6 +117,7 @@ namespace Nexus {
       if(!File.Exists(game.Executable))throw new FileNotFoundException("O executável foi movido ou removido. Atualize o caminho em Editar cadastro.",game.Executable);
       string dir=String.IsNullOrWhiteSpace(game.WorkingDirectory)?Path.GetDirectoryName(game.Executable):game.WorkingDirectory;
       if(!Directory.Exists(dir))throw new DirectoryNotFoundException("A pasta de trabalho não existe: "+dir);
+      if(direct&&FolderLaunch.Supports(game))return FolderLaunch.StartInfo(game);
       if(direct&&Path.GetFileName(game.Executable).Equals("Uncharted Launcher.exe",StringComparison.OrdinalIgnoreCase)&&String.IsNullOrWhiteSpace(game.Arguments))return Uncharted.StartInfo(game,ReadPortConfig("Uncharted: The Nathan Drake Collection",Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData)));
       return new ProcessStartInfo{FileName=Path.GetFullPath(game.Executable),Arguments=game.Arguments??"",WorkingDirectory=Path.GetFullPath(dir),UseShellExecute=true};
     }

@@ -1,3 +1,15 @@
+# Validação 1.4.0 — 28/10/2026
+
+- PASS 189 verificações automatizadas: catálogo de 42 fontes, cache datado, origem/seleção de ZIP, configuração por perfil e pré-releases marcadas.
+- Dez ZIPs oficiais novos: SHA-256 publicado conferido, extração e cadastro pelo pipeline de instalação; comandos de Jogar/Configurar validados sem execução dos ports: PASS.
+- PGR4: pasta extraída validada, caminho com espaços/Unicode e parâmetros do run.bat: PASS.
+- Conker: pasta e ambiente aplicados ao processo filho, sem alteração do ambiente pai; caminho persistido: PASS.
+- Grade 140/340 e lista 48/132 com dez cadastros reais; filtros, ações de configuração e seleção: PASS.
+- Catálogo: Knack II exige aceitação de pré-release, Darker Edition continua sem exigência de beta e Azimuth mantém importação do site: PASS.
+- Não executados jogos, compiladores, instaladores, dumps, ROMs ou firmware; requisitos e gameplay são os relatados por cada autor.
+
+Histórico:
+
 # Validação 1.3.2 — 20/10/2026
 
 - PASS 158 verificações, incluindo origem correta, executáveis separados e uso do importador original em Darker Edition.

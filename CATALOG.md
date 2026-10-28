@@ -2,6 +2,35 @@
 
 O NEXUS consulta a última **release estável** dos perfis GitHub e seleciona somente o ZIP Windows definido. Darkwatch: Darker Edition usa releases estáveis do repositório linkssy2/DarkwatchDarkerEdition. Azimuth usa sua página oficial no itch.io e importação local do ZIP. Não escolhe arquivos de código-fonte, Linux ou atualizadores isolados. Os projetos abaixo são ports/forks independentes, sem vínculo oficial com os detentores dos jogos.
 
+## Pesquisa de 28/10/2026 — catálogo 1.4.0
+
+Novos no NEXUS; as datas de criação e o progresso dos projetos variam. O estado de gameplay é o relatado pelos autores. NEXUS verificou pacotes e integração, sem executar os jogos ou confirmar campanhas.
+
+| Plataforma | Projeto / fonte primária | Integração | Preparação e limites |
+| --- | --- | --- | --- |
+| PlayStation 4 | [Knack](https://github.com/AbdelmoumenDeghbouche/knack_pc) | ZIP Windows | Versão inicial. Configure seu dump PS4 e a atualização no launcher Knack.exe. Jogar usa a entrada direta com ajustes salvos. Requer AVX e Vulkan 1.3. |
+| PlayStation 4 | [Knack II](https://github.com/Hyant4/Knack-II-pc-port) | Pré-release com aceitação | ALPHA / RC: versão experimental, com preparação de shaders e cooperativo local. Configure o dump no launcher original antes de Jogar. A instalação de pré-release exige aceitação explícita. |
+| PlayStation 4 | [WipEout Omega Collection](https://github.com/AbdelmoumenDeghbouche/wipeout_pc) | ZIP Windows | Configure seu dump PS4 no launcher WipEout.exe; Jogar usa a entrada direta e opções salvas. Versão em desenvolvimento. Requer Vulkan 1.3. |
+| PlayStation 3 | [Resident Evil Code: Veronica X HD](https://github.com/kastieloficial/RE-Code-Veronica-PS3-HD-Recomp-PC) | ZIP Windows | Jogar e Configurar abrem o launcher original, que seleciona a região correta. Precisa dos seus arquivos PSN 01.00 extraídos; versões EU/US requerem sua licença RAP. O extrator opcional é um download separado. Requer Direct3D 12 e VC++ x64. |
+| PlayStation 3 | [Drakengard 3](https://github.com/soyjxck/dod3-recomp) | Pré-release com aceitação | ALPHA: Jogar e Configurar abrem o próprio dod3.exe. Forneça seu disco ou pacote PSN compatível e siga o importador original. Compatibilidade da campanha e desempenho ainda em desenvolvimento. |
+| Xbox 360 | [Lost Odyssey](https://github.com/freefrank/LostOdysseyRecomp) | ZIP Windows | Primeira abertura importa seus discos. Configurar abre a página de preparação sem iniciar o jogo (--setup-only); outras opções ficam no menu interno. Requer CPU AVX. Mantenha a instalação em pasta gravável. |
+| Xbox 360 | [Blue Dragon · re:Blue](https://github.com/zolaware/reblue) | ZIP Windows | O assistente inicial prepara seus discos. Opções dentro do aplicativo. O NEXUS instala o pacote Direct3D 12 Windows, excluindo símbolos, macOS e versões nightly. |
+| Xbox 360 | [Project Gotham Racing 4](https://github.com/beatrixzy/PGR4-Recomp) | ZIP Windows | Projeto incompleto. Use Configurar jogo no NEXUS para selecionar sua pasta extraída com default.xex. Jogar passa o caminho e os parâmetros publicados no run.bat. Geometry Wars no menu da garagem pode causar falha. |
+| Xbox | [Conker: Live & Reloaded](https://github.com/rashevskyv/conker-lr-recomp) | Pré-release com aceitação | PRÉ-RELEASE experimental. Use Configurar jogo no NEXUS para indicar sua pasta de disco extraída com default.xbe. O NEXUS aplica o ambiente do script Windows e abre clx.exe diretamente. Opções gráficas e controles no menu do jogo. |
+| Nintendo Switch | [Link’s Awakening · LAS Recomp](https://github.com/peiikai/LASRecomp) | Pré-release com aceitação | Build de teste. O próprio aplicativo prepara e recompila os arquivos do seu dump Switch na primeira abertura. Jogar e Configurar abrem a tela inicial. Requer AVX2 e Vulkan 1.3. Fonte separada do projeto kaliszmichal já listado. |
+| Nintendo Switch | [Super Mario Odyssey](https://github.com/Coz-0/smo-recomp) | Manual | Experimental, sem release Windows publicada na consulta de 28/10/2026. Requer compilação a partir do seu dump 1.4.1. Abra o projeto e adicione sua instalação manualmente após prepará-la. |
+| Xbox | [Burnout 3: Takedown](https://github.com/sp00nznet/burnout3) | Manual | O projeto publica um instalador EXE, não um ZIP portátil com executáveis de jogo. Abra o projeto para instalar e preparar seus próprios arquivos; depois adicione o executável gerado manualmente. O NEXUS não executa instaladores nem instala ferramentas por conta própria. |
+
+Os dez ZIPs habilitados foram baixados de suas Releases oficiais, conferidos com os SHA-256 publicados, extraídos e cadastrados pelo pipeline do NEXUS. Foram excluídos arquivos Source, símbolos de depuração, APK, AppImage, macOS e arquiteturas incompatíveis. O repositório de Code: Veronica foi renomeado: o perfil usa o nome canônico `kastieloficial/RE-Code-Veronica-PS3-HD-Recomp-PC`, indicado pelas URLs atuais das Releases.
+
+**PGR4:** o comando é baseado no `run.bat` incluído e no [Setup.md](https://github.com/beatrixzy/PGR4-Recomp/blob/main/Setup.md). Escolha a pasta com `default.xex` em Configurar jogo; NEXUS passa `--game_data_root` junto dos parâmetros do pacote.
+
+**Conker:** integração baseada no `clx.ps1` incluído na release Windows. Escolha a pasta com `default.xbe`; NEXUS usa `NFSU2_GAME_DIR`, os arquivos `clx_options.txt`/`clx_mouse_options.txt` e as opções de ambiente do script. O cache padrão do NEXUS fica em `cache/` ao lado do port; os dados e saves do jogo seguem as regras do runtime. Não executa PowerShell nem altera variáveis globais do Windows.
+
+**Xbox One:** foi consultado [WinDurango](https://github.com/WinDurango/WinDurango). É uma camada genérica via UWP, com componentes de Actions e estados variados por título, sem pacote de port de jogo adequado ao instalador ZIP do NEXUS nessa pesquisa. Não foi listado como jogo pronto. Azimuth continua no catálogo. [Astral Chain / AC-Recomp](https://github.com/swaymun/AC-Recomp) foi deixado de fora por publicar preparação para macOS, sem pacote Windows verificado.
+
+Nenhuma biblioteca existente é substituída. Cada download continua em uma pasta por versão, sem migração automática de saves entre cópias ou fontes. Os requisitos de CPU/GPU e os arquivos de jogo são próprios de cada projeto.
+
 ## Darkwatch corrigido — 1.3.2
 
 O catálogo usa linkssy2/DarkwatchDarkerEdition e escolhe somente o ZIP Windows x64, excluindo o arquivo Source.zip. O pacote 0.3 foi baixado, conferido com SHA-256 e cadastrado sem executar o jogo. Instalações anteriores Arizona Vamp ficam preservadas com sua origem original; não há migração automática de saves entre projetos.

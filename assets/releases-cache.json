@@ -604,5 +604,317 @@
         }
       ]
     }
+  },
+  {
+    "Repository": "AbdelmoumenDeghbouche/knack_pc",
+    "CheckedUtc": "2026-10-28T12:00:00Z",
+    "Release": {
+      "tag_name": "v0.1.4",
+      "html_url": "https://github.com/AbdelmoumenDeghbouche/knack_pc/releases/tag/v0.1.4",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "knack-windows.zip",
+          "size": 75636802,
+          "browser_download_url": "https://github.com/AbdelmoumenDeghbouche/knack_pc/releases/download/v0.1.4/knack-windows.zip",
+          "digest": "sha256:680f00cde5f4c91042a7d391d3ae5fcf41db7b2d94669ce11923ea3d635d918b"
+        },
+        {
+          "name": "knack-windows.zip.sha256",
+          "size": 84,
+          "browser_download_url": "https://github.com/AbdelmoumenDeghbouche/knack_pc/releases/download/v0.1.4/knack-windows.zip.sha256",
+          "digest": "sha256:5b0181ad49487b26baf82c4909ddeccd94b7d9dccf9d0cee61a8c3d8a8c84bc4"
+        },
+        {
+          "name": "knack-x86_64.AppImage",
+          "size": 137124344,
+          "browser_download_url": "https://github.com/AbdelmoumenDeghbouche/knack_pc/releases/download/v0.1.4/knack-x86_64.AppImage",
+          "digest": "sha256:ba7e1c268a04d63e519dfbcdb6d132b26e66fa03d583f66965cd5438b6fbdbb7"
+        },
+        {
+          "name": "knack-x86_64.AppImage.sha256",
+          "size": 88,
+          "browser_download_url": "https://github.com/AbdelmoumenDeghbouche/knack_pc/releases/download/v0.1.4/knack-x86_64.AppImage.sha256",
+          "digest": "sha256:2ae807558051f67fef485b285c9d2bfd9773055794f24893d0c4c722d6867c2b"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "Hyant4/Knack-II-pc-port",
+    "CheckedUtc": "2026-10-28T12:00:00Z",
+    "Release": {
+      "tag_name": "knack2-Version-0.17.7-rc4",
+      "html_url": "https://github.com/Hyant4/Knack-II-pc-port/releases/tag/knack2-Version-0.17.7-rc4",
+      "draft": false,
+      "prerelease": true,
+      "assets": [
+        {
+          "name": "Knack-II-sources-V0.17.7-rc4.zip",
+          "size": 42424687,
+          "browser_download_url": "https://github.com/Hyant4/Knack-II-pc-port/releases/download/knack2-Version-0.17.7-rc4/Knack-II-sources-V0.17.7-rc4.zip",
+          "digest": "sha256:279cf894f059e86ec2d3ae9ab406a83d903f54d6cbb47639d6b9a68c552f238e"
+        },
+        {
+          "name": "Knack-II-Windows-x64-V0.17.7-rc4.zip",
+          "size": 272677718,
+          "browser_download_url": "https://github.com/Hyant4/Knack-II-pc-port/releases/download/knack2-Version-0.17.7-rc4/Knack-II-Windows-x64-V0.17.7-rc4.zip",
+          "digest": "sha256:a1c4918ec54a8e541ecdced591371c744c235454e77805a3a438b019cd597e6b"
+        },
+        {
+          "name": "SHA256SUMS.txt",
+          "size": 202,
+          "browser_download_url": "https://github.com/Hyant4/Knack-II-pc-port/releases/download/knack2-Version-0.17.7-rc4/SHA256SUMS.txt",
+          "digest": "sha256:fc3b5e7be2c9c252053d98468886873034b8682c909ed79da929812ee5e7433d"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "AbdelmoumenDeghbouche/wipeout_pc",
+    "CheckedUtc": "2026-10-28T12:00:00Z",
+    "Release": {
+      "tag_name": "windows-v0.2.43",
+      "html_url": "https://github.com/AbdelmoumenDeghbouche/wipeout_pc/releases/tag/windows-v0.2.43",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "wipeout-windows.zip",
+          "size": 75756291,
+          "browser_download_url": "https://github.com/AbdelmoumenDeghbouche/wipeout_pc/releases/download/windows-v0.2.43/wipeout-windows.zip",
+          "digest": "sha256:a8fe688c003cef0bd9707e74db4180c0543fde4078b17984e9fa928495a09290"
+        },
+        {
+          "name": "wipeout-windows.zip.sha256",
+          "size": 86,
+          "browser_download_url": "https://github.com/AbdelmoumenDeghbouche/wipeout_pc/releases/download/windows-v0.2.43/wipeout-windows.zip.sha256",
+          "digest": "sha256:041a3576b3437f4f730f6a31503420b425d538416315c47abbe8d5b0e9a16151"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "kastieloficial/RE-Code-Veronica-PS3-HD-Recomp-PC",
+    "CheckedUtc": "2026-10-28T12:00:00Z",
+    "Release": {
+      "tag_name": "v1.1.10",
+      "html_url": "https://github.com/kastieloficial/RE-Code-Veronica-PS3-HD-Recomp-PC/releases/tag/v1.1.10",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "CodeVeronica-PC-v1.1.10.zip",
+          "size": 305824381,
+          "browser_download_url": "https://github.com/kastieloficial/RE-Code-Veronica-PS3-HD-Recomp-PC/releases/download/v1.1.10/CodeVeronica-PC-v1.1.10.zip",
+          "digest": "sha256:7f9da9c2eaa5b2e4845e89c4b11ef3dbbe2eeb566c00fc2c1728771bf9287e89"
+        },
+        {
+          "name": "Veronica-PKG-Extractor-v1.0.1.zip",
+          "size": 707290,
+          "browser_download_url": "https://github.com/kastieloficial/RE-Code-Veronica-PS3-HD-Recomp-PC/releases/download/v1.1.10/Veronica-PKG-Extractor-v1.0.1.zip",
+          "digest": "sha256:a88ddfea2b0a9079922c680abab9c6871e98f4e94f9ea252e6a928b8d44e1cc2"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "soyjxck/dod3-recomp",
+    "CheckedUtc": "2026-10-28T12:00:00Z",
+    "Release": {
+      "tag_name": "v0.4.0-alpha",
+      "html_url": "https://github.com/soyjxck/dod3-recomp/releases/tag/v0.4.0-alpha",
+      "draft": false,
+      "prerelease": true,
+      "assets": [
+        {
+          "name": "dod3-recomp-v0.4.0-alpha-macos-arm64.zip",
+          "size": 122011407,
+          "browser_download_url": "https://github.com/soyjxck/dod3-recomp/releases/download/v0.4.0-alpha/dod3-recomp-v0.4.0-alpha-macos-arm64.zip",
+          "digest": "sha256:e4d5c9d8e11a7e34f8b0249d1041fda8150f4faa8f3b5b0f56ec2fb1a540a84f"
+        },
+        {
+          "name": "dod3-recomp-v0.4.0-alpha-win64.zip",
+          "size": 124941061,
+          "browser_download_url": "https://github.com/soyjxck/dod3-recomp/releases/download/v0.4.0-alpha/dod3-recomp-v0.4.0-alpha-win64.zip",
+          "digest": "sha256:135053c9b7779c0bfcbfb6a741183c362e0dd7fa2854dc0b9d8f31358fa8c09a"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "freefrank/LostOdysseyRecomp",
+    "CheckedUtc": "2026-10-28T12:00:00Z",
+    "Release": {
+      "tag_name": "v1.1.0",
+      "html_url": "https://github.com/freefrank/LostOdysseyRecomp/releases/tag/v1.1.0",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "LostOdysseyRecomp-android-arm64-v1.1.0.apk",
+          "size": 47583951,
+          "browser_download_url": "https://github.com/freefrank/LostOdysseyRecomp/releases/download/v1.1.0/LostOdysseyRecomp-android-arm64-v1.1.0.apk",
+          "digest": "sha256:41ec5d557cc78fdc72feb00754a48e7b2851730c27344eaa1619f6478850877a"
+        },
+        {
+          "name": "LostOdysseyRecomp-linux-x64-v1.1.0.AppImage",
+          "size": 89672184,
+          "browser_download_url": "https://github.com/freefrank/LostOdysseyRecomp/releases/download/v1.1.0/LostOdysseyRecomp-linux-x64-v1.1.0.AppImage",
+          "digest": "sha256:2f123063a3829bd47d2bd95e5dd64762980ae653775b7b59380eebf3d66d4fb9"
+        },
+        {
+          "name": "LostOdysseyRecomp-linux-x64-v1.1.0.flatpak",
+          "size": 56953896,
+          "browser_download_url": "https://github.com/freefrank/LostOdysseyRecomp/releases/download/v1.1.0/LostOdysseyRecomp-linux-x64-v1.1.0.flatpak",
+          "digest": "sha256:6df547712b2d799ac4d3f42a5dc438379ca349edc9204c22872e834c7e519111"
+        },
+        {
+          "name": "LostOdysseyRecomp-macos-arm64-v1.1.0.dmg",
+          "size": 65651556,
+          "browser_download_url": "https://github.com/freefrank/LostOdysseyRecomp/releases/download/v1.1.0/LostOdysseyRecomp-macos-arm64-v1.1.0.dmg",
+          "digest": "sha256:9172b4df54c2c523a6c7d2f743b9563986da1ce04fb5b4722173c90ca6c07409"
+        },
+        {
+          "name": "LostOdysseyRecomp-windows-x64-v1.1.0.zip",
+          "size": 154696631,
+          "browser_download_url": "https://github.com/freefrank/LostOdysseyRecomp/releases/download/v1.1.0/LostOdysseyRecomp-windows-x64-v1.1.0.zip",
+          "digest": "sha256:df82ac4e111f4c23ef925e6c044676e045bca421b657efbb4234591ddc6cb9ab"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "zolaware/reblue",
+    "CheckedUtc": "2026-10-28T12:00:00Z",
+    "Release": {
+      "tag_name": "v1.3.1",
+      "html_url": "https://github.com/zolaware/reblue/releases/tag/v1.3.1",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "reblue-1.3.1-aarch64.AppImage",
+          "size": 39709192,
+          "browser_download_url": "https://github.com/zolaware/reblue/releases/download/v1.3.1/reblue-1.3.1-aarch64.AppImage",
+          "digest": "sha256:84d020c208a3120022b32743c33f5f7c6a169b2f8a58987330b506d3ffe76ec3"
+        },
+        {
+          "name": "reblue-1.3.1-mac-arm64.zip",
+          "size": 21356080,
+          "browser_download_url": "https://github.com/zolaware/reblue/releases/download/v1.3.1/reblue-1.3.1-mac-arm64.zip",
+          "digest": "sha256:0a4d6ba67c8b10b8d1c03b7c084d9bb689857146e079608eacfa58f406e74205"
+        },
+        {
+          "name": "reblue-1.3.1-win-amd64-symbols.zip",
+          "size": 45183988,
+          "browser_download_url": "https://github.com/zolaware/reblue/releases/download/v1.3.1/reblue-1.3.1-win-amd64-symbols.zip",
+          "digest": "sha256:ee1c27e03b4b96a91a9621dfb0856713cd9ac6f1df0debae54979031baa185ab"
+        },
+        {
+          "name": "reblue-1.3.1-win-amd64.zip",
+          "size": 45468067,
+          "browser_download_url": "https://github.com/zolaware/reblue/releases/download/v1.3.1/reblue-1.3.1-win-amd64.zip",
+          "digest": "sha256:bf638798c2bef5f0d380852022b2d30403b0851a5ab70395fcac74976cfba9b8"
+        },
+        {
+          "name": "reblue-1.3.1-x86_64.AppImage",
+          "size": 41835000,
+          "browser_download_url": "https://github.com/zolaware/reblue/releases/download/v1.3.1/reblue-1.3.1-x86_64.AppImage",
+          "digest": "sha256:0e39e46fcab6bc442b166ddeba3448a5311d893b96ca9c60e629261c65e62ca8"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "beatrixzy/PGR4-Recomp",
+    "CheckedUtc": "2026-10-28T12:00:00Z",
+    "Release": {
+      "tag_name": "v1.2.2",
+      "html_url": "https://github.com/beatrixzy/PGR4-Recomp/releases/tag/v1.2.2",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "PGR4-Recomp-v1.2.2.zip",
+          "size": 16323267,
+          "browser_download_url": "https://github.com/beatrixzy/PGR4-Recomp/releases/download/v1.2.2/PGR4-Recomp-v1.2.2.zip",
+          "digest": "sha256:23b1e11f84a4ca265f04b8edfd27666a05e153b8ea7f7b76fbf75b712392c387"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "rashevskyv/conker-lr-recomp",
+    "CheckedUtc": "2026-10-28T12:00:00Z",
+    "Release": {
+      "tag_name": "v0.52.0",
+      "html_url": "https://github.com/rashevskyv/conker-lr-recomp/releases/tag/v0.52.0",
+      "draft": false,
+      "prerelease": true,
+      "assets": [
+        {
+          "name": "conker-lr-recomp-linux-v0.52.tar.gz",
+          "size": 15066839,
+          "browser_download_url": "https://github.com/rashevskyv/conker-lr-recomp/releases/download/v0.52.0/conker-lr-recomp-linux-v0.52.tar.gz",
+          "digest": "sha256:a1adcbd3511f180e38d68288356d91b69cdd1834dbc05ef05ebf14fac66d6c1c"
+        },
+        {
+          "name": "conker-lr-recomp-switch-v0.52.zip",
+          "size": 54560952,
+          "browser_download_url": "https://github.com/rashevskyv/conker-lr-recomp/releases/download/v0.52.0/conker-lr-recomp-switch-v0.52.zip",
+          "digest": "sha256:dadcdf8b04e6e0ba793b84847cbcdc022cfad9022635b7b2a65b4364626e521b"
+        },
+        {
+          "name": "conker-lr-recomp-windows-v0.52.zip",
+          "size": 13889730,
+          "browser_download_url": "https://github.com/rashevskyv/conker-lr-recomp/releases/download/v0.52.0/conker-lr-recomp-windows-v0.52.zip",
+          "digest": "sha256:0681342cf86298b7f3e025c43323262e28e94185ff13c79d2d9d3c7a3ae647cf"
+        },
+        {
+          "name": "SHA256SUMS.txt",
+          "size": 303,
+          "browser_download_url": "https://github.com/rashevskyv/conker-lr-recomp/releases/download/v0.52.0/SHA256SUMS.txt",
+          "digest": "sha256:ba5d6ef2c8047b3bcf84611d5262f402e81ead39e58c27928d9ff8c634504b11"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "peiikai/LASRecomp",
+    "CheckedUtc": "2026-10-28T12:00:00Z",
+    "Release": {
+      "tag_name": "test-463-bowwow",
+      "html_url": "https://github.com/peiikai/LASRecomp/releases/tag/test-463-bowwow",
+      "draft": false,
+      "prerelease": true,
+      "assets": [
+        {
+          "name": "LAS.Recomp-test-463-bowwow-linux-aarch64.AppImage",
+          "size": 105605640,
+          "browser_download_url": "https://github.com/peiikai/LASRecomp/releases/download/test-463-bowwow/LAS.Recomp-test-463-bowwow-linux-aarch64.AppImage",
+          "digest": "sha256:dea7279adfb50d059028227aba684f4f64943026a69e097aed82a2eafd90eae4"
+        },
+        {
+          "name": "LAS.Recomp-test-463-bowwow-linux-x86_64.AppImage",
+          "size": 112232952,
+          "browser_download_url": "https://github.com/peiikai/LASRecomp/releases/download/test-463-bowwow/LAS.Recomp-test-463-bowwow-linux-x86_64.AppImage",
+          "digest": "sha256:e83e595b48ac2ea643da81ef5f8675517411178a71f18dd33dc94801ae6ca880"
+        },
+        {
+          "name": "LAS.Recomp-test-463-bowwow-macOS.dmg",
+          "size": 105918612,
+          "browser_download_url": "https://github.com/peiikai/LASRecomp/releases/download/test-463-bowwow/LAS.Recomp-test-463-bowwow-macOS.dmg",
+          "digest": "sha256:bfb9fcc91da99aa86723d38d02585faee9768d4593554c8c2b7403e80f8380f2"
+        },
+        {
+          "name": "LAS.Recomp-test-463-bowwow-windows.zip",
+          "size": 98850294,
+          "browser_download_url": "https://github.com/peiikai/LASRecomp/releases/download/test-463-bowwow/LAS.Recomp-test-463-bowwow-windows.zip",
+          "digest": "sha256:ba1a083822dc622a053bbcec8e8f714568d4c5a3ebb3e721ddd7ec3a4e8f2e9e"
+        }
+      ]
+    }
   }
 ]

@@ -458,5 +458,197 @@
     ],
     "Kind": "Camada de compatibilidade",
     "Notes": "Distribuição oficial no itch.io. Use Baixar no site oficial e depois Importar ZIP e adicionar. Jogar e Configurar abrem o Azimuth: indique seus arquivos Xbox One 1.0.0.64 na página Game e inicie por ali. Suporta Storm Island; Fast & Furious é experimental. O NEXUS não redistribui o wrapper nem os jogos."
+  },
+  {
+    "Id": "knack",
+    "Name": "Knack",
+    "Repository": "AbdelmoumenDeghbouche/knack_pc",
+    "Platform": "PlayStation 4",
+    "AssetPattern": "^knack-windows\\.zip$",
+    "PlayNames": [
+      "Play Knack.exe"
+    ],
+    "ConfigNames": [
+      "Knack.exe"
+    ],
+    "Notes": "Versão inicial. Configure seu dump PS4 e a atualização no launcher Knack.exe. Jogar usa a entrada direta com ajustes salvos. Requer AVX e Vulkan 1.3.",
+    "AllowPrerelease": false,
+    "Kind": "Port / runtime PS4",
+    "ArtworkTitle": "Knack"
+  },
+  {
+    "Id": "knack2",
+    "Name": "Knack II",
+    "Repository": "Hyant4/Knack-II-pc-port",
+    "Platform": "PlayStation 4",
+    "AssetPattern": "^Knack-II-Windows-x64-.*\\.zip$",
+    "PlayNames": [
+      "Play Knack II.exe"
+    ],
+    "ConfigNames": [
+      "Knack II.exe"
+    ],
+    "Notes": "ALPHA / RC: versão experimental, com preparação de shaders e cooperativo local. Configure o dump no launcher original antes de Jogar. A instalação de pré-release exige aceitação explícita.",
+    "AllowPrerelease": true,
+    "Kind": "Port / runtime PS4",
+    "ArtworkTitle": "Knack II"
+  },
+  {
+    "Id": "wipeout",
+    "Name": "WipEout Omega Collection",
+    "Repository": "AbdelmoumenDeghbouche/wipeout_pc",
+    "Platform": "PlayStation 4",
+    "AssetPattern": "^wipeout-windows\\.zip$",
+    "PlayNames": [
+      "Play WipEout.exe"
+    ],
+    "ConfigNames": [
+      "WipEout.exe"
+    ],
+    "Notes": "Configure seu dump PS4 no launcher WipEout.exe; Jogar usa a entrada direta e opções salvas. Versão em desenvolvimento. Requer Vulkan 1.3.",
+    "AllowPrerelease": false,
+    "Kind": "Port / runtime PS4",
+    "ArtworkTitle": "WipEout Omega Collection"
+  },
+  {
+    "Id": "code-veronica",
+    "Name": "Resident Evil Code: Veronica X HD",
+    "Repository": "kastieloficial/RE-Code-Veronica-PS3-HD-Recomp-PC",
+    "Platform": "PlayStation 3",
+    "AssetPattern": "^CodeVeronica-PC-.*\\.zip$",
+    "PlayNames": [
+      "Code Veronica.exe"
+    ],
+    "ConfigNames": [
+      "Code Veronica.exe"
+    ],
+    "Notes": "Jogar e Configurar abrem o launcher original, que seleciona a região correta. Precisa dos seus arquivos PSN 01.00 extraídos; versões EU/US requerem sua licença RAP. O extrator opcional é um download separado. Requer Direct3D 12 e VC++ x64.",
+    "AllowPrerelease": false,
+    "Kind": "Recompilação",
+    "ArtworkTitle": "Resident Evil – Code: Veronica"
+  },
+  {
+    "Id": "drakengard3",
+    "Name": "Drakengard 3",
+    "Repository": "soyjxck/dod3-recomp",
+    "Platform": "PlayStation 3",
+    "AssetPattern": "^dod3-recomp-.*-win64\\.zip$",
+    "PlayNames": [
+      "dod3.exe"
+    ],
+    "ConfigNames": [
+      "dod3.exe"
+    ],
+    "Notes": "ALPHA: Jogar e Configurar abrem o próprio dod3.exe. Forneça seu disco ou pacote PSN compatível e siga o importador original. Compatibilidade da campanha e desempenho ainda em desenvolvimento.",
+    "AllowPrerelease": true,
+    "Kind": "Recompilação",
+    "ArtworkTitle": "Drakengard 3"
+  },
+  {
+    "Id": "lost-odyssey",
+    "Name": "Lost Odyssey",
+    "Repository": "freefrank/LostOdysseyRecomp",
+    "Platform": "Xbox 360",
+    "AssetPattern": "^LostOdysseyRecomp-windows-x64-.*\\.zip$",
+    "PlayNames": [
+      "LostOdysseyRecomp.exe"
+    ],
+    "ConfigNames": [
+      "LostOdysseyRecomp.exe"
+    ],
+    "Notes": "Primeira abertura importa seus discos. Configurar abre a página de preparação sem iniciar o jogo (--setup-only); outras opções ficam no menu interno. Requer CPU AVX. Mantenha a instalação em pasta gravável.",
+    "AllowPrerelease": false,
+    "Kind": "Recompilação",
+    "ArtworkTitle": "Lost Odyssey",
+    "ConfigurationArguments": "--setup-only"
+  },
+  {
+    "Id": "blue-dragon",
+    "Name": "Blue Dragon · re:Blue",
+    "Repository": "zolaware/reblue",
+    "Platform": "Xbox 360",
+    "AssetPattern": "^reblue-.*-win-amd64\\.zip$",
+    "PlayNames": [
+      "reblue.exe"
+    ],
+    "ConfigNames": [],
+    "Notes": "O assistente inicial prepara seus discos. Opções dentro do aplicativo. O NEXUS instala o pacote Direct3D 12 Windows, excluindo símbolos, macOS e versões nightly.",
+    "AllowPrerelease": false,
+    "Kind": "Recompilação",
+    "ArtworkTitle": "Blue Dragon (video game)"
+  },
+  {
+    "Id": "pgr4",
+    "Name": "Project Gotham Racing 4",
+    "Repository": "beatrixzy/PGR4-Recomp",
+    "Platform": "Xbox 360",
+    "AssetPattern": "^PGR4-Recomp-.*\\.zip$",
+    "PlayNames": [
+      "pgr4_recompiled.exe"
+    ],
+    "ConfigNames": [],
+    "Notes": "Projeto incompleto. Use Configurar jogo no NEXUS para selecionar sua pasta extraída com default.xex. Jogar passa o caminho e os parâmetros publicados no run.bat. Geometry Wars no menu da garagem pode causar falha.",
+    "AllowPrerelease": false,
+    "Kind": "Recompilação",
+    "ArtworkTitle": "Project Gotham Racing 4",
+    "Arguments": "--execute_unclipped_draw_vs_on_cpu --gpu_plugin=\"xenos\" --fullscreen=false"
+  },
+  {
+    "Id": "conker-lr",
+    "Name": "Conker: Live & Reloaded",
+    "Repository": "rashevskyv/conker-lr-recomp",
+    "Platform": "Xbox",
+    "AssetPattern": "^conker-lr-recomp-windows-.*\\.zip$",
+    "PlayNames": [
+      "clx.exe"
+    ],
+    "ConfigNames": [],
+    "Notes": "PRÉ-RELEASE experimental. Use Configurar jogo no NEXUS para indicar sua pasta de disco extraída com default.xbe. O NEXUS aplica o ambiente do script Windows e abre clx.exe diretamente. Opções gráficas e controles no menu do jogo.",
+    "AllowPrerelease": true,
+    "Kind": "Recompilação",
+    "ArtworkTitle": "Conker: Live & Reloaded"
+  },
+  {
+    "Id": "las-recomp",
+    "Name": "Link’s Awakening · LAS Recomp",
+    "Repository": "peiikai/LASRecomp",
+    "Platform": "Nintendo Switch",
+    "AssetPattern": "^LAS[. ]Recomp-.*-windows\\.zip$",
+    "PlayNames": [
+      "lasrecomp.exe"
+    ],
+    "ConfigNames": [
+      "lasrecomp.exe"
+    ],
+    "Notes": "Build de teste. O próprio aplicativo prepara e recompila os arquivos do seu dump Switch na primeira abertura. Jogar e Configurar abrem a tela inicial. Requer AVX2 e Vulkan 1.3. Fonte separada do projeto kaliszmichal já listado.",
+    "AllowPrerelease": true,
+    "Kind": "Recompilação",
+    "ArtworkTitle": "The Legend of Zelda: Link's Awakening (2019 video game)"
+  },
+  {
+    "Id": "smo",
+    "Name": "Super Mario Odyssey",
+    "Repository": "Coz-0/smo-recomp",
+    "Platform": "Nintendo Switch",
+    "AssetPattern": "",
+    "PlayNames": [],
+    "ConfigNames": [],
+    "ProjectOnly": true,
+    "Kind": "Projeto / preparação manual",
+    "ArtworkTitle": "Super Mario Odyssey",
+    "Notes": "Experimental, sem release Windows publicada na consulta de 28/10/2026. Requer compilação a partir do seu dump 1.4.1. Abra o projeto e adicione sua instalação manualmente após prepará-la."
+  },
+  {
+    "Id": "burnout3",
+    "Name": "Burnout 3: Takedown",
+    "Repository": "sp00nznet/burnout3",
+    "Platform": "Xbox",
+    "AssetPattern": "",
+    "PlayNames": [],
+    "ConfigNames": [],
+    "ProjectOnly": true,
+    "Kind": "Projeto / preparação manual",
+    "ArtworkTitle": "Burnout 3: Takedown",
+    "Notes": "O projeto publica um instalador EXE, não um ZIP portátil com executáveis de jogo. Abra o projeto para instalar e preparar seus próprios arquivos; depois adicione o executável gerado manualmente. O NEXUS não executa instaladores nem instala ferramentas por conta própria."
   }
 ]

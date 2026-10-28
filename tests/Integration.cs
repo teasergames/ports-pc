@@ -8,6 +8,13 @@ public static class Integration {
   public static int Main(string[] args){
     try{
       string root=Path.GetFullPath(args[0]);var store=new Store(root);var lib=new Library();
+      if(args[1]=="oct28-packages"){
+        foreach(var entry in PortCatalog.LoadEntries().Where(e=>new[]{"knack","knack2","wipeout","code-veronica","drakengard3","lost-odyssey","blue-dragon","pgr4","conker-lr","las-recomp"}.Contains(e.Id))){
+          var release=PortCatalog.BundledRelease(entry);string package=Path.Combine(args[2],release.AssetName),parent=Path.Combine(root,"ports"),destination=Path.Combine(parent,entry.Id+"-"+PortCatalog.VersionFolder(release.Version));Game game;
+          if(Directory.Exists(destination)){PortCatalog.VerifyDigest(package,release.Digest);game=PortCatalog.Register(entry,destination,release.Version);}else using(var catalog=new PortCatalog(new PackageHandler(File.ReadAllBytes(package))))game=catalog.Install(entry,release,parent,null,CancellationToken.None,entry.AllowPrerelease).GetAwaiter().GetResult();
+          if(game.Platform!=entry.Platform||!File.Exists(game.Executable))throw new Exception("Package registration failed");if(entry.ConfigNames.Length>0)Ports.ConfigurationStartInfo(game);Ports.StartInfo(game,false);lib.Games.Add(game);store.Save(lib);Console.WriteLine("PASS real package integrity, installation, platform and launch/configuration: "+entry.Id);
+        }return 0;
+      }
       if(args[1]=="xbox-packages"){
         foreach(var entry in PortCatalog.LoadEntries().Where(e=>new[]{"black","darkwatch","forza2","forza3","forza4","forza-horizon","azimuth"}.Contains(e.Id))){
           Game game;string parent=Path.Combine(root,"ports");if(entry.ManualPackage){using(var catalog=new PortCatalog())game=catalog.ImportZip(entry,Path.Combine(args[2],"azimuth-windows.zip"),parent,null,CancellationToken.None).GetAwaiter().GetResult();}

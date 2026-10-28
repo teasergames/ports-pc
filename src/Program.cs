@@ -18,8 +18,8 @@ using Microsoft.Win32;
 
 [assembly: AssemblyTitle("NEXUS · Ports PC")]
 [assembly: AssemblyProduct("NEXUS Ports PC")]
-[assembly: AssemblyVersion("1.5.1.0")]
-[assembly: AssemblyFileVersion("1.5.1.0")]
+[assembly: AssemblyVersion("1.6.0.0")]
+[assembly: AssemblyFileVersion("1.6.0.0")]
 [assembly: System.Runtime.Versioning.TargetFramework(".NETFramework,Version=v4.8")]
 namespace Nexus {
   public static class Program {
@@ -59,7 +59,7 @@ namespace Nexus {
       Find<Button>("AddButton").Click+=delegate{Add();};Find<Button>("EditButton").Click+=delegate{Edit();};Find<Button>("PlayButton").Click+=delegate{Launch();};Find<Button>("FavoriteButton").Click+=delegate{if(selected!=null){selected.Favorite=!selected.Favorite;Save();Refresh();}};
       Find<Button>("ConfigureButton").Click+=delegate{if(selected==null)return;try{if(FolderLaunch.Supports(selected)){ConfigureSourceFolder();return;}if(GameContent.Supports(selected)){ConfigureContent();return;}Process.Start(Ports.ConfigurationStartInfo(selected));Status("Configuração aberta: "+selected.Name);}catch(Exception ex){MessageBox.Show(Window,ex.Message,"Configurar jogo",MessageBoxButton.OK,MessageBoxImage.Information);}};
       Find<Button>("SettingsButton").Click+=delegate{Settings();};Find<Button>("DetectButton").Click+=delegate{Detect(true);};
-      Find<Button>("DownloadPortsButton").Click+=delegate{new CatalogWindow(Window,store.Root,library.Games,delegate(Game game){library.Games.Add(game);selected=game;Save();Refresh();ResolveArtwork(game);}).ShowDialog();};
+      Find<Button>("DownloadPortsButton").Click+=delegate{new CatalogWindow(Window,store.Root,library.Games,delegate(Game game){int index=library.Games.FindIndex(g=>g.Id==game.Id);Game previous=index<0?null:library.Games[index];if(index<0)library.Games.Add(game);else library.Games[index]=game;try{Save();}catch{if(index<0)library.Games.Remove(game);else library.Games[index]=previous;throw;}selected=game;Refresh();ResolveArtwork(game);}).ShowDialog();};
       Find<TextBox>("SearchBox").TextChanged+=delegate{RefreshGrid();};Find<CheckBox>("FavoritesOnly").Checked+=delegate{RefreshGrid();};Find<CheckBox>("FavoritesOnly").Unchecked+=delegate{RefreshGrid();};
       viewSaveTimer.Interval=TimeSpan.FromMilliseconds(400);viewSaveTimer.Tick+=delegate{viewSaveTimer.Stop();if(!smoke)Save();};
       Find<Button>("GridViewButton").Click+=delegate{SetView("grid");};Find<Button>("ListViewButton").Click+=delegate{SetView("list");};
@@ -177,7 +177,7 @@ namespace Nexus {
       folder.Click+=delegate{Process.Start(new ProcessStartInfo("explorer.exe", "\""+store.Root+"\""){UseShellExecute=true});};
       save.Click+=delegate{library.OnlineArtwork=online.IsChecked==true;library.MinimizeOnLaunch=minimize.IsChecked==true;library.SetApiKey(key.Password);Save();dialog.DialogResult=true;};dialog.ShowDialog();
     }
-    public void Capture(string target){if(Environment.GetCommandLineArgs().Contains("--content-smoke")){Game sample=library.Games.FirstOrDefault(GameContent.Supports)??new Game{Name="BLACK",Executable=Path.Combine(store.Root,"BLACK.exe")};var dialog=new GameContentWindow(Window,sample);dialog.Show();dialog.UpdateLayout();CaptureWindow(dialog,target);dialog.Close();return;}if(Environment.GetCommandLineArgs().Contains("--catalog-smoke")){var catalogWindow=new CatalogWindow(Window,store.Root,library.Games,delegate(Game g){}){IsSmoke=true};catalogWindow.Show();catalogWindow.UpdateLayout();catalogWindow.CaptureSmoke(target);catalogWindow.Close();}else CaptureWindow(Window,target);}
+    public void Capture(string target){if(Environment.GetCommandLineArgs().Contains("--package-smoke")){var dialog=new PackageChoiceWindow(Window,"Exemplo de pacote",new[]{"Game.exe","Launcher.exe","bin\\\\Runtime.exe"},null);dialog.Show();dialog.UpdateLayout();CaptureWindow(dialog,target);dialog.Close();return;}if(Environment.GetCommandLineArgs().Contains("--content-smoke")){Game sample=library.Games.FirstOrDefault(GameContent.Supports)??new Game{Name="BLACK",Executable=Path.Combine(store.Root,"BLACK.exe")};var dialog=new GameContentWindow(Window,sample);dialog.Show();dialog.UpdateLayout();CaptureWindow(dialog,target);dialog.Close();return;}if(Environment.GetCommandLineArgs().Contains("--catalog-smoke")||Environment.GetCommandLineArgs().Contains("--updates-smoke")){var catalogWindow=new CatalogWindow(Window,store.Root,library.Games,delegate(Game g){}){IsSmoke=true};catalogWindow.Show();catalogWindow.UpdateLayout();if(Environment.GetCommandLineArgs().Contains("--updates-smoke"))catalogWindow.CaptureUpdateSmoke(target);else catalogWindow.CaptureSmoke(target);catalogWindow.Close();}else CaptureWindow(Window,target);}
     public void PreviewView(string mode,int size){
       Find<Button>(mode=="list"?"ListViewButton":"GridViewButton").RaiseEvent(new RoutedEventArgs(Button.ClickEvent));
       if(size>0)Find<Slider>("ViewSizeSlider").Value=mode=="list"?(size-48)/0.84:(size-140)/2.0;

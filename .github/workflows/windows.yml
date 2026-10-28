@@ -31,6 +31,10 @@ jobs:
           }
           $catalog = Start-Process ./dist/Nexus/Nexus.exe -ArgumentList @('--data-dir', "`"$testData`"", '--smoke-test', "`"$image`"", '--catalog-smoke') -Wait -PassThru -WindowStyle Hidden
           if ($catalog.ExitCode -ne 0 -or !(Test-Path $image)) { throw 'Catalog smoke test failed' }
+          foreach ($mode in @('--updates-smoke','--package-smoke')) {
+            $extra = Start-Process ./dist/Nexus/Nexus.exe -ArgumentList @('--data-dir', "`"$testData`"", '--smoke-test', "`"$image`"", $mode) -Wait -PassThru -WindowStyle Hidden
+            if ($extra.ExitCode -ne 0 -or !(Test-Path $image)) { throw "Installer/update interface smoke failed: $mode" }
+          }
           $content = Start-Process ./dist/Nexus/Nexus.exe -ArgumentList @('--data-dir', "`"$testData`"", '--smoke-test', "`"$image`"", '--content-smoke') -Wait -PassThru -WindowStyle Hidden
           if ($content.ExitCode -ne 0 -or !(Test-Path $image)) { throw 'Content setup smoke test failed' }
       - uses: actions/upload-artifact@v4

@@ -1570,5 +1570,3497 @@
         }
       ]
     }
+  },
+  {
+    "Repository": "mchughalex/skate3recomp",
+    "CheckedUtc": "2026-10-28T23:27:11.241812+00:00",
+    "Release": {
+      "tag_name": "v2.0.2",
+      "html_url": "https://github.com/mchughalex/skate3recomp/releases/tag/v2.0.2",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "Skate3Recomp-Windows.zip",
+          "size": 30292532,
+          "browser_download_url": "https://github.com/mchughalex/skate3recomp/releases/download/v2.0.2/Skate3Recomp-Windows.zip",
+          "digest": "sha256:b9785b9f3ba6f8180268dc5ea26ed2ec7b64af46a4c04219a33236c64bc65a17"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "sp00nznet/burnout3",
+    "CheckedUtc": "2026-10-28T23:27:11.241812+00:00",
+    "Release": {
+      "tag_name": "v0.1.0",
+      "html_url": "https://github.com/sp00nznet/burnout3/releases/tag/v0.1.0",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "Burnout3-Installer-windows-x64.exe",
+          "size": 19200000,
+          "browser_download_url": "https://github.com/sp00nznet/burnout3/releases/download/v0.1.0/Burnout3-Installer-windows-x64.exe",
+          "digest": "sha256:92b7c6d7cc0634332053ee53f7a7cd3d2e14b2d54d5a985e2f38502a14b7c5bf"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "DahSidiAbdallah/ConkerBFDReloaded",
+    "CheckedUtc": "2026-10-28T23:27:11.241812+00:00",
+    "Release": {
+      "tag_name": "v1.4.7",
+      "html_url": "https://github.com/DahSidiAbdallah/ConkerBFDReloaded/releases/tag/v1.4.7",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "ConkerBFDReloaded-v1.4.7-Windows.zip",
+          "size": 41241440,
+          "browser_download_url": "https://github.com/DahSidiAbdallah/ConkerBFDReloaded/releases/download/v1.4.7/ConkerBFDReloaded-v1.4.7-Windows.zip",
+          "digest": "sha256:7f9a22a3994e34889c76c07ff927824046573856c4f945d0c4dd8e5bfe14b2e2"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "JackandBeans/Snap64Recomp",
+    "CheckedUtc": "2026-10-28T23:27:11.241812+00:00",
+    "Release": {
+      "tag_name": "v1.1.6",
+      "html_url": "https://github.com/JackandBeans/Snap64Recomp/releases/tag/v1.1.6",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "Snap64Recomp-1.1.6-win64.zip",
+          "size": 16580695,
+          "browser_download_url": "https://github.com/JackandBeans/Snap64Recomp/releases/download/v1.1.6/Snap64Recomp-1.1.6-win64.zip",
+          "digest": "sha256:73bd4f7fae0f41670d9222af1f7287dfe60978997128a5926179e48d28ac351d"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "nefariousjosiah/WWE-SVR2007-RECOMP",
+    "CheckedUtc": "2026-10-28T23:27:11.241812+00:00",
+    "Release": {
+      "tag_name": "v2.2.1",
+      "html_url": "https://github.com/nefariousjosiah/WWE-SVR2007-RECOMP/releases/tag/v2.2.1",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "SVR2007-NATIVE.zip",
+          "size": 43244024,
+          "browser_download_url": "https://github.com/nefariousjosiah/WWE-SVR2007-RECOMP/releases/download/v2.2.1/SVR2007-NATIVE.zip",
+          "digest": "sha256:db2a2f3db5b8c7bd12e8e3578ffffb076eaebe1cd24958312b478096d8b670f6"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "nefariousjosiah/WWE-SVR2008-RECOMP",
+    "CheckedUtc": "2026-10-28T23:27:11.241812+00:00",
+    "Release": {
+      "tag_name": "v2.2.1",
+      "html_url": "https://github.com/nefariousjosiah/WWE-SVR2008-RECOMP/releases/tag/v2.2.1",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "SVR2008-NATIVE.zip",
+          "size": 48700375,
+          "browser_download_url": "https://github.com/nefariousjosiah/WWE-SVR2008-RECOMP/releases/download/v2.2.1/SVR2008-NATIVE.zip",
+          "digest": "sha256:5081bf0a76bcb9b59b223cf5fb349ab29939a26eb17d8505babc56924cf5f19e"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "nefariousjosiah/WWE-SVR2009-RECOMP",
+    "CheckedUtc": "2026-10-28T23:27:11.241812+00:00",
+    "Release": {
+      "tag_name": "v2.1.1",
+      "html_url": "https://github.com/nefariousjosiah/WWE-SVR2009-RECOMP/releases/tag/v2.1.1",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "SVR2009-NATIVE.zip",
+          "size": 47083471,
+          "browser_download_url": "https://github.com/nefariousjosiah/WWE-SVR2009-RECOMP/releases/download/v2.1.1/SVR2009-NATIVE.zip",
+          "digest": "sha256:722a763664ebeef7893a325549078fe302602516ee0e342660320ffb16293d88"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "nefariousjosiah/WWE-SVR2010-RECOMP",
+    "CheckedUtc": "2026-10-28T23:27:11.241812+00:00",
+    "Release": {
+      "tag_name": "v2.1.3",
+      "html_url": "https://github.com/nefariousjosiah/WWE-SVR2010-RECOMP/releases/tag/v2.1.3",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "SVR2010-NATIVE.zip",
+          "size": 59078988,
+          "browser_download_url": "https://github.com/nefariousjosiah/WWE-SVR2010-RECOMP/releases/download/v2.1.3/SVR2010-NATIVE.zip",
+          "digest": "sha256:74e8282195244f6dd9a5adc366dfa28240d1bc95c8f5f51f78a5011d8cfa5147"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "shaneomac1337/WWE-AllStars-Recomp",
+    "CheckedUtc": "2026-10-28T23:27:11.241812+00:00",
+    "Release": {
+      "tag_name": "v1.7.0",
+      "html_url": "https://github.com/shaneomac1337/WWE-AllStars-Recomp/releases/tag/v1.7.0",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "WWEAllStarsRecomp-1.7.0-e5f0636-win-x64.zip",
+          "size": 63533717,
+          "browser_download_url": "https://github.com/shaneomac1337/WWE-AllStars-Recomp/releases/download/v1.7.0/WWEAllStarsRecomp-1.7.0-e5f0636-win-x64.zip",
+          "digest": "sha256:cc80ba5940b37220984ef83036b9da003bf08e17440a660395b62708299cab3f"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "PromethenDev/wwe13-recomp",
+    "CheckedUtc": "2026-10-28T23:27:11.241812+00:00",
+    "Release": {
+      "tag_name": "v1.5",
+      "html_url": "https://github.com/PromethenDev/wwe13-recomp/releases/tag/v1.5",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "WWE13-Recomp-v1.5.zip",
+          "size": 93358360,
+          "browser_download_url": "https://github.com/PromethenDev/wwe13-recomp/releases/download/v1.5/WWE13-Recomp-v1.5.zip",
+          "digest": "sha256:0df5e14af22d58d4b2eef87bf1567f4fe3fb68c5053a8bca95cf428ca6d79e0a"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "PromethenDev/wwe2k14-recomp",
+    "CheckedUtc": "2026-10-28T23:27:11.241812+00:00",
+    "Release": {
+      "tag_name": "v1.4.2",
+      "html_url": "https://github.com/PromethenDev/wwe2k14-recomp/releases/tag/v1.4.2",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "WWE2K14-Recomp-v1.4.2-x64.zip",
+          "size": 169102503,
+          "browser_download_url": "https://github.com/PromethenDev/wwe2k14-recomp/releases/download/v1.4.2/WWE2K14-Recomp-v1.4.2-x64.zip",
+          "digest": "sha256:7f92a81697869cb08481ef261c5bb4d8ddfa7d0bc3d5c55fbab1b27eeb6ac7f5"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "vyanhursky/DefJamFFNY-recomp",
+    "CheckedUtc": "2026-10-28T23:27:11.241812+00:00",
+    "Release": {
+      "tag_name": "v0.12.3",
+      "html_url": "https://github.com/vyanhursky/DefJamFFNY-recomp/releases/tag/v0.12.3",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "DefJamSetup-0.12.3-windows-x64.exe",
+          "size": 59325440,
+          "browser_download_url": "https://github.com/vyanhursky/DefJamFFNY-recomp/releases/download/v0.12.3/DefJamSetup-0.12.3-windows-x64.exe",
+          "digest": "sha256:073c69f47b29935622bdf020d122449b3d0d30acca0d04241515ae5c939cd779"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "samuelit0davila/fifa-street-pc-port",
+    "CheckedUtc": "2026-10-28T23:27:11.241812+00:00",
+    "Release": {
+      "tag_name": "v2.1.3-online-beta",
+      "html_url": "https://github.com/samuelit0davila/fifa-street-pc-port/releases/tag/v2.1.3-online-beta",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "ReStreet-2.1.3-Setup.exe",
+          "size": 453783051,
+          "browser_download_url": "https://github.com/samuelit0davila/fifa-street-pc-port/releases/download/v2.1.3-online-beta/ReStreet-2.1.3-Setup.exe",
+          "digest": "sha256:21cb9e09036d8f6ef865c87f29bf7b8d21f3e37b5fdb3bdd43cb9f53608116d6"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "Alexbeav/fm4-recomp",
+    "CheckedUtc": "2026-10-28T23:27:11.241812+00:00",
+    "Release": {
+      "tag_name": "v0.1.0-alpha.2",
+      "html_url": "https://github.com/Alexbeav/fm4-recomp/releases/tag/v0.1.0-alpha.2",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "fm4-recomp-0.1.0-alpha.2-win-x64.zip",
+          "size": 54753905,
+          "browser_download_url": "https://github.com/Alexbeav/fm4-recomp/releases/download/v0.1.0-alpha.2/fm4-recomp-0.1.0-alpha.2-win-x64.zip",
+          "digest": "sha256:b4564292c3c137475de2b05974cb3cd1ba98a9ecd28434f46e3da3bf98f0f02a"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "wivi514/Dead_Rising_2_Case_Zero_Xenon_Recomp",
+    "CheckedUtc": "2026-10-28T23:27:11.241812+00:00",
+    "Release": {
+      "tag_name": "v1.1.3",
+      "html_url": "https://github.com/wivi514/Dead_Rising_2_Case_Zero_Xenon_Recomp/releases/tag/v1.1.3",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "CaseZeroRecomp-windows-x86_64.zip",
+          "size": 24956419,
+          "browser_download_url": "https://github.com/wivi514/Dead_Rising_2_Case_Zero_Xenon_Recomp/releases/download/v1.1.3/CaseZeroRecomp-windows-x86_64.zip",
+          "digest": "sha256:f821dd717c08baa83b06ae11ece1963835bbe07816b43a52792f3040cfd99a28"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "Supermedo/wet-recomp",
+    "CheckedUtc": "2026-10-28T23:27:11.241812+00:00",
+    "Release": {
+      "tag_name": "v0.6.0",
+      "html_url": "https://github.com/Supermedo/wet-recomp/releases/tag/v0.6.0",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "wet-recomp-windows-x64.zip",
+          "size": 28822030,
+          "browser_download_url": "https://github.com/Supermedo/wet-recomp/releases/download/v0.6.0/wet-recomp-windows-x64.zip",
+          "digest": "sha256:7476db9b6270d3a6abf03ce9b5506734dda66d1a305efffc7c8dcdc82e9c2937"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "nikolaygorb/ArmyOfTwoRecomp",
+    "CheckedUtc": "2026-10-28T23:27:11.241812+00:00",
+    "Release": {
+      "tag_name": "1.4",
+      "html_url": "https://github.com/nikolaygorb/ArmyOfTwoRecomp/releases/tag/1.4",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "Ao2-win64.zip",
+          "size": 43763935,
+          "browser_download_url": "https://github.com/nikolaygorb/ArmyOfTwoRecomp/releases/download/1.4/Ao2-win64.zip",
+          "digest": "sha256:e105eb93417f82a58b97d678c2d0d57e9507b2a7ccc3dff058c22fe76e686120"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "danielgomesvieira2000/pilotwings-64-recomp",
+    "CheckedUtc": "2026-10-28T23:27:11.241812+00:00",
+    "Release": {
+      "tag_name": "v0.1.1",
+      "html_url": "https://github.com/danielgomesvieira2000/pilotwings-64-recomp/releases/tag/v0.1.1",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "Pilotwings64Recomp-0.1.1-windows-x64.zip",
+          "size": 17036917,
+          "browser_download_url": "https://github.com/danielgomesvieira2000/pilotwings-64-recomp/releases/download/v0.1.1/Pilotwings64Recomp-0.1.1-windows-x64.zip",
+          "digest": "sha256:94453fb09ca4ef2a98f5f5addfa03385c3de96d89d2cecb21591f44c741b31e8"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "christianortel/skate2-recompile-pc",
+    "CheckedUtc": "2026-10-28T23:27:11.241812+00:00",
+    "Release": {
+      "tag_name": "v0.1.1",
+      "html_url": "https://github.com/christianortel/skate2-recompile-pc/releases/tag/v0.1.1",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "Skate2-PC-v0.1.1-Windows-x64.zip",
+          "size": 23315343,
+          "browser_download_url": "https://github.com/christianortel/skate2-recompile-pc/releases/download/v0.1.1/Skate2-PC-v0.1.1-Windows-x64.zip",
+          "digest": "sha256:55a1062c6d0e6ed74a1bf291617a60a1b74cdd6c6bdad9366652516ca17bd270"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "alondero/aerogauge-recomp",
+    "CheckedUtc": "2026-10-28T23:27:11.241812+00:00",
+    "Release": {
+      "tag_name": "v0.7.0",
+      "html_url": "https://github.com/alondero/aerogauge-recomp/releases/tag/v0.7.0",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "aerogauge-recomp-windows-x64.zip",
+          "size": 27791242,
+          "browser_download_url": "https://github.com/alondero/aerogauge-recomp/releases/download/v0.7.0/aerogauge-recomp-windows-x64.zip",
+          "digest": "sha256:4f9c68c58e0b95336e6a014e3e12a9ef065e1d08033b7e4ea2c7d6ccd629eacc"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "jcsix694/def-jam-vendetta-recomp",
+    "CheckedUtc": "2026-10-28T23:27:11.241812+00:00",
+    "Release": {
+      "tag_name": "v0.4.4",
+      "html_url": "https://github.com/jcsix694/def-jam-vendetta-recomp/releases/tag/v0.4.4",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "Def-Jam-Vendetta-Recompiled-Windows.zip",
+          "size": 88675840,
+          "browser_download_url": "https://github.com/jcsix694/def-jam-vendetta-recomp/releases/download/v0.4.4/Def-Jam-Vendetta-Recompiled-Windows.zip",
+          "digest": "sha256:50a8763f62310923b3068ad982d57ef8504388a10f722d4154eebeca33d49999"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "TheGh0stShip/BattleTanx-Global-Assault-PC-Port",
+    "CheckedUtc": "2026-10-28T23:27:11.241812+00:00",
+    "Release": {
+      "tag_name": "v0.2.5",
+      "html_url": "https://github.com/TheGh0stShip/BattleTanx-Global-Assault-PC-Port/releases/tag/v0.2.5",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "BattleTanxGA-0.2.5-windows-x64-portable.zip",
+          "size": 13559683,
+          "browser_download_url": "https://github.com/TheGh0stShip/BattleTanx-Global-Assault-PC-Port/releases/download/v0.2.5/BattleTanxGA-0.2.5-windows-x64-portable.zip",
+          "digest": "sha256:1e4cebcdf9e38e5f24917148c25a2181b4e7df3f8c236f54734d706a3a91c8fc"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "Mabec-games/iss2000-recomp",
+    "CheckedUtc": "2026-10-28T23:27:11.241812+00:00",
+    "Release": {
+      "tag_name": "v1.4",
+      "html_url": "https://github.com/Mabec-games/iss2000-recomp/releases/tag/v1.4",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "Mabecs_ISS2000_Widescreen-Windows-x64.zip",
+          "size": 20821675,
+          "browser_download_url": "https://github.com/Mabec-games/iss2000-recomp/releases/download/v1.4/Mabecs_ISS2000_Widescreen-Windows-x64.zip",
+          "digest": "sha256:0faa54185eef1332bba1c157862d230227262278e3415009e9fb0ce9dfb85722"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "itsbybanshee/wwe2k16-pc",
+    "CheckedUtc": "2026-10-28T23:27:11.241812+00:00",
+    "Release": {
+      "tag_name": "v1.1.0",
+      "html_url": "https://github.com/itsbybanshee/wwe2k16-pc/releases/tag/v1.1.0",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "WWE2K16-PC-v1.1.0.zip",
+          "size": 84017126,
+          "browser_download_url": "https://github.com/itsbybanshee/wwe2k16-pc/releases/download/v1.1.0/WWE2K16-PC-v1.1.0.zip",
+          "digest": "sha256:41f82980deb01cd75c2d24e0372cdd423558ad937f5c1ab5749137a0f3d142e0"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "djultra64/Power-Dozer",
+    "CheckedUtc": "2026-10-28T23:27:11.241812+00:00",
+    "Release": {
+      "tag_name": "v0.84",
+      "html_url": "https://github.com/djultra64/Power-Dozer/releases/tag/v0.84",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "power-dozer-v0.84-windows-x86_64.zip",
+          "size": 14232529,
+          "browser_download_url": "https://github.com/djultra64/Power-Dozer/releases/download/v0.84/power-dozer-v0.84-windows-x86_64.zip",
+          "digest": "sha256:5b25d339376065442d82972917c921fa25f3b9e2f5bb87252389a993a4723533"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "djultra64/Blocksphere",
+    "CheckedUtc": "2026-10-28T23:27:11.241812+00:00",
+    "Release": {
+      "tag_name": "v1.1.0",
+      "html_url": "https://github.com/djultra64/Blocksphere/releases/tag/v1.1.0",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "blocksphere-1.1.0-windows-x86_64.zip",
+          "size": 13208075,
+          "browser_download_url": "https://github.com/djultra64/Blocksphere/releases/download/v1.1.0/blocksphere-1.1.0-windows-x86_64.zip",
+          "digest": "sha256:7d30aacaabf4ef1e878d0a0481363bd46b5a894b21d46ed8486c537826d04c50"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "BlackLabelHQ/SymphonyRecomp",
+    "CheckedUtc": "2026-10-28T23:27:11.241812+00:00",
+    "Release": {
+      "tag_name": "v0.5.1b",
+      "html_url": "https://github.com/BlackLabelHQ/SymphonyRecomp/releases/tag/v0.5.1b",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "SymphonyRecomp-v0.5.1b-windows-x64.zip",
+          "size": 62221526,
+          "browser_download_url": "https://github.com/BlackLabelHQ/SymphonyRecomp/releases/download/v0.5.1b/SymphonyRecomp-v0.5.1b-windows-x64.zip",
+          "digest": "sha256:8fed0ee864ce2e8f1605792f30f5be2703422f506af19134c68782ca2b38c22e"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "SlickAmogus/silent-hill-decomp",
+    "CheckedUtc": "2026-10-28T23:27:11.241812+00:00",
+    "Release": {
+      "tag_name": "crossplatform-beta",
+      "html_url": "https://github.com/SlickAmogus/silent-hill-decomp/releases/tag/crossplatform-beta",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "SHPC_beta-2026.10.12.1.zip",
+          "size": 83061493,
+          "browser_download_url": "https://github.com/SlickAmogus/silent-hill-decomp/releases/download/crossplatform-beta/SHPC_beta-2026.10.12.1.zip",
+          "digest": "sha256:b22a1c93e5a9537bfa9c676071a2d7f1c8df6069fc44f7419fb73379d8cec81d"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "florinp93/hells-gate-recomp",
+    "CheckedUtc": "2026-10-28T23:27:11.241812+00:00",
+    "Release": {
+      "tag_name": "v0.8.4-beta",
+      "html_url": "https://github.com/florinp93/hells-gate-recomp/releases/tag/v0.8.4-beta",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "DantesInferno-0.8.4-beta-portable.zip",
+          "size": 31672911,
+          "browser_download_url": "https://github.com/florinp93/hells-gate-recomp/releases/download/v0.8.4-beta/DantesInferno-0.8.4-beta-portable.zip",
+          "digest": "sha256:9cdea0d96f5210ad737c95316dd4806d41c88a1716e526a71f69dfe62e3755f2"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "z3xox/Tenkaichi3Decomp",
+    "CheckedUtc": "2026-10-28T23:27:11.241812+00:00",
+    "Release": {
+      "tag_name": "v0.1.39.1",
+      "html_url": "https://github.com/z3xox/Tenkaichi3Decomp/releases/tag/v0.1.39.1",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "Tenkaichi3Decomp-windows-x64.zip",
+          "size": 9735014,
+          "browser_download_url": "https://github.com/z3xox/Tenkaichi3Decomp/releases/download/v0.1.39.1/Tenkaichi3Decomp-windows-x64.zip",
+          "digest": "sha256:2ea899f2202812dd9912e05bab7200d65d44b9a25ce5b843f118ceef7e803eda"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "TeamGDB/Yakumo",
+    "CheckedUtc": "2026-10-28T23:27:11.241812+00:00",
+    "Release": {
+      "tag_name": "v0.7.5",
+      "html_url": "https://github.com/TeamGDB/Yakumo/releases/tag/v0.7.5",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "yakumo-0.7.5-windows-x86_64-portable.zip",
+          "size": 220399914,
+          "browser_download_url": "https://github.com/TeamGDB/Yakumo/releases/download/v0.7.5/yakumo-0.7.5-windows-x86_64-portable.zip",
+          "digest": "sha256:7927e3f1e30afcd6f908038ced4a9c99ca58c92510920ec9f36a7b2b1d2ed69c"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "JRickey/BattleShip",
+    "CheckedUtc": "2026-10-28T23:27:11.241812+00:00",
+    "Release": {
+      "tag_name": "v1.6",
+      "html_url": "https://github.com/JRickey/BattleShip/releases/tag/v1.6",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "BattleShip-JP-windows.zip",
+          "size": 6522841,
+          "browser_download_url": "https://github.com/JRickey/BattleShip/releases/download/v1.6/BattleShip-JP-windows.zip",
+          "digest": "sha256:5373a6153c4d4a10f5942228b5d301370bbfc893a7700e7f0ee4867cc9bfd57b"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "goliathret/EdgeOfTimeRecomp",
+    "CheckedUtc": "2026-10-28T23:27:11.241812+00:00",
+    "Release": {
+      "tag_name": "v1.0.0",
+      "html_url": "https://github.com/goliathret/EdgeOfTimeRecomp/releases/tag/v1.0.0",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "EdgeOfTimeRecomp-v1.0.0-20261004_2039-win-amd64.zip",
+          "size": 194606176,
+          "browser_download_url": "https://github.com/goliathret/EdgeOfTimeRecomp/releases/download/v1.0.0/EdgeOfTimeRecomp-v1.0.0-20261004_2039-win-amd64.zip",
+          "digest": "sha256:c756dd362aaeabf982a701b2cb5feeb2444e8eba446c311329ee85d2f27fdf69"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "Apolinario-coder/SkyRecomp",
+    "CheckedUtc": "2026-10-28T23:27:11.241812+00:00",
+    "Release": {
+      "tag_name": "v2.0.2",
+      "html_url": "https://github.com/Apolinario-coder/SkyRecomp/releases/tag/v2.0.2",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "SkyRecomp-v2.0.2-Windows.zip",
+          "size": 1881203900,
+          "browser_download_url": "https://github.com/Apolinario-coder/SkyRecomp/releases/download/v2.0.2/SkyRecomp-v2.0.2-Windows.zip",
+          "digest": "sha256:5d8dd9158d44b005759a0c6d061febcc148ff29b820e6eb85a4ac5ead3898e0f"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "birabittoh/NocturneRecomp",
+    "CheckedUtc": "2026-10-28T23:27:11.241812+00:00",
+    "Release": {
+      "tag_name": "v1.4.5",
+      "html_url": "https://github.com/birabittoh/NocturneRecomp/releases/tag/v1.4.5",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "nocturnerecomp-tu-v1.4.5-windows-x64.zip",
+          "size": 17170111,
+          "browser_download_url": "https://github.com/birabittoh/NocturneRecomp/releases/download/v1.4.5/nocturnerecomp-tu-v1.4.5-windows-x64.zip",
+          "digest": "sha256:6c670da3fa3ab03e193b0e301569ff0590eafa864bab0799bc5fa322257fdd44"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "YesterMester/TheSimpsonsGameRecomp",
+    "CheckedUtc": "2026-10-28T23:27:11.241812+00:00",
+    "Release": {
+      "tag_name": "v0.0.6.5",
+      "html_url": "https://github.com/YesterMester/TheSimpsonsGameRecomp/releases/tag/v0.0.6.5",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "TheSimpsonsGame-Recompiled-Windows-x64-NoAVX2.zip",
+          "size": 390584480,
+          "browser_download_url": "https://github.com/YesterMester/TheSimpsonsGameRecomp/releases/download/v0.0.6.5/TheSimpsonsGame-Recompiled-Windows-x64-NoAVX2.zip",
+          "digest": "sha256:39137fc5e7a5f24a08f79490939198d76ac6e034b87cab213071e6127d29d120"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "LittleBitUA/DownpourRecomp",
+    "CheckedUtc": "2026-10-28T23:27:11.241812+00:00",
+    "Release": {
+      "tag_name": "v1.1.8",
+      "html_url": "https://github.com/LittleBitUA/DownpourRecomp/releases/tag/v1.1.8",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "DownpourRecomp-v1.1.8.zip",
+          "size": 41369153,
+          "browser_download_url": "https://github.com/LittleBitUA/DownpourRecomp/releases/download/v1.1.8/DownpourRecomp-v1.1.8.zip",
+          "digest": "sha256:a07d770f34b95f68a2329b279927d329beb067975406fc64eb69478f7703e810"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "DinosaurPlanetRecomp/dino-recomp",
+    "CheckedUtc": "2026-10-28T23:27:11.241812+00:00",
+    "Release": {
+      "tag_name": "v0.3.0",
+      "html_url": "https://github.com/DinosaurPlanetRecomp/dino-recomp/releases/tag/v0.3.0",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "DinosaurPlanetRecompiled-v0.3.0-Windows-x64.zip",
+          "size": 20998063,
+          "browser_download_url": "https://github.com/DinosaurPlanetRecomp/dino-recomp/releases/download/v0.3.0/DinosaurPlanetRecompiled-v0.3.0-Windows-x64.zip",
+          "digest": "sha256:4a1ea0a9d41516f33a8d90aaa50a221d3a5be749b1864c8e1225207d663472a8"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "RevoSucks/BM64Recomp",
+    "CheckedUtc": "2026-10-28T23:27:11.241812+00:00",
+    "Release": {
+      "tag_name": "v1.0.0",
+      "html_url": "https://github.com/RevoSucks/BM64Recomp/releases/tag/v1.0.0",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "BM64Recompiled-Windows-RelWithDebInfo.zip",
+          "size": 25227040,
+          "browser_download_url": "https://github.com/RevoSucks/BM64Recomp/releases/download/v1.0.0/BM64Recompiled-Windows-RelWithDebInfo.zip",
+          "digest": "sha256:c47a260901c45550b69380fa6dc9e9a0e3cbc8c0d6149be4a96fedf3283a1e96"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "Zorkats/G-Diffuser",
+    "CheckedUtc": "2026-10-28T23:27:11.241812+00:00",
+    "Release": {
+      "tag_name": "v1.1.0",
+      "html_url": "https://github.com/Zorkats/G-Diffuser/releases/tag/v1.1.0",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "G-Diffuser-v1.1.0-windows-x64.zip",
+          "size": 7323432,
+          "browser_download_url": "https://github.com/Zorkats/G-Diffuser/releases/download/v1.1.0/G-Diffuser-v1.1.0-windows-x64.zip",
+          "digest": "sha256:454c4f5cd4942fdf8a5968a9711f374f4b7886f1063bf1879d3b37129fd27da0"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "Rainchus/Quest64-Recomp",
+    "CheckedUtc": "2026-10-28T23:27:11.241812+00:00",
+    "Release": {
+      "tag_name": "v0.1",
+      "html_url": "https://github.com/Rainchus/Quest64-Recomp/releases/tag/v0.1",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "Quest64Recompiledv0.1.zip",
+          "size": 22220405,
+          "browser_download_url": "https://github.com/Rainchus/Quest64-Recomp/releases/download/v0.1/Quest64Recompiledv0.1.zip",
+          "digest": "sha256:7ad69b69c3d83d73edbaa3beb2e0a1cb8d66c022761fd7e61f6c3ed7c4d9fd30"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "psxrestore/Condemned2Recomp",
+    "CheckedUtc": "2026-10-28T23:27:11.241812+00:00",
+    "Release": {
+      "tag_name": "0.5.1",
+      "html_url": "https://github.com/psxrestore/Condemned2Recomp/releases/tag/0.5.1",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "condemned2recompV0.5.1_windows.zip",
+          "size": 19703180,
+          "browser_download_url": "https://github.com/psxrestore/Condemned2Recomp/releases/download/0.5.1/condemned2recompV0.5.1_windows.zip",
+          "digest": "sha256:87812b1475435296e95240a54e4e462e5abba9124c8c3234275bbddb19c8be74"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "SolarCookies/TiP-Recomp",
+    "CheckedUtc": "2026-10-28T23:27:11.241812+00:00",
+    "Release": {
+      "tag_name": "1.14.0",
+      "html_url": "https://github.com/SolarCookies/TiP-Recomp/releases/tag/1.14.0",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "retip_1.14.0_windows_amd64.zip",
+          "size": 71114628,
+          "browser_download_url": "https://github.com/SolarCookies/TiP-Recomp/releases/download/1.14.0/retip_1.14.0_windows_amd64.zip",
+          "digest": "sha256:b7ca2843078de1e9b25b24ca2ccacc0809f8e816b44dc1b3e9eb4c1465d4135c"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "TekRantGaming/king-kong-recompiled",
+    "CheckedUtc": "2026-10-28T23:27:11.241812+00:00",
+    "Release": {
+      "tag_name": "v1.9.13",
+      "html_url": "https://github.com/TekRantGaming/king-kong-recompiled/releases/tag/v1.9.13",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "KingKong-v1.9.13-windows-x64.zip",
+          "size": 22914490,
+          "browser_download_url": "https://github.com/TekRantGaming/king-kong-recompiled/releases/download/v1.9.13/KingKong-v1.9.13-windows-x64.zip",
+          "digest": "sha256:b9d72901f9a6c619782f9cde1a9533cb5256ec8fcf8f0b015c2a35caa056e104"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "mstan/MegaManXSNESRecomp",
+    "CheckedUtc": "2026-10-28T23:27:11.241812+00:00",
+    "Release": {
+      "tag_name": "v2.3.8",
+      "html_url": "https://github.com/mstan/MegaManXSNESRecomp/releases/tag/v2.3.8",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "MegaManXSNESRecomp-windows-2.3.8.zip",
+          "size": 15918498,
+          "browser_download_url": "https://github.com/mstan/MegaManXSNESRecomp/releases/download/v2.3.8/MegaManXSNESRecomp-windows-2.3.8.zip",
+          "digest": "sha256:884775c5ec766e4c34da76fcabcbe8039a7879e9a1c8ca3f94d474e223e25a77"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "jorjbarbosa/naruto-rise-recomp",
+    "CheckedUtc": "2026-10-28T23:27:11.241812+00:00",
+    "Release": {
+      "tag_name": "v0.3.0-beta",
+      "html_url": "https://github.com/jorjbarbosa/naruto-rise-recomp/releases/tag/v0.3.0-beta",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "naruto-rise-recomp-win-amd64.zip",
+          "size": 53418354,
+          "browser_download_url": "https://github.com/jorjbarbosa/naruto-rise-recomp/releases/download/v0.3.0-beta/naruto-rise-recomp-win-amd64.zip",
+          "digest": "sha256:d30f94cc8c69441476a2c67b1e2126dbe15dca345ef45323a5e056136b33d409"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "masterspike52/reNut",
+    "CheckedUtc": "2026-10-28T23:27:11.241812+00:00",
+    "Release": {
+      "tag_name": "beta14",
+      "html_url": "https://github.com/masterspike52/reNut/releases/tag/beta14",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "renut.zip",
+          "size": 42675093,
+          "browser_download_url": "https://github.com/masterspike52/reNut/releases/download/beta14/renut.zip",
+          "digest": "sha256:f839759ef643270e62340a88de369f3ec4b23e17ae6405c8b009feff709b1f86"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "LittleBitUA/DPRecomp",
+    "CheckedUtc": "2026-10-28T23:27:11.241812+00:00",
+    "Release": {
+      "tag_name": "v2.0.14",
+      "html_url": "https://github.com/LittleBitUA/DPRecomp/releases/tag/v2.0.14",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "DPRecomp-2.0.14-win64.zip",
+          "size": 46811589,
+          "browser_download_url": "https://github.com/LittleBitUA/DPRecomp/releases/download/v2.0.14/DPRecomp-2.0.14-win64.zip",
+          "digest": "sha256:3d26da25ff910cc2c41b4d2f7d5a8d6c17f6a3e4e2a9a29d2e4afee5e38b75fe"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "HarvestMoon64Recomp/HarvestMoon64Recomp",
+    "CheckedUtc": "2026-10-28T23:27:11.241812+00:00",
+    "Release": {
+      "tag_name": "v1.2.2",
+      "html_url": "https://github.com/HarvestMoon64Recomp/HarvestMoon64Recomp/releases/tag/v1.2.2",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "HarvestMoon64Recompiled-v1.2.2-Windows.zip",
+          "size": 17740648,
+          "browser_download_url": "https://github.com/HarvestMoon64Recomp/HarvestMoon64Recomp/releases/download/v1.2.2/HarvestMoon64Recompiled-v1.2.2-Windows.zip",
+          "digest": "sha256:bbea76c78256eb40da61ed951dbd2efdee9dfdcaffc501c24bab1ad39ac2c896"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "holdmysocks/mcla-recomp",
+    "CheckedUtc": "2026-10-28T23:27:11.241812+00:00",
+    "Release": {
+      "tag_name": "v1.0.13",
+      "html_url": "https://github.com/holdmysocks/mcla-recomp/releases/tag/v1.0.13",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "mcla-recomp-v1.0.13.zip",
+          "size": 543755,
+          "browser_download_url": "https://github.com/holdmysocks/mcla-recomp/releases/download/v1.0.13/mcla-recomp-v1.0.13.zip",
+          "digest": "sha256:fea7de86d63b0edefebf74bf607d95971a4728618a9e1042d3986bfaed29dffd"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "eandis/SDOJ-Recomp",
+    "CheckedUtc": "2026-10-28T23:27:11.241812+00:00",
+    "Release": {
+      "tag_name": "v1.51.2",
+      "html_url": "https://github.com/eandis/SDOJ-Recomp/releases/tag/v1.51.2",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "sdoj.recomp.1.51.2.win-amd64.vulkan.zip",
+          "size": 16769419,
+          "browser_download_url": "https://github.com/eandis/SDOJ-Recomp/releases/download/v1.51.2/sdoj.recomp.1.51.2.win-amd64.vulkan.zip",
+          "digest": "sha256:a819e7430c2e715399344c17638c14a7818a40a4355b655dbfe855869aa98d4c"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "birabittoh/EternalSonataReprise",
+    "CheckedUtc": "2026-10-28T23:27:11.241812+00:00",
+    "Release": {
+      "tag_name": "v1.3.5",
+      "html_url": "https://github.com/birabittoh/EternalSonataReprise/releases/tag/v1.3.5",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "eternalsonata-v1.3.5-win-amd64.zip",
+          "size": 26584017,
+          "browser_download_url": "https://github.com/birabittoh/EternalSonataReprise/releases/download/v1.3.5/eternalsonata-v1.3.5-win-amd64.zip",
+          "digest": "sha256:71ba27e77ec277dbda5ab45d0ff00154091111159abc73f621bfa38e776fa8f3"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "fliperama86/cvlod_recomp",
+    "CheckedUtc": "2026-10-28T23:27:11.241812+00:00",
+    "Release": {
+      "tag_name": "v0.2.29",
+      "html_url": "https://github.com/fliperama86/cvlod_recomp/releases/tag/v0.2.29",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "LodRecomp-v0.2.29-windows-x64.zip",
+          "size": 29763505,
+          "browser_download_url": "https://github.com/fliperama86/cvlod_recomp/releases/download/v0.2.29/LodRecomp-v0.2.29-windows-x64.zip",
+          "digest": "sha256:68a2ae45bff297583a2e12d0beb41bf1212c98ff57105d6b4d1a31954d142b23"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "mstan/SuperMarioWorldRecomp",
+    "CheckedUtc": "2026-10-28T23:27:11.241812+00:00",
+    "Release": {
+      "tag_name": "v0.15.1",
+      "html_url": "https://github.com/mstan/SuperMarioWorldRecomp/releases/tag/v0.15.1",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "SuperMarioWorldRecomp-windows-x64-v0.15.1.zip",
+          "size": 26146789,
+          "browser_download_url": "https://github.com/mstan/SuperMarioWorldRecomp/releases/download/v0.15.1/SuperMarioWorldRecomp-windows-x64-v0.15.1.zip",
+          "digest": "sha256:d1c254308847a2391fc37b6c7ecd18c2622e9124774bb091d1d36196ab26608d"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "WistfulHopes/DBZ1",
+    "CheckedUtc": "2026-10-28T23:27:11.241812+00:00",
+    "Release": {
+      "tag_name": "v0.0.2",
+      "html_url": "https://github.com/WistfulHopes/DBZ1/releases/tag/v0.0.2",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "dbz1.exe",
+          "size": 21129216,
+          "browser_download_url": "https://github.com/WistfulHopes/DBZ1/releases/download/v0.0.2/dbz1.exe",
+          "digest": "sha256:a2a5a42344b4da7b240911b12cdcba466c195f9f9579e9aba8017ee7772ef46e"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "OverkillLabs3/gears-judgement-recomp",
+    "CheckedUtc": "2026-10-28T23:27:11.241812+00:00",
+    "Release": {
+      "tag_name": "v0.2.1",
+      "html_url": "https://github.com/OverkillLabs3/gears-judgement-recomp/releases/tag/v0.2.1",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "GearsOfWarJudgment-PC-v0.2.1.zip",
+          "size": 33349047,
+          "browser_download_url": "https://github.com/OverkillLabs3/gears-judgement-recomp/releases/download/v0.2.1/GearsOfWarJudgment-PC-v0.2.1.zip",
+          "digest": "sha256:eef1dd50d4bc2a24809e68721a4db45093d1e63d04945d4b7675d49f86670f6f"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "cdlewis/snowboardkids2-recomp",
+    "CheckedUtc": "2026-10-28T23:27:11.241812+00:00",
+    "Release": {
+      "tag_name": "v2.0.2",
+      "html_url": "https://github.com/cdlewis/snowboardkids2-recomp/releases/tag/v2.0.2",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "SnowboardKids2Recompiled-Windows.zip",
+          "size": 20071009,
+          "browser_download_url": "https://github.com/cdlewis/snowboardkids2-recomp/releases/download/v2.0.2/SnowboardKids2Recompiled-Windows.zip",
+          "digest": "sha256:51b0c78e758d334eeab2f6aab0eec94daf75d30f7a430375d8bea5f5c26e2414"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "Cellenseres/SSSV_Recomp",
+    "CheckedUtc": "2026-10-28T23:27:11.241812+00:00",
+    "Release": {
+      "tag_name": "v0.2.0",
+      "html_url": "https://github.com/Cellenseres/SSSV_Recomp/releases/tag/v0.2.0",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "SSSVRecompiled_v0.2.0_Windows.zip",
+          "size": 46548721,
+          "browser_download_url": "https://github.com/Cellenseres/SSSV_Recomp/releases/download/v0.2.0/SSSVRecompiled_v0.2.0_Windows.zip",
+          "digest": "sha256:c5111d552c8440746a846d634d36c1249e250c0b4e06912aeb6248c7001d35f2"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "SSunnKing/Open-Nectar---Pikmin-Native-PC-Mobile-Port",
+    "CheckedUtc": "2026-10-28T23:27:11.241812+00:00",
+    "Release": {
+      "tag_name": "1.1",
+      "html_url": "https://github.com/SSunnKing/Open-Nectar---Pikmin-Native-PC-Mobile-Port/releases/tag/1.1",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "nectar-windows.zip",
+          "size": 25146803,
+          "browser_download_url": "https://github.com/SSunnKing/Open-Nectar---Pikmin-Native-PC-Mobile-Port/releases/download/1.1/nectar-windows.zip",
+          "digest": "sha256:885d0ced3443c3674d2027832ad543aa8a92d14b41a1bc6bd6366126ff46dee6"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "Unchiga/Yu-Gi-Oh-Forbidden-Memories-Recompiled",
+    "CheckedUtc": "2026-10-28T23:27:11.241812+00:00",
+    "Release": {
+      "tag_name": "v0.3.0",
+      "html_url": "https://github.com/Unchiga/Yu-Gi-Oh-Forbidden-Memories-Recompiled/releases/tag/v0.3.0",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "yfm-redecomp-v0.3.0-windows.zip",
+          "size": 7829947,
+          "browser_download_url": "https://github.com/Unchiga/Yu-Gi-Oh-Forbidden-Memories-Recompiled/releases/download/v0.3.0/yfm-redecomp-v0.3.0-windows.zip",
+          "digest": "sha256:40f1fedd363c0db193f8d67dff48c49ebc375f5aa903279fd70d7c622ccb63a6"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "novapowers0/DBZ-Budokai-3-HD-Collection",
+    "CheckedUtc": "2026-10-28T23:27:11.241812+00:00",
+    "Release": {
+      "tag_name": "v1.5.5.5",
+      "html_url": "https://github.com/novapowers0/DBZ-Budokai-3-HD-Collection/releases/tag/v1.5.5.5",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "DBZ-Budokai-3-HD-Collection-v1.5.5.5.zip",
+          "size": 91591702,
+          "browser_download_url": "https://github.com/novapowers0/DBZ-Budokai-3-HD-Collection/releases/download/v1.5.5.5/DBZ-Budokai-3-HD-Collection-v1.5.5.5.zip",
+          "digest": "sha256:cfc5e7d4825f44c62eff9973bd79f4e88746312d12d82abd50b9bc518de79b5f"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "shihabal3amri/tekken-tag-tournament-2-pc",
+    "CheckedUtc": "2026-10-28T23:27:11.241812+00:00",
+    "Release": {
+      "tag_name": "v0.1.7",
+      "html_url": "https://github.com/shihabal3amri/tekken-tag-tournament-2-pc/releases/tag/v0.1.7",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "ttt2_setup.exe",
+          "size": 66564096,
+          "browser_download_url": "https://github.com/shihabal3amri/tekken-tag-tournament-2-pc/releases/download/v0.1.7/ttt2_setup.exe",
+          "digest": "sha256:2649442f5a82122bbb432cad93f612b241aa842c4dfb68330a7ad14b97638941"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "Sirhalo23/RidgeRacer6-Recompilation",
+    "CheckedUtc": "2026-10-28T23:27:11.241812+00:00",
+    "Release": {
+      "tag_name": "v0.1.5",
+      "html_url": "https://github.com/Sirhalo23/RidgeRacer6-Recompilation/releases/tag/v0.1.5",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "RidgeRacer6-PC-v0.1.5.zip",
+          "size": 10507501,
+          "browser_download_url": "https://github.com/Sirhalo23/RidgeRacer6-Recompilation/releases/download/v0.1.5/RidgeRacer6-PC-v0.1.5.zip",
+          "digest": "sha256:19d160e2db310eeadb4143b3182565031dd72ccd59957718a82f12488bd77881"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "iExplosiveRage/DBZ-Burst-Limit-Recompiled",
+    "CheckedUtc": "2026-10-28T23:27:11.241812+00:00",
+    "Release": {
+      "tag_name": "v0.7.3-alpha",
+      "html_url": "https://github.com/iExplosiveRage/DBZ-Burst-Limit-Recompiled/releases/tag/v0.7.3-alpha",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "DBZ-Burst-Limit-Recompiled-v0.7.3-alpha.zip",
+          "size": 67004037,
+          "browser_download_url": "https://github.com/iExplosiveRage/DBZ-Burst-Limit-Recompiled/releases/download/v0.7.3-alpha/DBZ-Burst-Limit-Recompiled-v0.7.3-alpha.zip",
+          "digest": "sha256:7dd426fadcf572e25941adb769d9d51c1b3979e9d4498a81541c3f0b722b57eb"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "KaikoClanworth1/wwe-svr2011-pc",
+    "CheckedUtc": "2026-10-28T23:27:11.241812+00:00",
+    "Release": {
+      "tag_name": "v2.1.5",
+      "html_url": "https://github.com/KaikoClanworth1/wwe-svr2011-pc/releases/tag/v2.1.5",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "SvR2011-PC-v2.1.5.zip",
+          "size": 565928602,
+          "browser_download_url": "https://github.com/KaikoClanworth1/wwe-svr2011-pc/releases/download/v2.1.5/SvR2011-PC-v2.1.5.zip",
+          "digest": "sha256:0d868c26108ee4cb8df2e588a90b3170c36aeb768669b4ca196230c00c3f23a5"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "JesusTaylo/rumble-roses-xx-recomp",
+    "CheckedUtc": "2026-10-28T23:27:11.241812+00:00",
+    "Release": {
+      "tag_name": "v0.2",
+      "html_url": "https://github.com/JesusTaylo/rumble-roses-xx-recomp/releases/tag/v0.2",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "rrxx-launcher.exe",
+          "size": 2780160,
+          "browser_download_url": "https://github.com/JesusTaylo/rumble-roses-xx-recomp/releases/download/v0.2/rrxx-launcher.exe",
+          "digest": "sha256:96d01eaf17487b0417a3c84e96620c5b90d45dde495b631354c3103bae1f3002"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "JuMatt/JetSetRadioFuture-Unleashed",
+    "CheckedUtc": "2026-10-28T23:27:11.241812+00:00",
+    "Release": {
+      "tag_name": "v0.5.9",
+      "html_url": "https://github.com/JuMatt/JetSetRadioFuture-Unleashed/releases/tag/v0.5.9",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "JSRF-Unleashed-windows-x86_64.zip",
+          "size": 16646002,
+          "browser_download_url": "https://github.com/JuMatt/JetSetRadioFuture-Unleashed/releases/download/v0.5.9/JSRF-Unleashed-windows-x86_64.zip",
+          "digest": "sha256:41e81bb6c66c21d62ab00d519607af2db820b4cf27528e88810107fa0c155793"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "FelipePrado0/SpartanPort",
+    "CheckedUtc": "2026-10-28T23:27:11.241812+00:00",
+    "Release": {
+      "tag_name": "windows-v2.7.0",
+      "html_url": "https://github.com/FelipePrado0/SpartanPort/releases/tag/windows-v2.7.0",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "spartanport-windows.zip",
+          "size": 79194182,
+          "browser_download_url": "https://github.com/FelipePrado0/SpartanPort/releases/download/windows-v2.7.0/spartanport-windows.zip",
+          "digest": "sha256:e07df61d75499bd61f3be00b4f4d4e2e5b9ad45f2cbee8f609bf4205499a9241"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "Ryu7w7/OCTR-NitroFueled-PC",
+    "CheckedUtc": "2026-10-28T23:27:11.241812+00:00",
+    "Release": {
+      "tag_name": "v0.6.5",
+      "html_url": "https://github.com/Ryu7w7/OCTR-NitroFueled-PC/releases/tag/v0.6.5",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "CTR-NitroFueled-PC-portable-v0.6.5-windows.zip",
+          "size": 124034258,
+          "browser_download_url": "https://github.com/Ryu7w7/OCTR-NitroFueled-PC/releases/download/v0.6.5/CTR-NitroFueled-PC-portable-v0.6.5-windows.zip",
+          "digest": "sha256:0fdb9940035e32d6b5d601149018a351f0acbfba768e82c1c35b6a0b162ee2c0"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "FulGerNet/rePOP",
+    "CheckedUtc": "2026-10-28T23:27:11.241812+00:00",
+    "Release": {
+      "tag_name": "reSOTv0.4.0",
+      "html_url": "https://github.com/FulGerNet/rePOP/releases/tag/reSOTv0.4.0",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "sot-xbox-retail.exe",
+          "size": 50199552,
+          "browser_download_url": "https://github.com/FulGerNet/rePOP/releases/download/reSOTv0.4.0/sot-xbox-retail.exe",
+          "digest": "sha256:8f89f6c77b1db402c3385bc3d50ab321f0dd6bc801756a165d25223f21b938a2"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "VitoMiguelF/crashott-pc",
+    "CheckedUtc": "2026-10-28T23:27:11.242818+00:00",
+    "Release": {
+      "tag_name": "v1.07",
+      "html_url": "https://github.com/VitoMiguelF/crashott-pc/releases/tag/v1.07",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "CrashRecomp-v1.07-legendas.zip",
+          "size": 356399,
+          "browser_download_url": "https://github.com/VitoMiguelF/crashott-pc/releases/download/v1.07/CrashRecomp-v1.07-legendas.zip",
+          "digest": "sha256:d22f27c62ffc33a5098290a54b7171241d044661b127ea08e77c78edf7ff767a"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "nathanialf/ico-pc",
+    "CheckedUtc": "2026-10-28T23:27:11.242818+00:00",
+    "Release": {
+      "tag_name": "v0.9.3",
+      "html_url": "https://github.com/nathanialf/ico-pc/releases/tag/v0.9.3",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "ico-pc-v0.9.3-win-portable.zip",
+          "size": 23154509,
+          "browser_download_url": "https://github.com/nathanialf/ico-pc/releases/download/v0.9.3/ico-pc-v0.9.3-win-portable.zip",
+          "digest": "sha256:84b5b7ca0b02986b8524b74c9e05b7ce038e7ce62f141a99e584bccb70afdb2b"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "TGP482/SCDA-XBERecomp",
+    "CheckedUtc": "2026-10-28T23:27:11.242818+00:00",
+    "Release": {
+      "tag_name": "V2",
+      "html_url": "https://github.com/TGP482/SCDA-XBERecomp/releases/tag/V2",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "SCDA-XBERecomp.zip",
+          "size": 73407595,
+          "browser_download_url": "https://github.com/TGP482/SCDA-XBERecomp/releases/download/V2/SCDA-XBERecomp.zip",
+          "digest": "sha256:2e0f5c3c458148a635c656cc0de6e9e39c3b26a50e874e4209dd8c79cca7d13e"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "klorfmorf/Goemon64Recomp",
+    "CheckedUtc": "2026-10-28T23:27:11.242818+00:00",
+    "Release": {
+      "tag_name": "v0.2.0-dev",
+      "html_url": "https://github.com/klorfmorf/Goemon64Recomp/releases/tag/v0.2.0-dev",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "Goemon64Recompiled-Windows-RelWithDebInfo.zip",
+          "size": 25007915,
+          "browser_download_url": "https://github.com/klorfmorf/Goemon64Recomp/releases/download/v0.2.0-dev/Goemon64Recompiled-Windows-RelWithDebInfo.zip",
+          "digest": "sha256:f74041842f059e65be3cc2ba3d51a82c543a3b16406189afe45951cb40ac5896"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "MegaMan64Recomp/MegaMan64Recompiled",
+    "CheckedUtc": "2026-10-28T23:27:11.242818+00:00",
+    "Release": {
+      "tag_name": "v0.9.1",
+      "html_url": "https://github.com/MegaMan64Recomp/MegaMan64Recompiled/releases/tag/v0.9.1",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "MegaMan64Recompiled-v0.9.1-Windows.zip",
+          "size": 24721093,
+          "browser_download_url": "https://github.com/MegaMan64Recomp/MegaMan64Recompiled/releases/download/v0.9.1/MegaMan64Recompiled-v0.9.1-Windows.zip",
+          "digest": "sha256:21e31bda2cb09808c0ed18c63b89faa6c2328c082fd8880c4acbdf3c6390931a"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "elliotttate/DKC1Recomp",
+    "CheckedUtc": "2026-10-28T23:27:11.242818+00:00",
+    "Release": {
+      "tag_name": "v0.0.17",
+      "html_url": "https://github.com/elliotttate/DKC1Recomp/releases/tag/v0.0.17",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "DKC1Recomp-v0.0.17-Windows-x64.zip",
+          "size": 12927869,
+          "browser_download_url": "https://github.com/elliotttate/DKC1Recomp/releases/download/v0.0.17/DKC1Recomp-v0.0.17-Windows-x64.zip",
+          "digest": "sha256:adf90d506a255d6909906c512eacb7ab83a68b425a44373c289fe95cb489f5df"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "OAleex/OpenShao",
+    "CheckedUtc": "2026-10-28T23:27:11.242818+00:00",
+    "Release": {
+      "tag_name": "v0.3.0",
+      "html_url": "https://github.com/OAleex/OpenShao/releases/tag/v0.3.0",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "OpenShao-0.3.0-Windows-x64.zip",
+          "size": 10122584,
+          "browser_download_url": "https://github.com/OAleex/OpenShao/releases/download/v0.3.0/OpenShao-0.3.0-Windows-x64.zip",
+          "digest": "sha256:5f2ae0261cf3d259e2975d97310874f33f39d0657a78e2c7bf207cb20e4abcd3"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "ThatGuyMcd/DKR-R",
+    "CheckedUtc": "2026-10-28T23:27:11.242818+00:00",
+    "Release": {
+      "tag_name": "Version1.0.12",
+      "html_url": "https://github.com/ThatGuyMcd/DKR-R/releases/tag/Version1.0.12",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "DKR-R-1.0.12-Windows-x64.zip",
+          "size": 59813972,
+          "browser_download_url": "https://github.com/ThatGuyMcd/DKR-R/releases/download/Version1.0.12/DKR-R-1.0.12-Windows-x64.zip",
+          "digest": "sha256:606c125d8b5669f42c89769f6fcdef43f9932e70aa28ed283446901956bafb4f"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "NoRain211/doaxvb-re",
+    "CheckedUtc": "2026-10-28T23:27:11.242818+00:00",
+    "Release": {
+      "tag_name": "v0.6.0",
+      "html_url": "https://github.com/NoRain211/doaxvb-re/releases/tag/v0.6.0",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "DOAXBV-0.6.0.zip",
+          "size": 107439189,
+          "browser_download_url": "https://github.com/NoRain211/doaxvb-re/releases/download/v0.6.0/DOAXBV-0.6.0.zip",
+          "digest": "sha256:9fbeda98be0ac4f3f4b102bbfada9de8fba6156a3fb6d79f8d7185ca0da4feb2"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "Yokimitsuro/khdays-port",
+    "CheckedUtc": "2026-10-28T23:27:11.242818+00:00",
+    "Release": {
+      "tag_name": "v0.1.4",
+      "html_url": "https://github.com/Yokimitsuro/khdays-port/releases/tag/v0.1.4",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "KH-Studio-0.1.4.zip",
+          "size": 3233546,
+          "browser_download_url": "https://github.com/Yokimitsuro/khdays-port/releases/download/v0.1.4/KH-Studio-0.1.4.zip",
+          "digest": "sha256:5b94284259666ea1c398e25a9280be389ea45212fdf2156373db73e9a663a44a"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "KraftMacAndChee/Mercenaries-Recompiled",
+    "CheckedUtc": "2026-10-28T23:27:11.242818+00:00",
+    "Release": {
+      "tag_name": "v1.1.1",
+      "html_url": "https://github.com/KraftMacAndChee/Mercenaries-Recompiled/releases/tag/v1.1.1",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "Mercenaries.Recompiled.Public.1.1.1.zip",
+          "size": 26545078,
+          "browser_download_url": "https://github.com/KraftMacAndChee/Mercenaries-Recompiled/releases/download/v1.1.1/Mercenaries.Recompiled.Public.1.1.1.zip",
+          "digest": "sha256:f83749a46d0c69a1f9020bef5ef01bfdc86b4d87ffb864c6232f6c7e0df520b3"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "PaulCombal/mw2-recompiled",
+    "CheckedUtc": "2026-10-28T23:27:11.242818+00:00",
+    "Release": {
+      "tag_name": "v0.8.1",
+      "html_url": "https://github.com/PaulCombal/mw2-recompiled/releases/tag/v0.8.1",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "mw2-v0.8.1-windows-lan.zip",
+          "size": 19036733,
+          "browser_download_url": "https://github.com/PaulCombal/mw2-recompiled/releases/download/v0.8.1/mw2-v0.8.1-windows-lan.zip",
+          "digest": "sha256:eeae35af4dfe6ced14698590564ebe74d2d0eb12e34d64df426bdb2d14bdad54"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "mstan/MegaManX4Recomp",
+    "CheckedUtc": "2026-10-28T23:27:11.242818+00:00",
+    "Release": {
+      "tag_name": "v1.0.15",
+      "html_url": "https://github.com/mstan/MegaManX4Recomp/releases/tag/v1.0.15",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "MegaManX4Recomp-v1.0.15-windows-x64.zip",
+          "size": 37019462,
+          "browser_download_url": "https://github.com/mstan/MegaManX4Recomp/releases/download/v1.0.15/MegaManX4Recomp-v1.0.15-windows-x64.zip",
+          "digest": "sha256:28c3d17d81ada0c78a5e668ef8461ee4ae21adae28bcc23570c691fba64d39b1"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "obaidr1/hercules-recompiled",
+    "CheckedUtc": "2026-10-28T23:27:11.242818+00:00",
+    "Release": {
+      "tag_name": "v0.5.6",
+      "html_url": "https://github.com/obaidr1/hercules-recompiled/releases/tag/v0.5.6",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "hercules-recompiled-windows-x64.zip",
+          "size": 121490446,
+          "browser_download_url": "https://github.com/obaidr1/hercules-recompiled/releases/download/v0.5.6/hercules-recompiled-windows-x64.zip",
+          "digest": "sha256:ca3f92d0361b70b466b373f0b8ef151cb8e1ff4e7c0135a6c97f53c581a2826e"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "wivi514/Dead_Rising_2_Case_West_Xenon_Recomp",
+    "CheckedUtc": "2026-10-28T23:27:11.242818+00:00",
+    "Release": {
+      "tag_name": "v1.1.2",
+      "html_url": "https://github.com/wivi514/Dead_Rising_2_Case_West_Xenon_Recomp/releases/tag/v1.1.2",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "CaseWestRecomp-windows-x86_64.zip",
+          "size": 24923332,
+          "browser_download_url": "https://github.com/wivi514/Dead_Rising_2_Case_West_Xenon_Recomp/releases/download/v1.1.2/CaseWestRecomp-windows-x86_64.zip",
+          "digest": "sha256:be45510874c596d5f14908d176e088c196d9676181e511ef5ed91d6a9b0d1c60"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "santiquiroz/gears-of-war-2-pc-port",
+    "CheckedUtc": "2026-10-28T23:27:11.242818+00:00",
+    "Release": {
+      "tag_name": "v0.3.7",
+      "html_url": "https://github.com/santiquiroz/gears-of-war-2-pc-port/releases/tag/v0.3.7",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "gow2-recomp-0.3.7-win64.zip",
+          "size": 78301322,
+          "browser_download_url": "https://github.com/santiquiroz/gears-of-war-2-pc-port/releases/download/v0.3.7/gow2-recomp-0.3.7-win64.zip",
+          "digest": "sha256:b3c9b3679e11b00fc6ad10aef0acaa49ff216a94538a0ac8b73ab08ab25da5fb"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "HossEz/fifa-world-cup-2014-recompiled",
+    "CheckedUtc": "2026-10-28T23:27:11.242818+00:00",
+    "Release": {
+      "tag_name": "v0.1.10",
+      "html_url": "https://github.com/HossEz/fifa-world-cup-2014-recompiled/releases/tag/v0.1.10",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "fifa-world-cup-2014-recompiled-0.1.10-portable.zip",
+          "size": 49162965,
+          "browser_download_url": "https://github.com/HossEz/fifa-world-cup-2014-recompiled/releases/download/v0.1.10/fifa-world-cup-2014-recompiled-0.1.10-portable.zip",
+          "digest": "sha256:d60ad4949ff67b9ecd35c9d62c14bb0198156f569cf442f0bb8bf76c9c4b13aa"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "MaxDeadBear/KameoRePowered",
+    "CheckedUtc": "2026-10-28T23:27:11.242818+00:00",
+    "Release": {
+      "tag_name": "v0.2.1",
+      "html_url": "https://github.com/MaxDeadBear/KameoRePowered/releases/tag/v0.2.1",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "kameorepowered-tu-v0.2.1-windows-x64.zip",
+          "size": 25065511,
+          "browser_download_url": "https://github.com/MaxDeadBear/KameoRePowered/releases/download/v0.2.1/kameorepowered-tu-v0.2.1-windows-x64.zip",
+          "digest": "sha256:b9006fc094dc2c1c37f13cd460c76a73331e6b3a24676de87388ce101e868fe5"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "saulob/crackdown-xbox360-recompiled",
+    "CheckedUtc": "2026-10-28T23:27:11.242818+00:00",
+    "Release": {
+      "tag_name": "v0.6.2",
+      "html_url": "https://github.com/saulob/crackdown-xbox360-recompiled/releases/tag/v0.6.2",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "Crackdown-v0.6.2-windows-x64.zip",
+          "size": 43045324,
+          "browser_download_url": "https://github.com/saulob/crackdown-xbox360-recompiled/releases/download/v0.6.2/Crackdown-v0.6.2-windows-x64.zip",
+          "digest": "sha256:fa1a6f9a46a3d9ea213a9898b86f11fcc35c855ddf6e42322e81ded15550b421"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "mahmoud-mess/tekken6-recomp",
+    "CheckedUtc": "2026-10-28T23:27:11.242818+00:00",
+    "Release": {
+      "tag_name": "Iterate",
+      "html_url": "https://github.com/mahmoud-mess/tekken6-recomp/releases/tag/Iterate",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "Tekken6-Builder-Windows-0.9.4.zip",
+          "size": 384863227,
+          "browser_download_url": "https://github.com/mahmoud-mess/tekken6-recomp/releases/download/Iterate/Tekken6-Builder-Windows-0.9.4.zip",
+          "digest": "sha256:e46cf590bc681d3e49bda6b4bfa1e13f011700a6f58d3d0cf58afad046042b34"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "skuza-oss/downhill-revived",
+    "CheckedUtc": "2026-10-28T23:27:11.242818+00:00",
+    "Release": {
+      "tag_name": "v0.7.1",
+      "html_url": "https://github.com/skuza-oss/downhill-revived/releases/tag/v0.7.1",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "DownhillRevived-0.7.1-win.zip",
+          "size": 22548596,
+          "browser_download_url": "https://github.com/skuza-oss/downhill-revived/releases/download/v0.7.1/DownhillRevived-0.7.1-win.zip",
+          "digest": "sha256:2de7c4f916f8df6afc218ebe716f5d21c8732bb70ce472138ed5faf0d5f13236"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "mr-finster/vf1-recomp",
+    "CheckedUtc": "2026-10-28T23:27:11.242818+00:00",
+    "Release": {
+      "tag_name": "v1.4.2",
+      "html_url": "https://github.com/mr-finster/vf1-recomp/releases/tag/v1.4.2",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "VirtuaFighterRecomp-windows.zip",
+          "size": 5864924,
+          "browser_download_url": "https://github.com/mr-finster/vf1-recomp/releases/download/v1.4.2/VirtuaFighterRecomp-windows.zip",
+          "digest": "sha256:0f72b0c3308069e481a3b3b8cc59eac7c7d1d4dcd3bd2b49436d5ae49eb336a1"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "bryantmh/rush2recompiled",
+    "CheckedUtc": "2026-10-28T23:27:11.242818+00:00",
+    "Release": {
+      "tag_name": "v1.0.35",
+      "html_url": "https://github.com/bryantmh/rush2recompiled/releases/tag/v1.0.35",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "Rush2Recompiled-1.0.35.zip",
+          "size": 23360113,
+          "browser_download_url": "https://github.com/bryantmh/rush2recompiled/releases/download/v1.0.35/Rush2Recompiled-1.0.35.zip",
+          "digest": "sha256:e04afaf1a9a57a3fe26bda4686d148c0cf8e39a9c9112cd8f2ac3c9ca794dd92"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "santiagovalencia109/Wario-Land-Shake-It-Native-PC",
+    "CheckedUtc": "2026-10-28T23:27:11.242818+00:00",
+    "Release": {
+      "tag_name": "v0.2.0",
+      "html_url": "https://github.com/santiagovalencia109/Wario-Land-Shake-It-Native-PC/releases/tag/v0.2.0",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "WarioRecomp-0.2.0.zip",
+          "size": 252765653,
+          "browser_download_url": "https://github.com/santiagovalencia109/Wario-Land-Shake-It-Native-PC/releases/download/v0.2.0/WarioRecomp-0.2.0.zip",
+          "digest": "sha256:c0fb2256a15be80bb33371cfa9cf8f5c2ac2f458ce176e4780b35d74b726a02e"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "mstan/MegaManX5Recomp",
+    "CheckedUtc": "2026-10-28T23:27:11.242818+00:00",
+    "Release": {
+      "tag_name": "v0.1.0-alpha",
+      "html_url": "https://github.com/mstan/MegaManX5Recomp/releases/tag/v0.1.0-alpha",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "MegaManX5Recomp-v0.1.0-alpha-windows-x64.zip",
+          "size": 38083528,
+          "browser_download_url": "https://github.com/mstan/MegaManX5Recomp/releases/download/v0.1.0-alpha/MegaManX5Recomp-v0.1.0-alpha-windows-x64.zip",
+          "digest": "sha256:3e5dfea86184cb2ff05372e012cef8d94e89119105f7a0268a14f9e24b47e590"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "saulob/geometry-wars-retro-evolved-2-recompiled",
+    "CheckedUtc": "2026-10-28T23:27:11.242818+00:00",
+    "Release": {
+      "tag_name": "v0.6.1",
+      "html_url": "https://github.com/saulob/geometry-wars-retro-evolved-2-recompiled/releases/tag/v0.6.1",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "GeometryWarsRetroEvolved2-v0.6.1-windows-x64.zip",
+          "size": 9627860,
+          "browser_download_url": "https://github.com/saulob/geometry-wars-retro-evolved-2-recompiled/releases/download/v0.6.1/GeometryWarsRetroEvolved2-v0.6.1-windows-x64.zip",
+          "digest": "sha256:7a3862ab73e5f5d9536d58c5eb9c15cad89a492d9266d6ae399089140d1b5b08"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "HalmyLyseas/VandalHearts-PcPort",
+    "CheckedUtc": "2026-10-28T23:27:11.243326+00:00",
+    "Release": {
+      "tag_name": "v2.1.0",
+      "html_url": "https://github.com/HalmyLyseas/VandalHearts-PcPort/releases/tag/v2.1.0",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "VandalHearts-v2.1.0-windows-x64.zip",
+          "size": 5771542,
+          "browser_download_url": "https://github.com/HalmyLyseas/VandalHearts-PcPort/releases/download/v2.1.0/VandalHearts-v2.1.0-windows-x64.zip",
+          "digest": "sha256:365c7515e59f705ccb5942ab77270f0f9b98dbd3716e492d95266c226355868d"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "theokyr/Project8Recomp",
+    "CheckedUtc": "2026-10-28T23:27:11.243326+00:00",
+    "Release": {
+      "tag_name": "v0.3.0",
+      "html_url": "https://github.com/theokyr/Project8Recomp/releases/tag/v0.3.0",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "Project8Recomp-v0.3.0-windows-x86_64.zip",
+          "size": 21674894,
+          "browser_download_url": "https://github.com/theokyr/Project8Recomp/releases/download/v0.3.0/Project8Recomp-v0.3.0-windows-x86_64.zip",
+          "digest": "sha256:f255842b916a98c8188259fa3da5931bcea639b6c656e82d26f8b274b69be436"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "Supermedo/bloodborne_pc",
+    "CheckedUtc": "2026-10-28T23:27:11.243326+00:00",
+    "Release": {
+      "tag_name": "windows-v1.9.5",
+      "html_url": "https://github.com/Supermedo/bloodborne_pc/releases/tag/windows-v1.9.5",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "Bloodborne-Windows.zip",
+          "size": 189931692,
+          "browser_download_url": "https://github.com/Supermedo/bloodborne_pc/releases/download/windows-v1.9.5/Bloodborne-Windows.zip",
+          "digest": "sha256:c4b738926f4fe7267c69c1a9fff67b163f7f55030f4ea061fd1a7962ce6322ec"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "GTTeancum/StarWars-RenegadeSquadron-PC",
+    "CheckedUtc": "2026-10-28T23:27:11.243326+00:00",
+    "Release": {
+      "tag_name": "v0.9.1",
+      "html_url": "https://github.com/GTTeancum/StarWars-RenegadeSquadron-PC/releases/tag/v0.9.1",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "RenegadeSquadronPC-0.9.1.zip",
+          "size": 55703966,
+          "browser_download_url": "https://github.com/GTTeancum/StarWars-RenegadeSquadron-PC/releases/download/v0.9.1/RenegadeSquadronPC-0.9.1.zip",
+          "digest": "sha256:6f7d040267d6bdda6850173cfc24cdca85258541995dd2c8d943694535bffd7e"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "jjmhalew/RampageRE",
+    "CheckedUtc": "2026-10-28T23:27:11.243326+00:00",
+    "Release": {
+      "tag_name": "v1.2.1",
+      "html_url": "https://github.com/jjmhalew/RampageRE/releases/tag/v1.2.1",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "RampageRE-windows-v1.2.1.zip",
+          "size": 2315441,
+          "browser_download_url": "https://github.com/jjmhalew/RampageRE/releases/download/v1.2.1/RampageRE-windows-v1.2.1.zip",
+          "digest": "sha256:62abf4a692a1d211892aac1f9ff5a8984af1e08d2595db5b0487b811974e1c63"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "chasem-dev/sms-launcher",
+    "CheckedUtc": "2026-10-28T23:27:11.243326+00:00",
+    "Release": {
+      "tag_name": "v0.1.68",
+      "html_url": "https://github.com/chasem-dev/sms-launcher/releases/tag/v0.1.68",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "SMS-Launcher-0.1.68-win-portable.exe",
+          "size": 125151471,
+          "browser_download_url": "https://github.com/chasem-dev/sms-launcher/releases/download/v0.1.68/SMS-Launcher-0.1.68-win-portable.exe",
+          "digest": "sha256:8f979e552235e457bc6edaaea0b733fcabe868e42d2a74a093dc5ca3abb50594"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "AsobiCodes/rac-rs",
+    "CheckedUtc": "2026-10-28T23:27:11.243326+00:00",
+    "Release": {
+      "tag_name": "v0.4.1",
+      "html_url": "https://github.com/AsobiCodes/rac-rs/releases/tag/v0.4.1",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "rac-rs-0.4.1.zip",
+          "size": 12244112,
+          "browser_download_url": "https://github.com/AsobiCodes/rac-rs/releases/download/v0.4.1/rac-rs-0.4.1.zip",
+          "digest": "sha256:f2e4d19b3277b636843d039543cfb2eb5e46522ef194f7f434210f3a17e0c7e3"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "whompay/inFAMOUSreborn",
+    "CheckedUtc": "2026-10-28T23:27:11.243326+00:00",
+    "Release": {
+      "tag_name": "1.1",
+      "html_url": "https://github.com/whompay/inFAMOUSreborn/releases/tag/1.1",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "inFamous.Setup.FIXED.exe",
+          "size": 92378759,
+          "browser_download_url": "https://github.com/whompay/inFAMOUSreborn/releases/download/1.1/inFamous.Setup.FIXED.exe",
+          "digest": "sha256:bd1ee351d01b7a46742067c327e3ae9b232d55726ea06c9e2414fa010a324a3c"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "griches/EternalDarknessRecomp",
+    "CheckedUtc": "2026-10-28T23:27:11.243326+00:00",
+    "Release": {
+      "tag_name": "v0.9.6",
+      "html_url": "https://github.com/griches/EternalDarknessRecomp/releases/tag/v0.9.6",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "EternalDarkness-windows-x64-202610200024-1cb3fe6.zip",
+          "size": 46900147,
+          "browser_download_url": "https://github.com/griches/EternalDarknessRecomp/releases/download/v0.9.6/EternalDarkness-windows-x64-202610200024-1cb3fe6.zip",
+          "digest": "sha256:010020309969752c50da8affb323d0e5e55fd1ba85bc738074423de092d7e331"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "keepvaibin/nebula",
+    "CheckedUtc": "2026-10-28T23:27:11.243326+00:00",
+    "Release": {
+      "tag_name": "v1.0.2",
+      "html_url": "https://github.com/keepvaibin/nebula/releases/tag/v1.0.2",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "Nebula-Setup.exe",
+          "size": 35534336,
+          "browser_download_url": "https://github.com/keepvaibin/nebula/releases/download/v1.0.2/Nebula-Setup.exe",
+          "digest": "sha256:d216f131cf4ad0169e96f1b8c4e892b82e94b3985887d744616076dacad25c28"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "ClickingMaster/ssrecomp",
+    "CheckedUtc": "2026-10-28T23:27:11.243326+00:00",
+    "Release": {
+      "tag_name": "v0.4.2",
+      "html_url": "https://github.com/ClickingMaster/ssrecomp/releases/tag/v0.4.2",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "ssrecomp-setup-windows-x86_64.exe",
+          "size": 17165433,
+          "browser_download_url": "https://github.com/ClickingMaster/ssrecomp/releases/download/v0.4.2/ssrecomp-setup-windows-x86_64.exe",
+          "digest": "sha256:b9fdd815d3e2e8f4516d91c79241bba3f4bc4bbb7ad0ea1dee534f2cf6e6dc5d"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "riseio/TWIPE_00Sheven",
+    "CheckedUtc": "2026-10-28T23:27:11.243326+00:00",
+    "Release": {
+      "tag_name": "ICHGYTW_0.1.96",
+      "html_url": "https://github.com/riseio/TWIPE_00Sheven/releases/tag/ICHGYTW_0.1.96",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "ICHGYTW-Portable.exe",
+          "size": 99857920,
+          "browser_download_url": "https://github.com/riseio/TWIPE_00Sheven/releases/download/ICHGYTW_0.1.96/ICHGYTW-Portable.exe",
+          "digest": "sha256:c409afc085fcbd5346e794ca30e13c4421e5f4a367481f2c02001355e5cb0707"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "TK22-26/JetForceGemini-Recomp",
+    "CheckedUtc": "2026-10-28T23:27:11.243326+00:00",
+    "Release": {
+      "tag_name": "v1.4.0",
+      "html_url": "https://github.com/TK22-26/JetForceGemini-Recomp/releases/tag/v1.4.0",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "JFG-1.4.0-windows-x64.zip",
+          "size": 47897012,
+          "browser_download_url": "https://github.com/TK22-26/JetForceGemini-Recomp/releases/download/v1.4.0/JFG-1.4.0-windows-x64.zip",
+          "digest": "sha256:8bf60c984a23143285c6ccaf7bb489667d21c3fcf936f18d95681a92d9d8d5b1"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "wootbeer/snprecomp",
+    "CheckedUtc": "2026-10-28T23:27:11.243326+00:00",
+    "Release": {
+      "tag_name": "0.2.7",
+      "html_url": "https://github.com/wootbeer/snprecomp/releases/tag/0.2.7",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "SnPRecompiled-0.2.7-windows.zip",
+          "size": 16797243,
+          "browser_download_url": "https://github.com/wootbeer/snprecomp/releases/download/0.2.7/SnPRecompiled-0.2.7-windows.zip",
+          "digest": "sha256:743b4b8915f36713931d870fcd035796100ff4d7e830e66011d9f325e8893a69"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "TanookiStudios/SuperMarioAllStarsRecomp",
+    "CheckedUtc": "2026-10-28T23:27:11.243326+00:00",
+    "Release": {
+      "tag_name": "v0.2.0",
+      "html_url": "https://github.com/TanookiStudios/SuperMarioAllStarsRecomp/releases/tag/v0.2.0",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "SuperMarioAllStars-Windows.zip",
+          "size": 11677284,
+          "browser_download_url": "https://github.com/TanookiStudios/SuperMarioAllStarsRecomp/releases/download/v0.2.0/SuperMarioAllStars-Windows.zip",
+          "digest": "sha256:d3ceb68c48bbbd586643fdf3c65d71303eeb91e99fca0c7e05e707d34497adb7"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "ChupathingyCE/chupathingyce",
+    "CheckedUtc": "2026-10-28T23:27:11.243326+00:00",
+    "Release": {
+      "tag_name": "v0.8.1c",
+      "html_url": "https://github.com/ChupathingyCE/chupathingyce/releases/tag/v0.8.1c",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "chupathingyce-windows-release.zip",
+          "size": 24844039,
+          "browser_download_url": "https://github.com/ChupathingyCE/chupathingyce/releases/download/v0.8.1c/chupathingyce-windows-release.zip",
+          "digest": "sha256:1c4714317c7bf058f0d85e6b723965785fb338fbd897d68bfa55728e65549fbd"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "parkerallan/doa3-recomp",
+    "CheckedUtc": "2026-10-28T23:27:11.243326+00:00",
+    "Release": {
+      "tag_name": "v1.0.7",
+      "html_url": "https://github.com/parkerallan/doa3-recomp/releases/tag/v1.0.7",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "DOA3-v1.0.7-win64.zip",
+          "size": 8222510,
+          "browser_download_url": "https://github.com/parkerallan/doa3-recomp/releases/download/v1.0.7/DOA3-v1.0.7-win64.zip",
+          "digest": "sha256:4d749122ceb7ba27a95798c99961cd06a64b3468f6a695bcf06da7efa6fd4e68"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "Gumpolas/TooTawersRecomp",
+    "CheckedUtc": "2026-10-28T23:27:11.243326+00:00",
+    "Release": {
+      "tag_name": "1.9.8",
+      "html_url": "https://github.com/Gumpolas/TooTawersRecomp/releases/tag/1.9.8",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "TwoTowers-Recompiled-v1.9.8-win64.zip",
+          "size": 173644272,
+          "browser_download_url": "https://github.com/Gumpolas/TooTawersRecomp/releases/download/1.9.8/TwoTowers-Recompiled-v1.9.8-win64.zip",
+          "digest": "sha256:bc6cdd046b8dabe48d84ce0cf04adf6fb01ff5f8bc8c3c5c6c28a45d22e687b2"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "linkssy2/UrbanChaosRiotResponseBurnerEdition",
+    "CheckedUtc": "2026-10-28T23:27:11.243326+00:00",
+    "Release": {
+      "tag_name": "v0.08",
+      "html_url": "https://github.com/linkssy2/UrbanChaosRiotResponseBurnerEdition/releases/tag/v0.08",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "UrbanChaos-BurnerEdition-0.08-Windows-x64.zip",
+          "size": 254076563,
+          "browser_download_url": "https://github.com/linkssy2/UrbanChaosRiotResponseBurnerEdition/releases/download/v0.08/UrbanChaos-BurnerEdition-0.08-Windows-x64.zip",
+          "digest": "sha256:6ee1f211925332fd085aae40906fc093ce40c3bdf0079f6ee8247bfdba58e5c6"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "hk21x/pgr2-recomp",
+    "CheckedUtc": "2026-10-28T23:27:11.243326+00:00",
+    "Release": {
+      "tag_name": "v1.1.0",
+      "html_url": "https://github.com/hk21x/pgr2-recomp/releases/tag/v1.1.0",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "PGR2Launcher.exe",
+          "size": 2195456,
+          "browser_download_url": "https://github.com/hk21x/pgr2-recomp/releases/download/v1.1.0/PGR2Launcher.exe",
+          "digest": "sha256:08687aeeb64e9e7038f514f51a69a6b421f174057876ded39398a3d63a4cd691"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "KaikoClanworth1/buffy-chaos-bleeds-pc",
+    "CheckedUtc": "2026-10-28T23:27:11.243326+00:00",
+    "Release": {
+      "tag_name": "v1.0.2",
+      "html_url": "https://github.com/KaikoClanworth1/buffy-chaos-bleeds-pc/releases/tag/v1.0.2",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "Buffy-Chaos-Bleeds-PC-v1.0.2.zip",
+          "size": 32691661,
+          "browser_download_url": "https://github.com/KaikoClanworth1/buffy-chaos-bleeds-pc/releases/download/v1.0.2/Buffy-Chaos-Bleeds-PC-v1.0.2.zip",
+          "digest": "sha256:f4eccae381e0cae7f7222d166333074517b9e1c4560034ef2c502feae6ea1e9b"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "hk21x/pgr1-recomp",
+    "CheckedUtc": "2026-10-28T23:27:11.243326+00:00",
+    "Release": {
+      "tag_name": "v1.1",
+      "html_url": "https://github.com/hk21x/pgr1-recomp/releases/tag/v1.1",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "PGR1Launcher.exe",
+          "size": 2140672,
+          "browser_download_url": "https://github.com/hk21x/pgr1-recomp/releases/download/v1.1/PGR1Launcher.exe",
+          "digest": "sha256:b207f8f647120d5b9b83a7c611182eb8049c91c61c1c41994d0e4ca3e924a94a"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "saulob/ssf2t-hd-remix-recompiled",
+    "CheckedUtc": "2026-10-28T23:27:11.243326+00:00",
+    "Release": {
+      "tag_name": "v0.2.2",
+      "html_url": "https://github.com/saulob/ssf2t-hd-remix-recompiled/releases/tag/v0.2.2",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "SSF2THDRemix-v0.2.2-windows-x64.zip",
+          "size": 18192951,
+          "browser_download_url": "https://github.com/saulob/ssf2t-hd-remix-recompiled/releases/download/v0.2.2/SSF2THDRemix-v0.2.2-windows-x64.zip",
+          "digest": "sha256:e23ad87fb57ec27edd79b42597a080d2bf78d2630542b3350c52ba0c940df8c2"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "iMrBurn/wwe12-pc",
+    "CheckedUtc": "2026-10-28T23:27:11.243326+00:00",
+    "Release": {
+      "tag_name": "v0.9.0-beta",
+      "html_url": "https://github.com/iMrBurn/wwe12-pc/releases/tag/v0.9.0-beta",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "WWE12-PC-v0.9.0-beta.zip",
+          "size": 35224404,
+          "browser_download_url": "https://github.com/iMrBurn/wwe12-pc/releases/download/v0.9.0-beta/WWE12-PC-v0.9.0-beta.zip",
+          "digest": "sha256:b7d04e652f845cd66b0d610b019bd3f77ccbd662987e3dc066f2aeabae34e9f6"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "saulob/hard-corps-uprising-recompiled",
+    "CheckedUtc": "2026-10-28T23:27:11.243326+00:00",
+    "Release": {
+      "tag_name": "v0.7.1",
+      "html_url": "https://github.com/saulob/hard-corps-uprising-recompiled/releases/tag/v0.7.1",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "HardCorpsUprising-v0.7.1-windows-x64.zip",
+          "size": 20592714,
+          "browser_download_url": "https://github.com/saulob/hard-corps-uprising-recompiled/releases/download/v0.7.1/HardCorpsUprising-v0.7.1-windows-x64.zip",
+          "digest": "sha256:197e5e2b9f75525f39e5db32a6d6294097b7b280e65cea804e899462129c4710"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "Boron853/Souls-of-the-Reaper",
+    "CheckedUtc": "2026-10-28T23:27:11.243326+00:00",
+    "Release": {
+      "tag_name": "beta-1.3",
+      "html_url": "https://github.com/Boron853/Souls-of-the-Reaper/releases/tag/beta-1.3",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "SoulsOfTheReaper_Setup.exe",
+          "size": 23435514,
+          "browser_download_url": "https://github.com/Boron853/Souls-of-the-Reaper/releases/download/beta-1.3/SoulsOfTheReaper_Setup.exe",
+          "digest": "sha256:51d902e7fddfab16246403a4fa17998a05f593f3217079cf513fc4c175b0f353"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "jorjbarbosa/broken-bond-recomp",
+    "CheckedUtc": "2026-10-28T23:27:11.243326+00:00",
+    "Release": {
+      "tag_name": "v0.1.0-beta",
+      "html_url": "https://github.com/jorjbarbosa/broken-bond-recomp/releases/tag/v0.1.0-beta",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "broken-bond-recomp-win-amd64.zip",
+          "size": 69721490,
+          "browser_download_url": "https://github.com/jorjbarbosa/broken-bond-recomp/releases/download/v0.1.0-beta/broken-bond-recomp-win-amd64.zip",
+          "digest": "sha256:5f38c9d52da3027d9b882055d10298aaaaa36022ff3a5277854ce7a5074ce6c7"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "n0madic/Soulcalibur2HD-recomp",
+    "CheckedUtc": "2026-10-28T23:27:11.243326+00:00",
+    "Release": {
+      "tag_name": "v0.3.0",
+      "html_url": "https://github.com/n0madic/Soulcalibur2HD-recomp/releases/tag/v0.3.0",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "sc2hd-0.3.0-windows-x86_64.zip",
+          "size": 13544633,
+          "browser_download_url": "https://github.com/n0madic/Soulcalibur2HD-recomp/releases/download/v0.3.0/sc2hd-0.3.0-windows-x86_64.zip",
+          "digest": "sha256:89d777a3a7410e254e162686f27a02c41a1fdbfb8c050a47b0e3b89c21a10b9c"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "BrazilianHobbyist/Project-RE-Visited-RE3",
+    "CheckedUtc": "2026-10-28T23:27:11.243326+00:00",
+    "Release": {
+      "tag_name": "v1.7.0",
+      "html_url": "https://github.com/BrazilianHobbyist/Project-RE-Visited-RE3/releases/tag/v1.7.0",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "Project_RE_Visited_Resident_Evil_3_v1.7.0_Win64.zip",
+          "size": 44710148,
+          "browser_download_url": "https://github.com/BrazilianHobbyist/Project-RE-Visited-RE3/releases/download/v1.7.0/Project_RE_Visited_Resident_Evil_3_v1.7.0_Win64.zip",
+          "digest": "sha256:e47d77fde0b1680a51ef99d07b26f38152d9c28a867807d26107bce5155e1a99"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "NJH-1001/Wipeout2K97XL",
+    "CheckedUtc": "2026-10-28T23:27:11.243326+00:00",
+    "Release": {
+      "tag_name": "v0.2.0",
+      "html_url": "https://github.com/NJH-1001/Wipeout2K97XL/releases/tag/v0.2.0",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "wipeoutxl-0.2.0-windows-x64.zip",
+          "size": 45448914,
+          "browser_download_url": "https://github.com/NJH-1001/Wipeout2K97XL/releases/download/v0.2.0/wipeoutxl-0.2.0-windows-x64.zip",
+          "digest": "sha256:effe49cb0185b4984f1aa7a0cf4f4390aaf377a3e43fb6c1fd2aa6be93eb4b5a"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "Drommedhar/mgs-reintegral",
+    "CheckedUtc": "2026-10-28T23:27:11.243326+00:00",
+    "Release": {
+      "tag_name": "v0.3.0",
+      "html_url": "https://github.com/Drommedhar/mgs-reintegral/releases/tag/v0.3.0",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "reintegral-0.3.0-windows-x86.zip",
+          "size": 16235501,
+          "browser_download_url": "https://github.com/Drommedhar/mgs-reintegral/releases/download/v0.3.0/reintegral-0.3.0-windows-x86.zip",
+          "digest": "sha256:4c975bdfdf653f94c82bd3174f810fa53a8b09b15f94b60a69e30a353caa8ccc"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "OverkillLabs3/vice-city-stories-recomp",
+    "CheckedUtc": "2026-10-28T23:27:11.243326+00:00",
+    "Release": {
+      "tag_name": "v1.0.0",
+      "html_url": "https://github.com/OverkillLabs3/vice-city-stories-recomp/releases/tag/v1.0.0",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "VCSNative-Windows.zip",
+          "size": 20855739,
+          "browser_download_url": "https://github.com/OverkillLabs3/vice-city-stories-recomp/releases/download/v1.0.0/VCSNative-Windows.zip",
+          "digest": "sha256:eeaf4f01eb1458987119ecfc4bda0555865357a10bc59c4f2a3378a45eb56587"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "xenophobentx/takedawn",
+    "CheckedUtc": "2026-10-28T23:27:11.243326+00:00",
+    "Release": {
+      "tag_name": "v0.2.1",
+      "html_url": "https://github.com/xenophobentx/takedawn/releases/tag/v0.2.1",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "Takedawn-0.2.1-windows-x64-setup.exe",
+          "size": 18549137,
+          "browser_download_url": "https://github.com/xenophobentx/takedawn/releases/download/v0.2.1/Takedawn-0.2.1-windows-x64-setup.exe",
+          "digest": "sha256:85ab4e81ece174f29656f9e39bf68bc39cd7e1f0018870d89a49bc596d06da7e"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "Matteo842/CrashBandicoot-Launcher",
+    "CheckedUtc": "2026-10-28T23:27:11.243326+00:00",
+    "Release": {
+      "tag_name": "2.3.1",
+      "html_url": "https://github.com/Matteo842/CrashBandicoot-Launcher/releases/tag/2.3.1",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "CrashBandicoot.exe",
+          "size": 66649638,
+          "browser_download_url": "https://github.com/Matteo842/CrashBandicoot-Launcher/releases/download/2.3.1/CrashBandicoot.exe",
+          "digest": "sha256:283e93f9c24f3325982e8df57a3d5fc0957cfcdbe719731cb714abde210bf5d7"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "morerokk/MHGURecomp",
+    "CheckedUtc": "2026-10-28T23:27:11.243326+00:00",
+    "Release": {
+      "tag_name": "0.10.7",
+      "html_url": "https://github.com/morerokk/MHGURecomp/releases/tag/0.10.7",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "Windows-MHGURecomp.0.10.7.zip",
+          "size": 41624442,
+          "browser_download_url": "https://github.com/morerokk/MHGURecomp/releases/download/0.10.7/Windows-MHGURecomp.0.10.7.zip",
+          "digest": "sha256:0c858e34f20f2c85547cc5656892ad805859bb34165f72e72e31a2efe8520b8a"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "nikolaygorb/PerfectDarkZeroRecomp",
+    "CheckedUtc": "2026-10-28T23:27:11.243326+00:00",
+    "Release": {
+      "tag_name": "1.8",
+      "html_url": "https://github.com/nikolaygorb/PerfectDarkZeroRecomp/releases/tag/1.8",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "PDZrecomp-win64.zip",
+          "size": 31430326,
+          "browser_download_url": "https://github.com/nikolaygorb/PerfectDarkZeroRecomp/releases/download/1.8/PDZrecomp-win64.zip",
+          "digest": "sha256:b9c08fe82b4235150e130a0a72ae7a282ad4746f759f10e1075c5a9befe42448"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "TekRantGaming/whopping-recompilation-collection",
+    "CheckedUtc": "2026-10-28T23:27:11.243326+00:00",
+    "Release": {
+      "tag_name": "v1.0.7",
+      "html_url": "https://github.com/TekRantGaming/whopping-recompilation-collection/releases/tag/v1.0.7",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "WhoppingCollection-v1.0.7-windows-x64.zip",
+          "size": 46881012,
+          "browser_download_url": "https://github.com/TekRantGaming/whopping-recompilation-collection/releases/download/v1.0.7/WhoppingCollection-v1.0.7-windows-x64.zip",
+          "digest": "sha256:82d2072cbcace33909aec7fbd2d327fcf7965258d89d385de9729297fbf87a69"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "HarbourMasters/PaperBoat",
+    "CheckedUtc": "2026-10-28T23:27:11.243326+00:00",
+    "Release": {
+      "tag_name": "1.0.3",
+      "html_url": "https://github.com/HarbourMasters/PaperBoat/releases/tag/1.0.3",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "Paperboat-Mulberry-Delta-Win64.zip",
+          "size": 27512774,
+          "browser_download_url": "https://github.com/HarbourMasters/PaperBoat/releases/download/1.0.3/Paperboat-Mulberry-Delta-Win64.zip",
+          "digest": "sha256:ad7a825befbbad2d925f511fc97cfa26027f825935b413040b9d294d953983f3"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "ElKev118/summitstrike-recomp",
+    "CheckedUtc": "2026-10-28T23:27:11.243326+00:00",
+    "Release": {
+      "tag_name": "v1.0",
+      "html_url": "https://github.com/ElKev118/summitstrike-recomp/releases/tag/v1.0",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "SummitStrike-v1.0.zip",
+          "size": 19237237,
+          "browser_download_url": "https://github.com/ElKev118/summitstrike-recomp/releases/download/v1.0/SummitStrike-v1.0.zip",
+          "digest": "sha256:ae38c7ef0efcf9beb94a193ae7d0927db7951704e3e5cc646af65a676dbb50e4"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "enrique363/voldorium",
+    "CheckedUtc": "2026-10-28T23:27:11.243326+00:00",
+    "Release": {
+      "tag_name": "v1.1.0",
+      "html_url": "https://github.com/enrique363/voldorium/releases/tag/v1.1.0",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "Voldorium-1.1.0-windows.zip",
+          "size": 1746730,
+          "browser_download_url": "https://github.com/enrique363/voldorium/releases/download/v1.1.0/Voldorium-1.1.0-windows.zip",
+          "digest": "sha256:2c3bb6c6d0b2edfa1fd1fcda7f2f73b9516ec4c3f9a90c456b73c2642a0082b9"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "GABRIELNNK/Bigodao",
+    "CheckedUtc": "2026-10-28T23:27:11.243326+00:00",
+    "Release": {
+      "tag_name": "1.6.0",
+      "html_url": "https://github.com/GABRIELNNK/Bigodao/releases/tag/1.6.0",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "bigodao_1.6_win.zip",
+          "size": 18561569,
+          "browser_download_url": "https://github.com/GABRIELNNK/Bigodao/releases/download/1.6.0/bigodao_1.6_win.zip",
+          "digest": "sha256:06f51aa70f5bf80b89168e8dc26a02a954b4667114eda1d1a3bbca866a7c8316"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "FH1-ReImagined/ForzaHorizon1-ReImagined",
+    "CheckedUtc": "2026-10-28T23:27:11.243326+00:00",
+    "Release": {
+      "tag_name": "v0.2.0",
+      "html_url": "https://github.com/FH1-ReImagined/ForzaHorizon1-ReImagined/releases/tag/v0.2.0",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "ForzaHorizon1-ReImagined-Setup-0.2.0.exe",
+          "size": 82955726,
+          "browser_download_url": "https://github.com/FH1-ReImagined/ForzaHorizon1-ReImagined/releases/download/v0.2.0/ForzaHorizon1-ReImagined-Setup-0.2.0.exe",
+          "digest": "sha256:848397cf9f1a356a777bb4f50d8d13a4484e5323162853e0445457d66f9a1141"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "SuperCatElvis/UntilDawn_PC",
+    "CheckedUtc": "2026-10-28T23:27:11.243326+00:00",
+    "Release": {
+      "tag_name": "v0.1.5-wip",
+      "html_url": "https://github.com/SuperCatElvis/UntilDawn_PC/releases/tag/v0.1.5-wip",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "UntilDawn_WIP_0.1.5.zip",
+          "size": 1310461,
+          "browser_download_url": "https://github.com/SuperCatElvis/UntilDawn_PC/releases/download/v0.1.5-wip/UntilDawn_WIP_0.1.5.zip",
+          "digest": "sha256:7af63a61e5b91492366482f3eb610df06867c64fed5ce69a958b5996777a9ea9"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "Claudio5702/Cristalis",
+    "CheckedUtc": "2026-10-28T23:27:11.243326+00:00",
+    "Release": {
+      "tag_name": "v1.10",
+      "html_url": "https://github.com/Claudio5702/Cristalis/releases/tag/v1.10",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "Cristalis-Setup.exe",
+          "size": 45059408,
+          "browser_download_url": "https://github.com/Claudio5702/Cristalis/releases/download/v1.10/Cristalis-Setup.exe",
+          "digest": "sha256:f3f2a7a0193c6377d8ac52e19453d995cc91034c908ed47c74d42e8e657b9ccb"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "Shagg88/Athelas",
+    "CheckedUtc": "2026-10-28T23:27:11.243326+00:00",
+    "Release": {
+      "tag_name": "1.7.1",
+      "html_url": "https://github.com/Shagg88/Athelas/releases/tag/1.7.1",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "Athelas-1.7.1.zip",
+          "size": 79445190,
+          "browser_download_url": "https://github.com/Shagg88/Athelas/releases/download/1.7.1/Athelas-1.7.1.zip",
+          "digest": "sha256:a6b3b990a856efba13d1749c6e34c984a7ebb83ca0cb08cbaaf8cd23c2a04806"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "Shagg88/COGBox",
+    "CheckedUtc": "2026-10-28T23:27:11.243326+00:00",
+    "Release": {
+      "tag_name": "0.2.2",
+      "html_url": "https://github.com/Shagg88/COGBox/releases/tag/0.2.2",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "COGBox-0.2.2.zip",
+          "size": 441240876,
+          "browser_download_url": "https://github.com/Shagg88/COGBox/releases/download/0.2.2/COGBox-0.2.2.zip",
+          "digest": "sha256:c7701cde8a6c48c94eb26b79eb0e8fe3c02ca571ed50429776642b90967d8c85"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "Ed1z19/ValkyrieRecomp",
+    "CheckedUtc": "2026-10-28T23:27:11.243326+00:00",
+    "Release": {
+      "tag_name": "v1.0.1",
+      "html_url": "https://github.com/Ed1z19/ValkyrieRecomp/releases/tag/v1.0.1",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "ValkyrieRecomp-1.0.1-windows-x64.zip",
+          "size": 34180889,
+          "browser_download_url": "https://github.com/Ed1z19/ValkyrieRecomp/releases/download/v1.0.1/ValkyrieRecomp-1.0.1-windows-x64.zip",
+          "digest": "sha256:0756a1e79eb7d2b40bac464f9ec24602c983bd3b68c09571d01589eae22c7072"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "TheSlackbringer/dw5xl-recomp",
+    "CheckedUtc": "2026-10-28T23:27:11.243326+00:00",
+    "Release": {
+      "tag_name": "v0.1.0-beta.3",
+      "html_url": "https://github.com/TheSlackbringer/dw5xl-recomp/releases/tag/v0.1.0-beta.3",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "DW5XL-v0.1.0-alpha.4-windows-x64.zip",
+          "size": 272977108,
+          "browser_download_url": "https://github.com/TheSlackbringer/dw5xl-recomp/releases/download/v0.1.0-beta.3/DW5XL-v0.1.0-alpha.4-windows-x64.zip",
+          "digest": "sha256:9cab62a5c5ae4601ad4aeac3ff8bef8a8b2fef0bec15f02fa97c31151824ae5b"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "xtamqispeak/KirbyRecomp",
+    "CheckedUtc": "2026-10-28T23:27:11.243326+00:00",
+    "Release": {
+      "tag_name": "v0.3.0-alpha",
+      "html_url": "https://github.com/xtamqispeak/KirbyRecomp/releases/tag/v0.3.0-alpha",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "KirbyRecompSetup-v0.3.0-alpha.exe",
+          "size": 13928448,
+          "browser_download_url": "https://github.com/xtamqispeak/KirbyRecomp/releases/download/v0.3.0-alpha/KirbyRecompSetup-v0.3.0-alpha.exe",
+          "digest": "sha256:fe73a2b0ef1f9d2e3893409cffe9b6ccc1dd4e38bc1df4bbbff51bbccf76dd68"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "Matt-code-d/Saw2Recomp",
+    "CheckedUtc": "2026-10-28T23:27:11.243326+00:00",
+    "Release": {
+      "tag_name": "v0.1.7",
+      "html_url": "https://github.com/Matt-code-d/Saw2Recomp/releases/tag/v0.1.7",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "Saw2Recomp-0.1.7-win-amd64.zip",
+          "size": 31855925,
+          "browser_download_url": "https://github.com/Matt-code-d/Saw2Recomp/releases/download/v0.1.7/Saw2Recomp-0.1.7-win-amd64.zip",
+          "digest": "sha256:57f75cf568af64320338135520439d783e56f315923eb431bc802b17b98589ef"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "dyzz/srw64-recomp",
+    "CheckedUtc": "2026-10-28T23:27:11.243326+00:00",
+    "Release": {
+      "tag_name": "v0.5.2",
+      "html_url": "https://github.com/dyzz/srw64-recomp/releases/tag/v0.5.2",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "Marchwind64-0.5.2-windows-x64.zip",
+          "size": 65348813,
+          "browser_download_url": "https://github.com/dyzz/srw64-recomp/releases/download/v0.5.2/Marchwind64-0.5.2-windows-x64.zip",
+          "digest": "sha256:ff199628fbf148d6da976927ef534f598b5c4a3f8a08db949ac2103136d5c768"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "vascon-es/lego-dimensions-pc",
+    "CheckedUtc": "2026-10-28T23:27:11.243326+00:00",
+    "Release": {
+      "tag_name": "v1.8.2",
+      "html_url": "https://github.com/vascon-es/lego-dimensions-pc/releases/tag/v1.8.2",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "LEGO_Dimensions_PC_portatil.zip",
+          "size": 105446539,
+          "browser_download_url": "https://github.com/vascon-es/lego-dimensions-pc/releases/download/v1.8.2/LEGO_Dimensions_PC_portatil.zip",
+          "digest": "sha256:6b3cc300771cd64f1c1a6877b412ce7dfd6408befe83b0c6f308dda658fef26c"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "indicozy/razdor",
+    "CheckedUtc": "2026-10-28T23:27:11.243326+00:00",
+    "Release": {
+      "tag_name": "v1.1.10",
+      "html_url": "https://github.com/indicozy/razdor/releases/tag/v1.1.10",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "Razdor.exe",
+          "size": 14751232,
+          "browser_download_url": "https://github.com/indicozy/razdor/releases/download/v1.1.10/Razdor.exe",
+          "digest": "sha256:6baa3fd27e8930a26c9e0e04e71de75e5aa6f331c0264fc7b4d47b690e03ab9a"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "ripleyXLR8/atlantis-native",
+    "CheckedUtc": "2026-10-28T23:27:11.243326+00:00",
+    "Release": {
+      "tag_name": "v0.5.7",
+      "html_url": "https://github.com/ripleyXLR8/atlantis-native/releases/tag/v0.5.7",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "atlantis-native-windows-x64.zip",
+          "size": 4670074,
+          "browser_download_url": "https://github.com/ripleyXLR8/atlantis-native/releases/download/v0.5.7/atlantis-native-windows-x64.zip",
+          "digest": "sha256:a5720a4eb0d28eac1b771af0aa2543d7509def2c400de72b4f734d72765a9e39"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "emanuelcnjunior/TMNT-IV-Turtles-in-Time-PC-Recomp",
+    "CheckedUtc": "2026-10-28T23:27:11.243326+00:00",
+    "Release": {
+      "tag_name": "v1.0.2",
+      "html_url": "https://github.com/emanuelcnjunior/TMNT-IV-Turtles-in-Time-PC-Recomp/releases/tag/v1.0.2",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "TMNT-IV-Turtles-in-Time-PC-Setup-v1.0.2.exe",
+          "size": 5695642,
+          "browser_download_url": "https://github.com/emanuelcnjunior/TMNT-IV-Turtles-in-Time-PC-Recomp/releases/download/v1.0.2/TMNT-IV-Turtles-in-Time-PC-Setup-v1.0.2.exe",
+          "digest": "sha256:a598b2434027b401bb1e683df6ece08afb859f5cd74780f8fe429ba561d1de71"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "0c0de/splatterhouse-decomp",
+    "CheckedUtc": "2026-10-28T23:27:11.243326+00:00",
+    "Release": {
+      "tag_name": "v0.3",
+      "html_url": "https://github.com/0c0de/splatterhouse-decomp/releases/tag/v0.3",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "splatterhouse-decomp-release.zip",
+          "size": 35648027,
+          "browser_download_url": "https://github.com/0c0de/splatterhouse-decomp/releases/download/v0.3/splatterhouse-decomp-release.zip",
+          "digest": "sha256:8940ae9ecd0e4aed97a8d77513abd0537bd5a01f1439b0ad736be6e0e8ec4d78"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "GTTeancum/SotE-Recomp",
+    "CheckedUtc": "2026-10-28T23:27:11.243326+00:00",
+    "Release": {
+      "tag_name": "0.9.7",
+      "html_url": "https://github.com/GTTeancum/SotE-Recomp/releases/tag/0.9.7",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "SotE-Recomp-0.9.7.zip",
+          "size": 583324761,
+          "browser_download_url": "https://github.com/GTTeancum/SotE-Recomp/releases/download/0.9.7/SotE-Recomp-0.9.7.zip",
+          "digest": "sha256:908c60ae51fb2772bfc4f60e6c2bb8419d5ac2a54b1e54d31fe13ddab2c323d7"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "thiagordsfx/urban-reign-recomp",
+    "CheckedUtc": "2026-10-28T23:27:11.243326+00:00",
+    "Release": {
+      "tag_name": "v1.4.0",
+      "html_url": "https://github.com/thiagordsfx/urban-reign-recomp/releases/tag/v1.4.0",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "UrbanReignPC-1.4.0.zip",
+          "size": 48801996,
+          "browser_download_url": "https://github.com/thiagordsfx/urban-reign-recomp/releases/download/v1.4.0/UrbanReignPC-1.4.0.zip",
+          "digest": "sha256:9474d22adb021d329239bddcda51a7ae04f4a6d9c8828324deca7f9dd69499b7"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "GTTeancum/Timesplitters",
+    "CheckedUtc": "2026-10-28T23:27:11.243326+00:00",
+    "Release": {
+      "tag_name": "v1.0",
+      "html_url": "https://github.com/GTTeancum/Timesplitters/releases/tag/v1.0",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "TimeSplitters-Recomp-v1.0-windows.zip",
+          "size": 24513794,
+          "browser_download_url": "https://github.com/GTTeancum/Timesplitters/releases/download/v1.0/TimeSplitters-Recomp-v1.0-windows.zip",
+          "digest": "sha256:5bd06960d1ef4cc13ae16a21affdc9f5e07623d4c82030a0b6eabb22f6f41a7d"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "GioPixelGH/Crash-Twinsanity-Windows",
+    "CheckedUtc": "2026-10-28T23:27:11.243326+00:00",
+    "Release": {
+      "tag_name": "v1.0.19",
+      "html_url": "https://github.com/GioPixelGH/Crash-Twinsanity-Windows/releases/tag/v1.0.19",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "Crash-Twinsanity-Windows.zip",
+          "size": 14371309,
+          "browser_download_url": "https://github.com/GioPixelGH/Crash-Twinsanity-Windows/releases/download/v1.0.19/Crash-Twinsanity-Windows.zip",
+          "digest": "sha256:08d7adb4688a068415015024ebceb18c47d262f16539043949ab95ecb2506ab2"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "TheDoffman/timesplitters-future-perfect-pc",
+    "CheckedUtc": "2026-10-28T23:27:11.243326+00:00",
+    "Release": {
+      "tag_name": "launcher-v1.4.0",
+      "html_url": "https://github.com/TheDoffman/timesplitters-future-perfect-pc/releases/tag/launcher-v1.4.0",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "TimeSplitters-Launcher-v1.4.0-windows-x64.zip",
+          "size": 5048501,
+          "browser_download_url": "https://github.com/TheDoffman/timesplitters-future-perfect-pc/releases/download/launcher-v1.4.0/TimeSplitters-Launcher-v1.4.0-windows-x64.zip",
+          "digest": "sha256:a8fcb6fd1fde313770deb29177f979b598ff5447ccad6007018425afeb147092"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "tools81/nfl-head-coach-09-static-recomp",
+    "CheckedUtc": "2026-10-28T23:27:11.243326+00:00",
+    "Release": {
+      "tag_name": "v0.8.0",
+      "html_url": "https://github.com/tools81/nfl-head-coach-09-static-recomp/releases/tag/v0.8.0",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "HC09Setup.exe",
+          "size": 494592,
+          "browser_download_url": "https://github.com/tools81/nfl-head-coach-09-static-recomp/releases/download/v0.8.0/HC09Setup.exe",
+          "digest": "sha256:c02d4858c9977078772f6104893c35c2481a8869c1f34d2c4b04b1e8b715036e"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "XAndromedaXR/PORTHEON",
+    "CheckedUtc": "2026-10-28T23:27:11.243326+00:00",
+    "Release": {
+      "tag_name": "4.2.0",
+      "html_url": "https://github.com/XAndromedaXR/PORTHEON/releases/tag/4.2.0",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "PORTHEON-4.2.0-Windows-x64.zip",
+          "size": 107078421,
+          "browser_download_url": "https://github.com/XAndromedaXR/PORTHEON/releases/download/4.2.0/PORTHEON-4.2.0-Windows-x64.zip",
+          "digest": "sha256:b514aa98b875a6929536c711e39c88a561ec818b5a4a1e17eab430fbf1283a58"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "camybiohazard/Project-Veronica",
+    "CheckedUtc": "2026-10-28T23:27:11.243326+00:00",
+    "Release": {
+      "tag_name": "1.0.3",
+      "html_url": "https://github.com/camybiohazard/Project-Veronica/releases/tag/1.0.3",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "veronica-windows-x86.zip",
+          "size": 15514426,
+          "browser_download_url": "https://github.com/camybiohazard/Project-Veronica/releases/download/1.0.3/veronica-windows-x86.zip",
+          "digest": "sha256:64255ec3bfed3431ac452bddf7faa0c28152d37eb1961787500dcb665851b7a4"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "josiahg2502-glitch/NewSuperPaperBros",
+    "CheckedUtc": "2026-10-28T23:27:11.244829+00:00",
+    "Release": {
+      "tag_name": "v1.0.5",
+      "html_url": "https://github.com/josiahg2502-glitch/NewSuperPaperBros/releases/tag/v1.0.5",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "NewSuperPaperBros.zip",
+          "size": 372103431,
+          "browser_download_url": "https://github.com/josiahg2502-glitch/NewSuperPaperBros/releases/download/v1.0.5/NewSuperPaperBros.zip",
+          "digest": "sha256:3d5e7a7016d9ce719ad1d5cacf38a2610069779f4b17e81e940847bb210c83f6"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "josiahg2502-glitch/Mother3Recomp",
+    "CheckedUtc": "2026-10-28T23:27:11.244829+00:00",
+    "Release": {
+      "tag_name": "v1.0.8",
+      "html_url": "https://github.com/josiahg2502-glitch/Mother3Recomp/releases/tag/v1.0.8",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "Mother3Recomp-v1.0.8-windows-x64.zip",
+          "size": 36758584,
+          "browser_download_url": "https://github.com/josiahg2502-glitch/Mother3Recomp/releases/download/v1.0.8/Mother3Recomp-v1.0.8-windows-x64.zip",
+          "digest": "sha256:8f27d1ab97a66b1a6d5201c56eaf89832a699c711f0555d56e1d84f3ddf03d9d"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "saulob/marvel-ultimate-alliance-bundle-recompiled",
+    "CheckedUtc": "2026-10-28T23:27:11.244829+00:00",
+    "Release": {
+      "tag_name": "v0.1.0",
+      "html_url": "https://github.com/saulob/marvel-ultimate-alliance-bundle-recompiled/releases/tag/v0.1.0",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "MarvelUltimateAlliance-v0.1.0-windows-x64.zip",
+          "size": 54406882,
+          "browser_download_url": "https://github.com/saulob/marvel-ultimate-alliance-bundle-recompiled/releases/download/v0.1.0/MarvelUltimateAlliance-v0.1.0-windows-x64.zip",
+          "digest": "sha256:bfb60b6d371bc2070ee6e2b07ae758f149fb92267793aa3078ab8096e811286c"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "anishchandra24/NHL2K8-Recompiled",
+    "CheckedUtc": "2026-10-28T23:27:11.244829+00:00",
+    "Release": {
+      "tag_name": "v1.0.0",
+      "html_url": "https://github.com/anishchandra24/NHL2K8-Recompiled/releases/tag/v1.0.0",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "NHL2K8-Recompiled-Setup.exe",
+          "size": 129024,
+          "browser_download_url": "https://github.com/anishchandra24/NHL2K8-Recompiled/releases/download/v1.0.0/NHL2K8-Recompiled-Setup.exe",
+          "digest": "sha256:f9c22ffb7d671cbd9f7de58f45d8a9fba51074fe6397bb2f354c04ffe0467343"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "Dudux42/FreedomUnbound",
+    "CheckedUtc": "2026-10-28T23:27:11.244829+00:00",
+    "Release": {
+      "tag_name": "v0.1.5-alpha",
+      "html_url": "https://github.com/Dudux42/FreedomUnbound/releases/tag/v0.1.5-alpha",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "FreedomUnbound-0.1.5-alpha-windows-x64.zip",
+          "size": 110074232,
+          "browser_download_url": "https://github.com/Dudux42/FreedomUnbound/releases/download/v0.1.5-alpha/FreedomUnbound-0.1.5-alpha-windows-x64.zip",
+          "digest": "sha256:703a4a5c51f9db484245eb193907153337b3b602e09f5c906db620eec255e5a5"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "zorde23/Uncharted_Collection_PC",
+    "CheckedUtc": "2026-10-28T23:27:11.244829+00:00",
+    "Release": {
+      "tag_name": "v0.3.7",
+      "html_url": "https://github.com/zorde23/Uncharted_Collection_PC/releases/tag/v0.3.7",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "ucndc_pc-v0.3.7-windows.zip",
+          "size": 74854430,
+          "browser_download_url": "https://github.com/zorde23/Uncharted_Collection_PC/releases/download/v0.3.7/ucndc_pc-v0.3.7-windows.zip",
+          "digest": "sha256:f0d0f781761b30f8148ad896d40736bc06d692cc8a1b5daac617ecbecc143ac9"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "dougieprishpreed/skate3recomp-plus",
+    "CheckedUtc": "2026-10-28T23:27:11.244829+00:00",
+    "Release": {
+      "tag_name": "v0.2e",
+      "html_url": "https://github.com/dougieprishpreed/skate3recomp-plus/releases/tag/v0.2e",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "Skate3Recomp-Plus-v0.2e-Windows-x64.zip",
+          "size": 122645863,
+          "browser_download_url": "https://github.com/dougieprishpreed/skate3recomp-plus/releases/download/v0.2e/Skate3Recomp-Plus-v0.2e-Windows-x64.zip",
+          "digest": "sha256:b2ab8952a8b918c67e4e8f5b2de2db0d2243ccbe9b4d090607bce6fbf2763e04"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "jessetbh/WWFNoMercyRecomp",
+    "CheckedUtc": "2026-10-28T23:37:26.075634+00:00",
+    "Release": {
+      "tag_name": "v0.2.0",
+      "html_url": "https://github.com/jessetbh/WWFNoMercyRecomp/releases/tag/v0.2.0",
+      "draft": false,
+      "prerelease": true,
+      "assets": [
+        {
+          "name": "NoMercyRecompiled-v0.2.0-Windows.zip",
+          "size": 23049485,
+          "browser_download_url": "https://github.com/jessetbh/WWFNoMercyRecomp/releases/download/v0.2.0/NoMercyRecompiled-v0.2.0-Windows.zip",
+          "digest": "sha256:d35dc104bb2ad77797b12272f13d9404453b30c22526e4ec2e8cffff21866149"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "jessetbh/WWFWrestleMania2000Recomp",
+    "CheckedUtc": "2026-10-28T23:37:26.075634+00:00",
+    "Release": {
+      "tag_name": "v0.2.0",
+      "html_url": "https://github.com/jessetbh/WWFWrestleMania2000Recomp/releases/tag/v0.2.0",
+      "draft": false,
+      "prerelease": true,
+      "assets": [
+        {
+          "name": "Wm2kRecompiled-v0.2.0-Windows.zip",
+          "size": 22942365,
+          "browser_download_url": "https://github.com/jessetbh/WWFWrestleMania2000Recomp/releases/download/v0.2.0/Wm2kRecompiled-v0.2.0-Windows.zip",
+          "digest": "sha256:9be37a71781937ec4a1119e93f63b5471c1c5fb0adb4d33a13c361f28a32ae15"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "jessetbh/WCWvsNWOWorldTourRecomp",
+    "CheckedUtc": "2026-10-28T23:37:26.075634+00:00",
+    "Release": {
+      "tag_name": "v0.2.0",
+      "html_url": "https://github.com/jessetbh/WCWvsNWOWorldTourRecomp/releases/tag/v0.2.0",
+      "draft": false,
+      "prerelease": true,
+      "assets": [
+        {
+          "name": "WCWRecompiled-v0.2.0-Windows.zip",
+          "size": 22238444,
+          "browser_download_url": "https://github.com/jessetbh/WCWvsNWOWorldTourRecomp/releases/download/v0.2.0/WCWRecompiled-v0.2.0-Windows.zip",
+          "digest": "sha256:313e5d11f518806a92de3a2d7cb7a1263b1a7e2efb7abafbffba5fda7b1842ea"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "jessetbh/WCWnWoRevengeRecomp",
+    "CheckedUtc": "2026-10-28T23:37:26.075634+00:00",
+    "Release": {
+      "tag_name": "v0.2.0",
+      "html_url": "https://github.com/jessetbh/WCWnWoRevengeRecomp/releases/tag/v0.2.0",
+      "draft": false,
+      "prerelease": true,
+      "assets": [
+        {
+          "name": "RevengeRecompiled-v0.2.0-Windows.zip",
+          "size": 22418056,
+          "browser_download_url": "https://github.com/jessetbh/WCWnWoRevengeRecomp/releases/download/v0.2.0/RevengeRecompiled-v0.2.0-Windows.zip",
+          "digest": "sha256:509425d4b2bbe6c01d46e97078946d77c1cbed562aa6f0787633d58a69185620"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "jessetbh/VPW64Recomp",
+    "CheckedUtc": "2026-10-28T23:37:26.075634+00:00",
+    "Release": {
+      "tag_name": "v0.2.0",
+      "html_url": "https://github.com/jessetbh/VPW64Recomp/releases/tag/v0.2.0",
+      "draft": false,
+      "prerelease": true,
+      "assets": [
+        {
+          "name": "Vpw64Recompiled-v0.2.0-Windows.zip",
+          "size": 22480983,
+          "browser_download_url": "https://github.com/jessetbh/VPW64Recomp/releases/download/v0.2.0/Vpw64Recompiled-v0.2.0-Windows.zip",
+          "digest": "sha256:ee1d367cb9f0c0a43b8289a7422d9420cc7604d5a6be17324d7fcae4b8bd2936"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "shipa-2/Xerenge",
+    "CheckedUtc": "2026-10-28T23:37:26.076632+00:00",
+    "Release": {
+      "tag_name": "v0.4.8",
+      "html_url": "https://github.com/shipa-2/Xerenge/releases/tag/v0.4.8",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "Burnout_Revenge_Installer-win-amd64.exe",
+          "size": 33446180,
+          "browser_download_url": "https://github.com/shipa-2/Xerenge/releases/download/v0.4.8/Burnout_Revenge_Installer-win-amd64.exe",
+          "digest": "sha256:3a260835b7b347bf0937acfa8210254f561924fe8fab51fa8690611b046d5b20"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "invinceble55-wq/Estacado-The-Darkness-Recomp",
+    "CheckedUtc": "2026-10-28T23:37:26.076632+00:00",
+    "Release": {
+      "tag_name": "v0.9.8",
+      "html_url": "https://github.com/invinceble55-wq/Estacado-The-Darkness-Recomp/releases/tag/v0.9.8",
+      "draft": false,
+      "prerelease": true,
+      "assets": [
+        {
+          "name": "Estacado-0.9.8-windows-x64.zip",
+          "size": 123003992,
+          "browser_download_url": "https://github.com/invinceble55-wq/Estacado-The-Darkness-Recomp/releases/download/v0.9.8/Estacado-0.9.8-windows-x64.zip",
+          "digest": "sha256:b30cab28fe41491c05db7a156f2357f32afdaec1bd8adb826960a47b6100d613"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "murkantor/Project-Midas",
+    "CheckedUtc": "2026-10-28T23:37:26.076632+00:00",
+    "Release": {
+      "tag_name": "1.0.2b",
+      "html_url": "https://github.com/murkantor/Project-Midas/releases/tag/1.0.2b",
+      "draft": false,
+      "prerelease": true,
+      "assets": [
+        {
+          "name": "ProjectMidas-v1.0.2b-windows.zip",
+          "size": 7208857,
+          "browser_download_url": "https://github.com/murkantor/Project-Midas/releases/download/1.0.2b/ProjectMidas-v1.0.2b-windows.zip",
+          "digest": "sha256:447b95c7f4947ad692fee9f4072509ecb055fc3cbe9862c7b5ca7a3ba555e16f"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "96dot/Dragon-Age-Origins-Recomp",
+    "CheckedUtc": "2026-10-28T23:37:26.076632+00:00",
+    "Release": {
+      "tag_name": "v0.10.0",
+      "html_url": "https://github.com/96dot/Dragon-Age-Origins-Recomp/releases/tag/v0.10.0",
+      "draft": false,
+      "prerelease": true,
+      "assets": [
+        {
+          "name": "DAORecomp-Installer.exe",
+          "size": 33825846,
+          "browser_download_url": "https://github.com/96dot/Dragon-Age-Origins-Recomp/releases/download/v0.10.0/DAORecomp-Installer.exe",
+          "digest": "sha256:a2670d1f7a13acd0984ba41714ed31a7c39d9f0074c1d53158ac5c4fd6193483"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "gamboozino/ngbrecomp",
+    "CheckedUtc": "2026-10-28T23:37:26.076632+00:00",
+    "Release": {
+      "tag_name": "v0.9.39",
+      "html_url": "https://github.com/gamboozino/ngbrecomp/releases/tag/v0.9.39",
+      "draft": false,
+      "prerelease": true,
+      "assets": [
+        {
+          "name": "NinjaGaidenBlack-windows-x64.zip",
+          "size": 22601671,
+          "browser_download_url": "https://github.com/gamboozino/ngbrecomp/releases/download/v0.9.39/NinjaGaidenBlack-windows-x64.zip",
+          "digest": "sha256:f519ada0ca2164847959a2c071155c9b4dce8be711abdae2892d0a2affbc7fc6"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "Revivedx/SavageWindRecomp",
+    "CheckedUtc": "2026-10-28T23:37:26.076632+00:00",
+    "Release": {
+      "tag_name": "v0.3.1-alpha.3",
+      "html_url": "https://github.com/Revivedx/SavageWindRecomp/releases/tag/v0.3.1-alpha.3",
+      "draft": false,
+      "prerelease": true,
+      "assets": [
+        {
+          "name": "SavageWind-0.3.1-alpha.3-windows.zip",
+          "size": 90204965,
+          "browser_download_url": "https://github.com/Revivedx/SavageWindRecomp/releases/download/v0.3.1-alpha.3/SavageWind-0.3.1-alpha.3-windows.zip",
+          "digest": "sha256:7c271e63e4cc6bd52ad958a585171b31c151d7ce700f6f0657c6dd51a56aa744"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "sal063/AC6_recomp",
+    "CheckedUtc": "2026-10-28T23:37:26.076632+00:00",
+    "Release": {
+      "tag_name": "v1.0.0-beta.2",
+      "html_url": "https://github.com/sal063/AC6_recomp/releases/tag/v1.0.0-beta.2",
+      "draft": false,
+      "prerelease": true,
+      "assets": [
+        {
+          "name": "ac6recomp-1.0.0-beta.2.zip",
+          "size": 8534388,
+          "browser_download_url": "https://github.com/sal063/AC6_recomp/releases/download/v1.0.0-beta.2/ac6recomp-1.0.0-beta.2.zip",
+          "digest": "sha256:a30df48e70134c72015c07470ea35c90d702b52f879772ace347de98af1b72a5"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "FrankHUN88453/CoD3Recomp",
+    "CheckedUtc": "2026-10-28T23:37:26.076632+00:00",
+    "Release": {
+      "tag_name": "v0.5.0",
+      "html_url": "https://github.com/FrankHUN88453/CoD3Recomp/releases/tag/v0.5.0",
+      "draft": false,
+      "prerelease": true,
+      "assets": [
+        {
+          "name": "CoD3SP_s.exe",
+          "size": 257373696,
+          "browser_download_url": "https://github.com/FrankHUN88453/CoD3Recomp/releases/download/v0.5.0/CoD3SP_s.exe",
+          "digest": "sha256:33bf5f1c884856ea69934d249bacd537acedc664f37d0faca621d74ff6f59a12"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "NeverCookFirst/DimensionsRecomp",
+    "CheckedUtc": "2026-10-28T23:37:26.076632+00:00",
+    "Release": {
+      "tag_name": "v0.1.38",
+      "html_url": "https://github.com/NeverCookFirst/DimensionsRecomp/releases/tag/v0.1.38",
+      "draft": false,
+      "prerelease": true,
+      "assets": [
+        {
+          "name": "DimensionsRecompiled-Setup.exe",
+          "size": 322021827,
+          "browser_download_url": "https://github.com/NeverCookFirst/DimensionsRecomp/releases/download/v0.1.38/DimensionsRecompiled-Setup.exe",
+          "digest": "sha256:e9c23cd75ffce9b90e90bdc411d6b0084155cda398548baed36a0a2bf7f16d9c"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "danielgomesvieira2000/burnout3-pc",
+    "CheckedUtc": "2026-10-28T23:37:26.076632+00:00",
+    "Release": {
+      "tag_name": "v0.7.2-alpha",
+      "html_url": "https://github.com/danielgomesvieira2000/burnout3-pc/releases/tag/v0.7.2-alpha",
+      "draft": false,
+      "prerelease": true,
+      "assets": [
+        {
+          "name": "Burnout3-PC-0.7.2-alpha-windows-x64.zip",
+          "size": 44986139,
+          "browser_download_url": "https://github.com/danielgomesvieira2000/burnout3-pc/releases/download/v0.7.2-alpha/Burnout3-PC-0.7.2-alpha-windows-x64.zip",
+          "digest": "sha256:3ea0d4ea3bf948939ac5041f39b81d2bf6e2bd01eeb50c0d0be994e6ec33b61d"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "some-scurvy-dog/banjo-tooie-scurvy-dog-port",
+    "CheckedUtc": "2026-10-28T23:37:26.076632+00:00",
+    "Release": {
+      "tag_name": "v0.1.0-alpha.4.5",
+      "html_url": "https://github.com/some-scurvy-dog/banjo-tooie-scurvy-dog-port/releases/tag/v0.1.0-alpha.4.5",
+      "draft": false,
+      "prerelease": true,
+      "assets": [
+        {
+          "name": "BanjoTooieScurvyDogPort-Alpha4.5-Windows-x64.zip",
+          "size": 16941898,
+          "browser_download_url": "https://github.com/some-scurvy-dog/banjo-tooie-scurvy-dog-port/releases/download/v0.1.0-alpha.4.5/BanjoTooieScurvyDogPort-Alpha4.5-Windows-x64.zip",
+          "digest": "sha256:a7cd5c8289090da28b48698fd17bb436c89b389dff1554b5c79af396be0ad771"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "Masterllgod/naruto-storm-generations-port-nativo",
+    "CheckedUtc": "2026-10-28T23:37:26.076632+00:00",
+    "Release": {
+      "tag_name": "v0.3.5",
+      "html_url": "https://github.com/Masterllgod/naruto-storm-generations-port-nativo/releases/tag/v0.3.5",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "NarutoStormGenerations-PortNativo-v0.3.5-windows-x64.zip",
+          "size": 13515301,
+          "browser_download_url": "https://github.com/Masterllgod/naruto-storm-generations-port-nativo/releases/download/v0.3.5/NarutoStormGenerations-PortNativo-v0.3.5-windows-x64.zip",
+          "digest": "sha256:49932226864c4ec82999e4354ad7d27a11293768152777e41a7724554b9fdfc0"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "luckvj/streetball-revival",
+    "CheckedUtc": "2026-10-28T23:37:26.076632+00:00",
+    "Release": {
+      "tag_name": "v0.1.4-beta",
+      "html_url": "https://github.com/luckvj/streetball-revival/releases/tag/v0.1.4-beta",
+      "draft": false,
+      "prerelease": true,
+      "assets": [
+        {
+          "name": "streetball-revival-v0.1.4-beta-windows.zip",
+          "size": 40596634,
+          "browser_download_url": "https://github.com/luckvj/streetball-revival/releases/download/v0.1.4-beta/streetball-revival-v0.1.4-beta-windows.zip",
+          "digest": "sha256:524caaebd9917bcea9a432d8db979079a3c6fc229684a630b2f80692d0e88b3b"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "moesuito/gt4-staticrecomp",
+    "CheckedUtc": "2026-10-28T23:37:26.076632+00:00",
+    "Release": {
+      "tag_name": "v1.2.5",
+      "html_url": "https://github.com/moesuito/gt4-staticrecomp/releases/tag/v1.2.5",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "GT4Recomp-Setup-1.2.5.exe",
+          "size": 29041073,
+          "browser_download_url": "https://github.com/moesuito/gt4-staticrecomp/releases/download/v1.2.5/GT4Recomp-Setup-1.2.5.exe",
+          "digest": "sha256:556e7725d11146f1f79613814fbf961e1299000bd56df7c8831a324213003a74"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "noahbaxter/GHClassic",
+    "CheckedUtc": "2026-10-28T23:37:26.076632+00:00",
+    "Release": {
+      "tag_name": "v0.8.5",
+      "html_url": "https://github.com/noahbaxter/GHClassic/releases/tag/v0.8.5",
+      "draft": false,
+      "prerelease": true,
+      "assets": [
+        {
+          "name": "GHClassic-windows-x64-v0.8.5.zip",
+          "size": 37178705,
+          "browser_download_url": "https://github.com/noahbaxter/GHClassic/releases/download/v0.8.5/GHClassic-windows-x64-v0.8.5.zip",
+          "digest": "sha256:ec94ff8d466da2e930f5fb25952947e15d00bfa1236b3e9ca3c1d9867f9a2481"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "Nico-D-eu/RE-Amped2",
+    "CheckedUtc": "2026-10-28T23:37:26.076632+00:00",
+    "Release": {
+      "tag_name": "v0.2.0",
+      "html_url": "https://github.com/Nico-D-eu/RE-Amped2/releases/tag/v0.2.0",
+      "draft": false,
+      "prerelease": true,
+      "assets": [
+        {
+          "name": "RE-Amped2-Setup.exe",
+          "size": 16023552,
+          "browser_download_url": "https://github.com/Nico-D-eu/RE-Amped2/releases/download/v0.2.0/RE-Amped2-Setup.exe",
+          "digest": "sha256:1e55634aa2ec2809c8aac9f24383495edb07cf8487f4130b03fe32e873ec8412"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "RandyVie/Laserlords",
+    "CheckedUtc": "2026-10-28T23:37:26.076632+00:00",
+    "Release": {
+      "tag_name": "v0.8.1",
+      "html_url": "https://github.com/RandyVie/Laserlords/releases/tag/v0.8.1",
+      "draft": false,
+      "prerelease": true,
+      "assets": [
+        {
+          "name": "LaserLords-0.8.1-windows-x64.zip",
+          "size": 4178878,
+          "browser_download_url": "https://github.com/RandyVie/Laserlords/releases/download/v0.8.1/LaserLords-0.8.1-windows-x64.zip",
+          "digest": "sha256:a39a523188f2d217db402362eb6ec0673f649dee4ab40e70a8859d465daf0065"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "undecuple/project-pyrrhus",
+    "CheckedUtc": "2026-10-28T23:37:26.076632+00:00",
+    "Release": {
+      "tag_name": "v0.1.2",
+      "html_url": "https://github.com/undecuple/project-pyrrhus/releases/tag/v0.1.2",
+      "draft": false,
+      "prerelease": true,
+      "assets": [
+        {
+          "name": "Project-Pyrrhus-0.1.2-portable.zip",
+          "size": 162604582,
+          "browser_download_url": "https://github.com/undecuple/project-pyrrhus/releases/download/v0.1.2/Project-Pyrrhus-0.1.2-portable.zip",
+          "digest": "sha256:e8438704aca05b117c030adc3fad21b75dfa21a35b7c1bd38ab679d5baa14039"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "undecuple/project-helghast",
+    "CheckedUtc": "2026-10-28T23:37:26.076632+00:00",
+    "Release": {
+      "tag_name": "v0.1.5",
+      "html_url": "https://github.com/undecuple/project-helghast/releases/tag/v0.1.5",
+      "draft": false,
+      "prerelease": true,
+      "assets": [
+        {
+          "name": "Project-Helghast-0.1.5-portable.zip",
+          "size": 161113858,
+          "browser_download_url": "https://github.com/undecuple/project-helghast/releases/download/v0.1.5/Project-Helghast-0.1.5-portable.zip",
+          "digest": "sha256:360731663ec3b9c8e6ab7ef903211251f92c11def59c97d5f584c88f26ba0467"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "anishchandra24/Juiced2-Recompiled",
+    "CheckedUtc": "2026-10-28T23:37:26.076632+00:00",
+    "Release": {
+      "tag_name": "v0.1.0-preview",
+      "html_url": "https://github.com/anishchandra24/Juiced2-Recompiled/releases/tag/v0.1.0-preview",
+      "draft": false,
+      "prerelease": true,
+      "assets": [
+        {
+          "name": "Juiced2-Recompiled-Setup.exe",
+          "size": 44544,
+          "browser_download_url": "https://github.com/anishchandra24/Juiced2-Recompiled/releases/download/v0.1.0-preview/Juiced2-Recompiled-Setup.exe",
+          "digest": "sha256:a4455e4d416689b8c6b780881dbe51df8bb9716a2a8c713b2adb7ae7f627300a"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "anishchandra24/MaddenNFL08-Recompiled",
+    "CheckedUtc": "2026-10-28T23:37:26.076632+00:00",
+    "Release": {
+      "tag_name": "v0.1.0",
+      "html_url": "https://github.com/anishchandra24/MaddenNFL08-Recompiled/releases/tag/v0.1.0",
+      "draft": false,
+      "prerelease": true,
+      "assets": [
+        {
+          "name": "MaddenNFL08-Recompiled-Setup.exe",
+          "size": 530432,
+          "browser_download_url": "https://github.com/anishchandra24/MaddenNFL08-Recompiled/releases/download/v0.1.0/MaddenNFL08-Recompiled-Setup.exe",
+          "digest": "sha256:d47bdd5fd48f4dab41c9f5d7eb3847fa280e22e089792a8fb2ddcc137207d3fb"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "perfect-dark-pc-port/perfect_dark",
+    "CheckedUtc": "2026-10-28T23:37:26.077632+00:00",
+    "Release": {
+      "tag_name": "ci-dev-build",
+      "html_url": "https://github.com/perfect-dark-pc-port/perfect_dark/releases/tag/ci-dev-build",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "pd-x86_64-windows.zip",
+          "size": 25739820,
+          "browser_download_url": "https://github.com/perfect-dark-pc-port/perfect_dark/releases/download/ci-dev-build/pd-x86_64-windows.zip",
+          "digest": "sha256:56e6a2f8bad36bd90f0d396c1d525b953adcc1a20157f594b90a7530d58258d3"
+        }
+      ]
+    }
   }
 ]

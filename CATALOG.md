@@ -1,6 +1,53 @@
 # Catálogo de ports
 
-Nos perfis de instalação automática, o NEXUS consulta a última **release estável** do GitHub e seleciona somente o ZIP Windows definido. Darkwatch: Darker Edition usa releases estáveis do repositório linkssy2/DarkwatchDarkerEdition. Azimuth usa sua página oficial no itch.io e importação local do ZIP. Não escolhe arquivos de código-fonte, Linux ou atualizadores isolados. Os projetos abaixo são ports/forks independentes, sem vínculo oficial com os detentores dos jogos.
+Nos perfis integrados, o NEXUS consulta a última Release Windows compatível e seleciona o ZIP ou EXE definido; versões experimentais só são consideradas nos perfis que as sinalizam. Darkwatch: Darker Edition usa releases estáveis do repositório linkssy2/DarkwatchDarkerEdition. Azimuth usa sua página oficial no itch.io e importação local do ZIP. Não escolhe arquivos de código-fonte, Linux ou atualizadores isolados. Os projetos abaixo são ports/forks independentes, sem vínculo oficial com os detentores dos jogos.
+
+## Instalação integrada e atualizações — 1.6.0
+
+São **255 fontes GitHub integradas** entre 274 fontes: **223 ZIPs**, **10 EXEs portáteis** e **22 assistentes do autor**. Outros **18 projetos** continuam com limites específicos e o **Azimuth** mantém a importação do ZIP oficial do itch.io. O NEXUS usa o padrão de nome revisado do pacote, sua origem oficial e, nos perfis novos, inspeciona os executáveis após extrair. A inclusão não garante jogabilidade. Os dois exemplos reais adicionais de instalação genérica foram Pokémon Snap e Perfect Dark; não se afirma uma auditoria offline individual de todos os novos pacotes.
+
+### Releases e cadastro
+
+Nos perfis genéricos, a consulta considera até 30 Releases e escolhe a primeira compatível com o pacote Windows esperado, ignorando drafts e betas não autorizadas. Isso permite usar a última versão Windows mesmo quando o autor publica uma versão Android mais nova. Betas exigem aceitação por instalação. URLs precisam pertencer às Releases do repositório; tamanho, SHA-256 quando publicado, limites de extração e caminhos são verificados. Não são escolhidos APKs, código-fonte, símbolos ou ARM64. EXEs x86 são aceitos no Windows 11 x64 quando esse é o pacote do autor; Perfect Dark usa seu pacote x64.
+
+Com um único aplicativo compatível, o cadastro é automático. Se houver vários, uma janela do NEXUS permite selecionar Jogar e Configurar, sem abrir o GitHub. Isso também cobre variantes de região como Perfect Dark. Não se executa um arquivo só para descobrir se ele é o jogo. Os assistentes EXE são abertos apenas depois do clique de instalação e da verificação, em seu fluxo normal; o usuário conclui o assistente e seleciona o EXE instalado. Não há execução silenciosa nem elevação do NEXUS.
+
+### Atualizações
+
+O catálogo consulta as instalações com comprovante do NEXUS ao abrir, possui Verificar atualizações e filtro Atualizações disponíveis. O botão muda para Atualizar quando há versão online mais recente. Cache não confirma atualização. Uma republicação sob a mesma tag também é reconhecida quando o SHA-256 publicado difere do comprovante instalado. Tags sem semântica numérica são comparadas por identidade da Release compatível publicada pelo autor; tags numéricas impedem downgrade evidente. A biblioteca substitui a entrada pelo mesmo ID, preservando nome, favorito, artwork, última abertura e caminhos de origem.
+
+ZIPs e EXEs portáteis são atualizados em uma pasta de preparação irmã: copiam os arquivos existentes, aplicam o novo pacote e preservam configurações modificadas. O manifesto por SHA-256 permite remover arquivos antigos de distribuição que não mudaram, e atualizar defaults intactos. Comprovantes antigos sem manifesto tratam configurações conservadoramente. Uma pasta que envolve o pacote e muda de nome entre versões é mapeada para o novo nome; dados de origem internos acompanham o mapeamento. Saves e dados externos não são copiados nem alterados. Arquivos do usuário ficam preservados e uma cópia completa da instalação anterior permanece em `<pasta>.nexus-backup-<id>`.
+
+O commit usa renomeação com recuperação se a troca falhar; erro de checksum, cancelamento e falha de gravação da biblioteca não deixam uma instalação parcialmente substituída. Um jogo/launcher detectado em execução bloqueia a atualização. Links/reparse points e conflitos de caminhos são rejeitados. É necessário espaço para preparar a cópia; o NEXUS não apaga backups automaticamente. Formatos que mudam de portátil para instalador (ou vice-versa) exigem instalação separada.
+
+**Instaladores externos:** uma atualização baixa a nova versão e abre o assistente do autor, depois registra o aplicativo escolhido. O autor controla arquivos, saves e eventual rollback; a transação de pasta do NEXUS não se aplica ao que esse assistente alterar. Uma instalação cancelada não é registrada como concluída. Jogos adicionados manualmente sem comprovante não são sobrescritos pelo atualizador.
+
+### Limites restantes
+
+| Projeto | Limite atual |
+|---|---|
+| [GoldenEye 007 · Xbox 360](https://github.com/SunJaycy/GoldenEye-Recomp) | Release Windows em RAR; o extrator atual aceita ZIP. |
+| [The Legend of Zelda: Link’s Awakening](https://github.com/kaliszmichal/lasrecomp) | Sem pacote Windows utilizável confirmado nas Releases consultadas; acompanhe o projeto. |
+| [The Simpsons Arcade Game · PS3](https://github.com/sp00nznet/simpsonsarcade-ps3) | Sem pacote Windows utilizável confirmado nas Releases consultadas; acompanhe o projeto. |
+| [Tornado Outbreak · PS3](https://github.com/sp00nznet/tornado) | Sem pacote Windows utilizável confirmado nas Releases consultadas; acompanhe o projeto. |
+| [Super Mario Odyssey](https://github.com/Coz-0/smo-recomp) | Sem pacote Windows utilizável confirmado nas Releases consultadas; acompanhe o projeto. |
+| [Call of Duty: Finest Hour · Finest Hour Remastered](https://github.com/crazyriddler/FinestHourRemastered) | Instalação completa multipartes (.index + .data.NNN); a Release latest contém apenas o atualizador, não um pacote completo. |
+| [Sly Cooper and the Thievius Raccoonus · Project Cane](https://github.com/theclub654/ProjectCane) | Release Windows em RAR; o extrator atual aceita ZIP. |
+| [God of War II · God of War II Recomp](https://github.com/andrebrumdev/gow2-recomp) | Kits publicados para macOS, sem pacote Windows compatível confirmado. |
+| [50 Cent: Blood on the Sand · SkullBurglar](https://github.com/nlwstein/skullburglar) | Só há um build de teste explicitamente marcado NOT-A-RELEASE para uma issue; não foi habilitado como distribuição normal. |
+| [Sonic the Hedgehog (2006) · Marathon Recomp](https://github.com/sonicnext-dev/MarathonRecomp) | Sem pacote Windows utilizável confirmado nas Releases consultadas; acompanhe o projeto. |
+| [Super Smash Bros. Ultimate · SSBU Recomp](https://github.com/OpenSmash-Ultimate/ssbu-recomp) | O README instrui usar o pacote de código e seu preparador; as Releases são ferramentas do instalador, não o jogo pronto. |
+| [Super Smash Bros. Brawl · Super Smash Decomp](https://github.com/doldecomp/brawl) | Sem pacote Windows utilizável confirmado nas Releases consultadas; acompanhe o projeto. |
+| [Dragon Quest IX · DQIX Enhanced](https://github.com/sackchief/dqix-enhanced) | Sem pacote Windows utilizável confirmado nas Releases consultadas; acompanhe o projeto. |
+| [Xenogears · Xenogears PC](https://github.com/exyled/Xenogears-PC) | Sem pacote Windows utilizável confirmado nas Releases consultadas; acompanhe o projeto. |
+| [Gears of War 3 · Azura: Gears of War 3](https://github.com/Carolux97/Gears3-Azura) | Sem pacote Windows utilizável confirmado nas Releases consultadas; acompanhe o projeto. |
+| [God Hand · God Hand Port](https://github.com/Ryzellx/godhand-port) | Sem pacote Windows utilizável confirmado nas Releases consultadas; acompanhe o projeto. |
+| [Sneak King · Sneaky Whopper Recomp](https://github.com/Guuzzeji/sneaky-whopper-recomp) | Sem pacote Windows utilizável confirmado nas Releases consultadas; acompanhe o projeto. |
+| [Castlevania: Curse of Darkness · Curse of Darkness Recomp](https://github.com/Neguchads/Castlevania-COD-Recomp) | Sem pacote Windows utilizável confirmado nas Releases consultadas; acompanhe o projeto. |
+
+### Verificação
+
+677 testes automatizados; testes visuais de instalação, seleção de aplicativo, botão Atualizar, cache, mesma versão, downgrade e filtro de atualizações; instalação e cadastro de ZIPs reais de Pokémon Snap e Perfect Dark com hashes publicados. Instaladores são testados com um handler simulado e binário de fixture do próprio NEXUS, sem executar software de terceiros. Não se testou gameplay.
 
 ## Downloads habilitados — 1.5.1
 

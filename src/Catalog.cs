@@ -18,6 +18,7 @@ namespace Nexus {
     public string ConfigurationArguments {get;set;}public string[] PlayNames {get;set;}public string[] ConfigNames {get;set;}public string Arguments {get;set;}public string ArtworkTitle {get;set;}public string Notes {get;set;}
     public string Platform {get;set;}public string Kind {get;set;}public bool ProjectOnly {get;set;}
     public bool AllowPrerelease {get;set;}public bool ManualPackage {get;set;}public string SourceUrl {get;set;}
+    public bool DiscoverExecutable {get;set;}public string PackageKind {get;set;}
     public string Identity {get{return String.IsNullOrEmpty(Repository)?SourceUrl:Repository;}}
     public string ProjectUrl {get{return String.IsNullOrEmpty(SourceUrl)?"https://github.com/"+Repository:SourceUrl;}}
     public override string ToString(){return Name;}
@@ -32,12 +33,12 @@ namespace Nexus {
     readonly Dictionary<string,DateTime> memoTime=new Dictionary<string,DateTime>();
     public PortCatalog():this(new HttpClientHandler()){}
     public PortCatalog(HttpMessageHandler handler){
-      Entries=LoadEntries();ServicePointManager.SecurityProtocol|=SecurityProtocolType.Tls12;client=new HttpClient(handler);client.Timeout=Timeout.InfiniteTimeSpan;client.DefaultRequestHeaders.UserAgent.ParseAdd("NexusPortsPC/1.5 (https://github.com/teasergames/ports-pc)");
+      Entries=LoadEntries();ServicePointManager.SecurityProtocol|=SecurityProtocolType.Tls12;client=new HttpClient(handler);client.Timeout=Timeout.InfiniteTimeSpan;client.DefaultRequestHeaders.UserAgent.ParseAdd("NexusPortsPC/1.6 (https://github.com/teasergames/ports-pc)");
     }
     public static List<PortEntry> LoadEntries(){
       using(var stream=Assembly.GetExecutingAssembly().GetManifestResourceStream("Nexus.ports.json"))using(var reader=new StreamReader(stream)){
         var entries=new JavaScriptSerializer().Deserialize<List<PortEntry>>(reader.ReadToEnd());var ids=new HashSet<string>();
-        foreach(var e in entries){if(!Regex.IsMatch(e.Id??"",@"^[a-z0-9-]+$")||!ids.Add(e.Id)||(!e.ManualPackage&&!Regex.IsMatch(e.Repository??"",@"^[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+$"))||e.PlayNames==null||e.ConfigNames==null)throw new InvalidDataException("Entrada do catálogo inválida.");if(e.ManualPackage&&(e.ProjectOnly||e.SourceUrl!="https://almost-there-games.itch.io/azimuth"))throw new InvalidDataException("Fonte externa inválida.");if(!Platforms.All.Skip(1).Contains(e.Platform))throw new InvalidDataException("Plataforma inválida.");if(!e.ProjectOnly){if(e.PlayNames.Length==0||!e.AssetPattern.EndsWith("zip$"))throw new InvalidDataException("Perfil Windows inválido.");new Regex(e.AssetPattern);}}
+        foreach(var e in entries){if(!Regex.IsMatch(e.Id??"",@"^[a-z0-9-]+$")||!ids.Add(e.Id)||(!e.ManualPackage&&!Regex.IsMatch(e.Repository??"",@"^[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+$"))||e.PlayNames==null||e.ConfigNames==null)throw new InvalidDataException("Entrada do catálogo inválida.");if(e.ManualPackage&&(e.ProjectOnly||e.SourceUrl!="https://almost-there-games.itch.io/azimuth"))throw new InvalidDataException("Fonte externa inválida.");if(!Platforms.All.Skip(1).Contains(e.Platform))throw new InvalidDataException("Plataforma inválida.");if(!e.ProjectOnly){if((e.PlayNames.Length==0&&!e.DiscoverExecutable&&e.PackageKind!="Installer")||String.IsNullOrEmpty(e.AssetPattern)||!(e.AssetPattern.EndsWith("zip$")||((e.PackageKind=="Executable"||e.PackageKind=="Installer")&&e.AssetPattern.EndsWith("exe$"))))throw new InvalidDataException("Perfil Windows inválido.");new Regex(e.AssetPattern);}}
         return entries;
       }
     }
@@ -60,19 +61,19 @@ namespace Nexus {
     async Task<PortRelease> FetchLatest(PortEntry entry,CancellationToken token){
       using(var timeout=CancellationTokenSource.CreateLinkedTokenSource(token)){
         timeout.CancelAfter(TimeSpan.FromSeconds(25));
-        using(var response=await client.GetAsync("https://api.github.com/repos/"+entry.Repository+(entry.AllowPrerelease?"/releases?per_page=30":"/releases/latest"),HttpCompletionOption.ResponseHeadersRead,timeout.Token)){
+        using(var response=await client.GetAsync("https://api.github.com/repos/"+entry.Repository+(entry.AllowPrerelease||entry.DiscoverExecutable?"/releases?per_page=30":"/releases/latest"),HttpCompletionOption.ResponseHeadersRead,timeout.Token)){
           if(response.StatusCode==HttpStatusCode.NotFound)throw new InvalidDataException("Este repositório não publicou uma release estável acessível.");
           if(response.StatusCode==HttpStatusCode.Forbidden||(int)response.StatusCode==429)throw new HttpRequestException("O GitHub limitou as consultas. Aguarde e tente novamente.");response.EnsureSuccessStatusCode();
           using(var stream=await response.Content.ReadAsStreamAsync())using(var bytes=new MemoryStream()){
             byte[] buffer=new byte[16384];int read;while((read=await stream.ReadAsync(buffer,0,buffer.Length,timeout.Token))>0){if(bytes.Length+read>4*1024*1024)throw new InvalidDataException("Resposta do GitHub muito grande.");bytes.Write(buffer,0,read);}
-            string json=System.Text.Encoding.UTF8.GetString(bytes.ToArray());return entry.AllowPrerelease?ParseReleaseList(entry,json):ParseRelease(entry,json);
+            string json=System.Text.Encoding.UTF8.GetString(bytes.ToArray());return entry.AllowPrerelease||entry.DiscoverExecutable?ParseReleaseList(entry,json):ParseRelease(entry,json);
           }
         }
       }
     }
     public static PortRelease ParseReleaseList(PortEntry entry,string json){
       var records=new JavaScriptSerializer{MaxJsonLength=4*1024*1024}.Deserialize<List<Dictionary<string,object>>>(json);
-      foreach(var record in records){if(record.ContainsKey("draft")&&Convert.ToBoolean(record["draft"]))continue;if(record.ContainsKey("prerelease")&&Convert.ToBoolean(record["prerelease"])&&!entry.AllowPrerelease)continue;return ParseRelease(entry,new JavaScriptSerializer().Serialize(record));}
+      foreach(var record in records){if(record.ContainsKey("draft")&&Convert.ToBoolean(record["draft"]))continue;if(record.ContainsKey("prerelease")&&Convert.ToBoolean(record["prerelease"])&&!entry.AllowPrerelease)continue;if(entry.DiscoverExecutable){object value;var assets=record.TryGetValue("assets",out value)?value as System.Collections.IEnumerable:null;bool match=false;if(assets!=null)foreach(var asset in assets){var item=asset as Dictionary<string,object>;if(item!=null&&Regex.IsMatch(Convert.ToString(item["name"]),entry.AssetPattern,RegexOptions.IgnoreCase)){match=true;break;}}if(!match)continue;}return ParseRelease(entry,new JavaScriptSerializer().Serialize(record));}
       throw new InvalidDataException("Nenhuma release compatível publicada.");
     }
     public static PortRelease ParseRelease(PortEntry entry,string json){
@@ -80,7 +81,7 @@ namespace Nexus {
       if(data.ContainsKey("draft")&&Convert.ToBoolean(data["draft"])||data.ContainsKey("prerelease")&&Convert.ToBoolean(data["prerelease"])&&!entry.AllowPrerelease)throw new InvalidDataException("A release não é estável.");
       object value;var assets=data.TryGetValue("assets",out value)?value as System.Collections.IEnumerable:null;var found=new List<Dictionary<string,object>>();
       if(assets!=null)foreach(object asset in assets){var a=asset as Dictionary<string,object>;if(a!=null&&Regex.IsMatch(Convert.ToString(a["name"]),entry.AssetPattern,RegexOptions.IgnoreCase))found.Add(a);}
-      if(found.Count!=1)throw new InvalidDataException(found.Count==0?"A última release não tem o ZIP Windows esperado. Abra o projeto para conferir.":"Mais de um pacote corresponde ao perfil. A seleção precisa ser revisada.");
+      if(found.Count!=1)throw new InvalidDataException(found.Count==0?"Nenhuma release consultada contém o pacote Windows esperado. O autor pode ter alterado o formato.":"Mais de um pacote corresponde ao perfil. A seleção precisa ser revisada.");
       var chosen=found[0];string url=Convert.ToString(chosen["browser_download_url"]);ValidateDownloadUrl(entry,url);
       long size=Convert.ToInt64(chosen["size"]);if(size<=0||size>2L*1024*1024*1024)throw new InvalidDataException("Tamanho de pacote inválido ou acima de 2 GB.");
       return new PortRelease{IsPrerelease=data.ContainsKey("prerelease")&&Convert.ToBoolean(data["prerelease"]),Version=Convert.ToString(data["tag_name"]),ReleaseUrl=Convert.ToString(data["html_url"]),AssetName=Convert.ToString(chosen["name"]),DownloadUrl=url,Size=size,Digest=chosen.TryGetValue("digest",out value)?Convert.ToString(value):null};
@@ -98,9 +99,10 @@ namespace Nexus {
       return full.StartsWith(@"\\")?@"\\?\UNC\"+full.Substring(2):@"\\?\"+full;
     }
     static string DisplayPath(string path){return path.StartsWith(@"\\?\UNC\")?@"\\"+path.Substring(8):path.StartsWith(@"\\?\")?path.Substring(4):path;}
-    public async Task<Game> Install(PortEntry entry,PortRelease release,string parent,IProgress<InstallProgress> progress,CancellationToken token,bool acceptPrerelease=false){
+    public async Task<Game> Install(PortEntry entry,PortRelease release,string parent,IProgress<InstallProgress> progress,CancellationToken token,bool acceptPrerelease=false,InstallInteraction interaction=null){
+      if(interaction!=null&&interaction.UpdateInPlace){var previous=interaction.Previous;if(previous==null||previous.Repository!=entry.Identity||!UpdateManager.Managed(previous))throw new InvalidDataException("Selecione uma instalação gerenciada deste port para atualizar.");if(release.FromCache||!UpdateManager.Available(previous,release))throw new InvalidDataException("Confirme online uma versão mais recente antes de atualizar.");if((previous.InstallationKind=="Installer")!=(entry.PackageKind=="Installer"))throw new InvalidDataException("O formato do pacote mudou. Instale a nova versão separadamente para preservar a cópia anterior.");}
       if(release.IsPrerelease&&(!entry.AllowPrerelease||!acceptPrerelease))throw new InvalidDataException("Confirme que deseja instalar a versão beta.");if(entry.ProjectOnly||entry.ManualPackage)throw new InvalidDataException("Instalação automática indisponível para este projeto.");ValidateDownloadUrl(entry,release.DownloadUrl);string root=Path.GetFullPath(parent);Directory.CreateDirectory(FsPath(root));
-      string final=ChildPath(root,entry.Id+"-"+VersionFolder(release.Version));if(Directory.Exists(FsPath(final))||File.Exists(FsPath(final)))throw new IOException("Esta pasta de versão já existe. Escolha outro destino; nenhum arquivo foi substituído.");
+      string final=ChildPath(root,entry.Id+"-"+VersionFolder(release.Version));if(entry.PackageKind!="Installer"&&(interaction==null||!interaction.UpdateInPlace)&&(Directory.Exists(FsPath(final))||File.Exists(FsPath(final))))throw new IOException("Esta pasta de versão já existe. Escolha outro destino; nenhum arquivo foi substituído.");
       string staging=ChildPath(root,".nexus-install-"+Guid.NewGuid().ToString("N")),download=staging+".zip";Directory.CreateDirectory(FsPath(staging));
       try{
         using(var timeout=CancellationTokenSource.CreateLinkedTokenSource(token)){
@@ -117,19 +119,28 @@ namespace Nexus {
           }
         }
         Report(progress,"Verificando pacote…",77);VerifyDigest(download,release.Digest);token.ThrowIfCancellationRequested();
-        return await FinishInstallation(entry,release,root,staging,download,progress,token);
+        return await FinishInstallation(entry,release,root,staging,download,progress,token,interaction);
       }finally{
         if(File.Exists(FsPath(download)))File.Delete(FsPath(download));
         if(Directory.Exists(FsPath(staging)))RemoveStaging(root,staging);
       }
     }
-    async Task<Game> FinishInstallation(PortEntry entry,PortRelease release,string root,string staging,string download,IProgress<InstallProgress> progress,CancellationToken token){
-      string final=ChildPath(root,entry.Id+"-"+VersionFolder(release.Version));if(Directory.Exists(FsPath(final))||File.Exists(FsPath(final)))throw new IOException("Esta pasta de versão já existe. Nenhum arquivo foi substituído.");
-      await Task.Run(()=>Extract(download,staging,progress,token),token);
-      Game game=Register(entry,staging,release.Version);token.ThrowIfCancellationRequested();
+    async Task<Game> FinishInstallation(PortEntry entry,PortRelease release,string root,string staging,string download,IProgress<InstallProgress> progress,CancellationToken token,InstallInteraction interaction=null){
+      bool updating=interaction!=null&&interaction.UpdateInPlace;string final=ChildPath(root,entry.Id+"-"+VersionFolder(release.Version)+(entry.PackageKind=="Installer"?"-"+Guid.NewGuid().ToString("N"):""));if(!updating&&(Directory.Exists(FsPath(final))||File.Exists(FsPath(final))))throw new IOException("Esta pasta de versão já existe. Nenhum arquivo foi substituído.");
+      if(entry.PackageKind=="Executable"||entry.PackageKind=="Installer"){
+        string executable=ChildPath(staging,Path.GetFileName(release.AssetName));File.Copy(FsPath(download),FsPath(executable));if(!PackageSupport.WindowsExecutable(executable))throw new InvalidDataException("O download não é um executável Windows x64/x86 compatível.");
+      }else await Task.Run(()=>Extract(download,staging,progress,token),token);
+      if(entry.PackageKind=="Installer"){
+        if(interaction==null||interaction.RunInstaller==null)throw new InvalidDataException("Este pacote precisa do assistente de instalação do autor.");
+        UpdateManager.WriteReceipt(entry,release,staging,token);Directory.Move(FsPath(staging),FsPath(final));string installer=ChildPath(final,Path.GetFileName(release.AssetName));Report(progress,"Conclua o assistente do autor e escolha o aplicativo instalado no NEXUS.",95);
+        var choice=await interaction.RunInstaller(installer,interaction.Previous);if(choice==null)throw new OperationCanceledException();if(!Path.IsPathRooted(choice.Play)||!File.Exists(choice.Play)||!PackageSupport.WindowsExecutable(choice.Play)||(!String.IsNullOrEmpty(choice.Configuration)&&(!Path.IsPathRooted(choice.Configuration)||!File.Exists(choice.Configuration)||!PackageSupport.WindowsExecutable(choice.Configuration))))throw new InvalidDataException("Escolha o aplicativo Windows instalado pelo assistente.");
+        var installed=new Game{Name=entry.Name,Platform=entry.Platform,Repository=entry.Identity,InstalledVersion=release.Version,Executable=choice.Play,WorkingDirectory=Path.GetDirectoryName(choice.Play),Arguments=choice.Arguments??"",ConfigurationExecutable=choice.Configuration,ConfigurationArguments=choice.ConfigurationArguments,ArtworkSearchTitle=entry.ArtworkTitle,InstallationKind="Installer",InstallerCacheRoot=final};if(interaction.Previous!=null)PackageSupport.PreserveMetadata(installed,interaction.Previous);return installed;
+      }
+      Game game=entry.DiscoverExecutable?PackageSupport.Register(entry,staging,release.Version,interaction):Register(entry,staging,release.Version);token.ThrowIfCancellationRequested();
+      game.InstallationKind=entry.PackageKind??"Zip";UpdateManager.WriteReceipt(entry,release,staging,token);
+      if(updating)return await Task.Run(()=>UpdateManager.Commit(entry,staging,game,interaction.Previous,progress,token),token);
       // Paths are rewritten only after the complete package has been validated.
       string exe=game.Executable.Substring(staging.Length),config=String.IsNullOrEmpty(game.ConfigurationExecutable)?null:game.ConfigurationExecutable.Substring(staging.Length);
-      File.WriteAllText(FsPath(ChildPath(staging,".nexus-install.json")),new JavaScriptSerializer().Serialize(new {repository=entry.Identity,source=entry.ProjectUrl,localImport=entry.ManualPackage,version=release.Version,asset=release.AssetName,digest=release.Digest,downloadedAt=DateTime.UtcNow.ToString("o")}));
       Directory.Move(FsPath(staging),FsPath(final));game.Executable=final+exe;game.ConfigurationExecutable=config==null?null:final+config;game.WorkingDirectory=Path.GetDirectoryName(game.Executable);game.ManagedInstallationRoot=final;
       Report(progress,"Instalado e pronto para adicionar à biblioteca.",100);return game;
     }
@@ -171,6 +182,8 @@ namespace Nexus {
       }
     }
     public static Game Register(PortEntry entry,string folder,string version){
+      if(entry.ProjectOnly||entry.PackageKind=="Installer")throw new InvalidDataException("Este pacote precisa de preparação específica.");
+      if(entry.DiscoverExecutable)return PackageSupport.Register(entry,folder,version,null);
       string exe=FindExecutable(folder,entry.PlayNames),config=FindExecutable(folder,entry.ConfigNames);
       if(entry.ProjectOnly||exe==null||(entry.ConfigNames.Length>0&&config==null))throw new InvalidDataException("A estrutura deste pacote mudou: executáveis esperados não encontrados. Nada foi cadastrado; confira o projeto.");
       return new Game{Name=entry.Name,Platform=entry.Platform,Executable=exe,Arguments=entry.Arguments??"",WorkingDirectory=Path.GetDirectoryName(exe),ConfigurationExecutable=config,ConfigurationArguments=entry.ConfigurationArguments,ArtworkSearchTitle=entry.ArtworkTitle,Repository=entry.Identity,InstalledVersion=version,ManagedInstallationRoot=folder};

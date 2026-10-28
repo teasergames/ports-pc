@@ -28,6 +28,7 @@ namespace Nexus {
     public string Repository {get;set;}
     public string InstalledVersion {get;set;}
     public string ManagedInstallationRoot {get;set;}
+    public string InstallerCacheRoot {get;set;}public string InstallationKind {get;set;}public string UpdateBackupDirectory {get;set;}
     public Game() { Id=Guid.NewGuid().ToString("N"); Arguments=""; }
     public Game Copy() { return (Game)MemberwiseClone(); }
   }

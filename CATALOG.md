@@ -2,6 +2,251 @@
 
 O NEXUS consulta a última **release estável** dos perfis GitHub e seleciona somente o ZIP Windows definido. Darkwatch: Darker Edition usa releases estáveis do repositório linkssy2/DarkwatchDarkerEdition. Azimuth usa sua página oficial no itch.io e importação local do ZIP. Não escolhe arquivos de código-fonte, Linux ou atualizadores isolados. Os projetos abaixo são ports/forks independentes, sem vínculo oficial com os detentores dos jogos.
 
+## RecompLauncher — catálogo 1.5.0
+
+Fonte de descoberta: [RecompLauncher](https://recomplauncher.com/?lang=pt-BR), consulta em 28/10/2026. Os repositórios de origem das novas entradas foram consultados diretamente. Nomes de jogos e identificadores foram usados como referências; descrições e imagens do site não foram copiadas. `assets/catalog-sources.json` registra cada item, duplicatas existentes e exclusões. O aplicativo usa um catálogo local revisado, sem sincronização automática com o site.
+
+São **274 fontes**: **44 downloads GitHub**, **1 importação de ZIP oficial** e **229 perfis manuais / em desenvolvimento**. Dez novos ZIPs Windows x64 foram baixados e tiveram seus SHA-256 e cabeçalhos PE AMD64 conferidos, sem executar os jogos. Os demais perfis são links para preparação manual: a existência do repositório não confirma jogabilidade nem integração automática. Quatro entradas sem Windows e sem estado de projeto futuro foram excluídas.
+
+Novas plataformas possuem filtros próprios: Nintendo 64, GameCube, Wii, Wii U, Super Nintendo, Game Boy, Game Boy Advance, Nintendo DS, PlayStation, PlayStation 2, PSP e Dreamcast. A busca do catálogo combina jogo, nome do port, repositório e plataforma; o filtro de instalação permite mostrar apenas automáticos ou manuais.
+
+Os oito novos ports N64 usam o mesmo aplicativo para importar a ROM e acessar opções internas. Não possuem launcher de configuração separado. Fable II tem configuração separada pelo `Fable2Launcher.exe`; Pirates usa o launcher original também para Jogar, pois a aplicação das opções por execução direta não foi validada. Nenhuma ROM, ISO ou arquivo de jogo é fornecido.
+
+| Plataforma | Projeto | Integração |
+|---|---|---|
+| Nintendo 64 | [The Legend of Zelda: Majora's Mask · Zelda 64: Recompiled](https://github.com/Zelda64Recomp/Zelda64Recomp) | ZIP Windows x64 auditado |
+| GameCube | [The Legend of Zelda: Twilight Princess · Dusklight](https://github.com/TwilitRealm/dusklight) | Manual / desenvolvimento |
+| Nintendo 64 | [The Legend of Zelda: Ocarina of Time · Ship of Harkinian](https://github.com/HarbourMasters/Shipwright) | ZIP Windows x64 auditado |
+| Nintendo 64 | [Mario Kart 64 · SpaghettiKart](https://github.com/HarbourMasters/SpaghettiKart) | ZIP Windows x64 auditado |
+| Nintendo 64 | [The Legend of Zelda: Majora's Mask · 2 Ship 2 Harkinian](https://github.com/2ship2harkinian/2ship2harkinian) | ZIP Windows x64 auditado |
+| Nintendo 64 | [Star Fox 64 · Starship](https://github.com/HarbourMasters/Starship) | ZIP Windows x64 auditado |
+| Nintendo 64 | [Banjo-Kazooie · Banjo: Recompiled](https://github.com/BanjoRecomp/BanjoRecomp) | ZIP Windows x64 auditado |
+| Nintendo 64 | [Super Mario 64 · Ghostship](https://github.com/HarbourMasters/Ghostship) | ZIP Windows x64 auditado |
+| Nintendo 64 | [Donkey Kong 64 · Donkey Kong 64: Recompiled](https://github.com/Rainchus/Donkey-Kong-64-Recompiled) | ZIP Windows x64 auditado |
+| Nintendo 64 | [Conker's Bad Fur Day · Conker BFD Reloaded](https://github.com/DahSidiAbdallah/ConkerBFDReloaded) | Manual / desenvolvimento |
+| Nintendo 64 | [Pokémon Snap · Snap 64 Recomp](https://github.com/JackandBeans/Snap64Recomp) | Manual / desenvolvimento |
+| Nintendo 64 | [WWF No Mercy · No Mercy Recomp](https://github.com/jessetbh/WWFNoMercyRecomp) | Manual / desenvolvimento |
+| Nintendo 64 | [WWF WrestleMania 2000 · WrestleMania 2000 Recomp](https://github.com/jessetbh/WWFWrestleMania2000Recomp) | Manual / desenvolvimento |
+| Nintendo 64 | [WCW vs. nWo: World Tour · World Tour Recomp](https://github.com/jessetbh/WCWvsNWOWorldTourRecomp) | Manual / desenvolvimento |
+| Nintendo 64 | [WCW/nWo Revenge · Revenge Recomp](https://github.com/jessetbh/WCWnWoRevengeRecomp) | Manual / desenvolvimento |
+| Nintendo 64 | [Virtual Pro Wrestling 64 · VPW64 Recomp](https://github.com/jessetbh/VPW64Recomp) | Manual / desenvolvimento |
+| Xbox 360 | [WWE SmackDown vs. Raw 2007 · SVR2007 Recomp](https://github.com/nefariousjosiah/WWE-SVR2007-RECOMP) | Manual / desenvolvimento |
+| Xbox 360 | [WWE SmackDown vs. Raw 2008 · SVR2008 Recomp](https://github.com/nefariousjosiah/WWE-SVR2008-RECOMP) | Manual / desenvolvimento |
+| Xbox 360 | [WWE SmackDown vs. Raw 2009 · SVR2009 Recomp](https://github.com/nefariousjosiah/WWE-SVR2009-RECOMP) | Manual / desenvolvimento |
+| Xbox 360 | [WWE SmackDown vs. Raw 2010 · SVR2010 Recomp](https://github.com/nefariousjosiah/WWE-SVR2010-RECOMP) | Manual / desenvolvimento |
+| Xbox 360 | [WWE All Stars · All Stars Recomp](https://github.com/shaneomac1337/WWE-AllStars-Recomp) | Manual / desenvolvimento |
+| Xbox 360 | [WWE '13 · WWE '13 Recomp](https://github.com/PromethenDev/wwe13-recomp) | Manual / desenvolvimento |
+| Xbox 360 | [WWE 2K14 · WWE 2K14 Recomp](https://github.com/PromethenDev/wwe2k14-recomp) | Manual / desenvolvimento |
+| Xbox | [Def Jam: Fight for NY · Def Jam FFNY Recomp](https://github.com/vyanhursky/DefJamFFNY-recomp) | Manual / desenvolvimento |
+| Xbox 360 | [Burnout Revenge · Xerenge](https://github.com/shipa-2/Xerenge) | Manual / desenvolvimento |
+| Xbox 360 | [FIFA Street · ReStreet](https://github.com/samuelit0davila/fifa-street-pc-port) | Manual / desenvolvimento |
+| Nintendo 64 | [Perfect Dark · Perfect Dark Port](https://github.com/perfect-dark-pc-port/perfect_dark) | Manual / desenvolvimento |
+| Xbox 360 | [Forza Motorsport 4 · FM4 Recomp](https://github.com/Alexbeav/fm4-recomp) | Manual / desenvolvimento |
+| Xbox 360 | [The Darkness · Estacado](https://github.com/invinceble55-wq/Estacado-The-Darkness-Recomp) | Manual / desenvolvimento |
+| Xbox 360 | [Dead Rising 2: Case Zero · Case Zero Recomp](https://github.com/wivi514/Dead_Rising_2_Case_Zero_Xenon_Recomp) | Manual / desenvolvimento |
+| Xbox 360 | [WET · WET Recomp](https://github.com/Supermedo/wet-recomp) | Manual / desenvolvimento |
+| Xbox 360 | [Army of Two · Army of Two Recomp](https://github.com/nikolaygorb/ArmyOfTwoRecomp) | Manual / desenvolvimento |
+| Nintendo 64 | [Pilotwings 64 · Pilotwings 64 Recomp](https://github.com/danielgomesvieira2000/pilotwings-64-recomp) | Manual / desenvolvimento |
+| Xbox 360 | [Skate 2 · Skate 2 PC](https://github.com/christianortel/skate2-recompile-pc) | Manual / desenvolvimento |
+| Nintendo 64 | [AeroGauge · AeroGauge Recomp](https://github.com/alondero/aerogauge-recomp) | Manual / desenvolvimento |
+| PlayStation 2 | [Def Jam Vendetta · Def Jam Vendetta Recomp](https://github.com/jcsix694/def-jam-vendetta-recomp) | Manual / desenvolvimento |
+| Nintendo 64 | [BattleTanx: Global Assault · BattleTanx PC Port](https://github.com/TheGh0stShip/BattleTanx-Global-Assault-PC-Port) | Manual / desenvolvimento |
+| Nintendo 64 | [International Superstar Soccer 2000 · ISS 2000 Widescreen](https://github.com/Mabec-games/iss2000-recomp) | Manual / desenvolvimento |
+| Xbox 360 | [WWE 2K16 · WWE 2K16 PC](https://github.com/itsbybanshee/wwe2k16-pc) | Manual / desenvolvimento |
+| Nintendo 64 | [Blast Corps · Power Dozer](https://github.com/djultra64/Power-Dozer) | Manual / desenvolvimento |
+| Nintendo 64 | [Tetrisphere · Blocksphere](https://github.com/djultra64/Blocksphere) | Manual / desenvolvimento |
+| Wii U | [The Legend of Zelda: The Wind Waker HD · Wind Waker HD Recomp](https://github.com/ZeldaWWHDRecomp/ZeldaWWHDRecomp) | Manual / desenvolvimento |
+| PlayStation | [Castlevania: Symphony of the Night · Symphony Recomp](https://github.com/BlackLabelHQ/SymphonyRecomp) | Manual / desenvolvimento |
+| PlayStation | [Silent Hill · Silent Hill Decomp](https://github.com/SlickAmogus/silent-hill-decomp) | Manual / desenvolvimento |
+| Xbox 360 | [Dante's Inferno · Hell's Gate](https://github.com/florinp93/hells-gate-recomp) | Manual / desenvolvimento |
+| PlayStation 2 | [Dragon Ball Z: Budokai Tenkaichi 3 · Tenkaichi 3 Decomp](https://github.com/z3xox/Tenkaichi3Decomp) | Manual / desenvolvimento |
+| Xbox 360 | [Fable II · Fable 2 Recomp](https://github.com/himdo/Fable-2-Recomp) | ZIP Windows x64 auditado |
+| PSP | [Monster Hunter Portable 3rd · Yakumo](https://github.com/TeamGDB/Yakumo) | Manual / desenvolvimento |
+| Nintendo 64 | [Super Smash Bros. · BattleShip](https://github.com/JRickey/BattleShip) | Manual / desenvolvimento |
+| Xbox 360 | [Spider-Man: Edge of Time · Edge of Time Recomp](https://github.com/goliathret/EdgeOfTimeRecomp) | Manual / desenvolvimento |
+| Wii | [The Legend of Zelda: Skyward Sword · Sky Recomp](https://github.com/Apolinario-coder/SkyRecomp) | Manual / desenvolvimento |
+| PlayStation 2 | [Shin Megami Tensei III: Nocturne · Nocturne Recomp](https://github.com/birabittoh/NocturneRecomp) | Manual / desenvolvimento |
+| Xbox 360 | [The Simpsons Game · The Simpsons Game Recomp](https://github.com/YesterMester/TheSimpsonsGameRecomp) | Manual / desenvolvimento |
+| GameCube | [Super Mario Strikers · Strikers](https://github.com/new-coke/strikers) | Manual / desenvolvimento |
+| Nintendo 64 | [GoldenEye 007 · Project Midas](https://github.com/murkantor/Project-Midas) | Manual / desenvolvimento |
+| Xbox 360 | [Silent Hill: Downpour · Downpour Recomp](https://github.com/LittleBitUA/DownpourRecomp) | Manual / desenvolvimento |
+| Nintendo 64 | [Dinosaur Planet · Dinosaur Planet Recomp](https://github.com/DinosaurPlanetRecomp/dino-recomp) | Manual / desenvolvimento |
+| Nintendo 64 | [Bomberman 64 · Bomberman 64: Recompiled](https://github.com/RevoSucks/BM64Recomp) | Manual / desenvolvimento |
+| Nintendo 64 | [F-Zero X · G-Diffuser](https://github.com/Zorkats/G-Diffuser) | Manual / desenvolvimento |
+| Nintendo 64 | [Quest 64 · Quest 64 Recomp](https://github.com/Rainchus/Quest64-Recomp) | Manual / desenvolvimento |
+| Xbox 360 | [Condemned 2: Bloodshot · Condemned 2 Recomp](https://github.com/psxrestore/Condemned2Recomp) | Manual / desenvolvimento |
+| Xbox 360 | [Viva Piñata: Trouble in Paradise · ReTiP](https://github.com/SolarCookies/TiP-Recomp) | Manual / desenvolvimento |
+| Xbox 360 | [Peter Jackson's King Kong · King Kong Recompiled](https://github.com/TekRantGaming/king-kong-recompiled) | Manual / desenvolvimento |
+| Super Nintendo | [Mega Man X · Mega Man X Recomp](https://github.com/mstan/MegaManXSNESRecomp) | Manual / desenvolvimento |
+| Xbox 360 | [Naruto: Rise of a Ninja · Rise of a Ninja Recomp](https://github.com/jorjbarbosa/naruto-rise-recomp) | Manual / desenvolvimento |
+| Xbox 360 | [Banjo-Kazooie: Nuts & Bolts · reNut](https://github.com/masterspike52/reNut) | Manual / desenvolvimento |
+| Xbox 360 | [Deadly Premonition · DP Recomp](https://github.com/LittleBitUA/DPRecomp) | Manual / desenvolvimento |
+| Nintendo 64 | [Harvest Moon 64 · Harvest Moon 64 Recomp](https://github.com/HarvestMoon64Recomp/HarvestMoon64Recomp) | Manual / desenvolvimento |
+| Xbox 360 | [Midnight Club: Los Angeles · MCLA Recomp](https://github.com/holdmysocks/mcla-recomp) | Manual / desenvolvimento |
+| Xbox 360 | [DoDonPachi SaiDaiOuJou · SDOJ Recomp](https://github.com/eandis/SDOJ-Recomp) | Manual / desenvolvimento |
+| Xbox 360 | [Eternal Sonata · Eternal Sonata Reprise](https://github.com/birabittoh/EternalSonataReprise) | Manual / desenvolvimento |
+| Nintendo 64 | [Castlevania: Legacy of Darkness · CVLoD Recomp](https://github.com/fliperama86/cvlod_recomp) | Manual / desenvolvimento |
+| Super Nintendo | [Super Mario World · Super Mario World Recomp](https://github.com/mstan/SuperMarioWorldRecomp) | Manual / desenvolvimento |
+| Xbox 360 | [Dragon Ball Z: Budokai · Budokai HD Recompiled](https://github.com/WistfulHopes/DBZ1) | Manual / desenvolvimento |
+| Xbox | [Call of Duty: Finest Hour · Finest Hour Remastered](https://github.com/crazyriddler/FinestHourRemastered) | Manual / desenvolvimento |
+| Xbox 360 | [Gears of War: Judgment · Gears Judgment Recomp](https://github.com/OverkillLabs3/gears-judgement-recomp) | Manual / desenvolvimento |
+| Nintendo 64 | [Snowboard Kids 2 · Snowboard Kids 2 Recomp](https://github.com/cdlewis/snowboardkids2-recomp) | Manual / desenvolvimento |
+| Nintendo 64 | [Space Station Silicon Valley · SSSV Recomp](https://github.com/Cellenseres/SSSV_Recomp) | Manual / desenvolvimento |
+| GameCube | [Pikmin · Open Nectar](https://github.com/SSunnKing/Open-Nectar---Pikmin-Native-PC-Mobile-Port) | Manual / desenvolvimento |
+| PlayStation | [Yu-Gi-Oh! Forbidden Memories · Forbidden Memories Recompiled](https://github.com/Unchiga/Yu-Gi-Oh-Forbidden-Memories-Recompiled) | Manual / desenvolvimento |
+| Xbox 360 | [Dragon Ball Z: Budokai 3 · Budokai 3 HD Recomp](https://github.com/novapowers0/DBZ-Budokai-3-HD-Collection) | Manual / desenvolvimento |
+| Xbox 360 | [Tekken Tag Tournament 2 · TTT2 PC](https://github.com/shihabal3amri/tekken-tag-tournament-2-pc) | Manual / desenvolvimento |
+| Xbox 360 | [Ridge Racer 6 · Ridge Racer 6 Recomp](https://github.com/Sirhalo23/RidgeRacer6-Recompilation) | Manual / desenvolvimento |
+| Xbox 360 | [Dragon Ball Z: Burst Limit · Burst Limit Recompiled](https://github.com/iExplosiveRage/DBZ-Burst-Limit-Recompiled) | Manual / desenvolvimento |
+| Xbox 360 | [WWE SmackDown vs. Raw 2011 · SvR 2011 PC Port](https://github.com/KaikoClanworth1/wwe-svr2011-pc) | Manual / desenvolvimento |
+| Xbox 360 | [Rumble Roses XX · Rumble Roses XX Recomp](https://github.com/JesusTaylo/rumble-roses-xx-recomp) | Manual / desenvolvimento |
+| Xbox | [Jet Set Radio Future · JSRF Unleashed](https://github.com/JuMatt/JetSetRadioFuture-Unleashed) | Manual / desenvolvimento |
+| Xbox 360 | [Dragon Age: Origins · Dragon Age: Origins Recompiled](https://github.com/96dot/Dragon-Age-Origins-Recomp) | Manual / desenvolvimento |
+| PlayStation 4 | [God of War III Remastered · SpartanPort](https://github.com/FelipePrado0/SpartanPort) | Manual / desenvolvimento |
+| PlayStation 4 | [Crash Team Racing Nitro-Fueled · CTR Nitro-Fueled Online](https://github.com/Ryu7w7/OCTR-NitroFueled-PC) | Manual / desenvolvimento |
+| Xbox | [Prince of Persia: The Sands of Time · reSOT](https://github.com/FulGerNet/rePOP) | Manual / desenvolvimento |
+| Xbox 360 | [Crash of the Titans](https://github.com/VitoMiguelF/crashott-pc) | Manual / desenvolvimento |
+| Xbox | [Ninja Gaiden Black · Ninja Gaiden Black Recomp](https://github.com/gamboozino/ngbrecomp) | Manual / desenvolvimento |
+| Nintendo Switch | [The Legend of Zelda: Breath of the Wild · Savage Wind Recomp](https://github.com/Revivedx/SavageWindRecomp) | Manual / desenvolvimento |
+| Xbox 360 | [Ace Combat 6: Fires of Liberation · AC6 Recomp](https://github.com/sal063/AC6_recomp) | Manual / desenvolvimento |
+| PlayStation 2 | [ICO · ICO PC](https://github.com/nathanialf/ico-pc) | Manual / desenvolvimento |
+| Xbox | [Tom Clancy's Splinter Cell: Double Agent · SCDA XBE Recomp](https://github.com/TGP482/SCDA-XBERecomp) | Manual / desenvolvimento |
+| Xbox 360 | [Call of Duty 3 · CoD3 Recomp](https://github.com/FrankHUN88453/CoD3Recomp) | Manual / desenvolvimento |
+| Nintendo 64 | [Mystical Ninja Starring Goemon (Nintendo 64) · Goemon64 Recomp](https://github.com/klorfmorf/Goemon64Recomp) | Manual / desenvolvimento |
+| PlayStation 2 | [Sly Cooper and the Thievius Raccoonus · Project Cane](https://github.com/theclub654/ProjectCane) | Manual / desenvolvimento |
+| Nintendo 64 | [Mega Man 64 · Mega Man 64 Recompiled](https://github.com/MegaMan64Recomp/MegaMan64Recompiled) | Manual / desenvolvimento |
+| GameCube | [Luigi's Mansion · Luigi's Mansion Recomp](https://github.com/rob646464/luigis-mansion-recompiled) | Manual / desenvolvimento |
+| Super Nintendo | [Donkey Kong Country · DKC1 Recomp](https://github.com/elliotttate/DKC1Recomp) | Manual / desenvolvimento |
+| Xbox | [Mortal Kombat: Shaolin Monks · OpenShao](https://github.com/OAleex/OpenShao) | Manual / desenvolvimento |
+| Nintendo 64 | [Diddy Kong Racing · DKR-R](https://github.com/ThatGuyMcd/DKR-R) | Manual / desenvolvimento |
+| Wii U | [The Legend of Zelda: Breath of the Wild · BotW Native](https://github.com/ryderclanky/BotW-Native) | Manual / desenvolvimento |
+| Xbox 360 | [LEGO Dimensions · Dimensions Recomp](https://github.com/NeverCookFirst/DimensionsRecomp) | Manual / desenvolvimento |
+| Xbox | [Dead or Alive Xtreme Beach Volleyball · DOAXVB RE](https://github.com/NoRain211/doaxvb-re) | Manual / desenvolvimento |
+| Nintendo DS | [Kingdom Hearts 358/2 Days · KH Days Port](https://github.com/Yokimitsuro/khdays-port) | Manual / desenvolvimento |
+| PlayStation 2 | [Burnout 3: Takedown · Burnout 3 PC](https://github.com/danielgomesvieira2000/burnout3-pc) | Manual / desenvolvimento |
+| Outras | [Mercenaries: Playground of Destruction · Mercenaries Recompiled](https://github.com/KraftMacAndChee/Mercenaries-Recompiled) | Manual / desenvolvimento |
+| Xbox 360 | [Call of Duty: Modern Warfare 2 · MW2 Recompiled](https://github.com/PaulCombal/mw2-recompiled) | Manual / desenvolvimento |
+| PlayStation | [Mega Man X4 · Mega Man X4 Recomp](https://github.com/mstan/MegaManX4Recomp) | Manual / desenvolvimento |
+| PlayStation | [Disney's Hercules · Hercules Recompiled](https://github.com/obaidr1/hercules-recompiled) | Manual / desenvolvimento |
+| Nintendo 64 | [Banjo-Tooie · Banjo-Tooie Port](https://github.com/some-scurvy-dog/banjo-tooie-scurvy-dog-port) | Manual / desenvolvimento |
+| Xbox 360 | [Dead Rising 2: Case West · Case West Recomp](https://github.com/wivi514/Dead_Rising_2_Case_West_Xenon_Recomp) | Manual / desenvolvimento |
+| Xbox 360 | [Gears of War 2 · Gears of War 2 PC Port](https://github.com/santiquiroz/gears-of-war-2-pc-port) | Manual / desenvolvimento |
+| Xbox 360 | [Naruto Shippūden: Ultimate Ninja STORM Generations · Storm Generations Port](https://github.com/Masterllgod/naruto-storm-generations-port-nativo) | Manual / desenvolvimento |
+| Xbox 360 | [2014 FIFA World Cup Brazil · FIFA WC 2014 Recompiled](https://github.com/HossEz/fifa-world-cup-2014-recompiled) | Manual / desenvolvimento |
+| Xbox 360 | [Kameo: Elements of Power · Kameo RePowered](https://github.com/MaxDeadBear/KameoRePowered) | Manual / desenvolvimento |
+| Xbox 360 | [Crackdown · Crackdown Recompiled](https://github.com/saulob/crackdown-xbox360-recompiled) | Manual / desenvolvimento |
+| PlayStation 3 | [God of War II · God of War II Recomp](https://github.com/andrebrumdev/gow2-recomp) | Manual / desenvolvimento |
+| Xbox 360 | [Tekken 6 · Tekken 6 Recomp](https://github.com/mahmoud-mess/tekken6-recomp) | Manual / desenvolvimento |
+| PlayStation 2 | [Downhill Domination · Downhill Revived](https://github.com/skuza-oss/downhill-revived) | Manual / desenvolvimento |
+| Outras | [Virtua Fighter · VF1 Recomp](https://github.com/mr-finster/vf1-recomp) | Manual / desenvolvimento |
+| Xbox 360 | [50 Cent: Blood on the Sand · SkullBurglar](https://github.com/nlwstein/skullburglar) | Manual / desenvolvimento |
+| Nintendo 64 | [Rush 2: Extreme Racing USA · Rush 2 Recompiled](https://github.com/bryantmh/rush2recompiled) | Manual / desenvolvimento |
+| Wii | [Wario Land: Shake It! · Shake It! Native PC](https://github.com/santiagovalencia109/Wario-Land-Shake-It-Native-PC) | Manual / desenvolvimento |
+| PlayStation | [Mega Man X5 · Mega Man X5 Recomp](https://github.com/mstan/MegaManX5Recomp) | Manual / desenvolvimento |
+| Xbox 360 | [Geometry Wars: Retro Evolved 2 · Geometry Wars 2 Recomp](https://github.com/saulob/geometry-wars-retro-evolved-2-recompiled) | Manual / desenvolvimento |
+| PlayStation | [Vandal Hearts · Vandal Hearts PC Port](https://github.com/HalmyLyseas/VandalHearts-PcPort) | Manual / desenvolvimento |
+| Xbox 360 | [Tony Hawk's Project 8 · Project8 Recomp](https://github.com/theokyr/Project8Recomp) | Manual / desenvolvimento |
+| PlayStation 4 | [Bloodborne · Bloodborne PC](https://github.com/Supermedo/bloodborne_pc) | Manual / desenvolvimento |
+| PlayStation 2 | [NBA Street Vol. 2 · Streetball Revival](https://github.com/luckvj/streetball-revival) | Manual / desenvolvimento |
+| PSP | [Star Wars Battlefront: Renegade Squadron · Renegade Squadron PC](https://github.com/GTTeancum/StarWars-RenegadeSquadron-PC) | Manual / desenvolvimento |
+| PlayStation 2 | [Rampage: Total Destruction · RampageRE](https://github.com/jjmhalew/RampageRE) | Manual / desenvolvimento |
+| GameCube | [Super Mario Sunshine · SMS Launcher](https://github.com/chasem-dev/sms-launcher) | Manual / desenvolvimento |
+| PlayStation 2 | [Ratchet & Clank · rac-rs](https://github.com/AsobiCodes/rac-rs) | Manual / desenvolvimento |
+| Nintendo Switch | [Pokémon: Let's Go, Pikachu! · Let's Go Recomp](https://github.com/raulzrrs/letsgo-recomp) | Manual / desenvolvimento |
+| Xbox 360 | [Sonic the Hedgehog (2006) · Marathon Recomp](https://github.com/sonicnext-dev/MarathonRecomp) | Manual / desenvolvimento |
+| Nintendo Switch | [Super Smash Bros. Ultimate · SSBU Recomp](https://github.com/OpenSmash-Ultimate/ssbu-recomp) | Manual / desenvolvimento |
+| PlayStation 4 | [Killzone Shadow Fall · Killzone Shadow Fall PC](https://github.com/lesca-191204/killzone-shadowfall-pc) | Manual / desenvolvimento |
+| PlayStation 4 | [Dragon's Crown Pro · Dragon's Crown Pro PC](https://github.com/saulob/dragons-crown-pro-pc) | Manual / desenvolvimento |
+| PlayStation 4 | [EA Sports UFC 3 · UFC 3 PC](https://github.com/GNSB/UFC-3-PS4-PORT-LINUX-WINDOWS) | Manual / desenvolvimento |
+| PlayStation 4 | [Unicorn Overlord · Unicorn Overlord PC](https://github.com/hachi23/unicorn_overlord_pc) | Manual / desenvolvimento |
+| PlayStation 4 | [inFAMOUS First Light · inFAMOUS First Light PC](https://github.com/VantageEX/infamous-first-light-pc) | Manual / desenvolvimento |
+| PlayStation 3 | [inFAMOUS · inFAMOUS Reborn](https://github.com/whompay/inFAMOUSreborn) | Manual / desenvolvimento |
+| GameCube | [Metroid Prime · Metroid Prime Port](https://github.com/Odrannnn/MetroidPrimePort) | Manual / desenvolvimento |
+| GameCube | [Eternal Darkness: Sanity's Requiem · Eternal Darkness Recomp](https://github.com/griches/EternalDarknessRecomp) | Manual / desenvolvimento |
+| Wii | [Super Mario Galaxy · Nebula](https://github.com/keepvaibin/nebula) | Manual / desenvolvimento |
+| Wii | [New Super Mario Bros. Wii · NSMB Wii Recompiled](https://github.com/WitherBlitz/NSMB-Wii-Multiplayer-Recompilation) | Manual / desenvolvimento |
+| Wii | [Mario Strikers Charged · Recharged](https://github.com/previouslevelgames/recharged) | Manual / desenvolvimento |
+| Wii U | [New Super Mario Bros. U · NSMBU Recomp](https://github.com/nsmbu-recomp/nsmbu-recomp) | Manual / desenvolvimento |
+| Nintendo Switch | [Super Mario Maker 2 · SMM2 Recomp](https://github.com/smm2recomp/smm2recomp) | Manual / desenvolvimento |
+| Nintendo DS | [Pokémon SoulSilver · SoulSilver Recomp](https://github.com/ClickingMaster/ssrecomp) | Manual / desenvolvimento |
+| Nintendo 64 | [The World Is Not Enough · TWIPE 00Sheven](https://github.com/riseio/TWIPE_00Sheven) | Manual / desenvolvimento |
+| Nintendo 64 | [Jet Force Gemini · Jet Force Gemini Recomp](https://github.com/TK22-26/JetForceGemini-Recomp) | Manual / desenvolvimento |
+| Nintendo 64 | [Sin and Punishment · Sin and Punishment Recomp](https://github.com/wootbeer/snprecomp) | Manual / desenvolvimento |
+| Super Nintendo | [Super Mario All-Stars · Super Mario All-Stars Recomp](https://github.com/TanookiStudios/SuperMarioAllStarsRecomp) | Manual / desenvolvimento |
+| Xbox | [Halo: Combat Evolved · ChupathingyCE](https://github.com/ChupathingyCE/chupathingyce) | Manual / desenvolvimento |
+| Xbox | [Dead or Alive 3 · DOA3 Recomp](https://github.com/parkerallan/doa3-recomp) | Manual / desenvolvimento |
+| Xbox | [The Lord of the Rings: The Two Towers · Two Towers Recomp](https://github.com/Gumpolas/TooTawersRecomp) | Manual / desenvolvimento |
+| Xbox | [Urban Chaos: Riot Response · Urban Chaos: Burner Edition](https://github.com/linkssy2/UrbanChaosRiotResponseBurnerEdition) | Manual / desenvolvimento |
+| Xbox | [Project Gotham Racing 2 · PGR2 Recomp](https://github.com/hk21x/pgr2-recomp) | Manual / desenvolvimento |
+| Xbox | [Buffy the Vampire Slayer: Chaos Bleeds · Buffy: Chaos Bleeds PC](https://github.com/KaikoClanworth1/buffy-chaos-bleeds-pc) | Manual / desenvolvimento |
+| Xbox | [Project Gotham Racing · PGR Recomp](https://github.com/hk21x/pgr1-recomp) | Manual / desenvolvimento |
+| Xbox 360 | [Super Street Fighter II Turbo HD Remix · SSF2T HD Remix Recompiled](https://github.com/saulob/ssf2t-hd-remix-recompiled) | Manual / desenvolvimento |
+| Xbox 360 | [WWE '12 · WWE '12 PC](https://github.com/iMrBurn/wwe12-pc) | Manual / desenvolvimento |
+| Xbox 360 | [Hard Corps: Uprising · Hard Corps: Uprising Recompiled](https://github.com/saulob/hard-corps-uprising-recompiled) | Manual / desenvolvimento |
+| Xbox 360 | [Diablo III · Souls of the Reaper](https://github.com/Boron853/Souls-of-the-Reaper) | Manual / desenvolvimento |
+| Xbox 360 | [Naruto: The Broken Bond · Broken Bond Recomp](https://github.com/jorjbarbosa/broken-bond-recomp) | Manual / desenvolvimento |
+| Xbox 360 | [SoulCalibur II HD Online · SoulCalibur II HD Recomp](https://github.com/n0madic/Soulcalibur2HD-recomp) | Manual / desenvolvimento |
+| PlayStation | [Resident Evil 3: Nemesis · Project RE-Visited RE3](https://github.com/BrazilianHobbyist/Project-RE-Visited-RE3) | Manual / desenvolvimento |
+| PlayStation | [Wipeout XL · Wipeout XL Recompiled](https://github.com/NJH-1001/Wipeout2K97XL) | Manual / desenvolvimento |
+| PlayStation | [Metal Gear Solid · MGS Reintegral](https://github.com/Drommedhar/mgs-reintegral) | Manual / desenvolvimento |
+| PSP | [Grand Theft Auto: Vice City Stories · Vice City Stories Recomp](https://github.com/OverkillLabs3/vice-city-stories-recomp) | Manual / desenvolvimento |
+| Xbox | [Burnout 3: Takedown · Takedawn](https://github.com/xenophobentx/takedawn) | Manual / desenvolvimento |
+| PlayStation 2 | [Gran Turismo 4 · GT4 Recomp](https://github.com/moesuito/gt4-staticrecomp) | Manual / desenvolvimento |
+| PlayStation | [Crash Bandicoot · Crash Bandicoot PC](https://github.com/Matteo842/CrashBandicoot-Launcher) | Manual / desenvolvimento |
+| Nintendo Switch | [Monster Hunter Generations Ultimate · MHGU Recomp](https://github.com/morerokk/MHGURecomp) | Manual / desenvolvimento |
+| Xbox 360 | [Perfect Dark Zero · Perfect Dark Zero Recomp](https://github.com/nikolaygorb/PerfectDarkZeroRecomp) | Manual / desenvolvimento |
+| PlayStation 2 | [Guitar Hero II · GHClassic](https://github.com/noahbaxter/GHClassic) | Manual / desenvolvimento |
+| Xbox 360 | [Sneak King, Big Bumpin' and PocketBike Racer · Whopping Collection](https://github.com/TekRantGaming/whopping-recompilation-collection) | Manual / desenvolvimento |
+| Nintendo 64 | [Paper Mario · PaperBoat](https://github.com/HarbourMasters/PaperBoat) | Manual / desenvolvimento |
+| Xbox | [Tom Clancy's Ghost Recon 2: Summit Strike · Summit Strike Recomp](https://github.com/ElKev118/summitstrike-recomp) | Manual / desenvolvimento |
+| Dreamcast | [SoulCalibur · Voldorium](https://github.com/enrique363/voldorium) | Manual / desenvolvimento |
+| Game Boy | [Wario Land: Super Mario Land 3 · Bigodao](https://github.com/GABRIELNNK/Bigodao) | Manual / desenvolvimento |
+| Xbox 360 | [Forza Horizon · Forza Horizon 1: ReImagined](https://github.com/FH1-ReImagined/ForzaHorizon1-ReImagined) | Manual / desenvolvimento |
+| Xbox | [Amped 2 · RE-Amped2](https://github.com/Nico-D-eu/RE-Amped2) | Manual / desenvolvimento |
+| PlayStation 4 | [Until Dawn · Until Dawn PC](https://github.com/SuperCatElvis/UntilDawn_PC) | Manual / desenvolvimento |
+| Xbox 360 | [Crystal Defenders · Cristalis](https://github.com/Claudio5702/Cristalis) | Manual / desenvolvimento |
+| Xbox | [The Lord of the Rings: The Two Towers / The Return of the King · Athelas](https://github.com/Shagg88/Athelas) | Manual / desenvolvimento |
+| Xbox 360 | [Gears of War 2, Gears of War 3, Gears of War: Judgment · COGBox](https://github.com/Shagg88/COGBox) | Manual / desenvolvimento |
+| PlayStation | [Valkyrie Profile · ValkyrieRecomp](https://github.com/Ed1z19/ValkyrieRecomp) | Manual / desenvolvimento |
+| PlayStation 2 | [Dynasty Warriors 5: Xtreme Legends · DW5XL Recomp](https://github.com/TheSlackbringer/dw5xl-recomp) | Manual / desenvolvimento |
+| Nintendo Switch | [Super Kirby Clash · KirbyRecomp](https://github.com/xtamqispeak/KirbyRecomp) | Manual / desenvolvimento |
+| Xbox 360 | [Saw II: Flesh & Blood](https://github.com/Matt-code-d/Saw2Recomp) | Manual / desenvolvimento |
+| Nintendo 64 | [Super Robot Wars 64 · Marchwind64](https://github.com/dyzz/srw64-recomp) | Manual / desenvolvimento |
+| PlayStation 4 | [LEGO Dimensions · LEGO Dimensions PC Port](https://github.com/vascon-es/lego-dimensions-pc) | Manual / desenvolvimento |
+| Outras | [Discord Times · Razdor](https://github.com/indicozy/razdor) | Manual / desenvolvimento |
+| Outras | [Laserlords](https://github.com/RandyVie/Laserlords) | Manual / desenvolvimento |
+| Wii | [Super Smash Bros. Brawl · Super Smash Decomp](https://github.com/doldecomp/brawl) | Manual / desenvolvimento |
+| Nintendo DS | [Dragon Quest IX · DQIX Enhanced](https://github.com/sackchief/dqix-enhanced) | Manual / desenvolvimento |
+| PlayStation | [Xenogears · Xenogears PC](https://github.com/exyled/Xenogears-PC) | Manual / desenvolvimento |
+| Xbox 360 | [Gears of War 3 · Azura: Gears of War 3](https://github.com/Carolux97/Gears3-Azura) | Manual / desenvolvimento |
+| Outras | [Atlantis: The Lost Tales · Atlantis Native](https://github.com/ripleyXLR8/atlantis-native) | Manual / desenvolvimento |
+| Super Nintendo | [Teenage Mutant Ninja Turtles IV: Turtles in Time · TMNT IV: Turtles in Time PC](https://github.com/emanuelcnjunior/TMNT-IV-Turtles-in-Time-PC-Recomp) | Manual / desenvolvimento |
+| Xbox 360 | [Splatterhouse (2010) · Splatterhouse Recompiled](https://github.com/0c0de/splatterhouse-decomp) | Manual / desenvolvimento |
+| Nintendo 64 | [Star Wars: Shadows of the Empire · SotE Recomp](https://github.com/GTTeancum/SotE-Recomp) | Manual / desenvolvimento |
+| PlayStation 2 | [Urban Reign · Urban Reign PC](https://github.com/thiagordsfx/urban-reign-recomp) | Manual / desenvolvimento |
+| PlayStation 2 | [TimeSplitters · TimeSplitters Recomp](https://github.com/GTTeancum/Timesplitters) | Manual / desenvolvimento |
+| PlayStation 2 | [God Hand · God Hand Port](https://github.com/Ryzellx/godhand-port) | Manual / desenvolvimento |
+| PlayStation 2 | [Crash Twinsanity · Crash Twinsanity PC](https://github.com/GioPixelGH/Crash-Twinsanity-Windows) | Manual / desenvolvimento |
+| Xbox | [TimeSplitters: Future Perfect · TimeSplitters: Future Perfect PC](https://github.com/TheDoffman/timesplitters-future-perfect-pc) | Manual / desenvolvimento |
+| PlayStation 3 | [Killzone 2 · Project Pyrrhus](https://github.com/undecuple/project-pyrrhus) | Manual / desenvolvimento |
+| Xbox 360 | [NFL Head Coach 09 · NFL Head Coach 09 Recomp](https://github.com/tools81/nfl-head-coach-09-static-recomp) | Manual / desenvolvimento |
+| PlayStation 3 | [Killzone 3 · Project Helghast](https://github.com/undecuple/project-helghast) | Manual / desenvolvimento |
+| Xbox 360 | [Juiced 2: Hot Import Nights · Juiced 2 Recompiled](https://github.com/anishchandra24/Juiced2-Recompiled) | Manual / desenvolvimento |
+| PlayStation 4 | [EA Sports UFC 3 · PORTHEON](https://github.com/XAndromedaXR/PORTHEON) | Manual / desenvolvimento |
+| Xbox | [Sneak King · Sneaky Whopper Recomp](https://github.com/Guuzzeji/sneaky-whopper-recomp) | Manual / desenvolvimento |
+| PlayStation 2 | [Resident Evil Code: Veronica X · Project Veronica](https://github.com/camybiohazard/Project-Veronica) | Manual / desenvolvimento |
+| Wii | [Super Paper Mario · New Super Paper Bros](https://github.com/josiahg2502-glitch/NewSuperPaperBros) | Manual / desenvolvimento |
+| Game Boy Advance | [Mother 3 · Mother 3 Recomp](https://github.com/josiahg2502-glitch/Mother3Recomp) | Manual / desenvolvimento |
+| Xbox 360 | [Marvel: Ultimate Alliance · Marvel Ultimate Alliance Recompiled](https://github.com/saulob/marvel-ultimate-alliance-bundle-recompiled) | Manual / desenvolvimento |
+| Xbox 360 | [Madden NFL 08 · Madden NFL 08 Recompiled](https://github.com/anishchandra24/MaddenNFL08-Recompiled) | Manual / desenvolvimento |
+| Xbox 360 | [NHL 2K8 · NHL 2K8 Recompiled](https://github.com/anishchandra24/NHL2K8-Recompiled) | Manual / desenvolvimento |
+| PSP | [Monster Hunter Freedom Unite · Freedom Unbound](https://github.com/Dudux42/FreedomUnbound) | Manual / desenvolvimento |
+| Wii U | [Super Smash Bros. for Wii U · Smash 4 PC](https://github.com/josiahg2502-glitch/Smash4PC) | Manual / desenvolvimento |
+| Xbox | [Castlevania: Curse of Darkness · Curse of Darkness Recomp](https://github.com/Neguchads/Castlevania-COD-Recomp) | Manual / desenvolvimento |
+| Xbox 360 | [Pirates of the Caribbean: At World's End · Pirates: At World's End Recomp](https://github.com/ElGuslml/PiratesAtWorldsEndRecomp) | ZIP Windows x64 auditado |
+| PlayStation 4 | [Uncharted: The Nathan Drake Collection · Uncharted Collection PC](https://github.com/zorde23/Uncharted_Collection_PC) | Manual / desenvolvimento |
+| Xbox 360 | [Skate 3 · Skate 3 Recomp Plus](https://github.com/dougieprishpreed/skate3recomp-plus) | Manual / desenvolvimento |
+
 ## Pesquisa de 28/10/2026 — catálogo 1.4.0
 
 Novos no NEXUS; as datas de criação e o progresso dos projetos variam. O estado de gameplay é o relatado pelos autores. NEXUS verificou pacotes e integração, sem executar os jogos ou confirmar campanhas.

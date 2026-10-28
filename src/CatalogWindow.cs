@@ -11,13 +11,16 @@ using System.Windows.Media;
 namespace Nexus {
   public class CatalogWindow:Window {
     readonly PortCatalog catalog=new PortCatalog();readonly ListBox list;readonly TextBlock title,repo,version,details,status;readonly TextBox destination;readonly Button download,choose,cancel,refresh;readonly ProgressBar progress;
-    readonly CheckBox acceptBeta;readonly Button importZip;readonly ComboBox platform;readonly Action<Game> added;readonly List<Game> games;CancellationTokenSource request,installation;PortEntry selected;PortRelease release;bool busy,closed;
+    readonly CheckBox acceptBeta;readonly Button importZip;readonly ComboBox platform,installationMode;readonly TextBox search;readonly Action<Game> added;readonly List<Game> games;CancellationTokenSource request,installation;PortEntry selected;PortRelease release;bool busy,closed;
     readonly SolidColorBrush muted=new SolidColorBrush(Color.FromRgb(167,178,194));
     public CatalogWindow(Window owner,string dataRoot,List<Game> library,Action<Game> onAdded){
       Owner=owner;Title="Baixar ports · NEXUS";Width=1060;Height=760;MinWidth=880;MinHeight=620;WindowStartupLocation=WindowStartupLocation.CenterOwner;Background=owner.Background;Foreground=owner.Foreground;FontFamily=owner.FontFamily;FontSize=14;Resources=owner.Resources;games=library;added=onAdded;
       var root=new Grid{Margin=new Thickness(24)};Content=root;root.RowDefinitions.Add(new RowDefinition{Height=GridLength.Auto});root.RowDefinitions.Add(new RowDefinition{Height=new GridLength(1,GridUnitType.Star)});root.RowDefinitions.Add(new RowDefinition{Height=GridLength.Auto});
       var header=new StackPanel{Margin=new Thickness(0,0,0,22)};header.Children.Add(new TextBlock{Text="Baixar ports",FontSize=27,FontWeight=FontWeights.SemiBold});header.Children.Add(new TextBlock{Text="Ports por plataforma, com downloads e projetos em desenvolvimento.",Foreground=muted,Margin=new Thickness(0,8,0,0)});root.Children.Add(header);
       platform=new ComboBox{ItemsSource=Platforms.All,SelectedIndex=0,Foreground=Brushes.Black,Padding=new Thickness(8),Width=240,HorizontalAlignment=HorizontalAlignment.Left,Margin=new Thickness(0,16,0,0)};System.Windows.Automation.AutomationProperties.SetName(platform,"Plataforma do catálogo");header.Children.Add(platform);
+      var filters=new DockPanel{Margin=new Thickness(0,10,0,0)};header.Children.Add(filters);
+      installationMode=new ComboBox{ItemsSource=new[]{"Todos os projetos","Instalação automática / ZIP oficial","Preparação manual / desenvolvimento"},SelectedIndex=0,Foreground=Brushes.Black,Padding=new Thickness(8),Width=285,Margin=new Thickness(0,0,12,0)};DockPanel.SetDock(installationMode,Dock.Right);System.Windows.Automation.AutomationProperties.SetName(installationMode,"Tipo de instalação");filters.Children.Add(installationMode);
+      filters.Children.Add(new TextBlock{Text="Buscar",VerticalAlignment=VerticalAlignment.Center,Margin=new Thickness(0,0,10,0)});search=new TextBox{Padding=new Thickness(8)};System.Windows.Automation.AutomationProperties.SetName(search,"Buscar jogo, port ou repositório");filters.Children.Add(search);
       var columns=new Grid();columns.ColumnDefinitions.Add(new ColumnDefinition{Width=new GridLength(310)});columns.ColumnDefinitions.Add(new ColumnDefinition{Width=new GridLength(1,GridUnitType.Star)});Grid.SetRow(columns,1);root.Children.Add(columns);
       list=new ListBox{Background=new SolidColorBrush(Color.FromRgb(23,26,32)),Foreground=Foreground,BorderBrush=new SolidColorBrush(Color.FromRgb(48,54,65)),Padding=new Thickness(5),Margin=new Thickness(0,0,24,0)};
       ScrollViewer.SetHorizontalScrollBarVisibility(list,ScrollBarVisibility.Disabled);var style=new Style(typeof(ListBoxItem));style.Setters.Add(new Setter(Control.PaddingProperty,new Thickness(10,11,8,11)));style.Setters.Add(new Setter(Control.HorizontalContentAlignmentProperty,HorizontalAlignment.Stretch));var trigger=new Trigger{Property=ListBoxItem.IsSelectedProperty,Value=true};trigger.Setters.Add(new Setter(Control.BackgroundProperty,new SolidColorBrush(Color.FromRgb(55,73,43))));trigger.Setters.Add(new Setter(Control.ForegroundProperty,Brushes.White));style.Triggers.Add(trigger);list.ItemContainerStyle=style;
@@ -36,6 +39,7 @@ namespace Nexus {
       progress=new ProgressBar{Minimum=0,Maximum=100,Height=6,Margin=new Thickness(0,18,0,0),Foreground=new SolidColorBrush(Color.FromRgb(180,241,118)),Background=new SolidColorBrush(Color.FromRgb(38,43,51)),BorderThickness=new Thickness(0)};right.Children.Add(progress);
       status=new TextBlock{Text="Consulte uma versão para começar.",Foreground=muted,TextWrapping=TextWrapping.Wrap,Margin=new Thickness(0,18,0,0)};Grid.SetRow(status,2);root.Children.Add(status);
       platform.SelectionChanged+=delegate{if(!busy)FilterEntries();};
+      search.TextChanged+=delegate{if(!busy)FilterEntries();};installationMode.SelectionChanged+=delegate{if(!busy)FilterEntries();};
       FilterEntries();
       list.SelectionChanged+=delegate{if(!busy&&!IsSmoke)LoadSelected();};Closed+=delegate{closed=true;if(request!=null)request.Cancel();if(installation!=null)installation.Cancel();catalog.Dispose();};
       Closing+=delegate(object sender,System.ComponentModel.CancelEventArgs e){if(busy){e.Cancel=true;status.Text="Use Cancelar download e aguarde a limpeza antes de fechar.";}};
@@ -43,7 +47,7 @@ namespace Nexus {
     }
     void FilterEntries(){
       if(list==null)return;if(request!=null){request.Cancel();request=null;}selected=null;release=null;list.Items.Clear();
-      foreach(var entry in catalog.Entries.Where(e=>platform.SelectedIndex==0||e.Platform==(string)platform.SelectedItem)){
+      foreach(var entry in PortCatalog.Filter(catalog.Entries,(string)platform.SelectedItem,search.Text,installationMode.SelectedIndex)){
         var item=new ListBoxItem{Tag=entry};var content=new StackPanel();content.Children.Add(new TextBlock{Text=entry.Name,TextWrapping=TextWrapping.Wrap});content.Children.Add(new TextBlock{Text=entry.Platform+" · "+(entry.ManualPackage?"ZIP do site oficial":entry.ProjectOnly?"Ver projeto":entry.AllowPrerelease?"Beta / recompilação":entry.Kind),Foreground=muted,FontSize=11,TextWrapping=TextWrapping.Wrap,Margin=new Thickness(0,5,0,0)});item.Content=content;list.Items.Add(item);
       }
       if(download==null)return;download.IsEnabled=false;title.Text="Escolha um port";repo.Text="";details.Text="";acceptBeta.Visibility=Visibility.Collapsed;importZip.Visibility=Visibility.Collapsed;download.Visibility=Visibility.Visible;version.Text="";status.Text=list.Items.Count==0?"Nenhum port Windows com instalação validada para esta plataforma. Você pode adicionar sua instalação manualmente na coleção.":list.Items.Count+" projetos nesta plataforma.";
@@ -76,21 +80,23 @@ namespace Nexus {
     async void InstallSelected(string localZip=null){
       if(selected==null||busy)return;if(selected.ManualPackage&&localZip==null){Open(selected.ProjectUrl);return;}if(!selected.ManualPackage&&(release==null||release.IsPrerelease&&acceptBeta.IsChecked!=true))return;PortEntry entry=selected;PortRelease package=release;string parent=destination.Text.Trim();
       if(String.IsNullOrWhiteSpace(parent)||!Path.IsPathRooted(parent)){status.Text="Escolha uma pasta de instalação com caminho completo.";return;}
-      busy=true;importZip.IsEnabled=false;acceptBeta.IsEnabled=false;platform.IsEnabled=false;list.IsEnabled=false;choose.IsEnabled=false;destination.IsEnabled=false;refresh.IsEnabled=false;download.IsEnabled=false;cancel.IsEnabled=true;installation=new CancellationTokenSource();
+      busy=true;importZip.IsEnabled=false;acceptBeta.IsEnabled=false;platform.IsEnabled=false;search.IsEnabled=false;installationMode.IsEnabled=false;list.IsEnabled=false;choose.IsEnabled=false;destination.IsEnabled=false;refresh.IsEnabled=false;download.IsEnabled=false;cancel.IsEnabled=true;installation=new CancellationTokenSource();
       try{
         var progressReporter=new Progress<InstallProgress>(p=>{if(!closed){status.Text=p.Message;progress.Value=p.Percent;}});
         Game game=localZip==null?await catalog.Install(entry,package,parent,progressReporter,installation.Token,acceptBeta.IsChecked==true):await catalog.ImportZip(entry,localZip,parent,progressReporter,installation.Token);added(game);status.Text="Instalado: "+entry.Name+(entry.ConfigNames.Length>0?". Use Configurar jogo para preparar seus arquivos.":". Abra Jogar e siga as instruções de preparação do projeto.");download.Content="Já instalado";
       }catch(OperationCanceledException){status.Text="Download cancelado. Arquivos temporários removidos.";}
       catch(Exception ex){status.Text="Não foi possível instalar: "+ex.Message;}
-      finally{busy=false;importZip.IsEnabled=true;acceptBeta.IsEnabled=true;platform.IsEnabled=true;list.IsEnabled=true;choose.IsEnabled=true;destination.IsEnabled=true;refresh.IsEnabled=true;cancel.IsEnabled=false;UpdateInstallState();installation.Dispose();installation=null;}
+      finally{busy=false;importZip.IsEnabled=true;acceptBeta.IsEnabled=true;platform.IsEnabled=true;search.IsEnabled=true;installationMode.IsEnabled=true;list.IsEnabled=true;choose.IsEnabled=true;destination.IsEnabled=true;refresh.IsEnabled=true;cancel.IsEnabled=false;UpdateInstallState();installation.Dispose();installation=null;}
     }
     public void CaptureSmoke(string path){
       foreach(string name in Platforms.All){platform.SelectedItem=name;int expected=catalog.Entries.Count(e=>name==Platforms.All[0]||e.Platform==name);if(list.Items.Count!=expected)throw new Exception("Catalog platform filter failed");}
-      platform.SelectedItem="PlayStation 3";list.SelectedIndex=0;LoadSelected();if(download.IsEnabled||release!=null)throw new Exception("Project-only download must remain disabled");
+      search.Text="Mario Kart";platform.SelectedItem="Nintendo 64";installationMode.SelectedIndex=1;if(list.Items.Count!=1||((PortEntry)((ListBoxItem)list.Items[0]).Tag).Id!="rl-spaghettikart")throw new Exception("Combined catalog search failed");search.Text="";installationMode.SelectedIndex=0;
+      platform.SelectedItem="PlayStation 3";list.SelectedItem=list.Items.Cast<ListBoxItem>().First(i=>((PortEntry)i.Tag).ProjectOnly);LoadSelected();if(download.IsEnabled||release!=null)throw new Exception("Project-only download must remain disabled");
       platform.SelectedItem="Xbox";list.SelectedItem=list.Items.Cast<ListBoxItem>().First(i=>((PortEntry)i.Tag).Id=="darkwatch");selected=(PortEntry)((ListBoxItem)list.SelectedItem).Tag;acceptBeta.IsChecked=false;var sample=PortCatalog.BundledRelease(selected);sample.Version="smoke-stable";PresentRelease(selected,sample);
       if(acceptBeta.Visibility!=Visibility.Collapsed||!download.IsEnabled)throw new Exception("Stable Darker Edition profile must not require beta acceptance");
       platform.SelectedItem="PlayStation 4";list.SelectedItem=list.Items.Cast<ListBoxItem>().First(i=>((PortEntry)i.Tag).Id=="knack2");selected=(PortEntry)((ListBoxItem)list.SelectedItem).Tag;acceptBeta.IsChecked=false;sample=PortCatalog.BundledRelease(selected);sample.Version="smoke-beta";PresentRelease(selected,sample);if(download.IsEnabled||acceptBeta.Visibility!=Visibility.Visible)throw new Exception("Experimental port requires explicit acceptance");acceptBeta.IsChecked=true;if(!download.IsEnabled)throw new Exception("Accepted experimental port must be installable");
       platform.SelectedItem="Xbox One";list.SelectedIndex=0;LoadSelected();if(!importZip.IsVisible||!download.IsEnabled||acceptBeta.IsChecked==true)throw new Exception("Official-site import UI failed");
+      platform.SelectedItem="Nintendo 64";installationMode.SelectedIndex=1;list.SelectedItem=list.Items.Cast<ListBoxItem>().First(i=>((PortEntry)i.Tag).Id=="rl-zelda64recomp");selected=(PortEntry)((ListBoxItem)list.SelectedItem).Tag;title.Text=selected.Name;repo.Text=selected.Platform+" · "+selected.Kind+"\n"+selected.Identity;importZip.Visibility=Visibility.Collapsed;acceptBeta.Visibility=Visibility.Collapsed;PresentRelease(selected,PortCatalog.BundledRelease(selected));
       Launcher.CaptureWindow(this,path);}
   }
 }

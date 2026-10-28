@@ -21,7 +21,7 @@ jobs:
           $testData = Join-Path $env:RUNNER_TEMP 'nexus-smoke'
           New-Item -ItemType Directory -Path $testData -Force | Out-Null
           $fixtureExe = (Resolve-Path ./dist/Nexus/Nexus.exe).Path
-          $platforms = @('PlayStation 4','PlayStation 3','Xbox','Xbox 360','Xbox One','Nintendo Switch','Outras')
+          $platforms = @('PlayStation 4','PlayStation 3','PlayStation 2','PlayStation','PSP','Xbox','Xbox 360','Xbox One','Nintendo Switch','Nintendo 64','GameCube','Wii','Wii U','Super Nintendo','Game Boy','Game Boy Advance','Nintendo DS','Dreamcast','Outras')
           $fixtures = foreach ($platform in $platforms) { @{Id=[guid]::NewGuid().ToString('N');Name="Fixture $platform";Executable=$fixtureExe;Platform=$platform;ConfigurationExecutable=$(if ($platform -eq 'PlayStation 4') {$fixtureExe} else {$null})} }
           @{Version=1;Games=@($fixtures);OnlineArtwork=$false} | ConvertTo-Json -Depth 5 | Set-Content (Join-Path $testData 'library.json') -Encoding utf8
           $image = Join-Path $env:RUNNER_TEMP 'nexus-preview.png'

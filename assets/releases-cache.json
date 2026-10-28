@@ -1,7 +1,7 @@
 [
   {
     "Repository": "AjncSystem/ShadowOfTheColossus-PC",
-    "CheckedUtc": "2026-10-19T02:25:57.755914+00:00",
+    "CheckedUtc": "2026-10-18T23:25:57.755914-03:00",
     "Release": {
       "tag_name": "v0.57",
       "html_url": "https://github.com/AjncSystem/ShadowOfTheColossus-PC/releases/tag/v0.57",
@@ -19,7 +19,7 @@
   },
   {
     "Repository": "Awakenchan/BloodBorneButPc",
-    "CheckedUtc": "2026-10-19T02:25:57.761913+00:00",
+    "CheckedUtc": "2026-10-18T23:25:57.761913-03:00",
     "Release": {
       "tag_name": "v0.9.33",
       "html_url": "https://github.com/Awakenchan/BloodBorneButPc/releases/tag/v0.9.33",
@@ -49,7 +49,7 @@
   },
   {
     "Repository": "bc160201983/medievil_2019_pc_port",
-    "CheckedUtc": "2026-10-19T02:25:57.768921+00:00",
+    "CheckedUtc": "2026-10-18T23:25:57.768921-03:00",
     "Release": {
       "tag_name": "v1.3.3",
       "html_url": "https://github.com/bc160201983/medievil_2019_pc_port/releases/tag/v1.3.3",
@@ -67,7 +67,7 @@
   },
   {
     "Repository": "bc160201983/Uncharted-The-Nathan-Drake-Collection-PC-port",
-    "CheckedUtc": "2026-10-19T02:25:57.775428+00:00",
+    "CheckedUtc": "2026-10-18T23:25:57.775428-03:00",
     "Release": {
       "tag_name": "v0.3.0",
       "html_url": "https://github.com/bc160201983/Uncharted-The-Nathan-Drake-Collection-PC-port/releases/tag/v0.3.0",
@@ -85,7 +85,7 @@
   },
   {
     "Repository": "FelipePrado0/gow3_pc",
-    "CheckedUtc": "2026-10-19T02:25:57.782934+00:00",
+    "CheckedUtc": "2026-10-18T23:25:57.782934-03:00",
     "Release": {
       "tag_name": "windows-v2.5.0",
       "html_url": "https://github.com/FelipePrado0/gow3_pc/releases/tag/windows-v2.5.0",
@@ -121,7 +121,7 @@
   },
   {
     "Repository": "GetLostIn/CTR-NitroFueled-PC",
-    "CheckedUtc": "2026-10-19T02:25:57.788941+00:00",
+    "CheckedUtc": "2026-10-18T23:25:57.788941-03:00",
     "Release": {
       "tag_name": "v0.3",
       "html_url": "https://github.com/GetLostIn/CTR-NitroFueled-PC/releases/tag/v0.3",
@@ -139,7 +139,7 @@
   },
   {
     "Repository": "HayatoG/iss_pc",
-    "CheckedUtc": "2026-10-19T02:25:57.795444+00:00",
+    "CheckedUtc": "2026-10-18T23:25:57.795444-03:00",
     "Release": {
       "tag_name": "v2026.10.18-27f8bba",
       "html_url": "https://github.com/HayatoG/iss_pc/releases/tag/v2026.10.18-27f8bba",
@@ -163,7 +163,7 @@
   },
   {
     "Repository": "HayatoG/tlg_pc",
-    "CheckedUtc": "2026-10-19T02:25:57.802949+00:00",
+    "CheckedUtc": "2026-10-18T23:25:57.802949-03:00",
     "Release": {
       "tag_name": "v2026.10.17-b8d5f41",
       "html_url": "https://github.com/HayatoG/tlg_pc/releases/tag/v2026.10.17-b8d5f41",
@@ -187,7 +187,7 @@
   },
   {
     "Repository": "mateussmeneses/theorder1886-port",
-    "CheckedUtc": "2026-10-19T02:25:57.809956+00:00",
+    "CheckedUtc": "2026-10-18T23:25:57.809956-03:00",
     "Release": {
       "tag_name": "windows-v0.7.0",
       "html_url": "https://github.com/mateussmeneses/theorder1886-port/releases/tag/windows-v0.7.0",
@@ -205,7 +205,7 @@
   },
   {
     "Repository": "mlgprorektm8/RyGT",
-    "CheckedUtc": "2026-10-19T02:25:57.815964+00:00",
+    "CheckedUtc": "2026-10-18T23:25:57.815964-03:00",
     "Release": {
       "tag_name": "gt-sport-2026-10-18-2",
       "html_url": "https://github.com/mlgprorektm8/RyGT/releases/tag/gt-sport-2026-10-18-2",
@@ -223,7 +223,7 @@
   },
   {
     "Repository": "Oussama268/ShadowOfTheColossus-PC",
-    "CheckedUtc": "2026-10-19T02:25:57.822964+00:00",
+    "CheckedUtc": "2026-10-18T23:25:57.822964-03:00",
     "Release": {
       "tag_name": "v0.57-opt6",
       "html_url": "https://github.com/Oussama268/ShadowOfTheColossus-PC/releases/tag/v0.57-opt6",
@@ -241,7 +241,7 @@
   },
   {
     "Repository": "OverkillLabs3/driveclub-recomp",
-    "CheckedUtc": "2026-10-19T02:25:57.873634+00:00",
+    "CheckedUtc": "2026-10-18T23:25:57.873634-03:00",
     "Release": {
       "tag_name": "v0.2.4",
       "html_url": "https://github.com/OverkillLabs3/driveclub-recomp/releases/tag/v0.2.4",
@@ -913,6 +913,354 @@
           "size": 98850294,
           "browser_download_url": "https://github.com/peiikai/LASRecomp/releases/download/test-463-bowwow/LAS.Recomp-test-463-bowwow-windows.zip",
           "digest": "sha256:ba1a083822dc622a053bbcec8e8f714568d4c5a3ebb3e721ddd7ec3a4e8f2e9e"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "Zelda64Recomp/Zelda64Recomp",
+    "CheckedUtc": "2026-10-28T19:43:11.581315-03:00",
+    "Release": {
+      "tag_name": "v1.2.2",
+      "html_url": "https://github.com/Zelda64Recomp/Zelda64Recomp/releases/tag/v1.2.2",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "Zelda64Recompiled-v1.2.2-Linux-ARM64.zip",
+          "size": 19228944,
+          "browser_download_url": "https://github.com/Zelda64Recomp/Zelda64Recomp/releases/download/v1.2.2/Zelda64Recompiled-v1.2.2-Linux-ARM64.zip",
+          "digest": "sha256:2e49b96aced578363065e1764ca96eaa5590cb6f7e80efd10e8ce1a08462b933"
+        },
+        {
+          "name": "Zelda64Recompiled-v1.2.2-Linux-Flatpak-X64.zip",
+          "size": 13024507,
+          "browser_download_url": "https://github.com/Zelda64Recomp/Zelda64Recomp/releases/download/v1.2.2/Zelda64Recompiled-v1.2.2-Linux-Flatpak-X64.zip",
+          "digest": "sha256:79efc38a5469d524b09c024f97509a3ff0c61466db4a74630c112f4901804e10"
+        },
+        {
+          "name": "Zelda64Recompiled-v1.2.2-Linux-X64.zip",
+          "size": 18638525,
+          "browser_download_url": "https://github.com/Zelda64Recomp/Zelda64Recomp/releases/download/v1.2.2/Zelda64Recompiled-v1.2.2-Linux-X64.zip",
+          "digest": "sha256:de8b19cdb4e3ad0c10fd6d8127f7a6cc2a9eba106d89c753439178b718887c42"
+        },
+        {
+          "name": "Zelda64Recompiled-v1.2.2-macOS.zip",
+          "size": 32315959,
+          "browser_download_url": "https://github.com/Zelda64Recomp/Zelda64Recomp/releases/download/v1.2.2/Zelda64Recompiled-v1.2.2-macOS.zip",
+          "digest": "sha256:f369815d7ba2a1139a6fab8a0aa51c52e5f064dcfcce649eb888fdef9f648689"
+        },
+        {
+          "name": "Zelda64Recompiled-v1.2.2-Windows.zip",
+          "size": 28940501,
+          "browser_download_url": "https://github.com/Zelda64Recomp/Zelda64Recomp/releases/download/v1.2.2/Zelda64Recompiled-v1.2.2-Windows.zip",
+          "digest": "sha256:d02b95f1cf5e4d44d6587fa6136c6db521f61aa41ba8700c05f91bea8b0a26d0"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "HarbourMasters/Shipwright",
+    "CheckedUtc": "2026-10-28T19:43:11.581315-03:00",
+    "Release": {
+      "tag_name": "9.3.1",
+      "html_url": "https://github.com/HarbourMasters/Shipwright/releases/tag/9.3.1",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "SoH-Dewey-Bravo-Mac.zip",
+          "size": 49516403,
+          "browser_download_url": "https://github.com/HarbourMasters/Shipwright/releases/download/9.3.1/SoH-Dewey-Bravo-Mac.zip",
+          "digest": "sha256:6d9b69b7037d3af863c1767829af42666732c9f4651468a7e086c3e11268bd4b"
+        },
+        {
+          "name": "SoH-Dewey-Bravo-Win64.zip",
+          "size": 72980600,
+          "browser_download_url": "https://github.com/HarbourMasters/Shipwright/releases/download/9.3.1/SoH-Dewey-Bravo-Win64.zip",
+          "digest": "sha256:429292a0bfbdfcda283b33c1538ecdc49163b9ed53e8702cac80b2489d9fe26c"
+        },
+        {
+          "name": "SoH-Dewey-Bravo.appimage",
+          "size": 32113856,
+          "browser_download_url": "https://github.com/HarbourMasters/Shipwright/releases/download/9.3.1/SoH-Dewey-Bravo.appimage",
+          "digest": "sha256:e4bb775c9a0c3629ebac57e4b6ccba6d0b621d71ab201e9105aceef9141ad1f4"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "HarbourMasters/SpaghettiKart",
+    "CheckedUtc": "2026-10-28T19:43:11.581315-03:00",
+    "Release": {
+      "tag_name": "1.0.0",
+      "html_url": "https://github.com/HarbourMasters/SpaghettiKart/releases/tag/1.0.0",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "spaghetti-linux.zip",
+          "size": 12395451,
+          "browser_download_url": "https://github.com/HarbourMasters/SpaghettiKart/releases/download/1.0.0/spaghetti-linux.zip",
+          "digest": "sha256:54e249bd4aa71e55c63239c9c1c0eb522b07497d85f2ede193907059e4de250c"
+        },
+        {
+          "name": "spaghetti-mac-arm64.zip",
+          "size": 7542558,
+          "browser_download_url": "https://github.com/HarbourMasters/SpaghettiKart/releases/download/1.0.0/spaghetti-mac-arm64.zip",
+          "digest": "sha256:d40314ed0cd8932c359239fb6dcd8554d4dd48e85be3c460c044004a88a03e80"
+        },
+        {
+          "name": "spaghetti-mac-intel-x64.zip",
+          "size": 7858520,
+          "browser_download_url": "https://github.com/HarbourMasters/SpaghettiKart/releases/download/1.0.0/spaghetti-mac-intel-x64.zip",
+          "digest": "sha256:6ca0cf6747cf3081a65a7324a6c0c891be75465966fa4872fb57f9e58966cd90"
+        },
+        {
+          "name": "spaghetti-windows.zip",
+          "size": 7806456,
+          "browser_download_url": "https://github.com/HarbourMasters/SpaghettiKart/releases/download/1.0.0/spaghetti-windows.zip",
+          "digest": "sha256:bf7bd7cdb5f412c7b370af92949b9431ce7503968631f8cacd607933fb32aff3"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "2ship2harkinian/2ship2harkinian",
+    "CheckedUtc": "2026-10-28T19:43:11.581315-03:00",
+    "Release": {
+      "tag_name": "5.0.1",
+      "html_url": "https://github.com/2ship2harkinian/2ship2harkinian/releases/tag/5.0.1",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "2Ship-Battler-Bravo-Linux.zip",
+          "size": 16262941,
+          "browser_download_url": "https://github.com/2ship2harkinian/2ship2harkinian/releases/download/5.0.1/2Ship-Battler-Bravo-Linux.zip",
+          "digest": "sha256:6cdd4fe06f3f9b095e99c86fef70b9265cc921fb6faa7ba1e18e94e90ed0b345"
+        },
+        {
+          "name": "2Ship-Battler-Bravo-Mac.zip",
+          "size": 26742222,
+          "browser_download_url": "https://github.com/2ship2harkinian/2ship2harkinian/releases/download/5.0.1/2Ship-Battler-Bravo-Mac.zip",
+          "digest": "sha256:b6019b4339d06ce0a476299a5be7b35629dff2fb779acb3da219da3cfcf1f84a"
+        },
+        {
+          "name": "2Ship-Battler-Bravo-Win64.zip",
+          "size": 44976935,
+          "browser_download_url": "https://github.com/2ship2harkinian/2ship2harkinian/releases/download/5.0.1/2Ship-Battler-Bravo-Win64.zip",
+          "digest": "sha256:a46664a01623ad5d7cc82d29a9889699f6a98c9501c7a959a089f34380c1f078"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "HarbourMasters/Starship",
+    "CheckedUtc": "2026-10-28T19:43:11.581315-03:00",
+    "Release": {
+      "tag_name": "v2.0.0",
+      "html_url": "https://github.com/HarbourMasters/Starship/releases/tag/v2.0.0",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "Starship-Barnard-Alfa-Linux.zip",
+          "size": 79980135,
+          "browser_download_url": "https://github.com/HarbourMasters/Starship/releases/download/v2.0.0/Starship-Barnard-Alfa-Linux.zip",
+          "digest": null
+        },
+        {
+          "name": "Starship-Barnard-Alfa-Switch.zip",
+          "size": 6488483,
+          "browser_download_url": "https://github.com/HarbourMasters/Starship/releases/download/v2.0.0/Starship-Barnard-Alfa-Switch.zip",
+          "digest": null
+        },
+        {
+          "name": "Starship-Barnard-Alfa-Windows.zip",
+          "size": 4218590,
+          "browser_download_url": "https://github.com/HarbourMasters/Starship/releases/download/v2.0.0/Starship-Barnard-Alfa-Windows.zip",
+          "digest": null
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "BanjoRecomp/BanjoRecomp",
+    "CheckedUtc": "2026-10-28T19:43:11.581315-03:00",
+    "Release": {
+      "tag_name": "v1.0.2",
+      "html_url": "https://github.com/BanjoRecomp/BanjoRecomp/releases/tag/v1.0.2",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "BanjoRecompiled-v1.0.2-Linux-ARM64.tar.gz",
+          "size": 8414426,
+          "browser_download_url": "https://github.com/BanjoRecomp/BanjoRecomp/releases/download/v1.0.2/BanjoRecompiled-v1.0.2-Linux-ARM64.tar.gz",
+          "digest": "sha256:53515be8bc453bc32ed8cbc72e3cd06350ab4a28bd94b0aa6499d4b963a83757"
+        },
+        {
+          "name": "BanjoRecompiled-v1.0.2-Linux-Flatpak-X64.zip",
+          "size": 5480802,
+          "browser_download_url": "https://github.com/BanjoRecomp/BanjoRecomp/releases/download/v1.0.2/BanjoRecompiled-v1.0.2-Linux-Flatpak-X64.zip",
+          "digest": "sha256:8fe71cd8f28f3de2d02bcf4ad30194c01480306d53a12192b805b45c3ba5bb11"
+        },
+        {
+          "name": "BanjoRecompiled-v1.0.2-Linux-X64.tar.gz",
+          "size": 8380240,
+          "browser_download_url": "https://github.com/BanjoRecomp/BanjoRecomp/releases/download/v1.0.2/BanjoRecompiled-v1.0.2-Linux-X64.tar.gz",
+          "digest": "sha256:a34a4d361221171ea638e0165301fff817c53b9cd46167c5affd37867cfc7ad0"
+        },
+        {
+          "name": "BanjoRecompiled-v1.0.2-macOS.zip",
+          "size": 17704672,
+          "browser_download_url": "https://github.com/BanjoRecomp/BanjoRecomp/releases/download/v1.0.2/BanjoRecompiled-v1.0.2-macOS.zip",
+          "digest": "sha256:5e0bbcf671064f05d7bf61c39b9c8f9eb851b0f9de4545882a607b78de8f8072"
+        },
+        {
+          "name": "BanjoRecompiled-v1.0.2-Windows.zip",
+          "size": 18669475,
+          "browser_download_url": "https://github.com/BanjoRecomp/BanjoRecomp/releases/download/v1.0.2/BanjoRecompiled-v1.0.2-Windows.zip",
+          "digest": "sha256:fc34aad48e06681878bedd13b88d5332a2f21f6a98cafc931c94d54892a4dd92"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "HarbourMasters/Ghostship",
+    "CheckedUtc": "2026-10-28T19:43:11.581315-03:00",
+    "Release": {
+      "tag_name": "3.0.0",
+      "html_url": "https://github.com/HarbourMasters/Ghostship/releases/tag/3.0.0",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "Nautilus-Alfa-Android.zip",
+          "size": 14133158,
+          "browser_download_url": "https://github.com/HarbourMasters/Ghostship/releases/download/3.0.0/Nautilus-Alfa-Android.zip",
+          "digest": "sha256:f33904ab87c7a99c2465fc244baa43ebdf09d433ef60f63e2b1f8be77b5eafde"
+        },
+        {
+          "name": "Nautilus-Alfa-iOS.zip",
+          "size": 5121258,
+          "browser_download_url": "https://github.com/HarbourMasters/Ghostship/releases/download/3.0.0/Nautilus-Alfa-iOS.zip",
+          "digest": "sha256:422b0dc1ec146a04ee387e2629dccb23ed586207eb6078d6a49be80c23bc604d"
+        },
+        {
+          "name": "Nautilus-Alfa-Linux.zip",
+          "size": 18060413,
+          "browser_download_url": "https://github.com/HarbourMasters/Ghostship/releases/download/3.0.0/Nautilus-Alfa-Linux.zip",
+          "digest": "sha256:f295cb24bfd78660a9caa834e267cc009b4ccdb4ebe68005ab677dc5e4417e83"
+        },
+        {
+          "name": "Nautilus-Alfa-Mac.zip",
+          "size": 23231438,
+          "browser_download_url": "https://github.com/HarbourMasters/Ghostship/releases/download/3.0.0/Nautilus-Alfa-Mac.zip",
+          "digest": "sha256:f80a0d14ec6cc5dc1d26b8b231c625544fcf349a606d3cda9868be1997a13631"
+        },
+        {
+          "name": "Nautilus-Alfa-Win64.zip",
+          "size": 20379303,
+          "browser_download_url": "https://github.com/HarbourMasters/Ghostship/releases/download/3.0.0/Nautilus-Alfa-Win64.zip",
+          "digest": "sha256:49a0ab6c6624ccb20d29bb433f391d017f638f2b7db0601eae7808574a62aa18"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "Rainchus/Donkey-Kong-64-Recompiled",
+    "CheckedUtc": "2026-10-28T19:43:11.581315-03:00",
+    "Release": {
+      "tag_name": "v1.0.3",
+      "html_url": "https://github.com/Rainchus/Donkey-Kong-64-Recompiled/releases/tag/v1.0.3",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "DK64Recompiled-Flatpak-X64-Release-1-0-3.zip",
+          "size": 6370008,
+          "browser_download_url": "https://github.com/Rainchus/Donkey-Kong-64-Recompiled/releases/download/v1.0.3/DK64Recompiled-Flatpak-X64-Release-1-0-3.zip",
+          "digest": "sha256:0974e1d264303cd4fbf71d95012649abe60baae539868c8381a1b46bb2b89f78"
+        },
+        {
+          "name": "DK64Recompiled-Linux-ARM64-Release-1-0-3.zip",
+          "size": 9489336,
+          "browser_download_url": "https://github.com/Rainchus/Donkey-Kong-64-Recompiled/releases/download/v1.0.3/DK64Recompiled-Linux-ARM64-Release-1-0-3.zip",
+          "digest": "sha256:bb887245c61ee08f98c2e724ec2b3877000a02554bd501a122bd91409c888ba4"
+        },
+        {
+          "name": "DK64Recompiled-Linux-X64-Release-1-0-3.zip",
+          "size": 9321970,
+          "browser_download_url": "https://github.com/Rainchus/Donkey-Kong-64-Recompiled/releases/download/v1.0.3/DK64Recompiled-Linux-X64-Release-1-0-3.zip",
+          "digest": "sha256:352380418f2376640825fe65b0ba085e12e7b792205cfa435a6caa0202e54b5c"
+        },
+        {
+          "name": "DK64Recompiled-macOS-ARM64-Release-1-0-3.zip",
+          "size": 11352069,
+          "browser_download_url": "https://github.com/Rainchus/Donkey-Kong-64-Recompiled/releases/download/v1.0.3/DK64Recompiled-macOS-ARM64-Release-1-0-3.zip",
+          "digest": "sha256:c3c80f5d0b7bf4c2a21386ae573d70f57d84046aee00906814a88081923b8046"
+        },
+        {
+          "name": "DK64Recompiled-Windows-Release-1-0-3.zip",
+          "size": 19986113,
+          "browser_download_url": "https://github.com/Rainchus/Donkey-Kong-64-Recompiled/releases/download/v1.0.3/DK64Recompiled-Windows-Release-1-0-3.zip",
+          "digest": "sha256:bfde3985365247f083ee47568b496eaf8a4a0845155a95802bc8f4a4871c60d5"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "himdo/Fable-2-Recomp",
+    "CheckedUtc": "2026-10-28T19:43:11.581315-03:00",
+    "Release": {
+      "tag_name": "1.5.0",
+      "html_url": "https://github.com/himdo/Fable-2-Recomp/releases/tag/1.5.0",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "Fable_2_recomp_v1.5.0_windows.zip",
+          "size": 100829524,
+          "browser_download_url": "https://github.com/himdo/Fable-2-Recomp/releases/download/1.5.0/Fable_2_recomp_v1.5.0_windows.zip",
+          "digest": "sha256:18a4420725442d4f24c08a07da8361cc62d2a875169a3cc95d5d3ee294d4558c"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "ElGuslml/PiratesAtWorldsEndRecomp",
+    "CheckedUtc": "2026-10-28T19:43:11.581315-03:00",
+    "Release": {
+      "tag_name": "v0.3.0",
+      "html_url": "https://github.com/ElGuslml/PiratesAtWorldsEndRecomp/releases/tag/v0.3.0",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "PiratesAtWorldsEndRecomp-v0.3.0-setup.exe",
+          "size": 33262937,
+          "browser_download_url": "https://github.com/ElGuslml/PiratesAtWorldsEndRecomp/releases/download/v0.3.0/PiratesAtWorldsEndRecomp-v0.3.0-setup.exe",
+          "digest": "sha256:e4650961eef5cb93d77fa0b4548e77768eed61850e9f9c8d96c06681fbd5e8a0"
+        },
+        {
+          "name": "PiratesAtWorldsEndRecomp-v0.3.0-setup.exe.sha256",
+          "size": 108,
+          "browser_download_url": "https://github.com/ElGuslml/PiratesAtWorldsEndRecomp/releases/download/v0.3.0/PiratesAtWorldsEndRecomp-v0.3.0-setup.exe.sha256",
+          "digest": "sha256:b84a14617abb8e2ace502a9fda61bed9bee4420287471c83831bb85a49ff61be"
+        },
+        {
+          "name": "PiratesAtWorldsEndRecomp-v0.3.0-windows-x64.zip",
+          "size": 46966001,
+          "browser_download_url": "https://github.com/ElGuslml/PiratesAtWorldsEndRecomp/releases/download/v0.3.0/PiratesAtWorldsEndRecomp-v0.3.0-windows-x64.zip",
+          "digest": "sha256:df19fd7fced6e9b38355512051cca916b2fd7964f274badd7ae7dc5d426d82f0"
+        },
+        {
+          "name": "PiratesAtWorldsEndRecomp-v0.3.0-windows-x64.zip.sha256",
+          "size": 114,
+          "browser_download_url": "https://github.com/ElGuslml/PiratesAtWorldsEndRecomp/releases/download/v0.3.0/PiratesAtWorldsEndRecomp-v0.3.0-windows-x64.zip.sha256",
+          "digest": "sha256:fc7f9ddb744c6a85e9e8355967828faaedb26a5d8d75c8dec2e3f5e79bddab42"
         }
       ]
     }

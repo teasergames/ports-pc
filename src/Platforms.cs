@@ -4,7 +4,7 @@ using System.IO;
 using System.Collections.Generic;
 namespace Nexus {
   public static class Platforms {
-    public static readonly string[] All={"Todas as plataformas","PlayStation 4","PlayStation 3","Xbox","Xbox 360","Xbox One","Nintendo Switch","Outras"};
+    public static readonly string[] All={"Todas as plataformas","PlayStation 4","PlayStation 3","PlayStation 2","PlayStation","PSP","Xbox","Xbox 360","Xbox One","Nintendo Switch","Nintendo 64","GameCube","Wii","Wii U","Super Nintendo","Game Boy","Game Boy Advance","Nintendo DS","Dreamcast","Outras"};
     public static string Resolve(Game game){
       if(All.Skip(1).Contains(game.Platform))return game.Platform;
       var entry=PortCatalog.LoadEntries().FirstOrDefault(e=>!String.IsNullOrEmpty(game.Repository)&&e.Identity==game.Repository);

@@ -32,7 +32,7 @@ namespace Nexus {
     readonly Dictionary<string,DateTime> memoTime=new Dictionary<string,DateTime>();
     public PortCatalog():this(new HttpClientHandler()){}
     public PortCatalog(HttpMessageHandler handler){
-      Entries=LoadEntries();ServicePointManager.SecurityProtocol|=SecurityProtocolType.Tls12;client=new HttpClient(handler);client.Timeout=Timeout.InfiniteTimeSpan;client.DefaultRequestHeaders.UserAgent.ParseAdd("NexusPortsPC/1.4 (https://github.com/teasergames/ports-pc)");
+      Entries=LoadEntries();ServicePointManager.SecurityProtocol|=SecurityProtocolType.Tls12;client=new HttpClient(handler);client.Timeout=Timeout.InfiniteTimeSpan;client.DefaultRequestHeaders.UserAgent.ParseAdd("NexusPortsPC/1.5 (https://github.com/teasergames/ports-pc)");
     }
     public static List<PortEntry> LoadEntries(){
       using(var stream=Assembly.GetExecutingAssembly().GetManifestResourceStream("Nexus.ports.json"))using(var reader=new StreamReader(stream)){
@@ -40,6 +40,9 @@ namespace Nexus {
         foreach(var e in entries){if(!Regex.IsMatch(e.Id??"",@"^[a-z0-9-]+$")||!ids.Add(e.Id)||(!e.ManualPackage&&!Regex.IsMatch(e.Repository??"",@"^[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+$"))||e.PlayNames==null||e.ConfigNames==null)throw new InvalidDataException("Entrada do catálogo inválida.");if(e.ManualPackage&&(e.ProjectOnly||e.SourceUrl!="https://almost-there-games.itch.io/azimuth"))throw new InvalidDataException("Fonte externa inválida.");if(!Platforms.All.Skip(1).Contains(e.Platform))throw new InvalidDataException("Plataforma inválida.");if(!e.ProjectOnly){if(e.PlayNames.Length==0||!e.AssetPattern.EndsWith("zip$"))throw new InvalidDataException("Perfil Windows inválido.");new Regex(e.AssetPattern);}}
         return entries;
       }
+    }
+    public static List<PortEntry> Filter(IEnumerable<PortEntry> entries,string platform,string search,int installationMode){
+      string query=(search??"").Trim();return entries.Where(e=>(String.IsNullOrEmpty(platform)||platform==Platforms.All[0]||e.Platform==platform)&&(installationMode==0||installationMode==1&&!e.ProjectOnly||installationMode==2&&e.ProjectOnly)&&(query.Length==0||(e.Name+" "+e.ArtworkTitle+" "+e.Identity+" "+e.Platform).IndexOf(query,StringComparison.CurrentCultureIgnoreCase)>=0)).OrderBy(e=>e.Name,StringComparer.CurrentCultureIgnoreCase).ToList();
     }
     public async Task<PortRelease> Latest(PortEntry entry,CancellationToken token,bool force=false){
       token.ThrowIfCancellationRequested();if(entry.ManualPackage)throw new InvalidDataException("Baixe o ZIP na página oficial e use Importar ZIP no catálogo.");if(entry.ProjectOnly)throw new InvalidDataException("Este projeto não tem instalação automática validada. Abra o projeto para instruções.");PortRelease previous;DateTime checkedAt;

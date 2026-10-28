@@ -1,0 +1,2052 @@
+{
+  "Source": "https://recomplauncher.com/?lang=pt-BR",
+  "CheckedDate": "2026-10-28",
+  "Policy": "Discovery metadata only. Automatic profiles require separate package audit. Manual entries do not imply a validated Windows package. No remote catalog is executed or imported at runtime.",
+  "Entries": [
+    {
+      "Id": "zelda64recomp",
+      "Repository": "Zelda64Recomp/Zelda64Recomp",
+      "DiscoveryUrl": "https://recomplauncher.com/game/zelda64recomp",
+      "Status": "automatic",
+      "NexusId": "rl-zelda64recomp",
+      "VerifiedRepositoryUrl": "https://github.com/Zelda64Recomp/Zelda64Recomp"
+    },
+    {
+      "Id": "dusklight",
+      "Repository": "TwilitRealm/dusklight",
+      "DiscoveryUrl": "https://recomplauncher.com/game/dusklight",
+      "Status": "manual",
+      "NexusId": "rl-dusklight",
+      "VerifiedRepositoryUrl": "https://github.com/TwilitRealm/dusklight"
+    },
+    {
+      "Id": "shipwright",
+      "Repository": "HarbourMasters/Shipwright",
+      "DiscoveryUrl": "https://recomplauncher.com/game/shipwright",
+      "Status": "automatic",
+      "NexusId": "rl-shipwright",
+      "VerifiedRepositoryUrl": "https://github.com/HarbourMasters/Shipwright"
+    },
+    {
+      "Id": "unleashedrecomp",
+      "Repository": "hedge-dev/UnleashedRecomp",
+      "DiscoveryUrl": "https://recomplauncher.com/game/unleashedrecomp",
+      "Status": "existing",
+      "NexusId": "unleashed"
+    },
+    {
+      "Id": "spaghettikart",
+      "Repository": "HarbourMasters/SpaghettiKart",
+      "DiscoveryUrl": "https://recomplauncher.com/game/spaghettikart",
+      "Status": "automatic",
+      "NexusId": "rl-spaghettikart",
+      "VerifiedRepositoryUrl": "https://github.com/HarbourMasters/SpaghettiKart"
+    },
+    {
+      "Id": "2ship2harkinian",
+      "Repository": "2ship2harkinian/2ship2harkinian",
+      "DiscoveryUrl": "https://recomplauncher.com/game/2ship2harkinian",
+      "Status": "automatic",
+      "NexusId": "rl-2ship2harkinian",
+      "VerifiedRepositoryUrl": "https://github.com/2ship2harkinian/2ship2harkinian"
+    },
+    {
+      "Id": "starship",
+      "Repository": "HarbourMasters/Starship",
+      "DiscoveryUrl": "https://recomplauncher.com/game/starship",
+      "Status": "automatic",
+      "NexusId": "rl-starship",
+      "VerifiedRepositoryUrl": "https://github.com/HarbourMasters/Starship"
+    },
+    {
+      "Id": "banjorecomp",
+      "Repository": "BanjoRecomp/BanjoRecomp",
+      "DiscoveryUrl": "https://recomplauncher.com/game/banjorecomp",
+      "Status": "automatic",
+      "NexusId": "rl-banjorecomp",
+      "VerifiedRepositoryUrl": "https://github.com/BanjoRecomp/BanjoRecomp"
+    },
+    {
+      "Id": "ghostship",
+      "Repository": "HarbourMasters/Ghostship",
+      "DiscoveryUrl": "https://recomplauncher.com/game/ghostship",
+      "Status": "automatic",
+      "NexusId": "rl-ghostship",
+      "VerifiedRepositoryUrl": "https://github.com/HarbourMasters/Ghostship"
+    },
+    {
+      "Id": "donkey-kong-64-recompiled",
+      "Repository": "Rainchus/Donkey-Kong-64-Recompiled",
+      "DiscoveryUrl": "https://recomplauncher.com/game/donkey-kong-64-recompiled",
+      "Status": "automatic",
+      "NexusId": "rl-donkey-kong-64-recompiled",
+      "VerifiedRepositoryUrl": "https://github.com/Rainchus/Donkey-Kong-64-Recompiled"
+    },
+    {
+      "Id": "conkerbfdreloaded",
+      "Repository": "DahSidiAbdallah/ConkerBFDReloaded",
+      "DiscoveryUrl": "https://recomplauncher.com/game/conkerbfdreloaded",
+      "Status": "manual",
+      "NexusId": "rl-conkerbfdreloaded",
+      "VerifiedRepositoryUrl": "https://github.com/DahSidiAbdallah/ConkerBFDReloaded"
+    },
+    {
+      "Id": "snap64recomp",
+      "Repository": "JackandBeans/Snap64Recomp",
+      "DiscoveryUrl": "https://recomplauncher.com/game/snap64recomp",
+      "Status": "manual",
+      "NexusId": "rl-snap64recomp",
+      "VerifiedRepositoryUrl": "https://github.com/JackandBeans/Snap64Recomp"
+    },
+    {
+      "Id": "wwfnomercyrecomp",
+      "Repository": "jessetbh/WWFNoMercyRecomp",
+      "DiscoveryUrl": "https://recomplauncher.com/game/wwfnomercyrecomp",
+      "Status": "manual",
+      "NexusId": "rl-wwfnomercyrecomp",
+      "VerifiedRepositoryUrl": "https://github.com/jessetbh/WWFNoMercyRecomp"
+    },
+    {
+      "Id": "wwfwrestlemania2000recomp",
+      "Repository": "jessetbh/WWFWrestleMania2000Recomp",
+      "DiscoveryUrl": "https://recomplauncher.com/game/wwfwrestlemania2000recomp",
+      "Status": "manual",
+      "NexusId": "rl-wwfwrestlemania2000recomp",
+      "VerifiedRepositoryUrl": "https://github.com/jessetbh/WWFWrestleMania2000Recomp"
+    },
+    {
+      "Id": "wcwvsnwoworldtourrecomp",
+      "Repository": "jessetbh/WCWvsNWOWorldTourRecomp",
+      "DiscoveryUrl": "https://recomplauncher.com/game/wcwvsnwoworldtourrecomp",
+      "Status": "manual",
+      "NexusId": "rl-wcwvsnwoworldtourrecomp",
+      "VerifiedRepositoryUrl": "https://github.com/jessetbh/WCWvsNWOWorldTourRecomp"
+    },
+    {
+      "Id": "wcwnworevengerecomp",
+      "Repository": "jessetbh/WCWnWoRevengeRecomp",
+      "DiscoveryUrl": "https://recomplauncher.com/game/wcwnworevengerecomp",
+      "Status": "manual",
+      "NexusId": "rl-wcwnworevengerecomp",
+      "VerifiedRepositoryUrl": "https://github.com/jessetbh/WCWnWoRevengeRecomp"
+    },
+    {
+      "Id": "vpw64recomp",
+      "Repository": "jessetbh/VPW64Recomp",
+      "DiscoveryUrl": "https://recomplauncher.com/game/vpw64recomp",
+      "Status": "manual",
+      "NexusId": "rl-vpw64recomp",
+      "VerifiedRepositoryUrl": "https://github.com/jessetbh/VPW64Recomp"
+    },
+    {
+      "Id": "wwe-svr2007-recomp",
+      "Repository": "nefariousjosiah/WWE-SVR2007-RECOMP",
+      "DiscoveryUrl": "https://recomplauncher.com/game/wwe-svr2007-recomp",
+      "Status": "manual",
+      "NexusId": "rl-wwe-svr2007-recomp",
+      "VerifiedRepositoryUrl": "https://github.com/nefariousjosiah/WWE-SVR2007-RECOMP"
+    },
+    {
+      "Id": "wwe-svr2008-recomp",
+      "Repository": "nefariousjosiah/WWE-SVR2008-RECOMP",
+      "DiscoveryUrl": "https://recomplauncher.com/game/wwe-svr2008-recomp",
+      "Status": "manual",
+      "NexusId": "rl-wwe-svr2008-recomp",
+      "VerifiedRepositoryUrl": "https://github.com/nefariousjosiah/WWE-SVR2008-RECOMP"
+    },
+    {
+      "Id": "wwe-svr2009-recomp",
+      "Repository": "nefariousjosiah/WWE-SVR2009-RECOMP",
+      "DiscoveryUrl": "https://recomplauncher.com/game/wwe-svr2009-recomp",
+      "Status": "manual",
+      "NexusId": "rl-wwe-svr2009-recomp",
+      "VerifiedRepositoryUrl": "https://github.com/nefariousjosiah/WWE-SVR2009-RECOMP"
+    },
+    {
+      "Id": "wwe-svr2010-recomp",
+      "Repository": "nefariousjosiah/WWE-SVR2010-RECOMP",
+      "DiscoveryUrl": "https://recomplauncher.com/game/wwe-svr2010-recomp",
+      "Status": "manual",
+      "NexusId": "rl-wwe-svr2010-recomp",
+      "VerifiedRepositoryUrl": "https://github.com/nefariousjosiah/WWE-SVR2010-RECOMP"
+    },
+    {
+      "Id": "wwe-allstars-recomp",
+      "Repository": "shaneomac1337/WWE-AllStars-Recomp",
+      "DiscoveryUrl": "https://recomplauncher.com/game/wwe-allstars-recomp",
+      "Status": "manual",
+      "NexusId": "rl-wwe-allstars-recomp",
+      "VerifiedRepositoryUrl": "https://github.com/shaneomac1337/WWE-AllStars-Recomp"
+    },
+    {
+      "Id": "wwe13-recomp",
+      "Repository": "PromethenDev/wwe13-recomp",
+      "DiscoveryUrl": "https://recomplauncher.com/game/wwe13-recomp",
+      "Status": "manual",
+      "NexusId": "rl-wwe13-recomp",
+      "VerifiedRepositoryUrl": "https://github.com/PromethenDev/wwe13-recomp"
+    },
+    {
+      "Id": "wwe2k14-recomp",
+      "Repository": "PromethenDev/wwe2k14-recomp",
+      "DiscoveryUrl": "https://recomplauncher.com/game/wwe2k14-recomp",
+      "Status": "manual",
+      "NexusId": "rl-wwe2k14-recomp",
+      "VerifiedRepositoryUrl": "https://github.com/PromethenDev/wwe2k14-recomp"
+    },
+    {
+      "Id": "uncharted-the-nathan-drake-collection-pc-port",
+      "Repository": "bc160201983/Uncharted-The-Nathan-Drake-Collection-PC-port",
+      "DiscoveryUrl": "https://recomplauncher.com/game/uncharted-the-nathan-drake-collection-pc-port",
+      "Status": "existing",
+      "NexusId": "uncharted"
+    },
+    {
+      "Id": "defjamffny-recomp",
+      "Repository": "vyanhursky/DefJamFFNY-recomp",
+      "DiscoveryUrl": "https://recomplauncher.com/game/defjamffny-recomp",
+      "Status": "manual",
+      "NexusId": "rl-defjamffny-recomp",
+      "VerifiedRepositoryUrl": "https://github.com/vyanhursky/DefJamFFNY-recomp"
+    },
+    {
+      "Id": "xerenge",
+      "Repository": "shipa-2/Xerenge",
+      "DiscoveryUrl": "https://recomplauncher.com/game/xerenge",
+      "Status": "manual",
+      "NexusId": "rl-xerenge",
+      "VerifiedRepositoryUrl": "https://github.com/shipa-2/Xerenge"
+    },
+    {
+      "Id": "fifa-street-pc-port",
+      "Repository": "samuelit0davila/fifa-street-pc-port",
+      "DiscoveryUrl": "https://recomplauncher.com/game/fifa-street-pc-port",
+      "Status": "manual",
+      "NexusId": "rl-fifa-street-pc-port",
+      "VerifiedRepositoryUrl": "https://github.com/samuelit0davila/fifa-street-pc-port"
+    },
+    {
+      "Id": "perfect-dark",
+      "Repository": "perfect-dark-pc-port/perfect_dark",
+      "DiscoveryUrl": "https://recomplauncher.com/game/perfect-dark",
+      "Status": "manual",
+      "NexusId": "rl-perfect-dark",
+      "VerifiedRepositoryUrl": "https://github.com/perfect-dark-pc-port/perfect_dark"
+    },
+    {
+      "Id": "speedbreaker",
+      "Repository": "SpeedBreakerProject/speedbreaker",
+      "DiscoveryUrl": "https://recomplauncher.com/game/speedbreaker",
+      "Status": "excluded-no-windows",
+      "VerifiedRepositoryUrl": "https://github.com/SpeedBreakerProject/speedbreaker"
+    },
+    {
+      "Id": "dod3-recomp",
+      "Repository": "soyjxck/dod3-recomp",
+      "DiscoveryUrl": "https://recomplauncher.com/game/dod3-recomp",
+      "Status": "existing",
+      "NexusId": "drakengard3"
+    },
+    {
+      "Id": "fm4-recomp",
+      "Repository": "Alexbeav/fm4-recomp",
+      "DiscoveryUrl": "https://recomplauncher.com/game/fm4-recomp",
+      "Status": "manual",
+      "NexusId": "rl-fm4-recomp",
+      "VerifiedRepositoryUrl": "https://github.com/Alexbeav/fm4-recomp"
+    },
+    {
+      "Id": "estacado-the-darkness-recomp",
+      "Repository": "invinceble55-wq/Estacado-The-Darkness-Recomp",
+      "DiscoveryUrl": "https://recomplauncher.com/game/estacado-the-darkness-recomp",
+      "Status": "manual",
+      "NexusId": "rl-estacado-the-darkness-recomp",
+      "VerifiedRepositoryUrl": "https://github.com/invinceble55-wq/Estacado-The-Darkness-Recomp"
+    },
+    {
+      "Id": "dead-rising-2-case-zero-xenon-recomp",
+      "Repository": "wivi514/Dead_Rising_2_Case_Zero_Xenon_Recomp",
+      "DiscoveryUrl": "https://recomplauncher.com/game/dead-rising-2-case-zero-xenon-recomp",
+      "Status": "manual",
+      "NexusId": "rl-dead-rising-2-case-zero-xenon-recomp",
+      "VerifiedRepositoryUrl": "https://github.com/wivi514/Dead_Rising_2_Case_Zero_Xenon_Recomp"
+    },
+    {
+      "Id": "wet-recomp",
+      "Repository": "Supermedo/wet-recomp",
+      "DiscoveryUrl": "https://recomplauncher.com/game/wet-recomp",
+      "Status": "manual",
+      "NexusId": "rl-wet-recomp",
+      "VerifiedRepositoryUrl": "https://github.com/Supermedo/wet-recomp"
+    },
+    {
+      "Id": "armyoftworecomp",
+      "Repository": "nikolaygorb/ArmyOfTwoRecomp",
+      "DiscoveryUrl": "https://recomplauncher.com/game/armyoftworecomp",
+      "Status": "manual",
+      "NexusId": "rl-armyoftworecomp",
+      "VerifiedRepositoryUrl": "https://github.com/nikolaygorb/ArmyOfTwoRecomp"
+    },
+    {
+      "Id": "pilotwings-64-recomp",
+      "Repository": "danielgomesvieira2000/pilotwings-64-recomp",
+      "DiscoveryUrl": "https://recomplauncher.com/game/pilotwings-64-recomp",
+      "Status": "manual",
+      "NexusId": "rl-pilotwings-64-recomp",
+      "VerifiedRepositoryUrl": "https://github.com/danielgomesvieira2000/pilotwings-64-recomp"
+    },
+    {
+      "Id": "skate2-recompile-pc",
+      "Repository": "christianortel/skate2-recompile-pc",
+      "DiscoveryUrl": "https://recomplauncher.com/game/skate2-recompile-pc",
+      "Status": "manual",
+      "NexusId": "rl-skate2-recompile-pc",
+      "VerifiedRepositoryUrl": "https://github.com/christianortel/skate2-recompile-pc"
+    },
+    {
+      "Id": "aerogauge-recomp",
+      "Repository": "alondero/aerogauge-recomp",
+      "DiscoveryUrl": "https://recomplauncher.com/game/aerogauge-recomp",
+      "Status": "manual",
+      "NexusId": "rl-aerogauge-recomp",
+      "VerifiedRepositoryUrl": "https://github.com/alondero/aerogauge-recomp"
+    },
+    {
+      "Id": "def-jam-vendetta-recomp",
+      "Repository": "jcsix694/def-jam-vendetta-recomp",
+      "DiscoveryUrl": "https://recomplauncher.com/game/def-jam-vendetta-recomp",
+      "Status": "manual",
+      "NexusId": "rl-def-jam-vendetta-recomp",
+      "VerifiedRepositoryUrl": "https://github.com/jcsix694/def-jam-vendetta-recomp"
+    },
+    {
+      "Id": "battletanx-global-assault-pc-port",
+      "Repository": "TheGh0stShip/BattleTanx-Global-Assault-PC-Port",
+      "DiscoveryUrl": "https://recomplauncher.com/game/battletanx-global-assault-pc-port",
+      "Status": "manual",
+      "NexusId": "rl-battletanx-global-assault-pc-port",
+      "VerifiedRepositoryUrl": "https://github.com/TheGh0stShip/BattleTanx-Global-Assault-PC-Port"
+    },
+    {
+      "Id": "iss2000-recomp",
+      "Repository": "Mabec-games/iss2000-recomp",
+      "DiscoveryUrl": "https://recomplauncher.com/game/iss2000-recomp",
+      "Status": "manual",
+      "NexusId": "rl-iss2000-recomp",
+      "VerifiedRepositoryUrl": "https://github.com/Mabec-games/iss2000-recomp"
+    },
+    {
+      "Id": "wwe2k16-pc",
+      "Repository": "itsbybanshee/wwe2k16-pc",
+      "DiscoveryUrl": "https://recomplauncher.com/game/wwe2k16-pc",
+      "Status": "manual",
+      "NexusId": "rl-wwe2k16-pc",
+      "VerifiedRepositoryUrl": "https://github.com/itsbybanshee/wwe2k16-pc"
+    },
+    {
+      "Id": "power-dozer",
+      "Repository": "djultra64/Power-Dozer",
+      "DiscoveryUrl": "https://recomplauncher.com/game/power-dozer",
+      "Status": "manual",
+      "NexusId": "rl-power-dozer",
+      "VerifiedRepositoryUrl": "https://github.com/djultra64/Power-Dozer"
+    },
+    {
+      "Id": "blocksphere",
+      "Repository": "djultra64/Blocksphere",
+      "DiscoveryUrl": "https://recomplauncher.com/game/blocksphere",
+      "Status": "manual",
+      "NexusId": "rl-blocksphere",
+      "VerifiedRepositoryUrl": "https://github.com/djultra64/Blocksphere"
+    },
+    {
+      "Id": "skate3recomp",
+      "Repository": "mchughalex/skate3recomp",
+      "DiscoveryUrl": "https://recomplauncher.com/game/skate3recomp",
+      "Status": "existing",
+      "NexusId": "skate3"
+    },
+    {
+      "Id": "zeldawwhdrecomp",
+      "Repository": "ZeldaWWHDRecomp/ZeldaWWHDRecomp",
+      "DiscoveryUrl": "https://recomplauncher.com/game/zeldawwhdrecomp",
+      "Status": "manual",
+      "NexusId": "rl-zeldawwhdrecomp",
+      "VerifiedRepositoryUrl": "https://github.com/ZeldaWWHDRecomp/ZeldaWWHDRecomp"
+    },
+    {
+      "Id": "symphonyrecomp",
+      "Repository": "BlackLabelHQ/SymphonyRecomp",
+      "DiscoveryUrl": "https://recomplauncher.com/game/symphonyrecomp",
+      "Status": "manual",
+      "NexusId": "rl-symphonyrecomp",
+      "VerifiedRepositoryUrl": "https://github.com/BlackLabelHQ/SymphonyRecomp"
+    },
+    {
+      "Id": "pinyon-shift",
+      "Repository": "arcanite24/pinyon-shift",
+      "DiscoveryUrl": "https://recomplauncher.com/game/pinyon-shift",
+      "Status": "existing",
+      "NexusId": "forza-horizon"
+    },
+    {
+      "Id": "reblue",
+      "Repository": "zolaware/reblue",
+      "DiscoveryUrl": "https://recomplauncher.com/game/reblue",
+      "Status": "existing",
+      "NexusId": "blue-dragon"
+    },
+    {
+      "Id": "lostodysseyrecomp",
+      "Repository": "freefrank/LostOdysseyRecomp",
+      "DiscoveryUrl": "https://recomplauncher.com/game/lostodysseyrecomp",
+      "Status": "existing",
+      "NexusId": "lost-odyssey"
+    },
+    {
+      "Id": "silent-hill-decomp",
+      "Repository": "SlickAmogus/silent-hill-decomp",
+      "DiscoveryUrl": "https://recomplauncher.com/game/silent-hill-decomp",
+      "Status": "manual",
+      "NexusId": "rl-silent-hill-decomp",
+      "VerifiedRepositoryUrl": "https://github.com/SlickAmogus/silent-hill-decomp"
+    },
+    {
+      "Id": "hells-gate-recomp",
+      "Repository": "florinp93/hells-gate-recomp",
+      "DiscoveryUrl": "https://recomplauncher.com/game/hells-gate-recomp",
+      "Status": "manual",
+      "NexusId": "rl-hells-gate-recomp",
+      "VerifiedRepositoryUrl": "https://github.com/florinp93/hells-gate-recomp"
+    },
+    {
+      "Id": "tenkaichi3decomp",
+      "Repository": "z3xox/Tenkaichi3Decomp",
+      "DiscoveryUrl": "https://recomplauncher.com/game/tenkaichi3decomp",
+      "Status": "manual",
+      "NexusId": "rl-tenkaichi3decomp",
+      "VerifiedRepositoryUrl": "https://github.com/z3xox/Tenkaichi3Decomp"
+    },
+    {
+      "Id": "fable-2-recomp",
+      "Repository": "himdo/Fable-2-Recomp",
+      "DiscoveryUrl": "https://recomplauncher.com/game/fable-2-recomp",
+      "Status": "automatic",
+      "NexusId": "rl-fable-2-recomp",
+      "VerifiedRepositoryUrl": "https://github.com/himdo/Fable-2-Recomp"
+    },
+    {
+      "Id": "yakumo",
+      "Repository": "TeamGDB/Yakumo",
+      "DiscoveryUrl": "https://recomplauncher.com/game/yakumo",
+      "Status": "manual",
+      "NexusId": "rl-yakumo",
+      "VerifiedRepositoryUrl": "https://github.com/TeamGDB/Yakumo"
+    },
+    {
+      "Id": "battleship",
+      "Repository": "JRickey/BattleShip",
+      "DiscoveryUrl": "https://recomplauncher.com/game/battleship",
+      "Status": "manual",
+      "NexusId": "rl-battleship",
+      "VerifiedRepositoryUrl": "https://github.com/JRickey/BattleShip"
+    },
+    {
+      "Id": "edgeoftimerecomp",
+      "Repository": "goliathret/EdgeOfTimeRecomp",
+      "DiscoveryUrl": "https://recomplauncher.com/game/edgeoftimerecomp",
+      "Status": "manual",
+      "NexusId": "rl-edgeoftimerecomp",
+      "VerifiedRepositoryUrl": "https://github.com/goliathret/EdgeOfTimeRecomp"
+    },
+    {
+      "Id": "skyrecomp",
+      "Repository": "Apolinario-coder/SkyRecomp",
+      "DiscoveryUrl": "https://recomplauncher.com/game/skyrecomp",
+      "Status": "manual",
+      "NexusId": "rl-skyrecomp",
+      "VerifiedRepositoryUrl": "https://github.com/Apolinario-coder/SkyRecomp"
+    },
+    {
+      "Id": "nocturnerecomp",
+      "Repository": "birabittoh/NocturneRecomp",
+      "DiscoveryUrl": "https://recomplauncher.com/game/nocturnerecomp",
+      "Status": "manual",
+      "NexusId": "rl-nocturnerecomp",
+      "VerifiedRepositoryUrl": "https://github.com/birabittoh/NocturneRecomp"
+    },
+    {
+      "Id": "thesimpsonsgamerecomp",
+      "Repository": "YesterMester/TheSimpsonsGameRecomp",
+      "DiscoveryUrl": "https://recomplauncher.com/game/thesimpsonsgamerecomp",
+      "Status": "manual",
+      "NexusId": "rl-thesimpsonsgamerecomp",
+      "VerifiedRepositoryUrl": "https://github.com/YesterMester/TheSimpsonsGameRecomp"
+    },
+    {
+      "Id": "strikers",
+      "Repository": "new-coke/strikers",
+      "DiscoveryUrl": "https://recomplauncher.com/game/strikers",
+      "Status": "manual",
+      "NexusId": "rl-strikers",
+      "VerifiedRepositoryUrl": "https://github.com/new-coke/strikers"
+    },
+    {
+      "Id": "project-midas",
+      "Repository": "murkantor/Project-Midas",
+      "DiscoveryUrl": "https://recomplauncher.com/game/project-midas",
+      "Status": "manual",
+      "NexusId": "rl-project-midas",
+      "VerifiedRepositoryUrl": "https://github.com/murkantor/Project-Midas"
+    },
+    {
+      "Id": "downpourrecomp",
+      "Repository": "LittleBitUA/DownpourRecomp",
+      "DiscoveryUrl": "https://recomplauncher.com/game/downpourrecomp",
+      "Status": "manual",
+      "NexusId": "rl-downpourrecomp",
+      "VerifiedRepositoryUrl": "https://github.com/LittleBitUA/DownpourRecomp"
+    },
+    {
+      "Id": "dino-recomp",
+      "Repository": "DinosaurPlanetRecomp/dino-recomp",
+      "DiscoveryUrl": "https://recomplauncher.com/game/dino-recomp",
+      "Status": "manual",
+      "NexusId": "rl-dino-recomp",
+      "VerifiedRepositoryUrl": "https://github.com/DinosaurPlanetRecomp/dino-recomp"
+    },
+    {
+      "Id": "bm64recomp",
+      "Repository": "RevoSucks/BM64Recomp",
+      "DiscoveryUrl": "https://recomplauncher.com/game/bm64recomp",
+      "Status": "manual",
+      "NexusId": "rl-bm64recomp",
+      "VerifiedRepositoryUrl": "https://github.com/RevoSucks/BM64Recomp"
+    },
+    {
+      "Id": "g-diffuser",
+      "Repository": "Zorkats/G-Diffuser",
+      "DiscoveryUrl": "https://recomplauncher.com/game/g-diffuser",
+      "Status": "manual",
+      "NexusId": "rl-g-diffuser",
+      "VerifiedRepositoryUrl": "https://github.com/Zorkats/G-Diffuser"
+    },
+    {
+      "Id": "quest64-recomp",
+      "Repository": "Rainchus/Quest64-Recomp",
+      "DiscoveryUrl": "https://recomplauncher.com/game/quest64-recomp",
+      "Status": "manual",
+      "NexusId": "rl-quest64-recomp",
+      "VerifiedRepositoryUrl": "https://github.com/Rainchus/Quest64-Recomp"
+    },
+    {
+      "Id": "condemned2recomp",
+      "Repository": "psxrestore/Condemned2Recomp",
+      "DiscoveryUrl": "https://recomplauncher.com/game/condemned2recomp",
+      "Status": "manual",
+      "NexusId": "rl-condemned2recomp",
+      "VerifiedRepositoryUrl": "https://github.com/psxrestore/Condemned2Recomp"
+    },
+    {
+      "Id": "tip-recomp",
+      "Repository": "SolarCookies/TiP-Recomp",
+      "DiscoveryUrl": "https://recomplauncher.com/game/tip-recomp",
+      "Status": "manual",
+      "NexusId": "rl-tip-recomp",
+      "VerifiedRepositoryUrl": "https://github.com/SolarCookies/TiP-Recomp"
+    },
+    {
+      "Id": "king-kong-recompiled",
+      "Repository": "TekRantGaming/king-kong-recompiled",
+      "DiscoveryUrl": "https://recomplauncher.com/game/king-kong-recompiled",
+      "Status": "manual",
+      "NexusId": "rl-king-kong-recompiled",
+      "VerifiedRepositoryUrl": "https://github.com/TekRantGaming/king-kong-recompiled"
+    },
+    {
+      "Id": "pgr4-recomp",
+      "Repository": "beatrixzy/PGR4-Recomp",
+      "DiscoveryUrl": "https://recomplauncher.com/game/pgr4-recomp",
+      "Status": "existing",
+      "NexusId": "pgr4"
+    },
+    {
+      "Id": "megamanxsnesrecomp",
+      "Repository": "mstan/MegaManXSNESRecomp",
+      "DiscoveryUrl": "https://recomplauncher.com/game/megamanxsnesrecomp",
+      "Status": "manual",
+      "NexusId": "rl-megamanxsnesrecomp",
+      "VerifiedRepositoryUrl": "https://github.com/mstan/MegaManXSNESRecomp"
+    },
+    {
+      "Id": "naruto-rise-recomp",
+      "Repository": "jorjbarbosa/naruto-rise-recomp",
+      "DiscoveryUrl": "https://recomplauncher.com/game/naruto-rise-recomp",
+      "Status": "manual",
+      "NexusId": "rl-naruto-rise-recomp",
+      "VerifiedRepositoryUrl": "https://github.com/jorjbarbosa/naruto-rise-recomp"
+    },
+    {
+      "Id": "renut",
+      "Repository": "masterspike52/reNut",
+      "DiscoveryUrl": "https://recomplauncher.com/game/renut",
+      "Status": "manual",
+      "NexusId": "rl-renut",
+      "VerifiedRepositoryUrl": "https://github.com/masterspike52/reNut"
+    },
+    {
+      "Id": "dprecomp",
+      "Repository": "LittleBitUA/DPRecomp",
+      "DiscoveryUrl": "https://recomplauncher.com/game/dprecomp",
+      "Status": "manual",
+      "NexusId": "rl-dprecomp",
+      "VerifiedRepositoryUrl": "https://github.com/LittleBitUA/DPRecomp"
+    },
+    {
+      "Id": "harvestmoon64recomp",
+      "Repository": "HarvestMoon64Recomp/HarvestMoon64Recomp",
+      "DiscoveryUrl": "https://recomplauncher.com/game/harvestmoon64recomp",
+      "Status": "manual",
+      "NexusId": "rl-harvestmoon64recomp",
+      "VerifiedRepositoryUrl": "https://github.com/HarvestMoon64Recomp/HarvestMoon64Recomp"
+    },
+    {
+      "Id": "mcla-recomp",
+      "Repository": "holdmysocks/mcla-recomp",
+      "DiscoveryUrl": "https://recomplauncher.com/game/mcla-recomp",
+      "Status": "manual",
+      "NexusId": "rl-mcla-recomp",
+      "VerifiedRepositoryUrl": "https://github.com/holdmysocks/mcla-recomp"
+    },
+    {
+      "Id": "sdoj-recomp",
+      "Repository": "eandis/SDOJ-Recomp",
+      "DiscoveryUrl": "https://recomplauncher.com/game/sdoj-recomp",
+      "Status": "manual",
+      "NexusId": "rl-sdoj-recomp",
+      "VerifiedRepositoryUrl": "https://github.com/eandis/SDOJ-Recomp"
+    },
+    {
+      "Id": "eternalsonatareprise",
+      "Repository": "birabittoh/EternalSonataReprise",
+      "DiscoveryUrl": "https://recomplauncher.com/game/eternalsonatareprise",
+      "Status": "manual",
+      "NexusId": "rl-eternalsonatareprise",
+      "VerifiedRepositoryUrl": "https://github.com/birabittoh/EternalSonataReprise"
+    },
+    {
+      "Id": "cvlod-recomp",
+      "Repository": "fliperama86/cvlod_recomp",
+      "DiscoveryUrl": "https://recomplauncher.com/game/cvlod-recomp",
+      "Status": "manual",
+      "NexusId": "rl-cvlod-recomp",
+      "VerifiedRepositoryUrl": "https://github.com/fliperama86/cvlod_recomp"
+    },
+    {
+      "Id": "supermarioworldrecomp",
+      "Repository": "mstan/SuperMarioWorldRecomp",
+      "DiscoveryUrl": "https://recomplauncher.com/game/supermarioworldrecomp",
+      "Status": "manual",
+      "NexusId": "rl-supermarioworldrecomp",
+      "VerifiedRepositoryUrl": "https://github.com/mstan/SuperMarioWorldRecomp"
+    },
+    {
+      "Id": "dbz1",
+      "Repository": "WistfulHopes/DBZ1",
+      "DiscoveryUrl": "https://recomplauncher.com/game/dbz1",
+      "Status": "manual",
+      "NexusId": "rl-dbz1",
+      "VerifiedRepositoryUrl": "https://github.com/WistfulHopes/DBZ1"
+    },
+    {
+      "Id": "finesthourremastered",
+      "Repository": "crazyriddler/FinestHourRemastered",
+      "DiscoveryUrl": "https://recomplauncher.com/game/finesthourremastered",
+      "Status": "manual",
+      "NexusId": "rl-finesthourremastered",
+      "VerifiedRepositoryUrl": "https://github.com/crazyriddler/FinestHourRemastered"
+    },
+    {
+      "Id": "gears-judgement-recomp",
+      "Repository": "OverkillLabs3/gears-judgement-recomp",
+      "DiscoveryUrl": "https://recomplauncher.com/game/gears-judgement-recomp",
+      "Status": "manual",
+      "NexusId": "rl-gears-judgement-recomp",
+      "VerifiedRepositoryUrl": "https://github.com/OverkillLabs3/gears-judgement-recomp"
+    },
+    {
+      "Id": "snowboardkids2-recomp",
+      "Repository": "cdlewis/snowboardkids2-recomp",
+      "DiscoveryUrl": "https://recomplauncher.com/game/snowboardkids2-recomp",
+      "Status": "manual",
+      "NexusId": "rl-snowboardkids2-recomp",
+      "VerifiedRepositoryUrl": "https://github.com/cdlewis/snowboardkids2-recomp"
+    },
+    {
+      "Id": "sssv-recomp",
+      "Repository": "Cellenseres/SSSV_Recomp",
+      "DiscoveryUrl": "https://recomplauncher.com/game/sssv-recomp",
+      "Status": "manual",
+      "NexusId": "rl-sssv-recomp",
+      "VerifiedRepositoryUrl": "https://github.com/Cellenseres/SSSV_Recomp"
+    },
+    {
+      "Id": "open-nectar-pikmin-native-pc-mobile-port",
+      "Repository": "SSunnKing/Open-Nectar---Pikmin-Native-PC-Mobile-Port",
+      "DiscoveryUrl": "https://recomplauncher.com/game/open-nectar-pikmin-native-pc-mobile-port",
+      "Status": "manual",
+      "NexusId": "rl-open-nectar-pikmin-native-pc-mobile-port",
+      "VerifiedRepositoryUrl": "https://github.com/SSunnKing/Open-Nectar---Pikmin-Native-PC-Mobile-Port"
+    },
+    {
+      "Id": "yu-gi-oh-forbidden-memories-recompiled",
+      "Repository": "Unchiga/Yu-Gi-Oh-Forbidden-Memories-Recompiled",
+      "DiscoveryUrl": "https://recomplauncher.com/game/yu-gi-oh-forbidden-memories-recompiled",
+      "Status": "manual",
+      "NexusId": "rl-yu-gi-oh-forbidden-memories-recompiled",
+      "VerifiedRepositoryUrl": "https://github.com/Unchiga/Yu-Gi-Oh-Forbidden-Memories-Recompiled"
+    },
+    {
+      "Id": "dbz-budokai-3-hd-collection",
+      "Repository": "novapowers0/DBZ-Budokai-3-HD-Collection",
+      "DiscoveryUrl": "https://recomplauncher.com/game/dbz-budokai-3-hd-collection",
+      "Status": "manual",
+      "NexusId": "rl-dbz-budokai-3-hd-collection",
+      "VerifiedRepositoryUrl": "https://github.com/novapowers0/DBZ-Budokai-3-HD-Collection"
+    },
+    {
+      "Id": "tekken-tag-tournament-2-pc",
+      "Repository": "shihabal3amri/tekken-tag-tournament-2-pc",
+      "DiscoveryUrl": "https://recomplauncher.com/game/tekken-tag-tournament-2-pc",
+      "Status": "manual",
+      "NexusId": "rl-tekken-tag-tournament-2-pc",
+      "VerifiedRepositoryUrl": "https://github.com/shihabal3amri/tekken-tag-tournament-2-pc"
+    },
+    {
+      "Id": "ridgeracer6-recompilation",
+      "Repository": "Sirhalo23/RidgeRacer6-Recompilation",
+      "DiscoveryUrl": "https://recomplauncher.com/game/ridgeracer6-recompilation",
+      "Status": "manual",
+      "NexusId": "rl-ridgeracer6-recompilation",
+      "VerifiedRepositoryUrl": "https://github.com/Sirhalo23/RidgeRacer6-Recompilation"
+    },
+    {
+      "Id": "dbz-burst-limit-recompiled",
+      "Repository": "iExplosiveRage/DBZ-Burst-Limit-Recompiled",
+      "DiscoveryUrl": "https://recomplauncher.com/game/dbz-burst-limit-recompiled",
+      "Status": "manual",
+      "NexusId": "rl-dbz-burst-limit-recompiled",
+      "VerifiedRepositoryUrl": "https://github.com/iExplosiveRage/DBZ-Burst-Limit-Recompiled"
+    },
+    {
+      "Id": "wwe-svr2011-pc",
+      "Repository": "KaikoClanworth1/wwe-svr2011-pc",
+      "DiscoveryUrl": "https://recomplauncher.com/game/wwe-svr2011-pc",
+      "Status": "manual",
+      "NexusId": "rl-wwe-svr2011-pc",
+      "VerifiedRepositoryUrl": "https://github.com/KaikoClanworth1/wwe-svr2011-pc"
+    },
+    {
+      "Id": "rumble-roses-xx-recomp",
+      "Repository": "JesusTaylo/rumble-roses-xx-recomp",
+      "DiscoveryUrl": "https://recomplauncher.com/game/rumble-roses-xx-recomp",
+      "Status": "manual",
+      "NexusId": "rl-rumble-roses-xx-recomp",
+      "VerifiedRepositoryUrl": "https://github.com/JesusTaylo/rumble-roses-xx-recomp"
+    },
+    {
+      "Id": "jetsetradiofuture-unleashed",
+      "Repository": "JuMatt/JetSetRadioFuture-Unleashed",
+      "DiscoveryUrl": "https://recomplauncher.com/game/jetsetradiofuture-unleashed",
+      "Status": "manual",
+      "NexusId": "rl-jetsetradiofuture-unleashed",
+      "VerifiedRepositoryUrl": "https://github.com/JuMatt/JetSetRadioFuture-Unleashed"
+    },
+    {
+      "Id": "dragon-age-origins-recomp",
+      "Repository": "96dot/Dragon-Age-Origins-Recomp",
+      "DiscoveryUrl": "https://recomplauncher.com/game/dragon-age-origins-recomp",
+      "Status": "manual",
+      "NexusId": "rl-dragon-age-origins-recomp",
+      "VerifiedRepositoryUrl": "https://github.com/96dot/Dragon-Age-Origins-Recomp"
+    },
+    {
+      "Id": "spartanport",
+      "Repository": "FelipePrado0/SpartanPort",
+      "DiscoveryUrl": "https://recomplauncher.com/game/spartanport",
+      "Status": "manual",
+      "NexusId": "rl-spartanport",
+      "VerifiedRepositoryUrl": "https://github.com/FelipePrado0/SpartanPort"
+    },
+    {
+      "Id": "octr-nitrofueled-pc",
+      "Repository": "Ryu7w7/OCTR-NitroFueled-PC",
+      "DiscoveryUrl": "https://recomplauncher.com/game/octr-nitrofueled-pc",
+      "Status": "manual",
+      "NexusId": "rl-octr-nitrofueled-pc",
+      "VerifiedRepositoryUrl": "https://github.com/Ryu7w7/OCTR-NitroFueled-PC"
+    },
+    {
+      "Id": "repop",
+      "Repository": "FulGerNet/rePOP",
+      "DiscoveryUrl": "https://recomplauncher.com/game/repop",
+      "Status": "manual",
+      "NexusId": "rl-repop",
+      "VerifiedRepositoryUrl": "https://github.com/FulGerNet/rePOP"
+    },
+    {
+      "Id": "crashott-pc",
+      "Repository": "VitoMiguelF/crashott-pc",
+      "DiscoveryUrl": "https://recomplauncher.com/game/crashott-pc",
+      "Status": "manual",
+      "NexusId": "rl-crashott-pc",
+      "VerifiedRepositoryUrl": "https://github.com/VitoMiguelF/crashott-pc"
+    },
+    {
+      "Id": "ngbrecomp",
+      "Repository": "gamboozino/ngbrecomp",
+      "DiscoveryUrl": "https://recomplauncher.com/game/ngbrecomp",
+      "Status": "manual",
+      "NexusId": "rl-ngbrecomp",
+      "VerifiedRepositoryUrl": "https://github.com/gamboozino/ngbrecomp"
+    },
+    {
+      "Id": "savagewindrecomp",
+      "Repository": "Revivedx/SavageWindRecomp",
+      "DiscoveryUrl": "https://recomplauncher.com/game/savagewindrecomp",
+      "Status": "manual",
+      "NexusId": "rl-savagewindrecomp",
+      "VerifiedRepositoryUrl": "https://github.com/Revivedx/SavageWindRecomp"
+    },
+    {
+      "Id": "black-xberecomp",
+      "Repository": "TGP482/BLACK-XBERecomp",
+      "DiscoveryUrl": "https://recomplauncher.com/game/black-xberecomp",
+      "Status": "existing",
+      "NexusId": "black"
+    },
+    {
+      "Id": "driveclub-recomp",
+      "Repository": "OverkillLabs3/driveclub-recomp",
+      "DiscoveryUrl": "https://recomplauncher.com/game/driveclub-recomp",
+      "Status": "existing",
+      "NexusId": "driveclub"
+    },
+    {
+      "Id": "ac6-recomp",
+      "Repository": "sal063/AC6_recomp",
+      "DiscoveryUrl": "https://recomplauncher.com/game/ac6-recomp",
+      "Status": "manual",
+      "NexusId": "rl-ac6-recomp",
+      "VerifiedRepositoryUrl": "https://github.com/sal063/AC6_recomp"
+    },
+    {
+      "Id": "b2recomp",
+      "Repository": "K0NL/B2recomp",
+      "DiscoveryUrl": "https://recomplauncher.com/game/b2recomp",
+      "Status": "existing",
+      "NexusId": "b2recomp"
+    },
+    {
+      "Id": "ico-pc",
+      "Repository": "nathanialf/ico-pc",
+      "DiscoveryUrl": "https://recomplauncher.com/game/ico-pc",
+      "Status": "manual",
+      "NexusId": "rl-ico-pc",
+      "VerifiedRepositoryUrl": "https://github.com/nathanialf/ico-pc"
+    },
+    {
+      "Id": "scda-xberecomp",
+      "Repository": "TGP482/SCDA-XBERecomp",
+      "DiscoveryUrl": "https://recomplauncher.com/game/scda-xberecomp",
+      "Status": "manual",
+      "NexusId": "rl-scda-xberecomp",
+      "VerifiedRepositoryUrl": "https://github.com/TGP482/SCDA-XBERecomp"
+    },
+    {
+      "Id": "cod3recomp",
+      "Repository": "FrankHUN88453/CoD3Recomp",
+      "DiscoveryUrl": "https://recomplauncher.com/game/cod3recomp",
+      "Status": "manual",
+      "NexusId": "rl-cod3recomp",
+      "VerifiedRepositoryUrl": "https://github.com/FrankHUN88453/CoD3Recomp"
+    },
+    {
+      "Id": "goemon64recomp",
+      "Repository": "klorfmorf/Goemon64Recomp",
+      "DiscoveryUrl": "https://recomplauncher.com/game/goemon64recomp",
+      "Status": "manual",
+      "NexusId": "rl-goemon64recomp",
+      "VerifiedRepositoryUrl": "https://github.com/klorfmorf/Goemon64Recomp"
+    },
+    {
+      "Id": "projectcane",
+      "Repository": "theclub654/ProjectCane",
+      "DiscoveryUrl": "https://recomplauncher.com/game/projectcane",
+      "Status": "manual",
+      "NexusId": "rl-projectcane",
+      "VerifiedRepositoryUrl": "https://github.com/theclub654/ProjectCane"
+    },
+    {
+      "Id": "megaman64recompiled",
+      "Repository": "MegaMan64Recomp/MegaMan64Recompiled",
+      "DiscoveryUrl": "https://recomplauncher.com/game/megaman64recompiled",
+      "Status": "manual",
+      "NexusId": "rl-megaman64recompiled",
+      "VerifiedRepositoryUrl": "https://github.com/MegaMan64Recomp/MegaMan64Recompiled"
+    },
+    {
+      "Id": "luigis-mansion-recompiled",
+      "Repository": "rob646464/luigis-mansion-recompiled",
+      "DiscoveryUrl": "https://recomplauncher.com/game/luigis-mansion-recompiled",
+      "Status": "manual",
+      "NexusId": "rl-luigis-mansion-recompiled",
+      "VerifiedRepositoryUrl": "https://github.com/rob646464/luigis-mansion-recompiled"
+    },
+    {
+      "Id": "dkc1recomp",
+      "Repository": "elliotttate/DKC1Recomp",
+      "DiscoveryUrl": "https://recomplauncher.com/game/dkc1recomp",
+      "Status": "manual",
+      "NexusId": "rl-dkc1recomp",
+      "VerifiedRepositoryUrl": "https://github.com/elliotttate/DKC1Recomp"
+    },
+    {
+      "Id": "openshao",
+      "Repository": "OAleex/OpenShao",
+      "DiscoveryUrl": "https://recomplauncher.com/game/openshao",
+      "Status": "manual",
+      "NexusId": "rl-openshao",
+      "VerifiedRepositoryUrl": "https://github.com/OAleex/OpenShao"
+    },
+    {
+      "Id": "dkr-r",
+      "Repository": "ThatGuyMcd/DKR-R",
+      "DiscoveryUrl": "https://recomplauncher.com/game/dkr-r",
+      "Status": "manual",
+      "NexusId": "rl-dkr-r",
+      "VerifiedRepositoryUrl": "https://github.com/ThatGuyMcd/DKR-R"
+    },
+    {
+      "Id": "botw-native",
+      "Repository": "ryderclanky/BotW-Native",
+      "DiscoveryUrl": "https://recomplauncher.com/game/botw-native",
+      "Status": "manual",
+      "NexusId": "rl-botw-native",
+      "VerifiedRepositoryUrl": "https://github.com/ryderclanky/BotW-Native"
+    },
+    {
+      "Id": "dimensionsrecomp",
+      "Repository": "NeverCookFirst/DimensionsRecomp",
+      "DiscoveryUrl": "https://recomplauncher.com/game/dimensionsrecomp",
+      "Status": "manual",
+      "NexusId": "rl-dimensionsrecomp",
+      "VerifiedRepositoryUrl": "https://github.com/NeverCookFirst/DimensionsRecomp"
+    },
+    {
+      "Id": "doaxvb-re",
+      "Repository": "NoRain211/doaxvb-re",
+      "DiscoveryUrl": "https://recomplauncher.com/game/doaxvb-re",
+      "Status": "manual",
+      "NexusId": "rl-doaxvb-re",
+      "VerifiedRepositoryUrl": "https://github.com/NoRain211/doaxvb-re"
+    },
+    {
+      "Id": "khdays-port",
+      "Repository": "Yokimitsuro/khdays-port",
+      "DiscoveryUrl": "https://recomplauncher.com/game/khdays-port",
+      "Status": "manual",
+      "NexusId": "rl-khdays-port",
+      "VerifiedRepositoryUrl": "https://github.com/Yokimitsuro/khdays-port"
+    },
+    {
+      "Id": "burnout3-pc",
+      "Repository": "danielgomesvieira2000/burnout3-pc",
+      "DiscoveryUrl": "https://recomplauncher.com/game/burnout3-pc",
+      "Status": "manual",
+      "NexusId": "rl-burnout3-pc",
+      "VerifiedRepositoryUrl": "https://github.com/danielgomesvieira2000/burnout3-pc"
+    },
+    {
+      "Id": "mercenaries-recompiled",
+      "Repository": "KraftMacAndChee/Mercenaries-Recompiled",
+      "DiscoveryUrl": "https://recomplauncher.com/game/mercenaries-recompiled",
+      "Status": "manual",
+      "NexusId": "rl-mercenaries-recompiled",
+      "VerifiedRepositoryUrl": "https://github.com/KraftMacAndChee/Mercenaries-Recompiled"
+    },
+    {
+      "Id": "mw2-recompiled",
+      "Repository": "PaulCombal/mw2-recompiled",
+      "DiscoveryUrl": "https://recomplauncher.com/game/mw2-recompiled",
+      "Status": "manual",
+      "NexusId": "rl-mw2-recompiled",
+      "VerifiedRepositoryUrl": "https://github.com/PaulCombal/mw2-recompiled"
+    },
+    {
+      "Id": "megamanx4recomp",
+      "Repository": "mstan/MegaManX4Recomp",
+      "DiscoveryUrl": "https://recomplauncher.com/game/megamanx4recomp",
+      "Status": "manual",
+      "NexusId": "rl-megamanx4recomp",
+      "VerifiedRepositoryUrl": "https://github.com/mstan/MegaManX4Recomp"
+    },
+    {
+      "Id": "hercules-recompiled",
+      "Repository": "obaidr1/hercules-recompiled",
+      "DiscoveryUrl": "https://recomplauncher.com/game/hercules-recompiled",
+      "Status": "manual",
+      "NexusId": "rl-hercules-recompiled",
+      "VerifiedRepositoryUrl": "https://github.com/obaidr1/hercules-recompiled"
+    },
+    {
+      "Id": "banjo-tooie-scurvy-dog-port",
+      "Repository": "some-scurvy-dog/banjo-tooie-scurvy-dog-port",
+      "DiscoveryUrl": "https://recomplauncher.com/game/banjo-tooie-scurvy-dog-port",
+      "Status": "manual",
+      "NexusId": "rl-banjo-tooie-scurvy-dog-port",
+      "VerifiedRepositoryUrl": "https://github.com/some-scurvy-dog/banjo-tooie-scurvy-dog-port"
+    },
+    {
+      "Id": "dead-rising-2-case-west-xenon-recomp",
+      "Repository": "wivi514/Dead_Rising_2_Case_West_Xenon_Recomp",
+      "DiscoveryUrl": "https://recomplauncher.com/game/dead-rising-2-case-west-xenon-recomp",
+      "Status": "manual",
+      "NexusId": "rl-dead-rising-2-case-west-xenon-recomp",
+      "VerifiedRepositoryUrl": "https://github.com/wivi514/Dead_Rising_2_Case_West_Xenon_Recomp"
+    },
+    {
+      "Id": "gears-of-war-2-pc-port",
+      "Repository": "santiquiroz/gears-of-war-2-pc-port",
+      "DiscoveryUrl": "https://recomplauncher.com/game/gears-of-war-2-pc-port",
+      "Status": "manual",
+      "NexusId": "rl-gears-of-war-2-pc-port",
+      "VerifiedRepositoryUrl": "https://github.com/santiquiroz/gears-of-war-2-pc-port"
+    },
+    {
+      "Id": "naruto-storm-generations-port-nativo",
+      "Repository": "Masterllgod/naruto-storm-generations-port-nativo",
+      "DiscoveryUrl": "https://recomplauncher.com/game/naruto-storm-generations-port-nativo",
+      "Status": "manual",
+      "NexusId": "rl-naruto-storm-generations-port-nativo",
+      "VerifiedRepositoryUrl": "https://github.com/Masterllgod/naruto-storm-generations-port-nativo"
+    },
+    {
+      "Id": "fifa-world-cup-2014-recompiled",
+      "Repository": "HossEz/fifa-world-cup-2014-recompiled",
+      "DiscoveryUrl": "https://recomplauncher.com/game/fifa-world-cup-2014-recompiled",
+      "Status": "manual",
+      "NexusId": "rl-fifa-world-cup-2014-recompiled",
+      "VerifiedRepositoryUrl": "https://github.com/HossEz/fifa-world-cup-2014-recompiled"
+    },
+    {
+      "Id": "kameorepowered",
+      "Repository": "MaxDeadBear/KameoRePowered",
+      "DiscoveryUrl": "https://recomplauncher.com/game/kameorepowered",
+      "Status": "manual",
+      "NexusId": "rl-kameorepowered",
+      "VerifiedRepositoryUrl": "https://github.com/MaxDeadBear/KameoRePowered"
+    },
+    {
+      "Id": "crackdown-xbox360-recompiled",
+      "Repository": "saulob/crackdown-xbox360-recompiled",
+      "DiscoveryUrl": "https://recomplauncher.com/game/crackdown-xbox360-recompiled",
+      "Status": "manual",
+      "NexusId": "rl-crackdown-xbox360-recompiled",
+      "VerifiedRepositoryUrl": "https://github.com/saulob/crackdown-xbox360-recompiled"
+    },
+    {
+      "Id": "gow2-recomp",
+      "Repository": "andrebrumdev/gow2-recomp",
+      "DiscoveryUrl": "https://recomplauncher.com/game/gow2-recomp",
+      "Status": "manual",
+      "NexusId": "rl-gow2-recomp",
+      "VerifiedRepositoryUrl": "https://github.com/andrebrumdev/gow2-recomp"
+    },
+    {
+      "Id": "tekken6-recomp",
+      "Repository": "mahmoud-mess/tekken6-recomp",
+      "DiscoveryUrl": "https://recomplauncher.com/game/tekken6-recomp",
+      "Status": "manual",
+      "NexusId": "rl-tekken6-recomp",
+      "VerifiedRepositoryUrl": "https://github.com/mahmoud-mess/tekken6-recomp"
+    },
+    {
+      "Id": "downhill-revived",
+      "Repository": "skuza-oss/downhill-revived",
+      "DiscoveryUrl": "https://recomplauncher.com/game/downhill-revived",
+      "Status": "manual",
+      "NexusId": "rl-downhill-revived",
+      "VerifiedRepositoryUrl": "https://github.com/skuza-oss/downhill-revived"
+    },
+    {
+      "Id": "vf1-recomp",
+      "Repository": "mr-finster/vf1-recomp",
+      "DiscoveryUrl": "https://recomplauncher.com/game/vf1-recomp",
+      "Status": "manual",
+      "NexusId": "rl-vf1-recomp",
+      "VerifiedRepositoryUrl": "https://github.com/mr-finster/vf1-recomp"
+    },
+    {
+      "Id": "skullburglar",
+      "Repository": "nlwstein/skullburglar",
+      "DiscoveryUrl": "https://recomplauncher.com/game/skullburglar",
+      "Status": "manual",
+      "NexusId": "rl-skullburglar",
+      "VerifiedRepositoryUrl": "https://github.com/nlwstein/skullburglar"
+    },
+    {
+      "Id": "rush2recompiled",
+      "Repository": "bryantmh/rush2recompiled",
+      "DiscoveryUrl": "https://recomplauncher.com/game/rush2recompiled",
+      "Status": "manual",
+      "NexusId": "rl-rush2recompiled",
+      "VerifiedRepositoryUrl": "https://github.com/bryantmh/rush2recompiled"
+    },
+    {
+      "Id": "wario-land-shake-it-native-pc",
+      "Repository": "santiagovalencia109/Wario-Land-Shake-It-Native-PC",
+      "DiscoveryUrl": "https://recomplauncher.com/game/wario-land-shake-it-native-pc",
+      "Status": "manual",
+      "NexusId": "rl-wario-land-shake-it-native-pc",
+      "VerifiedRepositoryUrl": "https://github.com/santiagovalencia109/Wario-Land-Shake-It-Native-PC"
+    },
+    {
+      "Id": "megamanx5recomp",
+      "Repository": "mstan/MegaManX5Recomp",
+      "DiscoveryUrl": "https://recomplauncher.com/game/megamanx5recomp",
+      "Status": "manual",
+      "NexusId": "rl-megamanx5recomp",
+      "VerifiedRepositoryUrl": "https://github.com/mstan/MegaManX5Recomp"
+    },
+    {
+      "Id": "geometry-wars-retro-evolved-2-recompiled",
+      "Repository": "saulob/geometry-wars-retro-evolved-2-recompiled",
+      "DiscoveryUrl": "https://recomplauncher.com/game/geometry-wars-retro-evolved-2-recompiled",
+      "Status": "manual",
+      "NexusId": "rl-geometry-wars-retro-evolved-2-recompiled",
+      "VerifiedRepositoryUrl": "https://github.com/saulob/geometry-wars-retro-evolved-2-recompiled"
+    },
+    {
+      "Id": "vandalhearts-pcport",
+      "Repository": "HalmyLyseas/VandalHearts-PcPort",
+      "DiscoveryUrl": "https://recomplauncher.com/game/vandalhearts-pcport",
+      "Status": "manual",
+      "NexusId": "rl-vandalhearts-pcport",
+      "VerifiedRepositoryUrl": "https://github.com/HalmyLyseas/VandalHearts-PcPort"
+    },
+    {
+      "Id": "project8recomp",
+      "Repository": "theokyr/Project8Recomp",
+      "DiscoveryUrl": "https://recomplauncher.com/game/project8recomp",
+      "Status": "manual",
+      "NexusId": "rl-project8recomp",
+      "VerifiedRepositoryUrl": "https://github.com/theokyr/Project8Recomp"
+    },
+    {
+      "Id": "bloodborne-pc",
+      "Repository": "Supermedo/bloodborne_pc",
+      "DiscoveryUrl": "https://recomplauncher.com/game/bloodborne-pc",
+      "Status": "manual",
+      "NexusId": "rl-bloodborne-pc",
+      "VerifiedRepositoryUrl": "https://github.com/Supermedo/bloodborne_pc"
+    },
+    {
+      "Id": "streetball-revival",
+      "Repository": "luckvj/streetball-revival",
+      "DiscoveryUrl": "https://recomplauncher.com/game/streetball-revival",
+      "Status": "manual",
+      "NexusId": "rl-streetball-revival",
+      "VerifiedRepositoryUrl": "https://github.com/luckvj/streetball-revival"
+    },
+    {
+      "Id": "starwars-renegadesquadron-pc",
+      "Repository": "GTTeancum/StarWars-RenegadeSquadron-PC",
+      "DiscoveryUrl": "https://recomplauncher.com/game/starwars-renegadesquadron-pc",
+      "Status": "manual",
+      "NexusId": "rl-starwars-renegadesquadron-pc",
+      "VerifiedRepositoryUrl": "https://github.com/GTTeancum/StarWars-RenegadeSquadron-PC"
+    },
+    {
+      "Id": "rampagere",
+      "Repository": "jjmhalew/RampageRE",
+      "DiscoveryUrl": "https://recomplauncher.com/game/rampagere",
+      "Status": "manual",
+      "NexusId": "rl-rampagere",
+      "VerifiedRepositoryUrl": "https://github.com/jjmhalew/RampageRE"
+    },
+    {
+      "Id": "sms-launcher",
+      "Repository": "chasem-dev/sms-launcher",
+      "DiscoveryUrl": "https://recomplauncher.com/game/sms-launcher",
+      "Status": "manual",
+      "NexusId": "rl-sms-launcher",
+      "VerifiedRepositoryUrl": "https://github.com/chasem-dev/sms-launcher"
+    },
+    {
+      "Id": "rac-rs",
+      "Repository": "AsobiCodes/rac-rs",
+      "DiscoveryUrl": "https://recomplauncher.com/game/rac-rs",
+      "Status": "manual",
+      "NexusId": "rl-rac-rs",
+      "VerifiedRepositoryUrl": "https://github.com/AsobiCodes/rac-rs"
+    },
+    {
+      "Id": "lasrecomp",
+      "Repository": "peiikai/LASRecomp",
+      "DiscoveryUrl": "https://recomplauncher.com/game/lasrecomp",
+      "Status": "existing",
+      "NexusId": "las-recomp"
+    },
+    {
+      "Id": "letsgo-recomp",
+      "Repository": "raulzrrs/letsgo-recomp",
+      "DiscoveryUrl": "https://recomplauncher.com/game/letsgo-recomp",
+      "Status": "manual",
+      "NexusId": "rl-letsgo-recomp",
+      "VerifiedRepositoryUrl": "https://github.com/raulzrrs/letsgo-recomp"
+    },
+    {
+      "Id": "marathonrecomp",
+      "Repository": "sonicnext-dev/MarathonRecomp",
+      "DiscoveryUrl": "https://recomplauncher.com/game/marathonrecomp",
+      "Status": "manual",
+      "NexusId": "rl-marathonrecomp",
+      "VerifiedRepositoryUrl": "https://github.com/sonicnext-dev/MarathonRecomp"
+    },
+    {
+      "Id": "ssbu-recomp",
+      "Repository": "OpenSmash-Ultimate/ssbu-recomp",
+      "DiscoveryUrl": "https://recomplauncher.com/game/ssbu-recomp",
+      "Status": "manual",
+      "NexusId": "rl-ssbu-recomp",
+      "VerifiedRepositoryUrl": "https://github.com/OpenSmash-Ultimate/ssbu-recomp"
+    },
+    {
+      "Id": "shadowofthecolossus-pc",
+      "Repository": "AjncSystem/ShadowOfTheColossus-PC",
+      "DiscoveryUrl": "https://recomplauncher.com/game/shadowofthecolossus-pc",
+      "Status": "existing",
+      "NexusId": "sotc-original"
+    },
+    {
+      "Id": "iss-pc",
+      "Repository": "HayatoG/iss_pc",
+      "DiscoveryUrl": "https://recomplauncher.com/game/iss-pc",
+      "Status": "existing",
+      "NexusId": "infamous"
+    },
+    {
+      "Id": "tlg-pc",
+      "Repository": "HayatoG/tlg_pc",
+      "DiscoveryUrl": "https://recomplauncher.com/game/tlg-pc",
+      "Status": "existing",
+      "NexusId": "last-guardian"
+    },
+    {
+      "Id": "killzone-shadowfall-pc",
+      "Repository": "lesca-191204/killzone-shadowfall-pc",
+      "DiscoveryUrl": "https://recomplauncher.com/game/killzone-shadowfall-pc",
+      "Status": "manual",
+      "NexusId": "rl-killzone-shadowfall-pc",
+      "VerifiedRepositoryUrl": "https://github.com/lesca-191204/killzone-shadowfall-pc"
+    },
+    {
+      "Id": "dragons-crown-pro-pc",
+      "Repository": "saulob/dragons-crown-pro-pc",
+      "DiscoveryUrl": "https://recomplauncher.com/game/dragons-crown-pro-pc",
+      "Status": "manual",
+      "NexusId": "rl-dragons-crown-pro-pc",
+      "VerifiedRepositoryUrl": "https://github.com/saulob/dragons-crown-pro-pc"
+    },
+    {
+      "Id": "ufc-3-ps4-port-linux-windows",
+      "Repository": "GNSB/UFC-3-PS4-PORT-LINUX-WINDOWS",
+      "DiscoveryUrl": "https://recomplauncher.com/game/ufc-3-ps4-port-linux-windows",
+      "Status": "manual",
+      "NexusId": "rl-ufc-3-ps4-port-linux-windows",
+      "VerifiedRepositoryUrl": "https://github.com/GNSB/UFC-3-PS4-PORT-LINUX-WINDOWS"
+    },
+    {
+      "Id": "medievil-2019-pc-port",
+      "Repository": "bc160201983/medievil_2019_pc_port",
+      "DiscoveryUrl": "https://recomplauncher.com/game/medievil-2019-pc-port",
+      "Status": "existing",
+      "NexusId": "medievil"
+    },
+    {
+      "Id": "unicorn-overlord-pc",
+      "Repository": "hachi23/unicorn_overlord_pc",
+      "DiscoveryUrl": "https://recomplauncher.com/game/unicorn-overlord-pc",
+      "Status": "manual",
+      "NexusId": "rl-unicorn-overlord-pc",
+      "VerifiedRepositoryUrl": "https://github.com/hachi23/unicorn_overlord_pc"
+    },
+    {
+      "Id": "wipeout-pc",
+      "Repository": "AbdelmoumenDeghbouche/wipeout_pc",
+      "DiscoveryUrl": "https://recomplauncher.com/game/wipeout-pc",
+      "Status": "existing",
+      "NexusId": "wipeout"
+    },
+    {
+      "Id": "gr2-pc",
+      "Repository": "HayatoG/gr2_pc",
+      "DiscoveryUrl": "https://recomplauncher.com/game/gr2-pc",
+      "Status": "existing",
+      "NexusId": "gravity-rush-2"
+    },
+    {
+      "Id": "infamous-first-light-pc",
+      "Repository": "VantageEX/infamous-first-light-pc",
+      "DiscoveryUrl": "https://recomplauncher.com/game/infamous-first-light-pc",
+      "Status": "manual",
+      "NexusId": "rl-infamous-first-light-pc",
+      "VerifiedRepositoryUrl": "https://github.com/VantageEX/infamous-first-light-pc"
+    },
+    {
+      "Id": "infamousreborn",
+      "Repository": "whompay/inFAMOUSreborn",
+      "DiscoveryUrl": "https://recomplauncher.com/game/infamousreborn",
+      "Status": "manual",
+      "NexusId": "rl-infamousreborn",
+      "VerifiedRepositoryUrl": "https://github.com/whompay/inFAMOUSreborn"
+    },
+    {
+      "Id": "metroidprimeport",
+      "Repository": "Odrannnn/MetroidPrimePort",
+      "DiscoveryUrl": "https://recomplauncher.com/game/metroidprimeport",
+      "Status": "manual",
+      "NexusId": "rl-metroidprimeport",
+      "VerifiedRepositoryUrl": "https://github.com/Odrannnn/MetroidPrimePort"
+    },
+    {
+      "Id": "eternaldarknessrecomp",
+      "Repository": "griches/EternalDarknessRecomp",
+      "DiscoveryUrl": "https://recomplauncher.com/game/eternaldarknessrecomp",
+      "Status": "manual",
+      "NexusId": "rl-eternaldarknessrecomp",
+      "VerifiedRepositoryUrl": "https://github.com/griches/EternalDarknessRecomp"
+    },
+    {
+      "Id": "nebula",
+      "Repository": "keepvaibin/nebula",
+      "DiscoveryUrl": "https://recomplauncher.com/game/nebula",
+      "Status": "manual",
+      "NexusId": "rl-nebula",
+      "VerifiedRepositoryUrl": "https://github.com/keepvaibin/nebula"
+    },
+    {
+      "Id": "nsmb-wii-multiplayer-recompilation",
+      "Repository": "WitherBlitz/NSMB-Wii-Multiplayer-Recompilation",
+      "DiscoveryUrl": "https://recomplauncher.com/game/nsmb-wii-multiplayer-recompilation",
+      "Status": "manual",
+      "NexusId": "rl-nsmb-wii-multiplayer-recompilation",
+      "VerifiedRepositoryUrl": "https://github.com/WitherBlitz/NSMB-Wii-Multiplayer-Recompilation"
+    },
+    {
+      "Id": "recharged",
+      "Repository": "previouslevelgames/recharged",
+      "DiscoveryUrl": "https://recomplauncher.com/game/recharged",
+      "Status": "manual",
+      "NexusId": "rl-recharged",
+      "VerifiedRepositoryUrl": "https://github.com/previouslevelgames/recharged"
+    },
+    {
+      "Id": "nsmbu-recomp",
+      "Repository": "nsmbu-recomp/nsmbu-recomp",
+      "DiscoveryUrl": "https://recomplauncher.com/game/nsmbu-recomp",
+      "Status": "manual",
+      "NexusId": "rl-nsmbu-recomp",
+      "VerifiedRepositoryUrl": "https://github.com/nsmbu-recomp/nsmbu-recomp"
+    },
+    {
+      "Id": "smm2recomp",
+      "Repository": "smm2recomp/smm2recomp",
+      "DiscoveryUrl": "https://recomplauncher.com/game/smm2recomp",
+      "Status": "manual",
+      "NexusId": "rl-smm2recomp",
+      "VerifiedRepositoryUrl": "https://github.com/smm2recomp/smm2recomp"
+    },
+    {
+      "Id": "hwder",
+      "Repository": "sonsegajp/HWDER",
+      "DiscoveryUrl": "https://recomplauncher.com/game/hwder",
+      "Status": "existing",
+      "NexusId": "hwder"
+    },
+    {
+      "Id": "ssrecomp",
+      "Repository": "ClickingMaster/ssrecomp",
+      "DiscoveryUrl": "https://recomplauncher.com/game/ssrecomp",
+      "Status": "manual",
+      "NexusId": "rl-ssrecomp",
+      "VerifiedRepositoryUrl": "https://github.com/ClickingMaster/ssrecomp"
+    },
+    {
+      "Id": "twipe-00sheven",
+      "Repository": "riseio/TWIPE_00Sheven",
+      "DiscoveryUrl": "https://recomplauncher.com/game/twipe-00sheven",
+      "Status": "manual",
+      "NexusId": "rl-twipe-00sheven",
+      "VerifiedRepositoryUrl": "https://github.com/riseio/TWIPE_00Sheven"
+    },
+    {
+      "Id": "jetforcegemini-recomp",
+      "Repository": "TK22-26/JetForceGemini-Recomp",
+      "DiscoveryUrl": "https://recomplauncher.com/game/jetforcegemini-recomp",
+      "Status": "manual",
+      "NexusId": "rl-jetforcegemini-recomp",
+      "VerifiedRepositoryUrl": "https://github.com/TK22-26/JetForceGemini-Recomp"
+    },
+    {
+      "Id": "snprecomp",
+      "Repository": "wootbeer/snprecomp",
+      "DiscoveryUrl": "https://recomplauncher.com/game/snprecomp",
+      "Status": "manual",
+      "NexusId": "rl-snprecomp",
+      "VerifiedRepositoryUrl": "https://github.com/wootbeer/snprecomp"
+    },
+    {
+      "Id": "supermarioallstarsrecomp",
+      "Repository": "TanookiStudios/SuperMarioAllStarsRecomp",
+      "DiscoveryUrl": "https://recomplauncher.com/game/supermarioallstarsrecomp",
+      "Status": "manual",
+      "NexusId": "rl-supermarioallstarsrecomp",
+      "VerifiedRepositoryUrl": "https://github.com/TanookiStudios/SuperMarioAllStarsRecomp"
+    },
+    {
+      "Id": "darkwatchdarkeredition",
+      "Repository": "linkssy2/DarkwatchDarkerEdition",
+      "DiscoveryUrl": "https://recomplauncher.com/game/darkwatchdarkeredition",
+      "Status": "existing",
+      "NexusId": "darkwatch"
+    },
+    {
+      "Id": "chupathingyce",
+      "Repository": "ChupathingyCE/chupathingyce",
+      "DiscoveryUrl": "https://recomplauncher.com/game/chupathingyce",
+      "Status": "manual",
+      "NexusId": "rl-chupathingyce",
+      "VerifiedRepositoryUrl": "https://github.com/ChupathingyCE/chupathingyce"
+    },
+    {
+      "Id": "doa3-recomp",
+      "Repository": "parkerallan/doa3-recomp",
+      "DiscoveryUrl": "https://recomplauncher.com/game/doa3-recomp",
+      "Status": "manual",
+      "NexusId": "rl-doa3-recomp",
+      "VerifiedRepositoryUrl": "https://github.com/parkerallan/doa3-recomp"
+    },
+    {
+      "Id": "tootawersrecomp",
+      "Repository": "Gumpolas/TooTawersRecomp",
+      "DiscoveryUrl": "https://recomplauncher.com/game/tootawersrecomp",
+      "Status": "manual",
+      "NexusId": "rl-tootawersrecomp",
+      "VerifiedRepositoryUrl": "https://github.com/Gumpolas/TooTawersRecomp"
+    },
+    {
+      "Id": "urbanchaosriotresponseburneredition",
+      "Repository": "linkssy2/UrbanChaosRiotResponseBurnerEdition",
+      "DiscoveryUrl": "https://recomplauncher.com/game/urbanchaosriotresponseburneredition",
+      "Status": "manual",
+      "NexusId": "rl-urbanchaosriotresponseburneredition",
+      "VerifiedRepositoryUrl": "https://github.com/linkssy2/UrbanChaosRiotResponseBurnerEdition"
+    },
+    {
+      "Id": "pgr2-recomp",
+      "Repository": "hk21x/pgr2-recomp",
+      "DiscoveryUrl": "https://recomplauncher.com/game/pgr2-recomp",
+      "Status": "manual",
+      "NexusId": "rl-pgr2-recomp",
+      "VerifiedRepositoryUrl": "https://github.com/hk21x/pgr2-recomp"
+    },
+    {
+      "Id": "buffy-chaos-bleeds-pc",
+      "Repository": "KaikoClanworth1/buffy-chaos-bleeds-pc",
+      "DiscoveryUrl": "https://recomplauncher.com/game/buffy-chaos-bleeds-pc",
+      "Status": "manual",
+      "NexusId": "rl-buffy-chaos-bleeds-pc",
+      "VerifiedRepositoryUrl": "https://github.com/KaikoClanworth1/buffy-chaos-bleeds-pc"
+    },
+    {
+      "Id": "pgr1-recomp",
+      "Repository": "hk21x/pgr1-recomp",
+      "DiscoveryUrl": "https://recomplauncher.com/game/pgr1-recomp",
+      "Status": "manual",
+      "NexusId": "rl-pgr1-recomp",
+      "VerifiedRepositoryUrl": "https://github.com/hk21x/pgr1-recomp"
+    },
+    {
+      "Id": "hl360-forza2",
+      "Repository": "0herculabs/hl360-Forza2",
+      "DiscoveryUrl": "https://recomplauncher.com/game/hl360-forza2",
+      "Status": "existing",
+      "NexusId": "forza2"
+    },
+    {
+      "Id": "ssf2t-hd-remix-recompiled",
+      "Repository": "saulob/ssf2t-hd-remix-recompiled",
+      "DiscoveryUrl": "https://recomplauncher.com/game/ssf2t-hd-remix-recompiled",
+      "Status": "manual",
+      "NexusId": "rl-ssf2t-hd-remix-recompiled",
+      "VerifiedRepositoryUrl": "https://github.com/saulob/ssf2t-hd-remix-recompiled"
+    },
+    {
+      "Id": "wwe12-pc",
+      "Repository": "iMrBurn/wwe12-pc",
+      "DiscoveryUrl": "https://recomplauncher.com/game/wwe12-pc",
+      "Status": "manual",
+      "NexusId": "rl-wwe12-pc",
+      "VerifiedRepositoryUrl": "https://github.com/iMrBurn/wwe12-pc"
+    },
+    {
+      "Id": "hard-corps-uprising-recompiled",
+      "Repository": "saulob/hard-corps-uprising-recompiled",
+      "DiscoveryUrl": "https://recomplauncher.com/game/hard-corps-uprising-recompiled",
+      "Status": "manual",
+      "NexusId": "rl-hard-corps-uprising-recompiled",
+      "VerifiedRepositoryUrl": "https://github.com/saulob/hard-corps-uprising-recompiled"
+    },
+    {
+      "Id": "souls-of-the-reaper",
+      "Repository": "Boron853/Souls-of-the-Reaper",
+      "DiscoveryUrl": "https://recomplauncher.com/game/souls-of-the-reaper",
+      "Status": "manual",
+      "NexusId": "rl-souls-of-the-reaper",
+      "VerifiedRepositoryUrl": "https://github.com/Boron853/Souls-of-the-Reaper"
+    },
+    {
+      "Id": "broken-bond-recomp",
+      "Repository": "jorjbarbosa/broken-bond-recomp",
+      "DiscoveryUrl": "https://recomplauncher.com/game/broken-bond-recomp",
+      "Status": "manual",
+      "NexusId": "rl-broken-bond-recomp",
+      "VerifiedRepositoryUrl": "https://github.com/jorjbarbosa/broken-bond-recomp"
+    },
+    {
+      "Id": "soulcalibur2hd-recomp",
+      "Repository": "n0madic/Soulcalibur2HD-recomp",
+      "DiscoveryUrl": "https://recomplauncher.com/game/soulcalibur2hd-recomp",
+      "Status": "manual",
+      "NexusId": "rl-soulcalibur2hd-recomp",
+      "VerifiedRepositoryUrl": "https://github.com/n0madic/Soulcalibur2HD-recomp"
+    },
+    {
+      "Id": "project-re-visited-re3",
+      "Repository": "BrazilianHobbyist/Project-RE-Visited-RE3",
+      "DiscoveryUrl": "https://recomplauncher.com/game/project-re-visited-re3",
+      "Status": "manual",
+      "NexusId": "rl-project-re-visited-re3",
+      "VerifiedRepositoryUrl": "https://github.com/BrazilianHobbyist/Project-RE-Visited-RE3"
+    },
+    {
+      "Id": "wipeout2k97xl",
+      "Repository": "NJH-1001/Wipeout2K97XL",
+      "DiscoveryUrl": "https://recomplauncher.com/game/wipeout2k97xl",
+      "Status": "manual",
+      "NexusId": "rl-wipeout2k97xl",
+      "VerifiedRepositoryUrl": "https://github.com/NJH-1001/Wipeout2K97XL"
+    },
+    {
+      "Id": "mgs-reintegral",
+      "Repository": "Drommedhar/mgs-reintegral",
+      "DiscoveryUrl": "https://recomplauncher.com/game/mgs-reintegral",
+      "Status": "manual",
+      "NexusId": "rl-mgs-reintegral",
+      "VerifiedRepositoryUrl": "https://github.com/Drommedhar/mgs-reintegral"
+    },
+    {
+      "Id": "vice-city-stories-recomp",
+      "Repository": "OverkillLabs3/vice-city-stories-recomp",
+      "DiscoveryUrl": "https://recomplauncher.com/game/vice-city-stories-recomp",
+      "Status": "manual",
+      "NexusId": "rl-vice-city-stories-recomp",
+      "VerifiedRepositoryUrl": "https://github.com/OverkillLabs3/vice-city-stories-recomp"
+    },
+    {
+      "Id": "takedawn",
+      "Repository": "xenophobentx/takedawn",
+      "DiscoveryUrl": "https://recomplauncher.com/game/takedawn",
+      "Status": "manual",
+      "NexusId": "rl-takedawn",
+      "VerifiedRepositoryUrl": "https://github.com/xenophobentx/takedawn"
+    },
+    {
+      "Id": "gt4-staticrecomp",
+      "Repository": "moesuito/gt4-staticrecomp",
+      "DiscoveryUrl": "https://recomplauncher.com/game/gt4-staticrecomp",
+      "Status": "manual",
+      "NexusId": "rl-gt4-staticrecomp",
+      "VerifiedRepositoryUrl": "https://github.com/moesuito/gt4-staticrecomp"
+    },
+    {
+      "Id": "crashbandicoot-launcher",
+      "Repository": "Matteo842/CrashBandicoot-Launcher",
+      "DiscoveryUrl": "https://recomplauncher.com/game/crashbandicoot-launcher",
+      "Status": "manual",
+      "NexusId": "rl-crashbandicoot-launcher",
+      "VerifiedRepositoryUrl": "https://github.com/Matteo842/CrashBandicoot-Launcher"
+    },
+    {
+      "Id": "mhgurecomp",
+      "Repository": "morerokk/MHGURecomp",
+      "DiscoveryUrl": "https://recomplauncher.com/game/mhgurecomp",
+      "Status": "manual",
+      "NexusId": "rl-mhgurecomp",
+      "VerifiedRepositoryUrl": "https://github.com/morerokk/MHGURecomp"
+    },
+    {
+      "Id": "perfectdarkzerorecomp",
+      "Repository": "nikolaygorb/PerfectDarkZeroRecomp",
+      "DiscoveryUrl": "https://recomplauncher.com/game/perfectdarkzerorecomp",
+      "Status": "manual",
+      "NexusId": "rl-perfectdarkzerorecomp",
+      "VerifiedRepositoryUrl": "https://github.com/nikolaygorb/PerfectDarkZeroRecomp"
+    },
+    {
+      "Id": "ghclassic",
+      "Repository": "noahbaxter/GHClassic",
+      "DiscoveryUrl": "https://recomplauncher.com/game/ghclassic",
+      "Status": "manual",
+      "NexusId": "rl-ghclassic",
+      "VerifiedRepositoryUrl": "https://github.com/noahbaxter/GHClassic"
+    },
+    {
+      "Id": "whopping-recompilation-collection",
+      "Repository": "TekRantGaming/whopping-recompilation-collection",
+      "DiscoveryUrl": "https://recomplauncher.com/game/whopping-recompilation-collection",
+      "Status": "manual",
+      "NexusId": "rl-whopping-recompilation-collection",
+      "VerifiedRepositoryUrl": "https://github.com/TekRantGaming/whopping-recompilation-collection"
+    },
+    {
+      "Id": "paperboat",
+      "Repository": "HarbourMasters/PaperBoat",
+      "DiscoveryUrl": "https://recomplauncher.com/game/paperboat",
+      "Status": "manual",
+      "NexusId": "rl-paperboat",
+      "VerifiedRepositoryUrl": "https://github.com/HarbourMasters/PaperBoat"
+    },
+    {
+      "Id": "summitstrike-recomp",
+      "Repository": "ElKev118/summitstrike-recomp",
+      "DiscoveryUrl": "https://recomplauncher.com/game/summitstrike-recomp",
+      "Status": "manual",
+      "NexusId": "rl-summitstrike-recomp",
+      "VerifiedRepositoryUrl": "https://github.com/ElKev118/summitstrike-recomp"
+    },
+    {
+      "Id": "voldorium",
+      "Repository": "enrique363/voldorium",
+      "DiscoveryUrl": "https://recomplauncher.com/game/voldorium",
+      "Status": "manual",
+      "NexusId": "rl-voldorium",
+      "VerifiedRepositoryUrl": "https://github.com/enrique363/voldorium"
+    },
+    {
+      "Id": "bigodao",
+      "Repository": "GABRIELNNK/Bigodao",
+      "DiscoveryUrl": "https://recomplauncher.com/game/bigodao",
+      "Status": "manual",
+      "NexusId": "rl-bigodao",
+      "VerifiedRepositoryUrl": "https://github.com/GABRIELNNK/Bigodao"
+    },
+    {
+      "Id": "forzahorizon1-reimagined",
+      "Repository": "FH1-ReImagined/ForzaHorizon1-ReImagined",
+      "DiscoveryUrl": "https://recomplauncher.com/game/forzahorizon1-reimagined",
+      "Status": "manual",
+      "NexusId": "rl-forzahorizon1-reimagined",
+      "VerifiedRepositoryUrl": "https://github.com/FH1-ReImagined/ForzaHorizon1-ReImagined"
+    },
+    {
+      "Id": "re-amped2",
+      "Repository": "Nico-D-eu/RE-Amped2",
+      "DiscoveryUrl": "https://recomplauncher.com/game/re-amped2",
+      "Status": "manual",
+      "NexusId": "rl-re-amped2",
+      "VerifiedRepositoryUrl": "https://github.com/Nico-D-eu/RE-Amped2"
+    },
+    {
+      "Id": "untildawn-pc",
+      "Repository": "SuperCatElvis/UntilDawn_PC",
+      "DiscoveryUrl": "https://recomplauncher.com/game/untildawn-pc",
+      "Status": "manual",
+      "NexusId": "rl-untildawn-pc",
+      "VerifiedRepositoryUrl": "https://github.com/SuperCatElvis/UntilDawn_PC"
+    },
+    {
+      "Id": "cristalis",
+      "Repository": "Claudio5702/Cristalis",
+      "DiscoveryUrl": "https://recomplauncher.com/game/cristalis",
+      "Status": "manual",
+      "NexusId": "rl-cristalis",
+      "VerifiedRepositoryUrl": "https://github.com/Claudio5702/Cristalis"
+    },
+    {
+      "Id": "athelas",
+      "Repository": "Shagg88/Athelas",
+      "DiscoveryUrl": "https://recomplauncher.com/game/athelas",
+      "Status": "manual",
+      "NexusId": "rl-athelas",
+      "VerifiedRepositoryUrl": "https://github.com/Shagg88/Athelas"
+    },
+    {
+      "Id": "cogbox",
+      "Repository": "Shagg88/COGBox",
+      "DiscoveryUrl": "https://recomplauncher.com/game/cogbox",
+      "Status": "manual",
+      "NexusId": "rl-cogbox",
+      "VerifiedRepositoryUrl": "https://github.com/Shagg88/COGBox"
+    },
+    {
+      "Id": "valkyrierecomp",
+      "Repository": "Ed1z19/ValkyrieRecomp",
+      "DiscoveryUrl": "https://recomplauncher.com/game/valkyrierecomp",
+      "Status": "manual",
+      "NexusId": "rl-valkyrierecomp",
+      "VerifiedRepositoryUrl": "https://github.com/Ed1z19/ValkyrieRecomp"
+    },
+    {
+      "Id": "dw5xl-recomp",
+      "Repository": "TheSlackbringer/dw5xl-recomp",
+      "DiscoveryUrl": "https://recomplauncher.com/game/dw5xl-recomp",
+      "Status": "manual",
+      "NexusId": "rl-dw5xl-recomp",
+      "VerifiedRepositoryUrl": "https://github.com/TheSlackbringer/dw5xl-recomp"
+    },
+    {
+      "Id": "kirbyrecomp",
+      "Repository": "xtamqispeak/KirbyRecomp",
+      "DiscoveryUrl": "https://recomplauncher.com/game/kirbyrecomp",
+      "Status": "manual",
+      "NexusId": "rl-kirbyrecomp",
+      "VerifiedRepositoryUrl": "https://github.com/xtamqispeak/KirbyRecomp"
+    },
+    {
+      "Id": "saw2recomp",
+      "Repository": "Matt-code-d/Saw2Recomp",
+      "DiscoveryUrl": "https://recomplauncher.com/game/saw2recomp",
+      "Status": "manual",
+      "NexusId": "rl-saw2recomp",
+      "VerifiedRepositoryUrl": "https://github.com/Matt-code-d/Saw2Recomp"
+    },
+    {
+      "Id": "srw64-recomp",
+      "Repository": "dyzz/srw64-recomp",
+      "DiscoveryUrl": "https://recomplauncher.com/game/srw64-recomp",
+      "Status": "manual",
+      "NexusId": "rl-srw64-recomp",
+      "VerifiedRepositoryUrl": "https://github.com/dyzz/srw64-recomp"
+    },
+    {
+      "Id": "f-zero-glinux",
+      "Repository": "Mabec-games/F-ZERO-GLINUX",
+      "DiscoveryUrl": "https://recomplauncher.com/game/f-zero-glinux",
+      "Status": "excluded-no-windows",
+      "VerifiedRepositoryUrl": "https://github.com/Mabec-games/F-ZERO-GLINUX"
+    },
+    {
+      "Id": "lego-dimensions-pc",
+      "Repository": "vascon-es/lego-dimensions-pc",
+      "DiscoveryUrl": "https://recomplauncher.com/game/lego-dimensions-pc",
+      "Status": "manual",
+      "NexusId": "rl-lego-dimensions-pc",
+      "VerifiedRepositoryUrl": "https://github.com/vascon-es/lego-dimensions-pc"
+    },
+    {
+      "Id": "razdor",
+      "Repository": "indicozy/razdor",
+      "DiscoveryUrl": "https://recomplauncher.com/game/razdor",
+      "Status": "manual",
+      "NexusId": "rl-razdor",
+      "VerifiedRepositoryUrl": "https://github.com/indicozy/razdor"
+    },
+    {
+      "Id": "laserlords",
+      "Repository": "RandyVie/Laserlords",
+      "DiscoveryUrl": "https://recomplauncher.com/game/laserlords",
+      "Status": "manual",
+      "NexusId": "rl-laserlords",
+      "VerifiedRepositoryUrl": "https://github.com/RandyVie/Laserlords"
+    },
+    {
+      "Id": "brawl",
+      "Repository": "doldecomp/brawl",
+      "DiscoveryUrl": "https://recomplauncher.com/game/brawl",
+      "Status": "manual",
+      "NexusId": "rl-brawl",
+      "VerifiedRepositoryUrl": "https://github.com/doldecomp/brawl"
+    },
+    {
+      "Id": "dqix-enhanced",
+      "Repository": "sackchief/dqix-enhanced",
+      "DiscoveryUrl": "https://recomplauncher.com/game/dqix-enhanced",
+      "Status": "manual",
+      "NexusId": "rl-dqix-enhanced",
+      "VerifiedRepositoryUrl": "https://github.com/sackchief/dqix-enhanced"
+    },
+    {
+      "Id": "xenogears-pc",
+      "Repository": "exyled/Xenogears-PC",
+      "DiscoveryUrl": "https://recomplauncher.com/game/xenogears-pc",
+      "Status": "manual",
+      "NexusId": "rl-xenogears-pc",
+      "VerifiedRepositoryUrl": "https://github.com/exyled/Xenogears-PC"
+    },
+    {
+      "Id": "gears3-azura",
+      "Repository": "Carolux97/Gears3-Azura",
+      "DiscoveryUrl": "https://recomplauncher.com/game/gears3-azura",
+      "Status": "manual",
+      "NexusId": "rl-gears3-azura",
+      "VerifiedRepositoryUrl": "https://github.com/Carolux97/Gears3-Azura"
+    },
+    {
+      "Id": "atlantis-native",
+      "Repository": "ripleyXLR8/atlantis-native",
+      "DiscoveryUrl": "https://recomplauncher.com/game/atlantis-native",
+      "Status": "manual",
+      "NexusId": "rl-atlantis-native",
+      "VerifiedRepositoryUrl": "https://github.com/ripleyXLR8/atlantis-native"
+    },
+    {
+      "Id": "tmnt-iv-turtles-in-time-pc-recomp",
+      "Repository": "emanuelcnjunior/TMNT-IV-Turtles-in-Time-PC-Recomp",
+      "DiscoveryUrl": "https://recomplauncher.com/game/tmnt-iv-turtles-in-time-pc-recomp",
+      "Status": "manual",
+      "NexusId": "rl-tmnt-iv-turtles-in-time-pc-recomp",
+      "VerifiedRepositoryUrl": "https://github.com/emanuelcnjunior/TMNT-IV-Turtles-in-Time-PC-Recomp"
+    },
+    {
+      "Id": "splatterhouse-decomp",
+      "Repository": "0c0de/splatterhouse-decomp",
+      "DiscoveryUrl": "https://recomplauncher.com/game/splatterhouse-decomp",
+      "Status": "manual",
+      "NexusId": "rl-splatterhouse-decomp",
+      "VerifiedRepositoryUrl": "https://github.com/0c0de/splatterhouse-decomp"
+    },
+    {
+      "Id": "knack-pc",
+      "Repository": "AbdelmoumenDeghbouche/knack_pc",
+      "DiscoveryUrl": "https://recomplauncher.com/game/knack-pc",
+      "Status": "existing",
+      "NexusId": "knack"
+    },
+    {
+      "Id": "sote-recomp",
+      "Repository": "GTTeancum/SotE-Recomp",
+      "DiscoveryUrl": "https://recomplauncher.com/game/sote-recomp",
+      "Status": "manual",
+      "NexusId": "rl-sote-recomp",
+      "VerifiedRepositoryUrl": "https://github.com/GTTeancum/SotE-Recomp"
+    },
+    {
+      "Id": "urban-reign-recomp",
+      "Repository": "thiagordsfx/urban-reign-recomp",
+      "DiscoveryUrl": "https://recomplauncher.com/game/urban-reign-recomp",
+      "Status": "manual",
+      "NexusId": "rl-urban-reign-recomp",
+      "VerifiedRepositoryUrl": "https://github.com/thiagordsfx/urban-reign-recomp"
+    },
+    {
+      "Id": "timesplitters",
+      "Repository": "GTTeancum/Timesplitters",
+      "DiscoveryUrl": "https://recomplauncher.com/game/timesplitters",
+      "Status": "manual",
+      "NexusId": "rl-timesplitters",
+      "VerifiedRepositoryUrl": "https://github.com/GTTeancum/Timesplitters"
+    },
+    {
+      "Id": "godhand-port",
+      "Repository": "Ryzellx/godhand-port",
+      "DiscoveryUrl": "https://recomplauncher.com/game/godhand-port",
+      "Status": "manual",
+      "NexusId": "rl-godhand-port",
+      "VerifiedRepositoryUrl": "https://github.com/Ryzellx/godhand-port"
+    },
+    {
+      "Id": "sakura-wars-ps4rt",
+      "Repository": "HekamiAeon/Sakura-Wars-PS4RT",
+      "DiscoveryUrl": "https://recomplauncher.com/game/sakura-wars-ps4rt",
+      "Status": "excluded-no-windows",
+      "VerifiedRepositoryUrl": "https://github.com/HekamiAeon/Sakura-Wars-PS4RT"
+    },
+    {
+      "Id": "crash-twinsanity-windows",
+      "Repository": "GioPixelGH/Crash-Twinsanity-Windows",
+      "DiscoveryUrl": "https://recomplauncher.com/game/crash-twinsanity-windows",
+      "Status": "manual",
+      "NexusId": "rl-crash-twinsanity-windows",
+      "VerifiedRepositoryUrl": "https://github.com/GioPixelGH/Crash-Twinsanity-Windows"
+    },
+    {
+      "Id": "timesplitters-future-perfect-pc",
+      "Repository": "TheDoffman/timesplitters-future-perfect-pc",
+      "DiscoveryUrl": "https://recomplauncher.com/game/timesplitters-future-perfect-pc",
+      "Status": "manual",
+      "NexusId": "rl-timesplitters-future-perfect-pc",
+      "VerifiedRepositoryUrl": "https://github.com/TheDoffman/timesplitters-future-perfect-pc"
+    },
+    {
+      "Id": "project-pyrrhus",
+      "Repository": "undecuple/project-pyrrhus",
+      "DiscoveryUrl": "https://recomplauncher.com/game/project-pyrrhus",
+      "Status": "manual",
+      "NexusId": "rl-project-pyrrhus",
+      "VerifiedRepositoryUrl": "https://github.com/undecuple/project-pyrrhus"
+    },
+    {
+      "Id": "nfl-head-coach-09-static-recomp",
+      "Repository": "tools81/nfl-head-coach-09-static-recomp",
+      "DiscoveryUrl": "https://recomplauncher.com/game/nfl-head-coach-09-static-recomp",
+      "Status": "manual",
+      "NexusId": "rl-nfl-head-coach-09-static-recomp",
+      "VerifiedRepositoryUrl": "https://github.com/tools81/nfl-head-coach-09-static-recomp"
+    },
+    {
+      "Id": "project-helghast",
+      "Repository": "undecuple/project-helghast",
+      "DiscoveryUrl": "https://recomplauncher.com/game/project-helghast",
+      "Status": "manual",
+      "NexusId": "rl-project-helghast",
+      "VerifiedRepositoryUrl": "https://github.com/undecuple/project-helghast"
+    },
+    {
+      "Id": "re-code-veronica-ps3-hd-recomp-pc",
+      "Repository": "kastieloficial/RE-Code-Veronica-PS3-HD-Recomp-PC",
+      "DiscoveryUrl": "https://recomplauncher.com/game/re-code-veronica-ps3-hd-recomp-pc",
+      "Status": "existing",
+      "NexusId": "code-veronica"
+    },
+    {
+      "Id": "juiced2-recompiled",
+      "Repository": "anishchandra24/Juiced2-Recompiled",
+      "DiscoveryUrl": "https://recomplauncher.com/game/juiced2-recompiled",
+      "Status": "manual",
+      "NexusId": "rl-juiced2-recompiled",
+      "VerifiedRepositoryUrl": "https://github.com/anishchandra24/Juiced2-Recompiled"
+    },
+    {
+      "Id": "portheon",
+      "Repository": "XAndromedaXR/PORTHEON",
+      "DiscoveryUrl": "https://recomplauncher.com/game/portheon",
+      "Status": "manual",
+      "NexusId": "rl-portheon",
+      "VerifiedRepositoryUrl": "https://github.com/XAndromedaXR/PORTHEON"
+    },
+    {
+      "Id": "sneaky-whopper-recomp",
+      "Repository": "Guuzzeji/sneaky-whopper-recomp",
+      "DiscoveryUrl": "https://recomplauncher.com/game/sneaky-whopper-recomp",
+      "Status": "manual",
+      "NexusId": "rl-sneaky-whopper-recomp",
+      "VerifiedRepositoryUrl": "https://github.com/Guuzzeji/sneaky-whopper-recomp"
+    },
+    {
+      "Id": "project-veronica",
+      "Repository": "camybiohazard/Project-Veronica",
+      "DiscoveryUrl": "https://recomplauncher.com/game/project-veronica",
+      "Status": "manual",
+      "NexusId": "rl-project-veronica",
+      "VerifiedRepositoryUrl": "https://github.com/camybiohazard/Project-Veronica"
+    },
+    {
+      "Id": "newsuperpaperbros",
+      "Repository": "josiahg2502-glitch/NewSuperPaperBros",
+      "DiscoveryUrl": "https://recomplauncher.com/game/newsuperpaperbros",
+      "Status": "manual",
+      "NexusId": "rl-newsuperpaperbros",
+      "VerifiedRepositoryUrl": "https://github.com/josiahg2502-glitch/NewSuperPaperBros"
+    },
+    {
+      "Id": "mother3recomp",
+      "Repository": "josiahg2502-glitch/Mother3Recomp",
+      "DiscoveryUrl": "https://recomplauncher.com/game/mother3recomp",
+      "Status": "manual",
+      "NexusId": "rl-mother3recomp",
+      "VerifiedRepositoryUrl": "https://github.com/josiahg2502-glitch/Mother3Recomp"
+    },
+    {
+      "Id": "regh2",
+      "Repository": "jillsandwich1998/reGH2",
+      "DiscoveryUrl": "https://recomplauncher.com/game/regh2",
+      "Status": "excluded-no-windows",
+      "VerifiedRepositoryUrl": "https://github.com/jillsandwich1998/reGH2"
+    },
+    {
+      "Id": "marvel-ultimate-alliance-bundle-recompiled",
+      "Repository": "saulob/marvel-ultimate-alliance-bundle-recompiled",
+      "DiscoveryUrl": "https://recomplauncher.com/game/marvel-ultimate-alliance-bundle-recompiled",
+      "Status": "manual",
+      "NexusId": "rl-marvel-ultimate-alliance-bundle-recompiled",
+      "VerifiedRepositoryUrl": "https://github.com/saulob/marvel-ultimate-alliance-bundle-recompiled"
+    },
+    {
+      "Id": "maddennfl08-recompiled",
+      "Repository": "anishchandra24/MaddenNFL08-Recompiled",
+      "DiscoveryUrl": "https://recomplauncher.com/game/maddennfl08-recompiled",
+      "Status": "manual",
+      "NexusId": "rl-maddennfl08-recompiled",
+      "VerifiedRepositoryUrl": "https://github.com/anishchandra24/MaddenNFL08-Recompiled"
+    },
+    {
+      "Id": "nhl2k8-recompiled",
+      "Repository": "anishchandra24/NHL2K8-Recompiled",
+      "DiscoveryUrl": "https://recomplauncher.com/game/nhl2k8-recompiled",
+      "Status": "manual",
+      "NexusId": "rl-nhl2k8-recompiled",
+      "VerifiedRepositoryUrl": "https://github.com/anishchandra24/NHL2K8-Recompiled"
+    },
+    {
+      "Id": "freedomunbound",
+      "Repository": "Dudux42/FreedomUnbound",
+      "DiscoveryUrl": "https://recomplauncher.com/game/freedomunbound",
+      "Status": "manual",
+      "NexusId": "rl-freedomunbound",
+      "VerifiedRepositoryUrl": "https://github.com/Dudux42/FreedomUnbound"
+    },
+    {
+      "Id": "smash4pc",
+      "Repository": "josiahg2502-glitch/Smash4PC",
+      "DiscoveryUrl": "https://recomplauncher.com/game/smash4pc",
+      "Status": "manual",
+      "NexusId": "rl-smash4pc",
+      "VerifiedRepositoryUrl": "https://github.com/josiahg2502-glitch/Smash4PC"
+    },
+    {
+      "Id": "castlevania-cod-recomp",
+      "Repository": "Neguchads/Castlevania-COD-Recomp",
+      "DiscoveryUrl": "https://recomplauncher.com/game/castlevania-cod-recomp",
+      "Status": "manual",
+      "NexusId": "rl-castlevania-cod-recomp",
+      "VerifiedRepositoryUrl": "https://github.com/Neguchads/Castlevania-COD-Recomp"
+    },
+    {
+      "Id": "piratesatworldsendrecomp",
+      "Repository": "ElGuslml/PiratesAtWorldsEndRecomp",
+      "DiscoveryUrl": "https://recomplauncher.com/game/piratesatworldsendrecomp",
+      "Status": "automatic",
+      "NexusId": "rl-piratesatworldsendrecomp",
+      "VerifiedRepositoryUrl": "https://github.com/ElGuslml/PiratesAtWorldsEndRecomp"
+    },
+    {
+      "Id": "uncharted-collection-pc",
+      "Repository": "zorde23/Uncharted_Collection_PC",
+      "DiscoveryUrl": "https://recomplauncher.com/game/uncharted-collection-pc",
+      "Status": "manual",
+      "NexusId": "rl-uncharted-collection-pc",
+      "VerifiedRepositoryUrl": "https://github.com/zorde23/Uncharted_Collection_PC"
+    },
+    {
+      "Id": "skate3recomp-plus",
+      "Repository": "dougieprishpreed/skate3recomp-plus",
+      "DiscoveryUrl": "https://recomplauncher.com/game/skate3recomp-plus",
+      "Status": "manual",
+      "NexusId": "rl-skate3recomp-plus",
+      "VerifiedRepositoryUrl": "https://github.com/dougieprishpreed/skate3recomp-plus"
+    }
+  ]
+}

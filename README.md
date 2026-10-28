@@ -2,7 +2,13 @@
 
 Launcher de biblioteca para ports de PC, com interface imersiva e artwork do jogo selecionado. Aplicativo nativo WPF para **Windows 11 x64**, com .NET Framework 4.8, que já acompanha o Windows 11. Não precisa de Node, Python, navegador, conta ou permissão de administrador para executar.
 
-Na **1.4.0**, a pesquisa de **28/10/2026** acrescenta **12 perfis** ao catálogo, agora com **42 fontes**: 34 com download GitHub, 1 com importação do ZIP oficial e 7 com preparação manual.
+Na **1.5.0**, o catálogo indicado do [RecompLauncher](https://recomplauncher.com/?lang=pt-BR) foi comparado com o NEXUS: **232 novas fontes**, totalizando **274**. São **44 downloads GitHub validados**, **1 importação de ZIP oficial** e **229 entradas de preparação manual / desenvolvimento**. Esses números representam projetos e forks, não jogos únicos. O catálogo fica incluído no aplicativo; não há sincronização automática com o site.
+
+Dez novos downloads Windows x64: Zelda 64: Recompiled, Ship of Harkinian, SpaghettiKart (Mario Kart 64), 2 Ship 2 Harkinian, Starship (Star Fox 64), Banjo: Recompiled, Ghostship (Super Mario 64), Donkey Kong 64: Recompiled, Fable II e Pirates of the Caribbean: At World's End. Os ZIPs oficiais foram conferidos por SHA-256 e arquitetura AMD64, sem executar os jogos. Fable II possui launcher separado para Configurar; Pirates abre seu launcher original também em Jogar. Os ports N64 preparam a ROM e configuram opções dentro do próprio aplicativo.
+
+O catálogo agora possui **busca por jogo, port ou repositório**, filtro por tipo de instalação e filtros próprios de Nintendo 64, GameCube, Wii, Wii U, Super Nintendo, Game Boy, Game Boy Advance, Nintendo DS, PlayStation, PlayStation 2, PSP e Dreamcast. Perfis manuais têm o botão **Abrir projeto**; seus pacotes Windows e sua integração automática ainda não foram validados pelo NEXUS. Quatro projetos publicados apenas para outros sistemas foram excluídos. Consulte a lista e os limites em [CATALOG.md](CATALOG.md), e o registro da comparação em [assets/catalog-sources.json](assets/catalog-sources.json).
+
+Na **1.4.0**, a pesquisa de **28/10/2026** acrescentou **12 perfis** ao catálogo, então com **42 fontes**: 34 com download GitHub, 1 com importação do ZIP oficial e 7 com preparação manual.
 
 - **PS4:** Knack, Knack II e WipEout Omega Collection.
 - **PS3:** Resident Evil Code: Veronica X HD e Drakengard 3.

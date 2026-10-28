@@ -15,7 +15,7 @@ namespace Nexus {
     static int checks;static void Check(bool value,string name){if(!value)throw new Exception("Catalog: "+name);checks++;}
     static void Reject(Action action,string name){try{action();}catch{checks++;return;}throw new Exception("Catalog: expected rejection "+name);}
     public static int Run(string root){
-      checks=0;var entries=PortCatalog.LoadEntries();Check(entries.Count==42,"42 catalog profiles");Check(entries.Select(e=>e.Identity).Distinct().Count()==42,"distinct sources including Shadow forks");
+      checks=0;var entries=PortCatalog.LoadEntries();Check(entries.Count==274,"274 catalog profiles");Check(entries.Select(e=>e.Identity).Distinct(StringComparer.OrdinalIgnoreCase).Count()==274,"distinct sources including Shadow forks");
       var entry=entries.First(e=>e.Id=="gow3");string url="https://github.com/"+entry.Repository+"/releases/download/test/gow3-windows.zip";
       var payload=new {tag_name="test",html_url="https://github.com/"+entry.Repository+"/releases/tag/test",draft=false,prerelease=false,assets=new[]{new{name="gow3-windows.zip",size=100,browser_download_url=url,digest=(string)null},new{name="source.zip",size=100,browser_download_url=url,digest=(string)null},new{name="linux.AppImage",size=100,browser_download_url=url,digest=(string)null}}};
       string json=new JavaScriptSerializer().Serialize(payload);Check(PortCatalog.ParseRelease(entry,json).AssetName=="gow3-windows.zip","select Windows asset without source/linux files");
@@ -66,6 +66,15 @@ namespace Nexus {
       Reject(()=>FolderLaunch.Validate(pgrGame,Path.Combine(root,"missing-folder")),"folder selector rejects missing data");var sourceLibrary=new Library();sourceLibrary.Games.Add(conkerGame);var sourceStore=new Store(Path.Combine(root,"source-store"));sourceStore.Save(sourceLibrary);Check(sourceStore.Load().Games[0].SourceGameDirectory==folderGame,"native source folder persists across restart");
       foreach(string id in new[]{"knack2","drakengard3","conker-lr","las-recomp"})Check(PortCatalog.BundledRelease(entries.First(e=>e.Id==id)).IsPrerelease,"experimental release stays visibly marked "+id);
       var stableBlue=entries.First(e=>e.Id=="blue-dragon");Check(!PortCatalog.BundledRelease(stableBlue).IsPrerelease&&!PortCatalog.BundledRelease(stableBlue).AssetName.Contains("symbols"),"Blue Dragon selects stable game package without nightly or symbols");
+      Check(PortCatalog.Filter(entries,"Nintendo 64","  mario kart  ",1).Single().Id=="rl-spaghettikart","catalog search combines trimmed game title, platform and automatic mode");
+      Check(PortCatalog.Filter(entries,Platforms.All[0],"HarbourMasters",1).Count==4,"catalog search finds repositories across titles");
+      Check(PortCatalog.Filter(entries,"Nintendo 64","",2).All(e=>e.ProjectOnly)&&PortCatalog.Filter(entries,"Nintendo 64","",2).Count>0,"manual filter keeps unvalidated profiles explicit");
+      Check(PortCatalog.Filter(entries,"Xbox","Mario Kart",0).Count==0,"catalog search respects platform");
+      Check(entries.Count(e=>!e.ProjectOnly&&!e.ManualPackage)==44&&entries.Count(e=>e.ManualPackage)==1&&entries.Count(e=>e.ProjectOnly)==229,"catalog install modes reflect actual validated coverage");
+      Check(entries.Where(e=>e.Id.StartsWith("rl-")&&!e.ProjectOnly).Count()==10,"ten separately audited RecompLauncher packages");
+      Check(!entries.Any(e=>new[]{"SpeedBreakerProject/speedbreaker","Mabec-games/F-ZERO-GLINUX","HekamiAeon/Sakura-Wars-PS4RT","jillsandwich1998/reGH2"}.Contains(e.Repository)),"non-Windows entries excluded");
+      var zelda=entries.First(e=>e.Id=="rl-zelda64recomp");var zeldaJson=new JavaScriptSerializer().Serialize(new{tag_name="fixture",html_url=zelda.ProjectUrl+"/releases/tag/fixture",draft=false,prerelease=false,assets=new[]{new{name="Zelda64Recompiled-fixture-Windows-ARM64.zip",size=100,browser_download_url=zelda.ProjectUrl+"/releases/download/fixture/Zelda64Recompiled-fixture-Windows-ARM64.zip"}}});Reject(()=>PortCatalog.ParseRelease(zelda,zeldaJson),"new ARM64 naming cannot replace audited x64 package");
+      foreach(string origin in new[]{"Nintendo 64","GameCube","Wii","Wii U","Super Nintendo","Game Boy","Game Boy Advance","Nintendo DS","PlayStation","PlayStation 2","PSP","Dreamcast"}){var legacyPlatform=Store.Parse("{\"Version\":1,\"Games\":[{\"Id\":\"platform\",\"Name\":\"Fixture\",\"Executable\":\"custom.exe\",\"Platform\":\""+origin+"\"}]}");Check(legacyPlatform.Games[0].Platform==origin,"new origin persists in library "+origin);}
       var gameA=new Game{Name="Halo",Executable="halo.exe",Platform="Xbox",Favorite=true};var gameB=new Game{Name="Sonic",Executable="sonic.exe",Platform="Xbox 360"};
       Check(Platforms.Filter(new[]{gameA,gameB},"Xbox","",false).Count==1,"exact platform filter does not mix Xbox and Xbox 360");
       Check(Platforms.Filter(new[]{gameA,gameB},Platforms.All[0],"sonic",false).Single()==gameB,"search combines with platform");

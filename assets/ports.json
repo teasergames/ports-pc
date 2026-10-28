@@ -671,13 +671,17 @@
     "Name": "The Legend of Zelda: Twilight Princess · Dusklight",
     "Repository": "TwilitRealm/dusklight",
     "Platform": "GameCube",
-    "AssetPattern": "",
-    "PlayNames": [],
+    "AssetPattern": "^Dusklight-.*-win32-x86_64\\.zip$",
+    "PlayNames": [
+      "dusklight.exe"
+    ],
     "ConfigNames": [],
     "ArtworkTitle": "The Legend of Zelda: Twilight Princess",
-    "ProjectOnly": true,
-    "Kind": "Preparação manual",
-    "Notes": "Descoberto no RecompLauncher; repositório de origem conferido em 28/10/2026. A instalação automática deste perfil ainda não foi validada no NEXUS. Use Abrir projeto para obter a versão Windows e seguir as instruções do autor; depois use Adicionar jogo na coleção."
+    "ProjectOnly": false,
+    "Kind": "Port / recompilação",
+    "Notes": "Abra o aplicativo e selecione sua cópia compatível de Twilight Princess. Preparação e opções dentro do port. O NEXUS escolhe o ZIP x86_64, excluindo ARM64 e o auxiliar de crash.",
+    "Arguments": "",
+    "ConfigurationArguments": ""
   },
   {
     "Id": "rl-shipwright",
@@ -1205,13 +1209,19 @@
     "Name": "The Legend of Zelda: The Wind Waker HD · Wind Waker HD Recomp",
     "Repository": "ZeldaWWHDRecomp/ZeldaWWHDRecomp",
     "Platform": "Wii U",
-    "AssetPattern": "",
-    "PlayNames": [],
-    "ConfigNames": [],
+    "AssetPattern": "^WindWakerHD-.*-windows-x86_64\\.zip$",
+    "PlayNames": [
+      "Wind Waker HD.exe"
+    ],
+    "ConfigNames": [
+      "Wind Waker HD.exe"
+    ],
     "ArtworkTitle": "The Legend of Zelda: The Wind Waker HD",
-    "ProjectOnly": true,
-    "Kind": "Preparação manual",
-    "Notes": "Descoberto no RecompLauncher; repositório de origem conferido em 28/10/2026. A instalação automática deste perfil ainda não foi validada no NEXUS. Use Abrir projeto para obter a versão Windows e seguir as instruções do autor; depois use Adicionar jogo na coleção."
+    "ProjectOnly": false,
+    "Kind": "Port / recompilação",
+    "Notes": "Primeira abertura prepara seus arquivos Wii U USA/EUR versão base 0, usando pasta extraída, WUA ou WUD/WUX com suas chaves. Configurar reabre o assistente original (--setup). Requer Vulkan; o assistente pode baixar o compilador do projeto.",
+    "Arguments": "",
+    "ConfigurationArguments": "--setup"
   },
   {
     "Id": "rl-symphonyrecomp",
@@ -1365,13 +1375,19 @@
     "Name": "Super Mario Strikers · Strikers",
     "Repository": "new-coke/strikers",
     "Platform": "GameCube",
-    "AssetPattern": "",
-    "PlayNames": [],
-    "ConfigNames": [],
+    "AssetPattern": "^strikers-windows-x86_64\\.zip$",
+    "PlayNames": [
+      "strikers.exe"
+    ],
+    "ConfigNames": [
+      "strikers-settings.exe"
+    ],
     "ArtworkTitle": "Super Mario Strikers",
-    "ProjectOnly": true,
-    "Kind": "Preparação manual",
-    "Notes": "Descoberto no RecompLauncher; repositório de origem conferido em 28/10/2026. A instalação automática deste perfil ainda não foi validada no NEXUS. Use Abrir projeto para obter a versão Windows e seguir as instruções do autor; depois use Adicionar jogo na coleção."
+    "ProjectOnly": false,
+    "Kind": "Port / recompilação",
+    "Notes": "Jogar abre strikers.exe e Configurar abre strikers-settings.exe. Prepare sua cópia compatível de Super Mario Strikers conforme o projeto original.",
+    "Arguments": "",
+    "ConfigurationArguments": ""
   },
   {
     "Id": "rl-project-midas",
@@ -1989,13 +2005,17 @@
     "Name": "Luigi's Mansion · Luigi's Mansion Recomp",
     "Repository": "rob646464/luigis-mansion-recompiled",
     "Platform": "GameCube",
-    "AssetPattern": "",
-    "PlayNames": [],
+    "AssetPattern": "^LuigisMansionRecompiled-.*-windows-x64\\.zip$",
+    "PlayNames": [
+      "LuigisMansionRecomp.exe"
+    ],
     "ConfigNames": [],
     "ArtworkTitle": "Luigi's Mansion",
-    "ProjectOnly": true,
-    "Kind": "Preparação manual",
-    "Notes": "Descoberto no RecompLauncher; repositório de origem conferido em 28/10/2026. A instalação automática deste perfil ainda não foi validada no NEXUS. Use Abrir projeto para obter a versão Windows e seguir as instruções do autor; depois use Adicionar jogo na coleção."
+    "ProjectOnly": false,
+    "Kind": "Port / recompilação",
+    "Notes": "Na primeira abertura, selecione sua ISO/RVZ ou pasta GameCube USA/EUR compatível. A preparação usa o compilador incluído. Opções no menu interno F1.",
+    "Arguments": "",
+    "ConfigurationArguments": ""
   },
   {
     "Id": "rl-dkc1recomp",
@@ -2041,13 +2061,19 @@
     "Name": "The Legend of Zelda: Breath of the Wild · BotW Native",
     "Repository": "ryderclanky/BotW-Native",
     "Platform": "Wii U",
-    "AssetPattern": "",
-    "PlayNames": [],
-    "ConfigNames": [],
+    "AssetPattern": "^BotW-Native-.*-windows-x64\\.zip$",
+    "PlayNames": [
+      "BotWLauncher.exe"
+    ],
+    "ConfigNames": [
+      "BotWLauncher.exe"
+    ],
     "ArtworkTitle": "The Legend of Zelda: Breath of the Wild",
-    "ProjectOnly": true,
-    "Kind": "Preparação manual",
-    "Notes": "Descoberto no RecompLauncher; repositório de origem conferido em 28/10/2026. A instalação automática deste perfil ainda não foi validada no NEXUS. Use Abrir projeto para obter a versão Windows e seguir as instruções do autor; depois use Adicionar jogo na coleção."
+    "ProjectOnly": false,
+    "Kind": "Port / recompilação",
+    "Notes": "Experimental. Jogar e Configurar abrem BotWLauncher.exe, que prepara sua pasta Wii U USA com atualização v208 (1.5.0). O caminho direto do runtime exige parâmetros adicionais; por isso o NEXUS mantém o launcher original. Requer Vulkan.",
+    "Arguments": "",
+    "ConfigurationArguments": ""
   },
   {
     "Id": "rl-dimensionsrecomp",
@@ -2470,13 +2496,19 @@
     "Name": "Pokémon: Let's Go, Pikachu! · Let's Go Recomp",
     "Repository": "raulzrrs/letsgo-recomp",
     "Platform": "Nintendo Switch",
-    "AssetPattern": "",
-    "PlayNames": [],
-    "ConfigNames": [],
+    "AssetPattern": "^LetsGoRecomp-.*-windows\\.zip$",
+    "PlayNames": [
+      "LetsGoRecomp.exe"
+    ],
+    "ConfigNames": [
+      "LetsGoRecomp.exe"
+    ],
     "ArtworkTitle": "Pokémon: Let's Go, Pikachu!",
-    "ProjectOnly": true,
-    "Kind": "Preparação manual",
-    "Notes": "Descoberto no RecompLauncher; repositório de origem conferido em 28/10/2026. A instalação automática deste perfil ainda não foi validada no NEXUS. Use Abrir projeto para obter a versão Windows e seguir as instruções do autor; depois use Adicionar jogo na coleção."
+    "ProjectOnly": false,
+    "Kind": "Port / recompilação",
+    "Notes": "Jogar e Configurar abrem o launcher original para preparar seu dump compatível de Let’s Go Pikachu/Eevee e ajustar as opções. Requer SSE4.2 e Vulkan 1.3; opções internas em F12. Projeto em desenvolvimento.",
+    "Arguments": "",
+    "ConfigurationArguments": ""
   },
   {
     "Id": "rl-marathonrecomp",
@@ -2509,65 +2541,95 @@
     "Name": "Killzone Shadow Fall · Killzone Shadow Fall PC",
     "Repository": "lesca-191204/killzone-shadowfall-pc",
     "Platform": "PlayStation 4",
-    "AssetPattern": "",
-    "PlayNames": [],
-    "ConfigNames": [],
+    "AssetPattern": "^KillzoneShadowFall-.*-windows\\.zip$",
+    "PlayNames": [
+      "Killzone Shadow Fall.exe"
+    ],
+    "ConfigNames": [
+      "Killzone Shadow Fall.exe"
+    ],
     "ArtworkTitle": "Killzone Shadow Fall",
-    "ProjectOnly": true,
-    "Kind": "Preparação manual",
-    "Notes": "Descoberto no RecompLauncher; repositório de origem conferido em 28/10/2026. A instalação automática deste perfil ainda não foi validada no NEXUS. Use Abrir projeto para obter a versão Windows e seguir as instruções do autor; depois use Adicionar jogo na coleção."
+    "ProjectOnly": false,
+    "Kind": "Port / recompilação",
+    "Notes": "Jogar e Configurar abrem o launcher original para selecionar sua pasta PS4 e aplicar as opções. O executável interno não é usado sem o ambiente do launcher. Requer Vulkan 1.3; beta pública.",
+    "Arguments": "",
+    "ConfigurationArguments": ""
   },
   {
     "Id": "rl-dragons-crown-pro-pc",
     "Name": "Dragon's Crown Pro · Dragon's Crown Pro PC",
     "Repository": "saulob/dragons-crown-pro-pc",
     "Platform": "PlayStation 4",
-    "AssetPattern": "",
-    "PlayNames": [],
-    "ConfigNames": [],
+    "AssetPattern": "^DragonsCrownProPC-.*-windows-x64\\.zip$",
+    "PlayNames": [
+      "dragons_crown_pro.exe"
+    ],
+    "ConfigNames": [
+      "dragons_crown_pro.exe"
+    ],
     "ArtworkTitle": "Dragon's Crown Pro",
-    "ProjectOnly": true,
-    "Kind": "Preparação manual",
-    "Notes": "Descoberto no RecompLauncher; repositório de origem conferido em 28/10/2026. A instalação automática deste perfil ainda não foi validada no NEXUS. Use Abrir projeto para obter a versão Windows e seguir as instruções do autor; depois use Adicionar jogo na coleção."
+    "ProjectOnly": false,
+    "Kind": "Port / recompilação",
+    "Notes": "O aplicativo original importa seu PKG PS4 compatível e reúne as opções. Jogar e Configurar abrem esse aplicativo. Se você desativou Show this launcher, segure Shift ao abri-lo para restaurar o launcher. Requer Vulkan 1.3.",
+    "Arguments": "",
+    "ConfigurationArguments": ""
   },
   {
     "Id": "rl-ufc-3-ps4-port-linux-windows",
     "Name": "EA Sports UFC 3 · UFC 3 PC",
     "Repository": "GNSB/UFC-3-PS4-PORT-LINUX-WINDOWS",
     "Platform": "PlayStation 4",
-    "AssetPattern": "",
-    "PlayNames": [],
-    "ConfigNames": [],
+    "AssetPattern": "^UFC3Native-.*-windows-x86_64\\.zip$",
+    "PlayNames": [
+      "UFC3.exe"
+    ],
+    "ConfigNames": [
+      "UFC3.exe"
+    ],
     "ArtworkTitle": "EA Sports UFC 3",
-    "ProjectOnly": true,
-    "Kind": "Preparação manual",
-    "Notes": "Descoberto no RecompLauncher; repositório de origem conferido em 28/10/2026. A instalação automática deste perfil ainda não foi validada no NEXUS. Use Abrir projeto para obter a versão Windows e seguir as instruções do autor; depois use Adicionar jogo na coleção."
+    "ProjectOnly": false,
+    "Kind": "Port / recompilação",
+    "Notes": "Jogar e Configurar abrem UFC3.exe, o launcher original que prepara sua pasta PS4 CUSA06534 e aplica as opções. Requer CPU AVX2 e Vulkan 1.3; não usa o runtime interno sem preparação.",
+    "Arguments": "",
+    "ConfigurationArguments": ""
   },
   {
     "Id": "rl-unicorn-overlord-pc",
     "Name": "Unicorn Overlord · Unicorn Overlord PC",
     "Repository": "hachi23/unicorn_overlord_pc",
     "Platform": "PlayStation 4",
-    "AssetPattern": "",
-    "PlayNames": [],
-    "ConfigNames": [],
+    "AssetPattern": "^Unicorn-Overlord-PC-windows\\.zip$",
+    "PlayNames": [
+      "Unicorn Overlord.exe"
+    ],
+    "ConfigNames": [
+      "Unicorn Overlord.exe"
+    ],
     "ArtworkTitle": "Unicorn Overlord",
-    "ProjectOnly": true,
-    "Kind": "Preparação manual",
-    "Notes": "Descoberto no RecompLauncher; repositório de origem conferido em 28/10/2026. A instalação automática deste perfil ainda não foi validada no NEXUS. Use Abrir projeto para obter a versão Windows e seguir as instruções do autor; depois use Adicionar jogo na coleção."
+    "ProjectOnly": false,
+    "Kind": "Port / recompilação",
+    "Notes": "O aplicativo original prepara sua pasta PS4 compatível e inicia o jogo. Jogar e Configurar abrem esse aplicativo; as opções ficam em System > Options > PC dentro do jogo. Requer Vulkan 1.3.",
+    "Arguments": "",
+    "ConfigurationArguments": ""
   },
   {
     "Id": "rl-infamous-first-light-pc",
     "Name": "inFAMOUS First Light · inFAMOUS First Light PC",
     "Repository": "VantageEX/infamous-first-light-pc",
     "Platform": "PlayStation 4",
-    "AssetPattern": "",
-    "PlayNames": [],
-    "ConfigNames": [],
+    "AssetPattern": "^inFAMOUS-First-Light-PC-v.*\\.zip$",
+    "PlayNames": [
+      "inFAMOUS First Light.exe"
+    ],
+    "ConfigNames": [
+      "inFAMOUS First Light.exe"
+    ],
     "ArtworkTitle": "inFAMOUS First Light",
-    "ProjectOnly": true,
-    "Kind": "Preparação manual",
-    "Notes": "Descoberto no RecompLauncher; repositório de origem conferido em 28/10/2026. A instalação automática deste perfil ainda não foi validada no NEXUS. Use Abrir projeto para obter a versão Windows e seguir as instruções do autor; depois use Adicionar jogo na coleção."
+    "ProjectOnly": false,
+    "Kind": "Port / recompilação",
+    "Notes": "Configure sua pasta PS4 e opções no launcher original. Jogar usa --play, documentado pelo autor, para iniciar com as opções salvas sem a janela do launcher. Requer AVX e Vulkan 1.3.",
+    "Arguments": "--play",
+    "ConfigurationArguments": ""
   },
   {
     "Id": "rl-infamousreborn",
@@ -2587,13 +2649,17 @@
     "Name": "Metroid Prime · Metroid Prime Port",
     "Repository": "Odrannnn/MetroidPrimePort",
     "Platform": "GameCube",
-    "AssetPattern": "",
-    "PlayNames": [],
+    "AssetPattern": "^metroid-prime-port-.*-windows-x86_64\\.zip$",
+    "PlayNames": [
+      "metroid_prime_port.exe"
+    ],
     "ConfigNames": [],
     "ArtworkTitle": "Metroid Prime",
-    "ProjectOnly": true,
-    "Kind": "Preparação manual",
-    "Notes": "Descoberto no RecompLauncher; repositório de origem conferido em 28/10/2026. A instalação automática deste perfil ainda não foi validada no NEXUS. Use Abrir projeto para obter a versão Windows e seguir as instruções do autor; depois use Adicionar jogo na coleção."
+    "ProjectOnly": false,
+    "Kind": "Port / recompilação",
+    "Notes": "Selecione sua imagem de disco compatível na primeira abertura. Configurações no menu interno F1. O NEXUS abre o jogo, não o auxiliar ffmpeg, e exclui o pacote ARM64.",
+    "Arguments": "",
+    "ConfigurationArguments": ""
   },
   {
     "Id": "rl-eternaldarknessrecomp",
@@ -2626,52 +2692,72 @@
     "Name": "New Super Mario Bros. Wii · NSMB Wii Recompiled",
     "Repository": "WitherBlitz/NSMB-Wii-Multiplayer-Recompilation",
     "Platform": "Wii",
-    "AssetPattern": "",
-    "PlayNames": [],
+    "AssetPattern": "^NSMBW-.*-windows-x64\\.zip$",
+    "PlayNames": [
+      "NSMBW.exe"
+    ],
     "ConfigNames": [],
     "ArtworkTitle": "New Super Mario Bros. Wii",
-    "ProjectOnly": true,
-    "Kind": "Preparação manual",
-    "Notes": "Descoberto no RecompLauncher; repositório de origem conferido em 28/10/2026. A instalação automática deste perfil ainda não foi validada no NEXUS. Use Abrir projeto para obter a versão Windows e seguir as instruções do autor; depois use Adicionar jogo na coleção."
+    "ProjectOnly": false,
+    "Kind": "Port / recompilação",
+    "Notes": "Selecione sua pasta extraída do jogo quando o aplicativo pedir. Configurações internas em F10. A pasta compat é preservada para CPUs sem AVX2; o launcher original escolhe o runtime adequado.",
+    "Arguments": "",
+    "ConfigurationArguments": ""
   },
   {
     "Id": "rl-recharged",
     "Name": "Mario Strikers Charged · Recharged",
     "Repository": "previouslevelgames/recharged",
     "Platform": "Wii",
-    "AssetPattern": "",
-    "PlayNames": [],
-    "ConfigNames": [],
+    "AssetPattern": "^recharged-.*-windows-x86_64\\.zip$",
+    "PlayNames": [
+      "recharged.exe"
+    ],
+    "ConfigNames": [
+      "recharged.exe"
+    ],
     "ArtworkTitle": "Mario Strikers Charged",
-    "ProjectOnly": true,
-    "Kind": "Preparação manual",
-    "Notes": "Descoberto no RecompLauncher; repositório de origem conferido em 28/10/2026. A instalação automática deste perfil ainda não foi validada no NEXUS. Use Abrir projeto para obter a versão Windows e seguir as instruções do autor; depois use Adicionar jogo na coleção."
+    "ProjectOnly": false,
+    "Kind": "Port / recompilação",
+    "Notes": "Jogar e Configurar abrem o launcher original. Selecione sua imagem de Mario Strikers Charged; o launcher reúne as opções e inicia o jogo com elas.",
+    "Arguments": "",
+    "ConfigurationArguments": ""
   },
   {
     "Id": "rl-nsmbu-recomp",
     "Name": "New Super Mario Bros. U · NSMBU Recomp",
     "Repository": "nsmbu-recomp/nsmbu-recomp",
     "Platform": "Wii U",
-    "AssetPattern": "",
-    "PlayNames": [],
-    "ConfigNames": [],
+    "AssetPattern": "^NSMBU-.*-windows-x86_64\\.zip$",
+    "PlayNames": [
+      "NSMBU.exe"
+    ],
+    "ConfigNames": [
+      "NSMBU.exe"
+    ],
     "ArtworkTitle": "New Super Mario Bros. U",
-    "ProjectOnly": true,
-    "Kind": "Preparação manual",
-    "Notes": "Descoberto no RecompLauncher; repositório de origem conferido em 28/10/2026. A instalação automática deste perfil ainda não foi validada no NEXUS. Use Abrir projeto para obter a versão Windows e seguir as instruções do autor; depois use Adicionar jogo na coleção."
+    "ProjectOnly": false,
+    "Kind": "Port / recompilação",
+    "Notes": "O aplicativo original prepara seus arquivos Wii U na primeira abertura. Configurar reabre esse assistente (--setup); as opções internas usam F12. Aceita as revisões USA/EUR indicadas pelo autor; requer Vulkan e pode baixar o compilador na preparação.",
+    "Arguments": "",
+    "ConfigurationArguments": "--setup"
   },
   {
     "Id": "rl-smm2recomp",
     "Name": "Super Mario Maker 2 · SMM2 Recomp",
     "Repository": "smm2recomp/smm2recomp",
     "Platform": "Nintendo Switch",
-    "AssetPattern": "",
-    "PlayNames": [],
+    "AssetPattern": "^SMM2Recomp-windows-x86_64\\.zip$",
+    "PlayNames": [
+      "smm2recomp.exe"
+    ],
     "ConfigNames": [],
     "ArtworkTitle": "Super Mario Maker 2",
-    "ProjectOnly": true,
-    "Kind": "Preparação manual",
-    "Notes": "Descoberto no RecompLauncher; repositório de origem conferido em 28/10/2026. A instalação automática deste perfil ainda não foi validada no NEXUS. Use Abrir projeto para obter a versão Windows e seguir as instruções do autor; depois use Adicionar jogo na coleção."
+    "ProjectOnly": false,
+    "Kind": "Port / recompilação",
+    "Notes": "O aplicativo prepara e recompila seu dump de Super Mario Maker 2 versão 3.0.3 na primeira abertura. Opções internas em F1 ou Esc. Requer CPU x86-64-v2 e Vulkan 1.3; projeto em desenvolvimento.",
+    "Arguments": "",
+    "ConfigurationArguments": ""
   },
   {
     "Id": "rl-ssrecomp",
@@ -3627,13 +3713,19 @@
     "Name": "Super Smash Bros. for Wii U · Smash 4 PC",
     "Repository": "josiahg2502-glitch/Smash4PC",
     "Platform": "Wii U",
-    "AssetPattern": "",
-    "PlayNames": [],
-    "ConfigNames": [],
+    "AssetPattern": "^Smash4PC-.*-Windows\\.zip$",
+    "PlayNames": [
+      "Smash 4 PC.exe"
+    ],
+    "ConfigNames": [
+      "Smash 4 PC.exe"
+    ],
     "ArtworkTitle": "Super Smash Bros. for Wii U",
-    "ProjectOnly": true,
-    "Kind": "Preparação manual",
-    "Notes": "Descoberto no RecompLauncher; repositório de origem conferido em 28/10/2026. A instalação automática deste perfil ainda não foi validada no NEXUS. Use Abrir projeto para obter a versão Windows e seguir as instruções do autor; depois use Adicionar jogo na coleção."
+    "ProjectOnly": false,
+    "Kind": "Port / recompilação",
+    "Notes": "Jogar e Configurar abrem o launcher original, que seleciona sua pasta USA do jogo, update v304 e DLC opcional. Requer Vulkan 1.3. As opções salvas são aplicadas pelo launcher.",
+    "Arguments": "",
+    "ConfigurationArguments": ""
   },
   {
     "Id": "rl-castlevania-cod-recomp",

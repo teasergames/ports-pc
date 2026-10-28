@@ -8,9 +8,10 @@ public static class Integration {
   public static int Main(string[] args){
     try{
       string root=Path.GetFullPath(args[0]);var store=new Store(root);var lib=new Library();
-      if(args[1]=="oct28-packages"||args[1]=="site-packages"){
-        foreach(var entry in PortCatalog.LoadEntries().Where(e=>args[1]=="site-packages"?e.Id.StartsWith("rl-")&&!e.ProjectOnly:new[]{"knack","knack2","wipeout","code-veronica","drakengard3","lost-odyssey","blue-dragon","pgr4","conker-lr","las-recomp"}.Contains(e.Id))){
+      if(args[1]=="oct28-packages"||args[1]=="site-packages"||args[1]=="download-fix"){
+        foreach(var entry in PortCatalog.LoadEntries().Where(e=>args[1]=="download-fix"?new[]{"rl-zeldawwhdrecomp","rl-botw-native","rl-nsmbu-recomp","rl-smash4pc","rl-dusklight","rl-strikers","rl-luigis-mansion-recompiled","rl-letsgo-recomp","rl-killzone-shadowfall-pc","rl-dragons-crown-pro-pc","rl-ufc-3-ps4-port-linux-windows","rl-unicorn-overlord-pc","rl-infamous-first-light-pc","rl-metroidprimeport","rl-nsmb-wii-multiplayer-recompilation","rl-recharged","rl-smm2recomp"}.Contains(e.Id):args[1]=="site-packages"?e.Id.StartsWith("rl-")&&!e.ProjectOnly:new[]{"knack","knack2","wipeout","code-veronica","drakengard3","lost-odyssey","blue-dragon","pgr4","conker-lr","las-recomp"}.Contains(e.Id))){
           var release=PortCatalog.BundledRelease(entry);string package=Path.Combine(args[2],release.AssetName),parent=Path.Combine(root,"ports"),destination=Path.Combine(parent,entry.Id+"-"+PortCatalog.VersionFolder(release.Version));Game game;
+          if(args[1]=="download-fix"){package=Path.Combine(args[2],"wii-packages",release.AssetName);if(!File.Exists(package))package=Path.Combine(args[2],"more-packages",release.AssetName);}
           if(Directory.Exists(destination)){PortCatalog.VerifyDigest(package,release.Digest);game=PortCatalog.Register(entry,destination,release.Version);}else using(var catalog=new PortCatalog(new PackageHandler(File.ReadAllBytes(package))))game=catalog.Install(entry,release,parent,null,CancellationToken.None,entry.AllowPrerelease).GetAwaiter().GetResult();
           if(game.Platform!=entry.Platform||!File.Exists(game.Executable))throw new Exception("Package registration failed");if(entry.ConfigNames.Length>0)Ports.ConfigurationStartInfo(game);Ports.StartInfo(game,false);lib.Games.Add(game);store.Save(lib);Console.WriteLine("PASS real package integrity, installation, platform and launch/configuration: "+entry.Id);
         }return 0;

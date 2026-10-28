@@ -55,11 +55,14 @@ namespace Nexus {
     }
     public bool IsSmoke;
     void Open(string url){try{Process.Start(new ProcessStartInfo(url){UseShellExecute=true});}catch(Exception ex){status.Text=ex.Message;}}
+    void PrepareSelection(PortEntry entry){
+      selected=entry;release=null;title.Text=entry.Name;repo.Text=entry.Platform+" · "+entry.Kind+"\n"+entry.Identity;acceptBeta.Visibility=Visibility.Collapsed;acceptBeta.IsChecked=false;importZip.Visibility=entry.ManualPackage?Visibility.Visible:Visibility.Collapsed;download.Visibility=Visibility.Visible;download.Content=entry.ManualPackage?"Baixar no site oficial":"Baixar e adicionar";details.Text=entry.Notes;version.Text="Consultando versão…";download.IsEnabled=false;status.Text="Consultando Releases do GitHub…";progress.Value=0;destination.IsEnabled=!entry.ProjectOnly;choose.IsEnabled=!entry.ProjectOnly;refresh.IsEnabled=!entry.ProjectOnly;
+    }
     async void LoadSelected(bool force=false){
       if(list.SelectedItem==null)return;if(request!=null){request.Cancel();request.Dispose();}request=new CancellationTokenSource();var current=request;
-      selected=(PortEntry)((ListBoxItem)list.SelectedItem).Tag;PortEntry entry=selected;release=null;title.Text=entry.Name;repo.Text=entry.Platform+" · "+entry.Kind+"\n"+entry.Identity;acceptBeta.Visibility=Visibility.Collapsed;acceptBeta.IsChecked=false;importZip.Visibility=entry.ManualPackage?Visibility.Visible:Visibility.Collapsed;download.Visibility=Visibility.Visible;download.Content=entry.ManualPackage?"Baixar no site oficial":"Baixar e adicionar";details.Text=entry.Notes;version.Text="Consultando versão…";download.IsEnabled=false;status.Text="Consultando Releases do GitHub…";progress.Value=0;
+      PortEntry entry=(PortEntry)((ListBoxItem)list.SelectedItem).Tag;PrepareSelection(entry);
       if(entry.ManualPackage){version.Text="Download oficial no itch.io · importar ZIP";download.IsEnabled=true;importZip.IsEnabled=true;status.Text="Baixe azimuth-windows.zip no site oficial. Depois use Importar ZIP e adicionar; o NEXUS extrai e cadastra o Azimuth.";return;}
-      if(entry.ProjectOnly){version.Text="Instalação manual / em desenvolvimento";status.Text="Use Abrir projeto para instruções e disponibilidade. Depois de preparar o port, use Adicionar jogo na coleção.";return;}
+      if(entry.ProjectOnly){version.Text="Download e preparação no projeto original";download.Content="Ver downloads oficiais";download.IsEnabled=true;status.Text="Abre as Releases oficiais no navegador. A instalação e o cadastro deste perfil ainda são manuais; projetos em desenvolvimento podem não ter pacote pronto.";return;}
       try{var found=await catalog.Latest(entry,current.Token,force);if(closed||current!=request)return;PresentRelease(entry,found);
       }catch(OperationCanceledException){if(current==request&&!closed){version.Text="Consulta cancelada ou tempo esgotado.";status.Text="Use Consultar novamente para tentar outra vez.";}}
       catch(Exception ex){if(current==request&&!closed){version.Text="Download indisponível";status.Text=ex.Message;}}
@@ -74,11 +77,11 @@ namespace Nexus {
         if(found.FromCache){version.Text+=" · cache";DateTime when;string date=DateTime.TryParse(found.CheckedUtc,out when)?when.ToLocalTime().ToString("dd/MM/yyyy HH:mm"):found.CheckedUtc;status.Text="GitHub indisponível ou limite de consultas: exibindo versão verificada em "+date+". Pode haver uma versão mais recente. "+status.Text;}
     }
     void UpdateInstallState(){
-      if(download==null||selected==null)return;if(selected.ManualPackage){download.IsEnabled=!busy;return;}
+      if(download==null||selected==null)return;if(selected.ManualPackage||selected.ProjectOnly){download.IsEnabled=!busy;return;}
       download.IsEnabled=!busy&&release!=null&&(!release.IsPrerelease||acceptBeta.IsChecked==true)&&!games.Any(g=>g.Repository==selected.Identity&&g.InstalledVersion==release.Version&&File.Exists(g.Executable));
     }
     async void InstallSelected(string localZip=null){
-      if(selected==null||busy)return;if(selected.ManualPackage&&localZip==null){Open(selected.ProjectUrl);return;}if(!selected.ManualPackage&&(release==null||release.IsPrerelease&&acceptBeta.IsChecked!=true))return;PortEntry entry=selected;PortRelease package=release;string parent=destination.Text.Trim();
+      if(selected==null||busy)return;if(selected.ProjectOnly){Open(selected.ProjectUrl+"/releases");return;}if(selected.ManualPackage&&localZip==null){Open(selected.ProjectUrl);return;}if(!selected.ManualPackage&&(release==null||release.IsPrerelease&&acceptBeta.IsChecked!=true))return;PortEntry entry=selected;PortRelease package=release;string parent=destination.Text.Trim();
       if(String.IsNullOrWhiteSpace(parent)||!Path.IsPathRooted(parent)){status.Text="Escolha uma pasta de instalação com caminho completo.";return;}
       busy=true;importZip.IsEnabled=false;acceptBeta.IsEnabled=false;platform.IsEnabled=false;search.IsEnabled=false;installationMode.IsEnabled=false;list.IsEnabled=false;choose.IsEnabled=false;destination.IsEnabled=false;refresh.IsEnabled=false;download.IsEnabled=false;cancel.IsEnabled=true;installation=new CancellationTokenSource();
       try{
@@ -91,12 +94,13 @@ namespace Nexus {
     public void CaptureSmoke(string path){
       foreach(string name in Platforms.All){platform.SelectedItem=name;int expected=catalog.Entries.Count(e=>name==Platforms.All[0]||e.Platform==name);if(list.Items.Count!=expected)throw new Exception("Catalog platform filter failed");}
       search.Text="Mario Kart";platform.SelectedItem="Nintendo 64";installationMode.SelectedIndex=1;if(list.Items.Count!=1||((PortEntry)((ListBoxItem)list.Items[0]).Tag).Id!="rl-spaghettikart")throw new Exception("Combined catalog search failed");search.Text="";installationMode.SelectedIndex=0;
-      platform.SelectedItem="PlayStation 3";list.SelectedItem=list.Items.Cast<ListBoxItem>().First(i=>((PortEntry)i.Tag).ProjectOnly);LoadSelected();if(download.IsEnabled||release!=null)throw new Exception("Project-only download must remain disabled");
+      platform.SelectedItem="PlayStation 3";list.SelectedItem=list.Items.Cast<ListBoxItem>().First(i=>((PortEntry)i.Tag).ProjectOnly);LoadSelected();if(!download.IsEnabled||release!=null||destination.IsEnabled||choose.IsEnabled||refresh.IsEnabled||(string)download.Content!="Ver downloads oficiais")throw new Exception("Manual profile must expose official downloads without claiming automatic installation");
       platform.SelectedItem="Xbox";list.SelectedItem=list.Items.Cast<ListBoxItem>().First(i=>((PortEntry)i.Tag).Id=="darkwatch");selected=(PortEntry)((ListBoxItem)list.SelectedItem).Tag;acceptBeta.IsChecked=false;var sample=PortCatalog.BundledRelease(selected);sample.Version="smoke-stable";PresentRelease(selected,sample);
       if(acceptBeta.Visibility!=Visibility.Collapsed||!download.IsEnabled)throw new Exception("Stable Darker Edition profile must not require beta acceptance");
       platform.SelectedItem="PlayStation 4";list.SelectedItem=list.Items.Cast<ListBoxItem>().First(i=>((PortEntry)i.Tag).Id=="knack2");selected=(PortEntry)((ListBoxItem)list.SelectedItem).Tag;acceptBeta.IsChecked=false;sample=PortCatalog.BundledRelease(selected);sample.Version="smoke-beta";PresentRelease(selected,sample);if(download.IsEnabled||acceptBeta.Visibility!=Visibility.Visible)throw new Exception("Experimental port requires explicit acceptance");acceptBeta.IsChecked=true;if(!download.IsEnabled)throw new Exception("Accepted experimental port must be installable");
       platform.SelectedItem="Xbox One";list.SelectedIndex=0;LoadSelected();if(!importZip.IsVisible||!download.IsEnabled||acceptBeta.IsChecked==true)throw new Exception("Official-site import UI failed");
-      platform.SelectedItem="Nintendo 64";installationMode.SelectedIndex=1;list.SelectedItem=list.Items.Cast<ListBoxItem>().First(i=>((PortEntry)i.Tag).Id=="rl-zelda64recomp");selected=(PortEntry)((ListBoxItem)list.SelectedItem).Tag;title.Text=selected.Name;repo.Text=selected.Platform+" · "+selected.Kind+"\n"+selected.Identity;importZip.Visibility=Visibility.Collapsed;acceptBeta.Visibility=Visibility.Collapsed;PresentRelease(selected,PortCatalog.BundledRelease(selected));
+      platform.SelectedItem="Wii U";installationMode.SelectedIndex=1;if(list.Items.Count!=4)throw new Exception("All Wii U downloads must be integrated");foreach(var item in list.Items.Cast<ListBoxItem>()){list.SelectedItem=item;PrepareSelection((PortEntry)item.Tag);sample=PortCatalog.BundledRelease(selected);sample.Version="smoke-"+sample.Version;PresentRelease(selected,sample);if(!download.IsEnabled||!choose.IsEnabled||!destination.IsEnabled||!refresh.IsEnabled||(string)download.Content!="Baixar e adicionar")throw new Exception("Wii U download UI must be usable");}
+      list.SelectedItem=list.Items.Cast<ListBoxItem>().First(i=>((PortEntry)i.Tag).Id=="rl-botw-native");PrepareSelection((PortEntry)((ListBoxItem)list.SelectedItem).Tag);sample=PortCatalog.BundledRelease(selected);sample.Version="smoke-"+sample.Version;PresentRelease(selected,sample);Height=900;
       Launcher.CaptureWindow(this,path);}
   }
 }

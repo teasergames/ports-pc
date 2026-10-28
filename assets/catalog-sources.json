@@ -15,9 +15,13 @@
       "Id": "dusklight",
       "Repository": "TwilitRealm/dusklight",
       "DiscoveryUrl": "https://recomplauncher.com/game/dusklight",
-      "Status": "manual",
+      "Status": "automatic",
       "NexusId": "rl-dusklight",
-      "VerifiedRepositoryUrl": "https://github.com/TwilitRealm/dusklight"
+      "VerifiedRepositoryUrl": "https://github.com/TwilitRealm/dusklight",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "available",
+      "StableReleaseUrl": "https://github.com/TwilitRealm/dusklight/releases/tag/v2.0.3",
+      "StableReleaseVersion": "v2.0.3"
     },
     {
       "Id": "shipwright",
@@ -88,7 +92,11 @@
       "DiscoveryUrl": "https://recomplauncher.com/game/conkerbfdreloaded",
       "Status": "manual",
       "NexusId": "rl-conkerbfdreloaded",
-      "VerifiedRepositoryUrl": "https://github.com/DahSidiAbdallah/ConkerBFDReloaded"
+      "VerifiedRepositoryUrl": "https://github.com/DahSidiAbdallah/ConkerBFDReloaded",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "available",
+      "StableReleaseUrl": "https://github.com/DahSidiAbdallah/ConkerBFDReloaded/releases/tag/v1.4.7",
+      "StableReleaseVersion": "v1.4.7"
     },
     {
       "Id": "snap64recomp",
@@ -96,7 +104,11 @@
       "DiscoveryUrl": "https://recomplauncher.com/game/snap64recomp",
       "Status": "manual",
       "NexusId": "rl-snap64recomp",
-      "VerifiedRepositoryUrl": "https://github.com/JackandBeans/Snap64Recomp"
+      "VerifiedRepositoryUrl": "https://github.com/JackandBeans/Snap64Recomp",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "available",
+      "StableReleaseUrl": "https://github.com/JackandBeans/Snap64Recomp/releases/tag/v1.1.6",
+      "StableReleaseVersion": "v1.1.6"
     },
     {
       "Id": "wwfnomercyrecomp",
@@ -104,7 +116,9 @@
       "DiscoveryUrl": "https://recomplauncher.com/game/wwfnomercyrecomp",
       "Status": "manual",
       "NexusId": "rl-wwfnomercyrecomp",
-      "VerifiedRepositoryUrl": "https://github.com/jessetbh/WWFNoMercyRecomp"
+      "VerifiedRepositoryUrl": "https://github.com/jessetbh/WWFNoMercyRecomp",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "not-confirmed"
     },
     {
       "Id": "wwfwrestlemania2000recomp",
@@ -112,7 +126,9 @@
       "DiscoveryUrl": "https://recomplauncher.com/game/wwfwrestlemania2000recomp",
       "Status": "manual",
       "NexusId": "rl-wwfwrestlemania2000recomp",
-      "VerifiedRepositoryUrl": "https://github.com/jessetbh/WWFWrestleMania2000Recomp"
+      "VerifiedRepositoryUrl": "https://github.com/jessetbh/WWFWrestleMania2000Recomp",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "not-confirmed"
     },
     {
       "Id": "wcwvsnwoworldtourrecomp",
@@ -120,7 +136,9 @@
       "DiscoveryUrl": "https://recomplauncher.com/game/wcwvsnwoworldtourrecomp",
       "Status": "manual",
       "NexusId": "rl-wcwvsnwoworldtourrecomp",
-      "VerifiedRepositoryUrl": "https://github.com/jessetbh/WCWvsNWOWorldTourRecomp"
+      "VerifiedRepositoryUrl": "https://github.com/jessetbh/WCWvsNWOWorldTourRecomp",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "not-confirmed"
     },
     {
       "Id": "wcwnworevengerecomp",
@@ -128,7 +146,9 @@
       "DiscoveryUrl": "https://recomplauncher.com/game/wcwnworevengerecomp",
       "Status": "manual",
       "NexusId": "rl-wcwnworevengerecomp",
-      "VerifiedRepositoryUrl": "https://github.com/jessetbh/WCWnWoRevengeRecomp"
+      "VerifiedRepositoryUrl": "https://github.com/jessetbh/WCWnWoRevengeRecomp",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "not-confirmed"
     },
     {
       "Id": "vpw64recomp",
@@ -136,7 +156,9 @@
       "DiscoveryUrl": "https://recomplauncher.com/game/vpw64recomp",
       "Status": "manual",
       "NexusId": "rl-vpw64recomp",
-      "VerifiedRepositoryUrl": "https://github.com/jessetbh/VPW64Recomp"
+      "VerifiedRepositoryUrl": "https://github.com/jessetbh/VPW64Recomp",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "not-confirmed"
     },
     {
       "Id": "wwe-svr2007-recomp",
@@ -144,7 +166,11 @@
       "DiscoveryUrl": "https://recomplauncher.com/game/wwe-svr2007-recomp",
       "Status": "manual",
       "NexusId": "rl-wwe-svr2007-recomp",
-      "VerifiedRepositoryUrl": "https://github.com/nefariousjosiah/WWE-SVR2007-RECOMP"
+      "VerifiedRepositoryUrl": "https://github.com/nefariousjosiah/WWE-SVR2007-RECOMP",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "available",
+      "StableReleaseUrl": "https://github.com/nefariousjosiah/WWE-SVR2007-RECOMP/releases/tag/v2.2.1",
+      "StableReleaseVersion": "v2.2.1"
     },
     {
       "Id": "wwe-svr2008-recomp",
@@ -152,7 +178,11 @@
       "DiscoveryUrl": "https://recomplauncher.com/game/wwe-svr2008-recomp",
       "Status": "manual",
       "NexusId": "rl-wwe-svr2008-recomp",
-      "VerifiedRepositoryUrl": "https://github.com/nefariousjosiah/WWE-SVR2008-RECOMP"
+      "VerifiedRepositoryUrl": "https://github.com/nefariousjosiah/WWE-SVR2008-RECOMP",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "available",
+      "StableReleaseUrl": "https://github.com/nefariousjosiah/WWE-SVR2008-RECOMP/releases/tag/v2.2.1",
+      "StableReleaseVersion": "v2.2.1"
     },
     {
       "Id": "wwe-svr2009-recomp",
@@ -160,7 +190,11 @@
       "DiscoveryUrl": "https://recomplauncher.com/game/wwe-svr2009-recomp",
       "Status": "manual",
       "NexusId": "rl-wwe-svr2009-recomp",
-      "VerifiedRepositoryUrl": "https://github.com/nefariousjosiah/WWE-SVR2009-RECOMP"
+      "VerifiedRepositoryUrl": "https://github.com/nefariousjosiah/WWE-SVR2009-RECOMP",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "available",
+      "StableReleaseUrl": "https://github.com/nefariousjosiah/WWE-SVR2009-RECOMP/releases/tag/v2.1.1",
+      "StableReleaseVersion": "v2.1.1"
     },
     {
       "Id": "wwe-svr2010-recomp",
@@ -168,7 +202,11 @@
       "DiscoveryUrl": "https://recomplauncher.com/game/wwe-svr2010-recomp",
       "Status": "manual",
       "NexusId": "rl-wwe-svr2010-recomp",
-      "VerifiedRepositoryUrl": "https://github.com/nefariousjosiah/WWE-SVR2010-RECOMP"
+      "VerifiedRepositoryUrl": "https://github.com/nefariousjosiah/WWE-SVR2010-RECOMP",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "available",
+      "StableReleaseUrl": "https://github.com/nefariousjosiah/WWE-SVR2010-RECOMP/releases/tag/v2.1.3",
+      "StableReleaseVersion": "v2.1.3"
     },
     {
       "Id": "wwe-allstars-recomp",
@@ -176,7 +214,11 @@
       "DiscoveryUrl": "https://recomplauncher.com/game/wwe-allstars-recomp",
       "Status": "manual",
       "NexusId": "rl-wwe-allstars-recomp",
-      "VerifiedRepositoryUrl": "https://github.com/shaneomac1337/WWE-AllStars-Recomp"
+      "VerifiedRepositoryUrl": "https://github.com/shaneomac1337/WWE-AllStars-Recomp",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "available",
+      "StableReleaseUrl": "https://github.com/shaneomac1337/WWE-AllStars-Recomp/releases/tag/v1.7.0",
+      "StableReleaseVersion": "v1.7.0"
     },
     {
       "Id": "wwe13-recomp",
@@ -184,7 +226,11 @@
       "DiscoveryUrl": "https://recomplauncher.com/game/wwe13-recomp",
       "Status": "manual",
       "NexusId": "rl-wwe13-recomp",
-      "VerifiedRepositoryUrl": "https://github.com/PromethenDev/wwe13-recomp"
+      "VerifiedRepositoryUrl": "https://github.com/PromethenDev/wwe13-recomp",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "available",
+      "StableReleaseUrl": "https://github.com/PromethenDev/wwe13-recomp/releases/tag/v1.5",
+      "StableReleaseVersion": "v1.5"
     },
     {
       "Id": "wwe2k14-recomp",
@@ -192,7 +238,11 @@
       "DiscoveryUrl": "https://recomplauncher.com/game/wwe2k14-recomp",
       "Status": "manual",
       "NexusId": "rl-wwe2k14-recomp",
-      "VerifiedRepositoryUrl": "https://github.com/PromethenDev/wwe2k14-recomp"
+      "VerifiedRepositoryUrl": "https://github.com/PromethenDev/wwe2k14-recomp",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "available",
+      "StableReleaseUrl": "https://github.com/PromethenDev/wwe2k14-recomp/releases/tag/v1.4.2",
+      "StableReleaseVersion": "v1.4.2"
     },
     {
       "Id": "uncharted-the-nathan-drake-collection-pc-port",
@@ -207,7 +257,11 @@
       "DiscoveryUrl": "https://recomplauncher.com/game/defjamffny-recomp",
       "Status": "manual",
       "NexusId": "rl-defjamffny-recomp",
-      "VerifiedRepositoryUrl": "https://github.com/vyanhursky/DefJamFFNY-recomp"
+      "VerifiedRepositoryUrl": "https://github.com/vyanhursky/DefJamFFNY-recomp",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "available",
+      "StableReleaseUrl": "https://github.com/vyanhursky/DefJamFFNY-recomp/releases/tag/v0.12.3",
+      "StableReleaseVersion": "v0.12.3"
     },
     {
       "Id": "xerenge",
@@ -223,7 +277,11 @@
       "DiscoveryUrl": "https://recomplauncher.com/game/fifa-street-pc-port",
       "Status": "manual",
       "NexusId": "rl-fifa-street-pc-port",
-      "VerifiedRepositoryUrl": "https://github.com/samuelit0davila/fifa-street-pc-port"
+      "VerifiedRepositoryUrl": "https://github.com/samuelit0davila/fifa-street-pc-port",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "available",
+      "StableReleaseUrl": "https://github.com/samuelit0davila/fifa-street-pc-port/releases/tag/v2.1.3-online-beta",
+      "StableReleaseVersion": "v2.1.3-online-beta"
     },
     {
       "Id": "perfect-dark",
@@ -231,7 +289,11 @@
       "DiscoveryUrl": "https://recomplauncher.com/game/perfect-dark",
       "Status": "manual",
       "NexusId": "rl-perfect-dark",
-      "VerifiedRepositoryUrl": "https://github.com/perfect-dark-pc-port/perfect_dark"
+      "VerifiedRepositoryUrl": "https://github.com/perfect-dark-pc-port/perfect_dark",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "available",
+      "StableReleaseUrl": "https://github.com/perfect-dark-pc-port/perfect_dark/releases/tag/ci-dev-build",
+      "StableReleaseVersion": "ci-dev-build"
     },
     {
       "Id": "speedbreaker",
@@ -253,7 +315,11 @@
       "DiscoveryUrl": "https://recomplauncher.com/game/fm4-recomp",
       "Status": "manual",
       "NexusId": "rl-fm4-recomp",
-      "VerifiedRepositoryUrl": "https://github.com/Alexbeav/fm4-recomp"
+      "VerifiedRepositoryUrl": "https://github.com/Alexbeav/fm4-recomp",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "available",
+      "StableReleaseUrl": "https://github.com/Alexbeav/fm4-recomp/releases/tag/v0.1.0-alpha.2",
+      "StableReleaseVersion": "v0.1.0-alpha.2"
     },
     {
       "Id": "estacado-the-darkness-recomp",
@@ -261,7 +327,9 @@
       "DiscoveryUrl": "https://recomplauncher.com/game/estacado-the-darkness-recomp",
       "Status": "manual",
       "NexusId": "rl-estacado-the-darkness-recomp",
-      "VerifiedRepositoryUrl": "https://github.com/invinceble55-wq/Estacado-The-Darkness-Recomp"
+      "VerifiedRepositoryUrl": "https://github.com/invinceble55-wq/Estacado-The-Darkness-Recomp",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "not-confirmed"
     },
     {
       "Id": "dead-rising-2-case-zero-xenon-recomp",
@@ -269,7 +337,11 @@
       "DiscoveryUrl": "https://recomplauncher.com/game/dead-rising-2-case-zero-xenon-recomp",
       "Status": "manual",
       "NexusId": "rl-dead-rising-2-case-zero-xenon-recomp",
-      "VerifiedRepositoryUrl": "https://github.com/wivi514/Dead_Rising_2_Case_Zero_Xenon_Recomp"
+      "VerifiedRepositoryUrl": "https://github.com/wivi514/Dead_Rising_2_Case_Zero_Xenon_Recomp",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "available",
+      "StableReleaseUrl": "https://github.com/wivi514/Dead_Rising_2_Case_Zero_Xenon_Recomp/releases/tag/v1.1.3",
+      "StableReleaseVersion": "v1.1.3"
     },
     {
       "Id": "wet-recomp",
@@ -277,7 +349,11 @@
       "DiscoveryUrl": "https://recomplauncher.com/game/wet-recomp",
       "Status": "manual",
       "NexusId": "rl-wet-recomp",
-      "VerifiedRepositoryUrl": "https://github.com/Supermedo/wet-recomp"
+      "VerifiedRepositoryUrl": "https://github.com/Supermedo/wet-recomp",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "available",
+      "StableReleaseUrl": "https://github.com/Supermedo/wet-recomp/releases/tag/v0.6.0",
+      "StableReleaseVersion": "v0.6.0"
     },
     {
       "Id": "armyoftworecomp",
@@ -285,7 +361,11 @@
       "DiscoveryUrl": "https://recomplauncher.com/game/armyoftworecomp",
       "Status": "manual",
       "NexusId": "rl-armyoftworecomp",
-      "VerifiedRepositoryUrl": "https://github.com/nikolaygorb/ArmyOfTwoRecomp"
+      "VerifiedRepositoryUrl": "https://github.com/nikolaygorb/ArmyOfTwoRecomp",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "available",
+      "StableReleaseUrl": "https://github.com/nikolaygorb/ArmyOfTwoRecomp/releases/tag/1.4",
+      "StableReleaseVersion": "1.4"
     },
     {
       "Id": "pilotwings-64-recomp",
@@ -293,7 +373,11 @@
       "DiscoveryUrl": "https://recomplauncher.com/game/pilotwings-64-recomp",
       "Status": "manual",
       "NexusId": "rl-pilotwings-64-recomp",
-      "VerifiedRepositoryUrl": "https://github.com/danielgomesvieira2000/pilotwings-64-recomp"
+      "VerifiedRepositoryUrl": "https://github.com/danielgomesvieira2000/pilotwings-64-recomp",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "available",
+      "StableReleaseUrl": "https://github.com/danielgomesvieira2000/pilotwings-64-recomp/releases/tag/v0.1.1",
+      "StableReleaseVersion": "v0.1.1"
     },
     {
       "Id": "skate2-recompile-pc",
@@ -301,7 +385,11 @@
       "DiscoveryUrl": "https://recomplauncher.com/game/skate2-recompile-pc",
       "Status": "manual",
       "NexusId": "rl-skate2-recompile-pc",
-      "VerifiedRepositoryUrl": "https://github.com/christianortel/skate2-recompile-pc"
+      "VerifiedRepositoryUrl": "https://github.com/christianortel/skate2-recompile-pc",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "available",
+      "StableReleaseUrl": "https://github.com/christianortel/skate2-recompile-pc/releases/tag/v0.1.1",
+      "StableReleaseVersion": "v0.1.1"
     },
     {
       "Id": "aerogauge-recomp",
@@ -309,7 +397,11 @@
       "DiscoveryUrl": "https://recomplauncher.com/game/aerogauge-recomp",
       "Status": "manual",
       "NexusId": "rl-aerogauge-recomp",
-      "VerifiedRepositoryUrl": "https://github.com/alondero/aerogauge-recomp"
+      "VerifiedRepositoryUrl": "https://github.com/alondero/aerogauge-recomp",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "available",
+      "StableReleaseUrl": "https://github.com/alondero/aerogauge-recomp/releases/tag/v0.7.0",
+      "StableReleaseVersion": "v0.7.0"
     },
     {
       "Id": "def-jam-vendetta-recomp",
@@ -317,7 +409,11 @@
       "DiscoveryUrl": "https://recomplauncher.com/game/def-jam-vendetta-recomp",
       "Status": "manual",
       "NexusId": "rl-def-jam-vendetta-recomp",
-      "VerifiedRepositoryUrl": "https://github.com/jcsix694/def-jam-vendetta-recomp"
+      "VerifiedRepositoryUrl": "https://github.com/jcsix694/def-jam-vendetta-recomp",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "available",
+      "StableReleaseUrl": "https://github.com/jcsix694/def-jam-vendetta-recomp/releases/tag/v0.4.4",
+      "StableReleaseVersion": "v0.4.4"
     },
     {
       "Id": "battletanx-global-assault-pc-port",
@@ -325,7 +421,11 @@
       "DiscoveryUrl": "https://recomplauncher.com/game/battletanx-global-assault-pc-port",
       "Status": "manual",
       "NexusId": "rl-battletanx-global-assault-pc-port",
-      "VerifiedRepositoryUrl": "https://github.com/TheGh0stShip/BattleTanx-Global-Assault-PC-Port"
+      "VerifiedRepositoryUrl": "https://github.com/TheGh0stShip/BattleTanx-Global-Assault-PC-Port",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "available",
+      "StableReleaseUrl": "https://github.com/TheGh0stShip/BattleTanx-Global-Assault-PC-Port/releases/tag/v0.2.5",
+      "StableReleaseVersion": "v0.2.5"
     },
     {
       "Id": "iss2000-recomp",
@@ -333,7 +433,11 @@
       "DiscoveryUrl": "https://recomplauncher.com/game/iss2000-recomp",
       "Status": "manual",
       "NexusId": "rl-iss2000-recomp",
-      "VerifiedRepositoryUrl": "https://github.com/Mabec-games/iss2000-recomp"
+      "VerifiedRepositoryUrl": "https://github.com/Mabec-games/iss2000-recomp",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "available",
+      "StableReleaseUrl": "https://github.com/Mabec-games/iss2000-recomp/releases/tag/v1.4",
+      "StableReleaseVersion": "v1.4"
     },
     {
       "Id": "wwe2k16-pc",
@@ -341,7 +445,11 @@
       "DiscoveryUrl": "https://recomplauncher.com/game/wwe2k16-pc",
       "Status": "manual",
       "NexusId": "rl-wwe2k16-pc",
-      "VerifiedRepositoryUrl": "https://github.com/itsbybanshee/wwe2k16-pc"
+      "VerifiedRepositoryUrl": "https://github.com/itsbybanshee/wwe2k16-pc",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "available",
+      "StableReleaseUrl": "https://github.com/itsbybanshee/wwe2k16-pc/releases/tag/v1.1.0",
+      "StableReleaseVersion": "v1.1.0"
     },
     {
       "Id": "power-dozer",
@@ -349,7 +457,11 @@
       "DiscoveryUrl": "https://recomplauncher.com/game/power-dozer",
       "Status": "manual",
       "NexusId": "rl-power-dozer",
-      "VerifiedRepositoryUrl": "https://github.com/djultra64/Power-Dozer"
+      "VerifiedRepositoryUrl": "https://github.com/djultra64/Power-Dozer",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "available",
+      "StableReleaseUrl": "https://github.com/djultra64/Power-Dozer/releases/tag/v0.84",
+      "StableReleaseVersion": "v0.84"
     },
     {
       "Id": "blocksphere",
@@ -357,22 +469,34 @@
       "DiscoveryUrl": "https://recomplauncher.com/game/blocksphere",
       "Status": "manual",
       "NexusId": "rl-blocksphere",
-      "VerifiedRepositoryUrl": "https://github.com/djultra64/Blocksphere"
+      "VerifiedRepositoryUrl": "https://github.com/djultra64/Blocksphere",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "available",
+      "StableReleaseUrl": "https://github.com/djultra64/Blocksphere/releases/tag/v1.1.0",
+      "StableReleaseVersion": "v1.1.0"
     },
     {
       "Id": "skate3recomp",
       "Repository": "mchughalex/skate3recomp",
       "DiscoveryUrl": "https://recomplauncher.com/game/skate3recomp",
       "Status": "existing",
-      "NexusId": "skate3"
+      "NexusId": "skate3",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "available",
+      "StableReleaseUrl": "https://github.com/mchughalex/skate3recomp/releases/tag/v2.0.2",
+      "StableReleaseVersion": "v2.0.2"
     },
     {
       "Id": "zeldawwhdrecomp",
       "Repository": "ZeldaWWHDRecomp/ZeldaWWHDRecomp",
       "DiscoveryUrl": "https://recomplauncher.com/game/zeldawwhdrecomp",
-      "Status": "manual",
+      "Status": "automatic",
       "NexusId": "rl-zeldawwhdrecomp",
-      "VerifiedRepositoryUrl": "https://github.com/ZeldaWWHDRecomp/ZeldaWWHDRecomp"
+      "VerifiedRepositoryUrl": "https://github.com/ZeldaWWHDRecomp/ZeldaWWHDRecomp",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "available",
+      "StableReleaseUrl": "https://github.com/ZeldaWWHDRecomp/ZeldaWWHDRecomp/releases/tag/v0.4.0",
+      "StableReleaseVersion": "v0.4.0"
     },
     {
       "Id": "symphonyrecomp",
@@ -380,7 +504,11 @@
       "DiscoveryUrl": "https://recomplauncher.com/game/symphonyrecomp",
       "Status": "manual",
       "NexusId": "rl-symphonyrecomp",
-      "VerifiedRepositoryUrl": "https://github.com/BlackLabelHQ/SymphonyRecomp"
+      "VerifiedRepositoryUrl": "https://github.com/BlackLabelHQ/SymphonyRecomp",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "available",
+      "StableReleaseUrl": "https://github.com/BlackLabelHQ/SymphonyRecomp/releases/tag/v0.5.1b",
+      "StableReleaseVersion": "v0.5.1b"
     },
     {
       "Id": "pinyon-shift",
@@ -409,7 +537,11 @@
       "DiscoveryUrl": "https://recomplauncher.com/game/silent-hill-decomp",
       "Status": "manual",
       "NexusId": "rl-silent-hill-decomp",
-      "VerifiedRepositoryUrl": "https://github.com/SlickAmogus/silent-hill-decomp"
+      "VerifiedRepositoryUrl": "https://github.com/SlickAmogus/silent-hill-decomp",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "available",
+      "StableReleaseUrl": "https://github.com/SlickAmogus/silent-hill-decomp/releases/tag/crossplatform-beta",
+      "StableReleaseVersion": "crossplatform-beta"
     },
     {
       "Id": "hells-gate-recomp",
@@ -417,7 +549,11 @@
       "DiscoveryUrl": "https://recomplauncher.com/game/hells-gate-recomp",
       "Status": "manual",
       "NexusId": "rl-hells-gate-recomp",
-      "VerifiedRepositoryUrl": "https://github.com/florinp93/hells-gate-recomp"
+      "VerifiedRepositoryUrl": "https://github.com/florinp93/hells-gate-recomp",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "available",
+      "StableReleaseUrl": "https://github.com/florinp93/hells-gate-recomp/releases/tag/v0.8.4-beta",
+      "StableReleaseVersion": "v0.8.4-beta"
     },
     {
       "Id": "tenkaichi3decomp",
@@ -425,7 +561,11 @@
       "DiscoveryUrl": "https://recomplauncher.com/game/tenkaichi3decomp",
       "Status": "manual",
       "NexusId": "rl-tenkaichi3decomp",
-      "VerifiedRepositoryUrl": "https://github.com/z3xox/Tenkaichi3Decomp"
+      "VerifiedRepositoryUrl": "https://github.com/z3xox/Tenkaichi3Decomp",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "available",
+      "StableReleaseUrl": "https://github.com/z3xox/Tenkaichi3Decomp/releases/tag/v0.1.39.1",
+      "StableReleaseVersion": "v0.1.39.1"
     },
     {
       "Id": "fable-2-recomp",
@@ -441,7 +581,11 @@
       "DiscoveryUrl": "https://recomplauncher.com/game/yakumo",
       "Status": "manual",
       "NexusId": "rl-yakumo",
-      "VerifiedRepositoryUrl": "https://github.com/TeamGDB/Yakumo"
+      "VerifiedRepositoryUrl": "https://github.com/TeamGDB/Yakumo",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "available",
+      "StableReleaseUrl": "https://github.com/TeamGDB/Yakumo/releases/tag/v0.7.5",
+      "StableReleaseVersion": "v0.7.5"
     },
     {
       "Id": "battleship",
@@ -449,7 +593,11 @@
       "DiscoveryUrl": "https://recomplauncher.com/game/battleship",
       "Status": "manual",
       "NexusId": "rl-battleship",
-      "VerifiedRepositoryUrl": "https://github.com/JRickey/BattleShip"
+      "VerifiedRepositoryUrl": "https://github.com/JRickey/BattleShip",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "available",
+      "StableReleaseUrl": "https://github.com/JRickey/BattleShip/releases/tag/v1.6",
+      "StableReleaseVersion": "v1.6"
     },
     {
       "Id": "edgeoftimerecomp",
@@ -457,7 +605,11 @@
       "DiscoveryUrl": "https://recomplauncher.com/game/edgeoftimerecomp",
       "Status": "manual",
       "NexusId": "rl-edgeoftimerecomp",
-      "VerifiedRepositoryUrl": "https://github.com/goliathret/EdgeOfTimeRecomp"
+      "VerifiedRepositoryUrl": "https://github.com/goliathret/EdgeOfTimeRecomp",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "available",
+      "StableReleaseUrl": "https://github.com/goliathret/EdgeOfTimeRecomp/releases/tag/v1.0.0",
+      "StableReleaseVersion": "v1.0.0"
     },
     {
       "Id": "skyrecomp",
@@ -465,7 +617,11 @@
       "DiscoveryUrl": "https://recomplauncher.com/game/skyrecomp",
       "Status": "manual",
       "NexusId": "rl-skyrecomp",
-      "VerifiedRepositoryUrl": "https://github.com/Apolinario-coder/SkyRecomp"
+      "VerifiedRepositoryUrl": "https://github.com/Apolinario-coder/SkyRecomp",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "available",
+      "StableReleaseUrl": "https://github.com/Apolinario-coder/SkyRecomp/releases/tag/v2.0.2",
+      "StableReleaseVersion": "v2.0.2"
     },
     {
       "Id": "nocturnerecomp",
@@ -473,7 +629,11 @@
       "DiscoveryUrl": "https://recomplauncher.com/game/nocturnerecomp",
       "Status": "manual",
       "NexusId": "rl-nocturnerecomp",
-      "VerifiedRepositoryUrl": "https://github.com/birabittoh/NocturneRecomp"
+      "VerifiedRepositoryUrl": "https://github.com/birabittoh/NocturneRecomp",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "available",
+      "StableReleaseUrl": "https://github.com/birabittoh/NocturneRecomp/releases/tag/v1.4.5",
+      "StableReleaseVersion": "v1.4.5"
     },
     {
       "Id": "thesimpsonsgamerecomp",
@@ -481,15 +641,23 @@
       "DiscoveryUrl": "https://recomplauncher.com/game/thesimpsonsgamerecomp",
       "Status": "manual",
       "NexusId": "rl-thesimpsonsgamerecomp",
-      "VerifiedRepositoryUrl": "https://github.com/YesterMester/TheSimpsonsGameRecomp"
+      "VerifiedRepositoryUrl": "https://github.com/YesterMester/TheSimpsonsGameRecomp",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "available",
+      "StableReleaseUrl": "https://github.com/YesterMester/TheSimpsonsGameRecomp/releases/tag/v0.0.6.5",
+      "StableReleaseVersion": "v0.0.6.5"
     },
     {
       "Id": "strikers",
       "Repository": "new-coke/strikers",
       "DiscoveryUrl": "https://recomplauncher.com/game/strikers",
-      "Status": "manual",
+      "Status": "automatic",
       "NexusId": "rl-strikers",
-      "VerifiedRepositoryUrl": "https://github.com/new-coke/strikers"
+      "VerifiedRepositoryUrl": "https://github.com/new-coke/strikers",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "available",
+      "StableReleaseUrl": "https://github.com/new-coke/strikers/releases/tag/v1.3.0",
+      "StableReleaseVersion": "v1.3.0"
     },
     {
       "Id": "project-midas",
@@ -497,7 +665,11 @@
       "DiscoveryUrl": "https://recomplauncher.com/game/project-midas",
       "Status": "manual",
       "NexusId": "rl-project-midas",
-      "VerifiedRepositoryUrl": "https://github.com/murkantor/Project-Midas"
+      "VerifiedRepositoryUrl": "https://github.com/murkantor/Project-Midas",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "available",
+      "StableReleaseUrl": "https://github.com/murkantor/Project-Midas/releases/tag/v1.0.1",
+      "StableReleaseVersion": "v1.0.1"
     },
     {
       "Id": "downpourrecomp",
@@ -505,7 +677,11 @@
       "DiscoveryUrl": "https://recomplauncher.com/game/downpourrecomp",
       "Status": "manual",
       "NexusId": "rl-downpourrecomp",
-      "VerifiedRepositoryUrl": "https://github.com/LittleBitUA/DownpourRecomp"
+      "VerifiedRepositoryUrl": "https://github.com/LittleBitUA/DownpourRecomp",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "available",
+      "StableReleaseUrl": "https://github.com/LittleBitUA/DownpourRecomp/releases/tag/v1.1.8",
+      "StableReleaseVersion": "v1.1.8"
     },
     {
       "Id": "dino-recomp",
@@ -513,7 +689,11 @@
       "DiscoveryUrl": "https://recomplauncher.com/game/dino-recomp",
       "Status": "manual",
       "NexusId": "rl-dino-recomp",
-      "VerifiedRepositoryUrl": "https://github.com/DinosaurPlanetRecomp/dino-recomp"
+      "VerifiedRepositoryUrl": "https://github.com/DinosaurPlanetRecomp/dino-recomp",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "available",
+      "StableReleaseUrl": "https://github.com/DinosaurPlanetRecomp/dino-recomp/releases/tag/v0.3.0",
+      "StableReleaseVersion": "v0.3.0"
     },
     {
       "Id": "bm64recomp",
@@ -521,7 +701,11 @@
       "DiscoveryUrl": "https://recomplauncher.com/game/bm64recomp",
       "Status": "manual",
       "NexusId": "rl-bm64recomp",
-      "VerifiedRepositoryUrl": "https://github.com/RevoSucks/BM64Recomp"
+      "VerifiedRepositoryUrl": "https://github.com/RevoSucks/BM64Recomp",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "available",
+      "StableReleaseUrl": "https://github.com/RevoSucks/BM64Recomp/releases/tag/v1.0.0",
+      "StableReleaseVersion": "v1.0.0"
     },
     {
       "Id": "g-diffuser",
@@ -529,7 +713,11 @@
       "DiscoveryUrl": "https://recomplauncher.com/game/g-diffuser",
       "Status": "manual",
       "NexusId": "rl-g-diffuser",
-      "VerifiedRepositoryUrl": "https://github.com/Zorkats/G-Diffuser"
+      "VerifiedRepositoryUrl": "https://github.com/Zorkats/G-Diffuser",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "available",
+      "StableReleaseUrl": "https://github.com/Zorkats/G-Diffuser/releases/tag/v1.1.0",
+      "StableReleaseVersion": "v1.1.0"
     },
     {
       "Id": "quest64-recomp",
@@ -537,7 +725,11 @@
       "DiscoveryUrl": "https://recomplauncher.com/game/quest64-recomp",
       "Status": "manual",
       "NexusId": "rl-quest64-recomp",
-      "VerifiedRepositoryUrl": "https://github.com/Rainchus/Quest64-Recomp"
+      "VerifiedRepositoryUrl": "https://github.com/Rainchus/Quest64-Recomp",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "available",
+      "StableReleaseUrl": "https://github.com/Rainchus/Quest64-Recomp/releases/tag/v0.1",
+      "StableReleaseVersion": "v0.1"
     },
     {
       "Id": "condemned2recomp",
@@ -545,7 +737,11 @@
       "DiscoveryUrl": "https://recomplauncher.com/game/condemned2recomp",
       "Status": "manual",
       "NexusId": "rl-condemned2recomp",
-      "VerifiedRepositoryUrl": "https://github.com/psxrestore/Condemned2Recomp"
+      "VerifiedRepositoryUrl": "https://github.com/psxrestore/Condemned2Recomp",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "available",
+      "StableReleaseUrl": "https://github.com/psxrestore/Condemned2Recomp/releases/tag/0.5.1",
+      "StableReleaseVersion": "0.5.1"
     },
     {
       "Id": "tip-recomp",
@@ -553,7 +749,11 @@
       "DiscoveryUrl": "https://recomplauncher.com/game/tip-recomp",
       "Status": "manual",
       "NexusId": "rl-tip-recomp",
-      "VerifiedRepositoryUrl": "https://github.com/SolarCookies/TiP-Recomp"
+      "VerifiedRepositoryUrl": "https://github.com/SolarCookies/TiP-Recomp",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "available",
+      "StableReleaseUrl": "https://github.com/SolarCookies/TiP-Recomp/releases/tag/1.14.0",
+      "StableReleaseVersion": "1.14.0"
     },
     {
       "Id": "king-kong-recompiled",
@@ -561,7 +761,11 @@
       "DiscoveryUrl": "https://recomplauncher.com/game/king-kong-recompiled",
       "Status": "manual",
       "NexusId": "rl-king-kong-recompiled",
-      "VerifiedRepositoryUrl": "https://github.com/TekRantGaming/king-kong-recompiled"
+      "VerifiedRepositoryUrl": "https://github.com/TekRantGaming/king-kong-recompiled",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "available",
+      "StableReleaseUrl": "https://github.com/TekRantGaming/king-kong-recompiled/releases/tag/v1.9.13",
+      "StableReleaseVersion": "v1.9.13"
     },
     {
       "Id": "pgr4-recomp",
@@ -576,7 +780,11 @@
       "DiscoveryUrl": "https://recomplauncher.com/game/megamanxsnesrecomp",
       "Status": "manual",
       "NexusId": "rl-megamanxsnesrecomp",
-      "VerifiedRepositoryUrl": "https://github.com/mstan/MegaManXSNESRecomp"
+      "VerifiedRepositoryUrl": "https://github.com/mstan/MegaManXSNESRecomp",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "available",
+      "StableReleaseUrl": "https://github.com/mstan/MegaManXSNESRecomp/releases/tag/v2.3.8",
+      "StableReleaseVersion": "v2.3.8"
     },
     {
       "Id": "naruto-rise-recomp",
@@ -584,7 +792,11 @@
       "DiscoveryUrl": "https://recomplauncher.com/game/naruto-rise-recomp",
       "Status": "manual",
       "NexusId": "rl-naruto-rise-recomp",
-      "VerifiedRepositoryUrl": "https://github.com/jorjbarbosa/naruto-rise-recomp"
+      "VerifiedRepositoryUrl": "https://github.com/jorjbarbosa/naruto-rise-recomp",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "available",
+      "StableReleaseUrl": "https://github.com/jorjbarbosa/naruto-rise-recomp/releases/tag/v0.3.0-beta",
+      "StableReleaseVersion": "v0.3.0-beta"
     },
     {
       "Id": "renut",
@@ -592,7 +804,11 @@
       "DiscoveryUrl": "https://recomplauncher.com/game/renut",
       "Status": "manual",
       "NexusId": "rl-renut",
-      "VerifiedRepositoryUrl": "https://github.com/masterspike52/reNut"
+      "VerifiedRepositoryUrl": "https://github.com/masterspike52/reNut",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "available",
+      "StableReleaseUrl": "https://github.com/masterspike52/reNut/releases/tag/beta14",
+      "StableReleaseVersion": "beta14"
     },
     {
       "Id": "dprecomp",
@@ -600,7 +816,11 @@
       "DiscoveryUrl": "https://recomplauncher.com/game/dprecomp",
       "Status": "manual",
       "NexusId": "rl-dprecomp",
-      "VerifiedRepositoryUrl": "https://github.com/LittleBitUA/DPRecomp"
+      "VerifiedRepositoryUrl": "https://github.com/LittleBitUA/DPRecomp",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "available",
+      "StableReleaseUrl": "https://github.com/LittleBitUA/DPRecomp/releases/tag/v2.0.14",
+      "StableReleaseVersion": "v2.0.14"
     },
     {
       "Id": "harvestmoon64recomp",
@@ -608,7 +828,11 @@
       "DiscoveryUrl": "https://recomplauncher.com/game/harvestmoon64recomp",
       "Status": "manual",
       "NexusId": "rl-harvestmoon64recomp",
-      "VerifiedRepositoryUrl": "https://github.com/HarvestMoon64Recomp/HarvestMoon64Recomp"
+      "VerifiedRepositoryUrl": "https://github.com/HarvestMoon64Recomp/HarvestMoon64Recomp",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "available",
+      "StableReleaseUrl": "https://github.com/HarvestMoon64Recomp/HarvestMoon64Recomp/releases/tag/v1.2.2",
+      "StableReleaseVersion": "v1.2.2"
     },
     {
       "Id": "mcla-recomp",
@@ -616,7 +840,11 @@
       "DiscoveryUrl": "https://recomplauncher.com/game/mcla-recomp",
       "Status": "manual",
       "NexusId": "rl-mcla-recomp",
-      "VerifiedRepositoryUrl": "https://github.com/holdmysocks/mcla-recomp"
+      "VerifiedRepositoryUrl": "https://github.com/holdmysocks/mcla-recomp",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "available",
+      "StableReleaseUrl": "https://github.com/holdmysocks/mcla-recomp/releases/tag/v1.0.13",
+      "StableReleaseVersion": "v1.0.13"
     },
     {
       "Id": "sdoj-recomp",
@@ -624,7 +852,11 @@
       "DiscoveryUrl": "https://recomplauncher.com/game/sdoj-recomp",
       "Status": "manual",
       "NexusId": "rl-sdoj-recomp",
-      "VerifiedRepositoryUrl": "https://github.com/eandis/SDOJ-Recomp"
+      "VerifiedRepositoryUrl": "https://github.com/eandis/SDOJ-Recomp",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "available",
+      "StableReleaseUrl": "https://github.com/eandis/SDOJ-Recomp/releases/tag/v1.51.2",
+      "StableReleaseVersion": "v1.51.2"
     },
     {
       "Id": "eternalsonatareprise",
@@ -632,7 +864,11 @@
       "DiscoveryUrl": "https://recomplauncher.com/game/eternalsonatareprise",
       "Status": "manual",
       "NexusId": "rl-eternalsonatareprise",
-      "VerifiedRepositoryUrl": "https://github.com/birabittoh/EternalSonataReprise"
+      "VerifiedRepositoryUrl": "https://github.com/birabittoh/EternalSonataReprise",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "available",
+      "StableReleaseUrl": "https://github.com/birabittoh/EternalSonataReprise/releases/tag/v1.3.5",
+      "StableReleaseVersion": "v1.3.5"
     },
     {
       "Id": "cvlod-recomp",
@@ -640,7 +876,11 @@
       "DiscoveryUrl": "https://recomplauncher.com/game/cvlod-recomp",
       "Status": "manual",
       "NexusId": "rl-cvlod-recomp",
-      "VerifiedRepositoryUrl": "https://github.com/fliperama86/cvlod_recomp"
+      "VerifiedRepositoryUrl": "https://github.com/fliperama86/cvlod_recomp",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "available",
+      "StableReleaseUrl": "https://github.com/fliperama86/cvlod_recomp/releases/tag/v0.2.29",
+      "StableReleaseVersion": "v0.2.29"
     },
     {
       "Id": "supermarioworldrecomp",
@@ -648,7 +888,11 @@
       "DiscoveryUrl": "https://recomplauncher.com/game/supermarioworldrecomp",
       "Status": "manual",
       "NexusId": "rl-supermarioworldrecomp",
-      "VerifiedRepositoryUrl": "https://github.com/mstan/SuperMarioWorldRecomp"
+      "VerifiedRepositoryUrl": "https://github.com/mstan/SuperMarioWorldRecomp",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "available",
+      "StableReleaseUrl": "https://github.com/mstan/SuperMarioWorldRecomp/releases/tag/v0.15.1",
+      "StableReleaseVersion": "v0.15.1"
     },
     {
       "Id": "dbz1",
@@ -656,7 +900,11 @@
       "DiscoveryUrl": "https://recomplauncher.com/game/dbz1",
       "Status": "manual",
       "NexusId": "rl-dbz1",
-      "VerifiedRepositoryUrl": "https://github.com/WistfulHopes/DBZ1"
+      "VerifiedRepositoryUrl": "https://github.com/WistfulHopes/DBZ1",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "available",
+      "StableReleaseUrl": "https://github.com/WistfulHopes/DBZ1/releases/tag/v0.0.2",
+      "StableReleaseVersion": "v0.0.2"
     },
     {
       "Id": "finesthourremastered",
@@ -664,7 +912,11 @@
       "DiscoveryUrl": "https://recomplauncher.com/game/finesthourremastered",
       "Status": "manual",
       "NexusId": "rl-finesthourremastered",
-      "VerifiedRepositoryUrl": "https://github.com/crazyriddler/FinestHourRemastered"
+      "VerifiedRepositoryUrl": "https://github.com/crazyriddler/FinestHourRemastered",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "available",
+      "StableReleaseUrl": "https://github.com/crazyriddler/FinestHourRemastered/releases/tag/update",
+      "StableReleaseVersion": "update"
     },
     {
       "Id": "gears-judgement-recomp",
@@ -672,7 +924,11 @@
       "DiscoveryUrl": "https://recomplauncher.com/game/gears-judgement-recomp",
       "Status": "manual",
       "NexusId": "rl-gears-judgement-recomp",
-      "VerifiedRepositoryUrl": "https://github.com/OverkillLabs3/gears-judgement-recomp"
+      "VerifiedRepositoryUrl": "https://github.com/OverkillLabs3/gears-judgement-recomp",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "available",
+      "StableReleaseUrl": "https://github.com/OverkillLabs3/gears-judgement-recomp/releases/tag/v0.2.1",
+      "StableReleaseVersion": "v0.2.1"
     },
     {
       "Id": "snowboardkids2-recomp",
@@ -680,7 +936,11 @@
       "DiscoveryUrl": "https://recomplauncher.com/game/snowboardkids2-recomp",
       "Status": "manual",
       "NexusId": "rl-snowboardkids2-recomp",
-      "VerifiedRepositoryUrl": "https://github.com/cdlewis/snowboardkids2-recomp"
+      "VerifiedRepositoryUrl": "https://github.com/cdlewis/snowboardkids2-recomp",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "available",
+      "StableReleaseUrl": "https://github.com/cdlewis/snowboardkids2-recomp/releases/tag/v2.0.2",
+      "StableReleaseVersion": "v2.0.2"
     },
     {
       "Id": "sssv-recomp",
@@ -688,7 +948,11 @@
       "DiscoveryUrl": "https://recomplauncher.com/game/sssv-recomp",
       "Status": "manual",
       "NexusId": "rl-sssv-recomp",
-      "VerifiedRepositoryUrl": "https://github.com/Cellenseres/SSSV_Recomp"
+      "VerifiedRepositoryUrl": "https://github.com/Cellenseres/SSSV_Recomp",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "available",
+      "StableReleaseUrl": "https://github.com/Cellenseres/SSSV_Recomp/releases/tag/v0.2.0",
+      "StableReleaseVersion": "v0.2.0"
     },
     {
       "Id": "open-nectar-pikmin-native-pc-mobile-port",
@@ -696,7 +960,11 @@
       "DiscoveryUrl": "https://recomplauncher.com/game/open-nectar-pikmin-native-pc-mobile-port",
       "Status": "manual",
       "NexusId": "rl-open-nectar-pikmin-native-pc-mobile-port",
-      "VerifiedRepositoryUrl": "https://github.com/SSunnKing/Open-Nectar---Pikmin-Native-PC-Mobile-Port"
+      "VerifiedRepositoryUrl": "https://github.com/SSunnKing/Open-Nectar---Pikmin-Native-PC-Mobile-Port",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "available",
+      "StableReleaseUrl": "https://github.com/SSunnKing/Open-Nectar---Pikmin-Native-PC-Mobile-Port/releases/tag/1.1",
+      "StableReleaseVersion": "1.1"
     },
     {
       "Id": "yu-gi-oh-forbidden-memories-recompiled",
@@ -704,7 +972,11 @@
       "DiscoveryUrl": "https://recomplauncher.com/game/yu-gi-oh-forbidden-memories-recompiled",
       "Status": "manual",
       "NexusId": "rl-yu-gi-oh-forbidden-memories-recompiled",
-      "VerifiedRepositoryUrl": "https://github.com/Unchiga/Yu-Gi-Oh-Forbidden-Memories-Recompiled"
+      "VerifiedRepositoryUrl": "https://github.com/Unchiga/Yu-Gi-Oh-Forbidden-Memories-Recompiled",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "available",
+      "StableReleaseUrl": "https://github.com/Unchiga/Yu-Gi-Oh-Forbidden-Memories-Recompiled/releases/tag/v0.3.0",
+      "StableReleaseVersion": "v0.3.0"
     },
     {
       "Id": "dbz-budokai-3-hd-collection",
@@ -712,7 +984,11 @@
       "DiscoveryUrl": "https://recomplauncher.com/game/dbz-budokai-3-hd-collection",
       "Status": "manual",
       "NexusId": "rl-dbz-budokai-3-hd-collection",
-      "VerifiedRepositoryUrl": "https://github.com/novapowers0/DBZ-Budokai-3-HD-Collection"
+      "VerifiedRepositoryUrl": "https://github.com/novapowers0/DBZ-Budokai-3-HD-Collection",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "available",
+      "StableReleaseUrl": "https://github.com/novapowers0/DBZ-Budokai-3-HD-Collection/releases/tag/v1.5.5.5",
+      "StableReleaseVersion": "v1.5.5.5"
     },
     {
       "Id": "tekken-tag-tournament-2-pc",
@@ -720,7 +996,11 @@
       "DiscoveryUrl": "https://recomplauncher.com/game/tekken-tag-tournament-2-pc",
       "Status": "manual",
       "NexusId": "rl-tekken-tag-tournament-2-pc",
-      "VerifiedRepositoryUrl": "https://github.com/shihabal3amri/tekken-tag-tournament-2-pc"
+      "VerifiedRepositoryUrl": "https://github.com/shihabal3amri/tekken-tag-tournament-2-pc",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "available",
+      "StableReleaseUrl": "https://github.com/shihabal3amri/tekken-tag-tournament-2-pc/releases/tag/v0.1.7",
+      "StableReleaseVersion": "v0.1.7"
     },
     {
       "Id": "ridgeracer6-recompilation",
@@ -728,7 +1008,11 @@
       "DiscoveryUrl": "https://recomplauncher.com/game/ridgeracer6-recompilation",
       "Status": "manual",
       "NexusId": "rl-ridgeracer6-recompilation",
-      "VerifiedRepositoryUrl": "https://github.com/Sirhalo23/RidgeRacer6-Recompilation"
+      "VerifiedRepositoryUrl": "https://github.com/Sirhalo23/RidgeRacer6-Recompilation",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "available",
+      "StableReleaseUrl": "https://github.com/Sirhalo23/RidgeRacer6-Recompilation/releases/tag/v0.1.5",
+      "StableReleaseVersion": "v0.1.5"
     },
     {
       "Id": "dbz-burst-limit-recompiled",
@@ -736,7 +1020,11 @@
       "DiscoveryUrl": "https://recomplauncher.com/game/dbz-burst-limit-recompiled",
       "Status": "manual",
       "NexusId": "rl-dbz-burst-limit-recompiled",
-      "VerifiedRepositoryUrl": "https://github.com/iExplosiveRage/DBZ-Burst-Limit-Recompiled"
+      "VerifiedRepositoryUrl": "https://github.com/iExplosiveRage/DBZ-Burst-Limit-Recompiled",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "available",
+      "StableReleaseUrl": "https://github.com/iExplosiveRage/DBZ-Burst-Limit-Recompiled/releases/tag/v0.7.3-alpha",
+      "StableReleaseVersion": "v0.7.3-alpha"
     },
     {
       "Id": "wwe-svr2011-pc",
@@ -744,7 +1032,11 @@
       "DiscoveryUrl": "https://recomplauncher.com/game/wwe-svr2011-pc",
       "Status": "manual",
       "NexusId": "rl-wwe-svr2011-pc",
-      "VerifiedRepositoryUrl": "https://github.com/KaikoClanworth1/wwe-svr2011-pc"
+      "VerifiedRepositoryUrl": "https://github.com/KaikoClanworth1/wwe-svr2011-pc",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "available",
+      "StableReleaseUrl": "https://github.com/KaikoClanworth1/wwe-svr2011-pc/releases/tag/v2.1.5",
+      "StableReleaseVersion": "v2.1.5"
     },
     {
       "Id": "rumble-roses-xx-recomp",
@@ -752,7 +1044,11 @@
       "DiscoveryUrl": "https://recomplauncher.com/game/rumble-roses-xx-recomp",
       "Status": "manual",
       "NexusId": "rl-rumble-roses-xx-recomp",
-      "VerifiedRepositoryUrl": "https://github.com/JesusTaylo/rumble-roses-xx-recomp"
+      "VerifiedRepositoryUrl": "https://github.com/JesusTaylo/rumble-roses-xx-recomp",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "available",
+      "StableReleaseUrl": "https://github.com/JesusTaylo/rumble-roses-xx-recomp/releases/tag/v0.2",
+      "StableReleaseVersion": "v0.2"
     },
     {
       "Id": "jetsetradiofuture-unleashed",
@@ -760,7 +1056,11 @@
       "DiscoveryUrl": "https://recomplauncher.com/game/jetsetradiofuture-unleashed",
       "Status": "manual",
       "NexusId": "rl-jetsetradiofuture-unleashed",
-      "VerifiedRepositoryUrl": "https://github.com/JuMatt/JetSetRadioFuture-Unleashed"
+      "VerifiedRepositoryUrl": "https://github.com/JuMatt/JetSetRadioFuture-Unleashed",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "available",
+      "StableReleaseUrl": "https://github.com/JuMatt/JetSetRadioFuture-Unleashed/releases/tag/v0.5.9",
+      "StableReleaseVersion": "v0.5.9"
     },
     {
       "Id": "dragon-age-origins-recomp",
@@ -768,7 +1068,9 @@
       "DiscoveryUrl": "https://recomplauncher.com/game/dragon-age-origins-recomp",
       "Status": "manual",
       "NexusId": "rl-dragon-age-origins-recomp",
-      "VerifiedRepositoryUrl": "https://github.com/96dot/Dragon-Age-Origins-Recomp"
+      "VerifiedRepositoryUrl": "https://github.com/96dot/Dragon-Age-Origins-Recomp",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "not-confirmed"
     },
     {
       "Id": "spartanport",
@@ -776,7 +1078,11 @@
       "DiscoveryUrl": "https://recomplauncher.com/game/spartanport",
       "Status": "manual",
       "NexusId": "rl-spartanport",
-      "VerifiedRepositoryUrl": "https://github.com/FelipePrado0/SpartanPort"
+      "VerifiedRepositoryUrl": "https://github.com/FelipePrado0/SpartanPort",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "available",
+      "StableReleaseUrl": "https://github.com/FelipePrado0/SpartanPort/releases/tag/windows-v2.7.0",
+      "StableReleaseVersion": "windows-v2.7.0"
     },
     {
       "Id": "octr-nitrofueled-pc",
@@ -784,7 +1090,11 @@
       "DiscoveryUrl": "https://recomplauncher.com/game/octr-nitrofueled-pc",
       "Status": "manual",
       "NexusId": "rl-octr-nitrofueled-pc",
-      "VerifiedRepositoryUrl": "https://github.com/Ryu7w7/OCTR-NitroFueled-PC"
+      "VerifiedRepositoryUrl": "https://github.com/Ryu7w7/OCTR-NitroFueled-PC",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "available",
+      "StableReleaseUrl": "https://github.com/Ryu7w7/OCTR-NitroFueled-PC/releases/tag/v0.6.5",
+      "StableReleaseVersion": "v0.6.5"
     },
     {
       "Id": "repop",
@@ -792,7 +1102,11 @@
       "DiscoveryUrl": "https://recomplauncher.com/game/repop",
       "Status": "manual",
       "NexusId": "rl-repop",
-      "VerifiedRepositoryUrl": "https://github.com/FulGerNet/rePOP"
+      "VerifiedRepositoryUrl": "https://github.com/FulGerNet/rePOP",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "available",
+      "StableReleaseUrl": "https://github.com/FulGerNet/rePOP/releases/tag/reSOTv0.4.0",
+      "StableReleaseVersion": "reSOTv0.4.0"
     },
     {
       "Id": "crashott-pc",
@@ -800,7 +1114,11 @@
       "DiscoveryUrl": "https://recomplauncher.com/game/crashott-pc",
       "Status": "manual",
       "NexusId": "rl-crashott-pc",
-      "VerifiedRepositoryUrl": "https://github.com/VitoMiguelF/crashott-pc"
+      "VerifiedRepositoryUrl": "https://github.com/VitoMiguelF/crashott-pc",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "available",
+      "StableReleaseUrl": "https://github.com/VitoMiguelF/crashott-pc/releases/tag/v1.07",
+      "StableReleaseVersion": "v1.07"
     },
     {
       "Id": "ngbrecomp",
@@ -808,7 +1126,9 @@
       "DiscoveryUrl": "https://recomplauncher.com/game/ngbrecomp",
       "Status": "manual",
       "NexusId": "rl-ngbrecomp",
-      "VerifiedRepositoryUrl": "https://github.com/gamboozino/ngbrecomp"
+      "VerifiedRepositoryUrl": "https://github.com/gamboozino/ngbrecomp",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "not-confirmed"
     },
     {
       "Id": "savagewindrecomp",
@@ -816,7 +1136,9 @@
       "DiscoveryUrl": "https://recomplauncher.com/game/savagewindrecomp",
       "Status": "manual",
       "NexusId": "rl-savagewindrecomp",
-      "VerifiedRepositoryUrl": "https://github.com/Revivedx/SavageWindRecomp"
+      "VerifiedRepositoryUrl": "https://github.com/Revivedx/SavageWindRecomp",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "not-confirmed"
     },
     {
       "Id": "black-xberecomp",
@@ -838,7 +1160,9 @@
       "DiscoveryUrl": "https://recomplauncher.com/game/ac6-recomp",
       "Status": "manual",
       "NexusId": "rl-ac6-recomp",
-      "VerifiedRepositoryUrl": "https://github.com/sal063/AC6_recomp"
+      "VerifiedRepositoryUrl": "https://github.com/sal063/AC6_recomp",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "not-confirmed"
     },
     {
       "Id": "b2recomp",
@@ -853,7 +1177,11 @@
       "DiscoveryUrl": "https://recomplauncher.com/game/ico-pc",
       "Status": "manual",
       "NexusId": "rl-ico-pc",
-      "VerifiedRepositoryUrl": "https://github.com/nathanialf/ico-pc"
+      "VerifiedRepositoryUrl": "https://github.com/nathanialf/ico-pc",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "available",
+      "StableReleaseUrl": "https://github.com/nathanialf/ico-pc/releases/tag/v0.9.3",
+      "StableReleaseVersion": "v0.9.3"
     },
     {
       "Id": "scda-xberecomp",
@@ -861,7 +1189,11 @@
       "DiscoveryUrl": "https://recomplauncher.com/game/scda-xberecomp",
       "Status": "manual",
       "NexusId": "rl-scda-xberecomp",
-      "VerifiedRepositoryUrl": "https://github.com/TGP482/SCDA-XBERecomp"
+      "VerifiedRepositoryUrl": "https://github.com/TGP482/SCDA-XBERecomp",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "available",
+      "StableReleaseUrl": "https://github.com/TGP482/SCDA-XBERecomp/releases/tag/V2",
+      "StableReleaseVersion": "V2"
     },
     {
       "Id": "cod3recomp",
@@ -869,7 +1201,9 @@
       "DiscoveryUrl": "https://recomplauncher.com/game/cod3recomp",
       "Status": "manual",
       "NexusId": "rl-cod3recomp",
-      "VerifiedRepositoryUrl": "https://github.com/FrankHUN88453/CoD3Recomp"
+      "VerifiedRepositoryUrl": "https://github.com/FrankHUN88453/CoD3Recomp",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "not-confirmed"
     },
     {
       "Id": "goemon64recomp",
@@ -877,7 +1211,11 @@
       "DiscoveryUrl": "https://recomplauncher.com/game/goemon64recomp",
       "Status": "manual",
       "NexusId": "rl-goemon64recomp",
-      "VerifiedRepositoryUrl": "https://github.com/klorfmorf/Goemon64Recomp"
+      "VerifiedRepositoryUrl": "https://github.com/klorfmorf/Goemon64Recomp",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "available",
+      "StableReleaseUrl": "https://github.com/klorfmorf/Goemon64Recomp/releases/tag/v0.2.0-dev",
+      "StableReleaseVersion": "v0.2.0-dev"
     },
     {
       "Id": "projectcane",
@@ -893,15 +1231,23 @@
       "DiscoveryUrl": "https://recomplauncher.com/game/megaman64recompiled",
       "Status": "manual",
       "NexusId": "rl-megaman64recompiled",
-      "VerifiedRepositoryUrl": "https://github.com/MegaMan64Recomp/MegaMan64Recompiled"
+      "VerifiedRepositoryUrl": "https://github.com/MegaMan64Recomp/MegaMan64Recompiled",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "available",
+      "StableReleaseUrl": "https://github.com/MegaMan64Recomp/MegaMan64Recompiled/releases/tag/v0.9.1",
+      "StableReleaseVersion": "v0.9.1"
     },
     {
       "Id": "luigis-mansion-recompiled",
       "Repository": "rob646464/luigis-mansion-recompiled",
       "DiscoveryUrl": "https://recomplauncher.com/game/luigis-mansion-recompiled",
-      "Status": "manual",
+      "Status": "automatic",
       "NexusId": "rl-luigis-mansion-recompiled",
-      "VerifiedRepositoryUrl": "https://github.com/rob646464/luigis-mansion-recompiled"
+      "VerifiedRepositoryUrl": "https://github.com/rob646464/luigis-mansion-recompiled",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "available",
+      "StableReleaseUrl": "https://github.com/rob646464/luigis-mansion-recompiled/releases/tag/v1.1.5",
+      "StableReleaseVersion": "v1.1.5"
     },
     {
       "Id": "dkc1recomp",
@@ -909,7 +1255,11 @@
       "DiscoveryUrl": "https://recomplauncher.com/game/dkc1recomp",
       "Status": "manual",
       "NexusId": "rl-dkc1recomp",
-      "VerifiedRepositoryUrl": "https://github.com/elliotttate/DKC1Recomp"
+      "VerifiedRepositoryUrl": "https://github.com/elliotttate/DKC1Recomp",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "available",
+      "StableReleaseUrl": "https://github.com/elliotttate/DKC1Recomp/releases/tag/v0.0.17",
+      "StableReleaseVersion": "v0.0.17"
     },
     {
       "Id": "openshao",
@@ -917,7 +1267,11 @@
       "DiscoveryUrl": "https://recomplauncher.com/game/openshao",
       "Status": "manual",
       "NexusId": "rl-openshao",
-      "VerifiedRepositoryUrl": "https://github.com/OAleex/OpenShao"
+      "VerifiedRepositoryUrl": "https://github.com/OAleex/OpenShao",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "available",
+      "StableReleaseUrl": "https://github.com/OAleex/OpenShao/releases/tag/v0.3.0",
+      "StableReleaseVersion": "v0.3.0"
     },
     {
       "Id": "dkr-r",
@@ -925,15 +1279,23 @@
       "DiscoveryUrl": "https://recomplauncher.com/game/dkr-r",
       "Status": "manual",
       "NexusId": "rl-dkr-r",
-      "VerifiedRepositoryUrl": "https://github.com/ThatGuyMcd/DKR-R"
+      "VerifiedRepositoryUrl": "https://github.com/ThatGuyMcd/DKR-R",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "available",
+      "StableReleaseUrl": "https://github.com/ThatGuyMcd/DKR-R/releases/tag/Version1.0.12",
+      "StableReleaseVersion": "Version1.0.12"
     },
     {
       "Id": "botw-native",
       "Repository": "ryderclanky/BotW-Native",
       "DiscoveryUrl": "https://recomplauncher.com/game/botw-native",
-      "Status": "manual",
+      "Status": "automatic",
       "NexusId": "rl-botw-native",
-      "VerifiedRepositoryUrl": "https://github.com/ryderclanky/BotW-Native"
+      "VerifiedRepositoryUrl": "https://github.com/ryderclanky/BotW-Native",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "available",
+      "StableReleaseUrl": "https://github.com/ryderclanky/BotW-Native/releases/tag/v0.1.1",
+      "StableReleaseVersion": "v0.1.1"
     },
     {
       "Id": "dimensionsrecomp",
@@ -941,7 +1303,9 @@
       "DiscoveryUrl": "https://recomplauncher.com/game/dimensionsrecomp",
       "Status": "manual",
       "NexusId": "rl-dimensionsrecomp",
-      "VerifiedRepositoryUrl": "https://github.com/NeverCookFirst/DimensionsRecomp"
+      "VerifiedRepositoryUrl": "https://github.com/NeverCookFirst/DimensionsRecomp",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "not-confirmed"
     },
     {
       "Id": "doaxvb-re",
@@ -949,7 +1313,11 @@
       "DiscoveryUrl": "https://recomplauncher.com/game/doaxvb-re",
       "Status": "manual",
       "NexusId": "rl-doaxvb-re",
-      "VerifiedRepositoryUrl": "https://github.com/NoRain211/doaxvb-re"
+      "VerifiedRepositoryUrl": "https://github.com/NoRain211/doaxvb-re",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "available",
+      "StableReleaseUrl": "https://github.com/NoRain211/doaxvb-re/releases/tag/v0.6.0",
+      "StableReleaseVersion": "v0.6.0"
     },
     {
       "Id": "khdays-port",
@@ -957,7 +1325,11 @@
       "DiscoveryUrl": "https://recomplauncher.com/game/khdays-port",
       "Status": "manual",
       "NexusId": "rl-khdays-port",
-      "VerifiedRepositoryUrl": "https://github.com/Yokimitsuro/khdays-port"
+      "VerifiedRepositoryUrl": "https://github.com/Yokimitsuro/khdays-port",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "available",
+      "StableReleaseUrl": "https://github.com/Yokimitsuro/khdays-port/releases/tag/v0.1.4",
+      "StableReleaseVersion": "v0.1.4"
     },
     {
       "Id": "burnout3-pc",
@@ -965,7 +1337,9 @@
       "DiscoveryUrl": "https://recomplauncher.com/game/burnout3-pc",
       "Status": "manual",
       "NexusId": "rl-burnout3-pc",
-      "VerifiedRepositoryUrl": "https://github.com/danielgomesvieira2000/burnout3-pc"
+      "VerifiedRepositoryUrl": "https://github.com/danielgomesvieira2000/burnout3-pc",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "not-confirmed"
     },
     {
       "Id": "mercenaries-recompiled",
@@ -973,7 +1347,11 @@
       "DiscoveryUrl": "https://recomplauncher.com/game/mercenaries-recompiled",
       "Status": "manual",
       "NexusId": "rl-mercenaries-recompiled",
-      "VerifiedRepositoryUrl": "https://github.com/KraftMacAndChee/Mercenaries-Recompiled"
+      "VerifiedRepositoryUrl": "https://github.com/KraftMacAndChee/Mercenaries-Recompiled",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "available",
+      "StableReleaseUrl": "https://github.com/KraftMacAndChee/Mercenaries-Recompiled/releases/tag/v1.1.1",
+      "StableReleaseVersion": "v1.1.1"
     },
     {
       "Id": "mw2-recompiled",
@@ -981,7 +1359,11 @@
       "DiscoveryUrl": "https://recomplauncher.com/game/mw2-recompiled",
       "Status": "manual",
       "NexusId": "rl-mw2-recompiled",
-      "VerifiedRepositoryUrl": "https://github.com/PaulCombal/mw2-recompiled"
+      "VerifiedRepositoryUrl": "https://github.com/PaulCombal/mw2-recompiled",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "available",
+      "StableReleaseUrl": "https://github.com/PaulCombal/mw2-recompiled/releases/tag/v0.8.1",
+      "StableReleaseVersion": "v0.8.1"
     },
     {
       "Id": "megamanx4recomp",
@@ -989,7 +1371,11 @@
       "DiscoveryUrl": "https://recomplauncher.com/game/megamanx4recomp",
       "Status": "manual",
       "NexusId": "rl-megamanx4recomp",
-      "VerifiedRepositoryUrl": "https://github.com/mstan/MegaManX4Recomp"
+      "VerifiedRepositoryUrl": "https://github.com/mstan/MegaManX4Recomp",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "available",
+      "StableReleaseUrl": "https://github.com/mstan/MegaManX4Recomp/releases/tag/v1.0.15",
+      "StableReleaseVersion": "v1.0.15"
     },
     {
       "Id": "hercules-recompiled",
@@ -997,7 +1383,11 @@
       "DiscoveryUrl": "https://recomplauncher.com/game/hercules-recompiled",
       "Status": "manual",
       "NexusId": "rl-hercules-recompiled",
-      "VerifiedRepositoryUrl": "https://github.com/obaidr1/hercules-recompiled"
+      "VerifiedRepositoryUrl": "https://github.com/obaidr1/hercules-recompiled",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "available",
+      "StableReleaseUrl": "https://github.com/obaidr1/hercules-recompiled/releases/tag/v0.5.6",
+      "StableReleaseVersion": "v0.5.6"
     },
     {
       "Id": "banjo-tooie-scurvy-dog-port",
@@ -1005,7 +1395,9 @@
       "DiscoveryUrl": "https://recomplauncher.com/game/banjo-tooie-scurvy-dog-port",
       "Status": "manual",
       "NexusId": "rl-banjo-tooie-scurvy-dog-port",
-      "VerifiedRepositoryUrl": "https://github.com/some-scurvy-dog/banjo-tooie-scurvy-dog-port"
+      "VerifiedRepositoryUrl": "https://github.com/some-scurvy-dog/banjo-tooie-scurvy-dog-port",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "not-confirmed"
     },
     {
       "Id": "dead-rising-2-case-west-xenon-recomp",
@@ -1013,7 +1405,11 @@
       "DiscoveryUrl": "https://recomplauncher.com/game/dead-rising-2-case-west-xenon-recomp",
       "Status": "manual",
       "NexusId": "rl-dead-rising-2-case-west-xenon-recomp",
-      "VerifiedRepositoryUrl": "https://github.com/wivi514/Dead_Rising_2_Case_West_Xenon_Recomp"
+      "VerifiedRepositoryUrl": "https://github.com/wivi514/Dead_Rising_2_Case_West_Xenon_Recomp",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "available",
+      "StableReleaseUrl": "https://github.com/wivi514/Dead_Rising_2_Case_West_Xenon_Recomp/releases/tag/v1.1.2",
+      "StableReleaseVersion": "v1.1.2"
     },
     {
       "Id": "gears-of-war-2-pc-port",
@@ -1021,7 +1417,11 @@
       "DiscoveryUrl": "https://recomplauncher.com/game/gears-of-war-2-pc-port",
       "Status": "manual",
       "NexusId": "rl-gears-of-war-2-pc-port",
-      "VerifiedRepositoryUrl": "https://github.com/santiquiroz/gears-of-war-2-pc-port"
+      "VerifiedRepositoryUrl": "https://github.com/santiquiroz/gears-of-war-2-pc-port",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "available",
+      "StableReleaseUrl": "https://github.com/santiquiroz/gears-of-war-2-pc-port/releases/tag/v0.3.7",
+      "StableReleaseVersion": "v0.3.7"
     },
     {
       "Id": "naruto-storm-generations-port-nativo",
@@ -1029,7 +1429,11 @@
       "DiscoveryUrl": "https://recomplauncher.com/game/naruto-storm-generations-port-nativo",
       "Status": "manual",
       "NexusId": "rl-naruto-storm-generations-port-nativo",
-      "VerifiedRepositoryUrl": "https://github.com/Masterllgod/naruto-storm-generations-port-nativo"
+      "VerifiedRepositoryUrl": "https://github.com/Masterllgod/naruto-storm-generations-port-nativo",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "available",
+      "StableReleaseUrl": "https://github.com/Masterllgod/naruto-storm-generations-port-nativo/releases/tag/v0.4.2",
+      "StableReleaseVersion": "v0.4.2"
     },
     {
       "Id": "fifa-world-cup-2014-recompiled",
@@ -1037,7 +1441,11 @@
       "DiscoveryUrl": "https://recomplauncher.com/game/fifa-world-cup-2014-recompiled",
       "Status": "manual",
       "NexusId": "rl-fifa-world-cup-2014-recompiled",
-      "VerifiedRepositoryUrl": "https://github.com/HossEz/fifa-world-cup-2014-recompiled"
+      "VerifiedRepositoryUrl": "https://github.com/HossEz/fifa-world-cup-2014-recompiled",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "available",
+      "StableReleaseUrl": "https://github.com/HossEz/fifa-world-cup-2014-recompiled/releases/tag/v0.1.10",
+      "StableReleaseVersion": "v0.1.10"
     },
     {
       "Id": "kameorepowered",
@@ -1045,7 +1453,11 @@
       "DiscoveryUrl": "https://recomplauncher.com/game/kameorepowered",
       "Status": "manual",
       "NexusId": "rl-kameorepowered",
-      "VerifiedRepositoryUrl": "https://github.com/MaxDeadBear/KameoRePowered"
+      "VerifiedRepositoryUrl": "https://github.com/MaxDeadBear/KameoRePowered",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "available",
+      "StableReleaseUrl": "https://github.com/MaxDeadBear/KameoRePowered/releases/tag/v0.2.1",
+      "StableReleaseVersion": "v0.2.1"
     },
     {
       "Id": "crackdown-xbox360-recompiled",
@@ -1053,7 +1465,11 @@
       "DiscoveryUrl": "https://recomplauncher.com/game/crackdown-xbox360-recompiled",
       "Status": "manual",
       "NexusId": "rl-crackdown-xbox360-recompiled",
-      "VerifiedRepositoryUrl": "https://github.com/saulob/crackdown-xbox360-recompiled"
+      "VerifiedRepositoryUrl": "https://github.com/saulob/crackdown-xbox360-recompiled",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "available",
+      "StableReleaseUrl": "https://github.com/saulob/crackdown-xbox360-recompiled/releases/tag/v0.6.2",
+      "StableReleaseVersion": "v0.6.2"
     },
     {
       "Id": "gow2-recomp",
@@ -1069,7 +1485,11 @@
       "DiscoveryUrl": "https://recomplauncher.com/game/tekken6-recomp",
       "Status": "manual",
       "NexusId": "rl-tekken6-recomp",
-      "VerifiedRepositoryUrl": "https://github.com/mahmoud-mess/tekken6-recomp"
+      "VerifiedRepositoryUrl": "https://github.com/mahmoud-mess/tekken6-recomp",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "available",
+      "StableReleaseUrl": "https://github.com/mahmoud-mess/tekken6-recomp/releases/tag/Iterate",
+      "StableReleaseVersion": "Iterate"
     },
     {
       "Id": "downhill-revived",
@@ -1077,7 +1497,11 @@
       "DiscoveryUrl": "https://recomplauncher.com/game/downhill-revived",
       "Status": "manual",
       "NexusId": "rl-downhill-revived",
-      "VerifiedRepositoryUrl": "https://github.com/skuza-oss/downhill-revived"
+      "VerifiedRepositoryUrl": "https://github.com/skuza-oss/downhill-revived",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "available",
+      "StableReleaseUrl": "https://github.com/skuza-oss/downhill-revived/releases/tag/v0.7.1",
+      "StableReleaseVersion": "v0.7.1"
     },
     {
       "Id": "vf1-recomp",
@@ -1085,7 +1509,11 @@
       "DiscoveryUrl": "https://recomplauncher.com/game/vf1-recomp",
       "Status": "manual",
       "NexusId": "rl-vf1-recomp",
-      "VerifiedRepositoryUrl": "https://github.com/mr-finster/vf1-recomp"
+      "VerifiedRepositoryUrl": "https://github.com/mr-finster/vf1-recomp",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "available",
+      "StableReleaseUrl": "https://github.com/mr-finster/vf1-recomp/releases/tag/v1.4.2",
+      "StableReleaseVersion": "v1.4.2"
     },
     {
       "Id": "skullburglar",
@@ -1093,7 +1521,9 @@
       "DiscoveryUrl": "https://recomplauncher.com/game/skullburglar",
       "Status": "manual",
       "NexusId": "rl-skullburglar",
-      "VerifiedRepositoryUrl": "https://github.com/nlwstein/skullburglar"
+      "VerifiedRepositoryUrl": "https://github.com/nlwstein/skullburglar",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "not-confirmed"
     },
     {
       "Id": "rush2recompiled",
@@ -1101,7 +1531,11 @@
       "DiscoveryUrl": "https://recomplauncher.com/game/rush2recompiled",
       "Status": "manual",
       "NexusId": "rl-rush2recompiled",
-      "VerifiedRepositoryUrl": "https://github.com/bryantmh/rush2recompiled"
+      "VerifiedRepositoryUrl": "https://github.com/bryantmh/rush2recompiled",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "available",
+      "StableReleaseUrl": "https://github.com/bryantmh/rush2recompiled/releases/tag/v1.0.35",
+      "StableReleaseVersion": "v1.0.35"
     },
     {
       "Id": "wario-land-shake-it-native-pc",
@@ -1109,7 +1543,11 @@
       "DiscoveryUrl": "https://recomplauncher.com/game/wario-land-shake-it-native-pc",
       "Status": "manual",
       "NexusId": "rl-wario-land-shake-it-native-pc",
-      "VerifiedRepositoryUrl": "https://github.com/santiagovalencia109/Wario-Land-Shake-It-Native-PC"
+      "VerifiedRepositoryUrl": "https://github.com/santiagovalencia109/Wario-Land-Shake-It-Native-PC",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "available",
+      "StableReleaseUrl": "https://github.com/santiagovalencia109/Wario-Land-Shake-It-Native-PC/releases/tag/v0.2.0",
+      "StableReleaseVersion": "v0.2.0"
     },
     {
       "Id": "megamanx5recomp",
@@ -1117,7 +1555,11 @@
       "DiscoveryUrl": "https://recomplauncher.com/game/megamanx5recomp",
       "Status": "manual",
       "NexusId": "rl-megamanx5recomp",
-      "VerifiedRepositoryUrl": "https://github.com/mstan/MegaManX5Recomp"
+      "VerifiedRepositoryUrl": "https://github.com/mstan/MegaManX5Recomp",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "available",
+      "StableReleaseUrl": "https://github.com/mstan/MegaManX5Recomp/releases/tag/v0.1.0-alpha",
+      "StableReleaseVersion": "v0.1.0-alpha"
     },
     {
       "Id": "geometry-wars-retro-evolved-2-recompiled",
@@ -1125,7 +1567,11 @@
       "DiscoveryUrl": "https://recomplauncher.com/game/geometry-wars-retro-evolved-2-recompiled",
       "Status": "manual",
       "NexusId": "rl-geometry-wars-retro-evolved-2-recompiled",
-      "VerifiedRepositoryUrl": "https://github.com/saulob/geometry-wars-retro-evolved-2-recompiled"
+      "VerifiedRepositoryUrl": "https://github.com/saulob/geometry-wars-retro-evolved-2-recompiled",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "available",
+      "StableReleaseUrl": "https://github.com/saulob/geometry-wars-retro-evolved-2-recompiled/releases/tag/v0.6.1",
+      "StableReleaseVersion": "v0.6.1"
     },
     {
       "Id": "vandalhearts-pcport",
@@ -1133,7 +1579,11 @@
       "DiscoveryUrl": "https://recomplauncher.com/game/vandalhearts-pcport",
       "Status": "manual",
       "NexusId": "rl-vandalhearts-pcport",
-      "VerifiedRepositoryUrl": "https://github.com/HalmyLyseas/VandalHearts-PcPort"
+      "VerifiedRepositoryUrl": "https://github.com/HalmyLyseas/VandalHearts-PcPort",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "available",
+      "StableReleaseUrl": "https://github.com/HalmyLyseas/VandalHearts-PcPort/releases/tag/v2.1.0",
+      "StableReleaseVersion": "v2.1.0"
     },
     {
       "Id": "project8recomp",
@@ -1141,7 +1591,11 @@
       "DiscoveryUrl": "https://recomplauncher.com/game/project8recomp",
       "Status": "manual",
       "NexusId": "rl-project8recomp",
-      "VerifiedRepositoryUrl": "https://github.com/theokyr/Project8Recomp"
+      "VerifiedRepositoryUrl": "https://github.com/theokyr/Project8Recomp",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "available",
+      "StableReleaseUrl": "https://github.com/theokyr/Project8Recomp/releases/tag/v0.3.0",
+      "StableReleaseVersion": "v0.3.0"
     },
     {
       "Id": "bloodborne-pc",
@@ -1149,7 +1603,11 @@
       "DiscoveryUrl": "https://recomplauncher.com/game/bloodborne-pc",
       "Status": "manual",
       "NexusId": "rl-bloodborne-pc",
-      "VerifiedRepositoryUrl": "https://github.com/Supermedo/bloodborne_pc"
+      "VerifiedRepositoryUrl": "https://github.com/Supermedo/bloodborne_pc",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "available",
+      "StableReleaseUrl": "https://github.com/Supermedo/bloodborne_pc/releases/tag/windows-v1.9.5",
+      "StableReleaseVersion": "windows-v1.9.5"
     },
     {
       "Id": "streetball-revival",
@@ -1157,7 +1615,9 @@
       "DiscoveryUrl": "https://recomplauncher.com/game/streetball-revival",
       "Status": "manual",
       "NexusId": "rl-streetball-revival",
-      "VerifiedRepositoryUrl": "https://github.com/luckvj/streetball-revival"
+      "VerifiedRepositoryUrl": "https://github.com/luckvj/streetball-revival",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "not-confirmed"
     },
     {
       "Id": "starwars-renegadesquadron-pc",
@@ -1165,7 +1625,11 @@
       "DiscoveryUrl": "https://recomplauncher.com/game/starwars-renegadesquadron-pc",
       "Status": "manual",
       "NexusId": "rl-starwars-renegadesquadron-pc",
-      "VerifiedRepositoryUrl": "https://github.com/GTTeancum/StarWars-RenegadeSquadron-PC"
+      "VerifiedRepositoryUrl": "https://github.com/GTTeancum/StarWars-RenegadeSquadron-PC",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "available",
+      "StableReleaseUrl": "https://github.com/GTTeancum/StarWars-RenegadeSquadron-PC/releases/tag/v0.9.1",
+      "StableReleaseVersion": "v0.9.1"
     },
     {
       "Id": "rampagere",
@@ -1173,7 +1637,11 @@
       "DiscoveryUrl": "https://recomplauncher.com/game/rampagere",
       "Status": "manual",
       "NexusId": "rl-rampagere",
-      "VerifiedRepositoryUrl": "https://github.com/jjmhalew/RampageRE"
+      "VerifiedRepositoryUrl": "https://github.com/jjmhalew/RampageRE",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "available",
+      "StableReleaseUrl": "https://github.com/jjmhalew/RampageRE/releases/tag/v1.2.1",
+      "StableReleaseVersion": "v1.2.1"
     },
     {
       "Id": "sms-launcher",
@@ -1181,7 +1649,11 @@
       "DiscoveryUrl": "https://recomplauncher.com/game/sms-launcher",
       "Status": "manual",
       "NexusId": "rl-sms-launcher",
-      "VerifiedRepositoryUrl": "https://github.com/chasem-dev/sms-launcher"
+      "VerifiedRepositoryUrl": "https://github.com/chasem-dev/sms-launcher",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "available",
+      "StableReleaseUrl": "https://github.com/chasem-dev/sms-launcher/releases/tag/v0.1.68",
+      "StableReleaseVersion": "v0.1.68"
     },
     {
       "Id": "rac-rs",
@@ -1189,7 +1661,11 @@
       "DiscoveryUrl": "https://recomplauncher.com/game/rac-rs",
       "Status": "manual",
       "NexusId": "rl-rac-rs",
-      "VerifiedRepositoryUrl": "https://github.com/AsobiCodes/rac-rs"
+      "VerifiedRepositoryUrl": "https://github.com/AsobiCodes/rac-rs",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "available",
+      "StableReleaseUrl": "https://github.com/AsobiCodes/rac-rs/releases/tag/v0.4.1",
+      "StableReleaseVersion": "v0.4.1"
     },
     {
       "Id": "lasrecomp",
@@ -1202,9 +1678,13 @@
       "Id": "letsgo-recomp",
       "Repository": "raulzrrs/letsgo-recomp",
       "DiscoveryUrl": "https://recomplauncher.com/game/letsgo-recomp",
-      "Status": "manual",
+      "Status": "automatic",
       "NexusId": "rl-letsgo-recomp",
-      "VerifiedRepositoryUrl": "https://github.com/raulzrrs/letsgo-recomp"
+      "VerifiedRepositoryUrl": "https://github.com/raulzrrs/letsgo-recomp",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "available",
+      "StableReleaseUrl": "https://github.com/raulzrrs/letsgo-recomp/releases/tag/v0.7.5",
+      "StableReleaseVersion": "v0.7.5"
     },
     {
       "Id": "marathonrecomp",
@@ -1247,25 +1727,37 @@
       "Id": "killzone-shadowfall-pc",
       "Repository": "lesca-191204/killzone-shadowfall-pc",
       "DiscoveryUrl": "https://recomplauncher.com/game/killzone-shadowfall-pc",
-      "Status": "manual",
+      "Status": "automatic",
       "NexusId": "rl-killzone-shadowfall-pc",
-      "VerifiedRepositoryUrl": "https://github.com/lesca-191204/killzone-shadowfall-pc"
+      "VerifiedRepositoryUrl": "https://github.com/lesca-191204/killzone-shadowfall-pc",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "available",
+      "StableReleaseUrl": "https://github.com/lesca-191204/killzone-shadowfall-pc/releases/tag/v0.6.0",
+      "StableReleaseVersion": "v0.6.0"
     },
     {
       "Id": "dragons-crown-pro-pc",
       "Repository": "saulob/dragons-crown-pro-pc",
       "DiscoveryUrl": "https://recomplauncher.com/game/dragons-crown-pro-pc",
-      "Status": "manual",
+      "Status": "automatic",
       "NexusId": "rl-dragons-crown-pro-pc",
-      "VerifiedRepositoryUrl": "https://github.com/saulob/dragons-crown-pro-pc"
+      "VerifiedRepositoryUrl": "https://github.com/saulob/dragons-crown-pro-pc",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "available",
+      "StableReleaseUrl": "https://github.com/saulob/dragons-crown-pro-pc/releases/tag/v0.7.1",
+      "StableReleaseVersion": "v0.7.1"
     },
     {
       "Id": "ufc-3-ps4-port-linux-windows",
       "Repository": "GNSB/UFC-3-PS4-PORT-LINUX-WINDOWS",
       "DiscoveryUrl": "https://recomplauncher.com/game/ufc-3-ps4-port-linux-windows",
-      "Status": "manual",
+      "Status": "automatic",
       "NexusId": "rl-ufc-3-ps4-port-linux-windows",
-      "VerifiedRepositoryUrl": "https://github.com/GNSB/UFC-3-PS4-PORT-LINUX-WINDOWS"
+      "VerifiedRepositoryUrl": "https://github.com/GNSB/UFC-3-PS4-PORT-LINUX-WINDOWS",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "available",
+      "StableReleaseUrl": "https://github.com/GNSB/UFC-3-PS4-PORT-LINUX-WINDOWS/releases/tag/ufc3-v0.1.14",
+      "StableReleaseVersion": "ufc3-v0.1.14"
     },
     {
       "Id": "medievil-2019-pc-port",
@@ -1278,9 +1770,13 @@
       "Id": "unicorn-overlord-pc",
       "Repository": "hachi23/unicorn_overlord_pc",
       "DiscoveryUrl": "https://recomplauncher.com/game/unicorn-overlord-pc",
-      "Status": "manual",
+      "Status": "automatic",
       "NexusId": "rl-unicorn-overlord-pc",
-      "VerifiedRepositoryUrl": "https://github.com/hachi23/unicorn_overlord_pc"
+      "VerifiedRepositoryUrl": "https://github.com/hachi23/unicorn_overlord_pc",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "available",
+      "StableReleaseUrl": "https://github.com/hachi23/unicorn_overlord_pc/releases/tag/v1.3.1",
+      "StableReleaseVersion": "v1.3.1"
     },
     {
       "Id": "wipeout-pc",
@@ -1300,9 +1796,13 @@
       "Id": "infamous-first-light-pc",
       "Repository": "VantageEX/infamous-first-light-pc",
       "DiscoveryUrl": "https://recomplauncher.com/game/infamous-first-light-pc",
-      "Status": "manual",
+      "Status": "automatic",
       "NexusId": "rl-infamous-first-light-pc",
-      "VerifiedRepositoryUrl": "https://github.com/VantageEX/infamous-first-light-pc"
+      "VerifiedRepositoryUrl": "https://github.com/VantageEX/infamous-first-light-pc",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "available",
+      "StableReleaseUrl": "https://github.com/VantageEX/infamous-first-light-pc/releases/tag/v0.3.8",
+      "StableReleaseVersion": "v0.3.8"
     },
     {
       "Id": "infamousreborn",
@@ -1310,15 +1810,23 @@
       "DiscoveryUrl": "https://recomplauncher.com/game/infamousreborn",
       "Status": "manual",
       "NexusId": "rl-infamousreborn",
-      "VerifiedRepositoryUrl": "https://github.com/whompay/inFAMOUSreborn"
+      "VerifiedRepositoryUrl": "https://github.com/whompay/inFAMOUSreborn",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "available",
+      "StableReleaseUrl": "https://github.com/whompay/inFAMOUSreborn/releases/tag/1.1",
+      "StableReleaseVersion": "1.1"
     },
     {
       "Id": "metroidprimeport",
       "Repository": "Odrannnn/MetroidPrimePort",
       "DiscoveryUrl": "https://recomplauncher.com/game/metroidprimeport",
-      "Status": "manual",
+      "Status": "automatic",
       "NexusId": "rl-metroidprimeport",
-      "VerifiedRepositoryUrl": "https://github.com/Odrannnn/MetroidPrimePort"
+      "VerifiedRepositoryUrl": "https://github.com/Odrannnn/MetroidPrimePort",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "available",
+      "StableReleaseUrl": "https://github.com/Odrannnn/MetroidPrimePort/releases/tag/v0.35.1",
+      "StableReleaseVersion": "v0.35.1"
     },
     {
       "Id": "eternaldarknessrecomp",
@@ -1326,7 +1834,11 @@
       "DiscoveryUrl": "https://recomplauncher.com/game/eternaldarknessrecomp",
       "Status": "manual",
       "NexusId": "rl-eternaldarknessrecomp",
-      "VerifiedRepositoryUrl": "https://github.com/griches/EternalDarknessRecomp"
+      "VerifiedRepositoryUrl": "https://github.com/griches/EternalDarknessRecomp",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "available",
+      "StableReleaseUrl": "https://github.com/griches/EternalDarknessRecomp/releases/tag/v0.9.6",
+      "StableReleaseVersion": "v0.9.6"
     },
     {
       "Id": "nebula",
@@ -1334,39 +1846,59 @@
       "DiscoveryUrl": "https://recomplauncher.com/game/nebula",
       "Status": "manual",
       "NexusId": "rl-nebula",
-      "VerifiedRepositoryUrl": "https://github.com/keepvaibin/nebula"
+      "VerifiedRepositoryUrl": "https://github.com/keepvaibin/nebula",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "available",
+      "StableReleaseUrl": "https://github.com/keepvaibin/nebula/releases/tag/v1.0.2",
+      "StableReleaseVersion": "v1.0.2"
     },
     {
       "Id": "nsmb-wii-multiplayer-recompilation",
       "Repository": "WitherBlitz/NSMB-Wii-Multiplayer-Recompilation",
       "DiscoveryUrl": "https://recomplauncher.com/game/nsmb-wii-multiplayer-recompilation",
-      "Status": "manual",
+      "Status": "automatic",
       "NexusId": "rl-nsmb-wii-multiplayer-recompilation",
-      "VerifiedRepositoryUrl": "https://github.com/WitherBlitz/NSMB-Wii-Multiplayer-Recompilation"
+      "VerifiedRepositoryUrl": "https://github.com/WitherBlitz/NSMB-Wii-Multiplayer-Recompilation",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "available",
+      "StableReleaseUrl": "https://github.com/WitherBlitz/NSMB-Wii-Multiplayer-Recompilation/releases/tag/v0.2.2",
+      "StableReleaseVersion": "v0.2.2"
     },
     {
       "Id": "recharged",
       "Repository": "previouslevelgames/recharged",
       "DiscoveryUrl": "https://recomplauncher.com/game/recharged",
-      "Status": "manual",
+      "Status": "automatic",
       "NexusId": "rl-recharged",
-      "VerifiedRepositoryUrl": "https://github.com/previouslevelgames/recharged"
+      "VerifiedRepositoryUrl": "https://github.com/previouslevelgames/recharged",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "available",
+      "StableReleaseUrl": "https://github.com/previouslevelgames/recharged/releases/tag/v1.1.0",
+      "StableReleaseVersion": "v1.1.0"
     },
     {
       "Id": "nsmbu-recomp",
       "Repository": "nsmbu-recomp/nsmbu-recomp",
       "DiscoveryUrl": "https://recomplauncher.com/game/nsmbu-recomp",
-      "Status": "manual",
+      "Status": "automatic",
       "NexusId": "rl-nsmbu-recomp",
-      "VerifiedRepositoryUrl": "https://github.com/nsmbu-recomp/nsmbu-recomp"
+      "VerifiedRepositoryUrl": "https://github.com/nsmbu-recomp/nsmbu-recomp",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "available",
+      "StableReleaseUrl": "https://github.com/nsmbu-recomp/nsmbu-recomp/releases/tag/v0.7.2",
+      "StableReleaseVersion": "v0.7.2"
     },
     {
       "Id": "smm2recomp",
       "Repository": "smm2recomp/smm2recomp",
       "DiscoveryUrl": "https://recomplauncher.com/game/smm2recomp",
-      "Status": "manual",
+      "Status": "automatic",
       "NexusId": "rl-smm2recomp",
-      "VerifiedRepositoryUrl": "https://github.com/smm2recomp/smm2recomp"
+      "VerifiedRepositoryUrl": "https://github.com/smm2recomp/smm2recomp",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "available",
+      "StableReleaseUrl": "https://github.com/smm2recomp/smm2recomp/releases/tag/v0.5.5",
+      "StableReleaseVersion": "v0.5.5"
     },
     {
       "Id": "hwder",
@@ -1381,7 +1913,11 @@
       "DiscoveryUrl": "https://recomplauncher.com/game/ssrecomp",
       "Status": "manual",
       "NexusId": "rl-ssrecomp",
-      "VerifiedRepositoryUrl": "https://github.com/ClickingMaster/ssrecomp"
+      "VerifiedRepositoryUrl": "https://github.com/ClickingMaster/ssrecomp",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "available",
+      "StableReleaseUrl": "https://github.com/ClickingMaster/ssrecomp/releases/tag/v0.4.2",
+      "StableReleaseVersion": "v0.4.2"
     },
     {
       "Id": "twipe-00sheven",
@@ -1389,7 +1925,11 @@
       "DiscoveryUrl": "https://recomplauncher.com/game/twipe-00sheven",
       "Status": "manual",
       "NexusId": "rl-twipe-00sheven",
-      "VerifiedRepositoryUrl": "https://github.com/riseio/TWIPE_00Sheven"
+      "VerifiedRepositoryUrl": "https://github.com/riseio/TWIPE_00Sheven",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "available",
+      "StableReleaseUrl": "https://github.com/riseio/TWIPE_00Sheven/releases/tag/ICHGYTW_0.1.96",
+      "StableReleaseVersion": "ICHGYTW_0.1.96"
     },
     {
       "Id": "jetforcegemini-recomp",
@@ -1397,7 +1937,11 @@
       "DiscoveryUrl": "https://recomplauncher.com/game/jetforcegemini-recomp",
       "Status": "manual",
       "NexusId": "rl-jetforcegemini-recomp",
-      "VerifiedRepositoryUrl": "https://github.com/TK22-26/JetForceGemini-Recomp"
+      "VerifiedRepositoryUrl": "https://github.com/TK22-26/JetForceGemini-Recomp",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "available",
+      "StableReleaseUrl": "https://github.com/TK22-26/JetForceGemini-Recomp/releases/tag/v1.4.0",
+      "StableReleaseVersion": "v1.4.0"
     },
     {
       "Id": "snprecomp",
@@ -1405,7 +1949,11 @@
       "DiscoveryUrl": "https://recomplauncher.com/game/snprecomp",
       "Status": "manual",
       "NexusId": "rl-snprecomp",
-      "VerifiedRepositoryUrl": "https://github.com/wootbeer/snprecomp"
+      "VerifiedRepositoryUrl": "https://github.com/wootbeer/snprecomp",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "available",
+      "StableReleaseUrl": "https://github.com/wootbeer/snprecomp/releases/tag/0.2.7",
+      "StableReleaseVersion": "0.2.7"
     },
     {
       "Id": "supermarioallstarsrecomp",
@@ -1413,7 +1961,11 @@
       "DiscoveryUrl": "https://recomplauncher.com/game/supermarioallstarsrecomp",
       "Status": "manual",
       "NexusId": "rl-supermarioallstarsrecomp",
-      "VerifiedRepositoryUrl": "https://github.com/TanookiStudios/SuperMarioAllStarsRecomp"
+      "VerifiedRepositoryUrl": "https://github.com/TanookiStudios/SuperMarioAllStarsRecomp",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "available",
+      "StableReleaseUrl": "https://github.com/TanookiStudios/SuperMarioAllStarsRecomp/releases/tag/v0.2.0",
+      "StableReleaseVersion": "v0.2.0"
     },
     {
       "Id": "darkwatchdarkeredition",
@@ -1428,7 +1980,11 @@
       "DiscoveryUrl": "https://recomplauncher.com/game/chupathingyce",
       "Status": "manual",
       "NexusId": "rl-chupathingyce",
-      "VerifiedRepositoryUrl": "https://github.com/ChupathingyCE/chupathingyce"
+      "VerifiedRepositoryUrl": "https://github.com/ChupathingyCE/chupathingyce",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "available",
+      "StableReleaseUrl": "https://github.com/ChupathingyCE/chupathingyce/releases/tag/v0.8.1c",
+      "StableReleaseVersion": "v0.8.1c"
     },
     {
       "Id": "doa3-recomp",
@@ -1436,7 +1992,11 @@
       "DiscoveryUrl": "https://recomplauncher.com/game/doa3-recomp",
       "Status": "manual",
       "NexusId": "rl-doa3-recomp",
-      "VerifiedRepositoryUrl": "https://github.com/parkerallan/doa3-recomp"
+      "VerifiedRepositoryUrl": "https://github.com/parkerallan/doa3-recomp",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "available",
+      "StableReleaseUrl": "https://github.com/parkerallan/doa3-recomp/releases/tag/v1.0.7",
+      "StableReleaseVersion": "v1.0.7"
     },
     {
       "Id": "tootawersrecomp",
@@ -1444,7 +2004,11 @@
       "DiscoveryUrl": "https://recomplauncher.com/game/tootawersrecomp",
       "Status": "manual",
       "NexusId": "rl-tootawersrecomp",
-      "VerifiedRepositoryUrl": "https://github.com/Gumpolas/TooTawersRecomp"
+      "VerifiedRepositoryUrl": "https://github.com/Gumpolas/TooTawersRecomp",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "available",
+      "StableReleaseUrl": "https://github.com/Gumpolas/TooTawersRecomp/releases/tag/1.9.8",
+      "StableReleaseVersion": "1.9.8"
     },
     {
       "Id": "urbanchaosriotresponseburneredition",
@@ -1452,7 +2016,11 @@
       "DiscoveryUrl": "https://recomplauncher.com/game/urbanchaosriotresponseburneredition",
       "Status": "manual",
       "NexusId": "rl-urbanchaosriotresponseburneredition",
-      "VerifiedRepositoryUrl": "https://github.com/linkssy2/UrbanChaosRiotResponseBurnerEdition"
+      "VerifiedRepositoryUrl": "https://github.com/linkssy2/UrbanChaosRiotResponseBurnerEdition",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "available",
+      "StableReleaseUrl": "https://github.com/linkssy2/UrbanChaosRiotResponseBurnerEdition/releases/tag/v0.08",
+      "StableReleaseVersion": "v0.08"
     },
     {
       "Id": "pgr2-recomp",
@@ -1460,7 +2028,11 @@
       "DiscoveryUrl": "https://recomplauncher.com/game/pgr2-recomp",
       "Status": "manual",
       "NexusId": "rl-pgr2-recomp",
-      "VerifiedRepositoryUrl": "https://github.com/hk21x/pgr2-recomp"
+      "VerifiedRepositoryUrl": "https://github.com/hk21x/pgr2-recomp",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "available",
+      "StableReleaseUrl": "https://github.com/hk21x/pgr2-recomp/releases/tag/v1.1.0",
+      "StableReleaseVersion": "v1.1.0"
     },
     {
       "Id": "buffy-chaos-bleeds-pc",
@@ -1468,7 +2040,11 @@
       "DiscoveryUrl": "https://recomplauncher.com/game/buffy-chaos-bleeds-pc",
       "Status": "manual",
       "NexusId": "rl-buffy-chaos-bleeds-pc",
-      "VerifiedRepositoryUrl": "https://github.com/KaikoClanworth1/buffy-chaos-bleeds-pc"
+      "VerifiedRepositoryUrl": "https://github.com/KaikoClanworth1/buffy-chaos-bleeds-pc",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "available",
+      "StableReleaseUrl": "https://github.com/KaikoClanworth1/buffy-chaos-bleeds-pc/releases/tag/v1.0.2",
+      "StableReleaseVersion": "v1.0.2"
     },
     {
       "Id": "pgr1-recomp",
@@ -1476,7 +2052,11 @@
       "DiscoveryUrl": "https://recomplauncher.com/game/pgr1-recomp",
       "Status": "manual",
       "NexusId": "rl-pgr1-recomp",
-      "VerifiedRepositoryUrl": "https://github.com/hk21x/pgr1-recomp"
+      "VerifiedRepositoryUrl": "https://github.com/hk21x/pgr1-recomp",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "available",
+      "StableReleaseUrl": "https://github.com/hk21x/pgr1-recomp/releases/tag/v1.1",
+      "StableReleaseVersion": "v1.1"
     },
     {
       "Id": "hl360-forza2",
@@ -1491,7 +2071,11 @@
       "DiscoveryUrl": "https://recomplauncher.com/game/ssf2t-hd-remix-recompiled",
       "Status": "manual",
       "NexusId": "rl-ssf2t-hd-remix-recompiled",
-      "VerifiedRepositoryUrl": "https://github.com/saulob/ssf2t-hd-remix-recompiled"
+      "VerifiedRepositoryUrl": "https://github.com/saulob/ssf2t-hd-remix-recompiled",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "available",
+      "StableReleaseUrl": "https://github.com/saulob/ssf2t-hd-remix-recompiled/releases/tag/v0.2.2",
+      "StableReleaseVersion": "v0.2.2"
     },
     {
       "Id": "wwe12-pc",
@@ -1499,7 +2083,11 @@
       "DiscoveryUrl": "https://recomplauncher.com/game/wwe12-pc",
       "Status": "manual",
       "NexusId": "rl-wwe12-pc",
-      "VerifiedRepositoryUrl": "https://github.com/iMrBurn/wwe12-pc"
+      "VerifiedRepositoryUrl": "https://github.com/iMrBurn/wwe12-pc",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "available",
+      "StableReleaseUrl": "https://github.com/iMrBurn/wwe12-pc/releases/tag/v0.9.0-beta",
+      "StableReleaseVersion": "v0.9.0-beta"
     },
     {
       "Id": "hard-corps-uprising-recompiled",
@@ -1507,7 +2095,11 @@
       "DiscoveryUrl": "https://recomplauncher.com/game/hard-corps-uprising-recompiled",
       "Status": "manual",
       "NexusId": "rl-hard-corps-uprising-recompiled",
-      "VerifiedRepositoryUrl": "https://github.com/saulob/hard-corps-uprising-recompiled"
+      "VerifiedRepositoryUrl": "https://github.com/saulob/hard-corps-uprising-recompiled",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "available",
+      "StableReleaseUrl": "https://github.com/saulob/hard-corps-uprising-recompiled/releases/tag/v0.7.1",
+      "StableReleaseVersion": "v0.7.1"
     },
     {
       "Id": "souls-of-the-reaper",
@@ -1515,7 +2107,11 @@
       "DiscoveryUrl": "https://recomplauncher.com/game/souls-of-the-reaper",
       "Status": "manual",
       "NexusId": "rl-souls-of-the-reaper",
-      "VerifiedRepositoryUrl": "https://github.com/Boron853/Souls-of-the-Reaper"
+      "VerifiedRepositoryUrl": "https://github.com/Boron853/Souls-of-the-Reaper",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "available",
+      "StableReleaseUrl": "https://github.com/Boron853/Souls-of-the-Reaper/releases/tag/beta-1.3",
+      "StableReleaseVersion": "beta-1.3"
     },
     {
       "Id": "broken-bond-recomp",
@@ -1523,7 +2119,11 @@
       "DiscoveryUrl": "https://recomplauncher.com/game/broken-bond-recomp",
       "Status": "manual",
       "NexusId": "rl-broken-bond-recomp",
-      "VerifiedRepositoryUrl": "https://github.com/jorjbarbosa/broken-bond-recomp"
+      "VerifiedRepositoryUrl": "https://github.com/jorjbarbosa/broken-bond-recomp",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "available",
+      "StableReleaseUrl": "https://github.com/jorjbarbosa/broken-bond-recomp/releases/tag/v0.1.0-beta",
+      "StableReleaseVersion": "v0.1.0-beta"
     },
     {
       "Id": "soulcalibur2hd-recomp",
@@ -1531,7 +2131,11 @@
       "DiscoveryUrl": "https://recomplauncher.com/game/soulcalibur2hd-recomp",
       "Status": "manual",
       "NexusId": "rl-soulcalibur2hd-recomp",
-      "VerifiedRepositoryUrl": "https://github.com/n0madic/Soulcalibur2HD-recomp"
+      "VerifiedRepositoryUrl": "https://github.com/n0madic/Soulcalibur2HD-recomp",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "available",
+      "StableReleaseUrl": "https://github.com/n0madic/Soulcalibur2HD-recomp/releases/tag/v0.3.0",
+      "StableReleaseVersion": "v0.3.0"
     },
     {
       "Id": "project-re-visited-re3",
@@ -1539,7 +2143,11 @@
       "DiscoveryUrl": "https://recomplauncher.com/game/project-re-visited-re3",
       "Status": "manual",
       "NexusId": "rl-project-re-visited-re3",
-      "VerifiedRepositoryUrl": "https://github.com/BrazilianHobbyist/Project-RE-Visited-RE3"
+      "VerifiedRepositoryUrl": "https://github.com/BrazilianHobbyist/Project-RE-Visited-RE3",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "available",
+      "StableReleaseUrl": "https://github.com/BrazilianHobbyist/Project-RE-Visited-RE3/releases/tag/v1.7.0",
+      "StableReleaseVersion": "v1.7.0"
     },
     {
       "Id": "wipeout2k97xl",
@@ -1547,7 +2155,11 @@
       "DiscoveryUrl": "https://recomplauncher.com/game/wipeout2k97xl",
       "Status": "manual",
       "NexusId": "rl-wipeout2k97xl",
-      "VerifiedRepositoryUrl": "https://github.com/NJH-1001/Wipeout2K97XL"
+      "VerifiedRepositoryUrl": "https://github.com/NJH-1001/Wipeout2K97XL",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "available",
+      "StableReleaseUrl": "https://github.com/NJH-1001/Wipeout2K97XL/releases/tag/v0.2.0",
+      "StableReleaseVersion": "v0.2.0"
     },
     {
       "Id": "mgs-reintegral",
@@ -1555,7 +2167,11 @@
       "DiscoveryUrl": "https://recomplauncher.com/game/mgs-reintegral",
       "Status": "manual",
       "NexusId": "rl-mgs-reintegral",
-      "VerifiedRepositoryUrl": "https://github.com/Drommedhar/mgs-reintegral"
+      "VerifiedRepositoryUrl": "https://github.com/Drommedhar/mgs-reintegral",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "available",
+      "StableReleaseUrl": "https://github.com/Drommedhar/mgs-reintegral/releases/tag/v0.3.0",
+      "StableReleaseVersion": "v0.3.0"
     },
     {
       "Id": "vice-city-stories-recomp",
@@ -1563,7 +2179,11 @@
       "DiscoveryUrl": "https://recomplauncher.com/game/vice-city-stories-recomp",
       "Status": "manual",
       "NexusId": "rl-vice-city-stories-recomp",
-      "VerifiedRepositoryUrl": "https://github.com/OverkillLabs3/vice-city-stories-recomp"
+      "VerifiedRepositoryUrl": "https://github.com/OverkillLabs3/vice-city-stories-recomp",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "available",
+      "StableReleaseUrl": "https://github.com/OverkillLabs3/vice-city-stories-recomp/releases/tag/v1.0.0",
+      "StableReleaseVersion": "v1.0.0"
     },
     {
       "Id": "takedawn",
@@ -1571,7 +2191,11 @@
       "DiscoveryUrl": "https://recomplauncher.com/game/takedawn",
       "Status": "manual",
       "NexusId": "rl-takedawn",
-      "VerifiedRepositoryUrl": "https://github.com/xenophobentx/takedawn"
+      "VerifiedRepositoryUrl": "https://github.com/xenophobentx/takedawn",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "available",
+      "StableReleaseUrl": "https://github.com/xenophobentx/takedawn/releases/tag/v0.2.1",
+      "StableReleaseVersion": "v0.2.1"
     },
     {
       "Id": "gt4-staticrecomp",
@@ -1587,7 +2211,11 @@
       "DiscoveryUrl": "https://recomplauncher.com/game/crashbandicoot-launcher",
       "Status": "manual",
       "NexusId": "rl-crashbandicoot-launcher",
-      "VerifiedRepositoryUrl": "https://github.com/Matteo842/CrashBandicoot-Launcher"
+      "VerifiedRepositoryUrl": "https://github.com/Matteo842/CrashBandicoot-Launcher",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "available",
+      "StableReleaseUrl": "https://github.com/Matteo842/CrashBandicoot-Launcher/releases/tag/2.3.1",
+      "StableReleaseVersion": "2.3.1"
     },
     {
       "Id": "mhgurecomp",
@@ -1595,7 +2223,11 @@
       "DiscoveryUrl": "https://recomplauncher.com/game/mhgurecomp",
       "Status": "manual",
       "NexusId": "rl-mhgurecomp",
-      "VerifiedRepositoryUrl": "https://github.com/morerokk/MHGURecomp"
+      "VerifiedRepositoryUrl": "https://github.com/morerokk/MHGURecomp",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "available",
+      "StableReleaseUrl": "https://github.com/morerokk/MHGURecomp/releases/tag/0.10.7",
+      "StableReleaseVersion": "0.10.7"
     },
     {
       "Id": "perfectdarkzerorecomp",
@@ -1603,7 +2235,11 @@
       "DiscoveryUrl": "https://recomplauncher.com/game/perfectdarkzerorecomp",
       "Status": "manual",
       "NexusId": "rl-perfectdarkzerorecomp",
-      "VerifiedRepositoryUrl": "https://github.com/nikolaygorb/PerfectDarkZeroRecomp"
+      "VerifiedRepositoryUrl": "https://github.com/nikolaygorb/PerfectDarkZeroRecomp",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "available",
+      "StableReleaseUrl": "https://github.com/nikolaygorb/PerfectDarkZeroRecomp/releases/tag/1.8",
+      "StableReleaseVersion": "1.8"
     },
     {
       "Id": "ghclassic",
@@ -1611,7 +2247,9 @@
       "DiscoveryUrl": "https://recomplauncher.com/game/ghclassic",
       "Status": "manual",
       "NexusId": "rl-ghclassic",
-      "VerifiedRepositoryUrl": "https://github.com/noahbaxter/GHClassic"
+      "VerifiedRepositoryUrl": "https://github.com/noahbaxter/GHClassic",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "not-confirmed"
     },
     {
       "Id": "whopping-recompilation-collection",
@@ -1619,7 +2257,11 @@
       "DiscoveryUrl": "https://recomplauncher.com/game/whopping-recompilation-collection",
       "Status": "manual",
       "NexusId": "rl-whopping-recompilation-collection",
-      "VerifiedRepositoryUrl": "https://github.com/TekRantGaming/whopping-recompilation-collection"
+      "VerifiedRepositoryUrl": "https://github.com/TekRantGaming/whopping-recompilation-collection",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "available",
+      "StableReleaseUrl": "https://github.com/TekRantGaming/whopping-recompilation-collection/releases/tag/v1.0.7",
+      "StableReleaseVersion": "v1.0.7"
     },
     {
       "Id": "paperboat",
@@ -1627,7 +2269,11 @@
       "DiscoveryUrl": "https://recomplauncher.com/game/paperboat",
       "Status": "manual",
       "NexusId": "rl-paperboat",
-      "VerifiedRepositoryUrl": "https://github.com/HarbourMasters/PaperBoat"
+      "VerifiedRepositoryUrl": "https://github.com/HarbourMasters/PaperBoat",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "available",
+      "StableReleaseUrl": "https://github.com/HarbourMasters/PaperBoat/releases/tag/1.0.3",
+      "StableReleaseVersion": "1.0.3"
     },
     {
       "Id": "summitstrike-recomp",
@@ -1635,7 +2281,11 @@
       "DiscoveryUrl": "https://recomplauncher.com/game/summitstrike-recomp",
       "Status": "manual",
       "NexusId": "rl-summitstrike-recomp",
-      "VerifiedRepositoryUrl": "https://github.com/ElKev118/summitstrike-recomp"
+      "VerifiedRepositoryUrl": "https://github.com/ElKev118/summitstrike-recomp",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "available",
+      "StableReleaseUrl": "https://github.com/ElKev118/summitstrike-recomp/releases/tag/v1.0",
+      "StableReleaseVersion": "v1.0"
     },
     {
       "Id": "voldorium",
@@ -1643,7 +2293,11 @@
       "DiscoveryUrl": "https://recomplauncher.com/game/voldorium",
       "Status": "manual",
       "NexusId": "rl-voldorium",
-      "VerifiedRepositoryUrl": "https://github.com/enrique363/voldorium"
+      "VerifiedRepositoryUrl": "https://github.com/enrique363/voldorium",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "available",
+      "StableReleaseUrl": "https://github.com/enrique363/voldorium/releases/tag/v1.1.0",
+      "StableReleaseVersion": "v1.1.0"
     },
     {
       "Id": "bigodao",
@@ -1651,7 +2305,11 @@
       "DiscoveryUrl": "https://recomplauncher.com/game/bigodao",
       "Status": "manual",
       "NexusId": "rl-bigodao",
-      "VerifiedRepositoryUrl": "https://github.com/GABRIELNNK/Bigodao"
+      "VerifiedRepositoryUrl": "https://github.com/GABRIELNNK/Bigodao",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "available",
+      "StableReleaseUrl": "https://github.com/GABRIELNNK/Bigodao/releases/tag/1.6.0",
+      "StableReleaseVersion": "1.6.0"
     },
     {
       "Id": "forzahorizon1-reimagined",
@@ -1659,7 +2317,11 @@
       "DiscoveryUrl": "https://recomplauncher.com/game/forzahorizon1-reimagined",
       "Status": "manual",
       "NexusId": "rl-forzahorizon1-reimagined",
-      "VerifiedRepositoryUrl": "https://github.com/FH1-ReImagined/ForzaHorizon1-ReImagined"
+      "VerifiedRepositoryUrl": "https://github.com/FH1-ReImagined/ForzaHorizon1-ReImagined",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "available",
+      "StableReleaseUrl": "https://github.com/FH1-ReImagined/ForzaHorizon1-ReImagined/releases/tag/v0.2.0",
+      "StableReleaseVersion": "v0.2.0"
     },
     {
       "Id": "re-amped2",
@@ -1667,7 +2329,9 @@
       "DiscoveryUrl": "https://recomplauncher.com/game/re-amped2",
       "Status": "manual",
       "NexusId": "rl-re-amped2",
-      "VerifiedRepositoryUrl": "https://github.com/Nico-D-eu/RE-Amped2"
+      "VerifiedRepositoryUrl": "https://github.com/Nico-D-eu/RE-Amped2",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "not-confirmed"
     },
     {
       "Id": "untildawn-pc",
@@ -1675,7 +2339,11 @@
       "DiscoveryUrl": "https://recomplauncher.com/game/untildawn-pc",
       "Status": "manual",
       "NexusId": "rl-untildawn-pc",
-      "VerifiedRepositoryUrl": "https://github.com/SuperCatElvis/UntilDawn_PC"
+      "VerifiedRepositoryUrl": "https://github.com/SuperCatElvis/UntilDawn_PC",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "available",
+      "StableReleaseUrl": "https://github.com/SuperCatElvis/UntilDawn_PC/releases/tag/v0.1.5-wip",
+      "StableReleaseVersion": "v0.1.5-wip"
     },
     {
       "Id": "cristalis",
@@ -1683,7 +2351,11 @@
       "DiscoveryUrl": "https://recomplauncher.com/game/cristalis",
       "Status": "manual",
       "NexusId": "rl-cristalis",
-      "VerifiedRepositoryUrl": "https://github.com/Claudio5702/Cristalis"
+      "VerifiedRepositoryUrl": "https://github.com/Claudio5702/Cristalis",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "available",
+      "StableReleaseUrl": "https://github.com/Claudio5702/Cristalis/releases/tag/v1.10",
+      "StableReleaseVersion": "v1.10"
     },
     {
       "Id": "athelas",
@@ -1691,7 +2363,11 @@
       "DiscoveryUrl": "https://recomplauncher.com/game/athelas",
       "Status": "manual",
       "NexusId": "rl-athelas",
-      "VerifiedRepositoryUrl": "https://github.com/Shagg88/Athelas"
+      "VerifiedRepositoryUrl": "https://github.com/Shagg88/Athelas",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "available",
+      "StableReleaseUrl": "https://github.com/Shagg88/Athelas/releases/tag/1.7.1",
+      "StableReleaseVersion": "1.7.1"
     },
     {
       "Id": "cogbox",
@@ -1699,7 +2375,11 @@
       "DiscoveryUrl": "https://recomplauncher.com/game/cogbox",
       "Status": "manual",
       "NexusId": "rl-cogbox",
-      "VerifiedRepositoryUrl": "https://github.com/Shagg88/COGBox"
+      "VerifiedRepositoryUrl": "https://github.com/Shagg88/COGBox",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "available",
+      "StableReleaseUrl": "https://github.com/Shagg88/COGBox/releases/tag/0.2.2",
+      "StableReleaseVersion": "0.2.2"
     },
     {
       "Id": "valkyrierecomp",
@@ -1707,7 +2387,11 @@
       "DiscoveryUrl": "https://recomplauncher.com/game/valkyrierecomp",
       "Status": "manual",
       "NexusId": "rl-valkyrierecomp",
-      "VerifiedRepositoryUrl": "https://github.com/Ed1z19/ValkyrieRecomp"
+      "VerifiedRepositoryUrl": "https://github.com/Ed1z19/ValkyrieRecomp",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "available",
+      "StableReleaseUrl": "https://github.com/Ed1z19/ValkyrieRecomp/releases/tag/v1.0.1",
+      "StableReleaseVersion": "v1.0.1"
     },
     {
       "Id": "dw5xl-recomp",
@@ -1715,7 +2399,11 @@
       "DiscoveryUrl": "https://recomplauncher.com/game/dw5xl-recomp",
       "Status": "manual",
       "NexusId": "rl-dw5xl-recomp",
-      "VerifiedRepositoryUrl": "https://github.com/TheSlackbringer/dw5xl-recomp"
+      "VerifiedRepositoryUrl": "https://github.com/TheSlackbringer/dw5xl-recomp",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "available",
+      "StableReleaseUrl": "https://github.com/TheSlackbringer/dw5xl-recomp/releases/tag/v0.1.0-beta.3",
+      "StableReleaseVersion": "v0.1.0-beta.3"
     },
     {
       "Id": "kirbyrecomp",
@@ -1723,7 +2411,11 @@
       "DiscoveryUrl": "https://recomplauncher.com/game/kirbyrecomp",
       "Status": "manual",
       "NexusId": "rl-kirbyrecomp",
-      "VerifiedRepositoryUrl": "https://github.com/xtamqispeak/KirbyRecomp"
+      "VerifiedRepositoryUrl": "https://github.com/xtamqispeak/KirbyRecomp",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "available",
+      "StableReleaseUrl": "https://github.com/xtamqispeak/KirbyRecomp/releases/tag/v0.3.0-alpha",
+      "StableReleaseVersion": "v0.3.0-alpha"
     },
     {
       "Id": "saw2recomp",
@@ -1731,7 +2423,11 @@
       "DiscoveryUrl": "https://recomplauncher.com/game/saw2recomp",
       "Status": "manual",
       "NexusId": "rl-saw2recomp",
-      "VerifiedRepositoryUrl": "https://github.com/Matt-code-d/Saw2Recomp"
+      "VerifiedRepositoryUrl": "https://github.com/Matt-code-d/Saw2Recomp",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "available",
+      "StableReleaseUrl": "https://github.com/Matt-code-d/Saw2Recomp/releases/tag/v0.1.7",
+      "StableReleaseVersion": "v0.1.7"
     },
     {
       "Id": "srw64-recomp",
@@ -1739,7 +2435,11 @@
       "DiscoveryUrl": "https://recomplauncher.com/game/srw64-recomp",
       "Status": "manual",
       "NexusId": "rl-srw64-recomp",
-      "VerifiedRepositoryUrl": "https://github.com/dyzz/srw64-recomp"
+      "VerifiedRepositoryUrl": "https://github.com/dyzz/srw64-recomp",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "available",
+      "StableReleaseUrl": "https://github.com/dyzz/srw64-recomp/releases/tag/v0.5.2",
+      "StableReleaseVersion": "v0.5.2"
     },
     {
       "Id": "f-zero-glinux",
@@ -1754,7 +2454,11 @@
       "DiscoveryUrl": "https://recomplauncher.com/game/lego-dimensions-pc",
       "Status": "manual",
       "NexusId": "rl-lego-dimensions-pc",
-      "VerifiedRepositoryUrl": "https://github.com/vascon-es/lego-dimensions-pc"
+      "VerifiedRepositoryUrl": "https://github.com/vascon-es/lego-dimensions-pc",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "available",
+      "StableReleaseUrl": "https://github.com/vascon-es/lego-dimensions-pc/releases/tag/v1.8.2",
+      "StableReleaseVersion": "v1.8.2"
     },
     {
       "Id": "razdor",
@@ -1762,7 +2466,11 @@
       "DiscoveryUrl": "https://recomplauncher.com/game/razdor",
       "Status": "manual",
       "NexusId": "rl-razdor",
-      "VerifiedRepositoryUrl": "https://github.com/indicozy/razdor"
+      "VerifiedRepositoryUrl": "https://github.com/indicozy/razdor",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "available",
+      "StableReleaseUrl": "https://github.com/indicozy/razdor/releases/tag/v1.1.10",
+      "StableReleaseVersion": "v1.1.10"
     },
     {
       "Id": "laserlords",
@@ -1770,7 +2478,9 @@
       "DiscoveryUrl": "https://recomplauncher.com/game/laserlords",
       "Status": "manual",
       "NexusId": "rl-laserlords",
-      "VerifiedRepositoryUrl": "https://github.com/RandyVie/Laserlords"
+      "VerifiedRepositoryUrl": "https://github.com/RandyVie/Laserlords",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "not-confirmed"
     },
     {
       "Id": "brawl",
@@ -1810,7 +2520,11 @@
       "DiscoveryUrl": "https://recomplauncher.com/game/atlantis-native",
       "Status": "manual",
       "NexusId": "rl-atlantis-native",
-      "VerifiedRepositoryUrl": "https://github.com/ripleyXLR8/atlantis-native"
+      "VerifiedRepositoryUrl": "https://github.com/ripleyXLR8/atlantis-native",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "available",
+      "StableReleaseUrl": "https://github.com/ripleyXLR8/atlantis-native/releases/tag/v0.5.7",
+      "StableReleaseVersion": "v0.5.7"
     },
     {
       "Id": "tmnt-iv-turtles-in-time-pc-recomp",
@@ -1818,7 +2532,11 @@
       "DiscoveryUrl": "https://recomplauncher.com/game/tmnt-iv-turtles-in-time-pc-recomp",
       "Status": "manual",
       "NexusId": "rl-tmnt-iv-turtles-in-time-pc-recomp",
-      "VerifiedRepositoryUrl": "https://github.com/emanuelcnjunior/TMNT-IV-Turtles-in-Time-PC-Recomp"
+      "VerifiedRepositoryUrl": "https://github.com/emanuelcnjunior/TMNT-IV-Turtles-in-Time-PC-Recomp",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "available",
+      "StableReleaseUrl": "https://github.com/emanuelcnjunior/TMNT-IV-Turtles-in-Time-PC-Recomp/releases/tag/v1.0.2",
+      "StableReleaseVersion": "v1.0.2"
     },
     {
       "Id": "splatterhouse-decomp",
@@ -1826,7 +2544,11 @@
       "DiscoveryUrl": "https://recomplauncher.com/game/splatterhouse-decomp",
       "Status": "manual",
       "NexusId": "rl-splatterhouse-decomp",
-      "VerifiedRepositoryUrl": "https://github.com/0c0de/splatterhouse-decomp"
+      "VerifiedRepositoryUrl": "https://github.com/0c0de/splatterhouse-decomp",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "available",
+      "StableReleaseUrl": "https://github.com/0c0de/splatterhouse-decomp/releases/tag/v0.3",
+      "StableReleaseVersion": "v0.3"
     },
     {
       "Id": "knack-pc",
@@ -1841,7 +2563,11 @@
       "DiscoveryUrl": "https://recomplauncher.com/game/sote-recomp",
       "Status": "manual",
       "NexusId": "rl-sote-recomp",
-      "VerifiedRepositoryUrl": "https://github.com/GTTeancum/SotE-Recomp"
+      "VerifiedRepositoryUrl": "https://github.com/GTTeancum/SotE-Recomp",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "available",
+      "StableReleaseUrl": "https://github.com/GTTeancum/SotE-Recomp/releases/tag/0.9.7",
+      "StableReleaseVersion": "0.9.7"
     },
     {
       "Id": "urban-reign-recomp",
@@ -1849,7 +2575,11 @@
       "DiscoveryUrl": "https://recomplauncher.com/game/urban-reign-recomp",
       "Status": "manual",
       "NexusId": "rl-urban-reign-recomp",
-      "VerifiedRepositoryUrl": "https://github.com/thiagordsfx/urban-reign-recomp"
+      "VerifiedRepositoryUrl": "https://github.com/thiagordsfx/urban-reign-recomp",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "available",
+      "StableReleaseUrl": "https://github.com/thiagordsfx/urban-reign-recomp/releases/tag/v1.4.0",
+      "StableReleaseVersion": "v1.4.0"
     },
     {
       "Id": "timesplitters",
@@ -1857,7 +2587,11 @@
       "DiscoveryUrl": "https://recomplauncher.com/game/timesplitters",
       "Status": "manual",
       "NexusId": "rl-timesplitters",
-      "VerifiedRepositoryUrl": "https://github.com/GTTeancum/Timesplitters"
+      "VerifiedRepositoryUrl": "https://github.com/GTTeancum/Timesplitters",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "available",
+      "StableReleaseUrl": "https://github.com/GTTeancum/Timesplitters/releases/tag/v1.0",
+      "StableReleaseVersion": "v1.0"
     },
     {
       "Id": "godhand-port",
@@ -1880,7 +2614,11 @@
       "DiscoveryUrl": "https://recomplauncher.com/game/crash-twinsanity-windows",
       "Status": "manual",
       "NexusId": "rl-crash-twinsanity-windows",
-      "VerifiedRepositoryUrl": "https://github.com/GioPixelGH/Crash-Twinsanity-Windows"
+      "VerifiedRepositoryUrl": "https://github.com/GioPixelGH/Crash-Twinsanity-Windows",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "available",
+      "StableReleaseUrl": "https://github.com/GioPixelGH/Crash-Twinsanity-Windows/releases/tag/v1.0.19",
+      "StableReleaseVersion": "v1.0.19"
     },
     {
       "Id": "timesplitters-future-perfect-pc",
@@ -1888,7 +2626,11 @@
       "DiscoveryUrl": "https://recomplauncher.com/game/timesplitters-future-perfect-pc",
       "Status": "manual",
       "NexusId": "rl-timesplitters-future-perfect-pc",
-      "VerifiedRepositoryUrl": "https://github.com/TheDoffman/timesplitters-future-perfect-pc"
+      "VerifiedRepositoryUrl": "https://github.com/TheDoffman/timesplitters-future-perfect-pc",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "available",
+      "StableReleaseUrl": "https://github.com/TheDoffman/timesplitters-future-perfect-pc/releases/tag/launcher-v1.4.0",
+      "StableReleaseVersion": "launcher-v1.4.0"
     },
     {
       "Id": "project-pyrrhus",
@@ -1896,7 +2638,9 @@
       "DiscoveryUrl": "https://recomplauncher.com/game/project-pyrrhus",
       "Status": "manual",
       "NexusId": "rl-project-pyrrhus",
-      "VerifiedRepositoryUrl": "https://github.com/undecuple/project-pyrrhus"
+      "VerifiedRepositoryUrl": "https://github.com/undecuple/project-pyrrhus",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "not-confirmed"
     },
     {
       "Id": "nfl-head-coach-09-static-recomp",
@@ -1904,7 +2648,11 @@
       "DiscoveryUrl": "https://recomplauncher.com/game/nfl-head-coach-09-static-recomp",
       "Status": "manual",
       "NexusId": "rl-nfl-head-coach-09-static-recomp",
-      "VerifiedRepositoryUrl": "https://github.com/tools81/nfl-head-coach-09-static-recomp"
+      "VerifiedRepositoryUrl": "https://github.com/tools81/nfl-head-coach-09-static-recomp",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "available",
+      "StableReleaseUrl": "https://github.com/tools81/nfl-head-coach-09-static-recomp/releases/tag/v0.8.0",
+      "StableReleaseVersion": "v0.8.0"
     },
     {
       "Id": "project-helghast",
@@ -1912,7 +2660,9 @@
       "DiscoveryUrl": "https://recomplauncher.com/game/project-helghast",
       "Status": "manual",
       "NexusId": "rl-project-helghast",
-      "VerifiedRepositoryUrl": "https://github.com/undecuple/project-helghast"
+      "VerifiedRepositoryUrl": "https://github.com/undecuple/project-helghast",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "not-confirmed"
     },
     {
       "Id": "re-code-veronica-ps3-hd-recomp-pc",
@@ -1927,7 +2677,9 @@
       "DiscoveryUrl": "https://recomplauncher.com/game/juiced2-recompiled",
       "Status": "manual",
       "NexusId": "rl-juiced2-recompiled",
-      "VerifiedRepositoryUrl": "https://github.com/anishchandra24/Juiced2-Recompiled"
+      "VerifiedRepositoryUrl": "https://github.com/anishchandra24/Juiced2-Recompiled",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "not-confirmed"
     },
     {
       "Id": "portheon",
@@ -1935,7 +2687,11 @@
       "DiscoveryUrl": "https://recomplauncher.com/game/portheon",
       "Status": "manual",
       "NexusId": "rl-portheon",
-      "VerifiedRepositoryUrl": "https://github.com/XAndromedaXR/PORTHEON"
+      "VerifiedRepositoryUrl": "https://github.com/XAndromedaXR/PORTHEON",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "available",
+      "StableReleaseUrl": "https://github.com/XAndromedaXR/PORTHEON/releases/tag/4.2.0",
+      "StableReleaseVersion": "4.2.0"
     },
     {
       "Id": "sneaky-whopper-recomp",
@@ -1951,7 +2707,11 @@
       "DiscoveryUrl": "https://recomplauncher.com/game/project-veronica",
       "Status": "manual",
       "NexusId": "rl-project-veronica",
-      "VerifiedRepositoryUrl": "https://github.com/camybiohazard/Project-Veronica"
+      "VerifiedRepositoryUrl": "https://github.com/camybiohazard/Project-Veronica",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "available",
+      "StableReleaseUrl": "https://github.com/camybiohazard/Project-Veronica/releases/tag/1.0.3",
+      "StableReleaseVersion": "1.0.3"
     },
     {
       "Id": "newsuperpaperbros",
@@ -1959,7 +2719,11 @@
       "DiscoveryUrl": "https://recomplauncher.com/game/newsuperpaperbros",
       "Status": "manual",
       "NexusId": "rl-newsuperpaperbros",
-      "VerifiedRepositoryUrl": "https://github.com/josiahg2502-glitch/NewSuperPaperBros"
+      "VerifiedRepositoryUrl": "https://github.com/josiahg2502-glitch/NewSuperPaperBros",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "available",
+      "StableReleaseUrl": "https://github.com/josiahg2502-glitch/NewSuperPaperBros/releases/tag/v1.0.5",
+      "StableReleaseVersion": "v1.0.5"
     },
     {
       "Id": "mother3recomp",
@@ -1967,7 +2731,11 @@
       "DiscoveryUrl": "https://recomplauncher.com/game/mother3recomp",
       "Status": "manual",
       "NexusId": "rl-mother3recomp",
-      "VerifiedRepositoryUrl": "https://github.com/josiahg2502-glitch/Mother3Recomp"
+      "VerifiedRepositoryUrl": "https://github.com/josiahg2502-glitch/Mother3Recomp",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "available",
+      "StableReleaseUrl": "https://github.com/josiahg2502-glitch/Mother3Recomp/releases/tag/v1.0.8",
+      "StableReleaseVersion": "v1.0.8"
     },
     {
       "Id": "regh2",
@@ -1982,7 +2750,11 @@
       "DiscoveryUrl": "https://recomplauncher.com/game/marvel-ultimate-alliance-bundle-recompiled",
       "Status": "manual",
       "NexusId": "rl-marvel-ultimate-alliance-bundle-recompiled",
-      "VerifiedRepositoryUrl": "https://github.com/saulob/marvel-ultimate-alliance-bundle-recompiled"
+      "VerifiedRepositoryUrl": "https://github.com/saulob/marvel-ultimate-alliance-bundle-recompiled",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "available",
+      "StableReleaseUrl": "https://github.com/saulob/marvel-ultimate-alliance-bundle-recompiled/releases/tag/v0.1.0",
+      "StableReleaseVersion": "v0.1.0"
     },
     {
       "Id": "maddennfl08-recompiled",
@@ -1990,7 +2762,9 @@
       "DiscoveryUrl": "https://recomplauncher.com/game/maddennfl08-recompiled",
       "Status": "manual",
       "NexusId": "rl-maddennfl08-recompiled",
-      "VerifiedRepositoryUrl": "https://github.com/anishchandra24/MaddenNFL08-Recompiled"
+      "VerifiedRepositoryUrl": "https://github.com/anishchandra24/MaddenNFL08-Recompiled",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "not-confirmed"
     },
     {
       "Id": "nhl2k8-recompiled",
@@ -1998,7 +2772,11 @@
       "DiscoveryUrl": "https://recomplauncher.com/game/nhl2k8-recompiled",
       "Status": "manual",
       "NexusId": "rl-nhl2k8-recompiled",
-      "VerifiedRepositoryUrl": "https://github.com/anishchandra24/NHL2K8-Recompiled"
+      "VerifiedRepositoryUrl": "https://github.com/anishchandra24/NHL2K8-Recompiled",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "available",
+      "StableReleaseUrl": "https://github.com/anishchandra24/NHL2K8-Recompiled/releases/tag/v1.0.0",
+      "StableReleaseVersion": "v1.0.0"
     },
     {
       "Id": "freedomunbound",
@@ -2006,15 +2784,23 @@
       "DiscoveryUrl": "https://recomplauncher.com/game/freedomunbound",
       "Status": "manual",
       "NexusId": "rl-freedomunbound",
-      "VerifiedRepositoryUrl": "https://github.com/Dudux42/FreedomUnbound"
+      "VerifiedRepositoryUrl": "https://github.com/Dudux42/FreedomUnbound",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "available",
+      "StableReleaseUrl": "https://github.com/Dudux42/FreedomUnbound/releases/tag/v0.1.5-alpha",
+      "StableReleaseVersion": "v0.1.5-alpha"
     },
     {
       "Id": "smash4pc",
       "Repository": "josiahg2502-glitch/Smash4PC",
       "DiscoveryUrl": "https://recomplauncher.com/game/smash4pc",
-      "Status": "manual",
+      "Status": "automatic",
       "NexusId": "rl-smash4pc",
-      "VerifiedRepositoryUrl": "https://github.com/josiahg2502-glitch/Smash4PC"
+      "VerifiedRepositoryUrl": "https://github.com/josiahg2502-glitch/Smash4PC",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "available",
+      "StableReleaseUrl": "https://github.com/josiahg2502-glitch/Smash4PC/releases/tag/v0.1.0",
+      "StableReleaseVersion": "v0.1.0"
     },
     {
       "Id": "castlevania-cod-recomp",
@@ -2038,7 +2824,11 @@
       "DiscoveryUrl": "https://recomplauncher.com/game/uncharted-collection-pc",
       "Status": "manual",
       "NexusId": "rl-uncharted-collection-pc",
-      "VerifiedRepositoryUrl": "https://github.com/zorde23/Uncharted_Collection_PC"
+      "VerifiedRepositoryUrl": "https://github.com/zorde23/Uncharted_Collection_PC",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "available",
+      "StableReleaseUrl": "https://github.com/zorde23/Uncharted_Collection_PC/releases/tag/v0.3.7",
+      "StableReleaseVersion": "v0.3.7"
     },
     {
       "Id": "skate3recomp-plus",
@@ -2046,7 +2836,11 @@
       "DiscoveryUrl": "https://recomplauncher.com/game/skate3recomp-plus",
       "Status": "manual",
       "NexusId": "rl-skate3recomp-plus",
-      "VerifiedRepositoryUrl": "https://github.com/dougieprishpreed/skate3recomp-plus"
+      "VerifiedRepositoryUrl": "https://github.com/dougieprishpreed/skate3recomp-plus",
+      "StableReleaseCheckedDate": "2026-10-28",
+      "StableReleaseStatus": "available",
+      "StableReleaseUrl": "https://github.com/dougieprishpreed/skate3recomp-plus/releases/tag/v0.2e",
+      "StableReleaseVersion": "v0.2e"
     }
   ]
 }

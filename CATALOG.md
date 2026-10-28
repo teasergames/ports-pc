@@ -1,6 +1,38 @@
 # Catálogo de ports
 
-O NEXUS consulta a última **release estável** dos perfis GitHub e seleciona somente o ZIP Windows definido. Darkwatch: Darker Edition usa releases estáveis do repositório linkssy2/DarkwatchDarkerEdition. Azimuth usa sua página oficial no itch.io e importação local do ZIP. Não escolhe arquivos de código-fonte, Linux ou atualizadores isolados. Os projetos abaixo são ports/forks independentes, sem vínculo oficial com os detentores dos jogos.
+Nos perfis de instalação automática, o NEXUS consulta a última **release estável** do GitHub e seleciona somente o ZIP Windows definido. Darkwatch: Darker Edition usa releases estáveis do repositório linkssy2/DarkwatchDarkerEdition. Azimuth usa sua página oficial no itch.io e importação local do ZIP. Não escolhe arquivos de código-fonte, Linux ou atualizadores isolados. Os projetos abaixo são ports/forks independentes, sem vínculo oficial com os detentores dos jogos.
+
+## Downloads habilitados — 1.5.1
+
+A 1.5.0 cadastrou muitos projetos como links manuais e deixava o botão Baixar desativado. A 1.5.1 habilita a instalação automática de **17 perfis adicionais**, incluindo os quatro Wii U relatados pelo usuário. Total atual: **61 perfis GitHub integrados, 1 ZIP oficial importado e 212 perfis manuais**, entre 274 fontes.
+
+Cada novo pacote foi baixado da release oficial, conferido com SHA-256, inspecionado para selecionar o executável AMD64 e instalado pelo pipeline de extração/cadastro. Não foram executados jogos, instaladores ou compiladores de terceiros. A escolha exclui ARM64, Linux, macOS, executáveis auxiliares e código-fonte. O comando `--setup` dos launchers Windows de Wind Waker HD e NSMBU foi conferido em `tools/installer/gui/setup_gui.cpp` dos projetos; First Light documenta `--play` no README.
+
+Os perfis que continuam manuais agora oferecem **Ver downloads oficiais**, que abre `https://github.com/<autor>/<projeto>/releases` no navegador. A instalação e o cadastro continuam manuais e a disponibilidade depende do autor; não há promessa de pacote pronto para projetos futuros. A pasta de instalação e Consultar novamente ficam desativados nesses perfis. Essa ação não executa nem instala downloads.
+
+Foram consultadas as Releases estáveis dos 216 perfis então manuais que não estavam marcados como desenvolvimento. `assets/catalog-sources.json` registra data, versão e URL das consultas bem-sucedidas; `not-confirmed` indica que não foi possível confirmar uma release estável, sem afirmar que nenhuma existe. A existência de uma Release não habilita automaticamente um perfil: os 17 pacotes abaixo passaram por inspeção e instalação separadas.
+
+| Plataforma | Projeto | Jogar | Configurar |
+|---|---|---|---|
+| GameCube | [The Legend of Zelda: Twilight Princess · Dusklight](https://github.com/TwilitRealm/dusklight) | `dusklight.exe` | Menu interno |
+| Wii U | [The Legend of Zelda: The Wind Waker HD · Wind Waker HD Recomp](https://github.com/ZeldaWWHDRecomp/ZeldaWWHDRecomp) | `Wind Waker HD.exe` | `Wind Waker HD.exe` `--setup` |
+| GameCube | [Super Mario Strikers · Strikers](https://github.com/new-coke/strikers) | `strikers.exe` | `strikers-settings.exe` |
+| GameCube | [Luigi's Mansion · Luigi's Mansion Recomp](https://github.com/rob646464/luigis-mansion-recompiled) | `LuigisMansionRecomp.exe` | Menu interno |
+| Wii U | [The Legend of Zelda: Breath of the Wild · BotW Native](https://github.com/ryderclanky/BotW-Native) | `BotWLauncher.exe` | `BotWLauncher.exe` |
+| Nintendo Switch | [Pokémon: Let's Go, Pikachu! · Let's Go Recomp](https://github.com/raulzrrs/letsgo-recomp) | `LetsGoRecomp.exe` | `LetsGoRecomp.exe` |
+| PlayStation 4 | [Killzone Shadow Fall · Killzone Shadow Fall PC](https://github.com/lesca-191204/killzone-shadowfall-pc) | `Killzone Shadow Fall.exe` | `Killzone Shadow Fall.exe` |
+| PlayStation 4 | [Dragon's Crown Pro · Dragon's Crown Pro PC](https://github.com/saulob/dragons-crown-pro-pc) | `dragons_crown_pro.exe` | `dragons_crown_pro.exe` |
+| PlayStation 4 | [EA Sports UFC 3 · UFC 3 PC](https://github.com/GNSB/UFC-3-PS4-PORT-LINUX-WINDOWS) | `UFC3.exe` | `UFC3.exe` |
+| PlayStation 4 | [Unicorn Overlord · Unicorn Overlord PC](https://github.com/hachi23/unicorn_overlord_pc) | `Unicorn Overlord.exe` | `Unicorn Overlord.exe` |
+| PlayStation 4 | [inFAMOUS First Light · inFAMOUS First Light PC](https://github.com/VantageEX/infamous-first-light-pc) | `inFAMOUS First Light.exe` `--play` | `inFAMOUS First Light.exe` |
+| GameCube | [Metroid Prime · Metroid Prime Port](https://github.com/Odrannnn/MetroidPrimePort) | `metroid_prime_port.exe` | Menu interno |
+| Wii | [New Super Mario Bros. Wii · NSMB Wii Recompiled](https://github.com/WitherBlitz/NSMB-Wii-Multiplayer-Recompilation) | `NSMBW.exe` | Menu interno |
+| Wii | [Mario Strikers Charged · Recharged](https://github.com/previouslevelgames/recharged) | `recharged.exe` | `recharged.exe` |
+| Wii U | [New Super Mario Bros. U · NSMBU Recomp](https://github.com/nsmbu-recomp/nsmbu-recomp) | `NSMBU.exe` | `NSMBU.exe` `--setup` |
+| Nintendo Switch | [Super Mario Maker 2 · SMM2 Recomp](https://github.com/smm2recomp/smm2recomp) | `smm2recomp.exe` | Menu interno |
+| Wii U | [Super Smash Bros. for Wii U · Smash 4 PC](https://github.com/josiahg2502-glitch/Smash4PC) | `Smash 4 PC.exe` | `Smash 4 PC.exe` |
+
+**Preparação:** BotW Native usa o launcher, não o instalador `BotW-Native-Setup.exe` nem o runtime sem parâmetros. Smash 4, Recharged, Pokémon, Killzone e UFC 3 aplicam configurações pelo launcher original. Twilight Princess, Luigi’s Mansion, Metroid Prime, NSMB Wii e SMM2 têm preparação/opções internas. Dragon’s Crown permite desativar o próprio launcher; segure Shift ao iniciar para restaurá-lo. Os requisitos e limites de cada projeto continuam descritos no aplicativo e no repositório de origem.
 
 ## RecompLauncher — catálogo 1.5.0
 

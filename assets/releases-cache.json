@@ -1264,5 +1264,311 @@
         }
       ]
     }
+  },
+  {
+    "Repository": "ZeldaWWHDRecomp/ZeldaWWHDRecomp",
+    "CheckedUtc": "2026-10-28T22:57:44.987000+00:00",
+    "Release": {
+      "tag_name": "v0.4.0",
+      "html_url": "https://github.com/ZeldaWWHDRecomp/ZeldaWWHDRecomp/releases/tag/v0.4.0",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "WindWakerHD-v0.4.0-windows-x86_64.zip",
+          "size": 41817222,
+          "browser_download_url": "https://github.com/ZeldaWWHDRecomp/ZeldaWWHDRecomp/releases/download/v0.4.0/WindWakerHD-v0.4.0-windows-x86_64.zip",
+          "digest": "sha256:ab7e69459a214455f90fd1d6cb0bd9d86f43a9167c2d53c6cfb4ce1acee50083"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "ryderclanky/BotW-Native",
+    "CheckedUtc": "2026-10-28T22:57:44.987000+00:00",
+    "Release": {
+      "tag_name": "v0.1.1",
+      "html_url": "https://github.com/ryderclanky/BotW-Native/releases/tag/v0.1.1",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "BotW-Native-v0.1.1-windows-x64.zip",
+          "size": 150171476,
+          "browser_download_url": "https://github.com/ryderclanky/BotW-Native/releases/download/v0.1.1/BotW-Native-v0.1.1-windows-x64.zip",
+          "digest": "sha256:612049b59ea9c772046de1b3139130beebc34436b23e3082739b13fc7243d0f8"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "nsmbu-recomp/nsmbu-recomp",
+    "CheckedUtc": "2026-10-28T22:57:44.987000+00:00",
+    "Release": {
+      "tag_name": "v0.7.2",
+      "html_url": "https://github.com/nsmbu-recomp/nsmbu-recomp/releases/tag/v0.7.2",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "NSMBU-v0.7.2-windows-x86_64.zip",
+          "size": 21154459,
+          "browser_download_url": "https://github.com/nsmbu-recomp/nsmbu-recomp/releases/download/v0.7.2/NSMBU-v0.7.2-windows-x86_64.zip",
+          "digest": "sha256:720e22163a0e09d00a22ceae2e6337aed7decb22bf36f60877d009813bdfec5f"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "josiahg2502-glitch/Smash4PC",
+    "CheckedUtc": "2026-10-28T22:57:44.987000+00:00",
+    "Release": {
+      "tag_name": "v0.1.0",
+      "html_url": "https://github.com/josiahg2502-glitch/Smash4PC/releases/tag/v0.1.0",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "Smash4PC-v0.1.0-Windows.zip",
+          "size": 148098537,
+          "browser_download_url": "https://github.com/josiahg2502-glitch/Smash4PC/releases/download/v0.1.0/Smash4PC-v0.1.0-Windows.zip",
+          "digest": "sha256:ebd16c329f365c626ce83edea85edb13a2c766a6dbfebab2a676af5033980d46"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "TwilitRealm/dusklight",
+    "CheckedUtc": "2026-10-28T22:57:44.987000+00:00",
+    "Release": {
+      "tag_name": "v2.0.3",
+      "html_url": "https://github.com/TwilitRealm/dusklight/releases/tag/v2.0.3",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "Dusklight-v2.0.3-win32-x86_64.zip",
+          "size": 56037777,
+          "browser_download_url": "https://github.com/TwilitRealm/dusklight/releases/download/v2.0.3/Dusklight-v2.0.3-win32-x86_64.zip",
+          "digest": "sha256:ac63514eeb13cd4e9bd22be02dabee4952d1331a78f0496326bba2b577b12caf"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "new-coke/strikers",
+    "CheckedUtc": "2026-10-28T22:57:44.987000+00:00",
+    "Release": {
+      "tag_name": "v1.3.0",
+      "html_url": "https://github.com/new-coke/strikers/releases/tag/v1.3.0",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "strikers-windows-x86_64.zip",
+          "size": 39998197,
+          "browser_download_url": "https://github.com/new-coke/strikers/releases/download/v1.3.0/strikers-windows-x86_64.zip",
+          "digest": "sha256:1f42a9e3c2eabe828311f706151b9efe170c2bb6410feb6a531780e89cd93f5c"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "rob646464/luigis-mansion-recompiled",
+    "CheckedUtc": "2026-10-28T22:57:44.987000+00:00",
+    "Release": {
+      "tag_name": "v1.1.5",
+      "html_url": "https://github.com/rob646464/luigis-mansion-recompiled/releases/tag/v1.1.5",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "LuigisMansionRecompiled-1.1.5-windows-x64.zip",
+          "size": 88135903,
+          "browser_download_url": "https://github.com/rob646464/luigis-mansion-recompiled/releases/download/v1.1.5/LuigisMansionRecompiled-1.1.5-windows-x64.zip",
+          "digest": "sha256:c0d0e2925361f97f1a0e8057a06138e452006b982bf40a8035965a98fb93ee59"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "raulzrrs/letsgo-recomp",
+    "CheckedUtc": "2026-10-28T22:57:44.987000+00:00",
+    "Release": {
+      "tag_name": "v0.7.5",
+      "html_url": "https://github.com/raulzrrs/letsgo-recomp/releases/tag/v0.7.5",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "LetsGoRecomp-0.7.5-windows.zip",
+          "size": 91209027,
+          "browser_download_url": "https://github.com/raulzrrs/letsgo-recomp/releases/download/v0.7.5/LetsGoRecomp-0.7.5-windows.zip",
+          "digest": "sha256:a78b3c97dcc40534af688333a4631e5d48ad0067a07c2a75f95cef5c9197d576"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "lesca-191204/killzone-shadowfall-pc",
+    "CheckedUtc": "2026-10-28T22:57:44.987000+00:00",
+    "Release": {
+      "tag_name": "v0.6.0",
+      "html_url": "https://github.com/lesca-191204/killzone-shadowfall-pc/releases/tag/v0.6.0",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "KillzoneShadowFall-v0.6.0-windows.zip",
+          "size": 113546376,
+          "browser_download_url": "https://github.com/lesca-191204/killzone-shadowfall-pc/releases/download/v0.6.0/KillzoneShadowFall-v0.6.0-windows.zip",
+          "digest": "sha256:c9592c3ece59823f2d0fef4141e11f6d0fb834cedcc1ff1eed2637a08233fcb2"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "saulob/dragons-crown-pro-pc",
+    "CheckedUtc": "2026-10-28T22:57:44.987000+00:00",
+    "Release": {
+      "tag_name": "v0.7.1",
+      "html_url": "https://github.com/saulob/dragons-crown-pro-pc/releases/tag/v0.7.1",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "DragonsCrownProPC-v0.7.1-windows-x64.zip",
+          "size": 16833739,
+          "browser_download_url": "https://github.com/saulob/dragons-crown-pro-pc/releases/download/v0.7.1/DragonsCrownProPC-v0.7.1-windows-x64.zip",
+          "digest": "sha256:8f6b3596280c7d9857c4e7a111e2c075e8a568bf53d2f399a19271a029e1c053"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "GNSB/UFC-3-PS4-PORT-LINUX-WINDOWS",
+    "CheckedUtc": "2026-10-28T22:57:44.987000+00:00",
+    "Release": {
+      "tag_name": "ufc3-v0.1.14",
+      "html_url": "https://github.com/GNSB/UFC-3-PS4-PORT-LINUX-WINDOWS/releases/tag/ufc3-v0.1.14",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "UFC3Native-ufc3-v0.1.14-windows-x86_64.zip",
+          "size": 21206880,
+          "browser_download_url": "https://github.com/GNSB/UFC-3-PS4-PORT-LINUX-WINDOWS/releases/download/ufc3-v0.1.14/UFC3Native-ufc3-v0.1.14-windows-x86_64.zip",
+          "digest": "sha256:3f6f8163dc19a3cbc7c7465bf32f3e74fc04728e3c7d9a0614d7bfc048fdf404"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "hachi23/unicorn_overlord_pc",
+    "CheckedUtc": "2026-10-28T22:57:44.987000+00:00",
+    "Release": {
+      "tag_name": "v1.3.1",
+      "html_url": "https://github.com/hachi23/unicorn_overlord_pc/releases/tag/v1.3.1",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "Unicorn-Overlord-PC-windows.zip",
+          "size": 23240150,
+          "browser_download_url": "https://github.com/hachi23/unicorn_overlord_pc/releases/download/v1.3.1/Unicorn-Overlord-PC-windows.zip",
+          "digest": "sha256:ee764db459e69b6441ec8a6c6b36f9e4e2ed4706fcb4d958130df616dde14852"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "VantageEX/infamous-first-light-pc",
+    "CheckedUtc": "2026-10-28T22:57:44.987000+00:00",
+    "Release": {
+      "tag_name": "v0.3.8",
+      "html_url": "https://github.com/VantageEX/infamous-first-light-pc/releases/tag/v0.3.8",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "inFAMOUS-First-Light-PC-v0.3.8.zip",
+          "size": 140533448,
+          "browser_download_url": "https://github.com/VantageEX/infamous-first-light-pc/releases/download/v0.3.8/inFAMOUS-First-Light-PC-v0.3.8.zip",
+          "digest": "sha256:c63a864d5103d4f06c44d10057aac87c95eed1583e132ed50a1ed548daaad208"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "Odrannnn/MetroidPrimePort",
+    "CheckedUtc": "2026-10-28T22:57:44.987000+00:00",
+    "Release": {
+      "tag_name": "v0.35.1",
+      "html_url": "https://github.com/Odrannnn/MetroidPrimePort/releases/tag/v0.35.1",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "metroid-prime-port-0.35.1-windows-x86_64.zip",
+          "size": 72972435,
+          "browser_download_url": "https://github.com/Odrannnn/MetroidPrimePort/releases/download/v0.35.1/metroid-prime-port-0.35.1-windows-x86_64.zip",
+          "digest": "sha256:393a3ee694a9fc86f70df50e8b48a252e6ac7ecbcd0256d9ad5fa36e2372be3e"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "WitherBlitz/NSMB-Wii-Multiplayer-Recompilation",
+    "CheckedUtc": "2026-10-28T22:57:44.987000+00:00",
+    "Release": {
+      "tag_name": "v0.2.2",
+      "html_url": "https://github.com/WitherBlitz/NSMB-Wii-Multiplayer-Recompilation/releases/tag/v0.2.2",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "NSMBW-0.2.2-windows-x64.zip",
+          "size": 74462458,
+          "browser_download_url": "https://github.com/WitherBlitz/NSMB-Wii-Multiplayer-Recompilation/releases/download/v0.2.2/NSMBW-0.2.2-windows-x64.zip",
+          "digest": "sha256:63589bbb6116a1a15a825244fba183bc6913643607f1d720026d098f1ba52dab"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "previouslevelgames/recharged",
+    "CheckedUtc": "2026-10-28T22:57:44.987000+00:00",
+    "Release": {
+      "tag_name": "v1.1.0",
+      "html_url": "https://github.com/previouslevelgames/recharged/releases/tag/v1.1.0",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "recharged-1.1.0+g4fa2b82d86d8-windows-x86_64.zip",
+          "size": 39237623,
+          "browser_download_url": "https://github.com/previouslevelgames/recharged/releases/download/v1.1.0/recharged-1.1.0%2Bg4fa2b82d86d8-windows-x86_64.zip",
+          "digest": "sha256:f845b87e2d0aafb3eda05372c44282b90eaa9679f1e9c9737e4fcc50ddb80023"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "smm2recomp/smm2recomp",
+    "CheckedUtc": "2026-10-28T22:57:44.987000+00:00",
+    "Release": {
+      "tag_name": "v0.5.5",
+      "html_url": "https://github.com/smm2recomp/smm2recomp/releases/tag/v0.5.5",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "SMM2Recomp-windows-x86_64.zip",
+          "size": 118242689,
+          "browser_download_url": "https://github.com/smm2recomp/smm2recomp/releases/download/v0.5.5/SMM2Recomp-windows-x86_64.zip",
+          "digest": "sha256:a37a60413090e7c26c21b38609a835ffcba2d1288a8c363275ce675d3364dac3"
+        }
+      ]
+    }
   }
 ]

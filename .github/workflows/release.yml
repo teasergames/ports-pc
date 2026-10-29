@@ -1,0 +1,44 @@
+name: Publish testing release
+on:
+  push:
+    tags: ['v1.7.0-beta.*']
+permissions:
+  contents: read
+jobs:
+  windows:
+    uses: ./.github/workflows/windows.yml
+  linux:
+    uses: ./.github/workflows/linux.yml
+  publish:
+    needs: [windows, linux]
+    runs-on: ubuntu-22.04
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          name: Nexus-Ports-PC-Windows-x64
+          path: release-assets
+      - uses: actions/download-artifact@v4
+        with:
+          name: Nexus-Linux-x86_64-preview
+          path: release-assets
+      - name: Verify packages and generate checksums
+        working-directory: release-assets
+        run: |
+          test -s Nexus-Ports-PC-Windows-x64.zip
+          test -s Nexus-Linux-x86_64.AppImage
+          sha256sum --check Nexus-Linux-x86_64.AppImage.sha256
+          sha256sum Nexus-Ports-PC-Windows-x64.zip Nexus-Linux-x86_64.AppImage > SHA256SUMS.txt
+      - name: Publish prerelease after both platforms pass
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RELEASE_TAG: ${{ github.ref_name }}
+        run: |
+          notes=".github/release-notes/$RELEASE_TAG.md"
+          test -s "$notes"
+          gh release create "$RELEASE_TAG" release-assets/* \
+            --verify-tag --prerelease --latest=false \
+            --title "NEXUS $RELEASE_TAG · Windows 10 e Linux (testes)" \
+            --notes-file "$notes"

@@ -18,8 +18,9 @@ using Microsoft.Win32;
 
 [assembly: AssemblyTitle("NEXUS · Ports PC")]
 [assembly: AssemblyProduct("NEXUS Ports PC")]
-[assembly: AssemblyVersion("1.6.0.0")]
-[assembly: AssemblyFileVersion("1.6.0.0")]
+[assembly: AssemblyVersion("1.7.0.0")]
+[assembly: AssemblyFileVersion("1.7.0.0")]
+[assembly: AssemblyInformationalVersion("1.7.0-beta.1")]
 [assembly: System.Runtime.Versioning.TargetFramework(".NETFramework,Version=v4.8")]
 namespace Nexus {
   public static class Program {
@@ -54,7 +55,13 @@ namespace Nexus {
     public Launcher(Store data,bool test) {
       store=data;smoke=test;library=store.Load();artwork=new ArtworkService(store);
       using(var stream=Assembly.GetExecutingAssembly().GetManifestResourceStream("Nexus.MainWindow.xaml")){Window=(Window)XamlReader.Load(stream);}
-      Window.SourceInitialized+=delegate{int value=1;DwmSetWindowAttribute(new WindowInteropHelper(Window).Handle,20,ref value,4);};
+      Window.SourceInitialized+=delegate{
+        // Windows 10 versions before 20H1 use attribute 19. Theme support
+        // is optional: a rejected attribute must never prevent startup.
+        try{int value=1;IntPtr handle=new WindowInteropHelper(Window).Handle;
+          if(DwmSetWindowAttribute(handle,20,ref value,4)!=0)DwmSetWindowAttribute(handle,19,ref value,4);
+        }catch(DllNotFoundException){}catch(EntryPointNotFoundException){}
+      };
       Window.Closed+=delegate{closing=true;viewSaveTimer.Stop();if(!smoke)Save();shutdown.Cancel();artwork.Dispose();};
       Find<Button>("AddButton").Click+=delegate{Add();};Find<Button>("EditButton").Click+=delegate{Edit();};Find<Button>("PlayButton").Click+=delegate{Launch();};Find<Button>("FavoriteButton").Click+=delegate{if(selected!=null){selected.Favorite=!selected.Favorite;Save();Refresh();}};
       Find<Button>("ConfigureButton").Click+=delegate{if(selected==null)return;try{if(FolderLaunch.Supports(selected)){ConfigureSourceFolder();return;}if(GameContent.Supports(selected)){ConfigureContent();return;}Process.Start(Ports.ConfigurationStartInfo(selected));Status("Configuração aberta: "+selected.Name);}catch(Exception ex){MessageBox.Show(Window,ex.Message,"Configurar jogo",MessageBoxButton.OK,MessageBoxImage.Information);}};
@@ -79,7 +86,7 @@ namespace Nexus {
       Find<TextBlock>("HeroTitle").Text=has?selected.Name:"Seu próximo universo";
       Find<TextBlock>("HeroDescription").Text=!has?"Adicione seus ports e reúna suas aventuras em um só lugar.":selected.Name=="Bloodborne"?"As ruas de Yharnam estão à sua espera. Sua próxima caçada começa aqui.":selected.Name=="God of War III"?"Enfrente os deuses do Olimpo. Sua próxima aventura começa aqui.":selected.Name=="Shadow of the Colossus"?"Uma terra esquecida. Dezesseis colossos. Uma jornada para revisitar.":"Seu port, suas configurações. Pronto para a próxima aventura.";
       Find<Button>("FavoriteButton").Content=has&&selected.Favorite?"★ Favorito":"☆ Favoritar";
-      string meta=has?Platforms.Resolve(selected)+" · Windows":"Windows 11 · Biblioteca local";
+      string meta=has?Platforms.Resolve(selected)+" · Windows":"Windows 10/11 · Biblioteca local";
       if(has&&!String.IsNullOrEmpty(selected.LastPlayed)){DateTime time;if(DateTime.TryParse(selected.LastPlayed,out time))meta+="   /   Última abertura: "+time.ToLocalTime().ToString("dd/MM/yyyy HH:mm");}
       Find<TextBlock>("HeroMeta").Text=meta;
       Find<Image>("Backdrop").Source=has?LoadImage(selected.Artwork):null;RefreshGrid();

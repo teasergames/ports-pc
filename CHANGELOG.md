@@ -1,3 +1,10 @@
+## 1.7.0-beta.1 — versão de testes
+
+- Windows: alvo Windows 10 22H2/Windows 11 x64 com .NET Framework 4.8; fallback do tema da janela e roteiro de validação na máquina alvo. Windows 10 real ainda não foi validado.
+- Linux: primeira prévia nativa Avalonia/.NET 10 LTS em AppImage x86_64, com biblioteca local, busca, favoritos, artwork local e execução de binários nativos/AppImages e configuradores.
+- A edição Linux ainda não inclui instalação/atualização automática de ports, preparação de conteúdo, detecção Windows e artwork online. O catálogo serve para consulta das fontes oficiais.
+- Builds, autotestes e renderização das duas edições são requisitos da publicação automática como pré-release. Não altera a versão estável recomendada.
+
 # Changelog
 
 ## 1.4.0 — 2026-10-28

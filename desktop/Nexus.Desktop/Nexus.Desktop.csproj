@@ -1,0 +1,10 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup><OutputType>WinExe</OutputType><TargetFramework>net10.0</TargetFramework><ImplicitUsings>enable</ImplicitUsings><Nullable>enable</Nullable><AssemblyName>Nexus</AssemblyName><Version>1.7.0-beta.1</Version><RestorePackagesWithLockFile>true</RestorePackagesWithLockFile></PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Avalonia.Fonts.Inter" Version="11.3.22" />
+    <PackageReference Include="Avalonia.Desktop" Version="11.3.22" />
+    <PackageReference Include="Avalonia.Themes.Fluent" Version="11.3.22" />
+    <ProjectReference Include="../Nexus.Core/Nexus.Core.csproj" />
+    <EmbeddedResource Include="../../assets/ports.json" LogicalName="Nexus.ports.json" />
+  </ItemGroup>
+</Project>

@@ -1,6 +1,6 @@
 # NEXUS · Ports PC
 
-Launcher de biblioteca para ports de PC, com interface imersiva e artwork do jogo selecionado. Aplicativo nativo WPF para **Windows 11 x64**, com .NET Framework 4.8, que já acompanha o Windows 11. Não precisa de Node, Python, navegador, conta ou permissão de administrador para executar.
+Launcher de biblioteca para ports de PC, com interface imersiva e artwork do jogo selecionado. Aplicativo nativo WPF com alvo **Windows 10 22H2 e Windows 11 x64**, com .NET Framework 4.8. O Windows 10 precisa ter o .NET Framework 4.8 instalado. A validação histórica foi feita no Windows 11; a confirmação em uma máquina Windows 10 permanece pendente. Não precisa de Node, Python, navegador, conta ou permissão de administrador para executar.
 
 Na **1.6.0**, o NEXUS instala **255 perfis diretamente do GitHub**: **223 ZIPs**, **10 executáveis portáteis** e **22 instaladores do autor**, sem precisar abrir o GitHub no navegador. O catálogo mantém **274 fontes**: os 255 perfis integrados, 1 importação oficial do Azimuth e 18 projetos sem integração utilizável nesta versão. Os números incluem forks, não apenas jogos únicos.
 
@@ -67,6 +67,12 @@ Na **1.1.0**, **Baixar ports**, ao lado de Detectar ports, abre o catálogo de *
 
 Cada instalação usa uma pasta nova por versão; não substitui ports existentes nem migra automaticamente saves/configurações entre cópias. Após baixar, siga as instruções do perfil para preparar seus próprios arquivos. Se a API do GitHub estiver limitada, o catálogo sinaliza quando usa o cache verificado, com data visível. O suporte a caminhos longos da extração não exige editar o Registro do Windows.
 
+## Versão de testes 1.7.0-beta.1
+
+Esta pré-release adiciona o alvo Windows 10 22H2 x64 à edição WPF e uma primeira edição nativa Linux x86_64 em AppImage. **Não é uma versão estável nem há paridade de recursos entre as edições.** Use uma biblioteca separada e faça backup antes de testar. Windows 10 real ainda precisa ser validado; testes Windows Server do GitHub Actions não substituem essa verificação. Os recursos e limites da prévia Linux estão na seção Linux abaixo.
+
+A automação de release só publica o ZIP Windows e o AppImage depois dos builds, autotestes e smoke tests de interface das duas edições. Nenhum jogo de terceiros é executado nesses testes.
+
 ## Usar
 
 1. Extraia `Nexus-Ports-PC-Windows-x64.zip` em uma pasta de sua preferência.
@@ -121,7 +127,7 @@ Os dados ficam em `%LOCALAPPDATA%/NexusPortsPC/`: `library.json`, backup `.bak`,
 
 ## Compilar e testar
 
-No Windows 11 x64, PowerShell:
+No Windows 10 22H2 / Windows 11 x64, PowerShell:
 
 ```powershell
 ./build.ps1 -Test
@@ -135,7 +141,7 @@ Os testes verificam persistência Unicode, argumentos, validação dos caminhos,
 ./dist/Nexus/Nexus.exe --data-dir "C:\Temp\NexusTest" --smoke-test "C:\Temp\nexus-preview.png"
 ```
 
-O smoke test abre e renderiza a janela, salva a imagem e encerra, sem detecção ou consultas online. A compatibilidade é direcionada ao launcher no Windows 11 x64. Windows em ARM e a execução dos jogos não foram certificados nesta versão.
+O smoke test abre e renderiza a janela, salva a imagem e encerra, sem detecção ou consultas online. O alvo do launcher é Windows 10 22H2 / Windows 11 x64. Execute `./tests/windows-compatibility.ps1` na máquina alvo para compilar, executar os autotestes e renderizar as cinco telas; a validação em Windows 10 ainda não foi executada neste ambiente. Windows em ARM e a execução dos jogos não foram certificados nesta versão.
 
 Testes de integração opcionais: `./tests/integration.ps1 -Mode online` verifica o download público da Wikipedia; `-Mode local` verifica os ports conhecidos instalados em Downloads e suas imagens locais. O modo local requer esses ports e seus launchers originais configurados. Nenhum dos testes inicia jogos. Os dados ficam em `test-output/`, ignorado pelo Git.
 
@@ -146,3 +152,31 @@ Para o catálogo: `-Mode catalog` verifica os 12 perfis de release, identificand
 - [Microsoft: .NET Framework no Windows 11](https://learn.microsoft.com/en-us/dotnet/framework/install/on-windows-and-server)
 - [MediaWiki PageImages API](https://www.mediawiki.org/wiki/API:Pageimages)
 - [SteamGridDB API](https://www.steamgriddb.com/api/v2)
+
+## Linux nativo · prévia AppImage
+
+A edição Linux usa Avalonia e .NET 10 LTS, sem Wine. Ela está em prévia e **ainda não tem paridade com a edição Windows**. Permite adicionar, editar e remover cadastros de executáveis Linux e AppImages, buscar, favoritar, escolher artwork local e iniciar o jogo ou seu configurador com argumentos e pasta de trabalho separados. A remoção exclui somente o cadastro.
+
+O catálogo incluído serve para consultar e abrir os projetos oficiais. Os 274 perfis existentes selecionam pacotes Windows: a edição Linux não oferece esses arquivos como downloads Linux. Instalação automática, atualização com rollback, importação/preparação de conteúdo de consoles, detecção de ports Windows e artwork online ainda não foram portadas. A compatibilidade dos jogos depende de cada projeto; o AppImage do NEXUS não converte jogos Windows em jogos Linux.
+
+Em Linux x86_64 com desktop X11 ou Wayland/XWayland (alvo de distribuição: Ubuntu 22.04 ou posterior), baixe o artifact `Nexus-Linux-x86_64-preview` do workflow Linux, confira o SHA-256 e execute:
+
+```sh
+sha256sum --check Nexus-Linux-x86_64.AppImage.sha256
+chmod +x Nexus-Linux-x86_64.AppImage
+./Nexus-Linux-x86_64.AppImage
+```
+
+O runtime .NET vai incluído. Bibliotecas do desktop, Fontconfig e ICU são dependências do sistema. Se FUSE não estiver disponível, use `APPIMAGE_EXTRACT_AND_RUN=1 ./Nexus-Linux-x86_64.AppImage`. Não é necessário instalar Python ou .NET para usar o pacote.
+
+Os dados ficam em `$XDG_DATA_HOME/NexusPortsPC`, ou `~/.local/share/NexusPortsPC`. Para separar uma biblioteca, use `--data-dir /caminho/biblioteca`. O formato JSON preserva campos da edição Windows, mas caminhos Windows não funcionam no Linux e a chave de artwork protegida por DPAPI não é descriptografada. Faça backup antes de migrar; não abra a mesma biblioteca nas duas edições simultaneamente.
+
+Para desenvolver e empacotar (SDK .NET 10 LTS, curl, Python 3 e ferramentas Linux padrão):
+
+```sh
+dotnet run --project desktop/Nexus.Core.Tests -c Release
+dotnet run --project desktop/Nexus.Desktop -c Release
+./packaging/linux/build-appimage.sh
+```
+
+A saída fica em `dist/linux/Nexus-Linux-x86_64.AppImage`. O empacotamento fixa por SHA-256 o appimagetool e o runtime AppImage; se uma origem mudar, investigue antes de atualizar o hash. A publicação Windows existente continua usando `build.ps1`; a nova interface não substitui o launcher WPF.

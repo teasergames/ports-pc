@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=NEXUS
+Comment=Biblioteca de ports nativos para Linux
+Exec=Nexus
+Icon=nexus
+Categories=Game;
+Terminal=false

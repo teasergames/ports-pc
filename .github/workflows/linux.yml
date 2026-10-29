@@ -1,0 +1,39 @@
+name: Linux native AppImage
+on:
+  push:
+    branches: [main]
+    tags: ['v*', '!v1.7.0-beta.*']
+  pull_request:
+  workflow_dispatch:
+  workflow_call:
+permissions:
+  contents: read
+jobs:
+  appimage:
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '10.0.x'
+      - name: Install graphical test dependencies
+        run: sudo apt-get update && sudo apt-get install -y xvfb libice6 libsm6 libfontconfig1
+      - name: Native library and process tests
+        run: dotnet run --project desktop/Nexus.Core.Tests -c Release
+      - name: Build self-contained AppImage
+        run: ./packaging/linux/build-appimage.sh
+      - name: Validate packaged runtime and storage
+        run: |
+          APPIMAGE_EXTRACT_AND_RUN=1 ./dist/linux/Nexus-Linux-x86_64.AppImage --version
+          APPIMAGE_EXTRACT_AND_RUN=1 ./dist/linux/Nexus-Linux-x86_64.AppImage --data-dir "$RUNNER_TEMP/nexus-storage" --storage-smoke
+      - name: Render packaged Linux interface
+        run: |
+          xvfb-run -a env APPIMAGE_EXTRACT_AND_RUN=1 ./dist/linux/Nexus-Linux-x86_64.AppImage --data-dir "$RUNNER_TEMP/nexus-ui" --smoke-test "$RUNNER_TEMP/nexus-linux.png"
+          test -s "$RUNNER_TEMP/nexus-linux.png"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: Nexus-Linux-x86_64-preview
+          path: |
+            dist/linux/Nexus-Linux-x86_64.AppImage
+            dist/linux/Nexus-Linux-x86_64.AppImage.sha256
+          if-no-files-found: error

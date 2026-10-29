@@ -2,9 +2,10 @@ name: Windows build
 on:
   push:
     branches: [main]
-    tags: ['v*']
+    tags: ['v*', '!v1.7.0-beta.*']
   pull_request:
   workflow_dispatch:
+  workflow_call:
 permissions:
   contents: read
 jobs:

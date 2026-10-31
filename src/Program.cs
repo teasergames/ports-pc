@@ -18,13 +18,15 @@ using Microsoft.Win32;
 
 [assembly: AssemblyTitle("NEXUS · Ports PC")]
 [assembly: AssemblyProduct("NEXUS Ports PC")]
-[assembly: AssemblyVersion("1.6.2.0")]
-[assembly: AssemblyFileVersion("1.6.2.0")]
+[assembly: AssemblyVersion("1.6.3.0")]
+[assembly: AssemblyFileVersion("1.6.3.0")]
 [assembly: System.Runtime.Versioning.TargetFramework(".NETFramework,Version=v4.8")]
 namespace Nexus {
   public static class Program {
     [STAThread] public static int Main(string[] args) {
       if(args.Contains("--self-test"))return Tests.Run();
+      int helperIndex=Array.IndexOf(args,"--apply-nexus-update");if(helperIndex>=0&&helperIndex+1<args.Length)return SelfUpdater.RunHelper(args[helperIndex+1],args.Contains("--recover-nexus-update"));
+      if(!args.Contains("--smoke-test")&&!args.Contains("--update-complete")&&SelfUpdater.RecoverInterrupted())return 0;
       string root=Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData),"NexusPortsPC");
       int index=System.Array.IndexOf(args,"--data-dir");if(index>=0&&index+1<args.Length)root=Path.GetFullPath(args[index+1]);
       Store store=new Store(root);bool smoke=args.Contains("--smoke-test");
@@ -34,6 +36,7 @@ namespace Nexus {
           var app=new Application();app.ShutdownMode=ShutdownMode.OnMainWindowClose;
           app.DispatcherUnhandledException+=(sender,eventArgs)=>{store.Log(eventArgs.Exception.ToString());if(smoke){File.WriteAllText(Path.Combine(root,"smoke-error.txt"),eventArgs.Exception.ToString());eventArgs.Handled=true;app.Shutdown(1);return;}MessageBox.Show(eventArgs.Exception.Message,"Não foi possível concluir",MessageBoxButton.OK,MessageBoxImage.Warning);eventArgs.Handled=true;};
           var controller=new Launcher(store,smoke);app.MainWindow=controller.Window;
+          int receiptIndex=Array.IndexOf(args,"--update-complete");if(receiptIndex>=0&&receiptIndex+1<args.Length)controller.Window.Loaded+=delegate{SelfUpdater.Acknowledge(args[receiptIndex+1]);};
           if(smoke){index=System.Array.IndexOf(args,"--smoke-test");string target=index+1<args.Length?args[index+1]:Path.Combine(root,"preview.png");int viewIndex=System.Array.IndexOf(args,"--preview-view"),sizeIndex=System.Array.IndexOf(args,"--preview-size");string view=viewIndex>=0&&viewIndex+1<args.Length?args[viewIndex+1]:null;int size=0;if(sizeIndex>=0&&sizeIndex+1<args.Length)Int32.TryParse(args[sizeIndex+1],out size);controller.Window.Loaded+=delegate{controller.Window.Dispatcher.BeginInvoke(new Action(delegate{if(view!=null)controller.PreviewView(view,size);controller.Capture(target);app.Shutdown();}),System.Windows.Threading.DispatcherPriority.ApplicationIdle);};}
           app.Run(controller.Window);return 0;
         }catch(Exception ex){store.Log(ex.ToString());if(smoke)File.WriteAllText(Path.Combine(root,"smoke-error.txt"),ex.ToString());else MessageBox.Show(ex.Message,"NEXUS",MessageBoxButton.OK,MessageBoxImage.Error);return 1;}
@@ -48,7 +51,7 @@ namespace Nexus {
     readonly Dictionary<string,ImageSource> imageCache=new Dictionary<string,ImageSource>();
     readonly System.Windows.Threading.DispatcherTimer viewSaveTimer=new System.Windows.Threading.DispatcherTimer();
     bool updatingView;
-    Game selected;bool smoke;bool closing;
+    Game selected;bool smoke;bool closing;bool checkingLauncher;
     T Find<T>(string name) where T:class {return Window.FindName(name) as T;}
     [DllImport("dwmapi.dll")] static extern int DwmSetWindowAttribute(IntPtr hwnd,int attribute,ref int value,int size);
     public Launcher(Store data,bool test) {
@@ -59,6 +62,7 @@ namespace Nexus {
       Find<Button>("AddButton").Click+=delegate{Add();};Find<Button>("EditButton").Click+=delegate{Edit();};Find<Button>("PlayButton").Click+=delegate{Launch();};Find<Button>("FavoriteButton").Click+=delegate{if(selected!=null){selected.Favorite=!selected.Favorite;Save();Refresh();}};
       Find<Button>("ConfigureButton").Click+=delegate{if(selected==null)return;try{if(FolderLaunch.Supports(selected)){ConfigureSourceFolder();return;}if(GameContent.Supports(selected)){ConfigureContent();return;}Process.Start(Ports.ConfigurationStartInfo(selected));Status("Configuração aberta: "+selected.Name);}catch(Exception ex){MessageBox.Show(Window,ex.Message,"Configurar jogo",MessageBoxButton.OK,MessageBoxImage.Information);}};
       Find<Button>("SettingsButton").Click+=delegate{Settings();};Find<Button>("DetectButton").Click+=delegate{Detect(true);};
+      Find<Button>("LauncherUpdateButton").Content="NEXUS "+SelfUpdater.CurrentVersion+" · Verificar atualização";Find<Button>("LauncherUpdateButton").Click+=delegate{CheckLauncherUpdate(true);};
       Find<Button>("DownloadPortsButton").Click+=delegate{new CatalogWindow(Window,store.Root,library.Games,delegate(Game game){int index=library.Games.FindIndex(g=>g.Id==game.Id);Game previous=index<0?null:library.Games[index];if(index<0)library.Games.Add(game);else library.Games[index]=game;try{Save();}catch{if(index<0)library.Games.Remove(game);else library.Games[index]=previous;throw;}selected=game;Refresh();ResolveArtwork(game);}).ShowDialog();};
       Find<TextBox>("SearchBox").TextChanged+=delegate{RefreshGrid();};Find<CheckBox>("FavoritesOnly").Checked+=delegate{RefreshGrid();};Find<CheckBox>("FavoritesOnly").Unchecked+=delegate{RefreshGrid();};
       viewSaveTimer.Interval=TimeSpan.FromMilliseconds(400);viewSaveTimer.Tick+=delegate{viewSaveTimer.Stop();if(!smoke)Save();};
@@ -70,6 +74,14 @@ namespace Nexus {
       if(!File.Exists(store.FilePath)&&!smoke)Detect(false);
       selected=library.Games.FirstOrDefault();Refresh();
       Window.Loaded+=delegate{if(!smoke){foreach(Game g in library.Games.ToArray())if(String.IsNullOrEmpty(g.Artwork)||!File.Exists(g.Artwork))ResolveArtwork(g);}};
+      Window.Loaded+=delegate{if(!smoke){if(Environment.GetCommandLineArgs().Contains("--nexus-update-failed"))Status("A atualização não foi concluída. A versão anterior foi restaurada; consulte os logs em launcher-updates.");else if(library.AutoUpdateLauncher&&!Environment.GetCommandLineArgs().Contains("--skip-nexus-update"))CheckLauncherUpdate(false);}};
+    }
+    async void CheckLauncherUpdate(bool manual){
+      if(checkingLauncher||closing)return;checkingLauncher=true;Find<Button>("LauncherUpdateButton").IsEnabled=false;
+      try{Status("Verificando atualização do NEXUS…");using(var updater=new SelfUpdater()){var release=await updater.Check(shutdown.Token);if(closing)return;if(release==null){Status("NEXUS "+SelfUpdater.CurrentVersion+" está atualizado.");return;}if(Window.OwnedWindows.Count>0){Status("NEXUS "+release.Version+" disponível. Conclua a operação atual e clique em Verificar atualização.");return;}var dialog=new SelfUpdateWindow(Window,updater,release,store.Root);if(dialog.ShowDialog()!=true)return;Save();var helper=SelfUpdater.StartHelper(dialog.PlanFile,false);if(helper==null)throw new IOException("Não foi possível abrir o auxiliar de atualização.");helper.Dispose();Application.Current.Shutdown();}}
+      catch(OperationCanceledException){if(!closing)Status("Atualização do NEXUS adiada. Tente novamente quando quiser.");}
+      catch(Exception ex){store.Log("Atualização do NEXUS: "+ex);Status("Não foi possível atualizar o NEXUS: "+ex.Message);if(manual&&!closing)MessageBox.Show(Window,ex.Message,"Atualização do NEXUS",MessageBoxButton.OK,MessageBoxImage.Information);}
+      finally{checkingLauncher=false;if(!closing)Find<Button>("LauncherUpdateButton").IsEnabled=true;}
     }
     void Save(){store.Save(library);}
     void Status(string text){if(!closing)Find<TextBlock>("StatusLabel").Text=text;}
@@ -164,20 +176,21 @@ namespace Nexus {
       finally{pending.Remove(game.Id);if(entered)artQueue.Release();}
     }
     void Settings(){
-      var dialog=new Window{Title="Configurações · NEXUS",Owner=Window,Width=560,Height=470,ResizeMode=ResizeMode.NoResize,WindowStartupLocation=WindowStartupLocation.CenterOwner,Background=Window.Background,Foreground=Window.Foreground,FontFamily=Window.FontFamily};
+      var dialog=new Window{Title="Configurações · NEXUS",Owner=Window,Width=560,Height=530,ResizeMode=ResizeMode.NoResize,WindowStartupLocation=WindowStartupLocation.CenterOwner,Background=Window.Background,Foreground=Window.Foreground,FontFamily=Window.FontFamily};
       dialog.Resources=Window.Resources;var panel=new StackPanel{Margin=new Thickness(26)};dialog.Content=panel;
       panel.Children.Add(new TextBlock{Text="Artworks e biblioteca",FontSize=23,Margin=new Thickness(0,0,0,14)});
       var online=new CheckBox{Content="Buscar imagens online automaticamente",IsChecked=library.OnlineArtwork};panel.Children.Add(online);
       var minimize=new CheckBox{Content="Minimizar NEXUS ao abrir um jogo",IsChecked=library.MinimizeOnLaunch};panel.Children.Add(minimize);
+      var autoUpdate=new CheckBox{Content="Atualizar e reiniciar o NEXUS automaticamente ao abrir",IsChecked=library.AutoUpdateLauncher};panel.Children.Add(autoUpdate);
       panel.Children.Add(new TextBlock{Text="SteamGridDB · chave de API opcional",Margin=new Thickness(0,14,0,8)});
       var key=new PasswordBox{Password=library.ApiKey(),Padding=new Thickness(10),Background=new SolidColorBrush(Color.FromRgb(29,32,39)),Foreground=Brushes.White};panel.Children.Add(key);
       panel.Children.Add(new TextBlock{Text="Sem chave: busca a imagem da página exata na Wikipedia. Com SteamGridDB: prioriza fundos panorâmicos. Só o nome do jogo é enviado; caminhos locais ficam no PC.",TextWrapping=TextWrapping.Wrap,Foreground=new SolidColorBrush(Color.FromRgb(163,173,189)),Margin=new Thickness(0,12,0,18),FontSize=12});
       var link=new Button{Content="Obter chave do SteamGridDB"};link.Click+=delegate{Process.Start(new ProcessStartInfo("https://www.steamgriddb.com/profile/preferences/api"){UseShellExecute=true});};panel.Children.Add(link);
       var actions=new WrapPanel{Margin=new Thickness(0,22,0,0)};panel.Children.Add(actions);var save=new Button{Content="Salvar",Background=new SolidColorBrush(Color.FromRgb(180,241,118)),Foreground=Brushes.Black};var folder=new Button{Content="Abrir dados locais"};actions.Children.Add(save);actions.Children.Add(folder);
       folder.Click+=delegate{Process.Start(new ProcessStartInfo("explorer.exe", "\""+store.Root+"\""){UseShellExecute=true});};
-      save.Click+=delegate{library.OnlineArtwork=online.IsChecked==true;library.MinimizeOnLaunch=minimize.IsChecked==true;library.SetApiKey(key.Password);Save();dialog.DialogResult=true;};dialog.ShowDialog();
+      save.Click+=delegate{library.AutoUpdateLauncher=autoUpdate.IsChecked==true;library.OnlineArtwork=online.IsChecked==true;library.MinimizeOnLaunch=minimize.IsChecked==true;library.SetApiKey(key.Password);Save();dialog.DialogResult=true;};dialog.ShowDialog();
     }
-    public void Capture(string target){if(Environment.GetCommandLineArgs().Contains("--package-smoke")){var dialog=new PackageChoiceWindow(Window,"Exemplo de pacote",new[]{"Game.exe","Launcher.exe","bin\\\\Runtime.exe"},null);dialog.Show();dialog.UpdateLayout();CaptureWindow(dialog,target);dialog.Close();return;}if(Environment.GetCommandLineArgs().Contains("--content-smoke")){Game sample=library.Games.FirstOrDefault(GameContent.Supports)??new Game{Name="BLACK",Executable=Path.Combine(store.Root,"BLACK.exe")};var dialog=new GameContentWindow(Window,sample);dialog.Show();dialog.UpdateLayout();CaptureWindow(dialog,target);dialog.Close();return;}if(Environment.GetCommandLineArgs().Contains("--catalog-smoke")||Environment.GetCommandLineArgs().Contains("--updates-smoke")){var catalogWindow=new CatalogWindow(Window,store.Root,library.Games,delegate(Game g){}){IsSmoke=true};catalogWindow.Show();catalogWindow.UpdateLayout();if(Environment.GetCommandLineArgs().Contains("--updates-smoke"))catalogWindow.CaptureUpdateSmoke(target);else catalogWindow.CaptureSmoke(target);catalogWindow.Close();}else CaptureWindow(Window,target);}
+    public void Capture(string target){if(Environment.GetCommandLineArgs().Contains("--self-update-smoke")){var dialog=new SelfUpdateWindow(Window,null,new PortRelease{Version="v1.6.4"},store.Root,true);dialog.Show();dialog.UpdateLayout();CaptureWindow(dialog,target);dialog.Close();return;}if(Environment.GetCommandLineArgs().Contains("--package-smoke")){var dialog=new PackageChoiceWindow(Window,"Exemplo de pacote",new[]{"Game.exe","Launcher.exe","bin\\\\Runtime.exe"},null);dialog.Show();dialog.UpdateLayout();CaptureWindow(dialog,target);dialog.Close();return;}if(Environment.GetCommandLineArgs().Contains("--content-smoke")){Game sample=library.Games.FirstOrDefault(GameContent.Supports)??new Game{Name="BLACK",Executable=Path.Combine(store.Root,"BLACK.exe")};var dialog=new GameContentWindow(Window,sample);dialog.Show();dialog.UpdateLayout();CaptureWindow(dialog,target);dialog.Close();return;}if(Environment.GetCommandLineArgs().Contains("--catalog-smoke")||Environment.GetCommandLineArgs().Contains("--updates-smoke")){var catalogWindow=new CatalogWindow(Window,store.Root,library.Games,delegate(Game g){}){IsSmoke=true};catalogWindow.Show();catalogWindow.UpdateLayout();if(Environment.GetCommandLineArgs().Contains("--updates-smoke"))catalogWindow.CaptureUpdateSmoke(target);else catalogWindow.CaptureSmoke(target);catalogWindow.Close();}else CaptureWindow(Window,target);}
     public void PreviewView(string mode,int size){
       Find<Button>(mode=="list"?"ListViewButton":"GridViewButton").RaiseEvent(new RoutedEventArgs(Button.ClickEvent));
       if(size>0)Find<Slider>("ViewSizeSlider").Value=mode=="list"?(size-48)/0.84:(size-140)/2.0;

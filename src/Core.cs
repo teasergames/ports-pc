@@ -37,11 +37,12 @@ namespace Nexus {
     public List<Game> Games {get;set;}
     public bool OnlineArtwork {get;set;}
     public bool MinimizeOnLaunch {get;set;}
+    public bool AutoUpdateLauncher {get;set;}
     public string ProtectedApiKey {get;set;}
     public string ViewMode {get;set;}
     public int GridSize {get;set;}
     public int ListSize {get;set;}
-    public Library() {Version=1;Games=new List<Game>();OnlineArtwork=true;ViewMode="grid";GridSize=220;ListSize=76;}
+    public Library() {Version=1;Games=new List<Game>();OnlineArtwork=true;AutoUpdateLauncher=true;ViewMode="grid";GridSize=220;ListSize=76;}
     public void NormalizeView(){ViewMode=ViewMode=="list"?"list":"grid";GridSize=Math.Max(140,Math.Min(340,GridSize<=0?220:GridSize));ListSize=Math.Max(48,Math.Min(132,ListSize<=0?76:ListSize));}
     public string ApiKey() {
       if(String.IsNullOrEmpty(ProtectedApiKey))return "";

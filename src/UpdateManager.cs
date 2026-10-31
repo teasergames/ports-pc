@@ -11,7 +11,7 @@ namespace Nexus {
   public static class UpdateManager {
     static JavaScriptSerializer Json(){return new JavaScriptSerializer{MaxJsonLength=32*1024*1024};}
     static string Display(string p){return p.StartsWith(@"\\?\UNC\")?@"\\"+p.Substring(8):p.StartsWith(@"\\?\")?p.Substring(4):p;}
-    static string Hash(string file){using(var f=File.OpenRead(PortCatalog.FsPath(file)))using(var h=SHA256.Create())return BitConverter.ToString(h.ComputeHash(f)).Replace("-","").ToLowerInvariant();}
+    public static string Hash(string file){using(var f=File.OpenRead(PortCatalog.FsPath(file)))using(var h=SHA256.Create())return BitConverter.ToString(h.ComputeHash(f)).Replace("-","").ToLowerInvariant();}
     static string[] Files(string root){CheckLinks(root);return Directory.GetFiles(PortCatalog.FsPath(root),"*",SearchOption.AllDirectories).Select(Display).ToArray();}
     static void CheckLinks(string root){
       var pending=new Stack<string>();pending.Push(root);while(pending.Count>0){string path=pending.Pop();if((File.GetAttributes(PortCatalog.FsPath(path))&FileAttributes.ReparsePoint)!=0)throw new InvalidDataException("A instalação contém links ou pontos de montagem. Não foi alterada.");foreach(string file in Directory.GetFiles(PortCatalog.FsPath(path)))if((File.GetAttributes(file)&FileAttributes.ReparsePoint)!=0)throw new InvalidDataException("A instalação contém links. Não foi alterada.");foreach(string dir in Directory.GetDirectories(PortCatalog.FsPath(path)))pending.Push(Display(dir));}

@@ -62,7 +62,7 @@
           </Border>
         </StackPanel>
       </ScrollViewer>
-      <Border Grid.Row="2" Background="#101115" BorderBrush="#282C34" BorderThickness="0,1,0,0" Padding="24,12"><DockPanel><TextBlock Text="●  Biblioteca local" Foreground="#B4F176" FontSize="11" DockPanel.Dock="Right"/><TextBlock x:Name="StatusLabel" Text="Pronto" Foreground="#A3ACBC" FontSize="12" TextWrapping="Wrap"/></DockPanel></Border>
+      <Border Grid.Row="2" Background="#101115" BorderBrush="#282C34" BorderThickness="0,1,0,0" Padding="24,8"><DockPanel><Button x:Name="LauncherUpdateButton" Content="Verificar atualização do NEXUS" DockPanel.Dock="Right" FontSize="11" Padding="10,5" Margin="12,0,0,0"/><TextBlock x:Name="StatusLabel" Text="Pronto" Foreground="#A3ACBC" FontSize="12" TextWrapping="Wrap" VerticalAlignment="Center"/></DockPanel></Border>
     </Grid>
   </Grid>
 </Window>

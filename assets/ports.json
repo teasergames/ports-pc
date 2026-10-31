@@ -65,6 +65,25 @@
     "Kind": "Port"
   },
   {
+    "Id": "sotc-lucas",
+    "Name": "Shadow of the Colossus · Lucas-blip-png",
+    "ArtworkTitle": "Shadow of the Colossus",
+    "Repository": "Lucas-blip-png/ShadowOfTheColossus-PC",
+    "Platform": "PlayStation 4",
+    "Kind": "Port · fork comunitário",
+    "PackageKind": "Zip",
+    "AssetPattern": "^SotC-PC\\.zip$",
+    "PlayNames": [
+      "SotC.exe"
+    ],
+    "ConfigNames": [
+      "SotC.exe"
+    ],
+    "Arguments": "--play",
+    "ConfigurationArguments": "",
+    "Notes": "Alternativa independente dos perfis AjncSystem e Oussama268. Baixa a edição padrão SotC-PC.zip, sem preset NVIDIA/AMD/Intel forçado; os três pacotes do autor têm o mesmo programa. Configurar abre o launcher original; selecione seu dump PS4 (CUSA08809 EU 1.01 ou CUSA08034 US 1.00) e os módulos do próprio console necessários ao áudio. Jogar usa --play com os ajustes salvos. Requer CPU AVX (4 threads ou mais), GPU Vulkan 1.3 e driver recente; 16 GB RAM recomendados. Ajustes locais em user/launcher_settings.json; o primeiro início pode importar configurações antigas do launcher. Opções avançadas de GPU são experimentais."
+  },
+  {
     "Id": "uncharted",
     "Name": "Uncharted: The Nathan Drake Collection",
     "Repository": "bc160201983/Uncharted-The-Nathan-Drake-Collection-PC-port",

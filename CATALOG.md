@@ -1,5 +1,15 @@
 # Catálogo de ports
 
+## Shadow of the Colossus · Lucas-blip-png
+
+Fonte alternativa: [Lucas-blip-png/ShadowOfTheColossus-PC](https://github.com/Lucas-blip-png/ShadowOfTheColossus-PC), plataforma **PlayStation 4**. Perfil `sotc-lucas`, independente de AjncSystem e Oussama268, com download e atualização integrados.
+
+O NEXUS seleciona apenas `SotC-PC.zip`, a edição padrão sem presets; os ZIPs Otimizada NVIDIA e AMD/Intel contêm o mesmo programa com opções iniciais diferentes, conforme o autor. **Jogar:** `SotC.exe --play`. **Configurar jogo:** `SotC.exe` sem argumentos. Configure seu próprio dump PS4 (CUSA08809 EU 1.01 ou CUSA08034 US 1.00) e os módulos do seu console exigidos para áudio. O launcher mantém ajustes por cópia em `user/launcher_settings.json`, podendo importar os ajustes antigos no primeiro início. CPU AVX com pelo menos 4 threads, Vulkan 1.3 e drivers recentes; 16 GB de RAM recomendados. Consulte o autor para os limites das GPUs e recursos experimentais.
+
+Conferido em 31/10/2026: Release **v0.70-plus4**, ZIP oficial de 109.485.923 bytes, SHA-256 `f6ab506cba67faf8c6caa0f381557053c61eb5c5fe88b188db77022981d26966`, launcher PE AMD64. Não foram executados launcher, engine ou jogo durante a auditoria.
+
+Total do catálogo: **284 fontes**, **265 perfis GitHub integrados**, **1 importação oficial** e **18 exceções**. As fontes representam projetos/forks, não jogos únicos.
+
 ## Revisão semanal — 1.6.2 (26–31/10/2026)
 
 Sete fontes novas com download/atualização integrados. Datas abaixo são de publicação da Release consultada em 31/10, não uma afirmação de que cada projeto nasceu nesta semana.

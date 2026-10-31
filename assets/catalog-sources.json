@@ -3353,6 +3353,19 @@
       "ReleasePublishedUtc": "2026-10-29T22:53:55Z",
       "VerifiedVersion": "v1.0.2",
       "PackageValidation": "Official Windows x64 package downloaded; SHA-256 and expected AMD64 PE entrypoints checked. No vendor program executed."
+    },
+    {
+      "Id": "sotc-lucas",
+      "NexusId": "sotc-lucas",
+      "Repository": "Lucas-blip-png/ShadowOfTheColossus-PC",
+      "DiscoveryUrl": "https://github.com/Lucas-blip-png/ShadowOfTheColossus-PC",
+      "VerifiedRepositoryUrl": "https://github.com/Lucas-blip-png/ShadowOfTheColossus-PC",
+      "CheckedDate": "2026-10-31",
+      "Status": "automatic",
+      "IntegrationMode": "Zip",
+      "VerifiedVersion": "v0.70-plus4",
+      "ReleasePublishedUtc": "2026-10-31T07:15:42Z",
+      "PackageValidation": "Official generic Windows ZIP downloaded; published SHA-256 and AMD64 PE checked. Launcher source confirms --play vs configuration. No vendor program executed."
     }
   ]
 }

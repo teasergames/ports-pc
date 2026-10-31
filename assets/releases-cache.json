@@ -5212,5 +5212,23 @@
         }
       ]
     }
+  },
+  {
+    "Repository": "Lucas-blip-png/ShadowOfTheColossus-PC",
+    "CheckedUtc": "2026-10-31T21:52:57.825502+00:00",
+    "Release": {
+      "tag_name": "v0.70-plus4",
+      "html_url": "https://github.com/Lucas-blip-png/ShadowOfTheColossus-PC/releases/tag/v0.70-plus4",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "SotC-PC.zip",
+          "size": 109485923,
+          "browser_download_url": "https://github.com/Lucas-blip-png/ShadowOfTheColossus-PC/releases/download/v0.70-plus4/SotC-PC.zip",
+          "digest": "sha256:f6ab506cba67faf8c6caa0f381557053c61eb5c5fe88b188db77022981d26966"
+        }
+      ]
+    }
   }
 ]

@@ -1,171 +1,78 @@
 # NEXUS · Ports PC
 
-Na **1.6.3**, o próprio NEXUS recebe **atualização automática ao abrir**. Ele consulta a última Release estável de `teasergames/ports-pc`, baixa o ZIP Windows x64, verifica tamanho/SHA-256 e versão do EXE e mostra o progresso. Ao terminar, salva a biblioteca, fecha o launcher, troca seus arquivos e reinicia na mesma pasta e com o mesmo diretório de dados. A opção vem ativada também nas bibliotecas antigas; pode ser desativada em Configurações. O botão com a versão no rodapé permite verificar e atualizar manualmente.
+**Sua biblioteca. Seu universo.**
 
-A biblioteca, artworks e ports não entram no pacote de atualização: são substituídos apenas `Nexus.exe`, `Nexus.exe.config`, `README.md`, `CATALOG.md` e `LICENSE`. O auxiliar guarda os arquivos anteriores e exige confirmação de que a janela da nova versão abriu; se o início falhar, restaura a anterior. Uma transação interrompida é recuperada no próximo início. Backups e logs ficam em `%LOCALAPPDATA%\NexusPortsPC\launcher-updates`. Nenhum comando de shell é gerado e não há pedido automático de administrador. Extraia o NEXUS em uma pasta gravável e inicie `Nexus.exe`, mantendo esse nome.
+Reúna seus ports de console em um só launcher para **Windows 11 x64**. Organize sua coleção, personalize as artworks, encontre os projetos por plataforma e abra seus jogos e configurações em um único lugar.
 
-Sem internet ou se o GitHub limitar a consulta, a versão atual continua utilizável. Betas, versões iguais/anteriores e pacotes sem SHA-256 publicado são ignorados ou recusados. O download pode ser cancelado antes da troca. Se uma janela de instalação/configuração estiver aberta quando a consulta terminar, o reinício é adiado: conclua a operação e use o botão do rodapé. Para receber essa função, quem está na 1.6.2 ou anterior precisa instalar a **1.6.3 uma vez**; as próximas versões passam a atualizar pelo launcher.
+[**Baixar NEXUS**](https://github.com/teasergames/ports-pc/releases/latest) · [Releases e novidades](https://github.com/teasergames/ports-pc/releases) · [Catálogo de projetos](CATALOG.md) · [Relatar um problema](https://github.com/teasergames/ports-pc/issues)
 
-Validação: **749 testes passaram**, incluindo rede simulada, integridade, pacote inválido, comparação de versão e preservação de dados; processos de teste separados confirmam espera pelo processo anterior, reinício com confirmação, rollback de início com falha e recuperação de troca interrompida. Os executáveis usados nesses testes são fixtures do projeto. A janela de progresso também é verificada no teste de interface.
+> [!IMPORTANT]
+> **O NEXUS NÃO DISTRIBUI NENHUM TIPO DE ARQUIVO DOS JOGOS. VOCÊ PRECISARÁ DA SUA PRÓPRIA CÓPIA DUMPADA DO CONSOLE.**
+>
+> Nenhuma ROM, ISO, dump, chave de console ou firmware acompanha o NEXUS. Você precisa fornecer os arquivos da sua própria cópia do jogo, no formato e na versão exigidos por cada port. Baixar um port pelo catálogo não fornece o jogo.
 
-Na **1.6.2**, a revisão da semana de **26 a 31/10/2026** adiciona **7 ports** com Releases Windows x64: Metroid Prime 2: Echoes / Echoes Unbound (GameCube), Metroid Dread (Switch), GTA: Vice City Stories / VCS Recomp (PS2), WWE SmackDown! Here Comes the Pain (PS2), Gran Turismo 3 / GT3 Revisited (PS2), Super Smash Bros. Brawl / Brawl Recompiled (Wii) e 007: Everything or Nothing (Xbox). Gravity Rush Remastered já estava incluído: sua referência de download e instruções foram atualizadas para v0.1.10, sem duplicar o jogo.
+![Biblioteca do NEXUS em modo grade, com artwork ao fundo e filtros por plataforma](docs/images/nexus-grid.png)
 
-O catálogo agora tem **283 fontes**, com **264 perfis GitHub integrados**, 1 importação oficial e 18 exceções. Nos novos perfis, Baixar e adicionar consulta a Release compatível; Atualizar aparece para instalações gerenciadas quando houver uma versão mais recente. O pacote completo é selecionado: não APK, ARM64, código-fonte ou ZIP apenas de atualização.
+*Exemplo ilustrativo da interface com uma biblioteca configurada. Os jogos e suas artworks não acompanham o download do NEXUS.*
 
-**Configurar:** Metroid Dread força a tela original com `--launcher`; GT3 abre Settings; GTA VCS abre seu assistente de disco/compilação; HCTP e 007 abrem seus launchers com preparação, opções e Play. Echoes Unbound (F1) e Brawl (F10/Home) têm opções dentro do jogo e não recebem um configurador externo fictício. **Jogar:** Dread e VCS usam `--play`; HCTP e 007 mantêm o launcher original, pois não foi validado um comando de inicialização direta. Os assistentes podem exigir compilação dos próprios arquivos do usuário e, após atualizar, recompilação.
+## O que você pode fazer
 
-Foram baixados e conferidos os **8 pacotes oficiais** desta revisão (7 ZIPs e 1 EXE), seus SHA-256 publicados e os executáveis AMD64 esperados. **714 testes passaram**, além da integração de instalação dos 8 pacotes reais e do teste de interface dos novos botões. A instalação e os comandos são testados sem executar jogos, launchers ou compiladores dos autores. As versões e datas verificadas estão em [CATALOG.md](CATALOG.md).
+- **Organizar sua coleção:** visualização em grade ou lista, tamanho ajustável, busca e favoritos.
+- **Filtrar por plataforma:** PlayStation, Xbox, Nintendo e outras plataformas presentes no catálogo.
+- **Baixar ports:** consultar os projetos e instalar os pacotes compatíveis a partir das fontes dos autores, quando houver integração disponível.
+- **Jogar e configurar:** abrir o port e seu launcher de configuração conforme o suporte de cada projeto.
+- **Personalizar o visual:** artworks locais ou busca online, com fundo do jogo selecionado.
+- **Manter tudo atualizado:** verificar atualizações dos ports gerenciados e atualizar o próprio NEXUS, com reinício automático.
 
-Launcher de biblioteca para ports de PC, com interface imersiva e artwork do jogo selecionado. Aplicativo nativo WPF para **Windows 11 x64**, com .NET Framework 4.8, que já acompanha o Windows 11. Não precisa de Node, Python, navegador, conta ou permissão de administrador para executar.
+## Como instalar
 
-Na **1.6.1**, foram adicionados **Tears of the Kingdom / TotK Recomp** e **Bayonetta 3 / Witch Time**, ambos em **Nintendo Switch**, com download e atualização integrados. O catálogo chega a **276 fontes**, das quais **257** são integradas ao GitHub, 1 usa importação oficial do Azimuth e 18 mantêm os limites específicos documentados.
+1. Abra a página da [última versão](https://github.com/teasergames/ports-pc/releases/latest).
+2. Em **Assets**, baixe o arquivo `Nexus-Ports-PC-v…-Windows-x64.zip`.
+3. Extraia **todo o conteúdo** para uma pasta gravável de sua preferência. Não execute o aplicativo de dentro do ZIP.
+4. Abra **`Nexus.exe`**, mantendo `Nexus.exe.config` e os demais arquivos ao lado dele. Preserve o nome `Nexus.exe` para as atualizações automáticas.
 
-- **TotK Recomp:** o NEXUS baixa o ZIP Windows e abre `TotK-Setup.exe`. O assistente prepara seu jogo a partir dos seus arquivos e chaves; ao terminar, selecione o `totk.exe` gerado para cadastrá-lo. Atualizações abrem o novo assistente: use o mesmo destino da instalação existente. Opções gráficas e controles ficam no jogo, em F1. A compilação pode demorar e requer CPU AVX2, Vulkan 1.3 e cerca de 36 GiB livres durante a preparação.
-- **Witch Time:** Configurar jogo abre `witch-time.exe`; Jogar usa `--play` para iniciar com as opções salvas. O NEXUS escolhe o launcher externo do pacote, evitando confundi-lo com o executável de mesmo nome dentro de `build/`. Prepare seu dump `exefs/romfs` no launcher original. Atualizações podem exigir recompilação.
+O NEXUS é portátil: não precisa de instalação tradicional, conta, Node.js ou Python para funcionar. O aplicativo utiliza o **.NET Framework 4.8**, disponível no Windows 11. O executável ainda não possui assinatura digital.
 
-Na consulta de **31/10/2026**, foram conferidos os ZIPs Windows de TotK **v0.2.8** e Witch Time **v0.4.5**, seus SHA-256 e executáveis AMD64. **689 testes passaram**. O pipeline de instalação foi verificado com os pacotes reais; a execução do assistente TotK foi substituída por um handler de teste, sem executar programas ou compilar jogos de terceiros.
+**Requisitos do launcher:** Windows 11 x64. Os requisitos dos jogos são próprios de cada port: confira a página do autor para CPU, placa de vídeo, drivers, espaço livre e versão do dump. A compatibilidade do NEXUS com o Windows não garante a execução de todos os jogos em qualquer PC.
 
-Na **1.6.0**, o NEXUS passou a instalar **255 perfis diretamente do GitHub**: **223 ZIPs**, **10 executáveis portáteis** e **22 instaladores do autor**, sem precisar abrir o GitHub no navegador. O catálogo então tinha **274 fontes**: os 255 perfis integrados, 1 importação oficial do Azimuth e 18 projetos sem integração utilizável nessa versão. Os números incluem forks, não apenas jogos únicos.
+## Como adicionar seus jogos
 
-**Instalar:** abra Baixar ports, escolha o projeto e clique **Baixar e adicionar**. O NEXUS consulta a Release mais recente compatível com Windows, baixa, verifica e extrai o pacote. Se houver vários aplicativos, escolha o principal e o configurador na própria janela do NEXUS. Executáveis auxiliares e binários ARM64 são filtrados. Para os 22 instaladores, **Baixar e instalar** abre o assistente do autor; conclua-o e selecione o aplicativo instalado para o cadastro. NEXUS não inventa parâmetros de instalação silenciosa.
+### Pelo catálogo
 
-**Atualizar:** ao abrir o catálogo, o NEXUS consulta os ports instalados por ele. Também há **Verificar atualizações** e o filtro **Atualizações disponíveis**. Quando a Release Windows é mais recente, o botão vira **Atualizar**; a mesma entrada da biblioteca mantém seu nome, favorito e artwork. Uma resposta em cache exige nova confirmação online; versões iguais ou semanticamente mais antigas não habilitam atualização.
+Abra **Baixar ports**, escolha a plataforma ou busque pelo título e leia as instruções do projeto. Use **Baixar e adicionar** ou **Baixar e instalar**, conforme o perfil, e escolha o destino.
 
-Nos ZIPs e executáveis portáteis, o NEXUS prepara a atualização separadamente, copia arquivos e saves, preserva configurações modificadas e troca a pasta somente ao concluir. Guarda a instalação completa anterior em uma pasta `.nexus-backup-…` ao lado dela. Mudanças no nome da pasta que envolve o pacote são tratadas para manter os dados no lugar correto. Feche o jogo antes de atualizar e reserve espaço para a cópia. Não apague o backup antes de conferir a nova versão. Os instaladores externos controlam suas próprias alterações; não recebem essa garantia de rollback do NEXUS.
+Depois do download, prepare sua própria cópia do jogo no assistente do autor. Alguns projetos precisam compilar o jogo no primeiro início. Entradas com preparação manual abrem os downloads oficiais e explicam os passos necessários.
 
-As versões anteriores instaladas pelo NEXUS, com comprovante `.nexus-install.json`, são reconhecidas. Jogos adicionados manualmente e arquivos fora da instalação gerenciada não são sobrescritos. Azimuth não usa GitHub e continua com importação do ZIP oficial. Os projetos sem Release Windows, arquivos RAR sem suporte, pacotes multipartes e outros fluxos específicos permanecem identificados no catálogo; a lista de exceções está em [CATALOG.md](CATALOG.md).
+### Se você já tem um port instalado
 
-Validação: **677 testes**, instalação real e verificação de SHA-256/PE nos pacotes de Pokémon Snap e Perfect Dark, testes de tela para instalação, configuração e atualização. Os testes cobrem cancelamento, checksum inválido, preservação de saves/configurações, migração de pastas de versão, rollback e comparação de versões. Os demais novos perfis são inspecionados no momento da instalação; não foram testados individualmente em gameplay. Nenhum jogo ou instalador de terceiros foi executado durante essa verificação.
+Use **Adicionar jogo** e selecione o executável `.exe` ou atalho `.lnk`. Confira o nome, a plataforma e a pasta de trabalho; salve e clique em **Jogar**. **Detectar ports** procura instalações conhecidas na pasta Downloads.
 
-Na **1.5.1**, foram corrigidos os botões indisponíveis do catálogo. **Os quatro perfis de Wii U agora têm Baixar e adicionar:** Breath of the Wild / BotW Native, Wind Waker HD, New Super Mario Bros. U e Super Smash Bros. for Wii U. Outros **13 perfis** também passaram da preparação manual para a instalação automática: Twilight Princess / Dusklight, Super Mario Strikers, Luigi’s Mansion, Metroid Prime, New Super Mario Bros. Wii, Mario Strikers Charged / Recharged, Super Mario Maker 2, Pokémon Let’s Go, Killzone Shadow Fall, Dragon’s Crown Pro, UFC 3, Unicorn Overlord e inFAMOUS First Light.
+Em **Editar cadastro**, você pode ajustar argumentos, escolher uma artwork e associar um launcher de configuração. **Configurar jogo** aparece quando existe uma configuração externa ou preparação compatível; alguns ports oferecem suas opções apenas dentro do jogo.
 
-O catálogo mantém 274 fontes: **61 downloads GitHub integrados**, **1 importação de ZIP oficial** e **212 perfis de instalação manual / desenvolvimento**. Nestes últimos, o botão agora é **Ver downloads oficiais**, habilitado para abrir as Releases do autor no navegador. Ele não faz extração nem cadastro automático; um projeto em desenvolvimento pode não ter pacote pronto. O campo de pasta e o botão de consulta ficam desativados nesses perfis, pois não participam desse fluxo.
+## Uma coleção do seu jeito
 
-Wind Waker HD e NSMBU usam **Configurar jogo** para reabrir o assistente original com `--setup`. BotW Native e Smash 4 usam seus launchers originais em ambos os botões, para preservar a preparação e as opções. First Light usa `--play` em Jogar e abre o launcher normalmente em Configurar. A primeira preparação de alguns ports compila seus próprios arquivos e pode baixar ferramentas do autor. O NEXUS instala o pacote do port; não executa essa preparação por conta própria.
+Alterne entre **Grade** e **Lista** e use o controle **Tamanho** para ajustar a visualização. O NEXUS lembra suas preferências.
 
-Validação: **270 testes**, **17 ZIPs oficiais** baixados e conferidos por SHA-256 e PE AMD64, instalação e cadastro pelo pipeline real, mais teste visual do botão habilitado nos quatro perfis Wii U. Nenhum jogo ou compilador de terceiros foi executado nessa verificação.
+![NEXUS em modo lista, com capas, nomes e filtros da coleção](docs/images/nexus-list.png)
 
-Na **1.5.0**, o catálogo indicado do [RecompLauncher](https://recomplauncher.com/?lang=pt-BR) foi comparado com o NEXUS: **232 novas fontes**, totalizando **274**. São **44 downloads GitHub validados**, **1 importação de ZIP oficial** e **229 entradas de preparação manual / desenvolvimento**. Esses números representam projetos e forks, não jogos únicos. O catálogo fica incluído no aplicativo; não há sincronização automática com o site.
+As artworks podem ser escolhidas em **Editar cadastro → Escolher imagem**. A busca automática usa imagens locais, Wikipedia e, opcionalmente, sua chave do SteamGridDB. As opções ficam em **Configurações**.
 
-Dez novos downloads Windows x64: Zelda 64: Recompiled, Ship of Harkinian, SpaghettiKart (Mario Kart 64), 2 Ship 2 Harkinian, Starship (Star Fox 64), Banjo: Recompiled, Ghostship (Super Mario 64), Donkey Kong 64: Recompiled, Fable II e Pirates of the Caribbean: At World's End. Os ZIPs oficiais foram conferidos por SHA-256 e arquitetura AMD64, sem executar os jogos. Fable II possui launcher separado para Configurar; Pirates abre seu launcher original também em Jogar. Os ports N64 preparam a ROM e configuram opções dentro do próprio aplicativo.
+## Atualizações
 
-O catálogo agora possui **busca por jogo, port ou repositório**, filtro por tipo de instalação e filtros próprios de Nintendo 64, GameCube, Wii, Wii U, Super Nintendo, Game Boy, Game Boy Advance, Nintendo DS, PlayStation, PlayStation 2, PSP e Dreamcast. Perfis manuais têm o botão **Abrir projeto**; seus pacotes Windows e sua integração automática ainda não foram validados pelo NEXUS. Quatro projetos publicados apenas para outros sistemas foram excluídos. Consulte a lista e os limites em [CATALOG.md](CATALOG.md), e o registro da comparação em [assets/catalog-sources.json](assets/catalog-sources.json).
+Ao abrir, o NEXUS verifica se há uma nova versão estável no GitHub. Quando disponível, baixa, verifica o pacote e reinicia automaticamente após atualizar. Também há um botão de verificação no rodapé e uma opção para desativar a atualização automática em **Configurações**.
 
-Na **1.4.0**, a pesquisa de **28/10/2026** acrescentou **12 perfis** ao catálogo, então com **42 fontes**: 34 com download GitHub, 1 com importação do ZIP oficial e 7 com preparação manual.
+Para os ports instalados pelo catálogo, use **Verificar atualizações** em **Baixar ports**. Quando houver uma versão compatível mais recente, o botão **Atualizar** ficará disponível. Feche o jogo antes de atualizar e siga as instruções do perfil; alguns projetos precisam repetir a preparação ou compilação.
 
-- **PS4:** Knack, Knack II e WipEout Omega Collection.
-- **PS3:** Resident Evil Code: Veronica X HD e Drakengard 3.
-- **Xbox 360:** Blue Dragon (re:Blue), Lost Odyssey e Project Gotham Racing 4.
-- **Xbox original:** Conker: Live & Reloaded.
-- **Switch:** Link’s Awakening (LAS Recomp / peiikai), como fonte separada do projeto já listado.
-- **Projetos com instruções manuais:** Burnout 3: Takedown (instalador EXE) e Super Mario Odyssey (sem release Windows pronta na consulta).
+As novidades e alterações de cada versão ficam exclusivamente nas [Releases](https://github.com/teasergames/ports-pc/releases).
 
-Knack II, Drakengard 3, Conker e LAS Recomp usam pré-releases sinalizadas e exigem aceitação antes da instalação. O estágio experimental não é uma garantia de campanha completa. Para PGR4 e Conker, **Configurar jogo** escolhe a pasta extraída; o NEXUS salva o caminho e passa os parâmetros/ambiente documentados ao abrir. Para Lost Odyssey, Configurar abre a página de preparação (`--setup-only`). Os demais perfis usam seus launchers ou menus internos conforme indicado no catálogo. A lista completa de fontes e limites está em [CATALOG.md](CATALOG.md).
+## Seus dados e backups
 
-Na **1.3.2**, o perfil Darkwatch foi corrigido para **[linkssy2/DarkwatchDarkerEdition](https://github.com/linkssy2/DarkwatchDarkerEdition)**. **Configurar jogo** abre `Darkwatch Darker Edition.exe` para importar sua ISO/XISO e **Jogar** abre `Play Darkwatch.exe`. O perfil consulta releases estáveis. A cópia para assets descrita no histórico se aplica ao port antigo Arizona Vamp; instalações antigas permanecem separadas e não são renomeadas como Darker Edition. Baixe a nova fonte pelo catálogo e prepare seus arquivos no launcher original.
+A biblioteca e as artworks ficam salvas localmente em `%LOCALAPPDATA%\NexusPortsPC`. Acesse **Configurações → Abrir dados locais** e copie essa pasta para fazer um backup. A biblioteca não é enviada ao GitHub.
 
-Na **1.3.1**, **BLACK e Darkwatch** têm um menu integrado em **Configurar jogo**: escolha uma pasta extraída com `default.xbe` e todos os arquivos do jogo, ou uma **ISO do Xbox original**, e pressione **Preparar arquivos**. O NEXUS copia para `assets` ao lado do port e mostra progresso e cancelamento. A origem permanece no lugar; se houver uma pasta `assets` anterior, ela fica preservada em `assets.nexus-backup-…`. A cópia pode ocupar vários GB. Se os arquivos ainda não estiverem preparados, **Jogar** abre esse menu antes de iniciar. Após concluir, Jogar continua abrindo o executável direto. O port ainda valida a região e a revisão do seu jogo.
+Atualizações do NEXUS preservam a biblioteca, as artworks e os ports instalados. A busca de imagens pode ser desativada; ela envia o título do jogo aos serviços de imagem, sem enviar caminhos locais, saves ou executáveis.
 
-Na **1.3.0**, foram integrados **BLACK**, **Darkwatch**, **Forza Motorsport 2, 3 e 4**, **Forza Horizon / Pinyon Shift** e **Forza Horizon 2 / Azimuth**. São **30 perfis**: 24 com download GitHub, 1 com importação do ZIP oficial do itch.io e 5 com instruções manuais.
+## Ajuda e desenvolvimento
 
-- Na 1.3.0, o perfil Arizona Vamp estava em beta. O catálogo mostra o aviso e só habilita a instalação após marcar a aceitação. Os demais perfis continuam consultando apenas releases estáveis.
-- Azimuth: filtre **Xbox One**, escolha **Forza Horizon 2 · Azimuth**, clique **Baixar no site oficial** e obtenha `azimuth-windows.zip` no itch.io. Depois clique **Importar ZIP e adicionar** no NEXUS e escolha o arquivo. A extração e o cadastro são automáticos. O download e a versão atual são controlados pelo autor; não há espelho ou redistribuição no NEXUS.
-- Forza Motorsport 2/3/4 têm entradas de Jogar e Configurar separadas. Prepare seus discos e perfis no launcher antes de jogar. Em FM2, use o Play do launcher na preparação de shaders; em FM4, use-o quando alterar opções de mods/120 FPS que são aplicadas ao iniciar.
-- Forza Horizon e Azimuth abrem seus launchers originais em ambos os botões. Pinyon Shift compila a partir do seu disco, processo que pode levar 20–60 minutos e requer cerca de 30 GB. NEXUS não executa essa preparação por conta própria.
-- BLACK e Darkwatch possuem configurações internas, sem botão de launcher separado.
+Encontrou um problema no launcher? [Abra uma issue](https://github.com/teasergames/ports-pc/issues) informando o que aconteceu e os passos para reproduzir. Para problemas específicos de um jogo, consulte também o repositório do autor do port.
 
-Histórico de recursos:
-
-Na **1.2.0**, a coleção e o catálogo têm filtros para **PlayStation 4, PlayStation 3, Xbox, Xbox 360, Xbox One, Nintendo Switch e Outras**. O filtro combina com busca, favoritos, grade e lista. Em **Editar cadastro**, escolha a plataforma de qualquer instalação manual. Os cadastros antigos conhecidos são classificados automaticamente; jogos desconhecidos ficam em Outras.
-
-O catálogo tem **23 perfis**, dos quais **18 permitem baixar e adicionar**. Novos downloads: Halo/OpenCE (Xbox), Sonic Unleashed Recompiled (Xbox 360), Hyrule Warriors e Bayonetta 2 (Switch), Gravity Rush Remastered e Gravity Rush 2 (PS4). Os demais projetos novos estão marcados como instalação manual/em desenvolvimento, com o motivo e link para a fonte. Xbox One ainda não tem port de jogo com pacote Windows validado nesta pesquisa; seu filtro aceita instalações adicionadas manualmente.
-
-**Configurar jogo** aparece quando há um launcher associado. Em ports com opções internas, use o menu do jogo. Bayonetta 2 exige preparação no builder e Jogar abre seu launcher. Esses detalhes aparecem antes de baixar. O NEXUS não transforma versões de console em ports nem garante a compatibilidade dos projetos de terceiros.
-
-Na versão **1.0.1**, **Configurar jogo** abre o launcher original de configuração. **Editar cadastro** altera nome, executável, argumentos e artwork no NEXUS. **Jogar** usa a entrada direta do port. Você pode escolher manualmente um launcher de configuração em Editar cadastro.
-
-Na **1.0.2**, escolha **Grade** ou **Lista** na barra da coleção. Use o controle **Tamanho** ou os botões **− / ＋** para ajustar as capas da grade (140–340 px) ou a altura das linhas da lista (48–132 px). O modo e o tamanho de cada visualização são lembrados separadamente ao trocar de modo e ao reabrir o aplicativo. Busca, favoritos e seleção funcionam nos dois modos. Na lista, cada linha mostra a imagem, o nome e a última abertura; em linhas maiores também aparece o estado de favorito.
-
-Na **1.1.0**, **Baixar ports**, ao lado de Detectar ports, abre o catálogo de **11 jogos / 12 fontes**. Consulta a última release estável, baixa o ZIP Windows, verifica SHA-256 quando publicado, extrai e adiciona à biblioteca. Há progresso, cancelamento e escolha do destino. Inclui GOW III, Bloodborne, Shadow (original/fork Oussama268), Uncharted e os sete novos projetos: DRIVECLUB, inFAMOUS Second Son, The Last Guardian, CTR Nitro-Fueled, MediEvil, Gran Turismo Sport e The Order: 1886. Veja [CATALOG.md](CATALOG.md) para fontes, funcionamento e diferenças de inicialização.
-
-Cada instalação usa uma pasta nova por versão; não substitui ports existentes nem migra automaticamente saves/configurações entre cópias. Após baixar, siga as instruções do perfil para preparar seus próprios arquivos. Se a API do GitHub estiver limitada, o catálogo sinaliza quando usa o cache verificado, com data visível. O suporte a caminhos longos da extração não exige editar o Registro do Windows.
-
-## Usar
-
-1. Extraia `Nexus-Ports-PC-Windows-x64.zip` em uma pasta de sua preferência.
-2. Abra `Nexus.exe`, mantendo `Nexus.exe.config` ao lado dele.
-3. Na primeira execução, o launcher identifica os quatro ports conhecidos em Downloads. Para outras pastas, use **Adicionar jogo** e escolha um `.exe` ou atalho `.lnk`.
-4. Confira nome, argumentos e pasta de trabalho. Clique em **Salvar** e depois **Jogar**.
-
-O launcher não inclui jogos, emuladores, firmware ou arquivos dos ports. Cada port precisa estar instalado e funcionar por conta própria. A compatibilidade dos próprios jogos, drivers e modificações depende de cada projeto. O executável desta versão não é assinado digitalmente.
-
-## Recursos
-
-- Fundo e cartões com a artwork do jogo selecionado, degradê para leitura e título nativo escuro.
-- Adição, edição e remoção de cadastros; arquivos dos jogos são preservados.
-- Busca por nome, favoritos e data da última solicitação de inicialização.
-- Executável, argumentos e pasta de trabalho individuais, sem comandos intermediários de shell.
-- Atalhos `.lnk` são abertos pelo Windows e preservam suas configurações próprias.
-- Imagens locais e cache offline; biblioteca salva com substituição atômica e backup recuperável.
-- Escala de DPI por monitor, navegação por teclado, janela redimensionável, caminhos com espaços e Unicode.
-- Uma instância por biblioteca, minimização opcional ao abrir um jogo.
-
-## Ports conhecidos
-
-| Port | Detecção em Downloads | Inicialização |
-| --- | --- | --- |
-| God of War III | `gow3-windows/gow3-windows/` ou `gow3-windows/` | `Play God of War III.exe` |
-| Shadow of the Colossus | `SotC-PC/` | `SotC.exe --play` |
-| Bloodborne | `BBPORT/` | `Bloodborne.exe` |
-| Uncharted: The Nathan Drake Collection (BilalReloaded) | `Uncharted PC port Bila/` | Python incluído no próprio port + `tools/probe_uncharted.py` |
-
-Para Uncharted, **Configurar jogo** abre `Uncharted Launcher.exe`. **Jogar**, com os argumentos do cadastro vazios, lê a seleção e as opções salvas em `%APPDATA%/Uncharted Launcher/launcher.json` e inicia o jogo escolhido sem abrir a interface do launcher. Usa somente o Python já incluído no port; não precisa instalar Python. Configure a pasta do jogo uma vez no launcher original. Não execute diretamente `gow3_pc/out/Uncharted.exe`, pois essa entrada pula a preparação e as opções do port. Se preencher argumentos personalizados para `Uncharted Launcher.exe`, o NEXUS respeita essa inicialização personalizada.
-
-Você pode cadastrar qualquer outro executável. A detecção verifica esses caminhos, sem varrer o disco inteiro. Pastas Downloads redirecionadas ou instalações fora desses caminhos podem ser cadastradas manualmente. Nomes e argumentos são sugestões editáveis; a configuração original do port continua sendo usada pelo executável.
-
-## Artwork automática
-
-Ao adicionar um jogo, o NEXUS procura, nesta ordem:
-
-1. Arquivos locais: `artwork.jpg/png`, `background.jpg/png`, `hero.jpg/png`, `sce_sys/pic1.png`, `sce_sys/pic0.png`, `assets/background.jpg`, `launcher/background.jpg` ao lado do executável.
-2. Para os ports conhecidos, lê o campo `game_dir` das configurações originais em `%APPDATA%/gow3-launcher`, `sotc-launcher`, `bbport-launcher` ou `Uncharted Launcher/launcher.json` e procura `sce_sys/pic1.png`, `pic0.png` ou `icon0.png` na instalação do jogo. Não altera esses arquivos.
-3. **SteamGridDB**, se uma chave de API foi informada em Configurações: busca o título exato e uma hero panorâmica estática.
-4. **Wikipedia**, sem chave: imagem da página exata do título. Pode ser uma capa vertical ou imagem de resolução limitada; não existe garantia de fundo panorâmico para todo jogo.
-
-Também é possível escolher uma imagem em **Editar cadastro → Escolher imagem**, ou solicitar nova busca em **Buscar automaticamente**. Imagens são copiadas para o cache: não precisam permanecer na pasta de origem. A busca roda em segundo plano, com limite de tamanho e timeout; erros de rede não impedem jogar. Sem imagem, a interface mostra um fundo neutro.
-
-Na versão 1.0.1, as opções de artwork ficam em **Editar cadastro**. O campo **Título para buscar artwork** permite informar um nome de busca diferente do nome exibido. Nomes como “Uncharted Collection” são reconhecidos pelo port e associados a “Uncharted: The Nathan Drake Collection”. Cadastros existentes sem imagem recebem uma nova tentativa ao abrir o NEXUS atualizado.
-
-O SteamGridDB exige sua própria chave: [obter chave](https://www.steamgriddb.com/profile/preferences/api). Ela é criptografada com Windows DPAPI para o usuário atual e nunca incluída no repositório. A busca online envia **apenas o nome do jogo**; não envia caminhos, saves ou executáveis. É possível desativá-la. Credenciais são enviadas apenas à API SteamGridDB, nunca aos servidores das imagens. Imagens e jogos pertencem aos respectivos titulares; a licença MIT se aplica somente ao código do launcher. A fonte da imagem aparece na edição do cadastro.
-
-## Dados e backup
-
-Os dados ficam em `%LOCALAPPDATA%/NexusPortsPC/`: `library.json`, backup `.bak`, `artwork/` e log local. **Configurações → Abrir dados locais** abre a pasta. Copie a pasta inteira para backup; a chave SteamGridDB deve ser informada novamente se mudar de usuário/PC. A biblioteca não vai para o GitHub. Para um perfil separado: `Nexus.exe --data-dir "C:\Minha Biblioteca"`.
-
-## Compilar e testar
-
-No Windows 11 x64, PowerShell:
-
-```powershell
-./build.ps1 -Test
-```
-
-O script usa o compilador do .NET Framework que acompanha o Windows; nenhuma dependência externa ou restauração NuGet é necessária. A saída fica em `dist/Nexus/` e `dist/Nexus-Ports-PC-Windows-x64.zip`. O projeto usa a sintaxe C# 5 do compilador incluído. O workflow GitHub Actions compila, testa e disponibiliza o ZIP como artifact.
-
-Os testes verificam persistência Unicode, argumentos, validação dos caminhos, recuperação de backup, credenciais DPAPI, identificação dos ports e cache de imagens. Não abrem jogos. Um teste de renderização pode ser executado com:
-
-```powershell
-./dist/Nexus/Nexus.exe --data-dir "C:\Temp\NexusTest" --smoke-test "C:\Temp\nexus-preview.png"
-```
-
-O smoke test abre e renderiza a janela, salva a imagem e encerra, sem detecção ou consultas online. A compatibilidade é direcionada ao launcher no Windows 11 x64. Windows em ARM e a execução dos jogos não foram certificados nesta versão.
-
-Testes de integração opcionais: `./tests/integration.ps1 -Mode online` verifica o download público da Wikipedia; `-Mode local` verifica os ports conhecidos instalados em Downloads e suas imagens locais. O modo local requer esses ports e seus launchers originais configurados. Nenhum dos testes inicia jogos. Os dados ficam em `test-output/`, ignorado pelo Git.
-
-Para o catálogo: `-Mode catalog` verifica os 12 perfis de release, identificando se vieram da consulta ao vivo ou do cache auditado; `-Mode catalog-install` testa uma instalação real; `-Mode catalog-packages` baixa, verifica, extrai e cadastra os sete pacotes novos, sem executá-los. O último modo usa espaço em disco para os pacotes extraídos. O smoke test aceita `--catalog-smoke` para renderizar o catálogo sem rede.
-
-## Referências
-
-- [Microsoft: .NET Framework no Windows 11](https://learn.microsoft.com/en-us/dotnet/framework/install/on-windows-and-server)
-- [MediaWiki PageImages API](https://www.mediawiki.org/wiki/API:Pageimages)
-- [SteamGridDB API](https://www.steamgriddb.com/api/v2)
+Para compilar e testar o NEXUS, veja o [guia de desenvolvimento](docs/DEVELOPMENT.md). O código do launcher é distribuído sob a [licença MIT](LICENSE). Jogos, marcas e imagens pertencem aos seus respectivos titulares; os projetos de ports são independentes.

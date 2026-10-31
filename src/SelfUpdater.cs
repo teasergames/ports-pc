@@ -36,8 +36,34 @@ namespace Nexus {
       if(r.Size>100*1024*1024||!Regex.IsMatch(r.Digest??"",@"^sha256:[0-9a-fA-F]{64}$")||r.AssetName!="Nexus-Ports-PC-v"+r.Version.TrimStart('v')+"-Windows-x64.zip")throw new InvalidDataException("Pacote do NEXUS sem tamanho, versão ou SHA-256 válido.");
       Uri uri=new Uri(r.DownloadUrl);if(uri.AbsolutePath!="/"+Repository+"/releases/download/"+r.Version+"/"+r.AssetName||!String.IsNullOrEmpty(uri.Query)||!String.IsNullOrEmpty(uri.Fragment))throw new InvalidDataException("Endereço de atualização inválido.");return r;
     }
+    public const string ManifestName="nexus-update.json";
     public async Task<PortRelease> Check(CancellationToken token){
-      using(var limit=CancellationTokenSource.CreateLinkedTokenSource(token)){limit.CancelAfter(TimeSpan.FromSeconds(20));using(var response=await client.GetAsync("https://api.github.com/repos/"+Repository+"/releases/latest",HttpCompletionOption.ResponseHeadersRead,limit.Token)){response.EnsureSuccessStatusCode();using(var input=await response.Content.ReadAsStreamAsync())using(var data=new MemoryStream()){var bytes=new byte[16384];int read;while((read=await input.ReadAsync(bytes,0,bytes.Length,limit.Token))>0){if(data.Length+read>1024*1024)throw new InvalidDataException("Resposta de atualização muito grande.");data.Write(bytes,0,read);}var release=Parse(System.Text.Encoding.UTF8.GetString(data.ToArray()));return StableVersion(release.Version)>StableVersion(CurrentVersion)?release:null;}}}
+      PortRelease release=null;HttpRequestException apiError=null;
+      try{release=Parse(await Fetch("https://api.github.com/repos/"+Repository+"/releases/latest",1024*1024,token));}
+      catch(HttpRequestException ex){apiError=ex;}
+      if(apiError!=null){
+        // The anonymous API allows 60 requests per hour per network. The manifest published with each
+        // release is served by github.com itself, outside that limit, and passes the same validation.
+        string manifest=null;
+        try{manifest=await Fetch("https://github.com/"+Repository+"/releases/latest/download/"+ManifestName,64*1024,token);}
+        catch(OperationCanceledException){throw;}
+        catch(Exception){}
+        if(manifest==null)throw apiError.Message.Contains("403")||apiError.Message.Contains("429")?new HttpRequestException("O GitHub limitou temporariamente as consultas desta rede. Tente novamente em alguns minutos."):apiError;
+        release=FromManifest(manifest);
+      }
+      return StableVersion(release.Version)>StableVersion(CurrentVersion)?release:null;
+    }
+    async Task<string> Fetch(string url,int maximum,CancellationToken token){
+      using(var limit=CancellationTokenSource.CreateLinkedTokenSource(token)){limit.CancelAfter(TimeSpan.FromSeconds(20));using(var response=await client.GetAsync(url,HttpCompletionOption.ResponseHeadersRead,limit.Token)){if((int)response.StatusCode==403||(int)response.StatusCode==429)throw new HttpRequestException("403 rate limit");response.EnsureSuccessStatusCode();using(var input=await response.Content.ReadAsStreamAsync())using(var data=new MemoryStream()){var bytes=new byte[16384];int read;while((read=await input.ReadAsync(bytes,0,bytes.Length,limit.Token))>0){if(data.Length+read>maximum)throw new InvalidDataException("Resposta de atualização muito grande.");data.Write(bytes,0,read);}return System.Text.Encoding.UTF8.GetString(data.ToArray());}}}
+    }
+    // nexus-update.json: {"tag_name":"v1.7.2","asset":"Nexus-Ports-PC-v1.7.2-Windows-x64.zip","size":123,"digest":"sha256:…"}.
+    // It is rebuilt in the API shape so Parse applies the same checks (name, version, URL, size and SHA-256).
+    public static PortRelease FromManifest(string json){
+      var data=Json().Deserialize<Dictionary<string,object>>(json);if(data==null)throw new InvalidDataException("Manifesto de atualização inválido.");
+      string tag=Convert.ToString(data["tag_name"]),asset=Convert.ToString(data["asset"]);
+      if(!Regex.IsMatch(tag,@"^v\d+\.\d+\.\d+(\.\d+)?$")||!Regex.IsMatch(asset,@"^[A-Za-z0-9._-]+$"))throw new InvalidDataException("Manifesto de atualização inválido.");
+      var release=new{tag_name=tag,html_url="https://github.com/"+Repository+"/releases/tag/"+tag,draft=false,prerelease=false,assets=new[]{new{name=asset,size=Convert.ToInt64(data["size"]),browser_download_url="https://github.com/"+Repository+"/releases/download/"+tag+"/"+asset,digest=Convert.ToString(data["digest"])}}};
+      return Parse(Json().Serialize(release));
     }
     public async Task<string> Download(PortRelease release,string dataRoot,IProgress<InstallProgress> progress,CancellationToken token){
       PortCatalog.ValidateDownloadUrl(new PortEntry{Repository=Repository},release.DownloadUrl);if(release.Size<1||release.Size>100*1024*1024||!Regex.IsMatch(release.Digest??"",@"^sha256:[0-9a-fA-F]{64}$"))throw new InvalidDataException("Metadados da atualização inválidos.");

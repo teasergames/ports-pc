@@ -40,7 +40,7 @@ Valida o bloqueio de junctions, preservando o destino externo e o port. Os teste
 
 Verifica o auxiliar em processo separado, espera pelo processo anterior, reinício com confirmação, rollback de início com falha e recuperação de uma troca interrompida. Usa executáveis de fixture produzidos pelo próprio teste.
 
-O atualizador consulta a última Release estável de `teasergames/ports-pc`. O asset precisa seguir `Nexus-Ports-PC-v<versão>-Windows-x64.zip`, ter SHA-256 publicado e conter `Nexus.exe`, `Nexus.exe.config`, `README.md`, `CATALOG.md` e `LICENSE`, na raiz ou sob `Nexus/`. A versão do assembly deve corresponder à Release.
+O atualizador consulta a última Release estável de `teasergames/ports-pc`. Se a API do GitHub limitar as consultas (60 por hora por rede, sem login), ele lê `nexus-update.json` em `github.com/teasergames/ports-pc/releases/latest/download/`, fora desse limite. O `build.ps1` gera esse manifesto em `dist/` para versões estáveis: **anexe-o a toda Release estável**, junto com o ZIP. O asset precisa seguir `Nexus-Ports-PC-v<versão>-Windows-x64.zip`, ter SHA-256 publicado e conter `Nexus.exe`, `Nexus.exe.config`, `README.md`, `CATALOG.md` e `LICENSE`, na raiz ou sob `Nexus/`. A versão do assembly deve corresponder à Release.
 
 Os arquivos anteriores e o journal ficam em `%LOCALAPPDATA%\NexusPortsPC\launcher-updates`. A troca não inclui a biblioteca nem instalações dos jogos. Preserve esse contrato ao preparar futuras Releases.
 

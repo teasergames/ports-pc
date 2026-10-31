@@ -192,6 +192,8 @@ namespace Nexus {
       }
       return BundledRelease(entry);
     }
+    // Last release known without calling the GitHub API (daily cache, then the bundled copy). Marked FromCache.
+    public PortRelease KnownRelease(PortEntry entry){try{return CachedRelease(entry);}catch(InvalidDataException){return null;}}
     static List<Dictionary<string,object>> bundledReleases;
     public static PortRelease BundledRelease(PortEntry entry){
       if (bundledReleases == null) {

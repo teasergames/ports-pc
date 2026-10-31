@@ -20,9 +20,9 @@ using Microsoft.Win32;
 
 [assembly: AssemblyTitle("NEXUS · Ports PC")]
 [assembly: AssemblyProduct("NEXUS Ports PC")]
-[assembly: AssemblyVersion("1.7.1.0")]
-[assembly: AssemblyFileVersion("1.7.1.0")]
-[assembly: AssemblyInformationalVersion("1.7.1")]
+[assembly: AssemblyVersion("1.7.2.0")]
+[assembly: AssemblyFileVersion("1.7.2.0")]
+[assembly: AssemblyInformationalVersion("1.7.2")]
 [assembly: System.Runtime.Versioning.TargetFramework(".NETFramework,Version=v4.8")]
 namespace Nexus {
   public static class Program {
@@ -120,11 +120,17 @@ namespace Nexus {
       UpdateCatalogBadge(PortCatalog.LoadEntries());
       selected=library.Games.FirstOrDefault();Refresh();
       Window.Loaded+=delegate{if(!smoke){foreach(Game g in library.Games.ToArray())if(String.IsNullOrEmpty(g.Artwork)||!File.Exists(g.Artwork))ResolveArtwork(g);}};
-      Window.Loaded+=delegate{if(!smoke){if(Environment.GetCommandLineArgs().Contains("--nexus-update-failed"))Status("A atualização não foi concluída. A versão anterior foi restaurada; consulte os logs em launcher-updates.");else if(library.AutoUpdateLauncher&&!Environment.GetCommandLineArgs().Contains("--skip-nexus-update"))CheckLauncherUpdate(false);}};
-      Window.Loaded+=delegate{if(!smoke){CheckCatalogInBackground();gamepad=new Gamepad(()=>Window.IsActive&&Window.OwnedWindows.Count==0);gamepad.Pressed+=OnPad;}};
+      Window.Loaded+=delegate{if(!smoke){if(Environment.GetCommandLineArgs().Contains("--nexus-update-failed"))Status("A atualização não foi concluída. A versão anterior foi restaurada; consulte os logs em launcher-updates.");StartupChecks();}};
+      Window.Loaded+=delegate{if(!smoke){gamepad=new Gamepad(()=>Window.IsActive&&Window.OwnedWindows.Count==0);gamepad.Pressed+=OnPad;}};
     }
 
-    async void CheckLauncherUpdate(bool manual){
+    // The launcher update goes first so it never competes with other GitHub requests at startup.
+    async void StartupChecks(){
+      if(library.AutoUpdateLauncher&&!Environment.GetCommandLineArgs().Contains("--skip-nexus-update"))await CheckLauncherUpdateAsync(false);
+      if(!closing)CheckCatalogInBackground();
+    }
+    async void CheckLauncherUpdate(bool manual){await CheckLauncherUpdateAsync(manual);}
+    async Task CheckLauncherUpdateAsync(bool manual){
       if(checkingLauncher||closing)return;checkingLauncher=true;Find<Button>("LauncherUpdateButton").IsEnabled=false;
       try{Status("Verificando atualização do NEXUS…");using(var updater=new SelfUpdater()){var release=await updater.Check(shutdown.Token);if(closing)return;if(release==null){Status("NEXUS "+Program.DisplayVersion+" está atualizado.");return;}if(Window.OwnedWindows.Count>0){Status("NEXUS "+release.Version+" disponível. Conclua a operação atual e clique em Verificar atualização.");return;}var dialog=new SelfUpdateWindow(Window,updater,release,store.Root);if(dialog.ShowDialog()!=true)return;Save();var helper=SelfUpdater.StartHelper(dialog.PlanFile,false);if(helper==null)throw new IOException("Não foi possível abrir o auxiliar de atualização.");helper.Dispose();Application.Current.Shutdown();}}
       catch(OperationCanceledException){if(!closing)Status("Atualização do NEXUS adiada. Tente novamente quando quiser.");}
@@ -132,8 +138,9 @@ namespace Nexus {
       finally{checkingLauncher=false;if(!closing)Find<Button>("LauncherUpdateButton").IsEnabled=true;}
     }
 
-    // Refreshes the online catalog and checks the managed installations once per session to fill
-    // the "Catálogo" and "Atualizações" badges. Failures only leave the badges as they were.
+    // Refreshes the online catalog and fills the "Catálogo" and "Atualizações" badges from the release
+    // cache refreshed daily on GitHub, without spending GitHub API requests. The catalog confirms
+    // online before installing an update.
     async void CheckCatalogInBackground(){
       try{
         using(var catalog=new PortCatalog()){
@@ -142,8 +149,8 @@ namespace Nexus {
           foreach(Game game in library.Games.ToArray()){
             PortEntry entry=catalog.Entries.FirstOrDefault(e=>e.Identity==game.Repository);
             if(entry==null||entry.ProjectOnly||entry.ManualPackage||!UpdateManager.Managed(game))continue;
-            try{var release=await catalog.Latest(entry,shutdown.Token,true);if(!release.FromCache&&UpdateManager.Available(game,release))updatable.Add(game.Id);else updatable.Remove(game.Id);}
-            catch(OperationCanceledException){throw;}catch(Exception){}
+            try{var release=catalog.KnownRelease(entry);if(release!=null&&UpdateManager.Available(game,release))updatable.Add(game.Id);else updatable.Remove(game.Id);}
+            catch(Exception){}
             if(closing)return;
           }
           UpdateUpdatesBadge();Refresh();

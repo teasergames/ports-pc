@@ -28,4 +28,14 @@ if ($Test) {
 }
 # Only the files the self-updater expects; folders created by running the app (ports, logs) stay out.
 Compress-Archive -Path (@('Nexus.exe','Nexus.exe.config','README.md','CATALOG.md','LICENSE') | ForEach-Object { Join-Path $destination $_ }) -DestinationPath (Join-Path $projectRoot 'dist\Nexus-Ports-PC-Windows-x64.zip') -Force
-Write-Output ('Pronto: ' + (Join-Path $destination 'Nexus.exe'))
+# Release assets: the versioned ZIP and, for stable versions, nexus-update.json. The manifest lets the
+# launcher update itself when the GitHub API is rate-limited (see SelfUpdater.FromManifest).
+$version = (Get-Item -LiteralPath (Join-Path $destination 'Nexus.exe')).VersionInfo.ProductVersion
+$named = Join-Path $projectRoot ('dist\Nexus-Ports-PC-v' + $version + '-Windows-x64.zip')
+Copy-Item -LiteralPath (Join-Path $projectRoot 'dist\Nexus-Ports-PC-Windows-x64.zip') -Destination $named -Force
+$manifest = Join-Path $projectRoot 'dist\nexus-update.json'
+Remove-Item -LiteralPath $manifest -ErrorAction SilentlyContinue
+if ($version -notmatch '-') {
+  $data = [ordered]@{ tag_name = 'v' + $version; asset = Split-Path $named -Leaf; size = (Get-Item -LiteralPath $named).Length; digest = 'sha256:' + (Get-FileHash -LiteralPath $named -Algorithm SHA256).Hash.ToLowerInvariant() }
+  [IO.File]::WriteAllText($manifest, (ConvertTo-Json $data), (New-Object Text.UTF8Encoding $false))
+}Write-Output ('Pronto: ' + (Join-Path $destination 'Nexus.exe'))

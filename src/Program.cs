@@ -92,6 +92,7 @@ namespace Nexus {
       Find<Button>("MoreButton").Click+=delegate{OpenMenu(Find<Button>("MoreButton"));};
       Find<MenuItem>("EditMenuItem").Click+=delegate{Edit();};
       Find<MenuItem>("OpenFolderMenuItem").Click+=delegate{OpenFolder();};
+      Find<MenuItem>("MoveMenuItem").Click+=delegate{MovePort();};
       Find<MenuItem>("ArtworkMenuItem").Click+=delegate{if(selected!=null)ResolveArtwork(selected);};
       Find<MenuItem>("RemoveMenuItem").Click+=delegate{RemoveFromCollection();};
       Find<MenuItem>("DeletePortMenuItem").Click+=delegate{DeletePort();};
@@ -181,6 +182,7 @@ namespace Nexus {
       foreach(string name in new[]{"PlayButton","FavoriteButton","MoreButton"})Find<Button>(name).IsEnabled=has;
       var configure=Find<Button>("ConfigureButton");configure.ToolTip=has&&FolderLaunch.Supports(selected)?"Selecionar a pasta extraída do jogo":"Abrir a configuração do jogo";configure.IsEnabled=has;
       configure.Visibility=has&&(GameContent.Supports(selected)||FolderLaunch.Supports(selected)||!String.IsNullOrEmpty(Ports.FindConfigurationExecutable(selected)))?Visibility.Visible:Visibility.Collapsed;
+      var moveItem=Find<MenuItem>("MoveMenuItem");moveItem.IsEnabled=has&&PortMove.Supports(selected);moveItem.ToolTip=moveItem.IsEnabled?null:"Disponível para ports instalados pelo Catálogo";ToolTipService.SetShowOnDisabled(moveItem,true);
       Find<TextBlock>("HeroTitle").Text=has?selected.Name:"Seu próximo universo";
       var badges=Find<WrapPanel>("HeroBadges");badges.Children.Clear();
       if(has){
@@ -342,6 +344,16 @@ namespace Nexus {
       if(String.IsNullOrEmpty(folder)||!Directory.Exists(folder)){Status("A pasta do port não foi encontrada. Atualize o caminho em Editar cadastro.");return;}
       Process.Start(new ProcessStartInfo("explorer.exe","\""+folder+"\""){UseShellExecute=true});
     }
+    // Moves a catalog installation; the library is saved before the old copy is deleted.
+    void MovePort(){
+      if(selected==null||!PortMove.Supports(selected))return;Game original=selected;
+      var dialog=new PortMoveWindow(Window,original,library.Games,InstallLocation.DefaultFolder(store.Root));if(dialog.ShowDialog()!=true||dialog.Result==null)return;
+      int index=library.Games.IndexOf(original);library.Games[index]=dialog.Result;
+      try{Save();}
+      catch(Exception ex){library.Games[index]=original;PortMove.Abort(dialog.Plan);store.Log("Mover port: "+ex);MessageBox.Show(Window,"Não foi possível salvar o novo local. O port continua na pasta original.","Mover port",MessageBoxButton.OK,MessageBoxImage.Warning);Refresh();return;}
+      var left=PortMove.Finish(dialog.Plan);selected=dialog.Result;Refresh();
+      Status(left.Count==0?"Port movido para "+dialog.Plan.TargetParent:"Port movido. Não foi possível apagar a cópia antiga em "+String.Join(", ",left)+"; você pode excluí-la manualmente.");
+    }
     void RemoveFromCollection(){
       if(selected==null)return;
       if(MessageBox.Show(Window,"Remover "+selected.Name+" da coleção? Os arquivos do port serão preservados.","Remover da coleção",MessageBoxButton.YesNo,MessageBoxImage.Question)!=MessageBoxResult.Yes)return;
@@ -416,6 +428,7 @@ namespace Nexus {
       if(args.Contains("--self-update-smoke")){var dialog=new SelfUpdateWindow(Window,null,new PortRelease{Version="v1.6.4"},store.Root,true);dialog.Show();dialog.UpdateLayout();CaptureWindow(dialog,target);dialog.Close();return;}
       if(args.Contains("--package-smoke")){var dialog=new PackageChoiceWindow(Window,"Exemplo de pacote",new[]{"Game.exe","Launcher.exe","bin\\\\Runtime.exe"},null);dialog.Show();dialog.UpdateLayout();CaptureWindow(dialog,target);dialog.Close();return;}
       if(args.Contains("--content-smoke")){Game sample=library.Games.FirstOrDefault(GameContent.Supports)??new Game{Name="BLACK",Executable=Path.Combine(store.Root,"BLACK.exe")};var dialog=new GameContentWindow(Window,sample);dialog.Show();dialog.UpdateLayout();CaptureWindow(dialog,target);dialog.Close();return;}
+      if(args.Contains("--move-smoke")){var entry=PortCatalog.LoadEntries().First(e=>e.Id=="gow3");string fixture=PortCatalog.ChildPath(store.Root,"move-fixture\\gow3-v1.0.0");Directory.CreateDirectory(fixture);File.WriteAllText(Path.Combine(fixture,entry.PlayNames[0]),"UI fixture only");UpdateManager.WriteReceipt(entry,new PortRelease{Version="v1.0.0"},fixture,CancellationToken.None);var sample=new Game{Name=entry.Name,Repository=entry.Identity,Platform=entry.Platform,Executable=Path.Combine(fixture,entry.PlayNames[0]),ManagedInstallationRoot=fixture,InstalledVersion="v1.0.0"};if(!PortMove.Supports(sample))throw new Exception("Move fixture must be a managed installation");var dialog=new PortMoveWindow(Window,sample,library.Games,InstallLocation.DefaultFolder(store.Root));dialog.Show();dialog.UpdateLayout();CaptureWindow(dialog,target);dialog.Close();Directory.Delete(PortCatalog.ChildPath(store.Root,"move-fixture"),true);return;}
       if(args.Contains("--install-location-smoke")){var dialog=new InstallLocationWindow(Window,"Shadow of the Colossus · AjncSystem",InstallLocation.DefaultFolder(store.Root));dialog.PreviewOther(Path.Combine(store.Root,"Meus Ports"));dialog.Show();dialog.UpdateLayout();CaptureWindow(dialog,target);dialog.Close();return;}
       if(args.Contains("--catalog-smoke")||args.Contains("--updates-smoke")){var catalogWindow=new CatalogWindow(Window,store.Root,library,delegate(Game g){},CatalogTab.All){IsSmoke=true};catalogWindow.Show();catalogWindow.UpdateLayout();if(args.Contains("--updates-smoke"))catalogWindow.CaptureUpdateSmoke(target);else catalogWindow.CaptureSmoke(target);catalogWindow.Close();return;}
       CaptureWindow(Window,target);

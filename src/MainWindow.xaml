@@ -65,6 +65,7 @@
                   <ContextMenu x:Name="MoreMenu" Placement="Bottom">
                     <MenuItem x:Name="EditMenuItem" Header="Editar cadastro"/>
                     <MenuItem x:Name="OpenFolderMenuItem" Header="Abrir pasta do port"/>
+                    <MenuItem x:Name="MoveMenuItem" Header="Mover para outra pasta…"/>
                     <MenuItem x:Name="ArtworkMenuItem" Header="Buscar artwork novamente"/>
                     <MenuItem x:Name="RemoveMenuItem" Header="Remover da coleção"/>
                     <Separator/>

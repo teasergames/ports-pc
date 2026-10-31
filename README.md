@@ -88,6 +88,10 @@ Instalações gerenciadas usam sua pasta registrada. Para ports adicionados manu
 
 Se quiser apenas tirar o jogo da lista e manter a instalação, use **⋯ → Remover da coleção**.
 
+## Como mover um port
+
+Para levar um port instalado pelo catálogo para outra pasta ou unidade, use **⋯ → Mover para outra pasta…** e escolha a pasta padrão do NEXUS ou outra. Saves, configurações e arquivos preparados dentro da pasta do port vão junto. Em outra unidade, os arquivos são copiados e conferidos antes de a pasta antiga ser apagada; se algo falhar, o port continua onde estava.
+
 ## Seus dados e backups
 
 A biblioteca e as artworks ficam salvas localmente em `%LOCALAPPDATA%\NexusPortsPC`. Acesse **Configurações → Abrir dados locais** e copie essa pasta para fazer um backup. A biblioteca não é enviada ao GitHub.

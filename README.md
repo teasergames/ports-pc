@@ -41,7 +41,7 @@ O NEXUS é portátil: não precisa de instalação tradicional, conta, Node.js o
 
 ### Pelo catálogo
 
-Abra **Catálogo** na barra superior, filtre por plataforma, tipo de projeto ou instalação, ou busque pelo título, e leia as instruções do projeto. A aba **Novidades** mostra o que entrou desde a sua última visita. Use **Baixar e adicionar** ou **Baixar e instalar**, conforme o perfil, e escolha o destino.
+Abra **Catálogo** na barra superior, filtre por plataforma, tipo de projeto ou instalação, ou busque pelo título, e leia as instruções do projeto. A aba **Novidades** mostra o que entrou desde a sua última visita. Use **Baixar e adicionar** ou **Baixar e instalar**, conforme o perfil, e escolha onde instalar: na pasta padrão `ports`, criada ao lado do `Nexus.exe`, ou em outra pasta da sua preferência. Se a pasta do NEXUS não puder ser gravada, a padrão passa a ser `%LOCALAPPDATA%\NexusPortsPC\ports`.
 
 Depois do download, prepare sua própria cópia do jogo no assistente do autor. Alguns projetos precisam compilar o jogo no primeiro início. Entradas com preparação manual abrem os downloads oficiais e explicam os passos necessários.
 

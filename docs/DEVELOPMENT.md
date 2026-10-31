@@ -80,7 +80,7 @@ O workflow [`releases-cache.yml`](../.github/workflows/releases-cache.yml) roda 
 ./tools/update-releases-cache.ps1 -Output out/releases-cache.json -Limit 5
 ```
 
-Antes de uma Release, copie o resultado para `assets/releases-cache.json` para atualizar o cache embutido.
+O cache embutido em `assets/releases-cache.json` é um retrato auditado e os testes fixam alguns fatos dele (por exemplo, quais perfis ainda são beta). Para renová-lo, copie o resultado do script e ajuste esses testes no mesmo commit.
 
 ### Página do catálogo
 

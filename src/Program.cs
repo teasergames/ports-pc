@@ -18,8 +18,8 @@ using Microsoft.Win32;
 
 [assembly: AssemblyTitle("NEXUS · Ports PC")]
 [assembly: AssemblyProduct("NEXUS Ports PC")]
-[assembly: AssemblyVersion("1.6.3.0")]
-[assembly: AssemblyFileVersion("1.6.3.0")]
+[assembly: AssemblyVersion("1.6.4.0")]
+[assembly: AssemblyFileVersion("1.6.4.0")]
 [assembly: System.Runtime.Versioning.TargetFramework(".NETFramework,Version=v4.8")]
 namespace Nexus {
   public static class Program {
@@ -60,6 +60,7 @@ namespace Nexus {
       Window.SourceInitialized+=delegate{int value=1;DwmSetWindowAttribute(new WindowInteropHelper(Window).Handle,20,ref value,4);};
       Window.Closed+=delegate{closing=true;viewSaveTimer.Stop();if(!smoke)Save();shutdown.Cancel();artwork.Dispose();};
       Find<Button>("AddButton").Click+=delegate{Add();};Find<Button>("EditButton").Click+=delegate{Edit();};Find<Button>("PlayButton").Click+=delegate{Launch();};Find<Button>("FavoriteButton").Click+=delegate{if(selected!=null){selected.Favorite=!selected.Favorite;Save();Refresh();}};
+      Find<Button>("DeletePortButton").Click+=delegate{DeletePort();};
       Find<Button>("ConfigureButton").Click+=delegate{if(selected==null)return;try{if(FolderLaunch.Supports(selected)){ConfigureSourceFolder();return;}if(GameContent.Supports(selected)){ConfigureContent();return;}Process.Start(Ports.ConfigurationStartInfo(selected));Status("Configuração aberta: "+selected.Name);}catch(Exception ex){MessageBox.Show(Window,ex.Message,"Configurar jogo",MessageBoxButton.OK,MessageBoxImage.Information);}};
       Find<Button>("SettingsButton").Click+=delegate{Settings();};Find<Button>("DetectButton").Click+=delegate{Detect(true);};
       Find<Button>("LauncherUpdateButton").Content="NEXUS "+SelfUpdater.CurrentVersion+" · Verificar atualização";Find<Button>("LauncherUpdateButton").Click+=delegate{CheckLauncherUpdate(true);};
@@ -86,7 +87,7 @@ namespace Nexus {
     void Save(){store.Save(library);}
     void Status(string text){if(!closing)Find<TextBlock>("StatusLabel").Text=text;}
     public void Refresh(){
-      bool has=selected!=null;Find<Button>("PlayButton").IsEnabled=has;Find<Button>("EditButton").IsEnabled=has;Find<Button>("FavoriteButton").IsEnabled=has;
+      bool has=selected!=null;Find<Button>("PlayButton").IsEnabled=has;Find<Button>("EditButton").IsEnabled=has;Find<Button>("FavoriteButton").IsEnabled=has;Find<Button>("DeletePortButton").IsEnabled=has;
       Find<Button>("ConfigureButton").ToolTip=has&&FolderLaunch.Supports(selected)?"Selecionar a pasta extraída do jogo":"Abrir a configuração do jogo";Find<Button>("ConfigureButton").IsEnabled=has;Find<Button>("ConfigureButton").Visibility=has&&(GameContent.Supports(selected)||FolderLaunch.Supports(selected)||!String.IsNullOrEmpty(Ports.FindConfigurationExecutable(selected)))?Visibility.Visible:Visibility.Collapsed;
       Find<TextBlock>("HeroTitle").Text=has?selected.Name:"Seu próximo universo";
       Find<TextBlock>("HeroDescription").Text=!has?"Adicione seus ports e reúna suas aventuras em um só lugar.":selected.Name=="Bloodborne"?"As ruas de Yharnam estão à sua espera. Sua próxima caçada começa aqui.":selected.Name=="God of War III"?"Enfrente os deuses do Olimpo. Sua próxima aventura começa aqui.":selected.Name=="Shadow of the Colossus"?"Uma terra esquecida. Dezesseis colossos. Uma jornada para revisitar.":"Seu port, suas configurações. Pronto para a próxima aventura.";
@@ -149,6 +150,12 @@ namespace Nexus {
       int index=library.Games.IndexOf(original);library.Games[index]=editor.Result;selected=editor.Result;Save();Refresh();Status("Configurações salvas.");
       if(editor.RefreshArtwork||String.IsNullOrEmpty(selected.Artwork)||!File.Exists(selected.Artwork))ResolveArtwork(selected);
     }
+    void DeletePort(){
+      if(selected==null)return;Game game=selected;var dialog=new PortRemovalWindow(Window,game,library.Games,store.Root);if(dialog.ShowDialog()!=true)return;int index=library.Games.IndexOf(game);library.Games.Remove(game);
+      try{Save();}catch(Exception ex){library.Games.Insert(index,game);store.Log(ex.ToString());MessageBox.Show(Window,"Os arquivos foram excluídos, mas não foi possível salvar a remoção do cadastro. Use Editar cadastro → Remover da coleção após resolver o problema de gravação.","Cadastro não salvo",MessageBoxButton.OK,MessageBoxImage.Warning);Refresh();return;}
+      RemoveCachedArtwork(game,game.Artwork);selected=library.Games.FirstOrDefault();Refresh();Status("Port e arquivos das pastas confirmadas excluídos: "+game.Name);
+    }
+    void RemoveCachedArtwork(Game game,string file){try{if(String.IsNullOrEmpty(file)||!PortRemoval.Within(store.Cache,file)||!Path.GetFileName(file).StartsWith(game.Id+"-",StringComparison.OrdinalIgnoreCase)||library.Games.Any(g=>String.Equals(g.Artwork,file,StringComparison.OrdinalIgnoreCase)))return;imageCache.Remove(file);if(File.Exists(file))File.Delete(file);}catch(Exception ex){store.Log("Limpeza de artwork: "+ex.Message);}}
     bool ConfigureSourceFolder(){using(var picker=new System.Windows.Forms.FolderBrowserDialog{Description="Escolha a pasta de "+selected.Name+" com "+FolderLaunch.RequiredFile(selected),SelectedPath=selected.SourceGameDirectory??""}){if(picker.ShowDialog()!=System.Windows.Forms.DialogResult.OK)return false;FolderLaunch.Validate(selected,picker.SelectedPath);selected.SourceGameDirectory=picker.SelectedPath;Save();Refresh();Status("Pasta do jogo configurada.");return true;}}
     bool ConfigureContent(){var dialog=new GameContentWindow(Window,selected);dialog.ShowDialog();if(dialog.PreparedPath!=null){Save();Refresh();Status("Arquivos preparados para "+selected.Name);return true;}return !GameContent.NeedsSetup(selected);}
     void Launch(){
@@ -170,7 +177,7 @@ namespace Nexus {
         bool online=library.OnlineArtwork;string key=library.ApiKey();
         ArtworkResult result=await Task.Run(()=>artwork.Resolve(snapshot,online,key,shutdown.Token));
         if(closing)return;Game live=library.Games.FirstOrDefault(g=>g.Id==snapshot.Id);
-        if(live==null||live.Artwork!=snapshot.Artwork||live.Name!=snapshot.Name||live.Executable!=snapshot.Executable||live.ArtworkSearchTitle!=snapshot.ArtworkSearchTitle)return;
+        if(live==null){RemoveCachedArtwork(snapshot,result.File);return;}if(live.Artwork!=snapshot.Artwork||live.Name!=snapshot.Name||live.Executable!=snapshot.Executable||live.ArtworkSearchTitle!=snapshot.ArtworkSearchTitle)return;
         if(!String.IsNullOrEmpty(result.File)){live.Artwork=result.File;live.ArtworkSource=result.Source;Save();Refresh();Status("Artwork pronta: "+live.Name+" · "+result.Source);}else Status(result.Message);
       }catch(OperationCanceledException){}catch(Exception ex){if(!closing){store.Log(ex.ToString());Status("Não foi possível buscar a artwork. Você pode escolher uma imagem local.");}}
       finally{pending.Remove(game.Id);if(entered)artQueue.Release();}
@@ -190,7 +197,7 @@ namespace Nexus {
       folder.Click+=delegate{Process.Start(new ProcessStartInfo("explorer.exe", "\""+store.Root+"\""){UseShellExecute=true});};
       save.Click+=delegate{library.AutoUpdateLauncher=autoUpdate.IsChecked==true;library.OnlineArtwork=online.IsChecked==true;library.MinimizeOnLaunch=minimize.IsChecked==true;library.SetApiKey(key.Password);Save();dialog.DialogResult=true;};dialog.ShowDialog();
     }
-    public void Capture(string target){if(Environment.GetCommandLineArgs().Contains("--self-update-smoke")){var dialog=new SelfUpdateWindow(Window,null,new PortRelease{Version="v1.6.4"},store.Root,true);dialog.Show();dialog.UpdateLayout();CaptureWindow(dialog,target);dialog.Close();return;}if(Environment.GetCommandLineArgs().Contains("--package-smoke")){var dialog=new PackageChoiceWindow(Window,"Exemplo de pacote",new[]{"Game.exe","Launcher.exe","bin\\\\Runtime.exe"},null);dialog.Show();dialog.UpdateLayout();CaptureWindow(dialog,target);dialog.Close();return;}if(Environment.GetCommandLineArgs().Contains("--content-smoke")){Game sample=library.Games.FirstOrDefault(GameContent.Supports)??new Game{Name="BLACK",Executable=Path.Combine(store.Root,"BLACK.exe")};var dialog=new GameContentWindow(Window,sample);dialog.Show();dialog.UpdateLayout();CaptureWindow(dialog,target);dialog.Close();return;}if(Environment.GetCommandLineArgs().Contains("--catalog-smoke")||Environment.GetCommandLineArgs().Contains("--updates-smoke")){var catalogWindow=new CatalogWindow(Window,store.Root,library.Games,delegate(Game g){}){IsSmoke=true};catalogWindow.Show();catalogWindow.UpdateLayout();if(Environment.GetCommandLineArgs().Contains("--updates-smoke"))catalogWindow.CaptureUpdateSmoke(target);else catalogWindow.CaptureSmoke(target);catalogWindow.Close();}else CaptureWindow(Window,target);}
+    public void Capture(string target){if(Environment.GetCommandLineArgs().Contains("--removal-smoke")){var dialog=new PortRemovalWindow(Window,new Game{Name="Port de exemplo",Executable=Path.Combine(store.Root,"Example.exe")},library.Games,store.Root,true);dialog.Show();dialog.UpdateLayout();CaptureWindow(dialog,target);dialog.Close();return;}if(Environment.GetCommandLineArgs().Contains("--self-update-smoke")){var dialog=new SelfUpdateWindow(Window,null,new PortRelease{Version="v1.6.4"},store.Root,true);dialog.Show();dialog.UpdateLayout();CaptureWindow(dialog,target);dialog.Close();return;}if(Environment.GetCommandLineArgs().Contains("--package-smoke")){var dialog=new PackageChoiceWindow(Window,"Exemplo de pacote",new[]{"Game.exe","Launcher.exe","bin\\\\Runtime.exe"},null);dialog.Show();dialog.UpdateLayout();CaptureWindow(dialog,target);dialog.Close();return;}if(Environment.GetCommandLineArgs().Contains("--content-smoke")){Game sample=library.Games.FirstOrDefault(GameContent.Supports)??new Game{Name="BLACK",Executable=Path.Combine(store.Root,"BLACK.exe")};var dialog=new GameContentWindow(Window,sample);dialog.Show();dialog.UpdateLayout();CaptureWindow(dialog,target);dialog.Close();return;}if(Environment.GetCommandLineArgs().Contains("--catalog-smoke")||Environment.GetCommandLineArgs().Contains("--updates-smoke")){var catalogWindow=new CatalogWindow(Window,store.Root,library.Games,delegate(Game g){}){IsSmoke=true};catalogWindow.Show();catalogWindow.UpdateLayout();if(Environment.GetCommandLineArgs().Contains("--updates-smoke"))catalogWindow.CaptureUpdateSmoke(target);else catalogWindow.CaptureSmoke(target);catalogWindow.Close();}else CaptureWindow(Window,target);}
     public void PreviewView(string mode,int size){
       Find<Button>(mode=="list"?"ListViewButton":"GridViewButton").RaiseEvent(new RoutedEventArgs(Button.ClickEvent));
       if(size>0)Find<Slider>("ViewSizeSlider").Value=mode=="list"?(size-48)/0.84:(size-140)/2.0;

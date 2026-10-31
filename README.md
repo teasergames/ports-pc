@@ -22,6 +22,7 @@ Reúna seus ports de console em um só launcher para **Windows 11 x64**. Organiz
 - **Baixar ports:** consultar os projetos e instalar os pacotes compatíveis a partir das fontes dos autores, quando houver integração disponível.
 - **Jogar e configurar:** abrir o port e seu launcher de configuração conforme o suporte de cada projeto.
 - **Personalizar o visual:** artworks locais ou busca online, com fundo do jogo selecionado.
+- **Excluir um port:** conferir as pastas e confirmar a remoção permanente dos arquivos, incluindo backups e cache identificados quando selecionados.
 - **Manter tudo atualizado:** verificar atualizações dos ports gerenciados e atualizar o próprio NEXUS, com reinício automático.
 
 ## Como instalar
@@ -64,6 +65,14 @@ Ao abrir, o NEXUS verifica se há uma nova versão estável no GitHub. Quando di
 Para os ports instalados pelo catálogo, use **Verificar atualizações** em **Baixar ports**. Quando houver uma versão compatível mais recente, o botão **Atualizar** ficará disponível. Feche o jogo antes de atualizar e siga as instruções do perfil; alguns projetos precisam repetir a preparação ou compilação.
 
 As novidades e alterações de cada versão ficam exclusivamente nas [Releases](https://github.com/teasergames/ports-pc/releases).
+
+## Como excluir um port
+
+Selecione o jogo e clique em **Excluir port**. Confira as pastas, a quantidade de arquivos e o tamanho apresentados, marque a confirmação e use **Excluir port e arquivos**. A exclusão é permanente, sem Lixeira: dumps, saves e configurações que estiverem **dentro das pastas confirmadas** também serão apagados. Faça um backup antes de continuar.
+
+Instalações gerenciadas usam sua pasta registrada. Para ports adicionados manualmente ou preparados por um assistente externo, escolha a pasta raiz dedicada ao port. Pastas protegidas, links e pastas compartilhadas com outro cadastro são bloqueados; feche o jogo e seu launcher antes de excluir. Arquivos em diretórios externos, como o dump de origem e saves em Documentos/AppData, permanecem no lugar. Para cadastros de atalhos `.lnk`, associe o executável real antes de excluir arquivos.
+
+Se quiser apenas tirar o jogo da lista e manter a instalação, use **Editar cadastro → Remover da coleção**.
 
 ## Seus dados e backups
 

@@ -22,6 +22,14 @@ Os testes usam dados isolados e fixtures. Não iniciam jogos ou compiladores de 
 
 O smoke test renderiza a janela, salva a imagem e encerra sem detecção ou consultas online. Aceita `--preview-view grid` ou `list`, `--preview-size`, `--catalog-smoke`, `--updates-smoke`, `--package-smoke`, `--content-smoke` e `--self-update-smoke`.
 
+## Exclusão de ports
+
+```powershell
+./tests/removal.ps1
+```
+
+Valida o bloqueio de junctions, preservando o destino externo e o port. Os testes internos também cobrem pastas compartilhadas/protegidas, arquivos bloqueados ou alterados após a confirmação, cópias manuais, backups com comprovante, cache de assistentes e falha parcial. Use `--removal-smoke` com `--smoke-test` para renderizar a confirmação sem excluir arquivos.
+
 ## Atualização do launcher
 
 ```powershell

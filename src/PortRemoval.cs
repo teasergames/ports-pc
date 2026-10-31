@@ -1,0 +1,49 @@
+using System;
+using System.IO;
+using System.Linq;
+using System.Collections.Generic;
+using System.Diagnostics;
+using System.Threading;
+using System.Web.Script.Serialization;
+namespace Nexus {
+  public sealed class RemovalPlan {
+    public Game Game;public string DataRoot;public List<Game> Library;
+    public string[] Roots;public Dictionary<string,string> Snapshot;public long Bytes;public int FileCount;
+  }
+  public static class PortRemoval {
+    static string Full(string path){return Path.GetFullPath(path).TrimEnd(Path.DirectorySeparatorChar,Path.AltDirectorySeparatorChar);}
+    public static bool Within(string root,string path){if(String.IsNullOrWhiteSpace(path))return false;string a=Full(root),b=Full(path);return b.Equals(a,StringComparison.OrdinalIgnoreCase)||b.StartsWith(a+Path.DirectorySeparatorChar,StringComparison.OrdinalIgnoreCase);}
+    static void NoLink(string path){if((File.GetAttributes(PortCatalog.FsPath(path))&FileAttributes.ReparsePoint)!=0)throw new IOException("A pasta contém links ou pontos de montagem. Nenhum arquivo foi excluído.");}
+    static string Display(string p){return p.StartsWith(@"\\?\UNC\")?@"\\"+p.Substring(8):p.StartsWith(@"\\?\")?p.Substring(4):p;}
+    static IEnumerable<string> References(Game game){return new[]{game.Executable,game.ConfigurationExecutable,game.WorkingDirectory,game.ManagedInstallationRoot,game.InstallerCacheRoot,game.UpdateBackupDirectory,game.SourceGameDirectory,game.GameContentSource,game.Artwork};}
+    public static void ValidateRoot(string root,Game game,IEnumerable<Game> library,string dataRoot){
+      if(!Path.IsPathRooted(root))throw new IOException("Escolha uma pasta com caminho absoluto.");root=Full(root);if(!Directory.Exists(PortCatalog.FsPath(root))||Path.GetDirectoryName(root)==null||root.Equals(Full(Path.GetPathRoot(root)),StringComparison.OrdinalIgnoreCase))throw new IOException("Escolha a pasta dedicada deste port, nunca a raiz de uma unidade.");SelfUpdater.NoLinks(root);
+      var special=new[]{Environment.SpecialFolder.UserProfile,Environment.SpecialFolder.DesktopDirectory,Environment.SpecialFolder.MyDocuments,Environment.SpecialFolder.MyPictures,Environment.SpecialFolder.MyMusic,Environment.SpecialFolder.MyVideos,Environment.SpecialFolder.ApplicationData,Environment.SpecialFolder.LocalApplicationData,Environment.SpecialFolder.CommonApplicationData,Environment.SpecialFolder.ProgramFiles,Environment.SpecialFolder.ProgramFilesX86};
+      var protectedPaths=special.Select(Environment.GetFolderPath).Where(p=>!String.IsNullOrEmpty(p)).Concat(new[]{Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.UserProfile),"Downloads"),dataRoot,Path.GetDirectoryName(SelfUpdater.CurrentExe),SelfUpdater.JobsRoot});
+      if(protectedPaths.Any(p=>Within(root,p))||Within(Environment.GetFolderPath(Environment.SpecialFolder.Windows),root)||new[]{"games","ports","steamapps","common","xboxgames","downloads","onedrive"}.Contains(Path.GetFileName(root),StringComparer.OrdinalIgnoreCase))throw new IOException("Essa pasta é compartilhada, protegida ou contém o NEXUS/seus dados. Escolha somente a pasta deste port.");
+      foreach(var other in library.Where(g=>g.Id!=game.Id))if(References(other).Any(p=>!String.IsNullOrWhiteSpace(p)&&Within(root,p)))throw new IOException("A pasta também é usada por outro cadastro: "+other.Name+". Os arquivos compartilhados serão preservados.");
+    }
+    static bool ReceiptMatches(string root,string repository){try{string file=Path.Combine(root,".nexus-install.json");NoLink(file);if(new FileInfo(file).Length>32*1024*1024)return false;var r=new JavaScriptSerializer{MaxJsonLength=32*1024*1024}.Deserialize<InstallReceipt>(File.ReadAllText(file));return r!=null&&r.repository==repository;}catch{return false;}}
+    public static RemovalPlan Build(Game game,IEnumerable<Game> library,string dataRoot,string manualRoot,bool includeBackups){
+      if(game==null||!Path.GetExtension(game.Executable).Equals(".exe",StringComparison.OrdinalIgnoreCase))throw new IOException("Para excluir arquivos de um atalho, selecione primeiro o executável real em Editar cadastro. Remover da coleção continua disponível.");
+      bool managed=game.InstallationKind!="Installer"&&UpdateManager.Managed(game);string main=managed?game.ManagedInstallationRoot:manualRoot;if(String.IsNullOrWhiteSpace(main))throw new IOException("Selecione a pasta raiz dedicada ao port.");main=Full(main);if(!Within(main,game.Executable))throw new IOException("A pasta precisa conter o executável cadastrado deste port.");
+      var list=library.ToList();var roots=new List<string>{main};
+      if(includeBackups&&managed){string prefix=Path.GetFileName(main)+".nexus-backup-";foreach(string folder in Directory.GetDirectories(Path.GetDirectoryName(main),prefix+"*")){Guid id;if(Guid.TryParseExact(Path.GetFileName(folder).Substring(prefix.Length),"N",out id)&&ReceiptMatches(folder,game.Repository))roots.Add(Full(folder));}}
+      if(includeBackups&&!String.IsNullOrWhiteSpace(game.InstallerCacheRoot)&&Directory.Exists(game.InstallerCacheRoot)&&ReceiptMatches(game.InstallerCacheRoot,game.Repository)&&!Within(main,game.InstallerCacheRoot))roots.Add(Full(game.InstallerCacheRoot));
+      roots=roots.Distinct(StringComparer.OrdinalIgnoreCase).ToList();if(roots.Any(a=>roots.Any(b=>a!=b&&Within(a,b))))throw new IOException("As pastas de exclusão se sobrepõem. Confira a instalação.");foreach(string root in roots)ValidateRoot(root,game,list,dataRoot);
+      var plan=new RemovalPlan{Game=game.Copy(),Library=list.Select(g=>g.Copy()).ToList(),DataRoot=dataRoot,Roots=roots.ToArray(),Snapshot=new Dictionary<string,string>(StringComparer.OrdinalIgnoreCase)};Snapshot(plan);EnsureClosed(plan.Roots,plan.Snapshot.Where(p=>p.Value!="directory").Select(p=>p.Key));return plan;
+    }
+    static void Snapshot(RemovalPlan plan){foreach(string root in plan.Roots){var pending=new Stack<string>();pending.Push(root);while(pending.Count>0){string dir=pending.Pop();NoLink(dir);plan.Snapshot.Add(dir,"directory");foreach(string file in Directory.GetFiles(PortCatalog.FsPath(dir))){NoLink(file);var info=new FileInfo(file);plan.Snapshot.Add(Display(file),info.Length+":"+info.LastWriteTimeUtc.Ticks);plan.Bytes+=info.Length;plan.FileCount++;}foreach(string child in Directory.GetDirectories(PortCatalog.FsPath(dir)))pending.Push(Display(child));}}}
+    public static void EnsureClosed(IEnumerable<string> roots,IEnumerable<string> files){var names=new HashSet<string>(files.Where(f=>Path.GetExtension(f).Equals(".exe",StringComparison.OrdinalIgnoreCase)).Select(Path.GetFileNameWithoutExtension),StringComparer.OrdinalIgnoreCase);foreach(var process in Process.GetProcesses())using(process){string path=null,name=null;try{path=process.MainModule.FileName;}catch{try{name=process.ProcessName;}catch{}}if(path!=null&&roots.Any(r=>Within(r,path))||path==null&&name!=null&&names.Contains(name))throw new IOException("Feche o jogo e o launcher deste port antes de excluir seus arquivos.");}}
+    public static void Revalidate(RemovalPlan plan){foreach(string root in plan.Roots)ValidateRoot(root,plan.Game,plan.Library,plan.DataRoot);var now=new RemovalPlan{Roots=plan.Roots,Snapshot=new Dictionary<string,string>(StringComparer.OrdinalIgnoreCase)};Snapshot(now);if(now.Snapshot.Count!=plan.Snapshot.Count||now.Snapshot.Any(p=>!plan.Snapshot.ContainsKey(p.Key)||plan.Snapshot[p.Key]!=p.Value))throw new IOException("Os arquivos mudaram desde a confirmação. Revise a pasta e confirme novamente.");EnsureClosed(plan.Roots,now.Snapshot.Where(p=>p.Value!="directory").Select(p=>p.Key));foreach(var file in now.Snapshot.Where(p=>p.Value!="directory"))using(var stream=new FileStream(PortCatalog.FsPath(file.Key),FileMode.Open,FileAccess.Read,FileShare.None)){} }
+    static void Erase(string directory,IProgress<InstallProgress> progress,ref int done,int total){
+      NoLink(directory);foreach(string child in Directory.GetDirectories(PortCatalog.FsPath(directory)))Erase(Display(child),progress,ref done,total);
+      foreach(string path in Directory.GetFiles(PortCatalog.FsPath(directory)).OrderBy(p=>Path.GetExtension(p).Equals(".exe",StringComparison.OrdinalIgnoreCase)||Path.GetFileName(p)==".nexus-install.json"?1:0)){NoLink(path);File.SetAttributes(path,File.GetAttributes(path)&~FileAttributes.ReadOnly);File.Delete(path);done++;if(progress!=null&&(done%50==0||done==total))progress.Report(new InstallProgress{Message="Excluindo arquivos do port… "+done+" / "+total,Percent=done*100.0/Math.Max(1,total)});}
+      File.SetAttributes(PortCatalog.FsPath(directory),File.GetAttributes(PortCatalog.FsPath(directory))&~FileAttributes.ReadOnly);Directory.Delete(PortCatalog.FsPath(directory),false);
+    }
+    public static void Execute(RemovalPlan plan,IProgress<InstallProgress> progress){
+      Revalidate(plan);var moved=new List<KeyValuePair<string,string>>();try{foreach(string root in plan.Roots){string staging=Path.Combine(Path.GetDirectoryName(root),".nexus-delete-"+Guid.NewGuid().ToString("N"));Directory.Move(PortCatalog.FsPath(root),PortCatalog.FsPath(staging));moved.Add(new KeyValuePair<string,string>(root,staging));}int done=0;foreach(var item in moved)Erase(item.Value,progress,ref done,plan.FileCount);
+      }catch(Exception ex){var remaining=new List<string>();foreach(var item in moved)if(Directory.Exists(PortCatalog.FsPath(item.Value))){try{if(!Directory.Exists(PortCatalog.FsPath(item.Key)))Directory.Move(PortCatalog.FsPath(item.Value),PortCatalog.FsPath(item.Key));remaining.Add(item.Key);}catch{remaining.Add(item.Value);}}throw new IOException("A exclusão não foi concluída. Alguns arquivos podem já ter sido removidos. O cadastro foi mantido para revisão. Feche programas que usem a pasta e tente novamente."+(remaining.Count>0?Environment.NewLine+String.Join(Environment.NewLine,remaining):""),ex);}
+    }
+  }
+}

@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Catálogo completo
+    url: https://github.com/teasergames/ports-pc/blob/main/CATALOG.md
+    about: Confira se o projeto já está no catálogo antes de sugerir.

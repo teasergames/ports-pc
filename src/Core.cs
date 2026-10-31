@@ -42,8 +42,12 @@ namespace Nexus {
     public string ViewMode {get;set;}
     public int GridSize {get;set;}
     public int ListSize {get;set;}
-    public Library() {Version=1;Games=new List<Game>();OnlineArtwork=true;AutoUpdateLauncher=true;ViewMode="grid";GridSize=220;ListSize=76;}
-    public void NormalizeView(){ViewMode=ViewMode=="list"?"list":"grid";GridSize=Math.Max(140,Math.Min(340,GridSize<=0?220:GridSize));ListSize=Math.Max(48,Math.Min(132,ListSize<=0?76:ListSize));}
+    // "favorites" (default), "name", "recent" or "platform".
+    public string SortMode {get;set;}
+    // Catalog profiles already shown to the user; anything else appears under "Novidades".
+    public List<string> SeenCatalogIds {get;set;}
+    public Library() {Version=1;Games=new List<Game>();OnlineArtwork=true;AutoUpdateLauncher=true;ViewMode="grid";GridSize=220;ListSize=76;SortMode="favorites";}
+    public void NormalizeView(){ViewMode=ViewMode=="list"?"list":"grid";GridSize=Math.Max(140,Math.Min(340,GridSize<=0?220:GridSize));ListSize=Math.Max(48,Math.Min(132,ListSize<=0?76:ListSize));if(!new[]{"favorites","name","recent","platform"}.Contains(SortMode))SortMode="favorites";}
     public string ApiKey() {
       if(String.IsNullOrEmpty(ProtectedApiKey))return "";
       try{return Encoding.UTF8.GetString(ProtectedData.Unprotect(Convert.FromBase64String(ProtectedApiKey),null,DataProtectionScope.CurrentUser));}catch{return "";}

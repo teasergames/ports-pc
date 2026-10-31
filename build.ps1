@@ -1,4 +1,4 @@
-param([switch]$Test)
+﻿param([switch]$Test)
 $ErrorActionPreference = 'Stop'
 $projectRoot = $PSScriptRoot
 $framework = Join-Path $env:WINDIR 'Microsoft.NET\Framework64\v4.0.30319'
@@ -7,7 +7,7 @@ if (!(Test-Path -LiteralPath $compiler)) { throw 'O compilador do .NET Framework
 $destination = Join-Path $projectRoot 'dist\Nexus'
 New-Item -ItemType Directory -Path $destination -Force | Out-Null
 $references = @('System.dll','System.Core.dll','System.Xaml.dll','System.Net.Http.dll','System.Web.Extensions.dll','System.Security.dll','System.Drawing.dll','System.Windows.Forms.dll','System.IO.Compression.dll','System.IO.Compression.FileSystem.dll','WPF\WindowsBase.dll','WPF\PresentationCore.dll','WPF\PresentationFramework.dll')
-$compilerArgs = @('/nologo','/target:winexe','/platform:x64','/optimize+','/utf8output',('/out:' + (Join-Path $destination 'Nexus.exe')),('/win32manifest:' + (Join-Path $projectRoot 'src\app.manifest')),('/win32icon:' + (Join-Path $projectRoot 'assets\nexus.ico')),('/resource:' + (Join-Path $projectRoot 'src\MainWindow.xaml') + ',Nexus.MainWindow.xaml'))
+$compilerArgs = @('/nologo','/target:winexe','/platform:x64','/optimize+','/utf8output',('/out:' + (Join-Path $destination 'Nexus.exe')),('/win32manifest:' + (Join-Path $projectRoot 'src\app.manifest')),('/win32icon:' + (Join-Path $projectRoot 'assets\nexus.ico')),('/resource:' + (Join-Path $projectRoot 'src\MainWindow.xaml') + ',Nexus.MainWindow.xaml'),('/resource:' + (Join-Path $projectRoot 'src\Theme.xaml') + ',Nexus.Theme.xaml'))
 foreach ($reference in $references) { $compilerArgs += '/reference:' + (Join-Path $framework $reference) }
 $compilerArgs += '/resource:' + (Join-Path $projectRoot 'assets\ports.json') + ',Nexus.ports.json'
 $compilerArgs += '/resource:' + (Join-Path $projectRoot 'assets\releases-cache.json') + ',Nexus.releases-cache.json'

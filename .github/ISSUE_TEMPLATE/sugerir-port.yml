@@ -1,0 +1,55 @@
+name: Sugerir um port ou recompilação
+description: Indique um projeto para Windows que ainda não está no catálogo do NEXUS.
+title: "[Sugestão] "
+labels: ["catálogo"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Obrigado pela sugestão! O NEXUS só cataloga projetos que publicam o próprio port e **não distribuem arquivos dos jogos**.
+  - type: input
+    id: game
+    attributes:
+      label: Jogo
+      placeholder: "Ex.: The Legend of Zelda: Majora's Mask"
+    validations:
+      required: true
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Plataforma de origem
+      options: ["PlayStation 4", "PlayStation 3", "PlayStation 2", "PlayStation", "PSP", "Xbox", "Xbox 360", "Xbox One", "Nintendo Switch", "Nintendo 64", "GameCube", "Wii", "Wii U", "Super Nintendo", "Game Boy", "Game Boy Advance", "Nintendo DS", "Dreamcast", "Outras"]
+    validations:
+      required: true
+  - type: dropdown
+    id: type
+    attributes:
+      label: Tipo de projeto
+      options: ["Port", "Recompilação", "Decompilação", "Reimplementação", "Compatibilidade", "Não sei"]
+    validations:
+      required: true
+  - type: input
+    id: repository
+    attributes:
+      label: Repositório ou página oficial
+      placeholder: "https://github.com/autor/projeto"
+    validations:
+      required: true
+  - type: input
+    id: asset
+    attributes:
+      label: Nome do pacote Windows na Release
+      description: O arquivo que o usuário baixa, por exemplo `Projeto-v1.2-windows-x64.zip`.
+      placeholder: "Projeto-v1.2-windows-x64.zip"
+  - type: textarea
+    id: setup
+    attributes:
+      label: Como preparar e jogar
+      description: Executável principal, launcher de configuração, versão do dump exigida e requisitos citados pelo autor.
+  - type: checkboxes
+    id: rules
+    attributes:
+      label: Confirmação
+      options:
+        - label: O projeto não distribui ROMs, ISOs, dumps, chaves ou firmware.
+          required: true

@@ -1,0 +1,36 @@
+name: Releases cache
+# Refreshes the release cache NEXUS uses when the GitHub API is unavailable or rate-limited.
+# The result goes to the catalog-data branch (one commit, replaced on every run), so main keeps a clean history.
+on:
+  schedule:
+    - cron: '17 6 * * *'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: releases-cache
+  cancel-in-progress: false
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Query GitHub Releases
+        shell: pwsh
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          $previous = 'assets/releases-cache.json'
+          git fetch origin catalog-data --depth 1 2>$null
+          if ($LASTEXITCODE -eq 0) { git show origin/catalog-data:releases-cache.json > previous-cache.json; if ($LASTEXITCODE -eq 0) { $previous = 'previous-cache.json' } }
+          ./tools/update-releases-cache.ps1 -Output out/releases-cache.json -Previous $previous
+      - name: Publish to catalog-data
+        shell: bash
+        run: |
+          cd out
+          git init -q -b catalog-data
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add releases-cache.json
+          git commit -q -m "Refresh releases cache $(date -u +%Y-%m-%dT%H:%MZ)"
+          git push -f "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git" catalog-data

@@ -12,6 +12,11 @@ jobs:
     runs-on: windows-latest
     steps:
       - uses: actions/checkout@v4
+      - name: Validate catalog schema
+        shell: pwsh
+        run: |
+          $catalog = Get-Content assets/ports.json -Raw -Encoding utf8
+          if (-not (Test-Json -Json $catalog -SchemaFile assets/ports.schema.json)) { throw 'assets/ports.json does not match assets/ports.schema.json' }
       - name: Build and test
         shell: pwsh
         run: ./build.ps1 -Test

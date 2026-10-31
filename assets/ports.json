@@ -12,7 +12,8 @@
     ],
     "Notes": "Configure sua pasta do jogo no launcher original antes de jogar.",
     "Platform": "PlayStation 4",
-    "Kind": "Port"
+    "Kind": "Port",
+    "ProjectType": "Port"
   },
   {
     "Id": "bloodborne",
@@ -28,7 +29,8 @@
     ],
     "Notes": "Pacote completo de launcher e engine. Não baixa o EXE de atualização isolado.",
     "Platform": "PlayStation 4",
-    "Kind": "Port"
+    "Kind": "Port",
+    "ProjectType": "Port"
   },
   {
     "Id": "sotc-opt",
@@ -45,7 +47,8 @@
     "Arguments": "--play",
     "Notes": "Fork otimizado identificado na sua instalação. É uma opção separada do projeto AjncSystem.",
     "Platform": "PlayStation 4",
-    "Kind": "Port"
+    "Kind": "Port",
+    "ProjectType": "Port"
   },
   {
     "Id": "sotc-original",
@@ -62,7 +65,8 @@
     "Arguments": "--play",
     "Notes": "Projeto original. Instalação separada do fork Oussama268.",
     "Platform": "PlayStation 4",
-    "Kind": "Port"
+    "Kind": "Port",
+    "ProjectType": "Port"
   },
   {
     "Id": "sotc-lucas",
@@ -71,6 +75,7 @@
     "Repository": "Lucas-blip-png/ShadowOfTheColossus-PC",
     "Platform": "PlayStation 4",
     "Kind": "Port · fork comunitário",
+    "ProjectType": "Port",
     "PackageKind": "Zip",
     "AssetPattern": "^SotC-PC\\.zip$",
     "PlayNames": [
@@ -96,7 +101,8 @@
     ],
     "Notes": "Usa a integração direta do NEXUS com o Python incluído no port e as opções salvas do launcher.",
     "Platform": "PlayStation 4",
-    "Kind": "Port"
+    "Kind": "Port",
+    "ProjectType": "Port"
   },
   {
     "Id": "driveclub",
@@ -111,7 +117,8 @@
     ],
     "Notes": "Jogar abre o launcher original. Ele precisa das pastas do jogo e da atualização 1.28.",
     "Platform": "PlayStation 4",
-    "Kind": "Port"
+    "Kind": "Port",
+    "ProjectType": "Recompilação"
   },
   {
     "Id": "infamous",
@@ -126,7 +133,8 @@
     ],
     "Notes": "Jogar usa a entrada direta; Configurar abre o launcher Qt do port.",
     "Platform": "PlayStation 4",
-    "Kind": "Port"
+    "Kind": "Port",
+    "ProjectType": "Port"
   },
   {
     "Id": "last-guardian",
@@ -141,7 +149,8 @@
     ],
     "Notes": "Configure a pasta do jogo no launcher original antes de jogar.",
     "Platform": "PlayStation 4",
-    "Kind": "Port"
+    "Kind": "Port",
+    "ProjectType": "Port"
   },
   {
     "Id": "ctr",
@@ -156,7 +165,8 @@
     ],
     "Notes": "Jogar abre o launcher original. Ele prepara a base e a atualização 1.21 do jogo.",
     "Platform": "PlayStation 4",
-    "Kind": "Port"
+    "Kind": "Port",
+    "ProjectType": "Port"
   },
   {
     "Id": "medievil",
@@ -172,7 +182,8 @@
     ],
     "Notes": "Jogar usa o executável direto; Configurar permite escolher seus arquivos do jogo.",
     "Platform": "PlayStation 4",
-    "Kind": "Port"
+    "Kind": "Port",
+    "ProjectType": "Port"
   },
   {
     "Id": "gt-sport",
@@ -187,7 +198,8 @@
     ],
     "Notes": "Jogar abre o RyGT. O primeiro Set up precisa de seus arquivos do jogo, update, módulos e fontes.",
     "Platform": "PlayStation 4",
-    "Kind": "Port"
+    "Kind": "Port",
+    "ProjectType": "Port"
   },
   {
     "Id": "the-order",
@@ -202,7 +214,8 @@
     ],
     "Notes": "Projeto em desenvolvimento. Configure seus arquivos pelo launcher original.",
     "Platform": "PlayStation 4",
-    "Kind": "Port"
+    "Kind": "Port",
+    "ProjectType": "Port"
   },
   {
     "Id": "opence",
@@ -210,6 +223,7 @@
     "Repository": "OpenCommunityEdition/OpenCE",
     "Platform": "Xbox",
     "Kind": "Port",
+    "ProjectType": "Port",
     "AssetPattern": "^halo-windows-release\\.zip$",
     "PlayNames": [
       "halo.exe"
@@ -225,6 +239,7 @@
     "Repository": "hedge-dev/UnleashedRecomp",
     "Platform": "Xbox 360",
     "Kind": "Recompilação",
+    "ProjectType": "Recompilação",
     "AssetPattern": "^UnleashedRecomp-Windows\\.zip$",
     "PlayNames": [
       "UnleashedRecomp.exe"
@@ -240,6 +255,7 @@
     "Repository": "sonsegajp/HWDER",
     "Platform": "Nintendo Switch",
     "Kind": "Recompilação",
+    "ProjectType": "Recompilação",
     "AssetPattern": "^HWDER-.*-win64\\.zip$",
     "PlayNames": [
       "hwder.exe"
@@ -255,6 +271,7 @@
     "Repository": "K0NL/B2recomp",
     "Platform": "Nintendo Switch",
     "Kind": "Builder / recompilação",
+    "ProjectType": "Recompilação",
     "AssetPattern": "^B2recomp-builder-.*\\.zip$",
     "PlayNames": [
       "B2recomp.exe"
@@ -272,6 +289,7 @@
     "Repository": "LucaPazienza/gravityrush_pc",
     "Platform": "PlayStation 4",
     "Kind": "Port nativo",
+    "ProjectType": "Port",
     "AssetPattern": "^GravityRush-PC-.*-Windows\\.zip$",
     "PlayNames": [
       "Gravity Rush.exe"
@@ -290,6 +308,7 @@
     "Repository": "HayatoG/gr2_pc",
     "Platform": "PlayStation 4",
     "Kind": "Port",
+    "ProjectType": "Port",
     "AssetPattern": "^gr2-windows-x86_64\\.zip$",
     "PlayNames": [
       "Play Gravity Rush 2.exe"
@@ -307,6 +326,7 @@
     "Repository": "mchughalex/skate3recomp",
     "Platform": "Xbox 360",
     "Kind": "Instalação integrada",
+    "ProjectType": "Recompilação",
     "AssetPattern": "^Skate3Recomp\\-Windows\\.zip$",
     "PlayNames": [],
     "ConfigNames": [],
@@ -322,6 +342,7 @@
     "Repository": "SunJaycy/GoldenEye-Recomp",
     "Platform": "Xbox 360",
     "Kind": "Recompilação",
+    "ProjectType": "Recompilação",
     "AssetPattern": "",
     "PlayNames": [],
     "ConfigNames": [],
@@ -335,6 +356,7 @@
     "Repository": "kaliszmichal/lasrecomp",
     "Platform": "Nintendo Switch",
     "Kind": "Recompilação",
+    "ProjectType": "Recompilação",
     "AssetPattern": "",
     "PlayNames": [],
     "ConfigNames": [],
@@ -348,6 +370,7 @@
     "Repository": "sp00nznet/simpsonsarcade-ps3",
     "Platform": "PlayStation 3",
     "Kind": "Recompilação",
+    "ProjectType": "Recompilação",
     "AssetPattern": "",
     "PlayNames": [],
     "ConfigNames": [],
@@ -361,6 +384,7 @@
     "Repository": "sp00nznet/tornado",
     "Platform": "PlayStation 3",
     "Kind": "Recompilação",
+    "ProjectType": "Recompilação",
     "AssetPattern": "",
     "PlayNames": [],
     "ConfigNames": [],
@@ -380,7 +404,8 @@
     ],
     "ConfigNames": [],
     "Notes": "Xbox original. Use Configurar jogo no NEXUS para selecionar sua ISO ou a pasta extraída com default.xbe e os demais arquivos. O NEXUS copia para assets com progresso e backup. No primeiro Jogar sem arquivos, o menu abre automaticamente. Opções gráficas dentro do jogo, F10.",
-    "Kind": "Recompilação"
+    "Kind": "Recompilação",
+    "ProjectType": "Recompilação"
   },
   {
     "Id": "darkwatch",
@@ -397,7 +422,8 @@
     ],
     "AllowPrerelease": false,
     "Notes": "Use Configurar jogo para abrir o launcher Darker Edition e importar sua ISO ou XISO do Xbox. Após importar e preparar shaders, Jogar usa Play Darkwatch.exe diretamente. Mantenha payload e GameData junto dos dois EXEs. Requer a revisão norte-americana suportada; o launcher verifica seus arquivos.",
-    "Kind": "Recompilação"
+    "Kind": "Recompilação",
+    "ProjectType": "Recompilação"
   },
   {
     "Id": "forza2",
@@ -413,6 +439,7 @@
     ],
     "Notes": "Configure seu ISO, perfil e gráficos no launcher. Na primeira execução e após alterar a resolução, use Play no launcher para preparar shaders. Depois, Jogar abre forza2.exe com os ajustes salvos. Projeto em desenvolvimento.",
     "Kind": "Recompilação",
+    "ProjectType": "Recompilação",
     "ArtworkTitle": "Forza Motorsport 2"
   },
   {
@@ -429,6 +456,7 @@
     ],
     "Notes": "Configure os dois discos da Ultimate Collection e o perfil no launcher original. Jogar abre fm3.exe com os arquivos TOML salvos. Prefira uma pasta curta de instalação para os arquivos dos discos.",
     "Kind": "Recompilação",
+    "ProjectType": "Recompilação",
     "ArtworkTitle": "Forza Motorsport 3"
   },
   {
@@ -445,6 +473,7 @@
     ],
     "Notes": "Prepare os dois discos USA Rev 1 e seu perfil em Configurar jogo. Jogar abre fm4.exe com os ajustes salvos. Algumas alterações de mods/120 FPS são aplicadas no Play do launcher: use-o ao mudar essas opções. Prefira uma pasta curta.",
     "Kind": "Recompilação",
+    "ProjectType": "Recompilação",
     "ArtworkTitle": "Forza Motorsport 4"
   },
   {
@@ -461,6 +490,7 @@
       "PinyonShiftLauncher.exe"
     ],
     "Kind": "Builder / recompilação",
+    "ProjectType": "Recompilação",
     "Notes": "Prévia jogável. Jogar e Configurar abrem o launcher original. Forneça seu disco e use Verify and build; a preparação pode levar 20–60 minutos e requer cerca de 30 GB. O NEXUS não inicia a compilação nem instala ferramentas automaticamente."
   },
   {
@@ -469,6 +499,7 @@
     "Repository": null,
     "SourceUrl": "https://almost-there-games.itch.io/azimuth",
     "ManualPackage": true,
+    "ManualPackageFile": "azimuth-windows*.zip",
     "Platform": "Xbox One",
     "ArtworkTitle": "Forza Horizon 2",
     "AssetPattern": "^azimuth-windows(?:\\s*\\(\\d+\\))?\\.zip$",
@@ -479,6 +510,7 @@
       "azimuth.exe"
     ],
     "Kind": "Camada de compatibilidade",
+    "ProjectType": "Compatibilidade",
     "Notes": "Distribuição oficial no itch.io. Use Baixar no site oficial e depois Importar ZIP e adicionar. Jogar e Configurar abrem o Azimuth: indique seus arquivos Xbox One 1.0.0.64 na página Game e inicie por ali. Suporta Storm Island; Fast & Furious é experimental. O NEXUS não redistribui o wrapper nem os jogos."
   },
   {
@@ -496,6 +528,7 @@
     "Notes": "Versão inicial. Configure seu dump PS4 e a atualização no launcher Knack.exe. Jogar usa a entrada direta com ajustes salvos. Requer AVX e Vulkan 1.3.",
     "AllowPrerelease": false,
     "Kind": "Port / runtime PS4",
+    "ProjectType": "Port",
     "ArtworkTitle": "Knack"
   },
   {
@@ -513,6 +546,7 @@
     "Notes": "ALPHA / RC: versão experimental, com preparação de shaders e cooperativo local. Configure o dump no launcher original antes de Jogar. A instalação de pré-release exige aceitação explícita.",
     "AllowPrerelease": true,
     "Kind": "Port / runtime PS4",
+    "ProjectType": "Port",
     "ArtworkTitle": "Knack II"
   },
   {
@@ -530,6 +564,7 @@
     "Notes": "Configure seu dump PS4 no launcher WipEout.exe; Jogar usa a entrada direta e opções salvas. Versão em desenvolvimento. Requer Vulkan 1.3.",
     "AllowPrerelease": false,
     "Kind": "Port / runtime PS4",
+    "ProjectType": "Port",
     "ArtworkTitle": "WipEout Omega Collection"
   },
   {
@@ -547,6 +582,7 @@
     "Notes": "Jogar e Configurar abrem o launcher original, que seleciona a região correta. Precisa dos seus arquivos PSN 01.00 extraídos; versões EU/US requerem sua licença RAP. O extrator opcional é um download separado. Requer Direct3D 12 e VC++ x64.",
     "AllowPrerelease": false,
     "Kind": "Recompilação",
+    "ProjectType": "Recompilação",
     "ArtworkTitle": "Resident Evil – Code: Veronica"
   },
   {
@@ -564,6 +600,7 @@
     "Notes": "ALPHA: Jogar e Configurar abrem o próprio dod3.exe. Forneça seu disco ou pacote PSN compatível e siga o importador original. Compatibilidade da campanha e desempenho ainda em desenvolvimento.",
     "AllowPrerelease": true,
     "Kind": "Recompilação",
+    "ProjectType": "Recompilação",
     "ArtworkTitle": "Drakengard 3"
   },
   {
@@ -581,6 +618,7 @@
     "Notes": "Primeira abertura importa seus discos. Configurar abre a página de preparação sem iniciar o jogo (--setup-only); outras opções ficam no menu interno. Requer CPU AVX. Mantenha a instalação em pasta gravável.",
     "AllowPrerelease": false,
     "Kind": "Recompilação",
+    "ProjectType": "Recompilação",
     "ArtworkTitle": "Lost Odyssey",
     "ConfigurationArguments": "--setup-only"
   },
@@ -597,6 +635,7 @@
     "Notes": "O assistente inicial prepara seus discos. Opções dentro do aplicativo. O NEXUS instala o pacote Direct3D 12 Windows, excluindo símbolos, macOS e versões nightly.",
     "AllowPrerelease": false,
     "Kind": "Recompilação",
+    "ProjectType": "Recompilação",
     "ArtworkTitle": "Blue Dragon (video game)"
   },
   {
@@ -612,6 +651,7 @@
     "Notes": "Projeto incompleto. Use Configurar jogo no NEXUS para selecionar sua pasta extraída com default.xex. Jogar passa o caminho e os parâmetros publicados no run.bat. Geometry Wars no menu da garagem pode causar falha.",
     "AllowPrerelease": false,
     "Kind": "Recompilação",
+    "ProjectType": "Recompilação",
     "ArtworkTitle": "Project Gotham Racing 4",
     "Arguments": "--execute_unclipped_draw_vs_on_cpu --gpu_plugin=\"xenos\" --fullscreen=false"
   },
@@ -628,6 +668,7 @@
     "Notes": "PRÉ-RELEASE experimental. Use Configurar jogo no NEXUS para indicar sua pasta de disco extraída com default.xbe. O NEXUS aplica o ambiente do script Windows e abre clx.exe diretamente. Opções gráficas e controles no menu do jogo.",
     "AllowPrerelease": true,
     "Kind": "Recompilação",
+    "ProjectType": "Recompilação",
     "ArtworkTitle": "Conker: Live & Reloaded"
   },
   {
@@ -645,6 +686,7 @@
     "Notes": "Build de teste. O próprio aplicativo prepara e recompila os arquivos do seu dump Switch na primeira abertura. Jogar e Configurar abrem a tela inicial. Requer AVX2 e Vulkan 1.3. Fonte separada do projeto kaliszmichal já listado.",
     "AllowPrerelease": true,
     "Kind": "Recompilação",
+    "ProjectType": "Recompilação",
     "ArtworkTitle": "The Legend of Zelda: Link's Awakening (2019 video game)"
   },
   {
@@ -657,6 +699,7 @@
     "ConfigNames": [],
     "ProjectOnly": true,
     "Kind": "Projeto / preparação manual",
+    "ProjectType": "Recompilação",
     "ArtworkTitle": "Super Mario Odyssey",
     "Notes": "Nenhum pacote Windows utilizável foi confirmado nas Releases consultadas. O projeto permanece listado para acompanhamento; não há download de jogo pronto que o NEXUS possa instalar automaticamente nesta consulta."
   },
@@ -670,6 +713,7 @@
     "ConfigNames": [],
     "ProjectOnly": false,
     "Kind": "Instalação integrada",
+    "ProjectType": "Port",
     "ArtworkTitle": "Burnout 3: Takedown",
     "Notes": "O NEXUS baixa e verifica o instalador oficial, abre o assistente do autor e cadastra o aplicativo que você selecionar ao concluir. Atualizações também usam esse assistente; ele controla os arquivos da instalação. Não é uma instalação silenciosa.",
     "DiscoverExecutable": true,
@@ -688,6 +732,7 @@
     "ArtworkTitle": "The Legend of Zelda: Majora's Mask",
     "ProjectOnly": false,
     "Kind": "Port / recompilação",
+    "ProjectType": "Recompilação",
     "Notes": "Selecione sua ROM norte-americana no menu inicial. Opções no próprio jogo; requer SSE4.1 e GPU Direct3D 12 ou Vulkan 1.2."
   },
   {
@@ -703,6 +748,7 @@
     "ArtworkTitle": "The Legend of Zelda: Twilight Princess",
     "ProjectOnly": false,
     "Kind": "Port / recompilação",
+    "ProjectType": "Recompilação",
     "Notes": "Abra o aplicativo e selecione sua cópia compatível de Twilight Princess. Preparação e opções dentro do port. O NEXUS escolhe o ZIP x86_64, excluindo ARM64 e o auxiliar de crash.",
     "Arguments": "",
     "ConfigurationArguments": ""
@@ -720,6 +766,7 @@
     "ArtworkTitle": "The Legend of Zelda: Ocarina of Time",
     "ProjectOnly": false,
     "Kind": "Port / recompilação",
+    "ProjectType": "Recompilação",
     "Notes": "Na primeira abertura, selecione sua ROM compatível de Ocarina of Time. Opções no menu interno, tecla Esc."
   },
   {
@@ -735,6 +782,7 @@
     "ArtworkTitle": "Mario Kart 64",
     "ProjectOnly": false,
     "Kind": "Port / recompilação",
+    "ProjectType": "Recompilação",
     "Notes": "Na primeira abertura, selecione sua ROM USA de Mario Kart 64 em formato .z64. Opções internas, tecla Esc."
   },
   {
@@ -750,6 +798,7 @@
     "ArtworkTitle": "The Legend of Zelda: Majora's Mask",
     "ProjectOnly": false,
     "Kind": "Port / recompilação",
+    "ProjectType": "Recompilação",
     "Notes": "Selecione sua ROM compatível de Majora’s Mask no aplicativo original. Menu de opções interno, tecla F1. É uma alternativa ao Zelda 64: Recompiled."
   },
   {
@@ -765,6 +814,7 @@
     "ArtworkTitle": "Star Fox 64",
     "ProjectOnly": false,
     "Kind": "Port / recompilação",
+    "ProjectType": "Recompilação",
     "Notes": "Selecione sua ROM USA 1.0 ou 1.1 de Star Fox 64 em formato .z64 na primeira abertura. Menu de opções interno, tecla F1."
   },
   {
@@ -780,6 +830,7 @@
     "ArtworkTitle": "Banjo-Kazooie",
     "ProjectOnly": false,
     "Kind": "Port / recompilação",
+    "ProjectType": "Recompilação",
     "Notes": "Selecione sua ROM norte-americana 1.0 de Banjo-Kazooie no menu inicial. Opções dentro do aplicativo; requer SSE4.1 e GPU Direct3D 12 ou Vulkan 1.2."
   },
   {
@@ -795,6 +846,7 @@
     "ArtworkTitle": "Super Mario 64",
     "ProjectOnly": false,
     "Kind": "Port / recompilação",
+    "ProjectType": "Recompilação",
     "Notes": "Selecione sua ROM compatível de Super Mario 64 no aplicativo. Opções internas, tecla Esc. O pacote Windows usa o nome Nautilus."
   },
   {
@@ -810,6 +862,7 @@
     "ArtworkTitle": "Donkey Kong 64",
     "ProjectOnly": false,
     "Kind": "Port / recompilação",
+    "ProjectType": "Recompilação",
     "Notes": "Selecione sua ROM USA de Donkey Kong 64 no menu inicial. Opções internas. Requer CPU AVX e GPU Direct3D 12 ou Vulkan 1.2."
   },
   {
@@ -823,6 +876,7 @@
     "ArtworkTitle": "Conker's Bad Fur Day",
     "ProjectOnly": false,
     "Kind": "Instalação integrada",
+    "ProjectType": "Port",
     "Notes": "O NEXUS baixa o pacote Windows da última Release e o instala aqui. Se houver mais de um aplicativo no ZIP, escolha o principal e o launcher de configuração na janela do NEXUS. Na primeira abertura, prepare seus próprios arquivos seguindo o assistente do port. A compatibilidade e a preparação variam conforme o projeto.",
     "DiscoverExecutable": true,
     "PackageKind": "Zip"
@@ -838,6 +892,7 @@
     "ArtworkTitle": "Pokémon Snap",
     "ProjectOnly": false,
     "Kind": "Instalação integrada",
+    "ProjectType": "Recompilação",
     "Notes": "O NEXUS baixa o pacote Windows da última Release e o instala aqui. Se houver mais de um aplicativo no ZIP, escolha o principal e o launcher de configuração na janela do NEXUS. Na primeira abertura, prepare seus próprios arquivos seguindo o assistente do port. A compatibilidade e a preparação variam conforme o projeto.",
     "DiscoverExecutable": true,
     "PackageKind": "Zip"
@@ -853,6 +908,7 @@
     "ArtworkTitle": "WWF No Mercy",
     "ProjectOnly": false,
     "Kind": "Instalação integrada",
+    "ProjectType": "Recompilação",
     "Notes": "Versão beta/experimental: exige aceitação antes de instalar. O NEXUS baixa o último pacote Windows compatível e cadastra o aplicativo. Se houver mais de um, escolha o principal dentro do NEXUS. Prepare seus próprios arquivos no aplicativo do autor. Outras plataformas podem ter Releases mais novas.",
     "DiscoverExecutable": true,
     "PackageKind": "Zip",
@@ -869,6 +925,7 @@
     "ArtworkTitle": "WWF WrestleMania 2000",
     "ProjectOnly": false,
     "Kind": "Instalação integrada",
+    "ProjectType": "Recompilação",
     "Notes": "Versão beta/experimental: exige aceitação antes de instalar. O NEXUS baixa o último pacote Windows compatível e cadastra o aplicativo. Se houver mais de um, escolha o principal dentro do NEXUS. Prepare seus próprios arquivos no aplicativo do autor. Outras plataformas podem ter Releases mais novas.",
     "DiscoverExecutable": true,
     "PackageKind": "Zip",
@@ -885,6 +942,7 @@
     "ArtworkTitle": "WCW vs. nWo: World Tour",
     "ProjectOnly": false,
     "Kind": "Instalação integrada",
+    "ProjectType": "Recompilação",
     "Notes": "Versão beta/experimental: exige aceitação antes de instalar. O NEXUS baixa o último pacote Windows compatível e cadastra o aplicativo. Se houver mais de um, escolha o principal dentro do NEXUS. Prepare seus próprios arquivos no aplicativo do autor. Outras plataformas podem ter Releases mais novas.",
     "DiscoverExecutable": true,
     "PackageKind": "Zip",
@@ -901,6 +959,7 @@
     "ArtworkTitle": "WCW/nWo Revenge",
     "ProjectOnly": false,
     "Kind": "Instalação integrada",
+    "ProjectType": "Recompilação",
     "Notes": "Versão beta/experimental: exige aceitação antes de instalar. O NEXUS baixa o último pacote Windows compatível e cadastra o aplicativo. Se houver mais de um, escolha o principal dentro do NEXUS. Prepare seus próprios arquivos no aplicativo do autor. Outras plataformas podem ter Releases mais novas.",
     "DiscoverExecutable": true,
     "PackageKind": "Zip",
@@ -917,6 +976,7 @@
     "ArtworkTitle": "Virtual Pro Wrestling 64",
     "ProjectOnly": false,
     "Kind": "Instalação integrada",
+    "ProjectType": "Recompilação",
     "Notes": "Versão beta/experimental: exige aceitação antes de instalar. O NEXUS baixa o último pacote Windows compatível e cadastra o aplicativo. Se houver mais de um, escolha o principal dentro do NEXUS. Prepare seus próprios arquivos no aplicativo do autor. Outras plataformas podem ter Releases mais novas.",
     "DiscoverExecutable": true,
     "PackageKind": "Zip",
@@ -933,6 +993,7 @@
     "ArtworkTitle": "WWE SmackDown vs. Raw 2007",
     "ProjectOnly": false,
     "Kind": "Instalação integrada",
+    "ProjectType": "Recompilação",
     "Notes": "O NEXUS baixa o pacote Windows da última Release e o instala aqui. Se houver mais de um aplicativo no ZIP, escolha o principal e o launcher de configuração na janela do NEXUS. Na primeira abertura, prepare seus próprios arquivos seguindo o assistente do port. A compatibilidade e a preparação variam conforme o projeto.",
     "DiscoverExecutable": true,
     "PackageKind": "Zip"
@@ -948,6 +1009,7 @@
     "ArtworkTitle": "WWE SmackDown vs. Raw 2008",
     "ProjectOnly": false,
     "Kind": "Instalação integrada",
+    "ProjectType": "Recompilação",
     "Notes": "O NEXUS baixa o pacote Windows da última Release e o instala aqui. Se houver mais de um aplicativo no ZIP, escolha o principal e o launcher de configuração na janela do NEXUS. Na primeira abertura, prepare seus próprios arquivos seguindo o assistente do port. A compatibilidade e a preparação variam conforme o projeto.",
     "DiscoverExecutable": true,
     "PackageKind": "Zip"
@@ -963,6 +1025,7 @@
     "ArtworkTitle": "WWE SmackDown vs. Raw 2009",
     "ProjectOnly": false,
     "Kind": "Instalação integrada",
+    "ProjectType": "Recompilação",
     "Notes": "O NEXUS baixa o pacote Windows da última Release e o instala aqui. Se houver mais de um aplicativo no ZIP, escolha o principal e o launcher de configuração na janela do NEXUS. Na primeira abertura, prepare seus próprios arquivos seguindo o assistente do port. A compatibilidade e a preparação variam conforme o projeto.",
     "DiscoverExecutable": true,
     "PackageKind": "Zip"
@@ -978,6 +1041,7 @@
     "ArtworkTitle": "WWE SmackDown vs. Raw 2010",
     "ProjectOnly": false,
     "Kind": "Instalação integrada",
+    "ProjectType": "Recompilação",
     "Notes": "O NEXUS baixa o pacote Windows da última Release e o instala aqui. Se houver mais de um aplicativo no ZIP, escolha o principal e o launcher de configuração na janela do NEXUS. Na primeira abertura, prepare seus próprios arquivos seguindo o assistente do port. A compatibilidade e a preparação variam conforme o projeto.",
     "DiscoverExecutable": true,
     "PackageKind": "Zip"
@@ -993,6 +1057,7 @@
     "ArtworkTitle": "WWE All Stars",
     "ProjectOnly": false,
     "Kind": "Instalação integrada",
+    "ProjectType": "Recompilação",
     "Notes": "O NEXUS baixa o pacote Windows da última Release e o instala aqui. Se houver mais de um aplicativo no ZIP, escolha o principal e o launcher de configuração na janela do NEXUS. Na primeira abertura, prepare seus próprios arquivos seguindo o assistente do port. A compatibilidade e a preparação variam conforme o projeto.",
     "DiscoverExecutable": true,
     "PackageKind": "Zip"
@@ -1008,6 +1073,7 @@
     "ArtworkTitle": "WWE '13",
     "ProjectOnly": false,
     "Kind": "Instalação integrada",
+    "ProjectType": "Recompilação",
     "Notes": "O NEXUS baixa o pacote Windows da última Release e o instala aqui. Se houver mais de um aplicativo no ZIP, escolha o principal e o launcher de configuração na janela do NEXUS. Na primeira abertura, prepare seus próprios arquivos seguindo o assistente do port. A compatibilidade e a preparação variam conforme o projeto.",
     "DiscoverExecutable": true,
     "PackageKind": "Zip"
@@ -1023,6 +1089,7 @@
     "ArtworkTitle": "WWE 2K14",
     "ProjectOnly": false,
     "Kind": "Instalação integrada",
+    "ProjectType": "Recompilação",
     "Notes": "O NEXUS baixa o pacote Windows da última Release e o instala aqui. Se houver mais de um aplicativo no ZIP, escolha o principal e o launcher de configuração na janela do NEXUS. Na primeira abertura, prepare seus próprios arquivos seguindo o assistente do port. A compatibilidade e a preparação variam conforme o projeto.",
     "DiscoverExecutable": true,
     "PackageKind": "Zip"
@@ -1038,6 +1105,7 @@
     "ArtworkTitle": "Def Jam: Fight for NY",
     "ProjectOnly": false,
     "Kind": "Instalação integrada",
+    "ProjectType": "Recompilação",
     "Notes": "O NEXUS baixa e verifica o instalador oficial, abre o assistente do autor e cadastra o aplicativo que você selecionar ao concluir. Atualizações também usam esse assistente; ele controla os arquivos da instalação. Não é uma instalação silenciosa.",
     "DiscoverExecutable": true,
     "PackageKind": "Installer"
@@ -1053,6 +1121,7 @@
     "ArtworkTitle": "Burnout Revenge",
     "ProjectOnly": false,
     "Kind": "Instalação integrada",
+    "ProjectType": "Port",
     "Notes": "O NEXUS baixa o instalador oficial e abre o assistente do autor. Ao concluir, escolha o aplicativo instalado para cadastrá-lo. Atualizações usam esse mesmo assistente.",
     "DiscoverExecutable": true,
     "PackageKind": "Installer",
@@ -1069,6 +1138,7 @@
     "ArtworkTitle": "FIFA Street",
     "ProjectOnly": false,
     "Kind": "Instalação integrada",
+    "ProjectType": "Port",
     "Notes": "O NEXUS baixa e verifica o instalador oficial, abre o assistente do autor e cadastra o aplicativo que você selecionar ao concluir. Atualizações também usam esse assistente; ele controla os arquivos da instalação. Não é uma instalação silenciosa.",
     "DiscoverExecutable": true,
     "PackageKind": "Installer"
@@ -1084,6 +1154,7 @@
     "ArtworkTitle": "Perfect Dark",
     "ProjectOnly": false,
     "Kind": "Instalação integrada",
+    "ProjectType": "Port",
     "Notes": "O NEXUS baixa o pacote Windows da última Release e o instala aqui. Se houver mais de um aplicativo no ZIP, escolha o principal e o launcher de configuração na janela do NEXUS. Na primeira abertura, prepare seus próprios arquivos seguindo o assistente do port. A compatibilidade e a preparação variam conforme o projeto.",
     "DiscoverExecutable": true,
     "PackageKind": "Zip"
@@ -1099,6 +1170,7 @@
     "ArtworkTitle": "Forza Motorsport 4",
     "ProjectOnly": false,
     "Kind": "Instalação integrada",
+    "ProjectType": "Recompilação",
     "Notes": "O NEXUS baixa o pacote Windows da última Release e o instala aqui. Se houver mais de um aplicativo no ZIP, escolha o principal e o launcher de configuração na janela do NEXUS. Na primeira abertura, prepare seus próprios arquivos seguindo o assistente do port. A compatibilidade e a preparação variam conforme o projeto.",
     "DiscoverExecutable": true,
     "PackageKind": "Zip"
@@ -1114,6 +1186,7 @@
     "ArtworkTitle": "The Darkness",
     "ProjectOnly": false,
     "Kind": "Instalação integrada",
+    "ProjectType": "Recompilação",
     "Notes": "Versão beta/experimental: exige aceitação antes de instalar. O NEXUS baixa o último pacote Windows compatível e cadastra o aplicativo. Se houver mais de um, escolha o principal dentro do NEXUS. Prepare seus próprios arquivos no aplicativo do autor. Outras plataformas podem ter Releases mais novas.",
     "DiscoverExecutable": true,
     "PackageKind": "Zip",
@@ -1130,6 +1203,7 @@
     "ArtworkTitle": "Dead Rising 2: Case Zero",
     "ProjectOnly": false,
     "Kind": "Instalação integrada",
+    "ProjectType": "Recompilação",
     "Notes": "O NEXUS baixa o pacote Windows da última Release e o instala aqui. Se houver mais de um aplicativo no ZIP, escolha o principal e o launcher de configuração na janela do NEXUS. Na primeira abertura, prepare seus próprios arquivos seguindo o assistente do port. A compatibilidade e a preparação variam conforme o projeto.",
     "DiscoverExecutable": true,
     "PackageKind": "Zip"
@@ -1145,6 +1219,7 @@
     "ArtworkTitle": "WET",
     "ProjectOnly": false,
     "Kind": "Instalação integrada",
+    "ProjectType": "Recompilação",
     "Notes": "O NEXUS baixa o pacote Windows da última Release e o instala aqui. Se houver mais de um aplicativo no ZIP, escolha o principal e o launcher de configuração na janela do NEXUS. Na primeira abertura, prepare seus próprios arquivos seguindo o assistente do port. A compatibilidade e a preparação variam conforme o projeto.",
     "DiscoverExecutable": true,
     "PackageKind": "Zip"
@@ -1160,6 +1235,7 @@
     "ArtworkTitle": "Army of Two",
     "ProjectOnly": false,
     "Kind": "Instalação integrada",
+    "ProjectType": "Recompilação",
     "Notes": "O NEXUS baixa o pacote Windows da última Release e o instala aqui. Se houver mais de um aplicativo no ZIP, escolha o principal e o launcher de configuração na janela do NEXUS. Na primeira abertura, prepare seus próprios arquivos seguindo o assistente do port. A compatibilidade e a preparação variam conforme o projeto.",
     "DiscoverExecutable": true,
     "PackageKind": "Zip"
@@ -1175,6 +1251,7 @@
     "ArtworkTitle": "Pilotwings 64",
     "ProjectOnly": false,
     "Kind": "Instalação integrada",
+    "ProjectType": "Recompilação",
     "Notes": "O NEXUS baixa o pacote Windows da última Release e o instala aqui. Se houver mais de um aplicativo no ZIP, escolha o principal e o launcher de configuração na janela do NEXUS. Na primeira abertura, prepare seus próprios arquivos seguindo o assistente do port. A compatibilidade e a preparação variam conforme o projeto.",
     "DiscoverExecutable": true,
     "PackageKind": "Zip"
@@ -1190,6 +1267,7 @@
     "ArtworkTitle": "Skate 2",
     "ProjectOnly": false,
     "Kind": "Instalação integrada",
+    "ProjectType": "Recompilação",
     "Notes": "O NEXUS baixa o pacote Windows da última Release e o instala aqui. Se houver mais de um aplicativo no ZIP, escolha o principal e o launcher de configuração na janela do NEXUS. Na primeira abertura, prepare seus próprios arquivos seguindo o assistente do port. A compatibilidade e a preparação variam conforme o projeto.",
     "DiscoverExecutable": true,
     "PackageKind": "Zip"
@@ -1205,6 +1283,7 @@
     "ArtworkTitle": "AeroGauge",
     "ProjectOnly": false,
     "Kind": "Instalação integrada",
+    "ProjectType": "Recompilação",
     "Notes": "O NEXUS baixa o pacote Windows da última Release e o instala aqui. Se houver mais de um aplicativo no ZIP, escolha o principal e o launcher de configuração na janela do NEXUS. Na primeira abertura, prepare seus próprios arquivos seguindo o assistente do port. A compatibilidade e a preparação variam conforme o projeto.",
     "DiscoverExecutable": true,
     "PackageKind": "Zip"
@@ -1220,6 +1299,7 @@
     "ArtworkTitle": "Def Jam Vendetta",
     "ProjectOnly": false,
     "Kind": "Instalação integrada",
+    "ProjectType": "Recompilação",
     "Notes": "O NEXUS baixa o pacote Windows da última Release e o instala aqui. Se houver mais de um aplicativo no ZIP, escolha o principal e o launcher de configuração na janela do NEXUS. Na primeira abertura, prepare seus próprios arquivos seguindo o assistente do port. A compatibilidade e a preparação variam conforme o projeto.",
     "DiscoverExecutable": true,
     "PackageKind": "Zip"
@@ -1235,6 +1315,7 @@
     "ArtworkTitle": "BattleTanx: Global Assault",
     "ProjectOnly": false,
     "Kind": "Instalação integrada",
+    "ProjectType": "Port",
     "Notes": "O NEXUS baixa o pacote Windows da última Release e o instala aqui. Se houver mais de um aplicativo no ZIP, escolha o principal e o launcher de configuração na janela do NEXUS. Na primeira abertura, prepare seus próprios arquivos seguindo o assistente do port. A compatibilidade e a preparação variam conforme o projeto.",
     "DiscoverExecutable": true,
     "PackageKind": "Zip"
@@ -1250,6 +1331,7 @@
     "ArtworkTitle": "International Superstar Soccer 2000",
     "ProjectOnly": false,
     "Kind": "Instalação integrada",
+    "ProjectType": "Recompilação",
     "Notes": "O NEXUS baixa o pacote Windows da última Release e o instala aqui. Se houver mais de um aplicativo no ZIP, escolha o principal e o launcher de configuração na janela do NEXUS. Na primeira abertura, prepare seus próprios arquivos seguindo o assistente do port. A compatibilidade e a preparação variam conforme o projeto.",
     "DiscoverExecutable": true,
     "PackageKind": "Zip"
@@ -1265,6 +1347,7 @@
     "ArtworkTitle": "WWE 2K16",
     "ProjectOnly": false,
     "Kind": "Instalação integrada",
+    "ProjectType": "Port",
     "Notes": "O NEXUS baixa o pacote Windows da última Release e o instala aqui. Se houver mais de um aplicativo no ZIP, escolha o principal e o launcher de configuração na janela do NEXUS. Na primeira abertura, prepare seus próprios arquivos seguindo o assistente do port. A compatibilidade e a preparação variam conforme o projeto.",
     "DiscoverExecutable": true,
     "PackageKind": "Zip"
@@ -1280,6 +1363,7 @@
     "ArtworkTitle": "Blast Corps",
     "ProjectOnly": false,
     "Kind": "Instalação integrada",
+    "ProjectType": "Port",
     "Notes": "O NEXUS baixa o pacote Windows da última Release e o instala aqui. Se houver mais de um aplicativo no ZIP, escolha o principal e o launcher de configuração na janela do NEXUS. Na primeira abertura, prepare seus próprios arquivos seguindo o assistente do port. A compatibilidade e a preparação variam conforme o projeto.",
     "DiscoverExecutable": true,
     "PackageKind": "Zip"
@@ -1295,6 +1379,7 @@
     "ArtworkTitle": "Tetrisphere",
     "ProjectOnly": false,
     "Kind": "Instalação integrada",
+    "ProjectType": "Port",
     "Notes": "O NEXUS baixa o pacote Windows da última Release e o instala aqui. Se houver mais de um aplicativo no ZIP, escolha o principal e o launcher de configuração na janela do NEXUS. Na primeira abertura, prepare seus próprios arquivos seguindo o assistente do port. A compatibilidade e a preparação variam conforme o projeto.",
     "DiscoverExecutable": true,
     "PackageKind": "Zip"
@@ -1314,6 +1399,7 @@
     "ArtworkTitle": "The Legend of Zelda: The Wind Waker HD",
     "ProjectOnly": false,
     "Kind": "Port / recompilação",
+    "ProjectType": "Recompilação",
     "Notes": "Primeira abertura prepara seus arquivos Wii U USA/EUR versão base 0, usando pasta extraída, WUA ou WUD/WUX com suas chaves. Configurar reabre o assistente original (--setup). Requer Vulkan; o assistente pode baixar o compilador do projeto.",
     "Arguments": "",
     "ConfigurationArguments": "--setup"
@@ -1329,6 +1415,7 @@
     "ArtworkTitle": "Castlevania: Symphony of the Night",
     "ProjectOnly": false,
     "Kind": "Instalação integrada",
+    "ProjectType": "Recompilação",
     "Notes": "O NEXUS baixa o pacote Windows da última Release e o instala aqui. Se houver mais de um aplicativo no ZIP, escolha o principal e o launcher de configuração na janela do NEXUS. Na primeira abertura, prepare seus próprios arquivos seguindo o assistente do port. A compatibilidade e a preparação variam conforme o projeto.",
     "DiscoverExecutable": true,
     "PackageKind": "Zip"
@@ -1344,6 +1431,7 @@
     "ArtworkTitle": "Silent Hill",
     "ProjectOnly": false,
     "Kind": "Instalação integrada",
+    "ProjectType": "Decompilação",
     "Notes": "O NEXUS baixa o pacote Windows da última Release e o instala aqui. Se houver mais de um aplicativo no ZIP, escolha o principal e o launcher de configuração na janela do NEXUS. Na primeira abertura, prepare seus próprios arquivos seguindo o assistente do port. A compatibilidade e a preparação variam conforme o projeto.",
     "DiscoverExecutable": true,
     "PackageKind": "Zip"
@@ -1359,6 +1447,7 @@
     "ArtworkTitle": "Dante's Inferno",
     "ProjectOnly": false,
     "Kind": "Instalação integrada",
+    "ProjectType": "Recompilação",
     "Notes": "O NEXUS baixa o pacote Windows da última Release e o instala aqui. Se houver mais de um aplicativo no ZIP, escolha o principal e o launcher de configuração na janela do NEXUS. Na primeira abertura, prepare seus próprios arquivos seguindo o assistente do port. A compatibilidade e a preparação variam conforme o projeto.",
     "DiscoverExecutable": true,
     "PackageKind": "Zip"
@@ -1374,6 +1463,7 @@
     "ArtworkTitle": "Dragon Ball Z: Budokai Tenkaichi 3",
     "ProjectOnly": false,
     "Kind": "Instalação integrada",
+    "ProjectType": "Decompilação",
     "Notes": "O NEXUS baixa o pacote Windows da última Release e o instala aqui. Se houver mais de um aplicativo no ZIP, escolha o principal e o launcher de configuração na janela do NEXUS. Na primeira abertura, prepare seus próprios arquivos seguindo o assistente do port. A compatibilidade e a preparação variam conforme o projeto.",
     "DiscoverExecutable": true,
     "PackageKind": "Zip"
@@ -1393,6 +1483,7 @@
     "ArtworkTitle": "Fable II",
     "ProjectOnly": false,
     "Kind": "Port / recompilação",
+    "ProjectType": "Recompilação",
     "Notes": "Antes de Jogar, use Configurar jogo: Fable2Launcher.exe importa sua ISO GOTY USA/EU compatível e salva as opções. Jogar abre fable_2.exe diretamente. Saves seguem as regras do projeto original."
   },
   {
@@ -1406,6 +1497,7 @@
     "ArtworkTitle": "Monster Hunter Portable 3rd",
     "ProjectOnly": false,
     "Kind": "Instalação integrada",
+    "ProjectType": "Port",
     "Notes": "O NEXUS baixa o pacote Windows da última Release e o instala aqui. Se houver mais de um aplicativo no ZIP, escolha o principal e o launcher de configuração na janela do NEXUS. Na primeira abertura, prepare seus próprios arquivos seguindo o assistente do port. A compatibilidade e a preparação variam conforme o projeto.",
     "DiscoverExecutable": true,
     "PackageKind": "Zip"
@@ -1421,6 +1513,7 @@
     "ArtworkTitle": "Super Smash Bros.",
     "ProjectOnly": false,
     "Kind": "Instalação integrada",
+    "ProjectType": "Port",
     "Notes": "O NEXUS baixa o pacote Windows da última Release e o instala aqui. Se houver mais de um aplicativo no ZIP, escolha o principal e o launcher de configuração na janela do NEXUS. Na primeira abertura, prepare seus próprios arquivos seguindo o assistente do port. A compatibilidade e a preparação variam conforme o projeto.",
     "DiscoverExecutable": true,
     "PackageKind": "Zip"
@@ -1436,6 +1529,7 @@
     "ArtworkTitle": "Spider-Man: Edge of Time",
     "ProjectOnly": false,
     "Kind": "Instalação integrada",
+    "ProjectType": "Recompilação",
     "Notes": "O NEXUS baixa o pacote Windows da última Release e o instala aqui. Se houver mais de um aplicativo no ZIP, escolha o principal e o launcher de configuração na janela do NEXUS. Na primeira abertura, prepare seus próprios arquivos seguindo o assistente do port. A compatibilidade e a preparação variam conforme o projeto.",
     "DiscoverExecutable": true,
     "PackageKind": "Zip"
@@ -1451,6 +1545,7 @@
     "ArtworkTitle": "The Legend of Zelda: Skyward Sword",
     "ProjectOnly": false,
     "Kind": "Instalação integrada",
+    "ProjectType": "Recompilação",
     "Notes": "O NEXUS baixa o pacote Windows da última Release e o instala aqui. Se houver mais de um aplicativo no ZIP, escolha o principal e o launcher de configuração na janela do NEXUS. Na primeira abertura, prepare seus próprios arquivos seguindo o assistente do port. A compatibilidade e a preparação variam conforme o projeto.",
     "DiscoverExecutable": true,
     "PackageKind": "Zip"
@@ -1466,6 +1561,7 @@
     "ArtworkTitle": "Shin Megami Tensei III: Nocturne",
     "ProjectOnly": false,
     "Kind": "Instalação integrada",
+    "ProjectType": "Recompilação",
     "Notes": "O NEXUS baixa o pacote Windows da última Release e o instala aqui. Se houver mais de um aplicativo no ZIP, escolha o principal e o launcher de configuração na janela do NEXUS. Na primeira abertura, prepare seus próprios arquivos seguindo o assistente do port. A compatibilidade e a preparação variam conforme o projeto.",
     "DiscoverExecutable": true,
     "PackageKind": "Zip"
@@ -1481,6 +1577,7 @@
     "ArtworkTitle": "The Simpsons Game",
     "ProjectOnly": false,
     "Kind": "Instalação integrada",
+    "ProjectType": "Recompilação",
     "Notes": "O NEXUS baixa o pacote Windows da última Release e o instala aqui. Se houver mais de um aplicativo no ZIP, escolha o principal e o launcher de configuração na janela do NEXUS. Na primeira abertura, prepare seus próprios arquivos seguindo o assistente do port. A compatibilidade e a preparação variam conforme o projeto.",
     "DiscoverExecutable": true,
     "PackageKind": "Zip"
@@ -1500,6 +1597,7 @@
     "ArtworkTitle": "Super Mario Strikers",
     "ProjectOnly": false,
     "Kind": "Port / recompilação",
+    "ProjectType": "Recompilação",
     "Notes": "Jogar abre strikers.exe e Configurar abre strikers-settings.exe. Prepare sua cópia compatível de Super Mario Strikers conforme o projeto original.",
     "Arguments": "",
     "ConfigurationArguments": ""
@@ -1515,6 +1613,7 @@
     "ArtworkTitle": "GoldenEye 007",
     "ProjectOnly": false,
     "Kind": "Instalação integrada",
+    "ProjectType": "Port",
     "Notes": "Versão beta/experimental: exige aceitação antes de instalar. O NEXUS baixa o último pacote Windows compatível e cadastra o aplicativo. Se houver mais de um, escolha o principal dentro do NEXUS. Prepare seus próprios arquivos no aplicativo do autor. Outras plataformas podem ter Releases mais novas.",
     "DiscoverExecutable": true,
     "PackageKind": "Zip",
@@ -1531,6 +1630,7 @@
     "ArtworkTitle": "Silent Hill: Downpour",
     "ProjectOnly": false,
     "Kind": "Instalação integrada",
+    "ProjectType": "Recompilação",
     "Notes": "O NEXUS baixa o pacote Windows da última Release e o instala aqui. Se houver mais de um aplicativo no ZIP, escolha o principal e o launcher de configuração na janela do NEXUS. Na primeira abertura, prepare seus próprios arquivos seguindo o assistente do port. A compatibilidade e a preparação variam conforme o projeto.",
     "DiscoverExecutable": true,
     "PackageKind": "Zip"
@@ -1546,6 +1646,7 @@
     "ArtworkTitle": "Dinosaur Planet",
     "ProjectOnly": false,
     "Kind": "Instalação integrada",
+    "ProjectType": "Recompilação",
     "Notes": "O NEXUS baixa o pacote Windows da última Release e o instala aqui. Se houver mais de um aplicativo no ZIP, escolha o principal e o launcher de configuração na janela do NEXUS. Na primeira abertura, prepare seus próprios arquivos seguindo o assistente do port. A compatibilidade e a preparação variam conforme o projeto.",
     "DiscoverExecutable": true,
     "PackageKind": "Zip"
@@ -1561,6 +1662,7 @@
     "ArtworkTitle": "Bomberman 64",
     "ProjectOnly": false,
     "Kind": "Instalação integrada",
+    "ProjectType": "Recompilação",
     "Notes": "O NEXUS baixa o pacote Windows da última Release e o instala aqui. Se houver mais de um aplicativo no ZIP, escolha o principal e o launcher de configuração na janela do NEXUS. Na primeira abertura, prepare seus próprios arquivos seguindo o assistente do port. A compatibilidade e a preparação variam conforme o projeto.",
     "DiscoverExecutable": true,
     "PackageKind": "Zip"
@@ -1576,6 +1678,7 @@
     "ArtworkTitle": "F-Zero X",
     "ProjectOnly": false,
     "Kind": "Instalação integrada",
+    "ProjectType": "Port",
     "Notes": "O NEXUS baixa o pacote Windows da última Release e o instala aqui. Se houver mais de um aplicativo no ZIP, escolha o principal e o launcher de configuração na janela do NEXUS. Na primeira abertura, prepare seus próprios arquivos seguindo o assistente do port. A compatibilidade e a preparação variam conforme o projeto.",
     "DiscoverExecutable": true,
     "PackageKind": "Zip"
@@ -1591,6 +1694,7 @@
     "ArtworkTitle": "Quest 64",
     "ProjectOnly": false,
     "Kind": "Instalação integrada",
+    "ProjectType": "Recompilação",
     "Notes": "O NEXUS baixa o pacote Windows da última Release e o instala aqui. Se houver mais de um aplicativo no ZIP, escolha o principal e o launcher de configuração na janela do NEXUS. Na primeira abertura, prepare seus próprios arquivos seguindo o assistente do port. A compatibilidade e a preparação variam conforme o projeto.",
     "DiscoverExecutable": true,
     "PackageKind": "Zip"
@@ -1606,6 +1710,7 @@
     "ArtworkTitle": "Condemned 2: Bloodshot",
     "ProjectOnly": false,
     "Kind": "Instalação integrada",
+    "ProjectType": "Recompilação",
     "Notes": "O NEXUS baixa o pacote Windows da última Release e o instala aqui. Se houver mais de um aplicativo no ZIP, escolha o principal e o launcher de configuração na janela do NEXUS. Na primeira abertura, prepare seus próprios arquivos seguindo o assistente do port. A compatibilidade e a preparação variam conforme o projeto.",
     "DiscoverExecutable": true,
     "PackageKind": "Zip"
@@ -1621,6 +1726,7 @@
     "ArtworkTitle": "Viva Piñata: Trouble in Paradise",
     "ProjectOnly": false,
     "Kind": "Instalação integrada",
+    "ProjectType": "Recompilação",
     "Notes": "O NEXUS baixa o pacote Windows da última Release e o instala aqui. Se houver mais de um aplicativo no ZIP, escolha o principal e o launcher de configuração na janela do NEXUS. Na primeira abertura, prepare seus próprios arquivos seguindo o assistente do port. A compatibilidade e a preparação variam conforme o projeto.",
     "DiscoverExecutable": true,
     "PackageKind": "Zip"
@@ -1636,6 +1742,7 @@
     "ArtworkTitle": "Peter Jackson's King Kong",
     "ProjectOnly": false,
     "Kind": "Instalação integrada",
+    "ProjectType": "Recompilação",
     "Notes": "O NEXUS baixa o pacote Windows da última Release e o instala aqui. Se houver mais de um aplicativo no ZIP, escolha o principal e o launcher de configuração na janela do NEXUS. Na primeira abertura, prepare seus próprios arquivos seguindo o assistente do port. A compatibilidade e a preparação variam conforme o projeto.",
     "DiscoverExecutable": true,
     "PackageKind": "Zip"
@@ -1651,6 +1758,7 @@
     "ArtworkTitle": "Mega Man X",
     "ProjectOnly": false,
     "Kind": "Instalação integrada",
+    "ProjectType": "Recompilação",
     "Notes": "O NEXUS baixa o pacote Windows da última Release e o instala aqui. Se houver mais de um aplicativo no ZIP, escolha o principal e o launcher de configuração na janela do NEXUS. Na primeira abertura, prepare seus próprios arquivos seguindo o assistente do port. A compatibilidade e a preparação variam conforme o projeto.",
     "DiscoverExecutable": true,
     "PackageKind": "Zip"
@@ -1666,6 +1774,7 @@
     "ArtworkTitle": "Naruto: Rise of a Ninja",
     "ProjectOnly": false,
     "Kind": "Instalação integrada",
+    "ProjectType": "Recompilação",
     "Notes": "O NEXUS baixa o pacote Windows da última Release e o instala aqui. Se houver mais de um aplicativo no ZIP, escolha o principal e o launcher de configuração na janela do NEXUS. Na primeira abertura, prepare seus próprios arquivos seguindo o assistente do port. A compatibilidade e a preparação variam conforme o projeto.",
     "DiscoverExecutable": true,
     "PackageKind": "Zip"
@@ -1681,6 +1790,7 @@
     "ArtworkTitle": "Banjo-Kazooie: Nuts & Bolts",
     "ProjectOnly": false,
     "Kind": "Instalação integrada",
+    "ProjectType": "Port",
     "Notes": "O NEXUS baixa o pacote Windows da última Release e o instala aqui. Se houver mais de um aplicativo no ZIP, escolha o principal e o launcher de configuração na janela do NEXUS. Na primeira abertura, prepare seus próprios arquivos seguindo o assistente do port. A compatibilidade e a preparação variam conforme o projeto.",
     "DiscoverExecutable": true,
     "PackageKind": "Zip"
@@ -1696,6 +1806,7 @@
     "ArtworkTitle": "Deadly Premonition",
     "ProjectOnly": false,
     "Kind": "Instalação integrada",
+    "ProjectType": "Recompilação",
     "Notes": "O NEXUS baixa o pacote Windows da última Release e o instala aqui. Se houver mais de um aplicativo no ZIP, escolha o principal e o launcher de configuração na janela do NEXUS. Na primeira abertura, prepare seus próprios arquivos seguindo o assistente do port. A compatibilidade e a preparação variam conforme o projeto.",
     "DiscoverExecutable": true,
     "PackageKind": "Zip"
@@ -1711,6 +1822,7 @@
     "ArtworkTitle": "Harvest Moon 64",
     "ProjectOnly": false,
     "Kind": "Instalação integrada",
+    "ProjectType": "Recompilação",
     "Notes": "O NEXUS baixa o pacote Windows da última Release e o instala aqui. Se houver mais de um aplicativo no ZIP, escolha o principal e o launcher de configuração na janela do NEXUS. Na primeira abertura, prepare seus próprios arquivos seguindo o assistente do port. A compatibilidade e a preparação variam conforme o projeto.",
     "DiscoverExecutable": true,
     "PackageKind": "Zip"
@@ -1726,6 +1838,7 @@
     "ArtworkTitle": "Midnight Club: Los Angeles",
     "ProjectOnly": false,
     "Kind": "Instalação integrada",
+    "ProjectType": "Recompilação",
     "Notes": "O NEXUS baixa o pacote Windows da última Release e o instala aqui. Se houver mais de um aplicativo no ZIP, escolha o principal e o launcher de configuração na janela do NEXUS. Na primeira abertura, prepare seus próprios arquivos seguindo o assistente do port. A compatibilidade e a preparação variam conforme o projeto.",
     "DiscoverExecutable": true,
     "PackageKind": "Zip"
@@ -1741,6 +1854,7 @@
     "ArtworkTitle": "DoDonPachi SaiDaiOuJou",
     "ProjectOnly": false,
     "Kind": "Instalação integrada",
+    "ProjectType": "Recompilação",
     "Notes": "O NEXUS baixa o pacote Windows da última Release e o instala aqui. Se houver mais de um aplicativo no ZIP, escolha o principal e o launcher de configuração na janela do NEXUS. Na primeira abertura, prepare seus próprios arquivos seguindo o assistente do port. A compatibilidade e a preparação variam conforme o projeto.",
     "DiscoverExecutable": true,
     "PackageKind": "Zip"
@@ -1756,6 +1870,7 @@
     "ArtworkTitle": "Eternal Sonata",
     "ProjectOnly": false,
     "Kind": "Instalação integrada",
+    "ProjectType": "Port",
     "Notes": "O NEXUS baixa o pacote Windows da última Release e o instala aqui. Se houver mais de um aplicativo no ZIP, escolha o principal e o launcher de configuração na janela do NEXUS. Na primeira abertura, prepare seus próprios arquivos seguindo o assistente do port. A compatibilidade e a preparação variam conforme o projeto.",
     "DiscoverExecutable": true,
     "PackageKind": "Zip"
@@ -1771,6 +1886,7 @@
     "ArtworkTitle": "Castlevania: Legacy of Darkness",
     "ProjectOnly": false,
     "Kind": "Instalação integrada",
+    "ProjectType": "Recompilação",
     "Notes": "O NEXUS baixa o pacote Windows da última Release e o instala aqui. Se houver mais de um aplicativo no ZIP, escolha o principal e o launcher de configuração na janela do NEXUS. Na primeira abertura, prepare seus próprios arquivos seguindo o assistente do port. A compatibilidade e a preparação variam conforme o projeto.",
     "DiscoverExecutable": true,
     "PackageKind": "Zip"
@@ -1786,6 +1902,7 @@
     "ArtworkTitle": "Super Mario World",
     "ProjectOnly": false,
     "Kind": "Instalação integrada",
+    "ProjectType": "Recompilação",
     "Notes": "O NEXUS baixa o pacote Windows da última Release e o instala aqui. Se houver mais de um aplicativo no ZIP, escolha o principal e o launcher de configuração na janela do NEXUS. Na primeira abertura, prepare seus próprios arquivos seguindo o assistente do port. A compatibilidade e a preparação variam conforme o projeto.",
     "DiscoverExecutable": true,
     "PackageKind": "Zip"
@@ -1801,6 +1918,7 @@
     "ArtworkTitle": "Dragon Ball Z: Budokai",
     "ProjectOnly": false,
     "Kind": "Instalação integrada",
+    "ProjectType": "Recompilação",
     "Notes": "O NEXUS baixa o executável Windows oficial e o adiciona à biblioteca. A preparação de seus próprios arquivos e as opções ficam no aplicativo do autor. Atualizações são baixadas pelo NEXUS com cópia de segurança da instalação anterior.",
     "DiscoverExecutable": true,
     "PackageKind": "Executable"
@@ -1816,6 +1934,7 @@
     "ArtworkTitle": "Call of Duty: Finest Hour",
     "ProjectOnly": true,
     "Kind": "Preparação manual",
+    "ProjectType": "Port",
     "Notes": "A instalação completa usa um EXE, um índice e várias partes .data.NNN. A Release latest contém apenas o atualizador. Esse pacote multipartes ainda precisa de integração específica."
   },
   {
@@ -1829,6 +1948,7 @@
     "ArtworkTitle": "Gears of War: Judgment",
     "ProjectOnly": false,
     "Kind": "Instalação integrada",
+    "ProjectType": "Recompilação",
     "Notes": "O NEXUS baixa o pacote Windows da última Release e o instala aqui. Se houver mais de um aplicativo no ZIP, escolha o principal e o launcher de configuração na janela do NEXUS. Na primeira abertura, prepare seus próprios arquivos seguindo o assistente do port. A compatibilidade e a preparação variam conforme o projeto.",
     "DiscoverExecutable": true,
     "PackageKind": "Zip"
@@ -1844,6 +1964,7 @@
     "ArtworkTitle": "Snowboard Kids 2",
     "ProjectOnly": false,
     "Kind": "Instalação integrada",
+    "ProjectType": "Recompilação",
     "Notes": "O NEXUS baixa o pacote Windows da última Release e o instala aqui. Se houver mais de um aplicativo no ZIP, escolha o principal e o launcher de configuração na janela do NEXUS. Na primeira abertura, prepare seus próprios arquivos seguindo o assistente do port. A compatibilidade e a preparação variam conforme o projeto.",
     "DiscoverExecutable": true,
     "PackageKind": "Zip"
@@ -1859,6 +1980,7 @@
     "ArtworkTitle": "Space Station Silicon Valley",
     "ProjectOnly": false,
     "Kind": "Instalação integrada",
+    "ProjectType": "Recompilação",
     "Notes": "O NEXUS baixa o pacote Windows da última Release e o instala aqui. Se houver mais de um aplicativo no ZIP, escolha o principal e o launcher de configuração na janela do NEXUS. Na primeira abertura, prepare seus próprios arquivos seguindo o assistente do port. A compatibilidade e a preparação variam conforme o projeto.",
     "DiscoverExecutable": true,
     "PackageKind": "Zip"
@@ -1874,6 +1996,7 @@
     "ArtworkTitle": "Pikmin",
     "ProjectOnly": false,
     "Kind": "Instalação integrada",
+    "ProjectType": "Port",
     "Notes": "O NEXUS baixa o pacote Windows da última Release e o instala aqui. Se houver mais de um aplicativo no ZIP, escolha o principal e o launcher de configuração na janela do NEXUS. Na primeira abertura, prepare seus próprios arquivos seguindo o assistente do port. A compatibilidade e a preparação variam conforme o projeto.",
     "DiscoverExecutable": true,
     "PackageKind": "Zip"
@@ -1889,6 +2012,7 @@
     "ArtworkTitle": "Yu-Gi-Oh! Forbidden Memories",
     "ProjectOnly": false,
     "Kind": "Instalação integrada",
+    "ProjectType": "Recompilação",
     "Notes": "O NEXUS baixa o pacote Windows da última Release e o instala aqui. Se houver mais de um aplicativo no ZIP, escolha o principal e o launcher de configuração na janela do NEXUS. Na primeira abertura, prepare seus próprios arquivos seguindo o assistente do port. A compatibilidade e a preparação variam conforme o projeto.",
     "DiscoverExecutable": true,
     "PackageKind": "Zip"
@@ -1904,6 +2028,7 @@
     "ArtworkTitle": "Dragon Ball Z: Budokai 3",
     "ProjectOnly": false,
     "Kind": "Instalação integrada",
+    "ProjectType": "Recompilação",
     "Notes": "O NEXUS baixa o pacote Windows da última Release e o instala aqui. Se houver mais de um aplicativo no ZIP, escolha o principal e o launcher de configuração na janela do NEXUS. Na primeira abertura, prepare seus próprios arquivos seguindo o assistente do port. A compatibilidade e a preparação variam conforme o projeto.",
     "DiscoverExecutable": true,
     "PackageKind": "Zip"
@@ -1919,6 +2044,7 @@
     "ArtworkTitle": "Tekken Tag Tournament 2",
     "ProjectOnly": false,
     "Kind": "Instalação integrada",
+    "ProjectType": "Port",
     "Notes": "O NEXUS baixa e verifica o instalador oficial, abre o assistente do autor e cadastra o aplicativo que você selecionar ao concluir. Atualizações também usam esse assistente; ele controla os arquivos da instalação. Não é uma instalação silenciosa.",
     "DiscoverExecutable": true,
     "PackageKind": "Installer"
@@ -1934,6 +2060,7 @@
     "ArtworkTitle": "Ridge Racer 6",
     "ProjectOnly": false,
     "Kind": "Instalação integrada",
+    "ProjectType": "Recompilação",
     "Notes": "O NEXUS baixa o pacote Windows da última Release e o instala aqui. Se houver mais de um aplicativo no ZIP, escolha o principal e o launcher de configuração na janela do NEXUS. Na primeira abertura, prepare seus próprios arquivos seguindo o assistente do port. A compatibilidade e a preparação variam conforme o projeto.",
     "DiscoverExecutable": true,
     "PackageKind": "Zip"
@@ -1949,6 +2076,7 @@
     "ArtworkTitle": "Dragon Ball Z: Burst Limit",
     "ProjectOnly": false,
     "Kind": "Instalação integrada",
+    "ProjectType": "Recompilação",
     "Notes": "O NEXUS baixa o pacote Windows da última Release e o instala aqui. Se houver mais de um aplicativo no ZIP, escolha o principal e o launcher de configuração na janela do NEXUS. Na primeira abertura, prepare seus próprios arquivos seguindo o assistente do port. A compatibilidade e a preparação variam conforme o projeto.",
     "DiscoverExecutable": true,
     "PackageKind": "Zip"
@@ -1964,6 +2092,7 @@
     "ArtworkTitle": "WWE SmackDown vs. Raw 2011",
     "ProjectOnly": false,
     "Kind": "Instalação integrada",
+    "ProjectType": "Port",
     "Notes": "O NEXUS baixa o pacote Windows da última Release e o instala aqui. Se houver mais de um aplicativo no ZIP, escolha o principal e o launcher de configuração na janela do NEXUS. Na primeira abertura, prepare seus próprios arquivos seguindo o assistente do port. A compatibilidade e a preparação variam conforme o projeto.",
     "DiscoverExecutable": true,
     "PackageKind": "Zip"
@@ -1979,6 +2108,7 @@
     "ArtworkTitle": "Rumble Roses XX",
     "ProjectOnly": false,
     "Kind": "Instalação integrada",
+    "ProjectType": "Recompilação",
     "Notes": "O NEXUS baixa o executável Windows oficial e o adiciona à biblioteca. A preparação de seus próprios arquivos e as opções ficam no aplicativo do autor. Atualizações são baixadas pelo NEXUS com cópia de segurança da instalação anterior.",
     "DiscoverExecutable": true,
     "PackageKind": "Executable"
@@ -1994,6 +2124,7 @@
     "ArtworkTitle": "Jet Set Radio Future",
     "ProjectOnly": false,
     "Kind": "Instalação integrada",
+    "ProjectType": "Port",
     "Notes": "O NEXUS baixa o pacote Windows da última Release e o instala aqui. Se houver mais de um aplicativo no ZIP, escolha o principal e o launcher de configuração na janela do NEXUS. Na primeira abertura, prepare seus próprios arquivos seguindo o assistente do port. A compatibilidade e a preparação variam conforme o projeto.",
     "DiscoverExecutable": true,
     "PackageKind": "Zip"
@@ -2009,6 +2140,7 @@
     "ArtworkTitle": "Dragon Age: Origins",
     "ProjectOnly": false,
     "Kind": "Instalação integrada",
+    "ProjectType": "Recompilação",
     "Notes": "Versão beta/experimental: exige aceitação antes de instalar. O NEXUS baixa o instalador oficial e abre o assistente do autor. Ao concluir, escolha o aplicativo instalado para cadastrá-lo. Atualizações usam esse mesmo assistente.",
     "DiscoverExecutable": true,
     "PackageKind": "Installer",
@@ -2025,6 +2157,7 @@
     "ArtworkTitle": "God of War III Remastered",
     "ProjectOnly": false,
     "Kind": "Instalação integrada",
+    "ProjectType": "Port",
     "Notes": "O NEXUS baixa o pacote Windows da última Release e o instala aqui. Se houver mais de um aplicativo no ZIP, escolha o principal e o launcher de configuração na janela do NEXUS. Na primeira abertura, prepare seus próprios arquivos seguindo o assistente do port. A compatibilidade e a preparação variam conforme o projeto.",
     "DiscoverExecutable": true,
     "PackageKind": "Zip"
@@ -2040,6 +2173,7 @@
     "ArtworkTitle": "Crash Team Racing Nitro-Fueled",
     "ProjectOnly": false,
     "Kind": "Instalação integrada",
+    "ProjectType": "Port",
     "Notes": "O NEXUS baixa o pacote Windows da última Release e o instala aqui. Se houver mais de um aplicativo no ZIP, escolha o principal e o launcher de configuração na janela do NEXUS. Na primeira abertura, prepare seus próprios arquivos seguindo o assistente do port. A compatibilidade e a preparação variam conforme o projeto.",
     "DiscoverExecutable": true,
     "PackageKind": "Zip"
@@ -2055,6 +2189,7 @@
     "ArtworkTitle": "Prince of Persia: The Sands of Time",
     "ProjectOnly": false,
     "Kind": "Instalação integrada",
+    "ProjectType": "Port",
     "Notes": "O NEXUS baixa o executável Windows oficial e o adiciona à biblioteca. A preparação de seus próprios arquivos e as opções ficam no aplicativo do autor. Atualizações são baixadas pelo NEXUS com cópia de segurança da instalação anterior.",
     "DiscoverExecutable": true,
     "PackageKind": "Executable"
@@ -2070,6 +2205,7 @@
     "ArtworkTitle": "Crash of the Titans",
     "ProjectOnly": false,
     "Kind": "Instalação integrada",
+    "ProjectType": "Port",
     "Notes": "O NEXUS baixa o pacote Windows da última Release e o instala aqui. Se houver mais de um aplicativo no ZIP, escolha o principal e o launcher de configuração na janela do NEXUS. Na primeira abertura, prepare seus próprios arquivos seguindo o assistente do port. A compatibilidade e a preparação variam conforme o projeto.",
     "DiscoverExecutable": true,
     "PackageKind": "Zip"
@@ -2085,6 +2221,7 @@
     "ArtworkTitle": "Ninja Gaiden Black",
     "ProjectOnly": false,
     "Kind": "Instalação integrada",
+    "ProjectType": "Recompilação",
     "Notes": "Versão beta/experimental: exige aceitação antes de instalar. O NEXUS baixa o último pacote Windows compatível e cadastra o aplicativo. Se houver mais de um, escolha o principal dentro do NEXUS. Prepare seus próprios arquivos no aplicativo do autor. Outras plataformas podem ter Releases mais novas.",
     "DiscoverExecutable": true,
     "PackageKind": "Zip",
@@ -2101,6 +2238,7 @@
     "ArtworkTitle": "The Legend of Zelda: Breath of the Wild",
     "ProjectOnly": false,
     "Kind": "Instalação integrada",
+    "ProjectType": "Recompilação",
     "Notes": "Versão beta/experimental: exige aceitação antes de instalar. O NEXUS baixa o último pacote Windows compatível e cadastra o aplicativo. Se houver mais de um, escolha o principal dentro do NEXUS. Prepare seus próprios arquivos no aplicativo do autor. Outras plataformas podem ter Releases mais novas.",
     "DiscoverExecutable": true,
     "PackageKind": "Zip",
@@ -2117,6 +2255,7 @@
     "ArtworkTitle": "Ace Combat 6: Fires of Liberation",
     "ProjectOnly": false,
     "Kind": "Instalação integrada",
+    "ProjectType": "Recompilação",
     "Notes": "Versão beta/experimental: exige aceitação antes de instalar. O NEXUS baixa o último pacote Windows compatível e cadastra o aplicativo. Se houver mais de um, escolha o principal dentro do NEXUS. Prepare seus próprios arquivos no aplicativo do autor. Outras plataformas podem ter Releases mais novas.",
     "DiscoverExecutable": true,
     "PackageKind": "Zip",
@@ -2133,6 +2272,7 @@
     "ArtworkTitle": "ICO",
     "ProjectOnly": false,
     "Kind": "Instalação integrada",
+    "ProjectType": "Port",
     "Notes": "O NEXUS baixa o pacote Windows da última Release e o instala aqui. Se houver mais de um aplicativo no ZIP, escolha o principal e o launcher de configuração na janela do NEXUS. Na primeira abertura, prepare seus próprios arquivos seguindo o assistente do port. A compatibilidade e a preparação variam conforme o projeto.",
     "DiscoverExecutable": true,
     "PackageKind": "Zip"
@@ -2148,6 +2288,7 @@
     "ArtworkTitle": "Tom Clancy's Splinter Cell: Double Agent",
     "ProjectOnly": false,
     "Kind": "Instalação integrada",
+    "ProjectType": "Recompilação",
     "Notes": "O NEXUS baixa o pacote Windows da última Release e o instala aqui. Se houver mais de um aplicativo no ZIP, escolha o principal e o launcher de configuração na janela do NEXUS. Na primeira abertura, prepare seus próprios arquivos seguindo o assistente do port. A compatibilidade e a preparação variam conforme o projeto.",
     "DiscoverExecutable": true,
     "PackageKind": "Zip"
@@ -2163,6 +2304,7 @@
     "ArtworkTitle": "Call of Duty 3",
     "ProjectOnly": false,
     "Kind": "Instalação integrada",
+    "ProjectType": "Recompilação",
     "Notes": "Versão beta/experimental: exige aceitação antes de instalar. O NEXUS baixa o último pacote Windows compatível e cadastra o aplicativo. Se houver mais de um, escolha o principal dentro do NEXUS. Prepare seus próprios arquivos no aplicativo do autor. Outras plataformas podem ter Releases mais novas.",
     "DiscoverExecutable": true,
     "PackageKind": "Executable",
@@ -2179,6 +2321,7 @@
     "ArtworkTitle": "Mystical Ninja Starring Goemon (Nintendo 64)",
     "ProjectOnly": false,
     "Kind": "Instalação integrada",
+    "ProjectType": "Recompilação",
     "Notes": "O NEXUS baixa o pacote Windows da última Release e o instala aqui. Se houver mais de um aplicativo no ZIP, escolha o principal e o launcher de configuração na janela do NEXUS. Na primeira abertura, prepare seus próprios arquivos seguindo o assistente do port. A compatibilidade e a preparação variam conforme o projeto.",
     "DiscoverExecutable": true,
     "PackageKind": "Zip"
@@ -2194,6 +2337,7 @@
     "ArtworkTitle": "Sly Cooper and the Thievius Raccoonus",
     "ProjectOnly": true,
     "Kind": "Em desenvolvimento",
+    "ProjectType": "Port",
     "Notes": "A Release Windows é distribuída em RAR. Este formato ainda precisa de integração; os perfis ZIP/EXE já são instalados pelo NEXUS."
   },
   {
@@ -2207,6 +2351,7 @@
     "ArtworkTitle": "Mega Man 64",
     "ProjectOnly": false,
     "Kind": "Instalação integrada",
+    "ProjectType": "Recompilação",
     "Notes": "O NEXUS baixa o pacote Windows da última Release e o instala aqui. Se houver mais de um aplicativo no ZIP, escolha o principal e o launcher de configuração na janela do NEXUS. Na primeira abertura, prepare seus próprios arquivos seguindo o assistente do port. A compatibilidade e a preparação variam conforme o projeto.",
     "DiscoverExecutable": true,
     "PackageKind": "Zip"
@@ -2224,6 +2369,7 @@
     "ArtworkTitle": "Luigi's Mansion",
     "ProjectOnly": false,
     "Kind": "Port / recompilação",
+    "ProjectType": "Recompilação",
     "Notes": "Na primeira abertura, selecione sua ISO/RVZ ou pasta GameCube USA/EUR compatível. A preparação usa o compilador incluído. Opções no menu interno F1.",
     "Arguments": "",
     "ConfigurationArguments": ""
@@ -2239,6 +2385,7 @@
     "ArtworkTitle": "Donkey Kong Country",
     "ProjectOnly": false,
     "Kind": "Instalação integrada",
+    "ProjectType": "Recompilação",
     "Notes": "O NEXUS baixa o pacote Windows da última Release e o instala aqui. Se houver mais de um aplicativo no ZIP, escolha o principal e o launcher de configuração na janela do NEXUS. Na primeira abertura, prepare seus próprios arquivos seguindo o assistente do port. A compatibilidade e a preparação variam conforme o projeto.",
     "DiscoverExecutable": true,
     "PackageKind": "Zip"
@@ -2254,6 +2401,7 @@
     "ArtworkTitle": "Mortal Kombat: Shaolin Monks",
     "ProjectOnly": false,
     "Kind": "Instalação integrada",
+    "ProjectType": "Port",
     "Notes": "O NEXUS baixa o pacote Windows da última Release e o instala aqui. Se houver mais de um aplicativo no ZIP, escolha o principal e o launcher de configuração na janela do NEXUS. Na primeira abertura, prepare seus próprios arquivos seguindo o assistente do port. A compatibilidade e a preparação variam conforme o projeto.",
     "DiscoverExecutable": true,
     "PackageKind": "Zip"
@@ -2269,6 +2417,7 @@
     "ArtworkTitle": "Diddy Kong Racing",
     "ProjectOnly": false,
     "Kind": "Instalação integrada",
+    "ProjectType": "Port",
     "Notes": "O NEXUS baixa o pacote Windows da última Release e o instala aqui. Se houver mais de um aplicativo no ZIP, escolha o principal e o launcher de configuração na janela do NEXUS. Na primeira abertura, prepare seus próprios arquivos seguindo o assistente do port. A compatibilidade e a preparação variam conforme o projeto.",
     "DiscoverExecutable": true,
     "PackageKind": "Zip"
@@ -2288,6 +2437,7 @@
     "ArtworkTitle": "The Legend of Zelda: Breath of the Wild",
     "ProjectOnly": false,
     "Kind": "Port / recompilação",
+    "ProjectType": "Recompilação",
     "Notes": "Experimental. Jogar e Configurar abrem BotWLauncher.exe, que prepara sua pasta Wii U USA com atualização v208 (1.5.0). O caminho direto do runtime exige parâmetros adicionais; por isso o NEXUS mantém o launcher original. Requer Vulkan.",
     "Arguments": "",
     "ConfigurationArguments": ""
@@ -2303,6 +2453,7 @@
     "ArtworkTitle": "LEGO Dimensions",
     "ProjectOnly": false,
     "Kind": "Instalação integrada",
+    "ProjectType": "Recompilação",
     "Notes": "Versão beta/experimental: exige aceitação antes de instalar. O NEXUS baixa o instalador oficial e abre o assistente do autor. Ao concluir, escolha o aplicativo instalado para cadastrá-lo. Atualizações usam esse mesmo assistente.",
     "DiscoverExecutable": true,
     "PackageKind": "Installer",
@@ -2319,6 +2470,7 @@
     "ArtworkTitle": "Dead or Alive Xtreme Beach Volleyball",
     "ProjectOnly": false,
     "Kind": "Instalação integrada",
+    "ProjectType": "Port",
     "Notes": "O NEXUS baixa o pacote Windows da última Release e o instala aqui. Se houver mais de um aplicativo no ZIP, escolha o principal e o launcher de configuração na janela do NEXUS. Na primeira abertura, prepare seus próprios arquivos seguindo o assistente do port. A compatibilidade e a preparação variam conforme o projeto.",
     "DiscoverExecutable": true,
     "PackageKind": "Zip"
@@ -2334,6 +2486,7 @@
     "ArtworkTitle": "Kingdom Hearts 358/2 Days",
     "ProjectOnly": false,
     "Kind": "Instalação integrada",
+    "ProjectType": "Port",
     "Notes": "O NEXUS baixa o pacote Windows da última Release e o instala aqui. Se houver mais de um aplicativo no ZIP, escolha o principal e o launcher de configuração na janela do NEXUS. Na primeira abertura, prepare seus próprios arquivos seguindo o assistente do port. A compatibilidade e a preparação variam conforme o projeto.",
     "DiscoverExecutable": true,
     "PackageKind": "Zip"
@@ -2349,6 +2502,7 @@
     "ArtworkTitle": "Burnout 3: Takedown",
     "ProjectOnly": false,
     "Kind": "Instalação integrada",
+    "ProjectType": "Port",
     "Notes": "Versão beta/experimental: exige aceitação antes de instalar. O NEXUS baixa o último pacote Windows compatível e cadastra o aplicativo. Se houver mais de um, escolha o principal dentro do NEXUS. Prepare seus próprios arquivos no aplicativo do autor. Outras plataformas podem ter Releases mais novas.",
     "DiscoverExecutable": true,
     "PackageKind": "Zip",
@@ -2365,6 +2519,7 @@
     "ArtworkTitle": "Mercenaries: Playground of Destruction",
     "ProjectOnly": false,
     "Kind": "Instalação integrada",
+    "ProjectType": "Recompilação",
     "Notes": "O NEXUS baixa o pacote Windows da última Release e o instala aqui. Se houver mais de um aplicativo no ZIP, escolha o principal e o launcher de configuração na janela do NEXUS. Na primeira abertura, prepare seus próprios arquivos seguindo o assistente do port. A compatibilidade e a preparação variam conforme o projeto.",
     "DiscoverExecutable": true,
     "PackageKind": "Zip"
@@ -2380,6 +2535,7 @@
     "ArtworkTitle": "Call of Duty: Modern Warfare 2",
     "ProjectOnly": false,
     "Kind": "Instalação integrada",
+    "ProjectType": "Recompilação",
     "Notes": "O NEXUS baixa o pacote Windows da última Release e o instala aqui. Se houver mais de um aplicativo no ZIP, escolha o principal e o launcher de configuração na janela do NEXUS. Na primeira abertura, prepare seus próprios arquivos seguindo o assistente do port. A compatibilidade e a preparação variam conforme o projeto.",
     "DiscoverExecutable": true,
     "PackageKind": "Zip"
@@ -2395,6 +2551,7 @@
     "ArtworkTitle": "Mega Man X4",
     "ProjectOnly": false,
     "Kind": "Instalação integrada",
+    "ProjectType": "Recompilação",
     "Notes": "O NEXUS baixa o pacote Windows da última Release e o instala aqui. Se houver mais de um aplicativo no ZIP, escolha o principal e o launcher de configuração na janela do NEXUS. Na primeira abertura, prepare seus próprios arquivos seguindo o assistente do port. A compatibilidade e a preparação variam conforme o projeto.",
     "DiscoverExecutable": true,
     "PackageKind": "Zip"
@@ -2410,6 +2567,7 @@
     "ArtworkTitle": "Disney's Hercules",
     "ProjectOnly": false,
     "Kind": "Instalação integrada",
+    "ProjectType": "Recompilação",
     "Notes": "O NEXUS baixa o pacote Windows da última Release e o instala aqui. Se houver mais de um aplicativo no ZIP, escolha o principal e o launcher de configuração na janela do NEXUS. Na primeira abertura, prepare seus próprios arquivos seguindo o assistente do port. A compatibilidade e a preparação variam conforme o projeto.",
     "DiscoverExecutable": true,
     "PackageKind": "Zip"
@@ -2425,6 +2583,7 @@
     "ArtworkTitle": "Banjo-Tooie",
     "ProjectOnly": false,
     "Kind": "Instalação integrada",
+    "ProjectType": "Port",
     "Notes": "Versão beta/experimental: exige aceitação antes de instalar. O NEXUS baixa o último pacote Windows compatível e cadastra o aplicativo. Se houver mais de um, escolha o principal dentro do NEXUS. Prepare seus próprios arquivos no aplicativo do autor. Outras plataformas podem ter Releases mais novas.",
     "DiscoverExecutable": true,
     "PackageKind": "Zip",
@@ -2441,6 +2600,7 @@
     "ArtworkTitle": "Dead Rising 2: Case West",
     "ProjectOnly": false,
     "Kind": "Instalação integrada",
+    "ProjectType": "Recompilação",
     "Notes": "O NEXUS baixa o pacote Windows da última Release e o instala aqui. Se houver mais de um aplicativo no ZIP, escolha o principal e o launcher de configuração na janela do NEXUS. Na primeira abertura, prepare seus próprios arquivos seguindo o assistente do port. A compatibilidade e a preparação variam conforme o projeto.",
     "DiscoverExecutable": true,
     "PackageKind": "Zip"
@@ -2456,6 +2616,7 @@
     "ArtworkTitle": "Gears of War 2",
     "ProjectOnly": false,
     "Kind": "Instalação integrada",
+    "ProjectType": "Port",
     "Notes": "O NEXUS baixa o pacote Windows da última Release e o instala aqui. Se houver mais de um aplicativo no ZIP, escolha o principal e o launcher de configuração na janela do NEXUS. Na primeira abertura, prepare seus próprios arquivos seguindo o assistente do port. A compatibilidade e a preparação variam conforme o projeto.",
     "DiscoverExecutable": true,
     "PackageKind": "Zip"
@@ -2471,6 +2632,7 @@
     "ArtworkTitle": "Naruto Shippūden: Ultimate Ninja STORM Generations",
     "ProjectOnly": false,
     "Kind": "Instalação integrada",
+    "ProjectType": "Port",
     "Notes": "O NEXUS baixa o último pacote Windows compatível e cadastra o aplicativo. Se houver mais de um, escolha o principal dentro do NEXUS. Prepare seus próprios arquivos no aplicativo do autor. Outras plataformas podem ter Releases mais novas.",
     "DiscoverExecutable": true,
     "PackageKind": "Zip",
@@ -2487,6 +2649,7 @@
     "ArtworkTitle": "2014 FIFA World Cup Brazil",
     "ProjectOnly": false,
     "Kind": "Instalação integrada",
+    "ProjectType": "Recompilação",
     "Notes": "O NEXUS baixa o pacote Windows da última Release e o instala aqui. Se houver mais de um aplicativo no ZIP, escolha o principal e o launcher de configuração na janela do NEXUS. Na primeira abertura, prepare seus próprios arquivos seguindo o assistente do port. A compatibilidade e a preparação variam conforme o projeto.",
     "DiscoverExecutable": true,
     "PackageKind": "Zip"
@@ -2502,6 +2665,7 @@
     "ArtworkTitle": "Kameo: Elements of Power",
     "ProjectOnly": false,
     "Kind": "Instalação integrada",
+    "ProjectType": "Port",
     "Notes": "O NEXUS baixa o pacote Windows da última Release e o instala aqui. Se houver mais de um aplicativo no ZIP, escolha o principal e o launcher de configuração na janela do NEXUS. Na primeira abertura, prepare seus próprios arquivos seguindo o assistente do port. A compatibilidade e a preparação variam conforme o projeto.",
     "DiscoverExecutable": true,
     "PackageKind": "Zip"
@@ -2517,6 +2681,7 @@
     "ArtworkTitle": "Crackdown",
     "ProjectOnly": false,
     "Kind": "Instalação integrada",
+    "ProjectType": "Recompilação",
     "Notes": "O NEXUS baixa o pacote Windows da última Release e o instala aqui. Se houver mais de um aplicativo no ZIP, escolha o principal e o launcher de configuração na janela do NEXUS. Na primeira abertura, prepare seus próprios arquivos seguindo o assistente do port. A compatibilidade e a preparação variam conforme o projeto.",
     "DiscoverExecutable": true,
     "PackageKind": "Zip"
@@ -2532,6 +2697,7 @@
     "ArtworkTitle": "God of War II",
     "ProjectOnly": true,
     "Kind": "Em desenvolvimento",
+    "ProjectType": "Recompilação",
     "Notes": "Só foram confirmados kits macOS; não há pacote Windows integrado nesta consulta."
   },
   {
@@ -2545,6 +2711,7 @@
     "ArtworkTitle": "Tekken 6",
     "ProjectOnly": false,
     "Kind": "Instalação integrada",
+    "ProjectType": "Recompilação",
     "Notes": "O NEXUS baixa o pacote Windows da última Release e o instala aqui. Se houver mais de um aplicativo no ZIP, escolha o principal e o launcher de configuração na janela do NEXUS. Na primeira abertura, prepare seus próprios arquivos seguindo o assistente do port. A compatibilidade e a preparação variam conforme o projeto.",
     "DiscoverExecutable": true,
     "PackageKind": "Zip"
@@ -2560,6 +2727,7 @@
     "ArtworkTitle": "Downhill Domination",
     "ProjectOnly": false,
     "Kind": "Instalação integrada",
+    "ProjectType": "Port",
     "Notes": "O NEXUS baixa o pacote Windows da última Release e o instala aqui. Se houver mais de um aplicativo no ZIP, escolha o principal e o launcher de configuração na janela do NEXUS. Na primeira abertura, prepare seus próprios arquivos seguindo o assistente do port. A compatibilidade e a preparação variam conforme o projeto.",
     "DiscoverExecutable": true,
     "PackageKind": "Zip"
@@ -2575,6 +2743,7 @@
     "ArtworkTitle": "Virtua Fighter",
     "ProjectOnly": false,
     "Kind": "Instalação integrada",
+    "ProjectType": "Recompilação",
     "Notes": "O NEXUS baixa o pacote Windows da última Release e o instala aqui. Se houver mais de um aplicativo no ZIP, escolha o principal e o launcher de configuração na janela do NEXUS. Na primeira abertura, prepare seus próprios arquivos seguindo o assistente do port. A compatibilidade e a preparação variam conforme o projeto.",
     "DiscoverExecutable": true,
     "PackageKind": "Zip"
@@ -2590,6 +2759,7 @@
     "ArtworkTitle": "50 Cent: Blood on the Sand",
     "ProjectOnly": true,
     "Kind": "Preparação manual",
+    "ProjectType": "Port",
     "Notes": "Só foi confirmado um build de teste marcado NOT-A-RELEASE para uma issue; não foi habilitado como distribuição normal."
   },
   {
@@ -2603,6 +2773,7 @@
     "ArtworkTitle": "Rush 2: Extreme Racing USA",
     "ProjectOnly": false,
     "Kind": "Instalação integrada",
+    "ProjectType": "Recompilação",
     "Notes": "O NEXUS baixa o pacote Windows da última Release e o instala aqui. Se houver mais de um aplicativo no ZIP, escolha o principal e o launcher de configuração na janela do NEXUS. Na primeira abertura, prepare seus próprios arquivos seguindo o assistente do port. A compatibilidade e a preparação variam conforme o projeto.",
     "DiscoverExecutable": true,
     "PackageKind": "Zip"
@@ -2618,6 +2789,7 @@
     "ArtworkTitle": "Wario Land: Shake It!",
     "ProjectOnly": false,
     "Kind": "Instalação integrada",
+    "ProjectType": "Port",
     "Notes": "O NEXUS baixa o pacote Windows da última Release e o instala aqui. Se houver mais de um aplicativo no ZIP, escolha o principal e o launcher de configuração na janela do NEXUS. Na primeira abertura, prepare seus próprios arquivos seguindo o assistente do port. A compatibilidade e a preparação variam conforme o projeto.",
     "DiscoverExecutable": true,
     "PackageKind": "Zip"
@@ -2633,6 +2805,7 @@
     "ArtworkTitle": "Mega Man X5",
     "ProjectOnly": false,
     "Kind": "Instalação integrada",
+    "ProjectType": "Recompilação",
     "Notes": "O NEXUS baixa o pacote Windows da última Release e o instala aqui. Se houver mais de um aplicativo no ZIP, escolha o principal e o launcher de configuração na janela do NEXUS. Na primeira abertura, prepare seus próprios arquivos seguindo o assistente do port. A compatibilidade e a preparação variam conforme o projeto.",
     "DiscoverExecutable": true,
     "PackageKind": "Zip"
@@ -2648,6 +2821,7 @@
     "ArtworkTitle": "Geometry Wars: Retro Evolved 2",
     "ProjectOnly": false,
     "Kind": "Instalação integrada",
+    "ProjectType": "Recompilação",
     "Notes": "O NEXUS baixa o pacote Windows da última Release e o instala aqui. Se houver mais de um aplicativo no ZIP, escolha o principal e o launcher de configuração na janela do NEXUS. Na primeira abertura, prepare seus próprios arquivos seguindo o assistente do port. A compatibilidade e a preparação variam conforme o projeto.",
     "DiscoverExecutable": true,
     "PackageKind": "Zip"
@@ -2663,6 +2837,7 @@
     "ArtworkTitle": "Vandal Hearts",
     "ProjectOnly": false,
     "Kind": "Instalação integrada",
+    "ProjectType": "Port",
     "Notes": "O NEXUS baixa o pacote Windows da última Release e o instala aqui. Se houver mais de um aplicativo no ZIP, escolha o principal e o launcher de configuração na janela do NEXUS. Na primeira abertura, prepare seus próprios arquivos seguindo o assistente do port. A compatibilidade e a preparação variam conforme o projeto.",
     "DiscoverExecutable": true,
     "PackageKind": "Zip"
@@ -2678,6 +2853,7 @@
     "ArtworkTitle": "Tony Hawk's Project 8",
     "ProjectOnly": false,
     "Kind": "Instalação integrada",
+    "ProjectType": "Recompilação",
     "Notes": "O NEXUS baixa o pacote Windows da última Release e o instala aqui. Se houver mais de um aplicativo no ZIP, escolha o principal e o launcher de configuração na janela do NEXUS. Na primeira abertura, prepare seus próprios arquivos seguindo o assistente do port. A compatibilidade e a preparação variam conforme o projeto.",
     "DiscoverExecutable": true,
     "PackageKind": "Zip"
@@ -2693,6 +2869,7 @@
     "ArtworkTitle": "Bloodborne",
     "ProjectOnly": false,
     "Kind": "Instalação integrada",
+    "ProjectType": "Port",
     "Notes": "O NEXUS baixa o pacote Windows da última Release e o instala aqui. Se houver mais de um aplicativo no ZIP, escolha o principal e o launcher de configuração na janela do NEXUS. Na primeira abertura, prepare seus próprios arquivos seguindo o assistente do port. A compatibilidade e a preparação variam conforme o projeto.",
     "DiscoverExecutable": true,
     "PackageKind": "Zip"
@@ -2708,6 +2885,7 @@
     "ArtworkTitle": "NBA Street Vol. 2",
     "ProjectOnly": false,
     "Kind": "Instalação integrada",
+    "ProjectType": "Port",
     "Notes": "Versão beta/experimental: exige aceitação antes de instalar. O NEXUS baixa o último pacote Windows compatível e cadastra o aplicativo. Se houver mais de um, escolha o principal dentro do NEXUS. Prepare seus próprios arquivos no aplicativo do autor. Outras plataformas podem ter Releases mais novas.",
     "DiscoverExecutable": true,
     "PackageKind": "Zip",
@@ -2724,6 +2902,7 @@
     "ArtworkTitle": "Star Wars Battlefront: Renegade Squadron",
     "ProjectOnly": false,
     "Kind": "Instalação integrada",
+    "ProjectType": "Port",
     "Notes": "O NEXUS baixa o pacote Windows da última Release e o instala aqui. Se houver mais de um aplicativo no ZIP, escolha o principal e o launcher de configuração na janela do NEXUS. Na primeira abertura, prepare seus próprios arquivos seguindo o assistente do port. A compatibilidade e a preparação variam conforme o projeto.",
     "DiscoverExecutable": true,
     "PackageKind": "Zip"
@@ -2739,6 +2918,7 @@
     "ArtworkTitle": "Rampage: Total Destruction",
     "ProjectOnly": false,
     "Kind": "Instalação integrada",
+    "ProjectType": "Port",
     "Notes": "O NEXUS baixa o pacote Windows da última Release e o instala aqui. Se houver mais de um aplicativo no ZIP, escolha o principal e o launcher de configuração na janela do NEXUS. Na primeira abertura, prepare seus próprios arquivos seguindo o assistente do port. A compatibilidade e a preparação variam conforme o projeto.",
     "DiscoverExecutable": true,
     "PackageKind": "Zip"
@@ -2754,6 +2934,7 @@
     "ArtworkTitle": "Super Mario Sunshine",
     "ProjectOnly": false,
     "Kind": "Instalação integrada",
+    "ProjectType": "Port",
     "Notes": "O NEXUS baixa o executável Windows oficial e o adiciona à biblioteca. A preparação de seus próprios arquivos e as opções ficam no aplicativo do autor. Atualizações são baixadas pelo NEXUS com cópia de segurança da instalação anterior.",
     "DiscoverExecutable": true,
     "PackageKind": "Executable"
@@ -2769,6 +2950,7 @@
     "ArtworkTitle": "Ratchet & Clank",
     "ProjectOnly": false,
     "Kind": "Instalação integrada",
+    "ProjectType": "Port",
     "Notes": "O NEXUS baixa o pacote Windows da última Release e o instala aqui. Se houver mais de um aplicativo no ZIP, escolha o principal e o launcher de configuração na janela do NEXUS. Na primeira abertura, prepare seus próprios arquivos seguindo o assistente do port. A compatibilidade e a preparação variam conforme o projeto.",
     "DiscoverExecutable": true,
     "PackageKind": "Zip"
@@ -2788,6 +2970,7 @@
     "ArtworkTitle": "Pokémon: Let's Go, Pikachu!",
     "ProjectOnly": false,
     "Kind": "Port / recompilação",
+    "ProjectType": "Recompilação",
     "Notes": "Jogar e Configurar abrem o launcher original para preparar seu dump compatível de Let’s Go Pikachu/Eevee e ajustar as opções. Requer SSE4.2 e Vulkan 1.3; opções internas em F12. Projeto em desenvolvimento.",
     "Arguments": "",
     "ConfigurationArguments": ""
@@ -2803,6 +2986,7 @@
     "ArtworkTitle": "Sonic the Hedgehog (2006)",
     "ProjectOnly": true,
     "Kind": "Em desenvolvimento",
+    "ProjectType": "Recompilação",
     "Notes": "Nenhum pacote Windows utilizável foi confirmado nas Releases consultadas. O projeto permanece listado para acompanhamento; não há download de jogo pronto que o NEXUS possa instalar automaticamente nesta consulta."
   },
   {
@@ -2816,6 +3000,7 @@
     "ArtworkTitle": "Super Smash Bros. Ultimate",
     "ProjectOnly": true,
     "Kind": "Em desenvolvimento",
+    "ProjectType": "Recompilação",
     "Notes": "O autor orienta usar o preparador do pacote de código: as Releases são ferramentas que esse preparador baixa, não o aplicativo pronto. Esse fluxo ainda precisa de integração específica."
   },
   {
@@ -2833,6 +3018,7 @@
     "ArtworkTitle": "Killzone Shadow Fall",
     "ProjectOnly": false,
     "Kind": "Port / recompilação",
+    "ProjectType": "Recompilação",
     "Notes": "Jogar e Configurar abrem o launcher original para selecionar sua pasta PS4 e aplicar as opções. O executável interno não é usado sem o ambiente do launcher. Requer Vulkan 1.3; beta pública.",
     "Arguments": "",
     "ConfigurationArguments": ""
@@ -2852,6 +3038,7 @@
     "ArtworkTitle": "Dragon's Crown Pro",
     "ProjectOnly": false,
     "Kind": "Port / recompilação",
+    "ProjectType": "Recompilação",
     "Notes": "O aplicativo original importa seu PKG PS4 compatível e reúne as opções. Jogar e Configurar abrem esse aplicativo. Se você desativou Show this launcher, segure Shift ao abri-lo para restaurar o launcher. Requer Vulkan 1.3.",
     "Arguments": "",
     "ConfigurationArguments": ""
@@ -2871,6 +3058,7 @@
     "ArtworkTitle": "EA Sports UFC 3",
     "ProjectOnly": false,
     "Kind": "Port / recompilação",
+    "ProjectType": "Recompilação",
     "Notes": "Jogar e Configurar abrem UFC3.exe, o launcher original que prepara sua pasta PS4 CUSA06534 e aplica as opções. Requer CPU AVX2 e Vulkan 1.3; não usa o runtime interno sem preparação.",
     "Arguments": "",
     "ConfigurationArguments": ""
@@ -2890,6 +3078,7 @@
     "ArtworkTitle": "Unicorn Overlord",
     "ProjectOnly": false,
     "Kind": "Port / recompilação",
+    "ProjectType": "Recompilação",
     "Notes": "O aplicativo original prepara sua pasta PS4 compatível e inicia o jogo. Jogar e Configurar abrem esse aplicativo; as opções ficam em System > Options > PC dentro do jogo. Requer Vulkan 1.3.",
     "Arguments": "",
     "ConfigurationArguments": ""
@@ -2909,6 +3098,7 @@
     "ArtworkTitle": "inFAMOUS First Light",
     "ProjectOnly": false,
     "Kind": "Port / recompilação",
+    "ProjectType": "Recompilação",
     "Notes": "Configure sua pasta PS4 e opções no launcher original. Jogar usa --play, documentado pelo autor, para iniciar com as opções salvas sem a janela do launcher. Requer AVX e Vulkan 1.3.",
     "Arguments": "--play",
     "ConfigurationArguments": ""
@@ -2924,6 +3114,7 @@
     "ArtworkTitle": "inFAMOUS",
     "ProjectOnly": false,
     "Kind": "Instalação integrada",
+    "ProjectType": "Port",
     "Notes": "O NEXUS baixa e verifica o instalador oficial, abre o assistente do autor e cadastra o aplicativo que você selecionar ao concluir. Atualizações também usam esse assistente; ele controla os arquivos da instalação. Não é uma instalação silenciosa.",
     "DiscoverExecutable": true,
     "PackageKind": "Installer"
@@ -2941,6 +3132,7 @@
     "ArtworkTitle": "Metroid Prime",
     "ProjectOnly": false,
     "Kind": "Port / recompilação",
+    "ProjectType": "Recompilação",
     "Notes": "Selecione sua imagem de disco compatível na primeira abertura. Configurações no menu interno F1. O NEXUS abre o jogo, não o auxiliar ffmpeg, e exclui o pacote ARM64.",
     "Arguments": "",
     "ConfigurationArguments": ""
@@ -2956,6 +3148,7 @@
     "ArtworkTitle": "Eternal Darkness: Sanity's Requiem",
     "ProjectOnly": false,
     "Kind": "Instalação integrada",
+    "ProjectType": "Recompilação",
     "Notes": "O NEXUS baixa o pacote Windows da última Release e o instala aqui. Se houver mais de um aplicativo no ZIP, escolha o principal e o launcher de configuração na janela do NEXUS. Na primeira abertura, prepare seus próprios arquivos seguindo o assistente do port. A compatibilidade e a preparação variam conforme o projeto.",
     "DiscoverExecutable": true,
     "PackageKind": "Zip"
@@ -2971,6 +3164,7 @@
     "ArtworkTitle": "Super Mario Galaxy",
     "ProjectOnly": false,
     "Kind": "Instalação integrada",
+    "ProjectType": "Port",
     "Notes": "O NEXUS baixa e verifica o instalador oficial, abre o assistente do autor e cadastra o aplicativo que você selecionar ao concluir. Atualizações também usam esse assistente; ele controla os arquivos da instalação. Não é uma instalação silenciosa.",
     "DiscoverExecutable": true,
     "PackageKind": "Installer"
@@ -2988,6 +3182,7 @@
     "ArtworkTitle": "New Super Mario Bros. Wii",
     "ProjectOnly": false,
     "Kind": "Port / recompilação",
+    "ProjectType": "Recompilação",
     "Notes": "Selecione sua pasta extraída do jogo quando o aplicativo pedir. Configurações internas em F10. A pasta compat é preservada para CPUs sem AVX2; o launcher original escolhe o runtime adequado.",
     "Arguments": "",
     "ConfigurationArguments": ""
@@ -3007,6 +3202,7 @@
     "ArtworkTitle": "Mario Strikers Charged",
     "ProjectOnly": false,
     "Kind": "Port / recompilação",
+    "ProjectType": "Recompilação",
     "Notes": "Jogar e Configurar abrem o launcher original. Selecione sua imagem de Mario Strikers Charged; o launcher reúne as opções e inicia o jogo com elas.",
     "Arguments": "",
     "ConfigurationArguments": ""
@@ -3026,6 +3222,7 @@
     "ArtworkTitle": "New Super Mario Bros. U",
     "ProjectOnly": false,
     "Kind": "Port / recompilação",
+    "ProjectType": "Recompilação",
     "Notes": "O aplicativo original prepara seus arquivos Wii U na primeira abertura. Configurar reabre esse assistente (--setup); as opções internas usam F12. Aceita as revisões USA/EUR indicadas pelo autor; requer Vulkan e pode baixar o compilador na preparação.",
     "Arguments": "",
     "ConfigurationArguments": "--setup"
@@ -3043,6 +3240,7 @@
     "ArtworkTitle": "Super Mario Maker 2",
     "ProjectOnly": false,
     "Kind": "Port / recompilação",
+    "ProjectType": "Recompilação",
     "Notes": "O aplicativo prepara e recompila seu dump de Super Mario Maker 2 versão 3.0.3 na primeira abertura. Opções internas em F1 ou Esc. Requer CPU x86-64-v2 e Vulkan 1.3; projeto em desenvolvimento.",
     "Arguments": "",
     "ConfigurationArguments": ""
@@ -3058,6 +3256,7 @@
     "ArtworkTitle": "Pokémon SoulSilver",
     "ProjectOnly": false,
     "Kind": "Instalação integrada",
+    "ProjectType": "Recompilação",
     "Notes": "O NEXUS baixa e verifica o instalador oficial, abre o assistente do autor e cadastra o aplicativo que você selecionar ao concluir. Atualizações também usam esse assistente; ele controla os arquivos da instalação. Não é uma instalação silenciosa.",
     "DiscoverExecutable": true,
     "PackageKind": "Installer"
@@ -3073,6 +3272,7 @@
     "ArtworkTitle": "The World Is Not Enough",
     "ProjectOnly": false,
     "Kind": "Instalação integrada",
+    "ProjectType": "Port",
     "Notes": "O NEXUS baixa o executável Windows oficial e o adiciona à biblioteca. A preparação de seus próprios arquivos e as opções ficam no aplicativo do autor. Atualizações são baixadas pelo NEXUS com cópia de segurança da instalação anterior.",
     "DiscoverExecutable": true,
     "PackageKind": "Executable"
@@ -3088,6 +3288,7 @@
     "ArtworkTitle": "Jet Force Gemini",
     "ProjectOnly": false,
     "Kind": "Instalação integrada",
+    "ProjectType": "Recompilação",
     "Notes": "O NEXUS baixa o pacote Windows da última Release e o instala aqui. Se houver mais de um aplicativo no ZIP, escolha o principal e o launcher de configuração na janela do NEXUS. Na primeira abertura, prepare seus próprios arquivos seguindo o assistente do port. A compatibilidade e a preparação variam conforme o projeto.",
     "DiscoverExecutable": true,
     "PackageKind": "Zip"
@@ -3103,6 +3304,7 @@
     "ArtworkTitle": "Sin and Punishment",
     "ProjectOnly": false,
     "Kind": "Instalação integrada",
+    "ProjectType": "Recompilação",
     "Notes": "O NEXUS baixa o pacote Windows da última Release e o instala aqui. Se houver mais de um aplicativo no ZIP, escolha o principal e o launcher de configuração na janela do NEXUS. Na primeira abertura, prepare seus próprios arquivos seguindo o assistente do port. A compatibilidade e a preparação variam conforme o projeto.",
     "DiscoverExecutable": true,
     "PackageKind": "Zip"
@@ -3118,6 +3320,7 @@
     "ArtworkTitle": "Super Mario All-Stars",
     "ProjectOnly": false,
     "Kind": "Instalação integrada",
+    "ProjectType": "Recompilação",
     "Notes": "O NEXUS baixa o pacote Windows da última Release e o instala aqui. Se houver mais de um aplicativo no ZIP, escolha o principal e o launcher de configuração na janela do NEXUS. Na primeira abertura, prepare seus próprios arquivos seguindo o assistente do port. A compatibilidade e a preparação variam conforme o projeto.",
     "DiscoverExecutable": true,
     "PackageKind": "Zip"
@@ -3133,6 +3336,7 @@
     "ArtworkTitle": "Halo: Combat Evolved",
     "ProjectOnly": false,
     "Kind": "Instalação integrada",
+    "ProjectType": "Port",
     "Notes": "O NEXUS baixa o pacote Windows da última Release e o instala aqui. Se houver mais de um aplicativo no ZIP, escolha o principal e o launcher de configuração na janela do NEXUS. Na primeira abertura, prepare seus próprios arquivos seguindo o assistente do port. A compatibilidade e a preparação variam conforme o projeto.",
     "DiscoverExecutable": true,
     "PackageKind": "Zip"
@@ -3148,6 +3352,7 @@
     "ArtworkTitle": "Dead or Alive 3",
     "ProjectOnly": false,
     "Kind": "Instalação integrada",
+    "ProjectType": "Recompilação",
     "Notes": "O NEXUS baixa o pacote Windows da última Release e o instala aqui. Se houver mais de um aplicativo no ZIP, escolha o principal e o launcher de configuração na janela do NEXUS. Na primeira abertura, prepare seus próprios arquivos seguindo o assistente do port. A compatibilidade e a preparação variam conforme o projeto.",
     "DiscoverExecutable": true,
     "PackageKind": "Zip"
@@ -3163,6 +3368,7 @@
     "ArtworkTitle": "The Lord of the Rings: The Two Towers",
     "ProjectOnly": false,
     "Kind": "Instalação integrada",
+    "ProjectType": "Recompilação",
     "Notes": "O NEXUS baixa o pacote Windows da última Release e o instala aqui. Se houver mais de um aplicativo no ZIP, escolha o principal e o launcher de configuração na janela do NEXUS. Na primeira abertura, prepare seus próprios arquivos seguindo o assistente do port. A compatibilidade e a preparação variam conforme o projeto.",
     "DiscoverExecutable": true,
     "PackageKind": "Zip"
@@ -3178,6 +3384,7 @@
     "ArtworkTitle": "Urban Chaos: Riot Response",
     "ProjectOnly": false,
     "Kind": "Instalação integrada",
+    "ProjectType": "Port",
     "Notes": "O NEXUS baixa o pacote Windows da última Release e o instala aqui. Se houver mais de um aplicativo no ZIP, escolha o principal e o launcher de configuração na janela do NEXUS. Na primeira abertura, prepare seus próprios arquivos seguindo o assistente do port. A compatibilidade e a preparação variam conforme o projeto.",
     "DiscoverExecutable": true,
     "PackageKind": "Zip"
@@ -3193,6 +3400,7 @@
     "ArtworkTitle": "Project Gotham Racing 2",
     "ProjectOnly": false,
     "Kind": "Instalação integrada",
+    "ProjectType": "Recompilação",
     "Notes": "O NEXUS baixa o executável Windows oficial e o adiciona à biblioteca. A preparação de seus próprios arquivos e as opções ficam no aplicativo do autor. Atualizações são baixadas pelo NEXUS com cópia de segurança da instalação anterior.",
     "DiscoverExecutable": true,
     "PackageKind": "Executable"
@@ -3208,6 +3416,7 @@
     "ArtworkTitle": "Buffy the Vampire Slayer: Chaos Bleeds",
     "ProjectOnly": false,
     "Kind": "Instalação integrada",
+    "ProjectType": "Port",
     "Notes": "O NEXUS baixa o pacote Windows da última Release e o instala aqui. Se houver mais de um aplicativo no ZIP, escolha o principal e o launcher de configuração na janela do NEXUS. Na primeira abertura, prepare seus próprios arquivos seguindo o assistente do port. A compatibilidade e a preparação variam conforme o projeto.",
     "DiscoverExecutable": true,
     "PackageKind": "Zip"
@@ -3223,6 +3432,7 @@
     "ArtworkTitle": "Project Gotham Racing",
     "ProjectOnly": false,
     "Kind": "Instalação integrada",
+    "ProjectType": "Recompilação",
     "Notes": "O NEXUS baixa o executável Windows oficial e o adiciona à biblioteca. A preparação de seus próprios arquivos e as opções ficam no aplicativo do autor. Atualizações são baixadas pelo NEXUS com cópia de segurança da instalação anterior.",
     "DiscoverExecutable": true,
     "PackageKind": "Executable"
@@ -3238,6 +3448,7 @@
     "ArtworkTitle": "Super Street Fighter II Turbo HD Remix",
     "ProjectOnly": false,
     "Kind": "Instalação integrada",
+    "ProjectType": "Recompilação",
     "Notes": "O NEXUS baixa o pacote Windows da última Release e o instala aqui. Se houver mais de um aplicativo no ZIP, escolha o principal e o launcher de configuração na janela do NEXUS. Na primeira abertura, prepare seus próprios arquivos seguindo o assistente do port. A compatibilidade e a preparação variam conforme o projeto.",
     "DiscoverExecutable": true,
     "PackageKind": "Zip"
@@ -3253,6 +3464,7 @@
     "ArtworkTitle": "WWE '12",
     "ProjectOnly": false,
     "Kind": "Instalação integrada",
+    "ProjectType": "Port",
     "Notes": "O NEXUS baixa o pacote Windows da última Release e o instala aqui. Se houver mais de um aplicativo no ZIP, escolha o principal e o launcher de configuração na janela do NEXUS. Na primeira abertura, prepare seus próprios arquivos seguindo o assistente do port. A compatibilidade e a preparação variam conforme o projeto.",
     "DiscoverExecutable": true,
     "PackageKind": "Zip"
@@ -3268,6 +3480,7 @@
     "ArtworkTitle": "Hard Corps: Uprising",
     "ProjectOnly": false,
     "Kind": "Instalação integrada",
+    "ProjectType": "Recompilação",
     "Notes": "O NEXUS baixa o pacote Windows da última Release e o instala aqui. Se houver mais de um aplicativo no ZIP, escolha o principal e o launcher de configuração na janela do NEXUS. Na primeira abertura, prepare seus próprios arquivos seguindo o assistente do port. A compatibilidade e a preparação variam conforme o projeto.",
     "DiscoverExecutable": true,
     "PackageKind": "Zip"
@@ -3283,6 +3496,7 @@
     "ArtworkTitle": "Diablo III",
     "ProjectOnly": false,
     "Kind": "Instalação integrada",
+    "ProjectType": "Port",
     "Notes": "O NEXUS baixa e verifica o instalador oficial, abre o assistente do autor e cadastra o aplicativo que você selecionar ao concluir. Atualizações também usam esse assistente; ele controla os arquivos da instalação. Não é uma instalação silenciosa.",
     "DiscoverExecutable": true,
     "PackageKind": "Installer"
@@ -3298,6 +3512,7 @@
     "ArtworkTitle": "Naruto: The Broken Bond",
     "ProjectOnly": false,
     "Kind": "Instalação integrada",
+    "ProjectType": "Recompilação",
     "Notes": "O NEXUS baixa o pacote Windows da última Release e o instala aqui. Se houver mais de um aplicativo no ZIP, escolha o principal e o launcher de configuração na janela do NEXUS. Na primeira abertura, prepare seus próprios arquivos seguindo o assistente do port. A compatibilidade e a preparação variam conforme o projeto.",
     "DiscoverExecutable": true,
     "PackageKind": "Zip"
@@ -3313,6 +3528,7 @@
     "ArtworkTitle": "SoulCalibur II HD Online",
     "ProjectOnly": false,
     "Kind": "Instalação integrada",
+    "ProjectType": "Recompilação",
     "Notes": "O NEXUS baixa o pacote Windows da última Release e o instala aqui. Se houver mais de um aplicativo no ZIP, escolha o principal e o launcher de configuração na janela do NEXUS. Na primeira abertura, prepare seus próprios arquivos seguindo o assistente do port. A compatibilidade e a preparação variam conforme o projeto.",
     "DiscoverExecutable": true,
     "PackageKind": "Zip"
@@ -3328,6 +3544,7 @@
     "ArtworkTitle": "Resident Evil 3: Nemesis",
     "ProjectOnly": false,
     "Kind": "Instalação integrada",
+    "ProjectType": "Port",
     "Notes": "O NEXUS baixa o pacote Windows da última Release e o instala aqui. Se houver mais de um aplicativo no ZIP, escolha o principal e o launcher de configuração na janela do NEXUS. Na primeira abertura, prepare seus próprios arquivos seguindo o assistente do port. A compatibilidade e a preparação variam conforme o projeto.",
     "DiscoverExecutable": true,
     "PackageKind": "Zip"
@@ -3343,6 +3560,7 @@
     "ArtworkTitle": "Wipeout XL",
     "ProjectOnly": false,
     "Kind": "Instalação integrada",
+    "ProjectType": "Recompilação",
     "Notes": "O NEXUS baixa o pacote Windows da última Release e o instala aqui. Se houver mais de um aplicativo no ZIP, escolha o principal e o launcher de configuração na janela do NEXUS. Na primeira abertura, prepare seus próprios arquivos seguindo o assistente do port. A compatibilidade e a preparação variam conforme o projeto.",
     "DiscoverExecutable": true,
     "PackageKind": "Zip"
@@ -3358,6 +3576,7 @@
     "ArtworkTitle": "Metal Gear Solid",
     "ProjectOnly": false,
     "Kind": "Instalação integrada",
+    "ProjectType": "Port",
     "Notes": "O NEXUS baixa o pacote Windows da última Release e o instala aqui. Se houver mais de um aplicativo no ZIP, escolha o principal e o launcher de configuração na janela do NEXUS. Na primeira abertura, prepare seus próprios arquivos seguindo o assistente do port. A compatibilidade e a preparação variam conforme o projeto.",
     "DiscoverExecutable": true,
     "PackageKind": "Zip"
@@ -3373,6 +3592,7 @@
     "ArtworkTitle": "Grand Theft Auto: Vice City Stories",
     "ProjectOnly": false,
     "Kind": "Instalação integrada",
+    "ProjectType": "Recompilação",
     "Notes": "O NEXUS baixa o pacote Windows da última Release e o instala aqui. Se houver mais de um aplicativo no ZIP, escolha o principal e o launcher de configuração na janela do NEXUS. Na primeira abertura, prepare seus próprios arquivos seguindo o assistente do port. A compatibilidade e a preparação variam conforme o projeto.",
     "DiscoverExecutable": true,
     "PackageKind": "Zip"
@@ -3388,6 +3608,7 @@
     "ArtworkTitle": "Burnout 3: Takedown",
     "ProjectOnly": false,
     "Kind": "Instalação integrada",
+    "ProjectType": "Port",
     "Notes": "O NEXUS baixa e verifica o instalador oficial, abre o assistente do autor e cadastra o aplicativo que você selecionar ao concluir. Atualizações também usam esse assistente; ele controla os arquivos da instalação. Não é uma instalação silenciosa.",
     "DiscoverExecutable": true,
     "PackageKind": "Installer"
@@ -3403,6 +3624,7 @@
     "ArtworkTitle": "Gran Turismo 4",
     "ProjectOnly": false,
     "Kind": "Instalação integrada",
+    "ProjectType": "Recompilação",
     "Notes": "O NEXUS baixa o instalador oficial e abre o assistente do autor. Ao concluir, escolha o aplicativo instalado para cadastrá-lo. Atualizações usam esse mesmo assistente.",
     "DiscoverExecutable": true,
     "PackageKind": "Installer",
@@ -3419,6 +3641,7 @@
     "ArtworkTitle": "Crash Bandicoot",
     "ProjectOnly": false,
     "Kind": "Instalação integrada",
+    "ProjectType": "Port",
     "Notes": "O NEXUS baixa o executável Windows oficial e o adiciona à biblioteca. A preparação de seus próprios arquivos e as opções ficam no aplicativo do autor. Atualizações são baixadas pelo NEXUS com cópia de segurança da instalação anterior.",
     "DiscoverExecutable": true,
     "PackageKind": "Executable"
@@ -3434,6 +3657,7 @@
     "ArtworkTitle": "Monster Hunter Generations Ultimate",
     "ProjectOnly": false,
     "Kind": "Instalação integrada",
+    "ProjectType": "Recompilação",
     "Notes": "O NEXUS baixa o pacote Windows da última Release e o instala aqui. Se houver mais de um aplicativo no ZIP, escolha o principal e o launcher de configuração na janela do NEXUS. Na primeira abertura, prepare seus próprios arquivos seguindo o assistente do port. A compatibilidade e a preparação variam conforme o projeto.",
     "DiscoverExecutable": true,
     "PackageKind": "Zip"
@@ -3449,6 +3673,7 @@
     "ArtworkTitle": "Perfect Dark Zero",
     "ProjectOnly": false,
     "Kind": "Instalação integrada",
+    "ProjectType": "Recompilação",
     "Notes": "O NEXUS baixa o pacote Windows da última Release e o instala aqui. Se houver mais de um aplicativo no ZIP, escolha o principal e o launcher de configuração na janela do NEXUS. Na primeira abertura, prepare seus próprios arquivos seguindo o assistente do port. A compatibilidade e a preparação variam conforme o projeto.",
     "DiscoverExecutable": true,
     "PackageKind": "Zip"
@@ -3464,6 +3689,7 @@
     "ArtworkTitle": "Guitar Hero II",
     "ProjectOnly": false,
     "Kind": "Instalação integrada",
+    "ProjectType": "Port",
     "Notes": "Versão beta/experimental: exige aceitação antes de instalar. O NEXUS baixa o último pacote Windows compatível e cadastra o aplicativo. Se houver mais de um, escolha o principal dentro do NEXUS. Prepare seus próprios arquivos no aplicativo do autor. Outras plataformas podem ter Releases mais novas.",
     "DiscoverExecutable": true,
     "PackageKind": "Zip",
@@ -3480,6 +3706,7 @@
     "ArtworkTitle": "Sneak King, Big Bumpin' and PocketBike Racer",
     "ProjectOnly": false,
     "Kind": "Instalação integrada",
+    "ProjectType": "Recompilação",
     "Notes": "O NEXUS baixa o pacote Windows da última Release e o instala aqui. Se houver mais de um aplicativo no ZIP, escolha o principal e o launcher de configuração na janela do NEXUS. Na primeira abertura, prepare seus próprios arquivos seguindo o assistente do port. A compatibilidade e a preparação variam conforme o projeto.",
     "DiscoverExecutable": true,
     "PackageKind": "Zip"
@@ -3495,6 +3722,7 @@
     "ArtworkTitle": "Paper Mario",
     "ProjectOnly": false,
     "Kind": "Instalação integrada",
+    "ProjectType": "Port",
     "Notes": "O NEXUS baixa o pacote Windows da última Release e o instala aqui. Se houver mais de um aplicativo no ZIP, escolha o principal e o launcher de configuração na janela do NEXUS. Na primeira abertura, prepare seus próprios arquivos seguindo o assistente do port. A compatibilidade e a preparação variam conforme o projeto.",
     "DiscoverExecutable": true,
     "PackageKind": "Zip"
@@ -3510,6 +3738,7 @@
     "ArtworkTitle": "Tom Clancy's Ghost Recon 2: Summit Strike",
     "ProjectOnly": false,
     "Kind": "Instalação integrada",
+    "ProjectType": "Recompilação",
     "Notes": "O NEXUS baixa o pacote Windows da última Release e o instala aqui. Se houver mais de um aplicativo no ZIP, escolha o principal e o launcher de configuração na janela do NEXUS. Na primeira abertura, prepare seus próprios arquivos seguindo o assistente do port. A compatibilidade e a preparação variam conforme o projeto.",
     "DiscoverExecutable": true,
     "PackageKind": "Zip"
@@ -3525,6 +3754,7 @@
     "ArtworkTitle": "SoulCalibur",
     "ProjectOnly": false,
     "Kind": "Instalação integrada",
+    "ProjectType": "Port",
     "Notes": "O NEXUS baixa o pacote Windows da última Release e o instala aqui. Se houver mais de um aplicativo no ZIP, escolha o principal e o launcher de configuração na janela do NEXUS. Na primeira abertura, prepare seus próprios arquivos seguindo o assistente do port. A compatibilidade e a preparação variam conforme o projeto.",
     "DiscoverExecutable": true,
     "PackageKind": "Zip"
@@ -3540,6 +3770,7 @@
     "ArtworkTitle": "Wario Land: Super Mario Land 3",
     "ProjectOnly": false,
     "Kind": "Instalação integrada",
+    "ProjectType": "Port",
     "Notes": "O NEXUS baixa o pacote Windows da última Release e o instala aqui. Se houver mais de um aplicativo no ZIP, escolha o principal e o launcher de configuração na janela do NEXUS. Na primeira abertura, prepare seus próprios arquivos seguindo o assistente do port. A compatibilidade e a preparação variam conforme o projeto.",
     "DiscoverExecutable": true,
     "PackageKind": "Zip"
@@ -3555,6 +3786,7 @@
     "ArtworkTitle": "Forza Horizon",
     "ProjectOnly": false,
     "Kind": "Instalação integrada",
+    "ProjectType": "Port",
     "Notes": "O NEXUS baixa e verifica o instalador oficial, abre o assistente do autor e cadastra o aplicativo que você selecionar ao concluir. Atualizações também usam esse assistente; ele controla os arquivos da instalação. Não é uma instalação silenciosa.",
     "DiscoverExecutable": true,
     "PackageKind": "Installer"
@@ -3570,6 +3802,7 @@
     "ArtworkTitle": "Amped 2",
     "ProjectOnly": false,
     "Kind": "Instalação integrada",
+    "ProjectType": "Port",
     "Notes": "Versão beta/experimental: exige aceitação antes de instalar. O NEXUS baixa o instalador oficial e abre o assistente do autor. Ao concluir, escolha o aplicativo instalado para cadastrá-lo. Atualizações usam esse mesmo assistente.",
     "DiscoverExecutable": true,
     "PackageKind": "Installer",
@@ -3586,6 +3819,7 @@
     "ArtworkTitle": "Until Dawn",
     "ProjectOnly": false,
     "Kind": "Instalação integrada",
+    "ProjectType": "Port",
     "Notes": "O NEXUS baixa o pacote Windows da última Release e o instala aqui. Se houver mais de um aplicativo no ZIP, escolha o principal e o launcher de configuração na janela do NEXUS. Na primeira abertura, prepare seus próprios arquivos seguindo o assistente do port. A compatibilidade e a preparação variam conforme o projeto.",
     "DiscoverExecutable": true,
     "PackageKind": "Zip"
@@ -3601,6 +3835,7 @@
     "ArtworkTitle": "Crystal Defenders",
     "ProjectOnly": false,
     "Kind": "Instalação integrada",
+    "ProjectType": "Port",
     "Notes": "O NEXUS baixa e verifica o instalador oficial, abre o assistente do autor e cadastra o aplicativo que você selecionar ao concluir. Atualizações também usam esse assistente; ele controla os arquivos da instalação. Não é uma instalação silenciosa.",
     "DiscoverExecutable": true,
     "PackageKind": "Installer"
@@ -3616,6 +3851,7 @@
     "ArtworkTitle": "The Lord of the Rings: The Two Towers / The Return of the King",
     "ProjectOnly": false,
     "Kind": "Instalação integrada",
+    "ProjectType": "Port",
     "Notes": "O NEXUS baixa o pacote Windows da última Release e o instala aqui. Se houver mais de um aplicativo no ZIP, escolha o principal e o launcher de configuração na janela do NEXUS. Na primeira abertura, prepare seus próprios arquivos seguindo o assistente do port. A compatibilidade e a preparação variam conforme o projeto.",
     "DiscoverExecutable": true,
     "PackageKind": "Zip"
@@ -3631,6 +3867,7 @@
     "ArtworkTitle": "Gears of War 2, Gears of War 3, Gears of War: Judgment",
     "ProjectOnly": false,
     "Kind": "Instalação integrada",
+    "ProjectType": "Port",
     "Notes": "O NEXUS baixa o pacote Windows da última Release e o instala aqui. Se houver mais de um aplicativo no ZIP, escolha o principal e o launcher de configuração na janela do NEXUS. Na primeira abertura, prepare seus próprios arquivos seguindo o assistente do port. A compatibilidade e a preparação variam conforme o projeto.",
     "DiscoverExecutable": true,
     "PackageKind": "Zip"
@@ -3646,6 +3883,7 @@
     "ArtworkTitle": "Valkyrie Profile",
     "ProjectOnly": false,
     "Kind": "Instalação integrada",
+    "ProjectType": "Recompilação",
     "Notes": "O NEXUS baixa o pacote Windows da última Release e o instala aqui. Se houver mais de um aplicativo no ZIP, escolha o principal e o launcher de configuração na janela do NEXUS. Na primeira abertura, prepare seus próprios arquivos seguindo o assistente do port. A compatibilidade e a preparação variam conforme o projeto.",
     "DiscoverExecutable": true,
     "PackageKind": "Zip"
@@ -3661,6 +3899,7 @@
     "ArtworkTitle": "Dynasty Warriors 5: Xtreme Legends",
     "ProjectOnly": false,
     "Kind": "Instalação integrada",
+    "ProjectType": "Recompilação",
     "Notes": "O NEXUS baixa o pacote Windows da última Release e o instala aqui. Se houver mais de um aplicativo no ZIP, escolha o principal e o launcher de configuração na janela do NEXUS. Na primeira abertura, prepare seus próprios arquivos seguindo o assistente do port. A compatibilidade e a preparação variam conforme o projeto.",
     "DiscoverExecutable": true,
     "PackageKind": "Zip"
@@ -3676,6 +3915,7 @@
     "ArtworkTitle": "Super Kirby Clash",
     "ProjectOnly": false,
     "Kind": "Instalação integrada",
+    "ProjectType": "Recompilação",
     "Notes": "O NEXUS baixa e verifica o instalador oficial, abre o assistente do autor e cadastra o aplicativo que você selecionar ao concluir. Atualizações também usam esse assistente; ele controla os arquivos da instalação. Não é uma instalação silenciosa.",
     "DiscoverExecutable": true,
     "PackageKind": "Installer"
@@ -3691,6 +3931,7 @@
     "ArtworkTitle": "Saw II: Flesh & Blood",
     "ProjectOnly": false,
     "Kind": "Instalação integrada",
+    "ProjectType": "Recompilação",
     "Notes": "O NEXUS baixa o pacote Windows da última Release e o instala aqui. Se houver mais de um aplicativo no ZIP, escolha o principal e o launcher de configuração na janela do NEXUS. Na primeira abertura, prepare seus próprios arquivos seguindo o assistente do port. A compatibilidade e a preparação variam conforme o projeto.",
     "DiscoverExecutable": true,
     "PackageKind": "Zip"
@@ -3706,6 +3947,7 @@
     "ArtworkTitle": "Super Robot Wars 64",
     "ProjectOnly": false,
     "Kind": "Instalação integrada",
+    "ProjectType": "Recompilação",
     "Notes": "O NEXUS baixa o pacote Windows da última Release e o instala aqui. Se houver mais de um aplicativo no ZIP, escolha o principal e o launcher de configuração na janela do NEXUS. Na primeira abertura, prepare seus próprios arquivos seguindo o assistente do port. A compatibilidade e a preparação variam conforme o projeto.",
     "DiscoverExecutable": true,
     "PackageKind": "Zip"
@@ -3721,6 +3963,7 @@
     "ArtworkTitle": "LEGO Dimensions",
     "ProjectOnly": false,
     "Kind": "Instalação integrada",
+    "ProjectType": "Port",
     "Notes": "O NEXUS baixa o pacote Windows da última Release e o instala aqui. Se houver mais de um aplicativo no ZIP, escolha o principal e o launcher de configuração na janela do NEXUS. Na primeira abertura, prepare seus próprios arquivos seguindo o assistente do port. A compatibilidade e a preparação variam conforme o projeto.",
     "DiscoverExecutable": true,
     "PackageKind": "Zip"
@@ -3736,6 +3979,7 @@
     "ArtworkTitle": "Discord Times",
     "ProjectOnly": false,
     "Kind": "Instalação integrada",
+    "ProjectType": "Port",
     "Notes": "O NEXUS baixa o executável Windows oficial e o adiciona à biblioteca. A preparação de seus próprios arquivos e as opções ficam no aplicativo do autor. Atualizações são baixadas pelo NEXUS com cópia de segurança da instalação anterior.",
     "DiscoverExecutable": true,
     "PackageKind": "Executable"
@@ -3751,6 +3995,7 @@
     "ArtworkTitle": "Laserlords",
     "ProjectOnly": false,
     "Kind": "Instalação integrada",
+    "ProjectType": "Port",
     "Notes": "Versão beta/experimental: exige aceitação antes de instalar. O NEXUS baixa o último pacote Windows compatível e cadastra o aplicativo. Se houver mais de um, escolha o principal dentro do NEXUS. Prepare seus próprios arquivos no aplicativo do autor. Outras plataformas podem ter Releases mais novas.",
     "DiscoverExecutable": true,
     "PackageKind": "Zip",
@@ -3767,6 +4012,7 @@
     "ArtworkTitle": "Super Smash Bros. Brawl",
     "ProjectOnly": true,
     "Kind": "Em desenvolvimento",
+    "ProjectType": "Decompilação",
     "Notes": "Nenhum pacote Windows utilizável foi confirmado nas Releases consultadas. O projeto permanece listado para acompanhamento; não há download de jogo pronto que o NEXUS possa instalar automaticamente nesta consulta."
   },
   {
@@ -3780,6 +4026,7 @@
     "ArtworkTitle": "Dragon Quest IX",
     "ProjectOnly": true,
     "Kind": "Em desenvolvimento",
+    "ProjectType": "Port",
     "Notes": "Nenhum pacote Windows utilizável foi confirmado nas Releases consultadas. O projeto permanece listado para acompanhamento; não há download de jogo pronto que o NEXUS possa instalar automaticamente nesta consulta."
   },
   {
@@ -3793,6 +4040,7 @@
     "ArtworkTitle": "Xenogears",
     "ProjectOnly": true,
     "Kind": "Em desenvolvimento",
+    "ProjectType": "Port",
     "Notes": "Nenhum pacote Windows utilizável foi confirmado nas Releases consultadas. O projeto permanece listado para acompanhamento; não há download de jogo pronto que o NEXUS possa instalar automaticamente nesta consulta."
   },
   {
@@ -3806,6 +4054,7 @@
     "ArtworkTitle": "Gears of War 3",
     "ProjectOnly": true,
     "Kind": "Em desenvolvimento",
+    "ProjectType": "Port",
     "Notes": "Nenhum pacote Windows utilizável foi confirmado nas Releases consultadas. O projeto permanece listado para acompanhamento; não há download de jogo pronto que o NEXUS possa instalar automaticamente nesta consulta."
   },
   {
@@ -3819,6 +4068,7 @@
     "ArtworkTitle": "Atlantis: The Lost Tales",
     "ProjectOnly": false,
     "Kind": "Instalação integrada",
+    "ProjectType": "Port",
     "Notes": "O NEXUS baixa o pacote Windows da última Release e o instala aqui. Se houver mais de um aplicativo no ZIP, escolha o principal e o launcher de configuração na janela do NEXUS. Na primeira abertura, prepare seus próprios arquivos seguindo o assistente do port. A compatibilidade e a preparação variam conforme o projeto.",
     "DiscoverExecutable": true,
     "PackageKind": "Zip"
@@ -3834,6 +4084,7 @@
     "ArtworkTitle": "Teenage Mutant Ninja Turtles IV: Turtles in Time",
     "ProjectOnly": false,
     "Kind": "Instalação integrada",
+    "ProjectType": "Recompilação",
     "Notes": "O NEXUS baixa e verifica o instalador oficial, abre o assistente do autor e cadastra o aplicativo que você selecionar ao concluir. Atualizações também usam esse assistente; ele controla os arquivos da instalação. Não é uma instalação silenciosa.",
     "DiscoverExecutable": true,
     "PackageKind": "Installer"
@@ -3849,6 +4100,7 @@
     "ArtworkTitle": "Splatterhouse (2010)",
     "ProjectOnly": false,
     "Kind": "Instalação integrada",
+    "ProjectType": "Decompilação",
     "Notes": "O NEXUS baixa o pacote Windows da última Release e o instala aqui. Se houver mais de um aplicativo no ZIP, escolha o principal e o launcher de configuração na janela do NEXUS. Na primeira abertura, prepare seus próprios arquivos seguindo o assistente do port. A compatibilidade e a preparação variam conforme o projeto.",
     "DiscoverExecutable": true,
     "PackageKind": "Zip"
@@ -3864,6 +4116,7 @@
     "ArtworkTitle": "Star Wars: Shadows of the Empire",
     "ProjectOnly": false,
     "Kind": "Instalação integrada",
+    "ProjectType": "Recompilação",
     "Notes": "O NEXUS baixa o pacote Windows da última Release e o instala aqui. Se houver mais de um aplicativo no ZIP, escolha o principal e o launcher de configuração na janela do NEXUS. Na primeira abertura, prepare seus próprios arquivos seguindo o assistente do port. A compatibilidade e a preparação variam conforme o projeto.",
     "DiscoverExecutable": true,
     "PackageKind": "Zip"
@@ -3879,6 +4132,7 @@
     "ArtworkTitle": "Urban Reign",
     "ProjectOnly": false,
     "Kind": "Instalação integrada",
+    "ProjectType": "Recompilação",
     "Notes": "O NEXUS baixa o pacote Windows da última Release e o instala aqui. Se houver mais de um aplicativo no ZIP, escolha o principal e o launcher de configuração na janela do NEXUS. Na primeira abertura, prepare seus próprios arquivos seguindo o assistente do port. A compatibilidade e a preparação variam conforme o projeto.",
     "DiscoverExecutable": true,
     "PackageKind": "Zip"
@@ -3894,6 +4148,7 @@
     "ArtworkTitle": "TimeSplitters",
     "ProjectOnly": false,
     "Kind": "Instalação integrada",
+    "ProjectType": "Recompilação",
     "Notes": "O NEXUS baixa o pacote Windows da última Release e o instala aqui. Se houver mais de um aplicativo no ZIP, escolha o principal e o launcher de configuração na janela do NEXUS. Na primeira abertura, prepare seus próprios arquivos seguindo o assistente do port. A compatibilidade e a preparação variam conforme o projeto.",
     "DiscoverExecutable": true,
     "PackageKind": "Zip"
@@ -3909,6 +4164,7 @@
     "ArtworkTitle": "God Hand",
     "ProjectOnly": true,
     "Kind": "Em desenvolvimento",
+    "ProjectType": "Port",
     "Notes": "Nenhum pacote Windows utilizável foi confirmado nas Releases consultadas. O projeto permanece listado para acompanhamento; não há download de jogo pronto que o NEXUS possa instalar automaticamente nesta consulta."
   },
   {
@@ -3922,6 +4178,7 @@
     "ArtworkTitle": "Crash Twinsanity",
     "ProjectOnly": false,
     "Kind": "Instalação integrada",
+    "ProjectType": "Port",
     "Notes": "O NEXUS baixa o pacote Windows da última Release e o instala aqui. Se houver mais de um aplicativo no ZIP, escolha o principal e o launcher de configuração na janela do NEXUS. Na primeira abertura, prepare seus próprios arquivos seguindo o assistente do port. A compatibilidade e a preparação variam conforme o projeto.",
     "DiscoverExecutable": true,
     "PackageKind": "Zip"
@@ -3937,6 +4194,7 @@
     "ArtworkTitle": "TimeSplitters: Future Perfect",
     "ProjectOnly": false,
     "Kind": "Instalação integrada",
+    "ProjectType": "Port",
     "Notes": "O NEXUS baixa o pacote Windows da última Release e o instala aqui. Se houver mais de um aplicativo no ZIP, escolha o principal e o launcher de configuração na janela do NEXUS. Na primeira abertura, prepare seus próprios arquivos seguindo o assistente do port. A compatibilidade e a preparação variam conforme o projeto.",
     "DiscoverExecutable": true,
     "PackageKind": "Zip"
@@ -3952,6 +4210,7 @@
     "ArtworkTitle": "Killzone 2",
     "ProjectOnly": false,
     "Kind": "Instalação integrada",
+    "ProjectType": "Port",
     "Notes": "Versão beta/experimental: exige aceitação antes de instalar. O NEXUS baixa o último pacote Windows compatível e cadastra o aplicativo. Se houver mais de um, escolha o principal dentro do NEXUS. Prepare seus próprios arquivos no aplicativo do autor. Outras plataformas podem ter Releases mais novas.",
     "DiscoverExecutable": true,
     "PackageKind": "Zip",
@@ -3968,6 +4227,7 @@
     "ArtworkTitle": "NFL Head Coach 09",
     "ProjectOnly": false,
     "Kind": "Instalação integrada",
+    "ProjectType": "Recompilação",
     "Notes": "O NEXUS baixa e verifica o instalador oficial, abre o assistente do autor e cadastra o aplicativo que você selecionar ao concluir. Atualizações também usam esse assistente; ele controla os arquivos da instalação. Não é uma instalação silenciosa.",
     "DiscoverExecutable": true,
     "PackageKind": "Installer"
@@ -3983,6 +4243,7 @@
     "ArtworkTitle": "Killzone 3",
     "ProjectOnly": false,
     "Kind": "Instalação integrada",
+    "ProjectType": "Port",
     "Notes": "Versão beta/experimental: exige aceitação antes de instalar. O NEXUS baixa o último pacote Windows compatível e cadastra o aplicativo. Se houver mais de um, escolha o principal dentro do NEXUS. Prepare seus próprios arquivos no aplicativo do autor. Outras plataformas podem ter Releases mais novas.",
     "DiscoverExecutable": true,
     "PackageKind": "Zip",
@@ -3999,6 +4260,7 @@
     "ArtworkTitle": "Juiced 2: Hot Import Nights",
     "ProjectOnly": false,
     "Kind": "Instalação integrada",
+    "ProjectType": "Recompilação",
     "Notes": "Versão beta/experimental: exige aceitação antes de instalar. O NEXUS baixa o instalador oficial e abre o assistente do autor. Ao concluir, escolha o aplicativo instalado para cadastrá-lo. Atualizações usam esse mesmo assistente.",
     "DiscoverExecutable": true,
     "PackageKind": "Installer",
@@ -4015,6 +4277,7 @@
     "ArtworkTitle": "EA Sports UFC 3",
     "ProjectOnly": false,
     "Kind": "Instalação integrada",
+    "ProjectType": "Port",
     "Notes": "O NEXUS baixa o pacote Windows da última Release e o instala aqui. Se houver mais de um aplicativo no ZIP, escolha o principal e o launcher de configuração na janela do NEXUS. Na primeira abertura, prepare seus próprios arquivos seguindo o assistente do port. A compatibilidade e a preparação variam conforme o projeto.",
     "DiscoverExecutable": true,
     "PackageKind": "Zip"
@@ -4030,6 +4293,7 @@
     "ArtworkTitle": "Sneak King",
     "ProjectOnly": true,
     "Kind": "Em desenvolvimento",
+    "ProjectType": "Recompilação",
     "Notes": "Nenhum pacote Windows utilizável foi confirmado nas Releases consultadas. O projeto permanece listado para acompanhamento; não há download de jogo pronto que o NEXUS possa instalar automaticamente nesta consulta."
   },
   {
@@ -4043,6 +4307,7 @@
     "ArtworkTitle": "Resident Evil Code: Veronica X",
     "ProjectOnly": false,
     "Kind": "Instalação integrada",
+    "ProjectType": "Port",
     "Notes": "O NEXUS baixa o pacote Windows da última Release e o instala aqui. Se houver mais de um aplicativo no ZIP, escolha o principal e o launcher de configuração na janela do NEXUS. Na primeira abertura, prepare seus próprios arquivos seguindo o assistente do port. A compatibilidade e a preparação variam conforme o projeto.",
     "DiscoverExecutable": true,
     "PackageKind": "Zip"
@@ -4058,6 +4323,7 @@
     "ArtworkTitle": "Super Paper Mario",
     "ProjectOnly": false,
     "Kind": "Instalação integrada",
+    "ProjectType": "Port",
     "Notes": "O NEXUS baixa o pacote Windows da última Release e o instala aqui. Se houver mais de um aplicativo no ZIP, escolha o principal e o launcher de configuração na janela do NEXUS. Na primeira abertura, prepare seus próprios arquivos seguindo o assistente do port. A compatibilidade e a preparação variam conforme o projeto.",
     "DiscoverExecutable": true,
     "PackageKind": "Zip"
@@ -4073,6 +4339,7 @@
     "ArtworkTitle": "Mother 3",
     "ProjectOnly": false,
     "Kind": "Instalação integrada",
+    "ProjectType": "Recompilação",
     "Notes": "O NEXUS baixa o pacote Windows da última Release e o instala aqui. Se houver mais de um aplicativo no ZIP, escolha o principal e o launcher de configuração na janela do NEXUS. Na primeira abertura, prepare seus próprios arquivos seguindo o assistente do port. A compatibilidade e a preparação variam conforme o projeto.",
     "DiscoverExecutable": true,
     "PackageKind": "Zip"
@@ -4088,6 +4355,7 @@
     "ArtworkTitle": "Marvel: Ultimate Alliance",
     "ProjectOnly": false,
     "Kind": "Instalação integrada",
+    "ProjectType": "Recompilação",
     "Notes": "O NEXUS baixa o pacote Windows da última Release e o instala aqui. Se houver mais de um aplicativo no ZIP, escolha o principal e o launcher de configuração na janela do NEXUS. Na primeira abertura, prepare seus próprios arquivos seguindo o assistente do port. A compatibilidade e a preparação variam conforme o projeto.",
     "DiscoverExecutable": true,
     "PackageKind": "Zip"
@@ -4103,6 +4371,7 @@
     "ArtworkTitle": "Madden NFL 08",
     "ProjectOnly": false,
     "Kind": "Instalação integrada",
+    "ProjectType": "Recompilação",
     "Notes": "Versão beta/experimental: exige aceitação antes de instalar. O NEXUS baixa o instalador oficial e abre o assistente do autor. Ao concluir, escolha o aplicativo instalado para cadastrá-lo. Atualizações usam esse mesmo assistente.",
     "DiscoverExecutable": true,
     "PackageKind": "Installer",
@@ -4119,6 +4388,7 @@
     "ArtworkTitle": "NHL 2K8",
     "ProjectOnly": false,
     "Kind": "Instalação integrada",
+    "ProjectType": "Recompilação",
     "Notes": "O NEXUS baixa e verifica o instalador oficial, abre o assistente do autor e cadastra o aplicativo que você selecionar ao concluir. Atualizações também usam esse assistente; ele controla os arquivos da instalação. Não é uma instalação silenciosa.",
     "DiscoverExecutable": true,
     "PackageKind": "Installer"
@@ -4134,6 +4404,7 @@
     "ArtworkTitle": "Monster Hunter Freedom Unite",
     "ProjectOnly": false,
     "Kind": "Instalação integrada",
+    "ProjectType": "Port",
     "Notes": "O NEXUS baixa o pacote Windows da última Release e o instala aqui. Se houver mais de um aplicativo no ZIP, escolha o principal e o launcher de configuração na janela do NEXUS. Na primeira abertura, prepare seus próprios arquivos seguindo o assistente do port. A compatibilidade e a preparação variam conforme o projeto.",
     "DiscoverExecutable": true,
     "PackageKind": "Zip"
@@ -4153,6 +4424,7 @@
     "ArtworkTitle": "Super Smash Bros. for Wii U",
     "ProjectOnly": false,
     "Kind": "Port / recompilação",
+    "ProjectType": "Recompilação",
     "Notes": "Jogar e Configurar abrem o launcher original, que seleciona sua pasta USA do jogo, update v304 e DLC opcional. Requer Vulkan 1.3. As opções salvas são aplicadas pelo launcher.",
     "Arguments": "",
     "ConfigurationArguments": ""
@@ -4168,6 +4440,7 @@
     "ArtworkTitle": "Castlevania: Curse of Darkness",
     "ProjectOnly": true,
     "Kind": "Em desenvolvimento",
+    "ProjectType": "Recompilação",
     "Notes": "Nenhum pacote Windows utilizável foi confirmado nas Releases consultadas. O projeto permanece listado para acompanhamento; não há download de jogo pronto que o NEXUS possa instalar automaticamente nesta consulta."
   },
   {
@@ -4185,6 +4458,7 @@
     "ArtworkTitle": "Pirates of the Caribbean: At World's End",
     "ProjectOnly": false,
     "Kind": "Port / recompilação",
+    "ProjectType": "Recompilação",
     "Notes": "A primeira abertura usa o launcher original para importar sua ISO USA. Jogar abre esse launcher para aplicar as opções salvas; não há atalho direto validado. Projeto inicial: em GPUs AMD/Intel, consulte a opção Xenos se o renderer padrão falhar."
   },
   {
@@ -4198,6 +4472,7 @@
     "ArtworkTitle": "Uncharted: The Nathan Drake Collection",
     "ProjectOnly": false,
     "Kind": "Instalação integrada",
+    "ProjectType": "Port",
     "Notes": "O NEXUS baixa o pacote Windows da última Release e o instala aqui. Se houver mais de um aplicativo no ZIP, escolha o principal e o launcher de configuração na janela do NEXUS. Na primeira abertura, prepare seus próprios arquivos seguindo o assistente do port. A compatibilidade e a preparação variam conforme o projeto.",
     "DiscoverExecutable": true,
     "PackageKind": "Zip"
@@ -4213,6 +4488,7 @@
     "ArtworkTitle": "Skate 3",
     "ProjectOnly": false,
     "Kind": "Instalação integrada",
+    "ProjectType": "Recompilação",
     "Notes": "O NEXUS baixa o pacote Windows da última Release e o instala aqui. Se houver mais de um aplicativo no ZIP, escolha o principal e o launcher de configuração na janela do NEXUS. Na primeira abertura, prepare seus próprios arquivos seguindo o assistente do port. A compatibilidade e a preparação variam conforme o projeto.",
     "DiscoverExecutable": true,
     "PackageKind": "Zip"
@@ -4230,6 +4506,7 @@
     "ConfigNames": [],
     "AssetPattern": "^TotK-Setup-.*-windows\\.zip$",
     "Kind": "Assistente de preparação",
+    "ProjectType": "Recompilação",
     "Notes": "O NEXUS baixa e extrai o assistente oficial. Nele, selecione seus arquivos do Switch com update 1.2.1 ou 1.4.3 e suas chaves, escolha o destino e aguarde a compilação. Ao concluir, selecione totk.exe no NEXUS. Para atualizar, use o mesmo destino no assistente. Configurações dentro do jogo em F1. Requer AVX2 e Vulkan 1.3; cerca de 36 GiB livres durante a preparação. Projeto em desenvolvimento."
   },
   {
@@ -4250,6 +4527,7 @@
     "PreferRootExecutable": true,
     "AssetPattern": "^WitchTime-.*-windows-x86_64\\.zip$",
     "Kind": "Recompilação",
+    "ProjectType": "Recompilação",
     "Notes": "Configurar abre o launcher original para selecionar seu dump extraído (exefs/romfs), compilar e ajustar opções. Jogar usa --play para iniciar com as opções salvas; se o build precisar ser preparado, o launcher permanece aberto. Atualizações podem exigir recompilação. Requer driver Vulkan; prefira uma pasta curta e gravável. Projeto em desenvolvimento."
   },
   {
@@ -4264,6 +4542,7 @@
     "ConfigNames": [],
     "AssetPattern": "^metroid-prime2-port-.*-windows-x86_64\\.zip$",
     "Kind": "Port nativo",
+    "ProjectType": "Port",
     "Notes": "Selecione sua imagem de disco no primeiro início: GameCube USA G2ME01/PAL G2MP01 ou Metroid Prime Trilogy R3ME01/R3MP01. Aceita ISO, GCM, RVZ, WIA, GCZ, CISO e WBFS. Todas as configurações ficam dentro do jogo, em F1 (ou Start + Back). Projeto em desenvolvimento.",
     "PackageKind": "Zip"
   },
@@ -4283,6 +4562,7 @@
     "ConfigurationArguments": "--launcher",
     "AssetPattern": "^MetroidDread-PC-v.*\\.zip$",
     "Kind": "Recompilação",
+    "ProjectType": "Recompilação",
     "Notes": "Configurar abre a tela original de preparação e opções. Selecione seu dump de Metroid Dread 2.1.0 com ExeFS e RomFS; o compilador incluído prepara o jogo no primeiro início (cerca de 7 GB livres). Jogar usa --play após a preparação; atualizações podem recompilar. Opções durante o jogo em F1. Preview em desenvolvimento.",
     "PackageKind": "Zip"
   },
@@ -4302,6 +4582,7 @@
     "ConfigurationArguments": "",
     "AssetPattern": "^VCS-Recomp-.*-windows\\.zip$",
     "Kind": "Recompilação",
+    "ProjectType": "Recompilação",
     "Notes": "Use Configurar para abrir o assistente original e selecionar sua ISO USA SLUS-21590, preparar as ferramentas e compilar (20–60 minutos). O assistente pode instalar Microsoft C++ Build Tools, cerca de 6 GB. Escolha uma pasta curta e local, fora do OneDrive/Program Files. Depois, Jogar usa --play com o build salvo. Atualizações podem exigir Update the build no assistente. Opções no jogo em F2. Port PS2 independente do perfil PSP.",
     "PackageKind": "Zip"
   },
@@ -4319,6 +4600,7 @@
     ],
     "AssetPattern": "^HCTP-Recompiled-Windows\\.zip$",
     "Kind": "Recompilação",
+    "ProjectType": "Recompilação",
     "Notes": "Jogar e Configurar abrem o launcher original, que contém PLAY e as opções. Selecione seu disco USA SLUS-20787 (ISO/CHD ou pasta); a primeira compilação leva cerca de 30–90 minutos e pode solicitar Microsoft C++ Build Tools. Use pasta curta e local. Requer CPU AVX2, Direct3D 11, cerca de 16 GB RAM e 15 GB livres. Não há inicialização direta validada neste perfil. Projeto em desenvolvimento; online e PPV ainda incompletos.",
     "PackageKind": "Zip"
   },
@@ -4337,6 +4619,7 @@
     "ConfigurationArguments": "--screen settings",
     "AssetPattern": "^gt3r-windows-x64\\.zip$",
     "Kind": "Reimplementação",
+    "ProjectType": "Reimplementação",
     "Notes": "No primeiro início selecione a ISO do seu próprio disco. Jogar inicia com o disco salvo; Configurar abre diretamente a tela Settings (--screen settings). O port lê a ISO em tempo de execução e não inclui dados do jogo. Projeto independente em desenvolvimento.",
     "PackageKind": "Zip"
   },
@@ -4352,6 +4635,7 @@
     "ConfigNames": [],
     "AssetPattern": "^BrawlRecompiled-v.*-Windows\\.zip$",
     "Kind": "Recompilação",
+    "ProjectType": "Recompilação",
     "Notes": "Abra Brawl Recompiled.exe e selecione sua imagem de disco USA RSBE01 (ISO/CISO/WBFS) ou pasta extraída. Depois da preparação, inicia o jogo com o conteúdo salvo. As configurações ficam dentro do jogo: F10 ou Home no controle. Não execute engine/brawl-engine.exe isoladamente. Projeto em desenvolvimento; não é o projeto de decompilação doldecomp/brawl.",
     "PackageKind": "Zip"
   },
@@ -4370,6 +4654,7 @@
     ],
     "AssetPattern": "^EoNLauncher\\.exe$",
     "Kind": "Recompilação",
+    "ProjectType": "Recompilação",
     "Notes": "Jogar e Configurar abrem o launcher original para importar sua ISO ou pasta do Xbox, compilar e pressionar Play. O autor adicionou suporte USA no v1.0.2 além de PAL. Reserva cerca de 15 GB; a primeira compilação baixa ferramentas e leva 30–90 minutos. Termos das bibliotecas Microsoft são apresentados pelo assistente. Opções durante o jogo em F1. Atualizações podem exigir recompilar pelo launcher; não há inicialização direta validada neste perfil."
   }
 ]

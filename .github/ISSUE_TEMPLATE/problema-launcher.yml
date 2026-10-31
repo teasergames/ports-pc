@@ -1,0 +1,38 @@
+name: Problema no NEXUS
+description: Algo não funcionou no launcher (biblioteca, catálogo, download, atualização ou exclusão).
+title: "[Problema] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Problemas de desempenho ou gráficos de um jogo específico geralmente pertencem ao repositório do autor do port.
+  - type: input
+    id: version
+    attributes:
+      label: Versão do NEXUS
+      description: Aparece no rodapé, ao lado de "Verificar atualização".
+      placeholder: "1.7.0-beta.1"
+    validations:
+      required: true
+  - type: input
+    id: port
+    attributes:
+      label: Port envolvido (se houver)
+      placeholder: "Ex.: Bloodborne · Awakenchan/BloodBorneButPc"
+  - type: textarea
+    id: steps
+    attributes:
+      label: O que aconteceu e como reproduzir
+      placeholder: |
+        1. Abri o Catálogo
+        2. Selecionei ...
+        3. Cliquei em ...
+    validations:
+      required: true
+  - type: textarea
+    id: log
+    attributes:
+      label: Trecho do log
+      description: "Configurações → Abrir dados locais → nexus.log. Remova caminhos ou nomes que não queira publicar."
+      render: text

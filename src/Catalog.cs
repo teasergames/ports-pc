@@ -22,42 +22,189 @@ namespace Nexus {
     public bool PreferRootExecutable {get;set;}public bool UsesInstaller {get{return PackageKind=="Installer"||PackageKind=="InstallerZip";}}
     public string Identity {get{return String.IsNullOrEmpty(Repository)?SourceUrl:Repository;}}
     public string ProjectUrl {get{return String.IsNullOrEmpty(SourceUrl)?"https://github.com/"+Repository:SourceUrl;}}
+
+    // What the project is (Port, Recompilação...). Stored in ports.json and validated against ProjectTypes.
+    public string ProjectType {get;set;}
+    // File name pattern shown in the import dialog of profiles distributed outside GitHub (ManualPackage).
+    public string ManualPackageFile {get;set;}
+    // Oldest NEXUS version able to install this profile. Newer profiles are hidden from older launchers.
+    public string MinNexusVersion {get;set;}
+
+    // How the project is installed, derived from the profile flags so it never disagrees with the installer.
+    public string InstallMode {
+      get {
+        if (ProjectOnly) return String.Equals(Kind, "Em desenvolvimento", StringComparison.OrdinalIgnoreCase) ? InstallModes.InDevelopment : InstallModes.Manual;
+        if (ManualPackage) return InstallModes.OfficialSite;
+        if (UsesInstaller) return InstallModes.Wizard;
+        return InstallModes.Integrated;
+      }
+    }
+
     public override string ToString(){return Name;}
+  }
+  public static class ProjectTypes {
+    public const string Port = "Port", Recompilation = "Recompilação", Decompilation = "Decompilação", Reimplementation = "Reimplementação", Compatibility = "Compatibilidade";
+    public static readonly string[] All = { Port, Recompilation, Decompilation, Reimplementation, Compatibility };
+  }
+  public static class InstallModes {
+    public const string Integrated = "Integrada", Wizard = "Assistente", OfficialSite = "Site oficial", Manual = "Manual", InDevelopment = "Em desenvolvimento";
+    public static readonly string[] All = { Integrated, Wizard, OfficialSite, Manual, InDevelopment };
+    public static bool Automatic(string mode) { return mode == Integrated || mode == Wizard || mode == OfficialSite; }
+  }
+  public class CatalogQuery {
+    public string Platform;
+    public string Search;
+    public readonly HashSet<string> ProjectTypes = new HashSet<string>();
+    public readonly HashSet<string> InstallModes = new HashSet<string>();
   }
   public class PortRelease {
     public string Version;public string ReleaseUrl;public string AssetName;public string DownloadUrl;public long Size;public string Digest;public bool FromCache;public bool IsPrerelease;public string CheckedUtc;
   }
   public class InstallProgress {public string Message;public double Percent;}
   public class PortCatalog:IDisposable {
-    readonly HttpClient client;public readonly List<PortEntry> Entries;
+    readonly HttpClient client;public List<PortEntry> Entries {get;private set;}
     readonly Dictionary<string,PortRelease> memo=new Dictionary<string,PortRelease>();
     readonly Dictionary<string,DateTime> memoTime=new Dictionary<string,DateTime>();
+    List<Dictionary<string,object>> remoteReleases;
     public PortCatalog():this(new HttpClientHandler()){}
     public PortCatalog(HttpMessageHandler handler){
-      Entries=LoadEntries();ServicePointManager.SecurityProtocol|=SecurityProtocolType.Tls12;client=new HttpClient(handler);client.Timeout=Timeout.InfiniteTimeSpan;client.DefaultRequestHeaders.UserAgent.ParseAdd("NexusPortsPC/1.6 (https://github.com/teasergames/ports-pc)");
+      Entries=LoadEntries().Where(Supported).ToList();ServicePointManager.SecurityProtocol|=SecurityProtocolType.Tls12;client=new HttpClient(handler);client.Timeout=Timeout.InfiniteTimeSpan;client.DefaultRequestHeaders.UserAgent.ParseAdd("NexusPortsPC/1.6 (https://github.com/teasergames/ports-pc)");
     }
+    // Sites trusted for profiles distributed outside GitHub Releases. A remote catalog cannot add new ones.
+    public static readonly string[] TrustedManualSources = { "https://almost-there-games.itch.io/azimuth" };
+    static readonly string[] PackageKinds = { null, "Zip", "Installer", "Executable", "InstallerZip" };
+    public const string RemoteCatalogUrl = "https://raw.githubusercontent.com/teasergames/ports-pc/main/assets/ports.json";
+    public const string RemoteReleasesCacheUrl = "https://raw.githubusercontent.com/teasergames/ports-pc/catalog-data/releases-cache.json";
+    const int RemoteLimit = 4 * 1024 * 1024;
+
+    static List<PortEntry> embedded;
     public static List<PortEntry> LoadEntries(){
-      using(var stream=Assembly.GetExecutingAssembly().GetManifestResourceStream("Nexus.ports.json"))using(var reader=new StreamReader(stream)){
-        var entries=new JavaScriptSerializer().Deserialize<List<PortEntry>>(reader.ReadToEnd());var ids=new HashSet<string>();
-        foreach(var e in entries){if(!Regex.IsMatch(e.Id??"",@"^[a-z0-9-]+$")||!ids.Add(e.Id)||(!e.ManualPackage&&!Regex.IsMatch(e.Repository??"",@"^[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+$"))||e.PlayNames==null||e.ConfigNames==null)throw new InvalidDataException("Entrada do catálogo inválida.");if(e.ManualPackage&&(e.ProjectOnly||e.SourceUrl!="https://almost-there-games.itch.io/azimuth"))throw new InvalidDataException("Fonte externa inválida.");if(!Platforms.All.Skip(1).Contains(e.Platform))throw new InvalidDataException("Plataforma inválida.");if(!e.ProjectOnly){if((e.PlayNames.Length==0&&!e.DiscoverExecutable&&!e.UsesInstaller)||String.IsNullOrEmpty(e.AssetPattern)||!(e.AssetPattern.EndsWith("zip$")||((e.PackageKind=="Executable"||e.PackageKind=="Installer")&&e.AssetPattern.EndsWith("exe$"))))throw new InvalidDataException("Perfil Windows inválido.");new Regex(e.AssetPattern);}}
-        return entries;
+      if (embedded == null) {
+        using (var stream = Assembly.GetExecutingAssembly().GetManifestResourceStream("Nexus.ports.json"))
+        using (var reader = new StreamReader(stream)) embedded = Parse(reader.ReadToEnd());
+      }
+      // Callers may keep or mutate the list, so every call gets its own copy of the validated profiles.
+      return embedded.ToList();
+    }
+
+    // Validates a complete catalog. Any invalid profile rejects the whole document, so a broken remote
+    // catalog can never partially replace the profiles bundled with this NEXUS version.
+    public static List<PortEntry> Parse(string json){
+      var entries = new JavaScriptSerializer { MaxJsonLength = RemoteLimit }.Deserialize<List<PortEntry>>(json);
+      if (entries == null || entries.Count == 0) throw new InvalidDataException("Catálogo vazio.");
+      var ids = new HashSet<string>();
+      foreach (var e in entries) {
+        if (e == null || !Regex.IsMatch(e.Id ?? "", @"^[a-z0-9-]+$") || !ids.Add(e.Id) || String.IsNullOrWhiteSpace(e.Name)
+            || (!e.ManualPackage && !Regex.IsMatch(e.Repository ?? "", @"^[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+$")) || e.PlayNames == null || e.ConfigNames == null)
+          throw new InvalidDataException("Entrada do catálogo inválida.");
+        if (e.ManualPackage && (e.ProjectOnly || !TrustedManualSources.Contains(e.SourceUrl) || String.IsNullOrEmpty(e.ManualPackageFile)))
+          throw new InvalidDataException("Fonte externa inválida.");
+        if (!Platforms.All.Skip(1).Contains(e.Platform)) throw new InvalidDataException("Plataforma inválida.");
+        if (!ProjectTypes.All.Contains(e.ProjectType)) throw new InvalidDataException("Tipo de projeto inválido: " + e.Id);
+        if (!PackageKinds.Contains(e.PackageKind)) throw new InvalidDataException("Formato de pacote desconhecido: " + e.Id);
+        if (e.MinNexusVersion != null) SelfUpdater.StableVersion(e.MinNexusVersion);
+        if (!e.ProjectOnly) {
+          if ((e.PlayNames.Length == 0 && !e.DiscoverExecutable && !e.UsesInstaller) || String.IsNullOrEmpty(e.AssetPattern)
+              || !(e.AssetPattern.EndsWith("zip$") || ((e.PackageKind == "Executable" || e.PackageKind == "Installer") && e.AssetPattern.EndsWith("exe$"))))
+            throw new InvalidDataException("Perfil Windows inválido.");
+          new Regex(e.AssetPattern);
+        }
+      }
+      return entries;
+    }
+
+    // Profiles that need a newer launcher stay hidden until NEXUS itself is updated.
+    public static bool Supported(PortEntry entry){
+      return entry.MinNexusVersion == null || SelfUpdater.StableVersion(entry.MinNexusVersion) <= SelfUpdater.StableVersion(SelfUpdater.CurrentVersion);
+    }
+
+    // Downloads the catalog published on the main branch (raw.githubusercontent.com does not count
+    // against the GitHub API limit). Falls back to the last valid copy saved in the data folder.
+    public async Task<bool> RefreshFromRemote(string dataRoot, CancellationToken token){
+      string cacheFile = Path.Combine(dataRoot, "catalog-cache.json");
+      List<PortEntry> remote = null;
+      try {
+        string json = await FetchText(RemoteCatalogUrl, token);
+        remote = Parse(json);
+        File.WriteAllText(cacheFile, json, System.Text.Encoding.UTF8);
+      } catch (OperationCanceledException) { if (token.IsCancellationRequested) throw; }
+      catch (Exception) { }
+      if (remote == null && File.Exists(cacheFile)) {
+        try { remote = Parse(File.ReadAllText(cacheFile, System.Text.Encoding.UTF8)); } catch (Exception) { }
+      }
+      try {
+        string releases = await FetchText(RemoteReleasesCacheUrl, token);
+        remoteReleases = ReleaseRecords(releases);
+      } catch (OperationCanceledException) { if (token.IsCancellationRequested) throw; }
+      catch (Exception) { }
+      if (remote == null) return false;
+      var visible = remote.Where(Supported).ToList();
+      if (visible.Count < Entries.Count / 2) return false;
+      Entries = visible;
+      return true;
+    }
+
+    async Task<string> FetchText(string url, CancellationToken token){
+      using (var timeout = CancellationTokenSource.CreateLinkedTokenSource(token)) {
+        timeout.CancelAfter(TimeSpan.FromSeconds(10));
+        using (var response = await client.GetAsync(url, HttpCompletionOption.ResponseHeadersRead, timeout.Token)) {
+          response.EnsureSuccessStatusCode();
+          using (var stream = await response.Content.ReadAsStreamAsync())
+          using (var bytes = new MemoryStream()) {
+            byte[] buffer = new byte[16384]; int read;
+            while ((read = await stream.ReadAsync(buffer, 0, buffer.Length, timeout.Token)) > 0) {
+              if (bytes.Length + read > RemoteLimit) throw new InvalidDataException("Resposta muito grande.");
+              bytes.Write(buffer, 0, read);
+            }
+            return System.Text.Encoding.UTF8.GetString(bytes.ToArray());
+          }
+        }
       }
     }
+
+    // Kept for existing callers: mode 1 = automatic installation, mode 2 = manual or in development.
     public static List<PortEntry> Filter(IEnumerable<PortEntry> entries,string platform,string search,int installationMode){
-      string query=(search??"").Trim();return entries.Where(e=>(String.IsNullOrEmpty(platform)||platform==Platforms.All[0]||e.Platform==platform)&&(installationMode==0||installationMode==1&&!e.ProjectOnly||installationMode==2&&e.ProjectOnly)&&(query.Length==0||(e.Name+" "+e.ArtworkTitle+" "+e.Identity+" "+e.Platform).IndexOf(query,StringComparison.CurrentCultureIgnoreCase)>=0)).OrderBy(e=>e.Name,StringComparer.CurrentCultureIgnoreCase).ToList();
+      var query = new CatalogQuery { Platform = platform, Search = search };
+      if (installationMode == 1) query.InstallModes.UnionWith(InstallModes.All.Where(InstallModes.Automatic));
+      if (installationMode == 2) query.InstallModes.UnionWith(InstallModes.All.Where(m => !InstallModes.Automatic(m)));
+      return Filter(entries, query);
+    }
+    public static List<PortEntry> Filter(IEnumerable<PortEntry> entries, CatalogQuery query){
+      string search = (query.Search ?? "").Trim();
+      return entries.Where(e =>
+          (String.IsNullOrEmpty(query.Platform) || query.Platform == Platforms.All[0] || e.Platform == query.Platform)
+          && (query.ProjectTypes.Count == 0 || query.ProjectTypes.Contains(e.ProjectType))
+          && (query.InstallModes.Count == 0 || query.InstallModes.Contains(e.InstallMode))
+          && (search.Length == 0 || (e.Name + " " + e.ArtworkTitle + " " + e.Identity + " " + e.Platform + " " + e.ProjectType).IndexOf(search, StringComparison.CurrentCultureIgnoreCase) >= 0))
+        .OrderBy(e => e.Name, StringComparer.CurrentCultureIgnoreCase).ToList();
     }
     public async Task<PortRelease> Latest(PortEntry entry,CancellationToken token,bool force=false){
       token.ThrowIfCancellationRequested();if(entry.ManualPackage)throw new InvalidDataException("Baixe o ZIP na página oficial e use Importar ZIP no catálogo.");if(entry.ProjectOnly)throw new InvalidDataException("Este projeto não tem instalação automática validada. Abra o projeto para instruções.");PortRelease previous;DateTime checkedAt;
       if(!force&&memo.TryGetValue(entry.Repository,out previous)&&memoTime.TryGetValue(entry.Repository,out checkedAt)&&(DateTime.UtcNow-checkedAt).TotalMinutes<10)return previous;
       try{var current=await FetchLatest(entry,token);current.CheckedUtc=DateTime.UtcNow.ToString("o");memo[entry.Repository]=current;memoTime[entry.Repository]=DateTime.UtcNow;return current;}
-      catch(HttpRequestException){var cached=BundledRelease(entry);if(cached==null)throw;memo[entry.Repository]=cached;memoTime[entry.Repository]=DateTime.UtcNow;return cached;}
-      catch(OperationCanceledException){if(token.IsCancellationRequested)throw;var cached=BundledRelease(entry);if(cached==null)throw;memo[entry.Repository]=cached;memoTime[entry.Repository]=DateTime.UtcNow;return cached;}
+      catch(HttpRequestException){var cached=CachedRelease(entry);if(cached==null)throw;memo[entry.Repository]=cached;memoTime[entry.Repository]=DateTime.UtcNow;return cached;}
+      catch(OperationCanceledException){if(token.IsCancellationRequested)throw;var cached=CachedRelease(entry);if(cached==null)throw;memo[entry.Repository]=cached;memoTime[entry.Repository]=DateTime.UtcNow;return cached;}
     }
-    public static PortRelease BundledRelease(PortEntry entry){
-      using(var stream=Assembly.GetExecutingAssembly().GetManifestResourceStream("Nexus.releases-cache.json"))using(var reader=new StreamReader(stream)){
-        var records=new JavaScriptSerializer{MaxJsonLength=4*1024*1024}.Deserialize<List<Dictionary<string,object>>>(reader.ReadToEnd());
-        foreach(var record in records)if(Convert.ToString(record["Repository"])==entry.Repository){var release=ParseRelease(entry,new JavaScriptSerializer().Serialize(record["Release"]));release.FromCache=true;release.CheckedUtc=Convert.ToString(record["CheckedUtc"]);return release;}return null;
+    // Prefers the cache refreshed daily on GitHub; the copy bundled in the executable is the last resort.
+    PortRelease CachedRelease(PortEntry entry){
+      if (remoteReleases != null) {
+        try { var fresh = FromRecords(entry, remoteReleases); if (fresh != null) return fresh; } catch (InvalidDataException) { }
       }
+      return BundledRelease(entry);
+    }
+    static List<Dictionary<string,object>> bundledReleases;
+    public static PortRelease BundledRelease(PortEntry entry){
+      if (bundledReleases == null) {
+        using (var stream = Assembly.GetExecutingAssembly().GetManifestResourceStream("Nexus.releases-cache.json"))
+        using (var reader = new StreamReader(stream)) bundledReleases = ReleaseRecords(reader.ReadToEnd());
+      }
+      return FromRecords(entry, bundledReleases);
+    }
+    static List<Dictionary<string,object>> ReleaseRecords(string json){
+      return new JavaScriptSerializer{MaxJsonLength=RemoteLimit}.Deserialize<List<Dictionary<string,object>>>(json) ?? new List<Dictionary<string,object>>();
+    }
+    static PortRelease FromRecords(PortEntry entry, List<Dictionary<string,object>> records){
+      foreach(var record in records)if(record!=null&&record.ContainsKey("Repository")&&Convert.ToString(record["Repository"])==entry.Repository){var release=ParseRelease(entry,new JavaScriptSerializer().Serialize(record["Release"]));release.FromCache=true;release.CheckedUtc=Convert.ToString(record["CheckedUtc"]);return release;}return null;
     }
     async Task<PortRelease> FetchLatest(PortEntry entry,CancellationToken token){
       using(var timeout=CancellationTokenSource.CreateLinkedTokenSource(token)){
@@ -148,7 +295,7 @@ namespace Nexus {
     }
     public async Task<Game> ImportZip(PortEntry entry,string source,string parent,IProgress<InstallProgress> progress,CancellationToken token){
       if(!entry.ManualPackage||entry.ProjectOnly)throw new InvalidDataException("Este perfil não aceita importação de ZIP.");
-      if(!Regex.IsMatch(Path.GetFileName(source),entry.AssetPattern,RegexOptions.IgnoreCase))throw new InvalidDataException("Selecione o ZIP oficial azimuth-windows.zip.");
+      if(!Regex.IsMatch(Path.GetFileName(source),entry.AssetPattern,RegexOptions.IgnoreCase))throw new InvalidDataException("Selecione o ZIP oficial "+entry.ManualPackageFile+".");
       string root=Path.GetFullPath(parent);Directory.CreateDirectory(FsPath(root));string staging=ChildPath(root,".nexus-install-"+Guid.NewGuid().ToString("N")),snapshot=staging+".zip";Directory.CreateDirectory(FsPath(staging));
       try{
         using(var input=new FileStream(FsPath(source),FileMode.Open,FileAccess.Read,FileShare.Read)){

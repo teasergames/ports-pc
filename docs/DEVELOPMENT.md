@@ -20,7 +20,9 @@ Os testes usam dados isolados e fixtures. Não iniciam jogos ou compiladores de 
 ./dist/Nexus/Nexus.exe --data-dir "C:\Temp\NexusTest" --smoke-test "C:\Temp\nexus-preview.png"
 ```
 
-O smoke test renderiza a janela, salva a imagem e encerra sem detecção ou consultas online. Aceita `--preview-view grid` ou `list`, `--preview-size`, `--catalog-smoke`, `--updates-smoke`, `--package-smoke`, `--content-smoke` e `--self-update-smoke`.
+Cores e estilos de controles ficam em `src/Theme.xaml`, carregado como recurso do aplicativo; janelas montadas em código usam as mesmas chaves (`PrimaryButton`, `Chip`, `Segment`, `Badge`…). Altere a paleta ali, não em cada janela.
+
+O smoke test renderiza a janela, salva a imagem e encerra sem detecção ou consultas online. A imagem cobre só a área interna da janela, sem a borda do Windows; use-o com `--data-dir` apontando para a sua biblioteca para gerar as capturas do README. Aceita `--preview-view grid` ou `list`, `--preview-size`, `--catalog-smoke`, `--updates-smoke`, `--package-smoke`, `--content-smoke` e `--self-update-smoke`.
 
 ## Exclusão de ports
 
@@ -42,11 +44,47 @@ O atualizador consulta a última Release estável de `teasergames/ports-pc`. O a
 
 Os arquivos anteriores e o journal ficam em `%LOCALAPPDATA%\NexusPortsPC\launcher-updates`. A troca não inclui a biblioteca nem instalações dos jogos. Preserve esse contrato ao preparar futuras Releases.
 
+### Versões prévias
+
+Pre-releases do GitHub não são oferecidas pelo atualizador automático, que consulta apenas `/releases/latest`. Para que quem testou uma prévia receba a versão estável seguinte, a prévia usa um `AssemblyVersion` numérico **menor** que o da estável planejada e mostra o nome da prévia por `AssemblyInformationalVersion`:
+
+| Release | Tag | `AssemblyVersion` | `AssemblyInformationalVersion` |
+|---|---|---|---|
+| Prévia | `v1.7.0-beta.1` | `1.6.90.0` | `1.7.0-beta.1` |
+| Estável | `v1.7.0` | `1.7.0.0` | `1.7.0` |
+
+O rodapé e a janela de atualização exibem a versão informativa.
+
 ## Integração e catálogo
 
 `tests/integration.ps1` oferece modos locais e online. Consulte o parâmetro `Mode` no script para as opções disponíveis. Modos com pacotes reais exigem os arquivos de auditoria correspondentes; o modo `local` depende de instalações conhecidas em Downloads. A saída fica em `test-output/`, ignorada pelo Git.
 
 Os perfis ficam em `assets/ports.json`, as referências de origem em `assets/catalog-sources.json` e o cache de Releases em `assets/releases-cache.json`. Veja [CATALOG.md](../CATALOG.md) para as integrações e limitações de cada fonte.
+
+### Campos do perfil
+
+- `ProjectType` (obrigatório): `Port`, `Recompilação`, `Decompilação`, `Reimplementação` ou `Compatibilidade`. É o filtro **Tipo de projeto**.
+- O filtro **Instalação** não é um campo: vem de `ProjectOnly`, `ManualPackage` e `PackageKind` (`PortEntry.InstallMode`), para nunca divergir do instalador. `Kind` continua como rótulo livre; `"Em desenvolvimento"` em um perfil `ProjectOnly` o separa dos manuais.
+- `ManualPackageFile`: nome do ZIP pedido no diálogo de importação de perfis fora do GitHub (`ManualPackage`). Os sites aceitos ficam em `PortCatalog.TrustedManualSources`.
+- `MinNexusVersion` (opcional): oculta o perfil em versões do NEXUS anteriores à indicada. Use quando o perfil depender de um recurso novo do launcher.
+
+O CI valida `assets/ports.json` contra [`assets/ports.schema.json`](../assets/ports.schema.json) antes do build, e `PortCatalog.Parse` repete as regras no aplicativo.
+
+### Catálogo online e cache de Releases
+
+O NEXUS baixa `assets/ports.json` do branch `main` em `raw.githubusercontent.com` ao abrir o Catálogo (e uma vez por sessão, em segundo plano, para os indicadores). Um perfil novo publicado no `main` aparece para todos sem uma nova versão do NEXUS. O documento inteiro precisa passar na validação; caso contrário, vale a última cópia válida em `%LOCALAPPDATA%\NexusPortsPC\catalog-cache.json` ou o catálogo embutido.
+
+O workflow [`releases-cache.yml`](../.github/workflows/releases-cache.yml) roda todo dia, executa [`tools/update-releases-cache.ps1`](../tools/update-releases-cache.ps1) e publica `releases-cache.json` no branch `catalog-data`, substituído a cada execução para não poluir o histórico. Quando a API do GitHub limita as consultas, o NEXUS usa esse cache antes do embutido. Para rodar localmente:
+
+```powershell
+./tools/update-releases-cache.ps1 -Output out/releases-cache.json -Limit 5
+```
+
+Antes de uma Release, copie o resultado para `assets/releases-cache.json` para atualizar o cache embutido.
+
+### Página do catálogo
+
+[`docs/catalogo/index.html`](catalogo/index.html) lê o mesmo `ports.json` e oferece busca e filtros. Para publicá-la, ative **Settings → Pages → Deploy from a branch → `main` / `docs`**; o endereço fica `https://teasergames.github.io/ports-pc/catalogo/`.
 
 ## Dados e privacidade
 

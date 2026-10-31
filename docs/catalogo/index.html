@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Catálogo NEXUS · Ports PC</title>
+<meta name="description" content="Ports, recompilações e decompilações para Windows reunidos pelo NEXUS. Nenhum arquivo de jogo é distribuído.">
+<style>
+  :root {
+    --bg: #101115; --surface: #15171c; --raised: #1a1d24; --line: #23262e; --control-line: #2e333d;
+    --text: #eff2f8; --soft: #bcc4d1; --muted: #a3acbc; --accent: #b4f176; --on-accent: #15200e;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text); font: 15px/1.5 "Segoe UI", system-ui, sans-serif; }
+  a { color: var(--accent); }
+  header { padding: 28px 16px 20px; border-bottom: 1px solid var(--line); }
+  .wrap { max-width: 1180px; margin: 0 auto; }
+  h1 { margin: 0; font-size: 28px; font-weight: 600; }
+  h1 span { color: var(--accent); margin-right: 10px; }
+  .lead { color: var(--muted); margin: 6px 0 0; }
+  .notice { margin: 16px 0 0; padding: 12px 14px; border: 1px solid var(--control-line); border-radius: 8px; background: var(--raised); color: var(--soft); font-size: 13px; }
+  main { padding: 20px 16px 48px; }
+  .controls { display: grid; gap: 12px; margin-bottom: 18px; }
+  input[type=search], select { width: 100%; height: 42px; padding: 0 12px; border-radius: 8px; border: 1px solid var(--control-line); background: var(--raised); color: var(--text); font: inherit; }
+  .row { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; }
+  label span { display: block; font-size: 11px; font-weight: 700; letter-spacing: .06em; color: var(--muted); margin-bottom: 6px; }
+  .count { color: var(--muted); font-size: 13px; margin: 0 0 10px; }
+  ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 8px; }
+  li { display: flex; gap: 14px; align-items: center; padding: 10px 12px; border: 1px solid var(--line); border-radius: 10px; background: var(--surface); }
+  .tile { flex: 0 0 46px; height: 46px; border-radius: 6px; display: grid; place-items: center; font-size: 11px; font-weight: 700; text-align: center; }
+  .info { flex: 1; min-width: 0; }
+  .name { font-weight: 600; }
+  .meta { color: var(--muted); font-size: 12px; overflow-wrap: anywhere; }
+  .tags { display: flex; gap: 6px; flex-wrap: wrap; justify-content: flex-end; }
+  .tag { font-size: 11px; font-weight: 700; padding: 3px 8px; border-radius: 5px; white-space: nowrap; }
+  footer { color: var(--muted); font-size: 13px; padding: 0 16px 32px; }
+  @media (max-width: 640px) { li { flex-wrap: wrap; } .tags { justify-content: flex-start; width: 100%; } }
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <h1><span aria-hidden="true">◈</span>Catálogo NEXUS</h1>
+    <p class="lead" id="summary">Carregando catálogo…</p>
+    <p class="notice"><strong>O NEXUS não distribui arquivos dos jogos.</strong> Cada projeto pede a sua própria cópia dumpada do console. Instale e atualize estes ports pelo <a href="https://github.com/teasergames/ports-pc/releases/latest">launcher NEXUS</a>.</p>
+  </div>
+</header>
+<main class="wrap">
+  <div class="controls">
+    <label><span>BUSCA</span><input type="search" id="search" placeholder="Jogo, port ou repositório"></label>
+    <div class="row">
+      <label><span>PLATAFORMA</span><select id="platform"><option value="">Todas as plataformas</option></select></label>
+      <label><span>TIPO DE PROJETO</span><select id="type"><option value="">Todos os tipos</option></select></label>
+      <label><span>INSTALAÇÃO</span><select id="mode"><option value="">Todos os modos</option></select></label>
+    </div>
+  </div>
+  <p class="count" id="count" aria-live="polite"></p>
+  <ul id="list"></ul>
+</main>
+<footer class="wrap">Dados de <a href="https://github.com/teasergames/ports-pc/blob/main/assets/ports.json">assets/ports.json</a>. Sugira um projeto em <a href="https://github.com/teasergames/ports-pc/issues/new/choose">Issues</a>.</footer>
+<script>
+  // Same palette and installation-mode rules as the launcher (CatalogWindow.cs / PortEntry.InstallMode).
+  var CATALOG = 'https://raw.githubusercontent.com/teasergames/ports-pc/main/assets/ports.json';
+  var PLATFORMS = ['PlayStation 4','PlayStation 3','PlayStation 2','PlayStation','PSP','Xbox','Xbox 360','Xbox One','Nintendo Switch','Nintendo 64','GameCube','Wii','Wii U','Super Nintendo','Game Boy','Game Boy Advance','Nintendo DS','Dreamcast','Outras'];
+  var SHORT = {'PlayStation 4':'PS4','PlayStation 3':'PS3','PlayStation 2':'PS2','PlayStation':'PS1','Xbox 360':'X360','Xbox One':'XB1','Nintendo Switch':'Switch','Nintendo 64':'N64','GameCube':'GC','Super Nintendo':'SNES','Game Boy':'GB','Game Boy Advance':'GBA','Nintendo DS':'NDS','Dreamcast':'DC'};
+  var COLORS = {
+    'Port':['#1E3350','#A9CCFF'],'Recompilação':['#33264D','#D4B8FF'],'Decompilação':['#173B3B','#9DE3DA'],'Reimplementação':['#3B2F17','#F5D58A'],'Compatibilidade':['#2C313B','#C2C9D4'],
+    'Integrada':['#2C3D1C','#C6F59A'],'Assistente':['#173B3B','#9DE3DA'],'Site oficial':['#1E3350','#A9CCFF'],'Manual':['#4A3216','#FFCC8A'],'Em desenvolvimento':['#2C313B','#C2C9D4']
+  };
+  var TYPES = ['Port','Recompilação','Decompilação','Reimplementação','Compatibilidade'];
+  var MODES = ['Integrada','Assistente','Site oficial','Manual','Em desenvolvimento'];
+  var entries = [];
+
+  function installMode(e) {
+    if (e.ProjectOnly) return e.Kind === 'Em desenvolvimento' ? 'Em desenvolvimento' : 'Manual';
+    if (e.ManualPackage) return 'Site oficial';
+    if (e.PackageKind === 'Installer' || e.PackageKind === 'InstallerZip') return 'Assistente';
+    return 'Integrada';
+  }
+  function tileColor(p) {
+    if (p.indexOf('PlayStation') === 0 || p === 'PSP') return '#1E3350';
+    if (p.indexOf('Xbox') === 0) return '#1F3A22';
+    if (p === 'Outras' || p === 'Dreamcast') return '#2C313B';
+    return '#3D2026';
+  }
+  function el(tag, attrs, text) {
+    var node = document.createElement(tag);
+    for (var key in attrs) node.setAttribute(key, attrs[key]);
+    if (text != null) node.textContent = text;
+    return node;
+  }
+  function tag(text) {
+    var c = COLORS[text] || ['#2C313B', '#C2C9D4'];
+    return el('span', { 'class': 'tag', style: 'background:' + c[0] + ';color:' + c[1] }, text);
+  }
+  function fill(select, values) { values.forEach(function (v) { select.appendChild(el('option', { value: v }, v)); }); }
+
+  function render() {
+    var q = document.getElementById('search').value.trim().toLowerCase();
+    var platform = document.getElementById('platform').value, type = document.getElementById('type').value, mode = document.getElementById('mode').value;
+    var shown = entries.filter(function (e) {
+      return (!platform || e.Platform === platform) && (!type || e.ProjectType === type) && (!mode || e.mode === mode)
+        && (!q || (e.Name + ' ' + (e.ArtworkTitle || '') + ' ' + (e.Repository || e.SourceUrl || '') + ' ' + e.Platform).toLowerCase().indexOf(q) >= 0);
+    });
+    var list = document.getElementById('list');
+    list.textContent = '';
+    shown.forEach(function (e) {
+      var url = e.Repository ? 'https://github.com/' + e.Repository : e.SourceUrl;
+      var item = el('li', {});
+      item.appendChild(el('div', { 'class': 'tile', style: 'background:' + tileColor(e.Platform), 'aria-hidden': 'true' }, SHORT[e.Platform] || e.Platform));
+      var info = el('div', { 'class': 'info' });
+      var name = el('a', { 'class': 'name', href: url, rel: 'noopener' }, e.Name);
+      info.appendChild(name);
+      info.appendChild(el('div', { 'class': 'meta' }, e.Platform + ' · ' + (e.Repository || new URL(e.SourceUrl).host)));
+      item.appendChild(info);
+      var tags = el('div', { 'class': 'tags' });
+      tags.appendChild(tag(e.ProjectType));
+      tags.appendChild(tag(e.mode));
+      item.appendChild(tags);
+      list.appendChild(item);
+    });
+    document.getElementById('count').textContent = shown.length === 1 ? '1 projeto' : shown.length + ' projetos';
+  }
+
+  fill(document.getElementById('platform'), PLATFORMS);
+  fill(document.getElementById('type'), TYPES);
+  fill(document.getElementById('mode'), MODES);
+  ['search', 'platform', 'type', 'mode'].forEach(function (id) { document.getElementById(id).addEventListener('input', render); });
+
+  fetch(CATALOG).then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); }).then(function (data) {
+    entries = data.map(function (e) { e.mode = installMode(e); return e; })
+      .sort(function (a, b) { return a.Name.localeCompare(b.Name, 'pt-BR'); });
+    var platforms = {}; entries.forEach(function (e) { platforms[e.Platform] = true; });
+    document.getElementById('summary').textContent = entries.length + ' projetos · ' + Object.keys(platforms).length + ' plataformas · somente ports para Windows';
+    render();
+  }).catch(function () {
+    document.getElementById('summary').textContent = 'Não foi possível carregar o catálogo agora. Veja o arquivo CATALOG.md no repositório.';
+  });
+</script>
+</body>
+</html>

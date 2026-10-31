@@ -1,0 +1,49 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://github.com/teasergames/ports-pc/blob/main/assets/ports.schema.json",
+  "title": "Catálogo de perfis do NEXUS",
+  "description": "Validado no CI. As mesmas regras são reforçadas por PortCatalog.Parse no aplicativo.",
+  "type": "array",
+  "minItems": 1,
+  "items": {
+    "type": "object",
+    "required": ["Id", "Name", "Platform", "ProjectType", "PlayNames", "ConfigNames"],
+    "properties": {
+      "Id": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+      "Name": { "type": "string", "minLength": 1 },
+      "Repository": { "type": ["string", "null"], "pattern": "^[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+$" },
+      "SourceUrl": { "type": ["string", "null"], "pattern": "^https://" },
+      "Platform": {
+        "enum": ["PlayStation 4", "PlayStation 3", "PlayStation 2", "PlayStation", "PSP", "Xbox", "Xbox 360", "Xbox One", "Nintendo Switch", "Nintendo 64", "GameCube", "Wii", "Wii U", "Super Nintendo", "Game Boy", "Game Boy Advance", "Nintendo DS", "Dreamcast", "Outras"]
+      },
+      "ProjectType": { "enum": ["Port", "Recompilação", "Decompilação", "Reimplementação", "Compatibilidade"] },
+      "Kind": { "type": "string", "description": "Rótulo livre exibido nas notas; o filtro usa ProjectType e o modo de instalação." },
+      "PackageKind": { "enum": [null, "Zip", "Installer", "Executable", "InstallerZip"] },
+      "AssetPattern": { "type": ["string", "null"], "description": "Vazio em perfis ProjectOnly." },
+      "PlayNames": { "type": "array", "items": { "type": "string", "minLength": 1 } },
+      "ConfigNames": { "type": "array", "items": { "type": "string", "minLength": 1 } },
+      "Arguments": { "type": ["string", "null"] },
+      "ConfigurationArguments": { "type": ["string", "null"] },
+      "ArtworkTitle": { "type": ["string", "null"] },
+      "Notes": { "type": ["string", "null"] },
+      "ProjectOnly": { "type": "boolean" },
+      "AllowPrerelease": { "type": "boolean" },
+      "ManualPackage": { "type": "boolean" },
+      "ManualPackageFile": { "type": "string", "minLength": 1 },
+      "DiscoverExecutable": { "type": "boolean" },
+      "PreferRootExecutable": { "type": "boolean" },
+      "MinNexusVersion": { "type": "string", "pattern": "^\\d+\\.\\d+\\.\\d+(\\.\\d+)?$" }
+    },
+    "allOf": [
+      {
+        "if": { "properties": { "ManualPackage": { "const": true } }, "required": ["ManualPackage"] },
+        "then": { "required": ["SourceUrl", "ManualPackageFile", "AssetPattern"] },
+        "else": { "required": ["Repository"] }
+      },
+      {
+        "if": { "properties": { "ProjectOnly": { "const": true } }, "required": ["ProjectOnly"] },
+        "else": { "required": ["AssetPattern"], "properties": { "AssetPattern": { "type": "string", "pattern": "(zip|exe)\\$$" } } }
+      }
+    ]
+  }
+}

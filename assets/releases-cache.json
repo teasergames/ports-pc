@@ -5062,5 +5062,41 @@
         }
       ]
     }
+  },
+  {
+    "Repository": "valentderah/totk-pc-recomp",
+    "CheckedUtc": "2026-10-31T19:04:17.700247+00:00",
+    "Release": {
+      "tag_name": "v0.2.8",
+      "html_url": "https://github.com/valentderah/totk-pc-recomp/releases/tag/v0.2.8",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "TotK-Setup-0.2.8-windows.zip",
+          "size": 135469860,
+          "browser_download_url": "https://github.com/valentderah/totk-pc-recomp/releases/download/v0.2.8/TotK-Setup-0.2.8-windows.zip",
+          "digest": "sha256:17c1da5a2f40c3afce4c0e06f2c700d25600f3e5b3704ab9bc63b65b551115aa"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "Zexyen/Witch-Time",
+    "CheckedUtc": "2026-10-31T19:04:17.700247+00:00",
+    "Release": {
+      "tag_name": "v0.4.5",
+      "html_url": "https://github.com/Zexyen/Witch-Time/releases/tag/v0.4.5",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "WitchTime-v0.4.5-windows-x86_64.zip",
+          "size": 82972194,
+          "browser_download_url": "https://github.com/Zexyen/Witch-Time/releases/download/v0.4.5/WitchTime-v0.4.5-windows-x86_64.zip",
+          "digest": "sha256:f755a29ef2210659c4328265802f067e4d506849f4c248222394c5408c1d1e61"
+        }
+      ]
+    }
   }
 ]

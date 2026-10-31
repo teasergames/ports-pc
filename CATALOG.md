@@ -2,6 +2,19 @@
 
 Nos perfis integrados, o NEXUS consulta a última Release Windows compatível e seleciona o ZIP ou EXE definido; versões experimentais só são consideradas nos perfis que as sinalizam. Darkwatch: Darker Edition usa releases estáveis do repositório linkssy2/DarkwatchDarkerEdition. Azimuth usa sua página oficial no itch.io e importação local do ZIP. Não escolhe arquivos de código-fonte, Linux ou atualizadores isolados. Os projetos abaixo são ports/forks independentes, sem vínculo oficial com os detentores dos jogos.
 
+## Novos ports — 1.6.1 (31/10/2026)
+
+| Plataforma | Projeto | Integração |
+|---|---|---|
+| Nintendo Switch | [Tears of the Kingdom · TotK Recomp](https://github.com/valentderah/totk-pc-recomp) | `TotK-Setup-*-windows.zip`; NEXUS extrai e abre apenas `TotK-Setup.exe`, preservando as ferramentas adjacentes. Após o assistente, registra o `totk.exe` que o usuário selecionar. Atualizações usam o novo assistente no destino existente. |
+| Nintendo Switch | [Bayonetta 3 · Witch Time](https://github.com/Zexyen/Witch-Time) | `WitchTime-*-windows-x86_64.zip`; Jogar: launcher externo `witch-time.exe --play`; Configurar: mesmo launcher sem argumento. A preferência explícita pelo launcher mais próximo da raiz evita a cópia interna em `build/`; outros perfis continuam rejeitando duplicatas ambíguas. |
+
+TotK usa o fluxo `InstallerZip`, pois seu ZIP contém um preparador, não o jogo pronto. O assistente compila a partir dos arquivos do usuário; sua atualização e preservação de dados são controladas pelo autor, como nos demais assistentes externos. A seleção do destino é feita no assistente original. O NEXUS não registra o preparador como se fosse o jogo. Witch Time usa o fluxo portátil e o atualizador com backup do NEXUS; o launcher pode exigir recompilação após atualizar e mantém a preparação aberta se `--play` não encontrar um build pronto.
+
+Total: **276 fontes**, **257 perfis GitHub integrados**, **1 importação oficial** e **18 exceções**. Os perfis integrados incluem 224 ZIPs de ports, 10 EXEs portáteis e 23 assistentes do autor (22 EXEs e o ZIP do TotK).
+
+Foram baixados os dois ZIPs oficiais, verificados os SHA-256 publicados e inspecionados os cabeçalhos PE AMD64. A integração real testa extração, cadastro e mapeamento dos executáveis; TotK usa um handler simulado no lugar da execução do preparador e um EXE de fixture do próprio NEXUS como resultado. **689 testes automatizados** também cobrem o novo fluxo de assistente em ZIP e a preferência de launcher. Não houve execução de jogos, instaladores ou compiladores dos projetos durante a verificação.
+
 ## Instalação integrada e atualizações — 1.6.0
 
 São **255 fontes GitHub integradas** entre 274 fontes: **223 ZIPs**, **10 EXEs portáteis** e **22 assistentes do autor**. Outros **18 projetos** continuam com limites específicos e o **Azimuth** mantém a importação do ZIP oficial do itch.io. O NEXUS usa o padrão de nome revisado do pacote, sua origem oficial e, nos perfis novos, inspeciona os executáveis após extrair. A inclusão não garante jogabilidade. Os dois exemplos reais adicionais de instalação genérica foram Pokémon Snap e Perfect Dark; não se afirma uma auditoria offline individual de todos os novos pacotes.

@@ -4196,5 +4196,40 @@
     "Notes": "O NEXUS baixa o pacote Windows da última Release e o instala aqui. Se houver mais de um aplicativo no ZIP, escolha o principal e o launcher de configuração na janela do NEXUS. Na primeira abertura, prepare seus próprios arquivos seguindo o assistente do port. A compatibilidade e a preparação variam conforme o projeto.",
     "DiscoverExecutable": true,
     "PackageKind": "Zip"
+  },
+  {
+    "Id": "totk",
+    "Name": "The Legend of Zelda: Tears of the Kingdom",
+    "Repository": "valentderah/totk-pc-recomp",
+    "Platform": "Nintendo Switch",
+    "ArtworkTitle": "The Legend of Zelda: Tears of the Kingdom",
+    "PackageKind": "InstallerZip",
+    "PlayNames": [
+      "TotK-Setup.exe"
+    ],
+    "ConfigNames": [],
+    "AssetPattern": "^TotK-Setup-.*-windows\\.zip$",
+    "Kind": "Assistente de preparação",
+    "Notes": "O NEXUS baixa e extrai o assistente oficial. Nele, selecione seus arquivos do Switch com update 1.2.1 ou 1.4.3 e suas chaves, escolha o destino e aguarde a compilação. Ao concluir, selecione totk.exe no NEXUS. Para atualizar, use o mesmo destino no assistente. Configurações dentro do jogo em F1. Requer AVX2 e Vulkan 1.3; cerca de 36 GiB livres durante a preparação. Projeto em desenvolvimento."
+  },
+  {
+    "Id": "witch-time",
+    "Name": "Bayonetta 3 · Witch Time",
+    "Repository": "Zexyen/Witch-Time",
+    "Platform": "Nintendo Switch",
+    "ArtworkTitle": "Bayonetta 3",
+    "PackageKind": "Zip",
+    "PlayNames": [
+      "witch-time.exe"
+    ],
+    "ConfigNames": [
+      "witch-time.exe"
+    ],
+    "Arguments": "--play",
+    "ConfigurationArguments": "",
+    "PreferRootExecutable": true,
+    "AssetPattern": "^WitchTime-.*-windows-x86_64\\.zip$",
+    "Kind": "Recompilação",
+    "Notes": "Configurar abre o launcher original para selecionar seu dump extraído (exefs/romfs), compilar e ajustar opções. Jogar usa --play para iniciar com as opções salvas; se o build precisar ser preparado, o launcher permanece aberto. Atualizações podem exigir recompilação. Requer driver Vulkan; prefira uma pasta curta e gravável. Projeto em desenvolvimento."
   }
 ]

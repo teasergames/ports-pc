@@ -2,7 +2,14 @@
 
 Launcher de biblioteca para ports de PC, com interface imersiva e artwork do jogo selecionado. Aplicativo nativo WPF para **Windows 11 x64**, com .NET Framework 4.8, que já acompanha o Windows 11. Não precisa de Node, Python, navegador, conta ou permissão de administrador para executar.
 
-Na **1.6.0**, o NEXUS instala **255 perfis diretamente do GitHub**: **223 ZIPs**, **10 executáveis portáteis** e **22 instaladores do autor**, sem precisar abrir o GitHub no navegador. O catálogo mantém **274 fontes**: os 255 perfis integrados, 1 importação oficial do Azimuth e 18 projetos sem integração utilizável nesta versão. Os números incluem forks, não apenas jogos únicos.
+Na **1.6.1**, foram adicionados **Tears of the Kingdom / TotK Recomp** e **Bayonetta 3 / Witch Time**, ambos em **Nintendo Switch**, com download e atualização integrados. O catálogo chega a **276 fontes**, das quais **257** são integradas ao GitHub, 1 usa importação oficial do Azimuth e 18 mantêm os limites específicos documentados.
+
+- **TotK Recomp:** o NEXUS baixa o ZIP Windows e abre `TotK-Setup.exe`. O assistente prepara seu jogo a partir dos seus arquivos e chaves; ao terminar, selecione o `totk.exe` gerado para cadastrá-lo. Atualizações abrem o novo assistente: use o mesmo destino da instalação existente. Opções gráficas e controles ficam no jogo, em F1. A compilação pode demorar e requer CPU AVX2, Vulkan 1.3 e cerca de 36 GiB livres durante a preparação.
+- **Witch Time:** Configurar jogo abre `witch-time.exe`; Jogar usa `--play` para iniciar com as opções salvas. O NEXUS escolhe o launcher externo do pacote, evitando confundi-lo com o executável de mesmo nome dentro de `build/`. Prepare seu dump `exefs/romfs` no launcher original. Atualizações podem exigir recompilação.
+
+Na consulta de **31/10/2026**, foram conferidos os ZIPs Windows de TotK **v0.2.8** e Witch Time **v0.4.5**, seus SHA-256 e executáveis AMD64. **689 testes passaram**. O pipeline de instalação foi verificado com os pacotes reais; a execução do assistente TotK foi substituída por um handler de teste, sem executar programas ou compilar jogos de terceiros.
+
+Na **1.6.0**, o NEXUS passou a instalar **255 perfis diretamente do GitHub**: **223 ZIPs**, **10 executáveis portáteis** e **22 instaladores do autor**, sem precisar abrir o GitHub no navegador. O catálogo então tinha **274 fontes**: os 255 perfis integrados, 1 importação oficial do Azimuth e 18 projetos sem integração utilizável nessa versão. Os números incluem forks, não apenas jogos únicos.
 
 **Instalar:** abra Baixar ports, escolha o projeto e clique **Baixar e adicionar**. O NEXUS consulta a Release mais recente compatível com Windows, baixa, verifica e extrai o pacote. Se houver vários aplicativos, escolha o principal e o configurador na própria janela do NEXUS. Executáveis auxiliares e binários ARM64 são filtrados. Para os 22 instaladores, **Baixar e instalar** abre o assistente do autor; conclua-o e selecione o aplicativo instalado para o cadastro. NEXUS não inventa parâmetros de instalação silenciosa.
 

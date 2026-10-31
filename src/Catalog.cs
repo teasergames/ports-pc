@@ -19,6 +19,7 @@ namespace Nexus {
     public string Platform {get;set;}public string Kind {get;set;}public bool ProjectOnly {get;set;}
     public bool AllowPrerelease {get;set;}public bool ManualPackage {get;set;}public string SourceUrl {get;set;}
     public bool DiscoverExecutable {get;set;}public string PackageKind {get;set;}
+    public bool PreferRootExecutable {get;set;}public bool UsesInstaller {get{return PackageKind=="Installer"||PackageKind=="InstallerZip";}}
     public string Identity {get{return String.IsNullOrEmpty(Repository)?SourceUrl:Repository;}}
     public string ProjectUrl {get{return String.IsNullOrEmpty(SourceUrl)?"https://github.com/"+Repository:SourceUrl;}}
     public override string ToString(){return Name;}
@@ -38,7 +39,7 @@ namespace Nexus {
     public static List<PortEntry> LoadEntries(){
       using(var stream=Assembly.GetExecutingAssembly().GetManifestResourceStream("Nexus.ports.json"))using(var reader=new StreamReader(stream)){
         var entries=new JavaScriptSerializer().Deserialize<List<PortEntry>>(reader.ReadToEnd());var ids=new HashSet<string>();
-        foreach(var e in entries){if(!Regex.IsMatch(e.Id??"",@"^[a-z0-9-]+$")||!ids.Add(e.Id)||(!e.ManualPackage&&!Regex.IsMatch(e.Repository??"",@"^[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+$"))||e.PlayNames==null||e.ConfigNames==null)throw new InvalidDataException("Entrada do catálogo inválida.");if(e.ManualPackage&&(e.ProjectOnly||e.SourceUrl!="https://almost-there-games.itch.io/azimuth"))throw new InvalidDataException("Fonte externa inválida.");if(!Platforms.All.Skip(1).Contains(e.Platform))throw new InvalidDataException("Plataforma inválida.");if(!e.ProjectOnly){if((e.PlayNames.Length==0&&!e.DiscoverExecutable&&e.PackageKind!="Installer")||String.IsNullOrEmpty(e.AssetPattern)||!(e.AssetPattern.EndsWith("zip$")||((e.PackageKind=="Executable"||e.PackageKind=="Installer")&&e.AssetPattern.EndsWith("exe$"))))throw new InvalidDataException("Perfil Windows inválido.");new Regex(e.AssetPattern);}}
+        foreach(var e in entries){if(!Regex.IsMatch(e.Id??"",@"^[a-z0-9-]+$")||!ids.Add(e.Id)||(!e.ManualPackage&&!Regex.IsMatch(e.Repository??"",@"^[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+$"))||e.PlayNames==null||e.ConfigNames==null)throw new InvalidDataException("Entrada do catálogo inválida.");if(e.ManualPackage&&(e.ProjectOnly||e.SourceUrl!="https://almost-there-games.itch.io/azimuth"))throw new InvalidDataException("Fonte externa inválida.");if(!Platforms.All.Skip(1).Contains(e.Platform))throw new InvalidDataException("Plataforma inválida.");if(!e.ProjectOnly){if((e.PlayNames.Length==0&&!e.DiscoverExecutable&&!e.UsesInstaller)||String.IsNullOrEmpty(e.AssetPattern)||!(e.AssetPattern.EndsWith("zip$")||((e.PackageKind=="Executable"||e.PackageKind=="Installer")&&e.AssetPattern.EndsWith("exe$"))))throw new InvalidDataException("Perfil Windows inválido.");new Regex(e.AssetPattern);}}
         return entries;
       }
     }
@@ -100,9 +101,9 @@ namespace Nexus {
     }
     static string DisplayPath(string path){return path.StartsWith(@"\\?\UNC\")?@"\\"+path.Substring(8):path.StartsWith(@"\\?\")?path.Substring(4):path;}
     public async Task<Game> Install(PortEntry entry,PortRelease release,string parent,IProgress<InstallProgress> progress,CancellationToken token,bool acceptPrerelease=false,InstallInteraction interaction=null){
-      if(interaction!=null&&interaction.UpdateInPlace){var previous=interaction.Previous;if(previous==null||previous.Repository!=entry.Identity||!UpdateManager.Managed(previous))throw new InvalidDataException("Selecione uma instalação gerenciada deste port para atualizar.");if(release.FromCache||!UpdateManager.Available(previous,release))throw new InvalidDataException("Confirme online uma versão mais recente antes de atualizar.");if((previous.InstallationKind=="Installer")!=(entry.PackageKind=="Installer"))throw new InvalidDataException("O formato do pacote mudou. Instale a nova versão separadamente para preservar a cópia anterior.");}
+      if(interaction!=null&&interaction.UpdateInPlace){var previous=interaction.Previous;if(previous==null||previous.Repository!=entry.Identity||!UpdateManager.Managed(previous))throw new InvalidDataException("Selecione uma instalação gerenciada deste port para atualizar.");if(release.FromCache||!UpdateManager.Available(previous,release))throw new InvalidDataException("Confirme online uma versão mais recente antes de atualizar.");if((previous.InstallationKind=="Installer")!=(entry.UsesInstaller))throw new InvalidDataException("O formato do pacote mudou. Instale a nova versão separadamente para preservar a cópia anterior.");}
       if(release.IsPrerelease&&(!entry.AllowPrerelease||!acceptPrerelease))throw new InvalidDataException("Confirme que deseja instalar a versão beta.");if(entry.ProjectOnly||entry.ManualPackage)throw new InvalidDataException("Instalação automática indisponível para este projeto.");ValidateDownloadUrl(entry,release.DownloadUrl);string root=Path.GetFullPath(parent);Directory.CreateDirectory(FsPath(root));
-      string final=ChildPath(root,entry.Id+"-"+VersionFolder(release.Version));if(entry.PackageKind!="Installer"&&(interaction==null||!interaction.UpdateInPlace)&&(Directory.Exists(FsPath(final))||File.Exists(FsPath(final))))throw new IOException("Esta pasta de versão já existe. Escolha outro destino; nenhum arquivo foi substituído.");
+      string final=ChildPath(root,entry.Id+"-"+VersionFolder(release.Version));if(!entry.UsesInstaller&&(interaction==null||!interaction.UpdateInPlace)&&(Directory.Exists(FsPath(final))||File.Exists(FsPath(final))))throw new IOException("Esta pasta de versão já existe. Escolha outro destino; nenhum arquivo foi substituído.");
       string staging=ChildPath(root,".nexus-install-"+Guid.NewGuid().ToString("N")),download=staging+".zip";Directory.CreateDirectory(FsPath(staging));
       try{
         using(var timeout=CancellationTokenSource.CreateLinkedTokenSource(token)){
@@ -126,13 +127,14 @@ namespace Nexus {
       }
     }
     async Task<Game> FinishInstallation(PortEntry entry,PortRelease release,string root,string staging,string download,IProgress<InstallProgress> progress,CancellationToken token,InstallInteraction interaction=null){
-      bool updating=interaction!=null&&interaction.UpdateInPlace;string final=ChildPath(root,entry.Id+"-"+VersionFolder(release.Version)+(entry.PackageKind=="Installer"?"-"+Guid.NewGuid().ToString("N"):""));if(!updating&&(Directory.Exists(FsPath(final))||File.Exists(FsPath(final))))throw new IOException("Esta pasta de versão já existe. Nenhum arquivo foi substituído.");
+      bool updating=interaction!=null&&interaction.UpdateInPlace;string final=ChildPath(root,entry.Id+"-"+VersionFolder(release.Version)+(entry.UsesInstaller?"-"+Guid.NewGuid().ToString("N"):""));if(!updating&&(Directory.Exists(FsPath(final))||File.Exists(FsPath(final))))throw new IOException("Esta pasta de versão já existe. Nenhum arquivo foi substituído.");
       if(entry.PackageKind=="Executable"||entry.PackageKind=="Installer"){
         string executable=ChildPath(staging,Path.GetFileName(release.AssetName));File.Copy(FsPath(download),FsPath(executable));if(!PackageSupport.WindowsExecutable(executable))throw new InvalidDataException("O download não é um executável Windows x64/x86 compatível.");
       }else await Task.Run(()=>Extract(download,staging,progress,token),token);
-      if(entry.PackageKind=="Installer"){
+      if(entry.UsesInstaller){
         if(interaction==null||interaction.RunInstaller==null)throw new InvalidDataException("Este pacote precisa do assistente de instalação do autor.");
-        UpdateManager.WriteReceipt(entry,release,staging,token);Directory.Move(FsPath(staging),FsPath(final));string installer=ChildPath(final,Path.GetFileName(release.AssetName));Report(progress,"Conclua o assistente do autor e escolha o aplicativo instalado no NEXUS.",95);
+        string installerFile=entry.PackageKind=="InstallerZip"?FindExecutable(staging,entry.PlayNames,entry.PreferRootExecutable):ChildPath(staging,Path.GetFileName(release.AssetName));if(installerFile==null||!PackageSupport.WindowsExecutable(installerFile))throw new InvalidDataException("O instalador Windows esperado não foi encontrado no pacote.");string installerRelative=PackageSupport.Relative(staging,installerFile);
+        UpdateManager.WriteReceipt(entry,release,staging,token);token.ThrowIfCancellationRequested();Directory.Move(FsPath(staging),FsPath(final));string installer=ChildPath(final,installerRelative);Report(progress,"Conclua o assistente do autor e escolha o aplicativo instalado no NEXUS.",95);
         var choice=await interaction.RunInstaller(installer,interaction.Previous);if(choice==null)throw new OperationCanceledException();if(!Path.IsPathRooted(choice.Play)||!File.Exists(choice.Play)||!PackageSupport.WindowsExecutable(choice.Play)||(!String.IsNullOrEmpty(choice.Configuration)&&(!Path.IsPathRooted(choice.Configuration)||!File.Exists(choice.Configuration)||!PackageSupport.WindowsExecutable(choice.Configuration))))throw new InvalidDataException("Escolha o aplicativo Windows instalado pelo assistente.");
         var installed=new Game{Name=entry.Name,Platform=entry.Platform,Repository=entry.Identity,InstalledVersion=release.Version,Executable=choice.Play,WorkingDirectory=Path.GetDirectoryName(choice.Play),Arguments=choice.Arguments??"",ConfigurationExecutable=choice.Configuration,ConfigurationArguments=choice.ConfigurationArguments,ArtworkSearchTitle=entry.ArtworkTitle,InstallationKind="Installer",InstallerCacheRoot=final};if(interaction.Previous!=null)PackageSupport.PreserveMetadata(installed,interaction.Previous);return installed;
       }
@@ -182,15 +184,15 @@ namespace Nexus {
       }
     }
     public static Game Register(PortEntry entry,string folder,string version){
-      if(entry.ProjectOnly||entry.PackageKind=="Installer")throw new InvalidDataException("Este pacote precisa de preparação específica.");
+      if(entry.ProjectOnly||entry.UsesInstaller)throw new InvalidDataException("Este pacote precisa de preparação específica.");
       if(entry.DiscoverExecutable)return PackageSupport.Register(entry,folder,version,null);
-      string exe=FindExecutable(folder,entry.PlayNames),config=FindExecutable(folder,entry.ConfigNames);
+      string exe=FindExecutable(folder,entry.PlayNames,entry.PreferRootExecutable),config=FindExecutable(folder,entry.ConfigNames,entry.PreferRootExecutable);
       if(entry.ProjectOnly||exe==null||(entry.ConfigNames.Length>0&&config==null))throw new InvalidDataException("A estrutura deste pacote mudou: executáveis esperados não encontrados. Nada foi cadastrado; confira o projeto.");
       return new Game{Name=entry.Name,Platform=entry.Platform,Executable=exe,Arguments=entry.Arguments??"",WorkingDirectory=Path.GetDirectoryName(exe),ConfigurationExecutable=config,ConfigurationArguments=entry.ConfigurationArguments,ArtworkSearchTitle=entry.ArtworkTitle,Repository=entry.Identity,InstalledVersion=version,ManagedInstallationRoot=folder};
     }
-    static string FindExecutable(string root,string[] names){
+    static string FindExecutable(string root,string[] names,bool preferRoot=false){
       // Packages may have one or several enclosing folders. Never pick a runtime by extension alone.
-      var files=Directory.GetFiles(FsPath(root),"*.exe",SearchOption.AllDirectories).Select(DisplayPath).ToArray();foreach(string name in names){var matches=files.Where(f=>Path.GetFileName(f).Equals(name,StringComparison.OrdinalIgnoreCase)).ToArray();if(matches.Length==1)return matches[0];if(matches.Length>1)throw new InvalidDataException("Executável duplicado no pacote: "+name);}return null;
+      var files=Directory.GetFiles(FsPath(root),"*.exe",SearchOption.AllDirectories).Select(DisplayPath).ToArray();foreach(string name in names){var matches=files.Where(f=>Path.GetFileName(f).Equals(name,StringComparison.OrdinalIgnoreCase)).ToArray();if(matches.Length==1)return matches[0];if(matches.Length>1&&preferRoot){int depth=matches.Min(f=>PackageSupport.Relative(root,f).Count(c=>c==Path.DirectorySeparatorChar));matches=matches.Where(f=>PackageSupport.Relative(root,f).Count(c=>c==Path.DirectorySeparatorChar)==depth).ToArray();if(matches.Length==1)return matches[0];}if(matches.Length>1)throw new InvalidDataException("Executável duplicado no pacote: "+name);}return null;
     }
     static void RemoveStaging(string root,string staging){string safe=ChildPath(root,Path.GetFileName(staging));if(safe.Equals(Path.GetFullPath(staging),StringComparison.OrdinalIgnoreCase)&&Path.GetFileName(safe).StartsWith(".nexus-install-",StringComparison.Ordinal))Directory.Delete(FsPath(safe),true);}
     static void Report(IProgress<InstallProgress> progress,string message,double percent){if(progress!=null)progress.Report(new InstallProgress{Message=message,Percent=percent});}

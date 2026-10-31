@@ -3227,6 +3227,28 @@
       "StableReleaseVersion": "v0.2e",
       "IntegrationMode": "Zip",
       "PackageValidation": "Validated at installation: official URL, size, SHA-256 when published, archive paths, Windows PE and user application choice when ambiguous. Not a gameplay test."
+    },
+    {
+      "Id": "totk",
+      "Repository": "valentderah/totk-pc-recomp",
+      "DiscoveryUrl": "https://github.com/valentderah/totk-pc-recomp",
+      "Status": "automatic",
+      "NexusId": "totk",
+      "VerifiedRepositoryUrl": "https://github.com/valentderah/totk-pc-recomp",
+      "CheckedDate": "2026-10-31",
+      "IntegrationMode": "InstallerZip",
+      "PackageValidation": "Official Windows ZIP downloaded, SHA-256 and AMD64 PE checked; no vendor executable run."
+    },
+    {
+      "Id": "witch-time",
+      "Repository": "Zexyen/Witch-Time",
+      "DiscoveryUrl": "https://github.com/Zexyen/Witch-Time",
+      "Status": "automatic",
+      "NexusId": "witch-time",
+      "VerifiedRepositoryUrl": "https://github.com/Zexyen/Witch-Time",
+      "CheckedDate": "2026-10-31",
+      "IntegrationMode": "Zip",
+      "PackageValidation": "Official Windows ZIP downloaded, SHA-256 and AMD64 PE checked; no vendor executable run."
     }
   ]
 }

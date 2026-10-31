@@ -24,6 +24,8 @@ jobs:
           git fetch origin catalog-data --depth 1 2>$null
           if ($LASTEXITCODE -eq 0) { git show origin/catalog-data:releases-cache.json > previous-cache.json; if ($LASTEXITCODE -eq 0) { $previous = 'previous-cache.json' } }
           ./tools/update-releases-cache.ps1 -Output out/releases-cache.json -Previous $previous
+          # The fetch fails on the first run (no catalog-data branch yet); it must not fail the step.
+          exit 0
       - name: Publish to catalog-data
         shell: bash
         run: |

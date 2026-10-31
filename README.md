@@ -7,7 +7,7 @@ Reúna seus ports de console em um só launcher para **Windows 11 x64**. Organiz
 [**Baixar NEXUS**](https://github.com/teasergames/ports-pc/releases/latest) · [Releases e novidades](https://github.com/teasergames/ports-pc/releases) · [Catálogo de projetos](CATALOG.md) · [Relatar um problema](https://github.com/teasergames/ports-pc/issues/new/choose)
 
 > [!NOTE]
-> **Versão prévia 1.7.0-beta.1:** novo visual da biblioteca e do catálogo, filtros por tipo de projeto (port, recompilação, decompilação…) e modo de instalação, aba de novidades, catálogo atualizado online, atalhos de teclado e navegação por controle. Disponível nas [Releases](https://github.com/teasergames/ports-pc/releases) como pre-release; não é instalada pela atualização automática. As instruções abaixo descrevem a versão estável.
+> **Versão prévia 1.7.0-beta.2:** novo visual da biblioteca e do catálogo, filtros por tipo de projeto (port, recompilação, decompilação…) e modo de instalação, aba de novidades, catálogo atualizado online, atalhos de teclado e navegação por controle. Disponível nas [Releases](https://github.com/teasergames/ports-pc/releases) como pre-release; não é instalada pela atualização automática. As instruções abaixo descrevem a versão estável.
 
 > [!IMPORTANT]
 > **O NEXUS NÃO DISTRIBUI NENHUM TIPO DE ARQUIVO DOS JOGOS. VOCÊ PRECISARÁ DA SUA PRÓPRIA CÓPIA DUMPADA DO CONSOLE.**

@@ -50,7 +50,7 @@ Pre-releases do GitHub não são oferecidas pelo atualizador automático, que co
 
 | Release | Tag | `AssemblyVersion` | `AssemblyInformationalVersion` |
 |---|---|---|---|
-| Prévia | `v1.7.0-beta.1` | `1.6.90.0` | `1.7.0-beta.1` |
+| Prévia | `v1.7.0-beta.2` | `1.6.90.0` | `1.7.0-beta.2` |
 | Estável | `v1.7.0` | `1.7.0.0` | `1.7.0` |
 
 O rodapé e a janela de atualização exibem a versão informativa.

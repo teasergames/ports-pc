@@ -22,7 +22,7 @@ using Microsoft.Win32;
 [assembly: AssemblyProduct("NEXUS Ports PC")]
 [assembly: AssemblyVersion("1.6.90.0")]
 [assembly: AssemblyFileVersion("1.6.90.0")]
-[assembly: AssemblyInformationalVersion("1.7.0-beta.1")]
+[assembly: AssemblyInformationalVersion("1.7.0-beta.2")]
 [assembly: System.Runtime.Versioning.TargetFramework(".NETFramework,Version=v4.8")]
 namespace Nexus {
   public static class Program {
@@ -50,7 +50,7 @@ namespace Nexus {
     public static ResourceDictionary LoadTheme(){
       using(var stream=Assembly.GetExecutingAssembly().GetManifestResourceStream("Nexus.Theme.xaml"))return (ResourceDictionary)XamlReader.Load(stream);
     }
-    // Version shown to people: "1.7.0-beta.1" for pre-releases, otherwise the numeric version.
+    // Version shown to people: "1.7.0-beta.2" for pre-releases, otherwise the numeric version.
     public static string DisplayVersion {
       get {
         var attribute=(AssemblyInformationalVersionAttribute)Attribute.GetCustomAttribute(Assembly.GetExecutingAssembly(),typeof(AssemblyInformationalVersionAttribute));

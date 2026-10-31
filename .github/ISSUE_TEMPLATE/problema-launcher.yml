@@ -12,7 +12,7 @@ body:
     attributes:
       label: Versão do NEXUS
       description: Aparece no rodapé, ao lado de "Verificar atualização".
-      placeholder: "1.7.0-beta.1"
+      placeholder: "1.7.0-beta.2"
     validations:
       required: true
   - type: input

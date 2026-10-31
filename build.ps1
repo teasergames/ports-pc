@@ -26,5 +26,6 @@ if ($Test) {
   Remove-Item Env:NEXUS_TEST_REPORT
   Remove-Item -LiteralPath (Join-Path $destination 'test-results.txt')
 }
-Compress-Archive -Path (Join-Path $destination '*') -DestinationPath (Join-Path $projectRoot 'dist\Nexus-Ports-PC-Windows-x64.zip') -Force
+# Only the files the self-updater expects; folders created by running the app (ports, logs) stay out.
+Compress-Archive -Path (@('Nexus.exe','Nexus.exe.config','README.md','CATALOG.md','LICENSE') | ForEach-Object { Join-Path $destination $_ }) -DestinationPath (Join-Path $projectRoot 'dist\Nexus-Ports-PC-Windows-x64.zip') -Force
 Write-Output ('Pronto: ' + (Join-Path $destination 'Nexus.exe'))

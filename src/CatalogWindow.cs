@@ -90,11 +90,11 @@ namespace Nexus {
       project=new Button{Content="Abrir projeto",Padding=new Thickness(12,7,12,7),Margin=new Thickness(0,0,8,8)};project.Click+=delegate{if(selected!=null)Open(selected.ProjectUrl);};links.Children.Add(project);
       refresh=new Button{Content="Consultar novamente",Padding=new Thickness(12,7,12,7),Margin=new Thickness(0,0,8,8)};refresh.Click+=delegate{LoadSelected(true);};links.Children.Add(refresh);
       checkUpdates=new Button{Content="Verificar atualizações",Padding=new Thickness(12,7,12,7),Margin=new Thickness(0,0,8,8)};checkUpdates.Click+=delegate{CheckUpdates();};links.Children.Add(checkUpdates);
-      right.Children.Add(new TextBlock{Text="PASTA DE INSTALAÇÃO",Style=ThemeStyle("SectionLabel")});
+      right.Children.Add(new TextBlock{Text="PASTA PADRÃO DE INSTALAÇÃO",Style=ThemeStyle("SectionLabel")});
       var folderRow=new DockPanel{Margin=new Thickness(0,0,0,6)};right.Children.Add(folderRow);
-      choose=new Button{Content="Escolher…",Padding=new Thickness(12,7,12,7),Margin=new Thickness(8,0,0,0)};DockPanel.SetDock(choose,Dock.Right);folderRow.Children.Add(choose);
-      destination=new TextBox{Text=Path.Combine(dataRoot,"ports")};folderRow.Children.Add(destination);
-      choose.Click+=delegate{using(var picker=new System.Windows.Forms.FolderBrowserDialog{Description="Escolha a pasta onde o NEXUS instalará os ports",SelectedPath=Directory.Exists(destination.Text)?destination.Text:Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments)}){if(picker.ShowDialog()==System.Windows.Forms.DialogResult.OK)destination.Text=picker.SelectedPath;}};
+      choose=new Button{Content="Alterar…",Padding=new Thickness(12,7,12,7),Margin=new Thickness(8,0,0,0)};DockPanel.SetDock(choose,Dock.Right);folderRow.Children.Add(choose);
+      destination=new TextBox{Text=InstallLocation.DefaultFolder(dataRoot)};folderRow.Children.Add(destination);
+      choose.Click+=delegate{using(var picker=new System.Windows.Forms.FolderBrowserDialog{Description="Escolha a pasta padrão onde o NEXUS instalará os ports",SelectedPath=Directory.Exists(destination.Text)?destination.Text:Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments)}){if(picker.ShowDialog()==System.Windows.Forms.DialogResult.OK)destination.Text=picker.SelectedPath;}};
       right.Children.Add(new Border{Background=Theme("SurfaceRaised"),BorderBrush=new SolidColorBrush(Color.FromRgb(46,51,61)),BorderThickness=new Thickness(1),CornerRadius=new CornerRadius(8),Padding=new Thickness(12,10,12,10),Margin=new Thickness(0,12,0,16),Child=new TextBlock{Text="O NEXUS baixa apenas o port. Os arquivos do jogo vêm da sua própria cópia dumpada; consulte as instruções acima.",Foreground=Theme("TextSoft"),TextWrapping=TextWrapping.Wrap,FontSize=12}});
       acceptBeta=new CheckBox{Content="Aceito instalar esta versão beta / experimental",Visibility=Visibility.Collapsed,Margin=new Thickness(0,0,0,14)};acceptBeta.Checked+=delegate{UpdateInstallState();};acceptBeta.Unchecked+=delegate{UpdateInstallState();};right.Children.Add(acceptBeta);
       var actions=new WrapPanel();right.Children.Add(actions);
@@ -248,6 +248,7 @@ namespace Nexus {
     async void InstallSelected(string localZip=null){
       if(selected==null||busy)return;if(selected.ProjectOnly){Open(selected.ProjectUrl+"/releases");return;}if(selected.ManualPackage&&localZip==null){Open(selected.ProjectUrl);return;}if(!selected.ManualPackage&&(release==null||release.IsPrerelease&&acceptBeta.IsChecked!=true))return;
       PortEntry entry=selected;PortRelease package=release;Game previous=Installed(entry);bool updating=previous!=null&&localZip==null;if(updating&&package.FromCache){LoadSelected(true);return;}if(updating&&!UpdateManager.Available(previous,package))return;string parent=updating?(previous.InstallationKind=="Installer"?Path.GetDirectoryName(previous.InstallerCacheRoot):Path.GetDirectoryName(previous.ManagedInstallationRoot)):destination.Text.Trim();
+      if(!updating){var where=new InstallLocationWindow(this,entry.Name,parent);if(where.ShowDialog()!=true){status.Text="Instalação cancelada. Nada foi baixado.";return;}parent=where.Result;}
       if(String.IsNullOrWhiteSpace(parent)||!Path.IsPathRooted(parent)){status.Text="Escolha uma pasta de instalação com caminho completo.";return;}
       if(updating){try{UpdateManager.EnsureClosed(previous);}catch(Exception ex){status.Text=ex.Message;return;}}
       busy=true;SetInteractive(false);download.IsEnabled=false;cancel.IsEnabled=true;installation=new CancellationTokenSource();

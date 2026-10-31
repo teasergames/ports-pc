@@ -409,6 +409,7 @@ namespace Nexus {
       if(args.Contains("--self-update-smoke")){var dialog=new SelfUpdateWindow(Window,null,new PortRelease{Version="v1.6.4"},store.Root,true);dialog.Show();dialog.UpdateLayout();CaptureWindow(dialog,target);dialog.Close();return;}
       if(args.Contains("--package-smoke")){var dialog=new PackageChoiceWindow(Window,"Exemplo de pacote",new[]{"Game.exe","Launcher.exe","bin\\\\Runtime.exe"},null);dialog.Show();dialog.UpdateLayout();CaptureWindow(dialog,target);dialog.Close();return;}
       if(args.Contains("--content-smoke")){Game sample=library.Games.FirstOrDefault(GameContent.Supports)??new Game{Name="BLACK",Executable=Path.Combine(store.Root,"BLACK.exe")};var dialog=new GameContentWindow(Window,sample);dialog.Show();dialog.UpdateLayout();CaptureWindow(dialog,target);dialog.Close();return;}
+      if(args.Contains("--install-location-smoke")){var dialog=new InstallLocationWindow(Window,"Shadow of the Colossus · AjncSystem",InstallLocation.DefaultFolder(store.Root));dialog.PreviewOther(Path.Combine(store.Root,"Meus Ports"));dialog.Show();dialog.UpdateLayout();CaptureWindow(dialog,target);dialog.Close();return;}
       if(args.Contains("--catalog-smoke")||args.Contains("--updates-smoke")){var catalogWindow=new CatalogWindow(Window,store.Root,library,delegate(Game g){},CatalogTab.All){IsSmoke=true};catalogWindow.Show();catalogWindow.UpdateLayout();if(args.Contains("--updates-smoke"))catalogWindow.CaptureUpdateSmoke(target);else catalogWindow.CaptureSmoke(target);catalogWindow.Close();return;}
       CaptureWindow(Window,target);
     }
@@ -429,7 +430,7 @@ namespace Nexus {
     }
     // Renders only the client area, so screenshots no longer carry the empty strip of the window frame.
     public static void CaptureWindow(Window window,string target){
-      window.UpdateLayout();var content=(FrameworkElement)window.Content;int width=(int)Math.Ceiling(content.ActualWidth),height=(int)Math.Ceiling(content.ActualHeight);
+      window.UpdateLayout();var content=(FrameworkElement)window.Content;var margin=content.Margin;int width=(int)Math.Ceiling(content.ActualWidth+margin.Left+margin.Right),height=(int)Math.Ceiling(content.ActualHeight+margin.Top+margin.Bottom);
       var background=new DrawingVisual();using(var context=background.RenderOpen())context.DrawRectangle(window.Background??Brushes.Black,null,new Rect(0,0,width,height));
       var image=new RenderTargetBitmap(width,height,96,96,PixelFormats.Pbgra32);image.Render(background);image.Render(content);var encoder=new PngBitmapEncoder();encoder.Frames.Add(BitmapFrame.Create(image));Directory.CreateDirectory(Path.GetDirectoryName(Path.GetFullPath(target)));using(var output=File.Create(target))encoder.Save(output);
     }

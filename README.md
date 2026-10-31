@@ -1,5 +1,13 @@
 # NEXUS · Ports PC
 
+Na **1.6.2**, a revisão da semana de **26 a 31/10/2026** adiciona **7 ports** com Releases Windows x64: Metroid Prime 2: Echoes / Echoes Unbound (GameCube), Metroid Dread (Switch), GTA: Vice City Stories / VCS Recomp (PS2), WWE SmackDown! Here Comes the Pain (PS2), Gran Turismo 3 / GT3 Revisited (PS2), Super Smash Bros. Brawl / Brawl Recompiled (Wii) e 007: Everything or Nothing (Xbox). Gravity Rush Remastered já estava incluído: sua referência de download e instruções foram atualizadas para v0.1.10, sem duplicar o jogo.
+
+O catálogo agora tem **283 fontes**, com **264 perfis GitHub integrados**, 1 importação oficial e 18 exceções. Nos novos perfis, Baixar e adicionar consulta a Release compatível; Atualizar aparece para instalações gerenciadas quando houver uma versão mais recente. O pacote completo é selecionado: não APK, ARM64, código-fonte ou ZIP apenas de atualização.
+
+**Configurar:** Metroid Dread força a tela original com `--launcher`; GT3 abre Settings; GTA VCS abre seu assistente de disco/compilação; HCTP e 007 abrem seus launchers com preparação, opções e Play. Echoes Unbound (F1) e Brawl (F10/Home) têm opções dentro do jogo e não recebem um configurador externo fictício. **Jogar:** Dread e VCS usam `--play`; HCTP e 007 mantêm o launcher original, pois não foi validado um comando de inicialização direta. Os assistentes podem exigir compilação dos próprios arquivos do usuário e, após atualizar, recompilação.
+
+Foram baixados e conferidos os **8 pacotes oficiais** desta revisão (7 ZIPs e 1 EXE), seus SHA-256 publicados e os executáveis AMD64 esperados. **714 testes passaram**, além da integração de instalação dos 8 pacotes reais e do teste de interface dos novos botões. A instalação e os comandos são testados sem executar jogos, launchers ou compiladores dos autores. As versões e datas verificadas estão em [CATALOG.md](CATALOG.md).
+
 Launcher de biblioteca para ports de PC, com interface imersiva e artwork do jogo selecionado. Aplicativo nativo WPF para **Windows 11 x64**, com .NET Framework 4.8, que já acompanha o Windows 11. Não precisa de Node, Python, navegador, conta ou permissão de administrador para executar.
 
 Na **1.6.1**, foram adicionados **Tears of the Kingdom / TotK Recomp** e **Bayonetta 3 / Witch Time**, ambos em **Nintendo Switch**, com download e atualização integrados. O catálogo chega a **276 fontes**, das quais **257** são integradas ao GitHub, 1 usa importação oficial do Azimuth e 18 mantêm os limites específicos documentados.

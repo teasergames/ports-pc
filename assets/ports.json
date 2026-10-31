@@ -249,10 +249,10 @@
   },
   {
     "Id": "gravity-rush",
-    "Name": "Gravity Rush Remastered",
+    "Name": "Gravity Rush Remastered · Gravity Rush PC",
     "Repository": "LucaPazienza/gravityrush_pc",
     "Platform": "PlayStation 4",
-    "Kind": "Port",
+    "Kind": "Port nativo",
     "AssetPattern": "^GravityRush-PC-.*-Windows\\.zip$",
     "PlayNames": [
       "Gravity Rush.exe"
@@ -260,9 +260,10 @@
     "ConfigNames": [
       "Gravity Rush Launcher.exe"
     ],
-    "Notes": "Configure seu dump PS4 no launcher original. Jogar usa o executável direto e os ajustes salvos. Projeto em desenvolvimento.",
-    "ArtworkTitle": "Gravity Rush",
-    "ProjectOnly": false
+    "Notes": "Configurar abre o launcher original para selecionar seu dump PS4 extraído (eboot.bin, sce_module e sce_sys), vídeo e controles. Jogar usa Gravity Rush.exe com as opções salvas. Desenvolvido para CUSA01113 europeu 01.00; outras regiões têm limitações. Requer Vulkan 1.3 e driver atualizado. O autor testou NVIDIA; compatibilidade AMD/Intel ainda não confirmada.",
+    "ArtworkTitle": "Gravity Rush Remastered",
+    "ProjectOnly": false,
+    "PackageKind": "Zip"
   },
   {
     "Id": "gravity-rush-2",
@@ -4231,5 +4232,125 @@
     "AssetPattern": "^WitchTime-.*-windows-x86_64\\.zip$",
     "Kind": "Recompilação",
     "Notes": "Configurar abre o launcher original para selecionar seu dump extraído (exefs/romfs), compilar e ajustar opções. Jogar usa --play para iniciar com as opções salvas; se o build precisar ser preparado, o launcher permanece aberto. Atualizações podem exigir recompilação. Requer driver Vulkan; prefira uma pasta curta e gravável. Projeto em desenvolvimento."
+  },
+  {
+    "Id": "echoes-unbound",
+    "Name": "Metroid Prime 2: Echoes · Echoes Unbound",
+    "Repository": "Odrannnn/MetroidPrime2Port",
+    "Platform": "GameCube",
+    "ArtworkTitle": "Metroid Prime 2: Echoes",
+    "PlayNames": [
+      "metroid_prime2_port.exe"
+    ],
+    "ConfigNames": [],
+    "AssetPattern": "^metroid-prime2-port-.*-windows-x86_64\\.zip$",
+    "Kind": "Port nativo",
+    "Notes": "Selecione sua imagem de disco no primeiro início: GameCube USA G2ME01/PAL G2MP01 ou Metroid Prime Trilogy R3ME01/R3MP01. Aceita ISO, GCM, RVZ, WIA, GCZ, CISO e WBFS. Todas as configurações ficam dentro do jogo, em F1 (ou Start + Back). Projeto em desenvolvimento.",
+    "PackageKind": "Zip"
+  },
+  {
+    "Id": "metroid-dread",
+    "Name": "Metroid Dread · Dread Recomp",
+    "Repository": "yozander2009-stack/Metroid-Dread-Recomp",
+    "Platform": "Nintendo Switch",
+    "ArtworkTitle": "Metroid Dread",
+    "PlayNames": [
+      "Metroid Dread.exe"
+    ],
+    "ConfigNames": [
+      "Metroid Dread.exe"
+    ],
+    "Arguments": "--play",
+    "ConfigurationArguments": "--launcher",
+    "AssetPattern": "^MetroidDread-PC-v.*\\.zip$",
+    "Kind": "Recompilação",
+    "Notes": "Configurar abre a tela original de preparação e opções. Selecione seu dump de Metroid Dread 2.1.0 com ExeFS e RomFS; o compilador incluído prepara o jogo no primeiro início (cerca de 7 GB livres). Jogar usa --play após a preparação; atualizações podem recompilar. Opções durante o jogo em F1. Preview em desenvolvimento.",
+    "PackageKind": "Zip"
+  },
+  {
+    "Id": "vcs-ps2",
+    "Name": "Grand Theft Auto: Vice City Stories · VCS Recomp (PS2)",
+    "Repository": "gothamor/gta-vcs-recomp",
+    "Platform": "PlayStation 2",
+    "ArtworkTitle": "Grand Theft Auto: Vice City Stories",
+    "PlayNames": [
+      "VCSLauncher.exe"
+    ],
+    "ConfigNames": [
+      "VCSLauncher.exe"
+    ],
+    "Arguments": "--play",
+    "ConfigurationArguments": "",
+    "AssetPattern": "^VCS-Recomp-.*-windows\\.zip$",
+    "Kind": "Recompilação",
+    "Notes": "Use Configurar para abrir o assistente original e selecionar sua ISO USA SLUS-21590, preparar as ferramentas e compilar (20–60 minutos). O assistente pode instalar Microsoft C++ Build Tools, cerca de 6 GB. Escolha uma pasta curta e local, fora do OneDrive/Program Files. Depois, Jogar usa --play com o build salvo. Atualizações podem exigir Update the build no assistente. Opções no jogo em F2. Port PS2 independente do perfil PSP.",
+    "PackageKind": "Zip"
+  },
+  {
+    "Id": "hctp",
+    "Name": "WWE SmackDown! Here Comes the Pain · HCTP Recompiled",
+    "Repository": "BigDaddyJRich/hctp-recomp",
+    "Platform": "PlayStation 2",
+    "ArtworkTitle": "WWE SmackDown! Here Comes the Pain",
+    "PlayNames": [
+      "HCTP Recompiled Settings.exe"
+    ],
+    "ConfigNames": [
+      "HCTP Recompiled Settings.exe"
+    ],
+    "AssetPattern": "^HCTP-Recompiled-Windows\\.zip$",
+    "Kind": "Recompilação",
+    "Notes": "Jogar e Configurar abrem o launcher original, que contém PLAY e as opções. Selecione seu disco USA SLUS-20787 (ISO/CHD ou pasta); a primeira compilação leva cerca de 30–90 minutos e pode solicitar Microsoft C++ Build Tools. Use pasta curta e local. Requer CPU AVX2, Direct3D 11, cerca de 16 GB RAM e 15 GB livres. Não há inicialização direta validada neste perfil. Projeto em desenvolvimento; online e PPV ainda incompletos.",
+    "PackageKind": "Zip"
+  },
+  {
+    "Id": "gt3-revisited",
+    "Name": "Gran Turismo 3: A-Spec · GT3 Revisited",
+    "Repository": "matt-pulsipher/GT3-revisited",
+    "Platform": "PlayStation 2",
+    "ArtworkTitle": "Gran Turismo 3: A-Spec",
+    "PlayNames": [
+      "gt3r.exe"
+    ],
+    "ConfigNames": [
+      "gt3r.exe"
+    ],
+    "ConfigurationArguments": "--screen settings",
+    "AssetPattern": "^gt3r-windows-x64\\.zip$",
+    "Kind": "Reimplementação",
+    "Notes": "No primeiro início selecione a ISO do seu próprio disco. Jogar inicia com o disco salvo; Configurar abre diretamente a tela Settings (--screen settings). O port lê a ISO em tempo de execução e não inclui dados do jogo. Projeto independente em desenvolvimento.",
+    "PackageKind": "Zip"
+  },
+  {
+    "Id": "brawl-recompiled",
+    "Name": "Super Smash Bros. Brawl · Brawl Recompiled",
+    "Repository": "josiahg2502-glitch/BrawlRecompiled",
+    "Platform": "Wii",
+    "ArtworkTitle": "Super Smash Bros. Brawl",
+    "PlayNames": [
+      "Brawl Recompiled.exe"
+    ],
+    "ConfigNames": [],
+    "AssetPattern": "^BrawlRecompiled-v.*-Windows\\.zip$",
+    "Kind": "Recompilação",
+    "Notes": "Abra Brawl Recompiled.exe e selecione sua imagem de disco USA RSBE01 (ISO/CISO/WBFS) ou pasta extraída. Depois da preparação, inicia o jogo com o conteúdo salvo. As configurações ficam dentro do jogo: F10 ou Home no controle. Não execute engine/brawl-engine.exe isoladamente. Projeto em desenvolvimento; não é o projeto de decompilação doldecomp/brawl.",
+    "PackageKind": "Zip"
+  },
+  {
+    "Id": "007-eon",
+    "Name": "007: Everything or Nothing · EoN Recomp",
+    "Repository": "hk21x/007eon-recomp",
+    "Platform": "Xbox",
+    "ArtworkTitle": "007: Everything or Nothing",
+    "PackageKind": "Executable",
+    "PlayNames": [
+      "EoNLauncher.exe"
+    ],
+    "ConfigNames": [
+      "EoNLauncher.exe"
+    ],
+    "AssetPattern": "^EoNLauncher\\.exe$",
+    "Kind": "Recompilação",
+    "Notes": "Jogar e Configurar abrem o launcher original para importar sua ISO ou pasta do Xbox, compilar e pressionar Play. O autor adicionou suporte USA no v1.0.2 além de PAL. Reserva cerca de 15 GB; a primeira compilação baixa ferramentas e leva 30–90 minutos. Termos das bibliotecas Microsoft são apresentados pelo assistente. Opções durante o jogo em F1. Atualizações podem exigir recompilar pelo launcher; não há inicialização direta validada neste perfil."
   }
 ]

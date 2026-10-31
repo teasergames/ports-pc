@@ -8,6 +8,11 @@ public static class Integration {
   public static int Main(string[] args){
     try{
       string root=Path.GetFullPath(args[0]);var store=new Store(root);var lib=new Library();
+      if(args[1]=="weekly-packages"){
+        foreach(var entry in PortCatalog.LoadEntries().Where(e=>new[]{"echoes-unbound","metroid-dread","vcs-ps2","hctp","gt3-revisited","brawl-recompiled","007-eon","gravity-rush"}.Contains(e.Id))){
+          var release=PortCatalog.BundledRelease(entry);string package=Path.Combine(args[2],release.AssetName);using(var catalog=new PortCatalog(new PackageHandler(File.ReadAllBytes(package)))){var game=catalog.Install(entry,release,Path.Combine(root,"ports"),null,CancellationToken.None).GetAwaiter().GetResult();if(!PackageSupport.WindowsExecutable(game.Executable)||!UpdateManager.Managed(game)||game.Platform!=entry.Platform||game.Arguments!=(entry.Arguments??"")||game.ConfigurationArguments!=entry.ConfigurationArguments)throw new Exception("Weekly package registration failed: "+entry.Id);if(entry.ConfigNames.Length>0){if(!PackageSupport.WindowsExecutable(game.ConfigurationExecutable))throw new Exception("Missing configuration application");var config=Ports.ConfigurationStartInfo(game);if(config.Arguments!=(entry.ConfigurationArguments??""))throw new Exception("Incorrect configuration command");}else if(!String.IsNullOrEmpty(game.ConfigurationExecutable))throw new Exception("Unexpected configuration application");var play=Ports.StartInfo(game,false);if(play.Arguments!=(entry.Arguments??""))throw new Exception("Incorrect play command");lib.Games.Add(game);store.Save(lib);Console.WriteLine("PASS official package digest, PE, installation, play/config mapping: "+entry.Id);}
+        }return 0;
+      }
       if(args[1]=="oct31-packages"){
         foreach(var entry in PortCatalog.LoadEntries().Where(e=>e.Id=="totk"||e.Id=="witch-time")){
           var release=PortCatalog.BundledRelease(entry);string package=Path.Combine(args[2],release.AssetName);PortCatalog.VerifyDigest(package,release.Digest);string prepared=Path.Combine(root,"prepared-fixture");Directory.CreateDirectory(prepared);string generated=Path.Combine(prepared,"totk.exe");File.Copy(typeof(Game).Assembly.Location,generated,true);

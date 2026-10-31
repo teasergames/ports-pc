@@ -402,36 +402,6 @@
     }
   },
   {
-    "Repository": "LucaPazienza/gravityrush_pc",
-    "CheckedUtc": "2026-10-20T00:00:00Z",
-    "Release": {
-      "tag_name": "v0.1.5",
-      "html_url": "https://github.com/LucaPazienza/gravityrush_pc/releases/tag/v0.1.5",
-      "draft": false,
-      "prerelease": false,
-      "assets": [
-        {
-          "name": "door-glitch-0.1.5.png",
-          "size": 1137971,
-          "browser_download_url": "https://github.com/LucaPazienza/gravityrush_pc/releases/download/v0.1.5/door-glitch-0.1.5.png",
-          "digest": "sha256:b9cf8c3dce7869060583d80727c38bd0d6ba6b15b1b5b51edd4c1ffb328e0cb1"
-        },
-        {
-          "name": "GravityRush-PC-0.1.5-Windows.zip",
-          "size": 112057430,
-          "browser_download_url": "https://github.com/LucaPazienza/gravityrush_pc/releases/download/v0.1.5/GravityRush-PC-0.1.5-Windows.zip",
-          "digest": "sha256:eff65c986cadfc22c74ee5317ac79960ab4fd835baeb3def3bab200412508da1"
-        },
-        {
-          "name": "GravityRush-PC-0.1.5-Windows.zip.sha256",
-          "size": 99,
-          "browser_download_url": "https://github.com/LucaPazienza/gravityrush_pc/releases/download/v0.1.5/GravityRush-PC-0.1.5-Windows.zip.sha256",
-          "digest": "sha256:1440775963e324bc2d89f3df0602767eed9b2206d64b11ef6a40c7bd0f8996a6"
-        }
-      ]
-    }
-  },
-  {
     "Repository": "HayatoG/gr2_pc",
     "CheckedUtc": "2026-10-20T00:00:00Z",
     "Release": {
@@ -5095,6 +5065,150 @@
           "size": 82972194,
           "browser_download_url": "https://github.com/Zexyen/Witch-Time/releases/download/v0.4.5/WitchTime-v0.4.5-windows-x86_64.zip",
           "digest": "sha256:f755a29ef2210659c4328265802f067e4d506849f4c248222394c5408c1d1e61"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "Odrannnn/MetroidPrime2Port",
+    "CheckedUtc": "2026-10-31T19:19:31.787304+00:00",
+    "Release": {
+      "tag_name": "v0.6.6",
+      "html_url": "https://github.com/Odrannnn/MetroidPrime2Port/releases/tag/v0.6.6",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "metroid-prime2-port-0.6.6-windows-x86_64.zip",
+          "size": 61823620,
+          "browser_download_url": "https://github.com/Odrannnn/MetroidPrime2Port/releases/download/v0.6.6/metroid-prime2-port-0.6.6-windows-x86_64.zip",
+          "digest": "sha256:35e19fbfde1ecac884cd87cc34ffa769b7abcc5c6cb28136e1a2c017fbea33b2"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "yozander2009-stack/Metroid-Dread-Recomp",
+    "CheckedUtc": "2026-10-31T19:19:31.787304+00:00",
+    "Release": {
+      "tag_name": "v0.5.0",
+      "html_url": "https://github.com/yozander2009-stack/Metroid-Dread-Recomp/releases/tag/v0.5.0",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "MetroidDread-PC-v0.5.0.zip",
+          "size": 75715063,
+          "browser_download_url": "https://github.com/yozander2009-stack/Metroid-Dread-Recomp/releases/download/v0.5.0/MetroidDread-PC-v0.5.0.zip",
+          "digest": "sha256:d01a030e00f8eab5b0f2fa6af1ffda41eee549e4210642544f77b47f8ee116b6"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "gothamor/gta-vcs-recomp",
+    "CheckedUtc": "2026-10-31T19:19:31.787304+00:00",
+    "Release": {
+      "tag_name": "v0.0.3",
+      "html_url": "https://github.com/gothamor/gta-vcs-recomp/releases/tag/v0.0.3",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "VCS-Recomp-0.0.3-windows.zip",
+          "size": 85341000,
+          "browser_download_url": "https://github.com/gothamor/gta-vcs-recomp/releases/download/v0.0.3/VCS-Recomp-0.0.3-windows.zip",
+          "digest": "sha256:934029d52663dc239343af67967b0a22193a54b30e37849d12e12056662fb8f9"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "BigDaddyJRich/hctp-recomp",
+    "CheckedUtc": "2026-10-31T19:19:31.788304+00:00",
+    "Release": {
+      "tag_name": "v0.3.4",
+      "html_url": "https://github.com/BigDaddyJRich/hctp-recomp/releases/tag/v0.3.4",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "HCTP-Recompiled-Windows.zip",
+          "size": 78204030,
+          "browser_download_url": "https://github.com/BigDaddyJRich/hctp-recomp/releases/download/v0.3.4/HCTP-Recompiled-Windows.zip",
+          "digest": "sha256:e42eb446c594ca36047b11c8f8523989640224fa7d023f1735662bee68b72e46"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "matt-pulsipher/GT3-revisited",
+    "CheckedUtc": "2026-10-31T19:19:31.788304+00:00",
+    "Release": {
+      "tag_name": "v0.4.3",
+      "html_url": "https://github.com/matt-pulsipher/GT3-revisited/releases/tag/v0.4.3",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "gt3r-windows-x64.zip",
+          "size": 5470295,
+          "browser_download_url": "https://github.com/matt-pulsipher/GT3-revisited/releases/download/v0.4.3/gt3r-windows-x64.zip",
+          "digest": "sha256:a34f98bb6658044354e404a703866b3863615b8669aeeefc0ec976313a849346"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "LucaPazienza/gravityrush_pc",
+    "CheckedUtc": "2026-10-31T19:19:31.788304+00:00",
+    "Release": {
+      "tag_name": "v0.1.10",
+      "html_url": "https://github.com/LucaPazienza/gravityrush_pc/releases/tag/v0.1.10",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "GravityRush-PC-0.1.10-Windows.zip",
+          "size": 112179433,
+          "browser_download_url": "https://github.com/LucaPazienza/gravityrush_pc/releases/download/v0.1.10/GravityRush-PC-0.1.10-Windows.zip",
+          "digest": "sha256:30e310dbc96ebecaf69895be10e62bcc16b37a226e1a65d6a804ce36608bfe7b"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "josiahg2502-glitch/BrawlRecompiled",
+    "CheckedUtc": "2026-10-31T19:19:31.788304+00:00",
+    "Release": {
+      "tag_name": "v0.5.3",
+      "html_url": "https://github.com/josiahg2502-glitch/BrawlRecompiled/releases/tag/v0.5.3",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "BrawlRecompiled-v0.5.3-Windows.zip",
+          "size": 201853903,
+          "browser_download_url": "https://github.com/josiahg2502-glitch/BrawlRecompiled/releases/download/v0.5.3/BrawlRecompiled-v0.5.3-Windows.zip",
+          "digest": "sha256:055a7394e62c4e32b751084cbee41182066a0d748fe982b6a665e838b32a556e"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "hk21x/007eon-recomp",
+    "CheckedUtc": "2026-10-31T19:19:31.788304+00:00",
+    "Release": {
+      "tag_name": "v1.0.2",
+      "html_url": "https://github.com/hk21x/007eon-recomp/releases/tag/v1.0.2",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "EoNLauncher.exe",
+          "size": 2324480,
+          "browser_download_url": "https://github.com/hk21x/007eon-recomp/releases/download/v1.0.2/EoNLauncher.exe",
+          "digest": "sha256:fb57c2b73251e6f71a5c19d196f8248155b130ae251351f0534daeb3926e193d"
         }
       ]
     }

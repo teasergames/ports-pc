@@ -1,5 +1,25 @@
 # Catálogo de ports
 
+## Revisão semanal — 1.6.2 (26–31/10/2026)
+
+Sete fontes novas com download/atualização integrados. Datas abaixo são de publicação da Release consultada em 31/10, não uma afirmação de que cada projeto nasceu nesta semana.
+
+| Plataforma | Projeto | Release publicada | Jogar / Configurar |
+|---|---|---|---|
+| GameCube | [Metroid Prime 2: Echoes · Echoes Unbound](https://github.com/Odrannnn/MetroidPrime2Port) | v0.6.6 · 30/10 | `metroid_prime2_port.exe`; escolhe o disco no primeiro início; configurações em F1. ZIP Windows x86_64, excluindo ARM64. |
+| Nintendo Switch | [Metroid Dread](https://github.com/yozander2009-stack/Metroid-Dread-Recomp) | v0.5.0 · 30/10 | `Metroid Dread.exe --play`; Configurar: `--launcher`. ZIP completo, excluindo `update-*.zip`. Requer os próprios ExeFS/RomFS 2.1.0; prepara/compila no primeiro início. |
+| PlayStation 2 | [GTA: Vice City Stories · VCS Recomp](https://github.com/gothamor/gta-vcs-recomp) | v0.0.3 · 31/10 | `VCSLauncher.exe --play`; Configurar: mesmo assistente sem argumentos. ISO USA SLUS-21590; compilação 20–60 min; pode instalar Build Tools Microsoft. Independente do perfil PSP já existente. |
+| PlayStation 2 | [WWE SmackDown! Here Comes the Pain](https://github.com/BigDaddyJRich/hctp-recomp) | v0.3.4 · 28/10 | `HCTP Recompiled Settings.exe` para ambos: importação, build, opções e PLAY. Disco USA SLUS-20787; AVX2, D3D11, ~16 GB RAM/~15 GB livres; build 30–90 min. Sem comando direto validado. |
+| PlayStation 2 | [Gran Turismo 3: A-Spec · GT3 Revisited](https://github.com/matt-pulsipher/GT3-revisited) | v0.4.3 · 31/10 | `gt3r.exe`; Configurar: `--screen settings`. Lê a própria ISO; nunca escolhe o auxiliar `gt3tool.exe`. Reimplementação do motor, não recompilação estática. |
+| Wii | [Super Smash Bros. Brawl · Brawl Recompiled](https://github.com/josiahg2502-glitch/BrawlRecompiled) | v0.5.3 · 31/10 | `Brawl Recompiled.exe`, que importa o próprio disco USA RSBE01; opções no jogo em F10/Home. Não executa o engine isolado. Independente de `doldecomp/brawl`. |
+| Xbox | [007: Everything or Nothing](https://github.com/hk21x/007eon-recomp) | v1.0.2 · 29/10 | EXE portátil `EoNLauncher.exe`: próprio disco, build e Play; opções no jogo em F1. Ferramentas baixadas pelo autor; ~15 GB livres, build 30–90 min. Configurar abre o mesmo launcher; sem comando direto validado. |
+
+**Atualizado, sem nova entrada:** [Gravity Rush Remastered](https://github.com/LucaPazienza/gravityrush_pc), v0.1.10 de 28/10; Jogar continua `Gravity Rush.exe`, Configurar `Gravity Rush Launcher.exe`. Dump europeu CUSA01113 01.00 e Vulkan 1.3; o autor testou NVIDIA.
+
+**283 fontes**, **264 integradas ao GitHub**, **1 importação oficial**, **18 exceções**. As integradas são 230 ZIPs portáteis, 11 EXEs portáteis e 23 assistentes do autor (22 EXEs e o ZIP de TotK). Nesta revisão foram baixados os 8 pacotes oficiais (7 ZIPs + 1 EXE), comparados seus SHA-256 com as Releases e verificados os entrypoints PE AMD64. A integração usa os pacotes reais para validar extração, cadastro e comandos, sem iniciar programas de terceiros ou compilar jogos. A inclusão não é uma certificação de gameplay ou compatibilidade com qualquer hardware.
+
+O perfil mais recente de [RACiT](https://github.com/HighDrexler/RACiT/releases/tag/v0.9) também foi consultado, mas seu pacote é somente 7z; não foi acrescentado com um botão que prometesse extração automática sem suporte. Projetos apenas Android, sem pacote Windows ou já presentes no catálogo foram excluídos das novas entradas.
+
 Nos perfis integrados, o NEXUS consulta a última Release Windows compatível e seleciona o ZIP ou EXE definido; versões experimentais só são consideradas nos perfis que as sinalizam. Darkwatch: Darker Edition usa releases estáveis do repositório linkssy2/DarkwatchDarkerEdition. Azimuth usa sua página oficial no itch.io e importação local do ZIP. Não escolhe arquivos de código-fonte, Linux ou atualizadores isolados. Os projetos abaixo são ports/forks independentes, sem vínculo oficial com os detentores dos jogos.
 
 ## Novos ports — 1.6.1 (31/10/2026)

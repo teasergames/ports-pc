@@ -72,8 +72,9 @@ namespace Nexus {
     Game selected;bool smoke;bool closing;bool checkingLauncher;
     string platformFilter=Platforms.All[0];
     Gamepad gamepad;
-    // Grid cards are portrait covers (3:4), so the widths are narrower than the old landscape cards.
-    static readonly int[] GridSizes={150,190,240},ListSizes={56,76,110};
+    // Grid cards use the 2:3 cover format (SteamGridDB/Steam library covers are 600×900).
+    static readonly int[] GridSizes={140,176,220},ListSizes={56,76,110};
+    const int CurrentCoverRevision=2;public const string ChosenCover="Capa escolhida por você";
     static readonly Brush Muted=Frozen(Color.FromRgb(158,168,184));
     static Brush Frozen(Color color){var brush=new SolidColorBrush(color);brush.Freeze();return brush;}
     T Find<T>(string name) where T:class {return Window.FindName(name) as T;}
@@ -121,7 +122,10 @@ namespace Nexus {
       if(library.SeenCatalogIds==null){library.SeenCatalogIds=PortCatalog.LoadEntries().Select(e=>e.Id).ToList();if(!smoke)Save();}
       UpdateCatalogBadge(PortCatalog.LoadEntries());
       selected=library.Games.FirstOrDefault();Refresh();
-      Window.Loaded+=delegate{if(!smoke){foreach(Game g in library.Games.ToArray()){if(String.IsNullOrEmpty(g.Artwork)||!File.Exists(g.Artwork))ResolveArtwork(g);if(String.IsNullOrEmpty(g.Cover)||!File.Exists(g.Cover))ResolveCover(g);}}};
+      Window.Loaded+=delegate{if(!smoke){
+        bool refreshCovers=library.CoverRevision<CurrentCoverRevision;if(refreshCovers){library.CoverRevision=CurrentCoverRevision;Save();}
+        foreach(Game g in library.Games.ToArray()){if(String.IsNullOrEmpty(g.Artwork)||!File.Exists(g.Artwork))ResolveArtwork(g);if(String.IsNullOrEmpty(g.Cover)||!File.Exists(g.Cover)||refreshCovers&&g.CoverSource!=ChosenCover)ResolveCover(g);}
+      }};
       Window.Loaded+=delegate{if(!smoke){if(Environment.GetCommandLineArgs().Contains("--nexus-update-failed"))Status("A atualização não foi concluída. A versão anterior foi restaurada; consulte os logs em launcher-updates.");StartupChecks();}};
       Window.Loaded+=delegate{if(!smoke){gamepad=new Gamepad(()=>Window.IsActive&&Window.OwnedWindows.Count==0);gamepad.Pressed+=OnPad;}};
     }
@@ -253,11 +257,17 @@ namespace Nexus {
     }
 
     Grid Artwork(Game g,double width,double height,bool badges,bool cover=false){
-      var art=new Grid{Width=width,Height=height,Background=Frozen(Color.FromRgb(37,43,53))};ImageSource source=(cover?LoadImage(g.Cover):null)??LoadImage(g.Artwork);
-      // Box art close to the card shape (PS4/Switch boxes are slightly wider than 3:4) is shown whole;
-      // anything far from it, like landscape backgrounds, fills the card instead.
+      var art=new Grid{Width=width,Height=height,Background=Frozen(Color.FromRgb(37,43,53))};ImageSource coverImage=cover?LoadImage(g.Cover):null,source=coverImage??LoadImage(g.Artwork);
+      // Covers with the card shape (SteamGridDB 600×900) fill it. Other box art (Wikipedia scans, landscape
+      // N64 boxes) is shown whole over a blurred copy of itself, so the card never shows empty bars.
       double ratio=source==null||source.Height<=0?0:source.Width/source.Height,shape=width/height;
-      if(source!=null)art.Children.Add(new Image{Source=source,Stretch=cover&&ratio>shape*0.8&&ratio<shape*1.4?Stretch.Uniform:Stretch.UniformToFill});
+      bool whole=coverImage!=null&&Math.Abs(ratio-shape)/shape>0.06;
+      if(source!=null&&whole){
+        art.Children.Add(new Image{Source=source,Stretch=Stretch.UniformToFill,Effect=new System.Windows.Media.Effects.BlurEffect{Radius=28},Margin=new Thickness(-20)});
+        art.Children.Add(new System.Windows.Shapes.Rectangle{Fill=Frozen(Color.FromArgb(120,16,17,21))});
+        art.Children.Add(new Image{Source=source,Stretch=Stretch.Uniform});
+      }
+      else if(source!=null)art.Children.Add(new Image{Source=source,Stretch=Stretch.UniformToFill});
       else art.Children.Add(new TextBlock{Text="◈",Foreground=Theme("Accent"),FontSize=Math.Max(24,height/3),HorizontalAlignment=HorizontalAlignment.Center,VerticalAlignment=VerticalAlignment.Center});
       if(!badges)return art;
       var platform=Badge(Platforms.ShortName(Platforms.Resolve(g)),Frozen(Color.FromArgb(210,16,17,21)),Theme("Text"),null);platform.HorizontalAlignment=HorizontalAlignment.Left;platform.VerticalAlignment=VerticalAlignment.Top;platform.Margin=new Thickness(8);art.Children.Add(platform);
@@ -269,7 +279,7 @@ namespace Nexus {
 
     Button GridCard(Game g){
       var card=new StackPanel{Width=library.GridSize};
-      card.Children.Add(new Border{CornerRadius=new CornerRadius(8),ClipToBounds=true,Child=Artwork(g,library.GridSize,library.GridSize*4.0/3,true,true)});
+      card.Children.Add(new Border{CornerRadius=new CornerRadius(8),ClipToBounds=true,Child=Artwork(g,library.GridSize,library.GridSize*1.5,true,true)});
       card.Children.Add(new TextBlock{Text=g.Name,FontWeight=FontWeights.SemiBold,FontSize=library.GridSize<180?13:15,TextWrapping=TextWrapping.Wrap,MaxHeight=44,TextTrimming=TextTrimming.CharacterEllipsis,Margin=new Thickness(4,10,4,2)});
       card.Children.Add(new TextBlock{Text=Subtitle(g),Foreground=Muted,FontSize=12,TextTrimming=TextTrimming.CharacterEllipsis,Margin=new Thickness(4,0,4,4)});
       return CardButton(g,card,false);
@@ -456,7 +466,7 @@ namespace Nexus {
       if(size>0){if(mode=="list")library.ListSize=size;else library.GridSize=size;library.NormalizeView();UpdateViewControls();RefreshGrid();}
       if(library.ViewMode!=mode)throw new Exception("View switch failed");Panel shown=mode=="list"?(Panel)Find<StackPanel>("GameList"):Find<WrapPanel>("GameGrid");
       if(shown.Visibility!=Visibility.Visible||shown.Children.Count!=library.Games.Count)throw new Exception("View rendering failed");
-      if(mode=="grid"&&shown.Children.Count>0){var art=(Grid)((Border)((StackPanel)((Button)shown.Children[0]).Content).Children[0]).Child;if(Math.Abs(art.Height-art.Width*4.0/3)>0.5)throw new Exception("Grid cards must use the 3:4 cover format");}
+      if(mode=="grid"&&shown.Children.Count>0){var art=(Grid)((Border)((StackPanel)((Button)shown.Children[0]).Content).Children[0]).Child;if(Math.Abs(art.Height-art.Width*1.5)>0.5)throw new Exception("Grid cards must use the 2:3 cover format");}
       if(library.Games.Count>0){var lastButton=(Button)shown.Children[shown.Children.Count-1];string expected=(string)lastButton.ToolTip;lastButton.RaiseEvent(new RoutedEventArgs(ButtonBase.ClickEvent));if(selected==null||selected.Name!=expected)throw new Exception("Selection failed");Find<TextBox>("SearchBox").Text=expected;if(shown.Children.Count<1)throw new Exception("Search in view failed");Find<TextBox>("SearchBox").Text="";}
       var chips=Find<WrapPanel>("PlatformChips").Children.Cast<ToggleButton>().Select(c=>(string)c.Tag).ToList();
       if(chips.Count!=1+library.Games.Select(g=>Platforms.Resolve(g)).Distinct().Count())throw new Exception("Platform chips must list only platforms present in the collection");
@@ -510,7 +520,7 @@ namespace Nexus {
           candidate.ConfigurationExecutable=configExe.Text.Trim().Trim('"');candidate.ConfigurationArguments=configArgs.Text;candidate.ArtworkSearchTitle=artTitle.Text.Trim();
           if(!String.IsNullOrEmpty(candidate.ConfigurationExecutable))Ports.ConfigurationStartInfo(candidate);
           if(!String.IsNullOrEmpty(picked)){candidate.Artwork=store.ImportArtwork(picked,candidate.Id);candidate.ArtworkSource="Imagem escolhida por você";}
-          if(!String.IsNullOrEmpty(pickedCover)){candidate.Cover=store.ImportArtwork(pickedCover,candidate.Id);candidate.CoverSource="Capa escolhida por você";}
+          if(!String.IsNullOrEmpty(pickedCover)){candidate.Cover=store.ImportArtwork(pickedCover,candidate.Id);candidate.CoverSource=Launcher.ChosenCover;}
           Result=candidate;DialogResult=true;
         }catch(Exception ex){MessageBox.Show(this,ex.Message,"Confira o cadastro",MessageBoxButton.OK,MessageBoxImage.Warning);}
       };

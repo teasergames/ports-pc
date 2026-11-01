@@ -49,6 +49,8 @@ namespace Nexus {
     public string SortMode {get;set;}
     // Catalog profiles already shown to the user; anything else appears under "Novidades".
     public List<string> SeenCatalogIds {get;set;}
+    // Bumped when the automatic cover search improves, so covers found by an older search are fetched again once.
+    public int CoverRevision {get;set;}
     public Library() {Version=1;Games=new List<Game>();OnlineArtwork=true;AutoUpdateLauncher=true;ViewMode="grid";GridSize=220;ListSize=76;SortMode="favorites";}
     public void NormalizeView(){ViewMode=ViewMode=="list"?"list":"grid";GridSize=Math.Max(140,Math.Min(340,GridSize<=0?220:GridSize));ListSize=Math.Max(48,Math.Min(132,ListSize<=0?76:ListSize));if(!new[]{"favorites","name","recent","platform"}.Contains(SortMode))SortMode="favorites";}
     public string ApiKey() {
@@ -132,7 +134,9 @@ namespace Nexus {
     }
     public static string CanonicalTitle(Game game){
       if(!String.IsNullOrWhiteSpace(game.ArtworkSearchTitle))return game.ArtworkSearchTitle.Trim();
-      return PortTitle(game);
+      // Catalog names read "Game · Project"; artwork belongs to the game, not to the port project.
+      string title=PortTitle(game);int separator=title.IndexOf(" · ",StringComparison.Ordinal);
+      return separator>0?title.Substring(0,separator).Trim():title;
     }
     public static string PortTitle(Game game){
       string marker=(game.Name+" "+Path.GetFileName(game.Executable)+" "+Path.GetDirectoryName(game.Executable)).ToLowerInvariant();

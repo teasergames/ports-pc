@@ -53,8 +53,15 @@ namespace Nexus {
     async Task<ArtworkResult> Wikipedia(Game game,CancellationToken token){
       string title=Ports.CanonicalTitle(game);if(title=="Shadow of the Colossus")title="Shadow of the Colossus (2018 video game)";
       string endpoint="https://en.wikipedia.org/w/api.php?action=query&format=json&formatversion=2&redirects=1&prop=pageimages&piprop=original&pilicense=any&titles="+Uri.EscapeDataString(title);
+      var found=await WikipediaPages(endpoint,game,token);if(found!=null)return found;
+      // No exact article (or one without an image, like a disambiguation page): search for the game instead.
+      string search="https://en.wikipedia.org/w/api.php?action=query&format=json&formatversion=2&generator=search&gsrlimit=3&gsrnamespace=0&prop=pageimages&piprop=original&pilicense=any&gsrsearch="+Uri.EscapeDataString(title+" video game");
+      return await WikipediaPages(search,game,token);
+    }
+    async Task<ArtworkResult> WikipediaPages(string endpoint,Game game,CancellationToken token){
       var doc=await Json(endpoint,null,token);var query=Map(Get(doc,"query"));
-      foreach(object item in Array(Get(query,"pages"))){var page=Map(item);string url=Convert.ToString(Get(Map(Get(page,"original")),"source"));if(!String.IsNullOrWhiteSpace(url))return new ArtworkResult{File=await Download(url,game.Id,token),Source="Wikipedia · https://en.wikipedia.org/wiki/"+Uri.EscapeDataString(Convert.ToString(Get(page,"title")))};}
+      var pages=Array(Get(query,"pages")).Select(Map).OrderBy(p=>{object index=Get(p,"index");return index==null?0:Convert.ToInt32(index);});
+      foreach(var page in pages){string url=Convert.ToString(Get(Map(Get(page,"original")),"source"));if(!String.IsNullOrWhiteSpace(url))return new ArtworkResult{File=await Download(url,game.Id,token),Source="Wikipedia · https://en.wikipedia.org/wiki/"+Uri.EscapeDataString(Convert.ToString(Get(page,"title")))};}
       return null;
     }
     async Task<string> SteamGridId(Game game,string key,CancellationToken token){

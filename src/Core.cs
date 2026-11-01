@@ -22,6 +22,9 @@ namespace Nexus {
     public string ArtworkSearchTitle { get; set; }
     public string Artwork { get; set; }
     public string ArtworkSource { get; set; }
+    // Portrait cover (box art) shown on library cards; Artwork stays the wide background.
+    public string Cover { get; set; }
+    public string CoverSource { get; set; }
     public bool Favorite { get; set; }
     public string LastPlayed { get; set; }
     public string Platform {get;set;}

@@ -28,23 +28,44 @@ namespace Nexus {
         catch(Exception ex){store.Log("SteamGridDB: "+ex.Message);}
       }
       try {
-        string title=Ports.CanonicalTitle(game);if(title=="Shadow of the Colossus")title="Shadow of the Colossus (2018 video game)";
-        string endpoint="https://en.wikipedia.org/w/api.php?action=query&format=json&formatversion=2&redirects=1&prop=pageimages&piprop=original&pilicense=any&titles="+Uri.EscapeDataString(title);
-        var doc=await Json(endpoint,null,token);var query=Map(Get(doc,"query"));var pages=Array(Get(query,"pages"));
-        foreach(object item in pages){var page=Map(item);var original=Map(Get(page,"original"));string url=Convert.ToString(Get(original,"source"));if(!String.IsNullOrWhiteSpace(url)){
-          string file=await Download(url,game.Id,token);return new ArtworkResult{File=file,Source="Wikipedia · https://en.wikipedia.org/wiki/"+Uri.EscapeDataString(Convert.ToString(Get(page,"title")))};
-        }}
+        var found=await Wikipedia(game,token);if(found!=null)return found;
       }catch(OperationCanceledException){if(token.IsCancellationRequested)throw;}
       catch(Exception ex){store.Log("Wikipedia: "+ex.Message);}
       return new ArtworkResult{Message="Nenhuma imagem encontrada. Escolha uma artwork ou configure o SteamGridDB para fundos panorâmicos."};
     }
-    async Task<ArtworkResult> SteamGrid(Game game,string key,CancellationToken token) {
+    // Portrait cover for the library cards: SteamGridDB 600×900 grids when a key is set, otherwise the
+    // infobox image of the game's Wikipedia article, which is normally the official box art.
+    public async Task<ArtworkResult> ResolveCover(Game game,bool online,string key,CancellationToken token) {
+      if(!online)return new ArtworkResult{Message="Busca online desativada. Escolha uma capa em Editar cadastro."};
+      if(!String.IsNullOrWhiteSpace(key)){
+        try{
+          string id=await SteamGridId(game,key,token);
+          if(id!=null){var response=await Json("https://www.steamgriddb.com/api/v2/grids/game/"+Uri.EscapeDataString(id)+"?dimensions=600x900&types=static&mimes=image/png,image/jpeg&nsfw=false&humor=false",key,token);
+            foreach(object item in Array(Get(response,"data"))){string url=Convert.ToString(Get(Map(item),"url"));if(!String.IsNullOrEmpty(url))return new ArtworkResult{File=await Download(url,game.Id,token),Source="SteamGridDB · https://www.steamgriddb.com/game/"+id};}}
+        }catch(OperationCanceledException){if(token.IsCancellationRequested)throw;}
+        catch(Exception ex){store.Log("SteamGridDB capa: "+ex.Message);}
+      }
+      try{var found=await Wikipedia(game,token);if(found!=null)return found;}
+      catch(OperationCanceledException){if(token.IsCancellationRequested)throw;}
+      catch(Exception ex){store.Log("Wikipedia capa: "+ex.Message);}
+      return new ArtworkResult{Message="Nenhuma capa encontrada. Escolha uma imagem em Editar cadastro."};
+    }
+    async Task<ArtworkResult> Wikipedia(Game game,CancellationToken token){
+      string title=Ports.CanonicalTitle(game);if(title=="Shadow of the Colossus")title="Shadow of the Colossus (2018 video game)";
+      string endpoint="https://en.wikipedia.org/w/api.php?action=query&format=json&formatversion=2&redirects=1&prop=pageimages&piprop=original&pilicense=any&titles="+Uri.EscapeDataString(title);
+      var doc=await Json(endpoint,null,token);var query=Map(Get(doc,"query"));
+      foreach(object item in Array(Get(query,"pages"))){var page=Map(item);string url=Convert.ToString(Get(Map(Get(page,"original")),"source"));if(!String.IsNullOrWhiteSpace(url))return new ArtworkResult{File=await Download(url,game.Id,token),Source="Wikipedia · https://en.wikipedia.org/wiki/"+Uri.EscapeDataString(Convert.ToString(Get(page,"title")))};}
+      return null;
+    }
+    async Task<string> SteamGridId(Game game,string key,CancellationToken token){
       string title=Ports.CanonicalTitle(game);
       var search=await Json("https://www.steamgriddb.com/api/v2/search/autocomplete/"+Uri.EscapeDataString(title),key,token);
-      var entries=Array(Get(search,"data"));Dictionary<string,object> exact=null;
-      foreach(object item in entries){var entry=Map(item);if(Ports.Normalize(Convert.ToString(Get(entry,"name")))==Ports.Normalize(title)){exact=entry;break;}}
-      if(exact==null)return null;
-      string id=Convert.ToString(Get(exact,"id"));
+      foreach(object item in Array(Get(search,"data"))){var entry=Map(item);if(Ports.Normalize(Convert.ToString(Get(entry,"name")))==Ports.Normalize(title))return Convert.ToString(Get(entry,"id"));}
+      return null;
+    }
+    async Task<ArtworkResult> SteamGrid(Game game,string key,CancellationToken token) {
+      string id=await SteamGridId(game,key,token);
+      if(id==null)return null;
       var response=await Json("https://www.steamgriddb.com/api/v2/heroes/game/"+Uri.EscapeDataString(id)+"?mimes=image/png,image/jpeg&nsfw=false&humor=false",key,token);
       foreach(object item in Array(Get(response,"data"))){string url=Convert.ToString(Get(Map(item),"url"));if(!String.IsNullOrEmpty(url))return new ArtworkResult{File=await Download(url,game.Id,token),Source="SteamGridDB · https://www.steamgriddb.com/game/"+id};}return null;
     }

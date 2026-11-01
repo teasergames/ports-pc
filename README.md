@@ -57,7 +57,7 @@ Alterne entre grade e lista, escolha o tamanho **P**, **M** ou **G** e ordene po
 
 ![NEXUS em modo lista, com capas, nomes e filtros da coleção](docs/images/nexus-list.png)
 
-As artworks podem ser escolhidas em **⋯ → Editar cadastro → Escolher imagem**, ou buscadas de novo em **⋯ → Buscar artwork novamente**. A busca automática usa imagens locais, Wikipedia e, opcionalmente, sua chave do SteamGridDB. As opções ficam em **Configurações**.
+Os cards mostram a **capa oficial** de cada jogo, buscada automaticamente, e o fundo da janela usa a artwork larga. Capa e fundo podem ser escolhidos em **⋯ → Editar cadastro** ou buscados de novo em **⋯ → Buscar artwork novamente**. A busca usa imagens locais, a Wikipedia e, opcionalmente, sua chave do SteamGridDB (capas 600×900 e fundos panorâmicos). As opções ficam em **Configurações**.
 
 ## Teclado e controle
 

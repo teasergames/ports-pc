@@ -72,7 +72,8 @@ namespace Nexus {
     Game selected;bool smoke;bool closing;bool checkingLauncher;
     string platformFilter=Platforms.All[0];
     Gamepad gamepad;
-    static readonly int[] GridSizes={160,220,300},ListSizes={56,76,110};
+    // Grid cards are portrait covers (3:4), so the widths are narrower than the old landscape cards.
+    static readonly int[] GridSizes={150,190,240},ListSizes={56,76,110};
     static readonly Brush Muted=Frozen(Color.FromRgb(158,168,184));
     static Brush Frozen(Color color){var brush=new SolidColorBrush(color);brush.Freeze();return brush;}
     T Find<T>(string name) where T:class {return Window.FindName(name) as T;}
@@ -93,7 +94,7 @@ namespace Nexus {
       Find<MenuItem>("EditMenuItem").Click+=delegate{Edit();};
       Find<MenuItem>("OpenFolderMenuItem").Click+=delegate{OpenFolder();};
       Find<MenuItem>("MoveMenuItem").Click+=delegate{MovePort();};
-      Find<MenuItem>("ArtworkMenuItem").Click+=delegate{if(selected!=null)ResolveArtwork(selected);};
+      Find<MenuItem>("ArtworkMenuItem").Click+=delegate{if(selected!=null){ResolveArtwork(selected);ResolveCover(selected);}};
       Find<MenuItem>("RemoveMenuItem").Click+=delegate{RemoveFromCollection();};
       Find<MenuItem>("DeletePortMenuItem").Click+=delegate{DeletePort();};
       Find<Button>("AddButton").Click+=delegate{OpenMenu(Find<Button>("AddButton"));};
@@ -120,7 +121,7 @@ namespace Nexus {
       if(library.SeenCatalogIds==null){library.SeenCatalogIds=PortCatalog.LoadEntries().Select(e=>e.Id).ToList();if(!smoke)Save();}
       UpdateCatalogBadge(PortCatalog.LoadEntries());
       selected=library.Games.FirstOrDefault();Refresh();
-      Window.Loaded+=delegate{if(!smoke){foreach(Game g in library.Games.ToArray())if(String.IsNullOrEmpty(g.Artwork)||!File.Exists(g.Artwork))ResolveArtwork(g);}};
+      Window.Loaded+=delegate{if(!smoke){foreach(Game g in library.Games.ToArray()){if(String.IsNullOrEmpty(g.Artwork)||!File.Exists(g.Artwork))ResolveArtwork(g);if(String.IsNullOrEmpty(g.Cover)||!File.Exists(g.Cover))ResolveCover(g);}}};
       Window.Loaded+=delegate{if(!smoke){if(Environment.GetCommandLineArgs().Contains("--nexus-update-failed"))Status("A atualização não foi concluída. A versão anterior foi restaurada; consulte os logs em launcher-updates.");StartupChecks();}};
       Window.Loaded+=delegate{if(!smoke){gamepad=new Gamepad(()=>Window.IsActive&&Window.OwnedWindows.Count==0);gamepad.Pressed+=OnPad;}};
     }
@@ -193,7 +194,7 @@ namespace Nexus {
       Find<TextBlock>("HeroMeta").Text=has?HeroMeta(selected):"Adicione seus ports e reúna suas aventuras em um só lugar.";
       bool favorite=has&&selected.Favorite;Find<TextBlock>("FavoriteIcon").Text=favorite?"":"";Find<TextBlock>("FavoriteIcon").Foreground=favorite?Theme("Favorite"):Theme("Text");
       Find<Button>("FavoriteButton").ToolTip=favorite?"Remover dos favoritos":"Favoritar";AutomationProperties.SetName(Find<Button>("FavoriteButton"),favorite?"Remover dos favoritos":"Favoritar");
-      Find<Image>("Backdrop").Source=has?LoadImage(selected.Artwork):null;RefreshGrid();
+      Find<Image>("Backdrop").Source=has?LoadImage(selected.Artwork)??LoadImage(selected.Cover):null;RefreshGrid();
     }
     static string HeroMeta(Game game){
       string when=Platforms.LastPlayed(game)==DateTime.MinValue?"Nunca aberto":"Aberto pela última vez em "+Platforms.LastPlayed(game).ToLocalTime().ToString("dd/MM/yyyy HH:mm");
@@ -251,9 +252,12 @@ namespace Nexus {
       empty.Text=library.Games.Count==0?"Sua coleção começa aqui. Use Adicionar jogo ou instale um port pelo Catálogo.":"Nenhum jogo corresponde à plataforma, busca e favoritos selecionados.";
     }
 
-    Grid Artwork(Game g,double width,double height,bool badges){
-      var art=new Grid{Width=width,Height=height,Background=Frozen(Color.FromRgb(37,43,53))};ImageSource source=LoadImage(g.Artwork);
-      if(source!=null)art.Children.Add(new Image{Source=source,Stretch=Stretch.UniformToFill});
+    Grid Artwork(Game g,double width,double height,bool badges,bool cover=false){
+      var art=new Grid{Width=width,Height=height,Background=Frozen(Color.FromRgb(37,43,53))};ImageSource source=(cover?LoadImage(g.Cover):null)??LoadImage(g.Artwork);
+      // Box art close to the card shape (PS4/Switch boxes are slightly wider than 3:4) is shown whole;
+      // anything far from it, like landscape backgrounds, fills the card instead.
+      double ratio=source==null||source.Height<=0?0:source.Width/source.Height,shape=width/height;
+      if(source!=null)art.Children.Add(new Image{Source=source,Stretch=cover&&ratio>shape*0.8&&ratio<shape*1.4?Stretch.Uniform:Stretch.UniformToFill});
       else art.Children.Add(new TextBlock{Text="◈",Foreground=Theme("Accent"),FontSize=Math.Max(24,height/3),HorizontalAlignment=HorizontalAlignment.Center,VerticalAlignment=VerticalAlignment.Center});
       if(!badges)return art;
       var platform=Badge(Platforms.ShortName(Platforms.Resolve(g)),Frozen(Color.FromArgb(210,16,17,21)),Theme("Text"),null);platform.HorizontalAlignment=HorizontalAlignment.Left;platform.VerticalAlignment=VerticalAlignment.Top;platform.Margin=new Thickness(8);art.Children.Add(platform);
@@ -265,7 +269,7 @@ namespace Nexus {
 
     Button GridCard(Game g){
       var card=new StackPanel{Width=library.GridSize};
-      card.Children.Add(new Border{CornerRadius=new CornerRadius(8),ClipToBounds=true,Child=Artwork(g,library.GridSize,library.GridSize*135.0/220,library.GridSize>=180)});
+      card.Children.Add(new Border{CornerRadius=new CornerRadius(8),ClipToBounds=true,Child=Artwork(g,library.GridSize,library.GridSize*4.0/3,true,true)});
       card.Children.Add(new TextBlock{Text=g.Name,FontWeight=FontWeights.SemiBold,FontSize=library.GridSize<180?13:15,TextWrapping=TextWrapping.Wrap,MaxHeight=44,TextTrimming=TextTrimming.CharacterEllipsis,Margin=new Thickness(4,10,4,2)});
       card.Children.Add(new TextBlock{Text=Subtitle(g),Foreground=Muted,FontSize=12,TextTrimming=TextTrimming.CharacterEllipsis,Margin=new Thickness(4,0,4,4)});
       return CardButton(g,card,false);
@@ -373,13 +377,14 @@ namespace Nexus {
       if(editor.Remove){library.Games.Remove(original);selected=library.Games.FirstOrDefault();Save();Refresh();Status("Removido da coleção. Os arquivos do port foram preservados.");return;}
       int index=library.Games.IndexOf(original);library.Games[index]=editor.Result;selected=editor.Result;Save();Refresh();Status("Configurações salvas.");
       if(editor.RefreshArtwork||String.IsNullOrEmpty(selected.Artwork)||!File.Exists(selected.Artwork))ResolveArtwork(selected);
+      if(editor.RefreshCover||String.IsNullOrEmpty(selected.Cover)||!File.Exists(selected.Cover))ResolveCover(selected);
     }
     void DeletePort(){
       if(selected==null)return;Game game=selected;var dialog=new PortRemovalWindow(Window,game,library.Games,store.Root);if(dialog.ShowDialog()!=true)return;int index=library.Games.IndexOf(game);library.Games.Remove(game);
       try{Save();}catch(Exception ex){library.Games.Insert(index,game);store.Log(ex.ToString());MessageBox.Show(Window,"Os arquivos foram excluídos, mas não foi possível salvar a remoção do cadastro. Use Remover da coleção após resolver o problema de gravação.","Cadastro não salvo",MessageBoxButton.OK,MessageBoxImage.Warning);Refresh();return;}
-      RemoveCachedArtwork(game,game.Artwork);selected=library.Games.FirstOrDefault();Refresh();Status("Port e arquivos das pastas confirmadas excluídos: "+game.Name);
+      RemoveCachedArtwork(game,game.Artwork);RemoveCachedArtwork(game,game.Cover);selected=library.Games.FirstOrDefault();Refresh();Status("Port e arquivos das pastas confirmadas excluídos: "+game.Name);
     }
-    void RemoveCachedArtwork(Game game,string file){try{if(String.IsNullOrEmpty(file)||!PortRemoval.Within(store.Cache,file)||!Path.GetFileName(file).StartsWith(game.Id+"-",StringComparison.OrdinalIgnoreCase)||library.Games.Any(g=>String.Equals(g.Artwork,file,StringComparison.OrdinalIgnoreCase)))return;imageCache.Remove(file);if(File.Exists(file))File.Delete(file);}catch(Exception ex){store.Log("Limpeza de artwork: "+ex.Message);}}
+    void RemoveCachedArtwork(Game game,string file){try{if(String.IsNullOrEmpty(file)||!PortRemoval.Within(store.Cache,file)||!Path.GetFileName(file).StartsWith(game.Id+"-",StringComparison.OrdinalIgnoreCase)||library.Games.Any(g=>String.Equals(g.Artwork,file,StringComparison.OrdinalIgnoreCase)||String.Equals(g.Cover,file,StringComparison.OrdinalIgnoreCase)))return;imageCache.Remove(file);if(File.Exists(file))File.Delete(file);}catch(Exception ex){store.Log("Limpeza de artwork: "+ex.Message);}}
     bool ConfigureSourceFolder(){using(var picker=new System.Windows.Forms.FolderBrowserDialog{Description="Escolha a pasta de "+selected.Name+" com "+FolderLaunch.RequiredFile(selected),SelectedPath=selected.SourceGameDirectory??""}){if(picker.ShowDialog()!=System.Windows.Forms.DialogResult.OK)return false;FolderLaunch.Validate(selected,picker.SelectedPath);selected.SourceGameDirectory=picker.SelectedPath;Save();Refresh();Status("Pasta do jogo configurada.");return true;}}
     bool ConfigureContent(){var dialog=new GameContentWindow(Window,selected);dialog.ShowDialog();if(dialog.PreparedPath!=null){Save();Refresh();Status("Arquivos preparados para "+selected.Name);return true;}return !GameContent.NeedsSetup(selected);}
     void Launch(){
@@ -393,6 +398,19 @@ namespace Nexus {
       if(count>0){Save();if(selected==null)selected=library.Games[0];Refresh();}
       Status(count>0?count+" ports adicionados automaticamente.":"Nenhum port novo nos locais conhecidos de Downloads. Use Adicionar jogo para outras pastas.");
       if(notify)foreach(Game g in library.Games.ToArray())if(String.IsNullOrEmpty(g.Artwork)||!File.Exists(g.Artwork))ResolveArtwork(g);
+    }
+    // Same queue as the background artwork, keyed separately so both can be pending for one game.
+    async void ResolveCover(Game game){
+      string pendingKey="cover:"+game.Id;if(pending.Contains(pendingKey))return;pending.Add(pendingKey);Game snapshot=game.Copy();bool entered=false;
+      try{
+        await artQueue.WaitAsync(shutdown.Token);entered=true;if(closing)return;Status("Buscando capa de "+snapshot.Name+"…");
+        bool online=library.OnlineArtwork;string key=library.ApiKey();
+        ArtworkResult result=await Task.Run(()=>artwork.ResolveCover(snapshot,online,key,shutdown.Token));
+        if(closing)return;Game live=library.Games.FirstOrDefault(g=>g.Id==snapshot.Id);
+        if(live==null||live.Cover!=snapshot.Cover||live.Name!=snapshot.Name||live.ArtworkSearchTitle!=snapshot.ArtworkSearchTitle){if(live==null)RemoveCachedArtwork(snapshot,result.File);return;}
+        if(!String.IsNullOrEmpty(result.File)){string previous=live.Cover;live.Cover=result.File;live.CoverSource=result.Source;Save();RemoveCachedArtwork(live,previous);Refresh();Status("Capa pronta: "+live.Name+" · "+result.Source);}else Status(result.Message);
+      }catch(OperationCanceledException){}catch(Exception ex){if(!closing){store.Log(ex.ToString());Status("Não foi possível buscar a capa. Você pode escolher uma imagem em Editar cadastro.");}}
+      finally{pending.Remove(pendingKey);if(entered)artQueue.Release();}
     }
     async void ResolveArtwork(Game game){
       if(pending.Contains(game.Id))return;pending.Add(game.Id);Game snapshot=game.Copy();bool entered=false;
@@ -415,7 +433,7 @@ namespace Nexus {
       var autoUpdate=new CheckBox{Content="Atualizar e reiniciar o NEXUS automaticamente ao abrir",IsChecked=library.AutoUpdateLauncher};panel.Children.Add(autoUpdate);
       panel.Children.Add(new TextBlock{Text="SteamGridDB · chave de API opcional",Margin=new Thickness(0,14,0,8)});
       var key=new PasswordBox{Password=library.ApiKey(),Padding=new Thickness(10),Background=new SolidColorBrush(Color.FromRgb(29,32,39)),Foreground=Brushes.White};panel.Children.Add(key);
-      panel.Children.Add(new TextBlock{Text="Sem chave: busca a imagem da página exata na Wikipedia. Com SteamGridDB: prioriza fundos panorâmicos. Só o nome do jogo é enviado; caminhos locais ficam no PC.",TextWrapping=TextWrapping.Wrap,Foreground=new SolidColorBrush(Color.FromRgb(163,173,189)),Margin=new Thickness(0,12,0,18),FontSize=12});
+      panel.Children.Add(new TextBlock{Text="Sem chave: capa e fundo vêm da imagem oficial na página exata da Wikipedia. Com SteamGridDB: capas 600×900 e fundos panorâmicos. Só o nome do jogo é enviado; caminhos locais ficam no PC.",TextWrapping=TextWrapping.Wrap,Foreground=new SolidColorBrush(Color.FromRgb(163,173,189)),Margin=new Thickness(0,12,0,18),FontSize=12});
       var link=new Button{Content="Obter chave do SteamGridDB"};link.Click+=delegate{Process.Start(new ProcessStartInfo("https://www.steamgriddb.com/profile/preferences/api"){UseShellExecute=true});};panel.Children.Add(link);
       var actions=new WrapPanel{Margin=new Thickness(0,22,0,0)};panel.Children.Add(actions);var save=new Button{Content="Salvar",Style=(Style)Application.Current.Resources["PrimaryButton"]};var folder=new Button{Content="Abrir dados locais"};actions.Children.Add(save);actions.Children.Add(folder);
       folder.Click+=delegate{Process.Start(new ProcessStartInfo("explorer.exe", "\""+store.Root+"\""){UseShellExecute=true});};
@@ -438,6 +456,7 @@ namespace Nexus {
       if(size>0){if(mode=="list")library.ListSize=size;else library.GridSize=size;library.NormalizeView();UpdateViewControls();RefreshGrid();}
       if(library.ViewMode!=mode)throw new Exception("View switch failed");Panel shown=mode=="list"?(Panel)Find<StackPanel>("GameList"):Find<WrapPanel>("GameGrid");
       if(shown.Visibility!=Visibility.Visible||shown.Children.Count!=library.Games.Count)throw new Exception("View rendering failed");
+      if(mode=="grid"&&shown.Children.Count>0){var art=(Grid)((Border)((StackPanel)((Button)shown.Children[0]).Content).Children[0]).Child;if(Math.Abs(art.Height-art.Width*4.0/3)>0.5)throw new Exception("Grid cards must use the 3:4 cover format");}
       if(library.Games.Count>0){var lastButton=(Button)shown.Children[shown.Children.Count-1];string expected=(string)lastButton.ToolTip;lastButton.RaiseEvent(new RoutedEventArgs(ButtonBase.ClickEvent));if(selected==null||selected.Name!=expected)throw new Exception("Selection failed");Find<TextBox>("SearchBox").Text=expected;if(shown.Children.Count<1)throw new Exception("Search in view failed");Find<TextBox>("SearchBox").Text="";}
       var chips=Find<WrapPanel>("PlatformChips").Children.Cast<ToggleButton>().Select(c=>(string)c.Tag).ToList();
       if(chips.Count!=1+library.Games.Select(g=>Platforms.Resolve(g)).Distinct().Count())throw new Exception("Platform chips must list only platforms present in the collection");
@@ -456,8 +475,8 @@ namespace Nexus {
     }
   }
   public class GameEditor:Window {
-    public Game Result;public bool Remove;public bool RefreshArtwork;
-    readonly ComboBox platform;readonly TextBox name,exe,arguments,working,configExe,configArgs,artTitle;readonly Store store;readonly TextBlock artLabel;string picked;
+    public Game Result;public bool Remove;public bool RefreshArtwork;public bool RefreshCover;
+    readonly ComboBox platform;readonly TextBox name,exe,arguments,working,configExe,configArgs,artTitle;readonly Store store;readonly TextBlock artLabel,coverLabel;string picked,pickedCover;
     public GameEditor(Window owner,Game game,Store data,bool existing){
       Result=game;store=data;Owner=owner;Title=existing?"Editar cadastro · NEXUS":"Adicionar jogo · NEXUS";Width=700;Height=830;MinHeight=580;ResizeMode=ResizeMode.CanResize;WindowStartupLocation=WindowStartupLocation.CenterOwner;Background=owner.Background;Foreground=owner.Foreground;FontFamily=owner.FontFamily;Resources=owner.Resources;
       var scroll=new ScrollViewer();Content=scroll;var p=new StackPanel{Margin=new Thickness(26)};scroll.Content=p;
@@ -477,6 +496,11 @@ namespace Nexus {
       var artActions=new WrapPanel();p.Children.Add(artActions);var choose=new Button{Content="Escolher imagem"};var auto=new Button{Content="Buscar automaticamente"};artActions.Children.Add(choose);artActions.Children.Add(auto);
       choose.Click+=delegate{var pick=new OpenFileDialog{Filter="Imagens|*.jpg;*.jpeg;*.png;*.bmp",CheckFileExists=true};if(pick.ShowDialog(this)==true){picked=pick.FileName;RefreshArtwork=false;artLabel.Text="Imagem escolhida: "+Path.GetFileName(picked);}};
       auto.Click+=delegate{picked=null;RefreshArtwork=true;artLabel.Text="Uma nova busca será feita ao salvar.";};
+      p.Children.Add(new TextBlock{Text="Capa (formato retrato, usada nos cards)",Margin=new Thickness(0,16,0,8)});
+      coverLabel=new TextBlock{Text=String.IsNullOrEmpty(game.Cover)?"A capa oficial é buscada automaticamente.":game.CoverSource??"Imagem local",TextWrapping=TextWrapping.Wrap,Foreground=new SolidColorBrush(Color.FromRgb(167,177,192)),FontSize=12,Margin=new Thickness(0,0,0,10)};p.Children.Add(coverLabel);
+      var coverActions=new WrapPanel();p.Children.Add(coverActions);var chooseCover=new Button{Content="Escolher capa"};var autoCover=new Button{Content="Buscar capa automaticamente"};coverActions.Children.Add(chooseCover);coverActions.Children.Add(autoCover);
+      chooseCover.Click+=delegate{var pick=new OpenFileDialog{Filter="Imagens|*.jpg;*.jpeg;*.png;*.bmp",CheckFileExists=true};if(pick.ShowDialog(this)==true){pickedCover=pick.FileName;RefreshCover=false;coverLabel.Text="Capa escolhida: "+Path.GetFileName(pickedCover);}};
+      autoCover.Click+=delegate{pickedCover=null;RefreshCover=true;coverLabel.Text="Uma nova busca será feita ao salvar.";};
       var actions=new WrapPanel{Margin=new Thickness(0,26,0,0)};p.Children.Add(actions);var save=new Button{Content="Salvar",Style=(Style)Application.Current.Resources["PrimaryButton"],IsDefault=true};var cancel=new Button{Content="Cancelar",IsCancel=true};actions.Children.Add(save);actions.Children.Add(cancel);
       if(existing){var remove=new Button{Content="Remover da coleção",Foreground=new SolidColorBrush(Color.FromRgb(255,170,170))};actions.Children.Add(remove);remove.Click+=delegate{if(MessageBox.Show(this,"Remover apenas o cadastro? Os arquivos do port serão preservados.","Remover jogo",MessageBoxButton.YesNo,MessageBoxImage.Question)==MessageBoxResult.Yes){Remove=true;DialogResult=true;}};}
       save.Click+=delegate{
@@ -486,6 +510,7 @@ namespace Nexus {
           candidate.ConfigurationExecutable=configExe.Text.Trim().Trim('"');candidate.ConfigurationArguments=configArgs.Text;candidate.ArtworkSearchTitle=artTitle.Text.Trim();
           if(!String.IsNullOrEmpty(candidate.ConfigurationExecutable))Ports.ConfigurationStartInfo(candidate);
           if(!String.IsNullOrEmpty(picked)){candidate.Artwork=store.ImportArtwork(picked,candidate.Id);candidate.ArtworkSource="Imagem escolhida por você";}
+          if(!String.IsNullOrEmpty(pickedCover)){candidate.Cover=store.ImportArtwork(pickedCover,candidate.Id);candidate.CoverSource="Capa escolhida por você";}
           Result=candidate;DialogResult=true;
         }catch(Exception ex){MessageBox.Show(this,ex.Message,"Confira o cadastro",MessageBoxButton.OK,MessageBoxImage.Warning);}
       };

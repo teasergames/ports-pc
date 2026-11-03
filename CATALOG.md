@@ -1,5 +1,33 @@
 # Catálogo de ports
 
+## Revisão Switch — 03/11/2026
+
+Onze fontes novas de Nintendo Switch com download e atualização integrados, uma com o Setup do autor e cinco projetos em desenvolvimento, incluindo a primeira recompilação de Switch 2. Datas são da Release consultada em 03/11. Somente pacotes Windows; projetos só para iPhone, Android ou Mac não foram incluídos.
+
+| Projeto | Release | Jogar / Configurar | Preparação |
+|---|---|---|---|
+| [Tears of the Kingdom · UltraTears](https://github.com/kuraeow/ultratears) | v0.3.1 · 03/11 | `UltraTears Launcher.exe` | Dump com update 1.4.3; compila no PC. AVX2, Vulkan 1.3, 16 GB RAM, ~40 GB livres. |
+| [Tears of the Kingdom · Weeping of the Empire](https://github.com/daniel-madrid-07/weeping-of-the-empire) | v0.1.9 · 03/11 | Setup do autor (EXE) | Dump 1.0.0 + prod.keys, NTFS com ~15 GB; o Setup baixa ferramentas e compila (30–60 min). Cadastre o executável ao concluir. |
+| [Animal Crossing: New Horizons · ACNHRecomp](https://github.com/Nycolazs/ACNHRecomp) | v0.7.0 · 03/11 | `ACNHRecomp Launcher.exe` | Versão 3.0.2 preparada conforme a wiki; NVN para Vulkan. Mods ficam numa Release separada. |
+| [Metroid Prime Remastered · PrimeRecomp](https://github.com/gminustwo/primerecomp) | v0.0.6 · 02/11 | `primerecomp.exe` | v1.0.0 sem updates (exefs/romfs ou dump com chaves). AVX2 e Vulkan. |
+| [Pokémon Legends: Z-A · ZA Recomp](https://github.com/Hexveil404/PokeZ-ARecomp) | v0.1.15 · 02/11 | `lasrecomp.exe` | Base + update e DLC opcionais + prod.keys; compilação única, ~12 GB. Builds de teste ignorados. |
+| [Hyrule Warriors: DE · HWDER (blocker-3)](https://github.com/blocker-3/HWDER) | v0.3.5 · 01/11 | `HWDER Setup.exe` | NSP + prod.keys; o Setup compila e cria atalhos. AVX2 e Vulkan 1.2. |
+| [Pokémon Brilliant Diamond · uDPRE](https://github.com/u2-bot/uDPRE) | v0.5.9 · 03/11 | `uDPRE.exe` | romfs extraído com update 1.3.0; Convert uma vez, depois Play ou `Dpr.exe`. |
+| [Super Mario Maker 2 · Mushroom Maker Recomp](https://github.com/Apolinario-coder/MushroomMakerRecomp) | v1.0.0 · 26/10 | `MushroomMakerRecomp.exe` | Arquivos completos com update 3.0.3; Python e compilador inclusos. Vulkan 1.3. |
+| [Super Mario Bros. 35 · SM35 Recomp](https://github.com/sm35recomp/sm35recomp) | v0.4.0 · 21/10 | `sm35recomp.exe` | Dump com update 1.0.2, prod.keys e firmware; online pelo Nextendo. Build Windows não testado pelo autor. |
+| [Xenoblade Chronicles X: DE · XCX Recomp](https://github.com/jmars125/xcx-recomp) | v0.1.14 · 03/11 | `XCX-Setup.exe` | NSP base + update 2.0.0 + prod.keys; ~36 GiB durante a preparação. Depois aponte Jogar para `xcx.exe`. |
+| [Cruis'n Blast Recomp](https://github.com/darkuni/cruisn-blast-recomp) | v1.2 · 01/11 | `setup.exe` (linha de comando) | Arraste NSP 2.0.0 + prod.keys sobre o setup; gera `cruisn-blast.exe` em ~5 min. Vulkan 1.3. |
+
+**Em desenvolvimento, sem pacote Windows:** [WindowSmash](https://github.com/OpenSmash-Ultimate/WindowSmash) (Smash Ultimate, Releases sem arquivos), [SkyboundTotk](https://github.com/NotRexed/SkyboundTotk) (só código-fonte), [EoWRecomp](https://github.com/Nycolazs/EoWRecomp) (Echoes of Wisdom, alpha só Android/macOS), [AC-Recomp](https://github.com/swaymun/AC-Recomp) (Astral Chain, só macOS) e [DKB PC Recomp](https://github.com/Lucas-blip-png/dkb-pc-recomp) (**Donkey Kong Bananza, Switch 2**: título e tutorial renderizam, ainda não jogável). O DKB fica na plataforma Nintendo Switch para que versões anteriores do NEXUS continuem aceitando o catálogo online.
+
+**Corrigido:** Sky Recomp passou de Wii para **Nintendo Switch** (é Skyward Sword HD) e agora seleciona só `SkyRecomp-vX.Y.Z-Windows.zip`; na v2.1.0 o padrão antigo casava também com a edição visual de 2 GB e a instalação falhava. Jogar e Configurar abrem `skyrecomp.exe`.
+
+**Removido:** Hyrule Warriors: DE de `sonsegajp/HWDER`, cujo repositório não existe mais no GitHub (404). Instalações existentes continuam na biblioteca; o perfil de blocker-3 cobre o mesmo jogo.
+
+Conferência: cada perfil foi testado contra as Releases atuais com a mesma regra do NEXUS (somente estáveis, exatamente um arquivo compatível). Os executáveis de Jogar/Configurar foram confirmados no índice de cada ZIP oficial, lido remotamente sem baixar os pacotes inteiros. Os SHA-256 são verificados pelo NEXUS na instalação. Não foram executados launchers, compiladores ou jogos.
+
+Total do catálogo: **299 fontes**, **275 perfis GitHub integrados**, **1 importação oficial** e **23 exceções** (30 fontes de Switch).
+
 ## Shadow of the Colossus · Lucas-blip-png
 
 Fonte alternativa: [Lucas-blip-png/ShadowOfTheColossus-PC](https://github.com/Lucas-blip-png/ShadowOfTheColossus-PC), plataforma **PlayStation 4**. Perfil `sotc-lucas`, independente de AjncSystem e Oussama268, com download e atualização integrados.
@@ -186,7 +214,7 @@ Os oito novos ports N64 usam o mesmo aplicativo para importar a ROM e acessar op
 | PSP | [Monster Hunter Portable 3rd · Yakumo](https://github.com/TeamGDB/Yakumo) | Manual / desenvolvimento |
 | Nintendo 64 | [Super Smash Bros. · BattleShip](https://github.com/JRickey/BattleShip) | Manual / desenvolvimento |
 | Xbox 360 | [Spider-Man: Edge of Time · Edge of Time Recomp](https://github.com/goliathret/EdgeOfTimeRecomp) | Manual / desenvolvimento |
-| Wii | [The Legend of Zelda: Skyward Sword · Sky Recomp](https://github.com/Apolinario-coder/SkyRecomp) | Manual / desenvolvimento |
+| Nintendo Switch | [The Legend of Zelda: Skyward Sword HD · Sky Recomp](https://github.com/Apolinario-coder/SkyRecomp) | Manual / desenvolvimento |
 | PlayStation 2 | [Shin Megami Tensei III: Nocturne · Nocturne Recomp](https://github.com/birabittoh/NocturneRecomp) | Manual / desenvolvimento |
 | Xbox 360 | [The Simpsons Game · The Simpsons Game Recomp](https://github.com/YesterMester/TheSimpsonsGameRecomp) | Manual / desenvolvimento |
 | GameCube | [Super Mario Strikers · Strikers](https://github.com/new-coke/strikers) | Manual / desenvolvimento |
@@ -428,7 +456,6 @@ A plataforma é a versão de origem usada por cada port. Uma versão Switch de u
 | --- | --- | --- | --- |
 | Xbox | [Halo: Combat Evolved · OpenCE](https://github.com/OpenCommunityEdition/OpenCE) | Baixar e adicionar | Port do Xbox original. Na primeira abertura, selecione sua imagem do disco. Opções no menu do jogo; não possui launcher de configuração separado. |
 | Xbox 360 | [Sonic Unleashed · Unleashed Recompiled](https://github.com/hedge-dev/UnleashedRecomp) | Baixar e adicionar | Recompilação da versão Xbox 360. Primeira abertura guia a instalação dos seus arquivos. Configurações dentro do jogo. Requer CPU AVX e GPU Direct3D 12 ou Vulkan 1.2. |
-| Nintendo Switch | [Hyrule Warriors: Definitive Edition](https://github.com/sonsegajp/HWDER) | Baixar e adicionar | Projeto inicial. Coloque seu NSP base e suas prod.keys ao lado do hwder.exe. F1 abre as opções dentro do jogo. Requer AVX2, Vulkan 1.2 e Media Foundation. Instala somente releases sem marcação pré-release. |
 | Nintendo Switch | [Bayonetta 2](https://github.com/K0NL/B2recomp) | Baixar e adicionar | Builder e launcher: prepara o jogo localmente a partir do seu próprio dump. Jogar abre o launcher e você clica em Play. Configurar abre a mesma interface. Requer Vulkan 1.3; preparação inicial pode demorar. |
 | PlayStation 4 | [Gravity Rush Remastered](https://github.com/LucaPazienza/gravityrush_pc) | Baixar e adicionar | Configure seu dump PS4 no launcher original. Jogar usa o executável direto e os ajustes salvos. Projeto em desenvolvimento. |
 | PlayStation 4 | [Gravity Rush 2](https://github.com/HayatoG/gr2_pc) | Baixar e adicionar | Jogar usa a entrada direta e Configurar abre o launcher bilíngue. Forneça seus arquivos PS4. |

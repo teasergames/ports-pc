@@ -250,22 +250,6 @@
     "ProjectOnly": false
   },
   {
-    "Id": "hwder",
-    "Name": "Hyrule Warriors: Definitive Edition",
-    "Repository": "sonsegajp/HWDER",
-    "Platform": "Nintendo Switch",
-    "Kind": "Recompilação",
-    "ProjectType": "Recompilação",
-    "AssetPattern": "^HWDER-.*-win64\\.zip$",
-    "PlayNames": [
-      "hwder.exe"
-    ],
-    "ConfigNames": [],
-    "Notes": "Projeto inicial. Coloque seu NSP base e suas prod.keys ao lado do hwder.exe. F1 abre as opções dentro do jogo. Requer AVX2, Vulkan 1.2 e Media Foundation. Instala somente releases sem marcação pré-release.",
-    "ArtworkTitle": "Hyrule Warriors",
-    "ProjectOnly": false
-  },
-  {
     "Id": "b2recomp",
     "Name": "Bayonetta 2",
     "Repository": "K0NL/B2recomp",
@@ -1536,18 +1520,21 @@
   },
   {
     "Id": "rl-skyrecomp",
-    "Name": "The Legend of Zelda: Skyward Sword · Sky Recomp",
+    "Name": "The Legend of Zelda: Skyward Sword HD · Sky Recomp",
     "Repository": "Apolinario-coder/SkyRecomp",
-    "Platform": "Wii",
-    "AssetPattern": "^SkyRecomp\\-.*\\-Windows\\.zip$",
-    "PlayNames": [],
-    "ConfigNames": [],
-    "ArtworkTitle": "The Legend of Zelda: Skyward Sword",
+    "Platform": "Nintendo Switch",
+    "AssetPattern": "^SkyRecomp-v[0-9]+\\.[0-9]+\\.[0-9]+-Windows\\.zip$",
+    "PlayNames": [
+      "skyrecomp.exe"
+    ],
+    "ConfigNames": [
+      "skyrecomp.exe"
+    ],
+    "ArtworkTitle": "The Legend of Zelda: Skyward Sword HD",
     "ProjectOnly": false,
-    "Kind": "Instalação integrada",
+    "Kind": "Recompilação",
     "ProjectType": "Recompilação",
-    "Notes": "O NEXUS baixa o pacote Windows da última Release e o instala aqui. Se houver mais de um aplicativo no ZIP, escolha o principal e o launcher de configuração na janela do NEXUS. Na primeira abertura, prepare seus próprios arquivos seguindo o assistente do port. A compatibilidade e a preparação variam conforme o projeto.",
-    "DiscoverExecutable": true,
+    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Jogar e Configurar abrem skyrecomp.exe. Na primeira abertura, escolha a pasta dos seus arquivos de Skyward Sword HD v1.0.0, sem updates; nas próximas aberturas o launcher vai direto para Jogar. Requer AVX2 e Vulkan 1.3. O perfil usa o pacote Windows padrão, não a edição visual de 2 GB com texturas 4K. Experimental.",
     "PackageKind": "Zip"
   },
   {
@@ -4656,5 +4643,281 @@
     "Kind": "Recompilação",
     "ProjectType": "Recompilação",
     "Notes": "Jogar e Configurar abrem o launcher original para importar sua ISO ou pasta do Xbox, compilar e pressionar Play. O autor adicionou suporte USA no v1.0.2 além de PAL. Reserva cerca de 15 GB; a primeira compilação baixa ferramentas e leva 30–90 minutos. Termos das bibliotecas Microsoft são apresentados pelo assistente. Opções durante o jogo em F1. Atualizações podem exigir recompilar pelo launcher; não há inicialização direta validada neste perfil."
+  },
+  {
+    "Id": "ultratears",
+    "Name": "The Legend of Zelda: Tears of the Kingdom · UltraTears",
+    "Repository": "kuraeow/ultratears",
+    "Platform": "Nintendo Switch",
+    "AssetPattern": "^UltraTears-[0-9.]+-windows-x86_64\\.zip$",
+    "PlayNames": [
+      "UltraTears Launcher.exe"
+    ],
+    "ConfigNames": [
+      "UltraTears Launcher.exe"
+    ],
+    "ArtworkTitle": "The Legend of Zelda: Tears of the Kingdom",
+    "ProjectOnly": false,
+    "Kind": "Recompilação",
+    "ProjectType": "Recompilação",
+    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Jogar e Configurar abrem UltraTears Launcher.exe. Selecione seu dump com o update 1.4.3; o launcher compila o jogo no seu PC. Requer AVX2, Vulkan 1.3, 16 GB de RAM, 4 GB de vídeo e cerca de 40 GB livres. Projeto separado dos outros perfis de TotK. Em desenvolvimento.",
+    "PackageKind": "Zip"
+  },
+  {
+    "Id": "acnhrecomp",
+    "Name": "Animal Crossing: New Horizons · ACNHRecomp",
+    "Repository": "Nycolazs/ACNHRecomp",
+    "Platform": "Nintendo Switch",
+    "AssetPattern": "^ACNHRecomp-v[0-9.]+-windows-x64\\.zip$",
+    "PlayNames": [
+      "ACNHRecomp Launcher.exe"
+    ],
+    "ConfigNames": [
+      "ACNHRecomp Launcher.exe"
+    ],
+    "ArtworkTitle": "Animal Crossing: New Horizons",
+    "ProjectOnly": false,
+    "Kind": "Recompilação",
+    "ProjectType": "Recompilação",
+    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Jogar e Configurar abrem ACNHRecomp Launcher.exe, que inicia acnh.exe. Prepare os arquivos a partir da sua própria cópia (versão 3.0.2) seguindo a wiki do projeto; o recomp não descriptografa contêineres. Gráficos NVN traduzidos para Vulkan. O modo 60 fps ainda não é nativo. Mods (tradução PT-BR, speedfix) ficam numa Release separada do autor.",
+    "PackageKind": "Zip"
+  },
+  {
+    "Id": "primerecomp",
+    "Name": "Metroid Prime Remastered · PrimeRecomp",
+    "Repository": "gminustwo/primerecomp",
+    "Platform": "Nintendo Switch",
+    "AssetPattern": "^PrimeRecomp-v[0-9.]+-windows\\.zip$",
+    "PlayNames": [
+      "primerecomp.exe"
+    ],
+    "ConfigNames": [
+      "primerecomp.exe"
+    ],
+    "ArtworkTitle": "Metroid Prime Remastered",
+    "ProjectOnly": false,
+    "Kind": "Recompilação",
+    "ProjectType": "Recompilação",
+    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Jogar e Configurar abrem primerecomp.exe. Selecione seus arquivos de Metroid Prime Remastered v1.0.0, sem updates (pasta extraída com exefs e romfs, ou dump com suas chaves). Atualizações do port reaproveitam arquivos, saves e configurações. Requer AVX2 e Vulkan.",
+    "PackageKind": "Zip"
+  },
+  {
+    "Id": "za-recomp",
+    "Name": "Pokémon Legends: Z-A · ZA Recomp",
+    "Repository": "Hexveil404/PokeZ-ARecomp",
+    "Platform": "Nintendo Switch",
+    "AssetPattern": "^ZA-Recomp-windows\\.zip$",
+    "PlayNames": [
+      "lasrecomp.exe"
+    ],
+    "ConfigNames": [
+      "lasrecomp.exe"
+    ],
+    "ArtworkTitle": "Pokémon Legends: Z-A",
+    "ProjectOnly": false,
+    "Kind": "Recompilação",
+    "ProjectType": "Recompilação",
+    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Jogar e Configurar abrem lasrecomp.exe. Na tela inicial, escolha a pasta com o jogo base (.xci/.nsp), o update e a DLC Mega Dimension opcionais e suas prod.keys, e aguarde a compilação única. Requer Vulkan 1.2 (1.3 recomendado), AVX2 recomendado e cerca de 12 GB livres. Instala somente Releases estáveis; builds de teste são ignorados.",
+    "PackageKind": "Zip"
+  },
+  {
+    "Id": "hwder-blocker3",
+    "Name": "Hyrule Warriors: Definitive Edition · HWDER (blocker-3)",
+    "Repository": "blocker-3/HWDER",
+    "Platform": "Nintendo Switch",
+    "AssetPattern": "^HWDER-setup-v[0-9.]+\\.zip$",
+    "PlayNames": [
+      "HWDER Setup.exe"
+    ],
+    "ConfigNames": [
+      "HWDER Setup.exe"
+    ],
+    "ArtworkTitle": "Hyrule Warriors",
+    "ProjectOnly": false,
+    "Kind": "Recompilação",
+    "ProjectType": "Recompilação",
+    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Jogar e Configurar abrem HWDER Setup.exe. No Setup, selecione seu .nsp, as prod.keys e o update opcional; o Setup compila o jogo e pode criar atalho ou adicionar à Steam. Requer AVX2 e Vulkan 1.2. Substitui o perfil HWDER de sonsegajp, cujo repositório foi removido do GitHub.",
+    "PackageKind": "Zip"
+  },
+  {
+    "Id": "udpre",
+    "Name": "Pokémon Brilliant Diamond · uDPRE",
+    "Repository": "u2-bot/uDPRE",
+    "Platform": "Nintendo Switch",
+    "AssetPattern": "^uDPRE-[0-9.]+-win64\\.zip$",
+    "PlayNames": [
+      "uDPRE.exe"
+    ],
+    "ConfigNames": [
+      "uDPRE.exe"
+    ],
+    "ArtworkTitle": "Pokémon Brilliant Diamond and Shining Pearl",
+    "ProjectOnly": false,
+    "Kind": "Recompilação",
+    "ProjectType": "Recompilação",
+    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Jogar e Configurar abrem uDPRE.exe. Escolha a pasta extraída do seu Brilliant Diamond com o update 1.3.0 aplicado (a que contém romfs) e clique em Convert, uma única vez. Depois jogue por Dpr.exe ou pelo Play do uDPRE. Engine própria do jogo, não emulador. 8 GB de RAM recomendados.",
+    "PackageKind": "Zip"
+  },
+  {
+    "Id": "mushroom-maker",
+    "Name": "Super Mario Maker 2 · Mushroom Maker Recomp",
+    "Repository": "Apolinario-coder/MushroomMakerRecomp",
+    "Platform": "Nintendo Switch",
+    "AssetPattern": "^MushroomMakerRecomp-v[0-9.]+-Windows-x64\\.zip$",
+    "PlayNames": [
+      "MushroomMakerRecomp.exe"
+    ],
+    "ConfigNames": [
+      "MushroomMakerRecomp.exe"
+    ],
+    "ArtworkTitle": "Super Mario Maker 2",
+    "ProjectOnly": false,
+    "Kind": "Recompilação",
+    "ProjectType": "Recompilação",
+    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Jogar e Configurar abrem MushroomMakerRecomp.exe. Aponte seus arquivos completos com o update 3.0.3 já aplicado; o launcher portátil já traz Python e compilador. Requer Vulkan 1.3. Course World e Miis são limitados. Projeto diferente do smm2recomp já listado. Experimental.",
+    "PackageKind": "Zip"
+  },
+  {
+    "Id": "sm35recomp",
+    "Name": "Super Mario Bros. 35 · SM35 Recomp",
+    "Repository": "sm35recomp/sm35recomp",
+    "Platform": "Nintendo Switch",
+    "AssetPattern": "^SM35Recomp-windows-x86_64\\.zip$",
+    "PlayNames": [
+      "sm35recomp.exe"
+    ],
+    "ConfigNames": [
+      "sm35recomp.exe"
+    ],
+    "ArtworkTitle": "Super Mario Bros. 35",
+    "ProjectOnly": false,
+    "Kind": "Recompilação",
+    "ProjectType": "Recompilação",
+    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Jogar e Configurar abrem sm35recomp.exe. A tela de preparação confere seu dump com o update 1.0.2, suas prod.keys e firmware e recompila o jogo. Online pelo serviço Nextendo. O autor marca o build Windows como compilado mas não testado. Requer AVX2 e Vulkan 1.3.",
+    "PackageKind": "Zip"
+  },
+  {
+    "Id": "xcx-recomp",
+    "Name": "Xenoblade Chronicles X: Definitive Edition · XCX Recomp",
+    "Repository": "jmars125/xcx-recomp",
+    "Platform": "Nintendo Switch",
+    "AssetPattern": "^XCX-Setup-[0-9.]+-windows\\.zip$",
+    "PlayNames": [
+      "XCX-Setup.exe"
+    ],
+    "ConfigNames": [
+      "XCX-Setup.exe"
+    ],
+    "ArtworkTitle": "Xenoblade Chronicles X: Definitive Edition",
+    "ProjectOnly": false,
+    "Kind": "Recompilação",
+    "ProjectType": "Recompilação",
+    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Jogar e Configurar abrem XCX-Setup.exe. No Setup, selecione seus NSP (jogo base e update 2.0.0; DLC opcional) e as prod.keys e escolha a pasta; ao concluir, use Editar cadastro para apontar Jogar para o xcx.exe da pasta escolhida. Para atualizar, rode o Setup novo na mesma pasta. Requer AVX2, Vulkan 1.3 e cerca de 36 GiB livres durante a preparação. Builds de teste do autor são ignorados.",
+    "PackageKind": "Zip"
+  },
+  {
+    "Id": "cruisn-blast",
+    "Name": "Cruis'n Blast · Cruis'n Blast Recomp",
+    "Repository": "darkuni/cruisn-blast-recomp",
+    "Platform": "Nintendo Switch",
+    "AssetPattern": "^CruisnBlast-windows\\.zip$",
+    "PlayNames": [
+      "setup.exe"
+    ],
+    "ConfigNames": [
+      "setup.exe"
+    ],
+    "ArtworkTitle": "Cruis'n Blast",
+    "ProjectOnly": false,
+    "Kind": "Recompilação",
+    "ProjectType": "Recompilação",
+    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. O setup.exe é de linha de comando: use Abrir pasta do port e arraste seu NSP (versão 2.0.0) e suas prod.keys sobre ele; em cerca de cinco minutos ele gera a pasta game e o cruisn-blast.exe. Depois use Editar cadastro para apontar Jogar para o cruisn-blast.exe gerado. Requer Vulkan 1.3. Controles no README.txt do pacote.",
+    "PackageKind": "Zip"
+  },
+  {
+    "Id": "weeping-empire",
+    "Name": "The Legend of Zelda: Tears of the Kingdom · Weeping of the Empire",
+    "Repository": "daniel-madrid-07/weeping-of-the-empire",
+    "Platform": "Nintendo Switch",
+    "AssetPattern": "^Weeping-of-the-Empire-Setup-v[0-9.]+\\.exe$",
+    "PlayNames": [],
+    "ConfigNames": [],
+    "ArtworkTitle": "The Legend of Zelda: Tears of the Kingdom",
+    "ProjectOnly": false,
+    "Kind": "Instalação integrada",
+    "ProjectType": "Recompilação",
+    "Notes": "O NEXUS baixa e verifica o Setup oficial e abre o assistente do autor. Nele, selecione seu dump da versão 1.0.0 (.nsp/.xci) e suas prod.keys numa unidade NTFS com cerca de 15 GB livres; o Setup baixa as ferramentas e compila o jogo (30–60 min, internet necessária). Ao concluir, cadastre o executável do jogo no NEXUS. Mantenha o dump no lugar. Só Windows; medido em um PC.",
+    "DiscoverExecutable": true,
+    "PackageKind": "Installer"
+  },
+  {
+    "Id": "windowsmash",
+    "Name": "Super Smash Bros. Ultimate · WindowSmash",
+    "Repository": "OpenSmash-Ultimate/WindowSmash",
+    "Platform": "Nintendo Switch",
+    "AssetPattern": "",
+    "PlayNames": [],
+    "ConfigNames": [],
+    "ArtworkTitle": "Super Smash Bros. Ultimate",
+    "ProjectOnly": true,
+    "Kind": "Em desenvolvimento",
+    "ProjectType": "Recompilação",
+    "Notes": "Kit experimental compilado no seu PC a partir da sua cópia 13.0.5, chaves e firmware. Menus e partidas rodam; as Releases ainda não têm pacote Windows. Do mesmo grupo do SSBU Recomp já listado."
+  },
+  {
+    "Id": "skyboundtotk",
+    "Name": "The Legend of Zelda: Tears of the Kingdom · SkyboundTotk",
+    "Repository": "NotRexed/SkyboundTotk",
+    "Platform": "Nintendo Switch",
+    "AssetPattern": "",
+    "PlayNames": [],
+    "ConfigNames": [],
+    "ArtworkTitle": "The Legend of Zelda: Tears of the Kingdom",
+    "ProjectOnly": true,
+    "Kind": "Em desenvolvimento",
+    "ProjectType": "Recompilação",
+    "Notes": "Somente código-fonte, sem Release: você compila a partir do seu ExeFS/RomFS extraído da versão 1.0.0. Renderizador WebGPU. Estágio inicial."
+  },
+  {
+    "Id": "eowrecomp",
+    "Name": "The Legend of Zelda: Echoes of Wisdom · EoWRecomp",
+    "Repository": "Nycolazs/EoWRecomp",
+    "Platform": "Nintendo Switch",
+    "AssetPattern": "",
+    "PlayNames": [],
+    "ConfigNames": [],
+    "ArtworkTitle": "The Legend of Zelda: Echoes of Wisdom",
+    "ProjectOnly": true,
+    "Kind": "Em desenvolvimento",
+    "ProjectType": "Recompilação",
+    "Notes": "O alpha publicado só tem builds Android e macOS; ainda não há pacote Windows. Do mesmo autor do ACNHRecomp."
+  },
+  {
+    "Id": "astral-chain-recomp",
+    "Name": "Astral Chain · AC-Recomp",
+    "Repository": "swaymun/AC-Recomp",
+    "Platform": "Nintendo Switch",
+    "AssetPattern": "",
+    "PlayNames": [],
+    "ConfigNames": [],
+    "ArtworkTitle": "Astral Chain",
+    "ProjectOnly": true,
+    "Kind": "Em desenvolvimento",
+    "ProjectType": "Recompilação",
+    "Notes": "Recompilação experimental só para macOS por enquanto; não há pacote Windows."
+  },
+  {
+    "Id": "dkb-recomp",
+    "Name": "Donkey Kong Bananza (Switch 2) · DKB PC Recomp",
+    "Repository": "Lucas-blip-png/dkb-pc-recomp",
+    "Platform": "Nintendo Switch",
+    "AssetPattern": "",
+    "PlayNames": [],
+    "ConfigNames": [],
+    "ArtworkTitle": "Donkey Kong Bananza",
+    "ProjectOnly": true,
+    "Kind": "Em desenvolvimento",
+    "ProjectType": "Recompilação",
+    "Notes": "Primeira recompilação de um jogo de Switch 2. Ainda não jogável: a tela de título e o tutorial 3D renderizam em Vulkan. Sem Release; só a versão base 1.0.0 é suportada."
   }
 ]

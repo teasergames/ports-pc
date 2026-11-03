@@ -366,24 +366,6 @@
     }
   },
   {
-    "Repository": "sonsegajp/HWDER",
-    "CheckedUtc": "2026-10-20T00:00:00Z",
-    "Release": {
-      "tag_name": "v0.1.1",
-      "html_url": "https://github.com/sonsegajp/HWDER/releases/tag/v0.1.1",
-      "draft": false,
-      "prerelease": false,
-      "assets": [
-        {
-          "name": "HWDER-v0.1.1-win64.zip",
-          "size": 87908325,
-          "browser_download_url": "https://github.com/sonsegajp/HWDER/releases/download/v0.1.1/HWDER-v0.1.1-win64.zip",
-          "digest": "sha256:a0707e5273ad244a8c92141964153f0665d26035c2e3dbea229894887ed0c8fb"
-        }
-      ]
-    }
-  },
-  {
     "Repository": "K0NL/B2recomp",
     "CheckedUtc": "2026-10-20T00:00:00Z",
     "Release": {
@@ -2131,24 +2113,6 @@
           "size": 194606176,
           "browser_download_url": "https://github.com/goliathret/EdgeOfTimeRecomp/releases/download/v1.0.0/EdgeOfTimeRecomp-v1.0.0-20261004_2039-win-amd64.zip",
           "digest": "sha256:c756dd362aaeabf982a701b2cb5feeb2444e8eba446c311329ee85d2f27fdf69"
-        }
-      ]
-    }
-  },
-  {
-    "Repository": "Apolinario-coder/SkyRecomp",
-    "CheckedUtc": "2026-10-28T23:27:11.241812+00:00",
-    "Release": {
-      "tag_name": "v2.0.2",
-      "html_url": "https://github.com/Apolinario-coder/SkyRecomp/releases/tag/v2.0.2",
-      "draft": false,
-      "prerelease": false,
-      "assets": [
-        {
-          "name": "SkyRecomp-v2.0.2-Windows.zip",
-          "size": 1881203900,
-          "browser_download_url": "https://github.com/Apolinario-coder/SkyRecomp/releases/download/v2.0.2/SkyRecomp-v2.0.2-Windows.zip",
-          "digest": "sha256:5d8dd9158d44b005759a0c6d061febcc148ff29b820e6eb85a4ac5ead3898e0f"
         }
       ]
     }
@@ -5227,6 +5191,408 @@
           "size": 109485923,
           "browser_download_url": "https://github.com/Lucas-blip-png/ShadowOfTheColossus-PC/releases/download/v0.70-plus4/SotC-PC.zip",
           "digest": "sha256:f6ab506cba67faf8c6caa0f381557053c61eb5c5fe88b188db77022981d26966"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "Apolinario-coder/SkyRecomp",
+    "CheckedUtc": "2026-11-03T19:16:01.594292-03:00",
+    "Release": {
+      "tag_name": "v2.1.0",
+      "html_url": "https://github.com/Apolinario-coder/SkyRecomp/releases/tag/v2.1.0",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "Sky.Recomp-v2.1-linux-x86_64.AppImage",
+          "size": 84851192,
+          "browser_download_url": "https://github.com/Apolinario-coder/SkyRecomp/releases/download/v2.1.0/Sky.Recomp-v2.1-linux-x86_64.AppImage",
+          "digest": "sha256:6da13896eff2c3e1c15c2a0ca72fd8ac2c7cb99dc26135e069926b81d30136ba"
+        },
+        {
+          "name": "Sky.Recomp-v2.1.0-linux-x86_64.AppImage",
+          "size": 84855288,
+          "browser_download_url": "https://github.com/Apolinario-coder/SkyRecomp/releases/download/v2.1.0/Sky.Recomp-v2.1.0-linux-x86_64.AppImage",
+          "digest": "sha256:ffff30f33f1f839a037b428b1121099983467a4ebe38a905f4a3bdb4942c0fde"
+        },
+        {
+          "name": "SkyRecomp-v2.1-Linux.tar.gz",
+          "size": 88381138,
+          "browser_download_url": "https://github.com/Apolinario-coder/SkyRecomp/releases/download/v2.1.0/SkyRecomp-v2.1-Linux.tar.gz",
+          "digest": "sha256:952ff4e05895e1d0b923ec20fbdc7310110d13e37768b17e788d17e3d2dbe932"
+        },
+        {
+          "name": "SkyRecomp-v2.1-Linux.zip",
+          "size": 91451197,
+          "browser_download_url": "https://github.com/Apolinario-coder/SkyRecomp/releases/download/v2.1.0/SkyRecomp-v2.1-Linux.zip",
+          "digest": "sha256:26450ddcd165337adaf09d2d52f1696f7f3309c92ba88b3f98291ebf98c8c12b"
+        },
+        {
+          "name": "SkyRecomp-v2.1-macOS15.dmg",
+          "size": 89831316,
+          "browser_download_url": "https://github.com/Apolinario-coder/SkyRecomp/releases/download/v2.1.0/SkyRecomp-v2.1-macOS15.dmg",
+          "digest": "sha256:2bc1d954d0d8066acd8977f6759cad4ffd49497b978288a1f4d9a63afc8ed7b3"
+        },
+        {
+          "name": "SkyRecomp-v2.1-macOS15.zip",
+          "size": 89304521,
+          "browser_download_url": "https://github.com/Apolinario-coder/SkyRecomp/releases/download/v2.1.0/SkyRecomp-v2.1-macOS15.zip",
+          "digest": "sha256:895a8f3a2c08a3260fb278efcff027db3f22b076ac60a814d1c323f20a4c9df6"
+        },
+        {
+          "name": "SkyRecomp-v2.1-Windows.zip",
+          "size": 2066346258,
+          "browser_download_url": "https://github.com/Apolinario-coder/SkyRecomp/releases/download/v2.1.0/SkyRecomp-v2.1-Windows.zip",
+          "digest": "sha256:4fa83e62e18e72f6522cebab8b6f3489aadc22819e33f332cb48d1d63507c516"
+        },
+        {
+          "name": "SkyRecomp-v2.1.0-Linux.tar.gz",
+          "size": 88392725,
+          "browser_download_url": "https://github.com/Apolinario-coder/SkyRecomp/releases/download/v2.1.0/SkyRecomp-v2.1.0-Linux.tar.gz",
+          "digest": "sha256:2c04e4aa372d9f779066f3eb8650aec1501597693a15b6c146e2d6cbfb58487b"
+        },
+        {
+          "name": "SkyRecomp-v2.1.0-Linux.zip",
+          "size": 91469003,
+          "browser_download_url": "https://github.com/Apolinario-coder/SkyRecomp/releases/download/v2.1.0/SkyRecomp-v2.1.0-Linux.zip",
+          "digest": "sha256:edbe283ca9002eda51175098e56e5f3f26e23c656e4364862d1bc648b5c4dcf1"
+        },
+        {
+          "name": "SkyRecomp-v2.1.0-macOS.dmg",
+          "size": 97960952,
+          "browser_download_url": "https://github.com/Apolinario-coder/SkyRecomp/releases/download/v2.1.0/SkyRecomp-v2.1.0-macOS.dmg",
+          "digest": "sha256:b7b1db57b984e80ef4ca34867f982df1ed7ebc795b25ae1e09edb2a63c793881"
+        },
+        {
+          "name": "SkyRecomp-v2.1.0-macOS.zip",
+          "size": 104538981,
+          "browser_download_url": "https://github.com/Apolinario-coder/SkyRecomp/releases/download/v2.1.0/SkyRecomp-v2.1.0-macOS.zip",
+          "digest": "sha256:c241a5794ee16afe94276f58a9f1513981b62fad1b8056f49faf733895bf6e10"
+        },
+        {
+          "name": "SkyRecomp-v2.1.0-macOS15.dmg",
+          "size": 89843293,
+          "browser_download_url": "https://github.com/Apolinario-coder/SkyRecomp/releases/download/v2.1.0/SkyRecomp-v2.1.0-macOS15.dmg",
+          "digest": "sha256:a0856fdd5c7b00a960980a557ef5a4bb5b7b9ddbb3c003510689bf83735bea9a"
+        },
+        {
+          "name": "SkyRecomp-v2.1.0-macOS15.zip",
+          "size": 89305731,
+          "browser_download_url": "https://github.com/Apolinario-coder/SkyRecomp/releases/download/v2.1.0/SkyRecomp-v2.1.0-macOS15.zip",
+          "digest": "sha256:328240d3a2b33493ec7316ab55f85b12e018b73f20953d14368d5665cc809c97"
+        },
+        {
+          "name": "SkyRecomp-v2.1.0-Windows.zip",
+          "size": 89909283,
+          "browser_download_url": "https://github.com/Apolinario-coder/SkyRecomp/releases/download/v2.1.0/SkyRecomp-v2.1.0-Windows.zip",
+          "digest": "sha256:cadb79c64c3891c99b8078721c0c070f0f05933e00d6cec595e3b505ab9925a4"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "kuraeow/ultratears",
+    "CheckedUtc": "2026-11-03T19:16:01.594292-03:00",
+    "Release": {
+      "tag_name": "v0.3.1",
+      "html_url": "https://github.com/kuraeow/ultratears/releases/tag/v0.3.1",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "UltraTears-0.3.1-windows-x86_64.zip",
+          "size": 156711007,
+          "browser_download_url": "https://github.com/kuraeow/ultratears/releases/download/v0.3.1/UltraTears-0.3.1-windows-x86_64.zip",
+          "digest": "sha256:0be653ef74bacff6f4dd8ca5ea0b44c9b368006c63775a5144ecc3d24c3c2f11"
+        },
+        {
+          "name": "UltraTears.AppImage",
+          "size": 210500088,
+          "browser_download_url": "https://github.com/kuraeow/ultratears/releases/download/v0.3.1/UltraTears.AppImage",
+          "digest": "sha256:4ff9c878253a4a70882f66d2a512e04fa72efd4fd5828a86cea2cb96f9bc7bf1"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "Nycolazs/ACNHRecomp",
+    "CheckedUtc": "2026-11-03T19:16:01.594292-03:00",
+    "Release": {
+      "tag_name": "v0.7.0",
+      "html_url": "https://github.com/Nycolazs/ACNHRecomp/releases/tag/v0.7.0",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "ACNHRecomp-v0.7.0-android.apk",
+          "size": 22117424,
+          "browser_download_url": "https://github.com/Nycolazs/ACNHRecomp/releases/download/v0.7.0/ACNHRecomp-v0.7.0-android.apk",
+          "digest": "sha256:7f534b8791f344378b6982e15efab1dc952afd54e479b9a290652f8abeb58029"
+        },
+        {
+          "name": "ACNHRecomp-v0.7.0-linux-x64.tar.gz",
+          "size": 14431525,
+          "browser_download_url": "https://github.com/Nycolazs/ACNHRecomp/releases/download/v0.7.0/ACNHRecomp-v0.7.0-linux-x64.tar.gz",
+          "digest": "sha256:fbd06ac069f90bc3f2c4f810d148f5bb257c24528ba8ffdd35b65edf647752f1"
+        },
+        {
+          "name": "ACNHRecomp-v0.7.0-macOS-arm64.zip",
+          "size": 15123734,
+          "browser_download_url": "https://github.com/Nycolazs/ACNHRecomp/releases/download/v0.7.0/ACNHRecomp-v0.7.0-macOS-arm64.zip",
+          "digest": "sha256:978a697902912cc771e4637e57f16fc5fda556c218462ae68d19f173b6452346"
+        },
+        {
+          "name": "ACNHRecomp-v0.7.0-windows-x64.zip",
+          "size": 13359646,
+          "browser_download_url": "https://github.com/Nycolazs/ACNHRecomp/releases/download/v0.7.0/ACNHRecomp-v0.7.0-windows-x64.zip",
+          "digest": "sha256:e582d196687f624aad641ee8608bd1bae9efb824dbe1924cf8301d60dc37d8cb"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "gminustwo/primerecomp",
+    "CheckedUtc": "2026-11-03T19:16:01.594292-03:00",
+    "Release": {
+      "tag_name": "v0.0.6",
+      "html_url": "https://github.com/gminustwo/primerecomp/releases/tag/v0.0.6",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "PrimeRecomp-v0.0.6-android.apk",
+          "size": 21637527,
+          "browser_download_url": "https://github.com/gminustwo/primerecomp/releases/download/v0.0.6/PrimeRecomp-v0.0.6-android.apk",
+          "digest": "sha256:b87f63db1a902ae8a20ad4fa08884741b36f667fa69aa09797985823c6436d72"
+        },
+        {
+          "name": "PrimeRecomp-v0.0.6-linux-aarch64.AppImage",
+          "size": 80198152,
+          "browser_download_url": "https://github.com/gminustwo/primerecomp/releases/download/v0.0.6/PrimeRecomp-v0.0.6-linux-aarch64.AppImage",
+          "digest": "sha256:bfa8f08c818400ad7d2a94cb2ccce028a20c10441d9d6c1c78b95dab749a534a"
+        },
+        {
+          "name": "PrimeRecomp-v0.0.6-linux-x86_64.AppImage",
+          "size": 84802040,
+          "browser_download_url": "https://github.com/gminustwo/primerecomp/releases/download/v0.0.6/PrimeRecomp-v0.0.6-linux-x86_64.AppImage",
+          "digest": "sha256:a7d78525a484e1e902fc95f6b85a2ec49098e496398eb12071d1177627828505"
+        },
+        {
+          "name": "PrimeRecomp-v0.0.6-macOS.dmg",
+          "size": 92536420,
+          "browser_download_url": "https://github.com/gminustwo/primerecomp/releases/download/v0.0.6/PrimeRecomp-v0.0.6-macOS.dmg",
+          "digest": "sha256:8b71e7ab0d5a3395978e2b8e8a7ebf6945efe758b0b9f8cc08cd1b2d7663bf3e"
+        },
+        {
+          "name": "PrimeRecomp-v0.0.6-windows.zip",
+          "size": 88199352,
+          "browser_download_url": "https://github.com/gminustwo/primerecomp/releases/download/v0.0.6/PrimeRecomp-v0.0.6-windows.zip",
+          "digest": "sha256:aa8cec084089e014316ac3d59673ba33d48d8a29e017591d900a46b0b44f53db"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "Hexveil404/PokeZ-ARecomp",
+    "CheckedUtc": "2026-11-03T19:16:01.594292-03:00",
+    "Release": {
+      "tag_name": "v0.1.15",
+      "html_url": "https://github.com/Hexveil404/PokeZ-ARecomp/releases/tag/v0.1.15",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "ZA-Recomp-windows.zip",
+          "size": 148852304,
+          "browser_download_url": "https://github.com/Hexveil404/PokeZ-ARecomp/releases/download/v0.1.15/ZA-Recomp-windows.zip",
+          "digest": "sha256:812d4ffacb5bddc38cfd66fa305db76a5913597c1e7a3ad714487b21e33d092b"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "blocker-3/HWDER",
+    "CheckedUtc": "2026-11-03T19:16:01.594292-03:00",
+    "Release": {
+      "tag_name": "v0.3.5",
+      "html_url": "https://github.com/blocker-3/HWDER/releases/tag/v0.3.5",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "HWDER-linux-x86_64-v0.3.5.tar.gz",
+          "size": 31500068,
+          "browser_download_url": "https://github.com/blocker-3/HWDER/releases/download/v0.3.5/HWDER-linux-x86_64-v0.3.5.tar.gz",
+          "digest": "sha256:ddd20149944559ff737e2e6ed6a430c899636974ee363d2b6803985c39b01934"
+        },
+        {
+          "name": "HWDER-setup-v0.3.5.zip",
+          "size": 13959943,
+          "browser_download_url": "https://github.com/blocker-3/HWDER/releases/download/v0.3.5/HWDER-setup-v0.3.5.zip",
+          "digest": "sha256:13e1ba0dcd73f0b42f41586397082c4356bf1314ca1ecd8d2d0b092ba95f0adb"
+        },
+        {
+          "name": "SHA256SUMS",
+          "size": 188,
+          "browser_download_url": "https://github.com/blocker-3/HWDER/releases/download/v0.3.5/SHA256SUMS",
+          "digest": "sha256:6bad54316ac8b5a9037b51f6f39673382ac00dadfbcdac2b5655c905dd3e4acb"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "u2-bot/uDPRE",
+    "CheckedUtc": "2026-11-03T19:16:01.594292-03:00",
+    "Release": {
+      "tag_name": "v0.5.9",
+      "html_url": "https://github.com/u2-bot/uDPRE/releases/tag/v0.5.9",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "uDPRE-0.5.9-win64.zip",
+          "size": 77062239,
+          "browser_download_url": "https://github.com/u2-bot/uDPRE/releases/download/v0.5.9/uDPRE-0.5.9-win64.zip",
+          "digest": "sha256:145f50571295393e1778513fd6e32ab9ba80e4bad0ef3c52872e69d37e2e0f9d"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "Apolinario-coder/MushroomMakerRecomp",
+    "CheckedUtc": "2026-11-03T19:16:01.594292-03:00",
+    "Release": {
+      "tag_name": "v1.0.0",
+      "html_url": "https://github.com/Apolinario-coder/MushroomMakerRecomp/releases/tag/v1.0.0",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "MushroomMakerRecomp-v1.0.0-Windows-x64.zip",
+          "size": 111513750,
+          "browser_download_url": "https://github.com/Apolinario-coder/MushroomMakerRecomp/releases/download/v1.0.0/MushroomMakerRecomp-v1.0.0-Windows-x64.zip",
+          "digest": "sha256:874964387806223ce2d3b6dd103c9d4fe302c62ad326ac47fa5a8208756dd659"
+        },
+        {
+          "name": "SHA256SUMS.txt",
+          "size": 110,
+          "browser_download_url": "https://github.com/Apolinario-coder/MushroomMakerRecomp/releases/download/v1.0.0/SHA256SUMS.txt",
+          "digest": "sha256:ac059ae6fc78311c78327312d5a147c5bb56e7dc27ed3a3eb3f73a2c2316bf35"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "sm35recomp/sm35recomp",
+    "CheckedUtc": "2026-11-03T19:16:01.594292-03:00",
+    "Release": {
+      "tag_name": "v0.4.0",
+      "html_url": "https://github.com/sm35recomp/sm35recomp/releases/tag/v0.4.0",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "SHA256SUMS.txt",
+          "size": 384,
+          "browser_download_url": "https://github.com/sm35recomp/sm35recomp/releases/download/v0.4.0/SHA256SUMS.txt",
+          "digest": "sha256:fc95a70f11e7bc5fbe685103febfc1a79e59b6c3225b47d647f594f8abd35e47"
+        },
+        {
+          "name": "SM35Recomp-linux-aarch64.tar.gz",
+          "size": 104887505,
+          "browser_download_url": "https://github.com/sm35recomp/sm35recomp/releases/download/v0.4.0/SM35Recomp-linux-aarch64.tar.gz",
+          "digest": "sha256:9eb9698bc46b5b3d353f32bc3a10eb52003228017dc2fa65ff2233b793aaf612"
+        },
+        {
+          "name": "SM35Recomp-linux-x86_64.tar.gz",
+          "size": 113744589,
+          "browser_download_url": "https://github.com/sm35recomp/sm35recomp/releases/download/v0.4.0/SM35Recomp-linux-x86_64.tar.gz",
+          "digest": "sha256:3fa418e53d5d5a3ccada27da1f5e9eaccf9a5ac3bb1cbca745ead3dd6ff67e52"
+        },
+        {
+          "name": "SM35Recomp-macos-arm64.zip",
+          "size": 94816023,
+          "browser_download_url": "https://github.com/sm35recomp/sm35recomp/releases/download/v0.4.0/SM35Recomp-macos-arm64.zip",
+          "digest": "sha256:ffd30278d88655f180c7c03a972f2ee8756ef505f30e70c1a8292226509dd0c4"
+        },
+        {
+          "name": "SM35Recomp-windows-x86_64.zip",
+          "size": 113240322,
+          "browser_download_url": "https://github.com/sm35recomp/sm35recomp/releases/download/v0.4.0/SM35Recomp-windows-x86_64.zip",
+          "digest": "sha256:c4affbbbf5b42843d28250f87c5c8f1fb7298d48012305223af3929b6d6a80a6"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "jmars125/xcx-recomp",
+    "CheckedUtc": "2026-11-03T19:16:01.594292-03:00",
+    "Release": {
+      "tag_name": "v0.1.14",
+      "html_url": "https://github.com/jmars125/xcx-recomp/releases/tag/v0.1.14",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "XCX-Setup-0.1.14-linux.AppImage",
+          "size": 218438136,
+          "browser_download_url": "https://github.com/jmars125/xcx-recomp/releases/download/v0.1.14/XCX-Setup-0.1.14-linux.AppImage",
+          "digest": "sha256:a42b5e29f0a966a9249084d98a6d22534781b3b246d1e400bda20cf2d5d1a143"
+        },
+        {
+          "name": "XCX-Setup-0.1.14-windows.zip",
+          "size": 132874596,
+          "browser_download_url": "https://github.com/jmars125/xcx-recomp/releases/download/v0.1.14/XCX-Setup-0.1.14-windows.zip",
+          "digest": "sha256:3040548b405f79c18ffb37963c6a336d9c97b865ffe8c2a875ce977de451c4ef"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "darkuni/cruisn-blast-recomp",
+    "CheckedUtc": "2026-11-03T19:16:01.594292-03:00",
+    "Release": {
+      "tag_name": "v1.2",
+      "html_url": "https://github.com/darkuni/cruisn-blast-recomp/releases/tag/v1.2",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "CruisnBlast-linux.tar.xz",
+          "size": 72634744,
+          "browser_download_url": "https://github.com/darkuni/cruisn-blast-recomp/releases/download/v1.2/CruisnBlast-linux.tar.xz",
+          "digest": "sha256:29049639b30e59f7c0ab35a1c5aea929c3b6d5ecdd6d09193986b6ec0d4e9198"
+        },
+        {
+          "name": "CruisnBlast-windows.zip",
+          "size": 118692325,
+          "browser_download_url": "https://github.com/darkuni/cruisn-blast-recomp/releases/download/v1.2/CruisnBlast-windows.zip",
+          "digest": "sha256:48bed7ca17f6c6f3dcdefff83f43db9692bf16b127599a2c1c8e196f49fe1b27"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "daniel-madrid-07/weeping-of-the-empire",
+    "CheckedUtc": "2026-11-03T19:16:01.594292-03:00",
+    "Release": {
+      "tag_name": "v0.1.9",
+      "html_url": "https://github.com/daniel-madrid-07/weeping-of-the-empire/releases/tag/v0.1.9",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "update.json",
+          "size": 37,
+          "browser_download_url": "https://github.com/daniel-madrid-07/weeping-of-the-empire/releases/download/v0.1.9/update.json",
+          "digest": "sha256:8998dc8b908bbe2a6f4cbff4ab4b1a5f7891d1f9d44152cfbba3542d1dc78435"
+        },
+        {
+          "name": "Weeping-of-the-Empire-Setup-v0.1.9.exe",
+          "size": 263168,
+          "browser_download_url": "https://github.com/daniel-madrid-07/weeping-of-the-empire/releases/download/v0.1.9/Weeping-of-the-Empire-Setup-v0.1.9.exe",
+          "digest": "sha256:ed5a29c6e542867fd29258e1de609c2bc670704451af33f05ab2df818762d5ff"
         }
       ]
     }

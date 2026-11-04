@@ -1,8 +1,15 @@
 # Catálogo de ports
 
+## Repositórios renomeados — 04/11/2026
+
+- **God of War III**: o gow3_pc virou [SpartanPort](https://github.com/FelipePrado0/SpartanPort). O perfil passou a baixar `spartanport-windows.zip` (e o AppImage no Linux), e o perfil duplicado "SpartanPort" foi unificado nele.
+- **Bloodborne**: o BloodBorneButPc virou [LanternEngine](https://github.com/Awakenchan/LanternEngine), com pacotes `LanternEngine-v…-win64.zip` e build Linux.
+- **Gran Turismo Sport (RyGT)**: o repositório foi removido do GitHub, e o perfil saiu do catálogo. Jogos já cadastrados continuam na biblioteca.
+- Forza Motorsport 2 só mudou a caixa do nome (`hl360-Forza2`), o que não afeta o download.
+
 ## Builds Linux — 04/11/2026
 
-57 perfis também publicam um pacote Linux x86_64 na mesma Release (AppImage ou .tar.gz/.zip). O NEXUS para Linux instala esses pacotes com conferência de SHA-256; na edição Windows nada muda. Ficaram de fora builds ARM, Flatpak, .deb e Steam Deck. Resident Evil (decomp) publica uma build Linux de 32 bits.
+58 perfis também publicam um pacote Linux x86_64 na mesma Release (AppImage ou .tar.gz/.zip). O NEXUS para Linux instala esses pacotes com conferência de SHA-256; na edição Windows nada muda. Ficaram de fora builds ARM, Flatpak, .deb e Steam Deck. Resident Evil (decomp) publica uma build Linux de 32 bits.
 
 ## Revisão multiplataforma — 04/11/2026
 
@@ -75,7 +82,7 @@
 
 **Não incluídos:** builds só para Android, iPhone, Mac ou Switch homebrew; ferramentas genéricas (RecompOne); forks de emuladores; Rogue Galaxy (o ZIP não traz executável Windows); e o Forza Horizon ReImagined, que já estava no catálogo sob o novo dono do repositório.
 
-Total do catálogo: **367 fontes**, **335 perfis GitHub integrados**, **1 importação oficial** e **31 exceções**.
+Total do catálogo: **365 fontes**, **333 perfis GitHub integrados**, **1 importação oficial** e **31 exceções**.
 
 ## Revisão Switch — 03/11/2026
 
@@ -329,7 +336,6 @@ Os oito novos ports N64 usam o mesmo aplicativo para importar a ROM e acessar op
 | Xbox 360 | [Rumble Roses XX · Rumble Roses XX Recomp](https://github.com/JesusTaylo/rumble-roses-xx-recomp) | Manual / desenvolvimento |
 | Xbox | [Jet Set Radio Future · JSRF Unleashed](https://github.com/JuMatt/JetSetRadioFuture-Unleashed) | Manual / desenvolvimento |
 | Xbox 360 | [Dragon Age: Origins · Dragon Age: Origins Recompiled](https://github.com/96dot/Dragon-Age-Origins-Recomp) | Manual / desenvolvimento |
-| PlayStation 4 | [God of War III Remastered · SpartanPort](https://github.com/FelipePrado0/SpartanPort) | Manual / desenvolvimento |
 | PlayStation 4 | [Crash Team Racing Nitro-Fueled · CTR Nitro-Fueled Online](https://github.com/Ryu7w7/OCTR-NitroFueled-PC) | Manual / desenvolvimento |
 | Xbox | [Prince of Persia: The Sands of Time · reSOT](https://github.com/FulGerNet/rePOP) | Manual / desenvolvimento |
 | Xbox 360 | [Crash of the Titans](https://github.com/VitoMiguelF/crashott-pc) | Manual / desenvolvimento |
@@ -552,8 +558,8 @@ Foram baixados os seis ZIPs novos habilitados para instalação, conferidos os S
 
 | Jogo | Repositório | Observação |
 | --- | --- | --- |
-| God of War III | [FelipePrado0/gow3_pc](https://github.com/FelipePrado0/gow3_pc) | Identificado no README da instalação |
-| Bloodborne | [Awakenchan/BloodBorneButPc](https://github.com/Awakenchan/BloodBorneButPc) | Pacote/launcher 0.9.33 identificado pela distribuição |
+| God of War III | [FelipePrado0/SpartanPort](https://github.com/FelipePrado0/SpartanPort) (antigo gow3_pc) | `spartanport-windows.zip`; Jogar abre `Play SpartanPort.exe` |
+| Bloodborne | [Awakenchan/LanternEngine](https://github.com/Awakenchan/LanternEngine) (antigo BloodBorneButPc) | `LanternEngine-v…-win64.zip` 0.9.38; Jogar abre `Bloodborne.exe` |
 | Shadow of the Colossus | [Oussama268/ShadowOfTheColossus-PC](https://github.com/Oussama268/ShadowOfTheColossus-PC) | O CHANGELOG instalado identifica o fork 0.57-opt6 |
 | Uncharted: The Nathan Drake Collection | [bc160201983/Uncharted-The-Nathan-Drake-Collection-PC-port](https://github.com/bc160201983/Uncharted-The-Nathan-Drake-Collection-PC-port) | Identificado no README da instalação |
 
@@ -568,7 +574,6 @@ O projeto original de Shadow, [AjncSystem/ShadowOfTheColossus-PC](https://github
 | The Last Guardian | [HayatoG/tlg_pc](https://github.com/HayatoG/tlg_pc) | `Play The Last Guardian.exe` |
 | Crash Team Racing: Nitro-Fueled | [GetLostIn/CTR-NitroFueled-PC](https://github.com/GetLostIn/CTR-NitroFueled-PC) | Abre `CTR-NitroFueled-PC.exe`, launcher original |
 | MediEvil | [bc160201983/medievil_2019_pc_port](https://github.com/bc160201983/medievil_2019_pc_port) | `Play MediEvil.exe` |
-| Gran Turismo Sport | [mlgprorektm8/RyGT](https://github.com/mlgprorektm8/RyGT) | Abre `RyGT.exe`, que prepara/converte os arquivos do usuário |
 | The Order: 1886 | [mateussmeneses/theorder1886-port](https://github.com/mateussmeneses/theorder1886-port) | `Play The Order 1886.exe` |
 
 As sete distribuições Windows foram baixadas, verificadas pelo SHA-256 publicado, extraídas e cadastradas em pastas de teste. Os executáveis de jogar/configurar foram encontrados nos pacotes reais. Nenhum jogo ou launcher desses pacotes foi executado no teste. Isso valida a instalação, não a compatibilidade de gameplay.

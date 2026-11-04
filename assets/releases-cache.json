@@ -18,31 +18,43 @@
     }
   },
   {
-    "Repository": "Awakenchan/BloodBorneButPc",
-    "CheckedUtc": "2026-10-18T23:25:57.761913-03:00",
+    "Repository": "Awakenchan/LanternEngine",
+    "CheckedUtc": "2026-11-04T23:49:53.166333+00:00",
     "Release": {
-      "tag_name": "v0.9.33",
-      "html_url": "https://github.com/Awakenchan/BloodBorneButPc/releases/tag/v0.9.33",
+      "tag_name": "v0.9.38",
+      "html_url": "https://github.com/Awakenchan/LanternEngine/releases/tag/v0.9.38",
       "draft": false,
       "prerelease": false,
       "assets": [
         {
           "name": "Bloodborne.Launcher.exe",
-          "size": 75254745,
-          "browser_download_url": "https://github.com/Awakenchan/BloodBorneButPc/releases/download/v0.9.33/Bloodborne.Launcher.exe",
-          "digest": "sha256:06f3602aebc05bee9af693318b7e4b268fd79a9c58e2ce580495d19819eadd58"
+          "size": 76186967,
+          "browser_download_url": "https://github.com/Awakenchan/LanternEngine/releases/download/v0.9.38/Bloodborne.Launcher.exe",
+          "digest": "sha256:d9df3642f8ce817cb90eae1adf43d8888cb353cf81cb963acde65d3c914ebb08"
         },
         {
-          "name": "BloodbornePC-v0.9.33-win64.zip",
-          "size": 191038870,
-          "browser_download_url": "https://github.com/Awakenchan/BloodBorneButPc/releases/download/v0.9.33/BloodbornePC-v0.9.33-win64.zip",
-          "digest": "sha256:78538a366731eea5071a9800fdd7b460e0037e67f578dcbff4bcfca44712b567"
+          "name": "Lantern.Engine.exe",
+          "size": 76186967,
+          "browser_download_url": "https://github.com/Awakenchan/LanternEngine/releases/download/v0.9.38/Lantern.Engine.exe",
+          "digest": "sha256:d9df3642f8ce817cb90eae1adf43d8888cb353cf81cb963acde65d3c914ebb08"
+        },
+        {
+          "name": "LanternEngine-v0.9.38-linux-x64.tar.gz",
+          "size": 130780238,
+          "browser_download_url": "https://github.com/Awakenchan/LanternEngine/releases/download/v0.9.38/LanternEngine-v0.9.38-linux-x64.tar.gz",
+          "digest": "sha256:8e2e6707cef777859cca2994b68a3dfccbb03426f11c739b0ee3c11b8467e5f7"
+        },
+        {
+          "name": "LanternEngine-v0.9.38-win64.zip",
+          "size": 206854044,
+          "browser_download_url": "https://github.com/Awakenchan/LanternEngine/releases/download/v0.9.38/LanternEngine-v0.9.38-win64.zip",
+          "digest": "sha256:dd8d3b54a263c5117bc79056fc956a12dd01054ae7d0c23bc81e3759dbfa98bd"
         },
         {
           "name": "package.json",
-          "size": 57,
-          "browser_download_url": "https://github.com/Awakenchan/BloodBorneButPc/releases/download/v0.9.33/package.json",
-          "digest": "sha256:4ca0f6b7c870a859b3f62640e40d52f42c4528c97b76bc9bb953ac4251a8dee0"
+          "size": 52,
+          "browser_download_url": "https://github.com/Awakenchan/LanternEngine/releases/download/v0.9.38/package.json",
+          "digest": "sha256:69103beb3f0aeb2492a6b432925abc861b490a31526a1c0d776fb6250795e6c1"
         }
       ]
     }
@@ -84,37 +96,49 @@
     }
   },
   {
-    "Repository": "FelipePrado0/gow3_pc",
-    "CheckedUtc": "2026-10-18T23:25:57.782934-03:00",
+    "Repository": "FelipePrado0/SpartanPort",
+    "CheckedUtc": "2026-11-04T23:49:53.166333+00:00",
     "Release": {
-      "tag_name": "windows-v2.5.0",
-      "html_url": "https://github.com/FelipePrado0/gow3_pc/releases/tag/windows-v2.5.0",
+      "tag_name": "windows-v3.0.0",
+      "html_url": "https://github.com/FelipePrado0/SpartanPort/releases/tag/windows-v3.0.0",
       "draft": false,
       "prerelease": false,
       "assets": [
         {
-          "name": "gow3-windows.zip",
-          "size": 75252856,
-          "browser_download_url": "https://github.com/FelipePrado0/gow3_pc/releases/download/windows-v2.5.0/gow3-windows.zip",
-          "digest": "sha256:41463b8dc4a2d66375f37f20c20d08c1dcc9260df48ef4dcb4911be0daade218"
+          "name": "release-linux.json",
+          "size": 43,
+          "browser_download_url": "https://github.com/FelipePrado0/SpartanPort/releases/download/windows-v3.0.0/release-linux.json",
+          "digest": "sha256:eb5ebc45b9da8a8dfd2c744d94f888eb384e7e80f2ba4000c1d2e56888eb75e7"
         },
         {
-          "name": "gow3-windows.zip.sha256",
-          "size": 83,
-          "browser_download_url": "https://github.com/FelipePrado0/gow3_pc/releases/download/windows-v2.5.0/gow3-windows.zip.sha256",
-          "digest": "sha256:33bdc3a3a548117a77dba615158665a77bd822e824d01f5d5f63b9910e4de1c2"
+          "name": "release-windows.json",
+          "size": 44,
+          "browser_download_url": "https://github.com/FelipePrado0/SpartanPort/releases/download/windows-v3.0.0/release-windows.json",
+          "digest": "sha256:d4fdf5404970cc18a15bfee3b5715a6b6e8bbeb6f96b6c82b1da92f6c3dcbdce"
         },
         {
-          "name": "gow3-x86_64.AppImage",
-          "size": 135371256,
-          "browser_download_url": "https://github.com/FelipePrado0/gow3_pc/releases/download/windows-v2.5.0/gow3-x86_64.AppImage",
-          "digest": "sha256:efc142f9abb4da0d73140054cdc09a863c0ee99e43c9532ed5df08fe0f005651"
+          "name": "spartanport-windows.zip",
+          "size": 100867042,
+          "browser_download_url": "https://github.com/FelipePrado0/SpartanPort/releases/download/windows-v3.0.0/spartanport-windows.zip",
+          "digest": "sha256:5fdc28e3c993b2f434c189d5bb5a00dff0117715d17990153b09707fb8367638"
         },
         {
-          "name": "gow3-x86_64.AppImage.sha256",
-          "size": 87,
-          "browser_download_url": "https://github.com/FelipePrado0/gow3_pc/releases/download/windows-v2.5.0/gow3-x86_64.AppImage.sha256",
-          "digest": "sha256:1cae714e6c5510de2f13260f4f8a77d94d7847221a8a9008ebc0ae795752f937"
+          "name": "spartanport-windows.zip.sha256",
+          "size": 90,
+          "browser_download_url": "https://github.com/FelipePrado0/SpartanPort/releases/download/windows-v3.0.0/spartanport-windows.zip.sha256",
+          "digest": "sha256:239ec3e3df5284d00fc649b096464f7fdc7a52159b84a369f0d021ff0cb9d937"
+        },
+        {
+          "name": "spartanport-x86_64.AppImage",
+          "size": 149584376,
+          "browser_download_url": "https://github.com/FelipePrado0/SpartanPort/releases/download/windows-v3.0.0/spartanport-x86_64.AppImage",
+          "digest": "sha256:b63448dfc10b88f33e8c2edd0ec1ff56e7c902f870dca9c612a09e588cc35557"
+        },
+        {
+          "name": "spartanport-x86_64.AppImage.sha256",
+          "size": 94,
+          "browser_download_url": "https://github.com/FelipePrado0/SpartanPort/releases/download/windows-v3.0.0/spartanport-x86_64.AppImage.sha256",
+          "digest": "sha256:eca3776236cd7affcc9e49fdd95974e8a6642c1f8cfd98e0868cbcb524aa5370"
         }
       ]
     }
@@ -199,24 +223,6 @@
           "size": 72835997,
           "browser_download_url": "https://github.com/mateussmeneses/theorder1886-port/releases/download/windows-v0.7.0/theorder1886-windows.zip",
           "digest": "sha256:7f800ecbf483cbffbb8a4a3bc29ce93aae972b541389769090ff91b47785c1bf"
-        }
-      ]
-    }
-  },
-  {
-    "Repository": "mlgprorektm8/RyGT",
-    "CheckedUtc": "2026-10-18T23:25:57.815964-03:00",
-    "Release": {
-      "tag_name": "gt-sport-2026-10-18-2",
-      "html_url": "https://github.com/mlgprorektm8/RyGT/releases/tag/gt-sport-2026-10-18-2",
-      "draft": false,
-      "prerelease": false,
-      "assets": [
-        {
-          "name": "GTSport-Ryty-shadGT-2026-10-18-2.zip",
-          "size": 131191721,
-          "browser_download_url": "https://github.com/mlgprorektm8/RyGT/releases/download/gt-sport-2026-10-18-2/GTSport-Ryty-shadGT-2026-10-18-2.zip",
-          "digest": "sha256:e395f777215689b5ce6fb09c65b348f9edee6f6880647058bd95807f0c2fff66"
         }
       ]
     }
@@ -2707,24 +2713,6 @@
           "size": 16646002,
           "browser_download_url": "https://github.com/JuMatt/JetSetRadioFuture-Unleashed/releases/download/v0.5.9/JSRF-Unleashed-windows-x86_64.zip",
           "digest": "sha256:41e81bb6c66c21d62ab00d519607af2db820b4cf27528e88810107fa0c155793"
-        }
-      ]
-    }
-  },
-  {
-    "Repository": "FelipePrado0/SpartanPort",
-    "CheckedUtc": "2026-10-28T23:27:11.241812+00:00",
-    "Release": {
-      "tag_name": "windows-v2.7.0",
-      "html_url": "https://github.com/FelipePrado0/SpartanPort/releases/tag/windows-v2.7.0",
-      "draft": false,
-      "prerelease": false,
-      "assets": [
-        {
-          "name": "spartanport-windows.zip",
-          "size": 79194182,
-          "browser_download_url": "https://github.com/FelipePrado0/SpartanPort/releases/download/windows-v2.7.0/spartanport-windows.zip",
-          "digest": "sha256:e07df61d75499bd61f3be00b4f4d4e2e5b9ad45f2cbee8f609bf4205499a9241"
         }
       ]
     }

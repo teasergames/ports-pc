@@ -1,27 +1,29 @@
 [
   {
     "Id": "gow3",
-    "Name": "God of War III",
-    "Repository": "FelipePrado0/gow3_pc",
-    "AssetPattern": "^gow3-windows\\.zip$",
+    "Name": "God of War III · SpartanPort",
+    "Repository": "FelipePrado0/SpartanPort",
+    "AssetPattern": "^spartanport-windows\\.zip$",
     "PlayNames": [
+      "Play SpartanPort.exe",
       "Play God of War III.exe"
     ],
     "ConfigNames": [
+      "SpartanPort.exe",
       "God of War III.exe"
     ],
-    "Notes": "Configure sua pasta do jogo no launcher original antes de jogar.",
+    "Notes": "O projeto gow3_pc agora se chama SpartanPort. Configure sua pasta do jogo no launcher original antes de jogar.",
     "Platform": "PlayStation 4",
     "Kind": "Port",
     "ProjectType": "Port",
-    "LinuxAssetPattern": "^gow3\\-x86_64\\.AppImage$",
+    "LinuxAssetPattern": "^spartanport-x86_64\\.AppImage$",
     "LinuxPackageKind": "AppImage"
   },
   {
     "Id": "bloodborne",
     "Name": "Bloodborne",
-    "Repository": "Awakenchan/BloodBorneButPc",
-    "AssetPattern": "^BloodbornePC-.*-win64\\.zip$",
+    "Repository": "Awakenchan/LanternEngine",
+    "AssetPattern": "^LanternEngine-v.*-win64\\.zip$",
     "PlayNames": [
       "Bloodborne.exe"
     ],
@@ -32,7 +34,9 @@
     "Notes": "Pacote completo de launcher e engine. Não baixa o EXE de atualização isolado.",
     "Platform": "PlayStation 4",
     "Kind": "Port",
-    "ProjectType": "Port"
+    "ProjectType": "Port",
+    "LinuxAssetPattern": "^LanternEngine-v.*-linux-x64\\.tar\\.gz$",
+    "LinuxPackageKind": "Archive"
   },
   {
     "Id": "sotc-opt",
@@ -187,22 +191,6 @@
       "MediEvil.exe"
     ],
     "Notes": "Jogar usa o executável direto; Configurar permite escolher seus arquivos do jogo.",
-    "Platform": "PlayStation 4",
-    "Kind": "Port",
-    "ProjectType": "Port"
-  },
-  {
-    "Id": "gt-sport",
-    "Name": "Gran Turismo Sport",
-    "Repository": "mlgprorektm8/RyGT",
-    "AssetPattern": "^GTSport-Ryty-shadGT-.*\\.zip$",
-    "PlayNames": [
-      "RyGT.exe"
-    ],
-    "ConfigNames": [
-      "RyGT.exe"
-    ],
-    "Notes": "Jogar abre o RyGT. O primeiro Set up precisa de seus arquivos do jogo, update, módulos e fontes.",
     "Platform": "PlayStation 4",
     "Kind": "Port",
     "ProjectType": "Port"
@@ -2170,22 +2158,6 @@
     "DiscoverExecutable": true,
     "PackageKind": "Installer",
     "AllowPrerelease": true
-  },
-  {
-    "Id": "rl-spartanport",
-    "Name": "God of War III Remastered · SpartanPort",
-    "Repository": "FelipePrado0/SpartanPort",
-    "Platform": "PlayStation 4",
-    "AssetPattern": "^spartanport\\-windows\\.zip$",
-    "PlayNames": [],
-    "ConfigNames": [],
-    "ArtworkTitle": "God of War III Remastered",
-    "ProjectOnly": false,
-    "Kind": "Instalação integrada",
-    "ProjectType": "Port",
-    "Notes": "O NEXUS baixa o pacote Windows da última Release e o instala aqui. Se houver mais de um aplicativo no ZIP, escolha o principal e o launcher de configuração na janela do NEXUS. Na primeira abertura, prepare seus próprios arquivos seguindo o assistente do port. A compatibilidade e a preparação variam conforme o projeto.",
-    "DiscoverExecutable": true,
-    "PackageKind": "Zip"
   },
   {
     "Id": "rl-octr-nitrofueled-pc",

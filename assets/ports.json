@@ -4919,5 +4919,1211 @@
     "Kind": "Em desenvolvimento",
     "ProjectType": "Recompilação",
     "Notes": "Primeira recompilação de um jogo de Switch 2. Ainda não jogável: a tela de título e o tutorial 3D renderizam em Vulkan. Sem Release; só a versão base 1.0.0 é suportada."
+  },
+  {
+    "Id": "army-of-two",
+    "Name": "Army of Two · Army of Two Recompilation",
+    "Repository": "OpenPortroid/ArmyOfTwoRecompilation",
+    "Platform": "Xbox 360",
+    "AssetPattern": "^ArmyOfTwo-v[0-9.]+\\.zip$",
+    "PlayNames": [],
+    "ConfigNames": [],
+    "ArtworkTitle": "Army of Two",
+    "ProjectOnly": false,
+    "ProjectType": "Recompilação",
+    "Kind": "Instalação integrada",
+    "DiscoverExecutable": true,
+    "PackageKind": "Zip",
+    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Se houver mais de um aplicativo, escolha o principal e o de configuração na janela do NEXUS. Recompilação ReXGlue com renderizador D3D12; campanha solo ou co-op, tela dividida e co-op online por LAN/VPN. Requer sua cópia europeia do Xbox 360 com TU2."
+  },
+  {
+    "Id": "rayman3-hd",
+    "Name": "Rayman 3 HD · Rayman 3 HD Recompiled",
+    "Repository": "MysteriousAeon/rayman3-hd-recompiled",
+    "Platform": "Xbox 360",
+    "AssetPattern": "^Rayman3HDRecompiled-[0-9.]+-portable\\.zip$",
+    "PlayNames": [],
+    "ConfigNames": [],
+    "ArtworkTitle": "Rayman 3: Hoodlum Havoc",
+    "ProjectOnly": false,
+    "ProjectType": "Recompilação",
+    "Kind": "Instalação integrada",
+    "DiscoverExecutable": true,
+    "PackageKind": "Zip",
+    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Se houver mais de um aplicativo, escolha o principal e o de configuração na janela do NEXUS. Versão Xbox Live Arcade em D3D12, pacote portátil. Correções HD, conquistas e luz do DualSense. Requer sua própria cópia XBLA."
+  },
+  {
+    "Id": "tekken6-online",
+    "Name": "Tekken 6 · Native Online",
+    "Repository": "Ekspym/Tekken6-native-online",
+    "Platform": "Xbox 360",
+    "AssetPattern": "^tekken6_native_online\\.zip$",
+    "PlayNames": [
+      "Tekken6 Native Online.exe"
+    ],
+    "ConfigNames": [
+      "Tekken6 Native Online.exe"
+    ],
+    "ArtworkTitle": "Tekken 6",
+    "ProjectOnly": false,
+    "ProjectType": "Recompilação",
+    "Kind": "Recompilação",
+    "PackageKind": "Zip",
+    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Jogar e Configurar abrem Tekken6 Native Online.exe; na primeira abertura, prepare seus próprios arquivos no port. Port nativo da versão Xbox 360 com partidas online. O patch separado do autor não é instalado por este perfil. Requer seu próprio disco."
+  },
+  {
+    "Id": "cod3-1944",
+    "Name": "Call of Duty 3 · Project 1944",
+    "Repository": "zenit2893-cmyk/Call-of-Duty-3-PC-Editon",
+    "Platform": "Xbox 360",
+    "AssetPattern": "^cod3-pc-full\\.zip$",
+    "PlayNames": [],
+    "ConfigNames": [],
+    "ArtworkTitle": "Call of Duty 3",
+    "ProjectOnly": false,
+    "ProjectType": "Recompilação",
+    "Kind": "Instalação integrada",
+    "DiscoverExecutable": true,
+    "PackageKind": "Zip",
+    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Se houver mais de um aplicativo, escolha o principal e o de configuração na janela do NEXUS. Recompilação da versão Xbox 360. Beta. Requer sua própria cópia do jogo."
+  },
+  {
+    "Id": "doax2-recomp",
+    "Name": "Dead or Alive Xtreme 2 · DOAX2 Recomp",
+    "Repository": "hibikifukui22/Dead-or-Alive-Xtreme-2-Recompilation",
+    "Platform": "Xbox 360",
+    "AssetPattern": "^DOAX2-Recomp-v[0-9.]+-win64\\.zip$",
+    "PlayNames": [
+      "DOAX2 Recomp Launcher.exe"
+    ],
+    "ConfigNames": [
+      "DOAX2 Recomp Launcher.exe"
+    ],
+    "ArtworkTitle": "Dead or Alive Xtreme 2",
+    "ProjectOnly": false,
+    "ProjectType": "Recompilação",
+    "Kind": "Recompilação",
+    "PackageKind": "Zip",
+    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Jogar e Configurar abrem DOAX2 Recomp Launcher.exe; na primeira abertura, prepare seus próprios arquivos no port. Port ReXGlue com modo 30 ou 60 fps. GPUs Intel integradas não são suportadas. Requer o disco original (title 544307D2), sem title updates."
+  },
+  {
+    "Id": "ewj-hd",
+    "Name": "Earthworm Jim HD · Recompiled",
+    "Repository": "TekRantGaming/earthworm-jim-hd-recompiled",
+    "Platform": "Xbox 360",
+    "AssetPattern": "^EarthwormJimHD-v[0-9.]+-windows-x64\\.zip$",
+    "PlayNames": [
+      "earthworm_jim_hd.exe"
+    ],
+    "ConfigNames": [
+      "earthworm_jim_hd.exe"
+    ],
+    "ArtworkTitle": "Earthworm Jim HD",
+    "ProjectOnly": false,
+    "ProjectType": "Recompilação",
+    "Kind": "Recompilação",
+    "PackageKind": "Zip",
+    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Jogar e Configurar abrem earthworm_jim_hd.exe; na primeira abertura, prepare seus próprios arquivos no port. Recompilação da versão Xbox Live Arcade. Beta. Requer sua própria cópia."
+  },
+  {
+    "Id": "re-wor",
+    "Name": "Guitar Hero: Warriors of Rock · re-wor",
+    "Repository": "ronniecloud/re-wor",
+    "Platform": "Xbox 360",
+    "AssetPattern": "^re-wor-v[0-9.]+\\.zip$",
+    "PlayNames": [],
+    "ConfigNames": [],
+    "ArtworkTitle": "Guitar Hero: Warriors of Rock",
+    "ProjectOnly": false,
+    "ProjectType": "Recompilação",
+    "Kind": "Instalação integrada",
+    "DiscoverExecutable": true,
+    "PackageKind": "Zip",
+    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Se houver mais de um aplicativo, escolha o principal e o de configuração na janela do NEXUS. Recompilação da versão Xbox 360. Beta. Requer sua própria cópia; controles de guitarra variam conforme o hardware."
+  },
+  {
+    "Id": "la-recomp",
+    "Name": "Midnight Club: Los Angeles · LARecomp",
+    "Repository": "mzzvxm/LARecomp",
+    "Platform": "Xbox 360",
+    "AssetPattern": "",
+    "PlayNames": [],
+    "ConfigNames": [],
+    "ArtworkTitle": "Midnight Club: Los Angeles",
+    "ProjectOnly": true,
+    "Kind": "Em desenvolvimento",
+    "ProjectType": "Recompilação",
+    "Notes": "Ainda sem Release: o projeto é compilado a partir do código-fonte com seus próprios arquivos do Xbox 360."
+  },
+  {
+    "Id": "nfsmw-recompiled",
+    "Name": "Need for Speed: Most Wanted (Xbox 360) · NFSMW Recompiled",
+    "Repository": "madelrandel-blip/NFSMW-Recompiled",
+    "Platform": "Xbox 360",
+    "AssetPattern": "^NFSMW-Recomp-[0-9.]+-Windows-x64\\.zip$",
+    "PlayNames": [
+      "NFSMW Recomp.exe"
+    ],
+    "ConfigNames": [
+      "NFSMW Recomp.exe"
+    ],
+    "ArtworkTitle": "Need for Speed: Most Wanted (2005 video game)",
+    "ProjectOnly": false,
+    "ProjectType": "Recompilação",
+    "Kind": "Recompilação",
+    "PackageKind": "Zip",
+    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Jogar e Configurar abrem NFSMW Recomp.exe; na primeira abertura, prepare seus próprios arquivos no port. Recompilação da versão Xbox 360 de 2005. Beta. Requer seu próprio disco."
+  },
+  {
+    "Id": "free-riders",
+    "Name": "Sonic Free Riders · Free Riders Recompiled",
+    "Repository": "YuutaTsubasa/Free-Riders-Recompiled",
+    "Platform": "Xbox 360",
+    "AssetPattern": "^FreeRidersRecompiled-[0-9.]+-windows-x64\\.zip$",
+    "PlayNames": [],
+    "ConfigNames": [],
+    "ArtworkTitle": "Sonic Free Riders",
+    "ProjectOnly": false,
+    "ProjectType": "Recompilação",
+    "Kind": "Instalação integrada",
+    "DiscoverExecutable": true,
+    "PackageKind": "Zip",
+    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Se houver mais de um aplicativo, escolha o principal e o de configuração na janela do NEXUS. Recompilação do jogo de Kinect para controle comum. Beta, atualizado com frequência. Requer seu próprio disco."
+  },
+  {
+    "Id": "blast-corps",
+    "Name": "Blast Corps · Blast Corps Recompiled",
+    "Repository": "SlaveOfIDO/blastcorps-recomp",
+    "Platform": "Nintendo 64",
+    "AssetPattern": "^BlastCorpsRecompiled-[0-9.]+-Windows-RelWithDebInfo\\.zip$",
+    "PlayNames": [
+      "BlastCorpsRecompiled.exe"
+    ],
+    "ConfigNames": [
+      "BlastCorpsRecompiled.exe"
+    ],
+    "ArtworkTitle": "Blast Corps",
+    "ProjectOnly": false,
+    "ProjectType": "Recompilação",
+    "Kind": "Recompilação",
+    "PackageKind": "Zip",
+    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Jogar e Configurar abrem BlastCorpsRecompiled.exe; na primeira abertura, prepare seus próprios arquivos no port. N64Recomp com RT64: altas taxas de quadros, widescreen e ultrawide, mods. Requer sua ROM norte-americana."
+  },
+  {
+    "Id": "cbfd-recompiled",
+    "Name": "Conker's Bad Fur Day · Conker Recompiled",
+    "Repository": "sciaschi/CBFD-Recompiled",
+    "Platform": "Nintendo 64",
+    "AssetPattern": "^ConkerRecompiled-V[0-9.]+-Windows\\.zip$",
+    "PlayNames": [
+      "ConkerRecomp.exe"
+    ],
+    "ConfigNames": [
+      "ConkerRecomp.exe"
+    ],
+    "ArtworkTitle": "Conker's Bad Fur Day",
+    "ProjectOnly": false,
+    "ProjectType": "Recompilação",
+    "Kind": "Recompilação",
+    "PackageKind": "Zip",
+    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Jogar e Configurar abrem ConkerRecomp.exe; na primeira abertura, prepare seus próprios arquivos no port. N64Recomp com RT64. O pacote de mods do autor é separado. Requer sua própria ROM."
+  },
+  {
+    "Id": "mk64-recomp",
+    "Name": "Mario Kart 64 · Mario Kart 64 Recompiled",
+    "Repository": "sonicdcer/MarioKart64Recomp",
+    "Platform": "Nintendo 64",
+    "AssetPattern": "^MarioKart64Recompiled-v[0-9.]+-Windows-RelWithDebInfo\\.zip$",
+    "PlayNames": [
+      "MarioKart64Recompiled.exe"
+    ],
+    "ConfigNames": [
+      "MarioKart64Recompiled.exe"
+    ],
+    "ArtworkTitle": "Mario Kart 64",
+    "ProjectOnly": false,
+    "ProjectType": "Recompilação",
+    "Kind": "Recompilação",
+    "PackageKind": "Zip",
+    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Jogar e Configurar abrem MarioKart64Recompiled.exe; na primeira abertura, prepare seus próprios arquivos no port. N64Recomp com RT64: widescreen, altas taxas de quadros e mods. Requer sua própria ROM."
+  },
+  {
+    "Id": "birdman64",
+    "Name": "Pilotwings 64 · Birdman64",
+    "Repository": "NoahVl/Birdman64",
+    "Platform": "Nintendo 64",
+    "AssetPattern": "^Birdman64-windows-x64\\.zip$",
+    "PlayNames": [
+      "Birdman64.exe"
+    ],
+    "ConfigNames": [
+      "Birdman64.exe"
+    ],
+    "ArtworkTitle": "Pilotwings 64",
+    "ProjectOnly": false,
+    "ProjectType": "Recompilação",
+    "Kind": "Recompilação",
+    "PackageKind": "Zip",
+    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Jogar e Configurar abrem Birdman64.exe; na primeira abertura, prepare seus próprios arquivos no port. Recompilação de Pilotwings 64. Requer sua própria ROM."
+  },
+  {
+    "Id": "roadrash64",
+    "Name": "Road Rash 64 · Recompiled",
+    "Repository": "linkssy2/RoadRash64Recompiled",
+    "Platform": "Nintendo 64",
+    "AssetPattern": "^RoadRash64Recompiled-v[0-9.]+-Win64\\.zip$",
+    "PlayNames": [],
+    "ConfigNames": [],
+    "ArtworkTitle": "Road Rash 64",
+    "ProjectOnly": false,
+    "ProjectType": "Recompilação",
+    "Kind": "Instalação integrada",
+    "DiscoverExecutable": true,
+    "PackageKind": "Zip",
+    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Se houver mais de um aplicativo, escolha o principal e o de configuração na janela do NEXUS. N64Recomp com RT64. O mod opcional de texturas é um download separado. Requer sua própria ROM."
+  },
+  {
+    "Id": "waverace64",
+    "Name": "Wave Race 64 · Recomp",
+    "Repository": "danielgomesvieira2000/wave-race-64-recomp",
+    "Platform": "Nintendo 64",
+    "AssetPattern": "^WaveRace64Recomp-[0-9.]+-windows-x64\\.zip$",
+    "PlayNames": [
+      "WaveRace64Recomp.exe"
+    ],
+    "ConfigNames": [
+      "WaveRace64Recomp.exe"
+    ],
+    "ArtworkTitle": "Wave Race 64",
+    "ProjectOnly": false,
+    "ProjectType": "Recompilação",
+    "Kind": "Recompilação",
+    "PackageKind": "Zip",
+    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Jogar e Configurar abrem WaveRace64Recomp.exe; na primeira abertura, prepare seus próprios arquivos no port. N64Recomp com RT64. Requer sua própria ROM."
+  },
+  {
+    "Id": "body-harvest",
+    "Name": "Body Harvest · Adam's Ant Farm",
+    "Repository": "LunarLaurus/adams-ant-farm-recomp",
+    "Platform": "Nintendo 64",
+    "AssetPattern": "^adams-ant-farm-windows-x86_64-v[0-9.]+\\.zip$",
+    "PlayNames": [],
+    "ConfigNames": [],
+    "ArtworkTitle": "Body Harvest",
+    "ProjectOnly": false,
+    "ProjectType": "Recompilação",
+    "Kind": "Instalação integrada",
+    "DiscoverExecutable": true,
+    "PackageKind": "Zip",
+    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Se houver mais de um aplicativo, escolha o principal e o de configuração na janela do NEXUS. Feito a partir da decompilação com N64Recomp; o autor relata jogo completo com áudio. Widescreen e pacotes de texturas. Beta. Requer sua própria ROM."
+  },
+  {
+    "Id": "ogre-battle-64",
+    "Name": "Ogre Battle 64 · Recomp",
+    "Repository": "lfarroco/ogre-battle-64-recomp",
+    "Platform": "Nintendo 64",
+    "AssetPattern": "^ogre-battle-64-recomp-windows-x86_64\\.zip$",
+    "PlayNames": [
+      "ogrebattle64.exe"
+    ],
+    "ConfigNames": [
+      "ogrebattle64.exe"
+    ],
+    "ArtworkTitle": "Ogre Battle 64: Person of Lordly Caliber",
+    "ProjectOnly": false,
+    "ProjectType": "Recompilação",
+    "Kind": "Recompilação",
+    "PackageKind": "Zip",
+    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Jogar e Configurar abrem ogrebattle64.exe; na primeira abertura, prepare seus próprios arquivos no port. Recompilação de Ogre Battle 64. Beta. Requer sua própria ROM."
+  },
+  {
+    "Id": "vpw2-recomp",
+    "Name": "Virtual Pro Wrestling 2 · VPW2 Recompiled",
+    "Repository": "jessetbh/VPW2Recomp",
+    "Platform": "Nintendo 64",
+    "AssetPattern": "^Vpw2Recompiled-v[0-9.]+-Windows\\.zip$",
+    "PlayNames": [
+      "Vpw2Recompiled.exe"
+    ],
+    "ConfigNames": [
+      "Vpw2Recompiled.exe"
+    ],
+    "ArtworkTitle": "Virtual Pro Wrestling 2",
+    "ProjectOnly": false,
+    "ProjectType": "Recompilação",
+    "AllowPrerelease": true,
+    "Kind": "Recompilação",
+    "PackageKind": "Zip",
+    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Jogar e Configurar abrem Vpw2Recompiled.exe; na primeira abertura, prepare seus próprios arquivos no port. Build de teste (pré-release). Requer sua própria ROM japonesa."
+  },
+  {
+    "Id": "twisted-metal-1234",
+    "Name": "Twisted Metal 1–4 · Recomp",
+    "Repository": "jcoker85/TwistedMetal1234Recomp",
+    "Platform": "PlayStation",
+    "AssetPattern": "^TwistedMetal1234Recomp-[0-9.]+\\.zip$",
+    "PlayNames": [
+      "TwistedMetal1234Recomp.exe"
+    ],
+    "ConfigNames": [
+      "TwistedMetal1234Recomp.exe"
+    ],
+    "ArtworkTitle": "Twisted Metal",
+    "ProjectOnly": false,
+    "ProjectType": "Recompilação",
+    "Kind": "Recompilação",
+    "PackageKind": "Zip",
+    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Jogar e Configurar abrem TwistedMetal1234Recomp.exe; na primeira abertura, prepare seus próprios arquivos no port. Os quatro Twisted Metal de PS1 num launcher, com widescreen e 60 fps no 1 e no 2. Requer seus próprios discos USA."
+  },
+  {
+    "Id": "twisted-metal-4",
+    "Name": "Twisted Metal 4 · Recomp",
+    "Repository": "TechnicallyComputers/TwistedMetal4Recomp",
+    "Platform": "PlayStation",
+    "AssetPattern": "^twistedmetal4-[0-9.]+-windows-x64\\.zip$",
+    "PlayNames": [
+      "TwistedMetal4_Recompiled.exe"
+    ],
+    "ConfigNames": [
+      "TwistedMetal4_Recompiled.exe"
+    ],
+    "ArtworkTitle": "Twisted Metal 4",
+    "ProjectOnly": false,
+    "ProjectType": "Recompilação",
+    "Kind": "Recompilação",
+    "PackageKind": "Zip",
+    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Jogar e Configurar abrem TwistedMetal4_Recompiled.exe; na primeira abertura, prepare seus próprios arquivos no port. Port psxrecomp de Twisted Metal 4. Requer seu próprio disco."
+  },
+  {
+    "Id": "dw2-pc",
+    "Name": "Digimon World 2 · DW2-PC",
+    "Repository": "Wyrelade/DW2-PC",
+    "Platform": "PlayStation",
+    "AssetPattern": "^DW2-PC-windows-x64\\.zip$",
+    "PlayNames": [
+      "dw2.exe"
+    ],
+    "ConfigNames": [
+      "dw2.exe"
+    ],
+    "ArtworkTitle": "Digimon World 2",
+    "ProjectOnly": false,
+    "ProjectType": "Recompilação",
+    "Kind": "Recompilação",
+    "PackageKind": "Zip",
+    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Jogar e Configurar abrem dw2.exe; na primeira abertura, prepare seus próprios arquivos no port. Port nativo de Digimon World 2. Beta. Requer seu próprio disco."
+  },
+  {
+    "Id": "rage-racer",
+    "Name": "Rage Racer · Rage Racer PC",
+    "Repository": "khasinski/rage-racer-pc",
+    "Platform": "PlayStation",
+    "AssetPattern": "^Rage-Racer-[0-9].*-windows-x86_64\\.zip$",
+    "PlayNames": [
+      "Rage-Racer.exe"
+    ],
+    "ConfigNames": [
+      "Rage-Racer.exe"
+    ],
+    "ArtworkTitle": "Rage Racer",
+    "ProjectOnly": false,
+    "ProjectType": "Recompilação",
+    "Kind": "Recompilação",
+    "PackageKind": "Zip",
+    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Jogar e Configurar abrem Rage-Racer.exe; na primeira abertura, prepare seus próprios arquivos no port. Port nativo em alpha; o editor separado do autor não é instalado. Requer seu próprio disco."
+  },
+  {
+    "Id": "vigilante-8",
+    "Name": "Vigilante 8 + 2nd Offense · Recomp",
+    "Repository": "GTTeancum/Vigilante-8-recomp",
+    "Platform": "PlayStation",
+    "AssetPattern": "^Vigilante8Classic-v[0-9.]+-win-x64\\.zip$",
+    "PlayNames": [
+      "Vigilante8PC.exe"
+    ],
+    "ConfigNames": [
+      "Vigilante8PC.exe"
+    ],
+    "ArtworkTitle": "Vigilante 8",
+    "ProjectOnly": false,
+    "ProjectType": "Recompilação",
+    "Kind": "Recompilação",
+    "PackageKind": "Zip",
+    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Jogar e Configurar abrem Vigilante8PC.exe; na primeira abertura, prepare seus próprios arquivos no port. Os dois Vigilante 8 de PS1 numa recompilação. Beta. Requer seus próprios discos."
+  },
+  {
+    "Id": "burnout-dominator",
+    "Name": "Burnout Dominator · Reversed",
+    "Repository": "literalynn/BurnoutDominatorReversed",
+    "Platform": "PlayStation 2",
+    "AssetPattern": "",
+    "PlayNames": [],
+    "ConfigNames": [],
+    "ArtworkTitle": "Burnout Dominator",
+    "ProjectOnly": true,
+    "Kind": "Em desenvolvimento",
+    "ProjectType": "Recompilação",
+    "Notes": "Ainda sem Release Windows: o projeto é compilado a partir do código-fonte com seu próprio disco."
+  },
+  {
+    "Id": "nba-street-v3",
+    "Name": "NBA Street V3 · Street Recomp",
+    "Repository": "recomp-code/street-recomp-v3",
+    "Platform": "PlayStation 2",
+    "AssetPattern": "",
+    "PlayNames": [],
+    "ConfigNames": [],
+    "ArtworkTitle": "NBA Street V3",
+    "ProjectOnly": true,
+    "ProjectType": "Recompilação",
+    "Kind": "Preparação manual",
+    "Notes": "A Release Windows traz só os executores internos (ps2EntryRunner e pcsx2-gsrunner), sem um aplicativo principal identificável. Baixe pelo projeto e siga o README; depois adicione o executável na biblioteca. Requer seu próprio disco."
+  },
+  {
+    "Id": "openrac",
+    "Name": "Ratchet & Clank · OpenRAC",
+    "Repository": "OpenRAC/OpenRAC",
+    "Platform": "PlayStation 2",
+    "AssetPattern": "^OpenRAC\\.Launcher_[0-9.]+_x64-setup\\.exe$",
+    "PlayNames": [],
+    "ConfigNames": [],
+    "ArtworkTitle": "Ratchet & Clank (2002 video game)",
+    "ProjectOnly": false,
+    "ProjectType": "Decompilação",
+    "Kind": "Instalação integrada",
+    "DiscoverExecutable": true,
+    "PackageKind": "Installer",
+    "Notes": "O NEXUS baixa e verifica o instalador oficial, abre o assistente do autor e cadastra o aplicativo que você selecionar ao concluir. Atualizações também usam esse assistente. Jogos de PS2 decompilados e reconstruídos: Ratchet & Clank jogável, os seguintes em andamento. O launcher do autor instala e atualiza os jogos a partir dos seus discos."
+  },
+  {
+    "Id": "fukami",
+    "Name": "Ridge Racer V · Fukami",
+    "Repository": "danisandoval/fukami",
+    "Platform": "PlayStation 2",
+    "AssetPattern": "^Fukami-[0-9.]+-windows-x86_64\\.zip$",
+    "PlayNames": [
+      "Fukami.exe"
+    ],
+    "ConfigNames": [
+      "Fukami.exe"
+    ],
+    "ArtworkTitle": "Ridge Racer V",
+    "ProjectOnly": false,
+    "ProjectType": "Recompilação",
+    "Kind": "Recompilação",
+    "PackageKind": "Zip",
+    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Jogar e Configurar abrem Fukami.exe; na primeira abertura, prepare seus próprios arquivos no port. Port nativo de Ridge Racer V. Requer seu próprio disco."
+  },
+  {
+    "Id": "ace-combat-5",
+    "Name": "Ace Combat 5: The Unsung War · Static Recompilation",
+    "Repository": "sal063/Ace-Combat-5-Static-recompilation",
+    "Platform": "PlayStation 2",
+    "AssetPattern": "",
+    "PlayNames": [],
+    "ConfigNames": [],
+    "ArtworkTitle": "Ace Combat 5: The Unsung War",
+    "ProjectOnly": true,
+    "Kind": "Em desenvolvimento",
+    "ProjectType": "Recompilação",
+    "Notes": "A Release Windows é distribuída em RAR. Este formato ainda precisa de integração; os perfis ZIP/EXE já são instalados pelo NEXUS."
+  },
+  {
+    "Id": "gow-ps2-native",
+    "Name": "God of War (PS2) · Native Port",
+    "Repository": "Waffle565/God-Of-War-Native-Port",
+    "Platform": "PlayStation 2",
+    "AssetPattern": "",
+    "PlayNames": [],
+    "ConfigNames": [],
+    "ArtworkTitle": "God of War (2005 video game)",
+    "ProjectOnly": true,
+    "Kind": "Em desenvolvimento",
+    "ProjectType": "Recompilação",
+    "Notes": "Ainda sem Release: compilado a partir do código-fonte com seu próprio disco."
+  },
+  {
+    "Id": "gow-pc-port",
+    "Name": "God of War (PS2) · GoW PC Port",
+    "Repository": "danielalves96/gow-pc-port",
+    "Platform": "PlayStation 2",
+    "AssetPattern": "^God-Of-War-PC-Launcher_[0-9.]+_x64-portable\\.zip$",
+    "PlayNames": [
+      "God Of War - PC Launcher.exe"
+    ],
+    "ConfigNames": [
+      "God Of War - PC Launcher.exe"
+    ],
+    "ArtworkTitle": "God of War (2005 video game)",
+    "ProjectOnly": false,
+    "ProjectType": "Recompilação",
+    "Kind": "Recompilação",
+    "PackageKind": "Zip",
+    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Jogar e Configurar abrem God Of War - PC Launcher.exe; na primeira abertura, prepare seus próprios arquivos no port. Launcher portátil que prepara o port a partir do seu disco."
+  },
+  {
+    "Id": "tobiichi-port",
+    "Name": "God of War (PS2) · Tobiichi Port",
+    "Repository": "YYOzcan/Tobiichi-Port",
+    "Platform": "PlayStation 2",
+    "AssetPattern": "",
+    "PlayNames": [],
+    "ConfigNames": [],
+    "ArtworkTitle": "God of War (2005 video game)",
+    "ProjectOnly": true,
+    "Kind": "Em desenvolvimento",
+    "ProjectType": "Recompilação",
+    "Notes": "Ainda sem Release: compilado a partir do código-fonte com seu próprio disco."
+  },
+  {
+    "Id": "haunting-ground",
+    "Name": "Haunting Ground · Recomp Project",
+    "Repository": "N900x4/HauntingGround-Recomp-Project",
+    "Platform": "PlayStation 2",
+    "AssetPattern": "^HauntingGround-Recomp-[0-9.]+-win64\\.zip$",
+    "PlayNames": [
+      "HauntingGround.exe"
+    ],
+    "ConfigNames": [
+      "HauntingGround.exe"
+    ],
+    "ArtworkTitle": "Haunting Ground",
+    "ProjectOnly": false,
+    "ProjectType": "Recompilação",
+    "Kind": "Recompilação",
+    "PackageKind": "Zip",
+    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Jogar e Configurar abrem HauntingGround.exe; na primeira abertura, prepare seus próprios arquivos no port. Recompilação PS2 em estágio inicial. Requer seu próprio disco."
+  },
+  {
+    "Id": "road-trip",
+    "Name": "Road Trip (Choro Q HG 2) · Recomp",
+    "Repository": "silentsudin/RoadTripAdventure-recomp",
+    "Platform": "PlayStation 2",
+    "AssetPattern": "^RoadTripRecomp-[0-9.]+-Windows-x64\\.zip$",
+    "PlayNames": [
+      "RoadTrip.exe"
+    ],
+    "ConfigNames": [
+      "RoadTrip.exe"
+    ],
+    "ArtworkTitle": "Road Trip Adventure",
+    "ProjectOnly": false,
+    "ProjectType": "Recompilação",
+    "Kind": "Recompilação",
+    "PackageKind": "Zip",
+    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Jogar e Configurar abrem RoadTrip.exe; na primeira abertura, prepare seus próprios arquivos no port. Recompilação PS2. O add-on DLSS/XeSS e a edição portátil do autor não são instalados por este perfil. Requer seu próprio disco."
+  },
+  {
+    "Id": "tmb-recomp",
+    "Name": "Twisted Metal: Black · TMB Recomp",
+    "Repository": "TheBozos/TMB_Recomp",
+    "Platform": "PlayStation 2",
+    "AssetPattern": "^TMB_Recomp-[0-9.]+\\.zip$",
+    "PlayNames": [
+      "TMB Launcher.exe"
+    ],
+    "ConfigNames": [
+      "TMB Launcher.exe"
+    ],
+    "ArtworkTitle": "Twisted Metal: Black",
+    "ProjectOnly": false,
+    "ProjectType": "Recompilação",
+    "Kind": "Recompilação",
+    "PackageKind": "Zip",
+    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Jogar e Configurar abrem TMB Launcher.exe; na primeira abertura, prepare seus próprios arquivos no port. Recompilação PS2 de Twisted Metal: Black. Requer seu próprio disco."
+  },
+  {
+    "Id": "wotm-recomp",
+    "Name": "War of the Monsters · Recomp",
+    "Repository": "yanm1103/War_of_the_Monsters_recomp",
+    "Platform": "PlayStation 2",
+    "AssetPattern": "^WotM-v[0-9.]+-win64\\.zip$",
+    "PlayNames": [],
+    "ConfigNames": [],
+    "ArtworkTitle": "War of the Monsters",
+    "ProjectOnly": false,
+    "ProjectType": "Recompilação",
+    "Kind": "Instalação integrada",
+    "DiscoverExecutable": true,
+    "PackageKind": "Zip",
+    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Se houver mais de um aplicativo, escolha o principal e o de configuração na janela do NEXUS. Recompilação PS2. Beta. Requer seu próprio disco."
+  },
+  {
+    "Id": "zoe-recompiled",
+    "Name": "Zone of the Enders · ZOE Recompiled",
+    "Repository": "Yaz-Myst/ZOE-Recompiled",
+    "Platform": "PlayStation 2",
+    "AssetPattern": "^ZOE-Recompiled-v[0-9.]+-win64\\.zip$",
+    "PlayNames": [
+      "ZOE-Recompiled.exe"
+    ],
+    "ConfigNames": [
+      "ZOE-Recompiled.exe"
+    ],
+    "ArtworkTitle": "Zone of the Enders",
+    "ProjectOnly": false,
+    "ProjectType": "Recompilação",
+    "Kind": "Recompilação",
+    "PackageKind": "Zip",
+    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Jogar e Configurar abrem ZOE-Recompiled.exe; na primeira abertura, prepare seus próprios arquivos no port. Recompilação PS2. Requer seu próprio disco."
+  },
+  {
+    "Id": "007-frwl",
+    "Name": "007: From Russia with Love · XBERecomp",
+    "Repository": "TGP482/007FRWL-XBERecomp",
+    "Platform": "Xbox",
+    "AssetPattern": "^007FRWL-XBERecomp\\.zip$",
+    "PlayNames": [
+      "007FRWL.exe"
+    ],
+    "ConfigNames": [
+      "007FRWL.exe"
+    ],
+    "ArtworkTitle": "James Bond 007: From Russia with Love",
+    "ProjectOnly": false,
+    "ProjectType": "Recompilação",
+    "Kind": "Recompilação",
+    "PackageKind": "Zip",
+    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Jogar e Configurar abrem 007FRWL.exe; na primeira abertura, prepare seus próprios arquivos no port. Versão Xbox pelo Xbox XBE Recomp, com opções de vídeo e mouse/teclado. Requer sua cópia USA ou Europa."
+  },
+  {
+    "Id": "xrevive",
+    "Name": "Midnight Club 3: DUB Edition Remix · xrevive",
+    "Repository": "Teraflopping/xrevive",
+    "Platform": "Xbox",
+    "AssetPattern": "^xrevive_[0-9.]+_x64-setup\\.exe$",
+    "PlayNames": [],
+    "ConfigNames": [],
+    "ArtworkTitle": "Midnight Club 3: DUB Edition",
+    "ProjectOnly": false,
+    "ProjectType": "Recompilação",
+    "Kind": "Instalação integrada",
+    "DiscoverExecutable": true,
+    "PackageKind": "Installer",
+    "Notes": "O NEXUS baixa e verifica o instalador oficial, abre o assistente do autor e cadastra o aplicativo que você selecionar ao concluir. Atualizações também usam esse assistente. Launcher de desktop para jogos Xrecomp com serviços online. O NEXUS usa o último Setup Windows publicado; as Releases mais recentes do autor podem ser só Android ou Linux."
+  },
+  {
+    "Id": "nightfire-recomp",
+    "Name": "007: NightFire · NightFire Recomp",
+    "Repository": "hk21x/nightfire-recomp",
+    "Platform": "Xbox",
+    "AssetPattern": "^NightFireLauncher\\.exe$",
+    "PlayNames": [
+      "NightFireLauncher.exe"
+    ],
+    "ConfigNames": [
+      "NightFireLauncher.exe"
+    ],
+    "ArtworkTitle": "James Bond 007: Nightfire",
+    "ProjectOnly": false,
+    "ProjectType": "Recompilação",
+    "Kind": "Recompilação",
+    "PackageKind": "Executable",
+    "Notes": "O NEXUS baixa o executável portátil oficial. Jogar e Configurar abrem NightFireLauncher.exe. Launcher portátil do mesmo autor do EoN Recomp: importa sua ISO ou pasta do Xbox, compila e inicia. A primeira compilação baixa ferramentas e pode demorar."
+  },
+  {
+    "Id": "cod2-bro",
+    "Name": "Call of Duty 2: Big Red One · Native Loader",
+    "Repository": "SmokeDoggy044/CoD2-BRO-Native-Loader",
+    "Platform": "Xbox",
+    "AssetPattern": "^cod_bro-[0-9.]+-windows\\.zip$",
+    "PlayNames": [],
+    "ConfigNames": [],
+    "ArtworkTitle": "Call of Duty 2: Big Red One",
+    "ProjectOnly": false,
+    "ProjectType": "Recompilação",
+    "Kind": "Instalação integrada",
+    "DiscoverExecutable": true,
+    "PackageKind": "Zip",
+    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Se houver mais de um aplicativo, escolha o principal e o de configuração na janela do NEXUS. Loader que roda o código x86 do jogo com kernel reescrito e camada D3D8→D3D9; missões 1–5 testadas, 60 fps e mouse/teclado. Protótipo. Requer seu próprio disco."
+  },
+  {
+    "Id": "conker-reloaded",
+    "Name": "Conker: Live & Reloaded · Recomped and Reloaded",
+    "Repository": "Mabec-games/Conker-Recomped-and-Reloaded",
+    "Platform": "Xbox",
+    "AssetPattern": "^ConkerRecompedReloaded-windows-x64\\.zip$",
+    "PlayNames": [],
+    "ConfigNames": [],
+    "ArtworkTitle": "Conker: Live & Reloaded",
+    "ProjectOnly": false,
+    "ProjectType": "Recompilação",
+    "Kind": "Instalação integrada",
+    "DiscoverExecutable": true,
+    "PackageKind": "Zip",
+    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Se houver mais de um aplicativo, escolha o principal e o de configuração na janela do NEXUS. Recompilação da versão Xbox. Requer seu próprio disco."
+  },
+  {
+    "Id": "arizona-vamp-clergyman",
+    "Name": "Darkwatch · Arizona Vamp Recomp",
+    "Repository": "Clergyman0013/arizona-vamp-recomp",
+    "Platform": "Xbox",
+    "AssetPattern": "^ArizonaVampRecomp-v[0-9.]+-windows-x64\\.zip$",
+    "PlayNames": [
+      "Darkwatch.exe"
+    ],
+    "ConfigNames": [
+      "Darkwatch.exe"
+    ],
+    "ArtworkTitle": "Darkwatch",
+    "ProjectOnly": false,
+    "ProjectType": "Recompilação",
+    "AllowPrerelease": true,
+    "Kind": "Recompilação",
+    "PackageKind": "Zip",
+    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Jogar e Configurar abrem Darkwatch.exe; na primeira abertura, prepare seus próprios arquivos no port. Recompilação da versão Xbox, publicada como pré-release. Requer seu próprio disco."
+  },
+  {
+    "Id": "mvp-baseball-2005",
+    "Name": "MVP Baseball 2005 · XBERecomp",
+    "Repository": "maddog847/MVP-Baseball-2005-XBERecomp",
+    "Platform": "Xbox",
+    "AssetPattern": "^MVP05-Public-Beta-[0-9]+\\.zip$",
+    "PlayNames": [
+      "MVP05.exe"
+    ],
+    "ConfigNames": [
+      "MVP05.exe"
+    ],
+    "ArtworkTitle": "MVP Baseball 2005",
+    "ProjectOnly": false,
+    "ProjectType": "Recompilação",
+    "AllowPrerelease": true,
+    "Kind": "Recompilação",
+    "PackageKind": "Zip",
+    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Jogar e Configurar abrem MVP05.exe; na primeira abertura, prepare seus próprios arquivos no port. Beta pública da recompilação Xbox. Requer seu próprio disco."
+  },
+  {
+    "Id": "the-warriors-xbe",
+    "Name": "The Warriors · XBERecomp",
+    "Repository": "Antriksh1984/TheWarriors-XBERecomp",
+    "Platform": "Xbox",
+    "AssetPattern": "^Warriors\\.zip$",
+    "PlayNames": [
+      "Warriors.exe"
+    ],
+    "ConfigNames": [
+      "Warriors.exe"
+    ],
+    "ArtworkTitle": "The Warriors (video game)",
+    "ProjectOnly": false,
+    "ProjectType": "Recompilação",
+    "Kind": "Recompilação",
+    "PackageKind": "Zip",
+    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Jogar e Configurar abrem Warriors.exe; na primeira abertura, prepare seus próprios arquivos no port. Recompilação Xbox em alpha. Requer seu próprio disco."
+  },
+  {
+    "Id": "ringout",
+    "Name": "Soulcalibur II · RingOut",
+    "Repository": "jackpoison-prog/RingOut",
+    "Platform": "GameCube",
+    "AssetPattern": "^RingOut-[0-9.]+-windows-x64\\.zip$",
+    "PlayNames": [
+      "RingOut.exe"
+    ],
+    "ConfigNames": [
+      "RingOut.exe"
+    ],
+    "ArtworkTitle": "Soulcalibur II",
+    "ProjectOnly": false,
+    "ProjectType": "Recompilação",
+    "Kind": "Recompilação",
+    "PackageKind": "Zip",
+    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Jogar e Configurar abrem RingOut.exe; na primeira abertura, prepare seus próprios arquivos no port. Port da versão GameCube. O NEXUS usa o ZIP portátil; o Setup e o pacote Steam Deck do autor são alternativas. Requer seu próprio disco."
+  },
+  {
+    "Id": "bluewake",
+    "Name": "The Legend of Zelda: The Wind Waker · BlueWake",
+    "Repository": "chrissotraidis/bluewake",
+    "Platform": "GameCube",
+    "AssetPattern": "^BlueWake-v[0-9.]+-windows-x64\\.zip$",
+    "PlayNames": [
+      "BlueWake.exe"
+    ],
+    "ConfigNames": [
+      "BlueWake.exe"
+    ],
+    "ArtworkTitle": "The Legend of Zelda: The Wind Waker",
+    "ProjectOnly": false,
+    "ProjectType": "Recompilação",
+    "Kind": "Recompilação",
+    "PackageKind": "Zip",
+    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Jogar e Configurar abrem BlueWake.exe; na primeira abertura, prepare seus próprios arquivos no port. Port nativo de The Wind Waker de GameCube. Beta. Requer seu próprio disco."
+  },
+  {
+    "Id": "lcs-native",
+    "Name": "GTA: Liberty City Stories · LCS Native",
+    "Repository": "elmasas/lcs-recomp",
+    "Platform": "PSP",
+    "AssetPattern": "^LCSNative-v[0-9.]+\\.zip$",
+    "PlayNames": [
+      "LCSNative.exe"
+    ],
+    "ConfigNames": [
+      "LCSNative.exe"
+    ],
+    "ArtworkTitle": "Grand Theft Auto: Liberty City Stories",
+    "ProjectOnly": false,
+    "ProjectType": "Recompilação",
+    "Kind": "Recompilação",
+    "PackageKind": "Zip",
+    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Jogar e Configurar abrem LCSNative.exe; na primeira abertura, prepare seus próprios arquivos no port. Recompilação da versão PSP. Requer seu próprio UMD/ISO."
+  },
+  {
+    "Id": "gow-psp",
+    "Name": "God of War: Chains of Olympus / Ghost of Sparta · PSP Recomp",
+    "Repository": "DrummingBird1/gow-psp-recomp",
+    "Platform": "PSP",
+    "AssetPattern": "^GoW_PSP_Launcher-v[0-9.]+\\.zip$",
+    "PlayNames": [
+      "GoWLauncher.exe"
+    ],
+    "ConfigNames": [
+      "GoWLauncher.exe"
+    ],
+    "ArtworkTitle": "God of War: Chains of Olympus",
+    "ProjectOnly": false,
+    "ProjectType": "Recompilação",
+    "Kind": "Recompilação",
+    "PackageKind": "Zip",
+    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Jogar e Configurar abrem GoWLauncher.exe; na primeira abertura, prepare seus próprios arquivos no port. Launcher para os dois God of War de PSP. Beta. Requer suas próprias ISOs."
+  },
+  {
+    "Id": "mhforever",
+    "Name": "Monster Hunter Freedom Unite · MHForever",
+    "Repository": "Mango77x/MHForever",
+    "Platform": "PSP",
+    "AssetPattern": "^MHForever-[0-9.]+-windows-x64\\.zip$",
+    "PlayNames": [],
+    "ConfigNames": [],
+    "ArtworkTitle": "Monster Hunter Freedom Unite",
+    "ProjectOnly": false,
+    "ProjectType": "Recompilação",
+    "Kind": "Instalação integrada",
+    "DiscoverExecutable": true,
+    "PackageKind": "Zip",
+    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Se houver mais de um aplicativo, escolha o principal e o de configuração na janela do NEXUS. Ports nativos dos Monster Hunter clássicos por recompilação estática, começando por Freedom Unite. Requer sua própria cópia."
+  },
+  {
+    "Id": "flipendo",
+    "Name": "Harry Potter and the Philosopher's Stone (PC) · Flipendo",
+    "Repository": "kroplabeskidu/flipendo",
+    "Platform": "Outras",
+    "AssetPattern": "^flipendo-v[0-9.]+-windows\\.zip$",
+    "PlayNames": [
+      "SurrealEngine.exe"
+    ],
+    "ConfigNames": [
+      "SurrealEngine.exe"
+    ],
+    "ArtworkTitle": "Harry Potter and the Philosopher's Stone (video game)",
+    "ProjectOnly": false,
+    "ProjectType": "Reimplementação",
+    "Kind": "Recompilação",
+    "PackageKind": "Zip",
+    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Jogar e Configurar abrem SurrealEngine.exe; na primeira abertura, prepare seus próprios arquivos no port. Engine aberta para os dois primeiros Harry Potter de PC: Pedra Filosofal completo, Câmara Secreta em andamento. Requer os arquivos do jogo original."
+  },
+  {
+    "Id": "openmohaa",
+    "Name": "Medal of Honor: Allied Assault · OpenMoHAA",
+    "Repository": "openmoh/openmohaa",
+    "Platform": "Outras",
+    "AssetPattern": "^openmohaa-v[0-9.]+-windows-x64\\.zip$",
+    "PlayNames": [],
+    "ConfigNames": [],
+    "ArtworkTitle": "Medal of Honor: Allied Assault",
+    "ProjectOnly": false,
+    "ProjectType": "Reimplementação",
+    "Kind": "Instalação integrada",
+    "DiscoverExecutable": true,
+    "PackageKind": "Zip",
+    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Se houver mais de um aplicativo, escolha o principal e o de configuração na janela do NEXUS. Engine aberta (base ioquake3) para Allied Assault e expansões, campanha e multiplayer com bots. Requer os arquivos do jogo original."
+  },
+  {
+    "Id": "gen2recomped",
+    "Name": "Pokémon Gold, Silver e Crystal · Gen2Recomped",
+    "Repository": "UNDERdecoded/Gen2Recomped",
+    "Platform": "Game Boy",
+    "AssetPattern": "^Gen2Recomped-[0-9.]+-windows\\.zip$",
+    "PlayNames": [
+      "Gen2Recomped.exe"
+    ],
+    "ConfigNames": [
+      "Gen2Recomped.exe"
+    ],
+    "ArtworkTitle": "Pokémon Gold and Silver",
+    "ProjectOnly": false,
+    "ProjectType": "Recompilação",
+    "Kind": "Recompilação",
+    "PackageKind": "Zip",
+    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Jogar e Configurar abrem Gen2Recomped.exe; na primeira abertura, prepare seus próprios arquivos no port. Recompilação dos Pokémon de Game Boy Color. Requer suas próprias ROMs."
+  },
+  {
+    "Id": "gen1recomp",
+    "Name": "Pokémon Red, Blue e Yellow · Gen1Recomp",
+    "Repository": "bryanthaboi/gen1recomp",
+    "Platform": "Game Boy",
+    "AssetPattern": "^gen1recomp-[0-9.]+-windows\\.zip$",
+    "PlayNames": [
+      "gen1recomp.exe"
+    ],
+    "ConfigNames": [
+      "gen1recomp.exe"
+    ],
+    "ArtworkTitle": "Pokémon Red and Blue",
+    "ProjectOnly": false,
+    "ProjectType": "Recompilação",
+    "Kind": "Recompilação",
+    "PackageKind": "Zip",
+    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Jogar e Configurar abrem gen1recomp.exe; na primeira abertura, prepare seus próprios arquivos no port. Recompilação dos Pokémon de Game Boy, com suporte a mods. Requer suas próprias ROMs."
+  },
+  {
+    "Id": "re1-pc-decomp",
+    "Name": "Resident Evil · PC Decomp",
+    "Repository": "ecruells/resident-evil-pc-decomp",
+    "Platform": "PlayStation",
+    "AssetPattern": "^residentevil-[0-9.]+-windows-x86\\.zip$",
+    "PlayNames": [
+      "residentevil.exe"
+    ],
+    "ConfigNames": [
+      "residentevil.exe"
+    ],
+    "ArtworkTitle": "Resident Evil (1996 video game)",
+    "ProjectOnly": false,
+    "ProjectType": "Decompilação",
+    "Kind": "Recompilação",
+    "PackageKind": "Zip",
+    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Jogar e Configurar abrem residentevil.exe; na primeira abertura, prepare seus próprios arquivos no port. Port a partir da decompilação. O migrador de arquivos do autor é um download separado. Requer seus próprios arquivos do jogo."
+  },
+  {
+    "Id": "egg-of-time",
+    "Name": "Chrono Trigger (DS) · Egg of Time",
+    "Repository": "power-pudu/egg-of-time",
+    "Platform": "Nintendo DS",
+    "AssetPattern": "^EggOfTime-v[0-9.]+-windows-x64\\.zip$",
+    "PlayNames": [
+      "Egg of Time.exe"
+    ],
+    "ConfigNames": [
+      "Egg of Time.exe"
+    ],
+    "ArtworkTitle": "Chrono Trigger",
+    "ProjectOnly": false,
+    "ProjectType": "Recompilação",
+    "Kind": "Recompilação",
+    "PackageKind": "Zip",
+    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Jogar e Configurar abrem Egg of Time.exe; na primeira abertura, prepare seus próprios arquivos no port. Versão DS recompilada para C: widescreen, altas resoluções e taxas de quadros, mods. Monta-se no primeiro início a partir da sua ROM USA."
+  },
+  {
+    "Id": "daytona-recomp",
+    "Name": "Daytona USA (arcade) · Recomp",
+    "Repository": "alphanu1/daytona-arcade-recomp",
+    "Platform": "Outras",
+    "AssetPattern": "",
+    "PlayNames": [],
+    "ConfigNames": [],
+    "ArtworkTitle": "Daytona USA (video game)",
+    "ProjectOnly": true,
+    "Kind": "Em desenvolvimento",
+    "ProjectType": "Recompilação",
+    "Notes": "Recompilação do arcade Sega Model 2, ainda sem Release Windows."
+  },
+  {
+    "Id": "mph-recomp",
+    "Name": "Metroid Prime Hunters · Recomp",
+    "Repository": "mstan/MetroidPrimeHuntersRecomp",
+    "Platform": "Nintendo DS",
+    "AssetPattern": "^MetroidPrimeHuntersRecomp-windows-x64-v[0-9.]+\\.zip$",
+    "PlayNames": [],
+    "ConfigNames": [],
+    "ArtworkTitle": "Metroid Prime: Hunters",
+    "ProjectOnly": false,
+    "ProjectType": "Recompilação",
+    "Kind": "Instalação integrada",
+    "DiscoverExecutable": true,
+    "PackageKind": "Zip",
+    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Se houver mais de um aplicativo, escolha o principal e o de configuração na janela do NEXUS. Recompilação da versão DS em alpha. Requer sua própria ROM."
+  },
+  {
+    "Id": "cps2recomp",
+    "Name": "CPS-2 Recomp (Street Fighter Alpha 2, Vampire Savior…)",
+    "Repository": "tmcleroy/cps2recomp",
+    "Platform": "Outras",
+    "AssetPattern": "^CPS2Recomp-windows-x64\\.zip$",
+    "PlayNames": [],
+    "ConfigNames": [],
+    "ArtworkTitle": "Street Fighter Alpha 2",
+    "ProjectOnly": false,
+    "ProjectType": "Recompilação",
+    "Kind": "Instalação integrada",
+    "DiscoverExecutable": true,
+    "PackageKind": "Zip",
+    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Se houver mais de um aplicativo, escolha o principal e o de configuração na janela do NEXUS. Recompilação de jogos do arcade Capcom CPS-2. Requer suas próprias ROMs."
+  },
+  {
+    "Id": "super-metroid-recomp",
+    "Name": "Super Metroid · Recomp",
+    "Repository": "mstan/SuperMetroidRecomp",
+    "Platform": "Super Nintendo",
+    "AssetPattern": "^supermetroid-[0-9.]+-windows-x64\\.zip$",
+    "PlayNames": [
+      "SuperMetroidSNESRecomp.exe"
+    ],
+    "ConfigNames": [
+      "SuperMetroidSNESRecomp.exe"
+    ],
+    "ArtworkTitle": "Super Metroid",
+    "ProjectOnly": false,
+    "ProjectType": "Recompilação",
+    "Kind": "Recompilação",
+    "PackageKind": "Zip",
+    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Jogar e Configurar abrem SuperMetroidSNESRecomp.exe; na primeira abertura, prepare seus próprios arquivos no port. Recompilação da versão SNES. Beta. Requer sua própria ROM."
+  },
+  {
+    "Id": "alttp-snes-recomp",
+    "Name": "The Legend of Zelda: A Link to the Past · SNES Recomp",
+    "Repository": "mstan/ZeldaAlttPSNESRecomp",
+    "Platform": "Super Nintendo",
+    "AssetPattern": "^ZeldaALttPSNESRecomp-windows-x64-v[0-9.]+\\.zip$",
+    "PlayNames": [
+      "ZeldaALttPSNESRecomp.exe"
+    ],
+    "ConfigNames": [
+      "ZeldaALttPSNESRecomp.exe"
+    ],
+    "ArtworkTitle": "The Legend of Zelda: A Link to the Past",
+    "ProjectOnly": false,
+    "ProjectType": "Recompilação",
+    "Kind": "Recompilação",
+    "PackageKind": "Zip",
+    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Jogar e Configurar abrem ZeldaALttPSNESRecomp.exe; na primeira abertura, prepare seus próprios arquivos no port. Recompilação da versão SNES. Beta. Requer sua própria ROM."
+  },
+  {
+    "Id": "triaevum",
+    "Name": "The Legend of Zelda: Ocarina of Time 3D · TriAevum",
+    "Repository": "coccofresco/TriAevum",
+    "Platform": "Outras",
+    "AssetPattern": "^TriAevum-v[0-9.]+-beta[0-9.]*-Windows-x64\\.zip$",
+    "PlayNames": [
+      "TriAevumForge.exe"
+    ],
+    "ConfigNames": [
+      "TriAevumForge.exe"
+    ],
+    "ArtworkTitle": "The Legend of Zelda: Ocarina of Time 3D",
+    "ProjectOnly": false,
+    "ProjectType": "Recompilação",
+    "AllowPrerelease": true,
+    "Kind": "Recompilação",
+    "PackageKind": "Zip",
+    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Jogar e Configurar abrem TriAevumForge.exe; na primeira abertura, prepare seus próprios arquivos no port. Port de Ocarina of Time 3D (3DS), publicado como beta. Requer sua própria cópia."
+  },
+  {
+    "Id": "umk3-decomp",
+    "Name": "Ultimate Mortal Kombat 3 · iOS Decompiled",
+    "Repository": "MaryNCRT/Ultimate-Mortal-Kombat-3-iOS-Decompiled",
+    "Platform": "Outras",
+    "AssetPattern": "^UMK3-PC-[0-9.]+-beta\\.zip$",
+    "PlayNames": [],
+    "ConfigNames": [],
+    "ArtworkTitle": "Ultimate Mortal Kombat 3",
+    "ProjectOnly": false,
+    "ProjectType": "Decompilação",
+    "AllowPrerelease": true,
+    "Kind": "Instalação integrada",
+    "DiscoverExecutable": true,
+    "PackageKind": "Zip",
+    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Se houver mais de um aplicativo, escolha o principal e o de configuração na janela do NEXUS. Port para PC a partir da versão iOS decompilada. Beta. Requer seus próprios arquivos."
+  },
+  {
+    "Id": "demons-souls-recomp",
+    "Name": "Demon's Souls · Demon's Souls Recomp",
+    "Repository": "timboat/demons-souls-recomp",
+    "Platform": "PlayStation 3",
+    "AssetPattern": "^DemonsSoulsRecomp-v[0-9.]+\\.zip$",
+    "PlayNames": [
+      "DemonsSoulsLauncher.exe"
+    ],
+    "ConfigNames": [
+      "DemonsSoulsLauncher.exe"
+    ],
+    "ArtworkTitle": "Demon's Souls",
+    "ProjectOnly": false,
+    "ProjectType": "Recompilação",
+    "Kind": "Recompilação",
+    "PackageKind": "Zip",
+    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Jogar e Configurar abrem DemonsSoulsLauncher.exe; na primeira abertura, prepare seus próprios arquivos no port. Port nativo da versão PS3 (BLUS-30443) via ps3recomp. Requer sua própria imagem do disco."
+  },
+  {
+    "Id": "tlou-remastered",
+    "Name": "The Last of Us Remastered · PC Port",
+    "Repository": "ravencaio/tlou-remastered-pc",
+    "Platform": "PlayStation 4",
+    "AssetPattern": "^TLOU-Remastered-windows\\.zip$",
+    "PlayNames": [
+      "TLOU Launcher.exe"
+    ],
+    "ConfigNames": [
+      "TLOU Launcher.exe"
+    ],
+    "ArtworkTitle": "The Last of Us Remastered",
+    "ProjectOnly": false,
+    "ProjectType": "Port",
+    "Kind": "Recompilação",
+    "PackageKind": "Zip",
+    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Jogar e Configurar abrem TLOU Launcher.exe; na primeira abertura, prepare seus próprios arquivos no port. Roda o código x86-64 do jogo (CUSA00552) num runtime próprio com renderizador Vulkan baseado no shadPS4. Inclui launcher. Requer seu próprio dump."
+  },
+  {
+    "Id": "openng2",
+    "Name": "Ninja Gaiden II · openNG2",
+    "Repository": "KamiTK2/openNG2",
+    "Platform": "Xbox 360",
+    "AssetPattern": "^openNG2-[0-9.]+\\.zip$",
+    "PlayNames": [
+      "openNG2.exe"
+    ],
+    "ConfigNames": [
+      "openNG2.exe"
+    ],
+    "ArtworkTitle": "Ninja Gaiden II",
+    "ProjectOnly": false,
+    "ProjectType": "Recompilação",
+    "Kind": "Recompilação",
+    "PackageKind": "Zip",
+    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Jogar e Configurar abrem openNG2.exe; na primeira abertura, prepare seus próprios arquivos no port. Port nativo da versão Xbox 360 via ReXGlue. Requer sua própria cópia."
+  },
+  {
+    "Id": "ds-kart",
+    "Name": "Mario Kart DS · DS Kart Recompiled",
+    "Repository": "AlonsoTlol/DS-Kart-Recompiled",
+    "Platform": "Nintendo DS",
+    "AssetPattern": "^DS-Kart-Recompiled-Launcher-Windows-v[0-9.]+\\.zip$",
+    "PlayNames": [
+      "Launcher.exe"
+    ],
+    "ConfigNames": [
+      "Launcher.exe"
+    ],
+    "ArtworkTitle": "Mario Kart DS",
+    "ProjectOnly": false,
+    "ProjectType": "Recompilação",
+    "Kind": "Recompilação",
+    "PackageKind": "Zip",
+    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Jogar e Configurar abrem Launcher.exe; na primeira abertura, prepare seus próprios arquivos no port. Port nativo de Mario Kart DS por recompilação estática, com launcher. Requer sua própria ROM."
+  },
+  {
+    "Id": "gow-ascension",
+    "Name": "God of War: Ascension · PC Port",
+    "Repository": "otavix010/gow-ascension-pc",
+    "Platform": "PlayStation 3",
+    "AssetPattern": "",
+    "PlayNames": [],
+    "ConfigNames": [],
+    "ArtworkTitle": "God of War: Ascension",
+    "ProjectOnly": true,
+    "Kind": "Em desenvolvimento",
+    "ProjectType": "Recompilação",
+    "Notes": "As Releases ainda não trazem pacote Windows; o port é compilado a partir do seu próprio disco."
   }
 ]

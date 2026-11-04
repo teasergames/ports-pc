@@ -1,5 +1,78 @@
 # Catálogo de ports
 
+## Revisão multiplataforma — 04/11/2026
+
+60 fontes novas de outras plataformas com download e atualização integrados e 8 sem pacote Windows instalável. Cada perfil foi testado contra as Releases atuais com a regra do NEXUS (somente estáveis, salvo os marcados beta; exatamente um arquivo compatível) e os executáveis foram conferidos no índice de cada ZIP oficial, lido remotamente. Quando o ZIP tem mais de um aplicativo principal, o NEXUS pede a escolha na instalação. Não foram executados launchers, compiladores ou jogos.
+
+| Plataforma | Projeto | Release | Jogar |
+|---|---|---|---|
+| Xbox 360 | [Army of Two · Army of Two Recompilation](https://github.com/OpenPortroid/ArmyOfTwoRecompilation) | v1.4.3 | escolha no NEXUS |
+| Xbox 360 | [Call of Duty 3 · Project 1944](https://github.com/zenit2893-cmyk/Call-of-Duty-3-PC-Editon) | 2.1 | escolha no NEXUS |
+| Xbox 360 | [Dead or Alive Xtreme 2 · DOAX2 Recomp](https://github.com/hibikifukui22/Dead-or-Alive-Xtreme-2-Recompilation) | v1.1.6 | `DOAX2 Recomp Launcher.exe` |
+| Xbox 360 | [Earthworm Jim HD · Recompiled](https://github.com/TekRantGaming/earthworm-jim-hd-recompiled) | v0.9.6 | `earthworm_jim_hd.exe` |
+| Xbox 360 | [Guitar Hero: Warriors of Rock · re-wor](https://github.com/ronniecloud/re-wor) | v1.1.0 | escolha no NEXUS |
+| Xbox 360 | [Need for Speed: Most Wanted (Xbox 360) · NFSMW Recompiled](https://github.com/madelrandel-blip/NFSMW-Recompiled) | v1.0.2 | `NFSMW Recomp.exe` |
+| Xbox 360 | [Ninja Gaiden II · openNG2](https://github.com/KamiTK2/openNG2) | v1.0.5 | `openNG2.exe` |
+| Xbox 360 | [Rayman 3 HD · Rayman 3 HD Recompiled](https://github.com/MysteriousAeon/rayman3-hd-recompiled) | v1.1.0 | escolha no NEXUS |
+| Xbox 360 | [Sonic Free Riders · Free Riders Recompiled](https://github.com/YuutaTsubasa/Free-Riders-Recompiled) | v0.10.45 | escolha no NEXUS |
+| Xbox 360 | [Tekken 6 · Native Online](https://github.com/Ekspym/Tekken6-native-online) | v2.7.2 | `Tekken6 Native Online.exe` |
+| Xbox | [007: From Russia with Love · XBERecomp](https://github.com/TGP482/007FRWL-XBERecomp) | V2 | `007FRWL.exe` |
+| Xbox | [007: NightFire · NightFire Recomp](https://github.com/hk21x/nightfire-recomp) | v1.1.0 | `NightFireLauncher.exe` |
+| Xbox | [Call of Duty 2: Big Red One · Native Loader](https://github.com/SmokeDoggy044/CoD2-BRO-Native-Loader) | v0.2.2 | escolha no NEXUS |
+| Xbox | [Conker: Live & Reloaded · Recomped and Reloaded](https://github.com/Mabec-games/Conker-Recomped-and-Reloaded) | v1.4 | escolha no NEXUS |
+| Xbox | [Darkwatch · Arizona Vamp Recomp](https://github.com/Clergyman0013/arizona-vamp-recomp) | v0.5.5 (beta) | `Darkwatch.exe` |
+| Xbox | [MVP Baseball 2005 · XBERecomp](https://github.com/maddog847/MVP-Baseball-2005-XBERecomp) | v0.3.0-beta (beta) | `MVP05.exe` |
+| Xbox | [Midnight Club 3: DUB Edition Remix · xrevive](https://github.com/Teraflopping/xrevive) | v0.3.14 | Setup do autor |
+| Xbox | [The Warriors · XBERecomp](https://github.com/Antriksh1984/TheWarriors-XBERecomp) | v0.2.0-alpha | `Warriors.exe` |
+| PlayStation 4 | [The Last of Us Remastered · PC Port](https://github.com/ravencaio/tlou-remastered-pc) | v0.1.6 | `TLOU Launcher.exe` |
+| PlayStation 3 | [Demon's Souls · Demon's Souls Recomp](https://github.com/timboat/demons-souls-recomp) | v2026.11.03.10 | `DemonsSoulsLauncher.exe` |
+| PlayStation 2 | [God of War (PS2) · GoW PC Port](https://github.com/danielalves96/gow-pc-port) | launcher-v0.3.1 | `God Of War - PC Launcher.exe` |
+| PlayStation 2 | [Haunting Ground · Recomp Project](https://github.com/N900x4/HauntingGround-Recomp-Project) | v0.2 | `HauntingGround.exe` |
+| PlayStation 2 | [Ratchet & Clank · OpenRAC](https://github.com/OpenRAC/OpenRAC) | launcher-v1.0.0 | Setup do autor |
+| PlayStation 2 | [Ridge Racer V · Fukami](https://github.com/danisandoval/fukami) | v1.1.0 | `Fukami.exe` |
+| PlayStation 2 | [Road Trip (Choro Q HG 2) · Recomp](https://github.com/silentsudin/RoadTripAdventure-recomp) | v0.2.3 | `RoadTrip.exe` |
+| PlayStation 2 | [Twisted Metal: Black · TMB Recomp](https://github.com/TheBozos/TMB_Recomp) | v0.3.2 | `TMB Launcher.exe` |
+| PlayStation 2 | [War of the Monsters · Recomp](https://github.com/yanm1103/War_of_the_Monsters_recomp) | v0.1.1 | escolha no NEXUS |
+| PlayStation 2 | [Zone of the Enders · ZOE Recompiled](https://github.com/Yaz-Myst/ZOE-Recompiled) | v1.0.1 | `ZOE-Recompiled.exe` |
+| PlayStation | [Digimon World 2 · DW2-PC](https://github.com/Wyrelade/DW2-PC) | v1.0.0-beta | `dw2.exe` |
+| PlayStation | [Rage Racer · Rage Racer PC](https://github.com/khasinski/rage-racer-pc) | 0.6.14-alpha | `Rage-Racer.exe` |
+| PlayStation | [Resident Evil · PC Decomp](https://github.com/ecruells/resident-evil-pc-decomp) | residentevil-v1.4.3 | `residentevil.exe` |
+| PlayStation | [Twisted Metal 1–4 · Recomp](https://github.com/jcoker85/TwistedMetal1234Recomp) | v1.0.0 | `TwistedMetal1234Recomp.exe` |
+| PlayStation | [Twisted Metal 4 · Recomp](https://github.com/TechnicallyComputers/TwistedMetal4Recomp) | v0.3.37 | `TwistedMetal4_Recompiled.exe` |
+| PlayStation | [Vigilante 8 + 2nd Offense · Recomp](https://github.com/GTTeancum/Vigilante-8-recomp) | v1.0 | `Vigilante8PC.exe` |
+| PSP | [GTA: Liberty City Stories · LCS Native](https://github.com/elmasas/lcs-recomp) | v0.1.6 | `LCSNative.exe` |
+| PSP | [God of War: Chains of Olympus / Ghost of Sparta · PSP Recomp](https://github.com/DrummingBird1/gow-psp-recomp) | v1.4.0 | `GoWLauncher.exe` |
+| PSP | [Monster Hunter Freedom Unite · MHForever](https://github.com/Mango77x/MHForever) | v0.8.3 | escolha no NEXUS |
+| Nintendo 64 | [Blast Corps · Blast Corps Recompiled](https://github.com/SlaveOfIDO/blastcorps-recomp) | 1.1.1 | `BlastCorpsRecompiled.exe` |
+| Nintendo 64 | [Body Harvest · Adam's Ant Farm](https://github.com/LunarLaurus/adams-ant-farm-recomp) | v0.11.0 | escolha no NEXUS |
+| Nintendo 64 | [Conker's Bad Fur Day · Conker Recompiled](https://github.com/sciaschi/CBFD-Recompiled) | V0.1.6 | `ConkerRecomp.exe` |
+| Nintendo 64 | [Mario Kart 64 · Mario Kart 64 Recompiled](https://github.com/sonicdcer/MarioKart64Recomp) | v0.9.2 | `MarioKart64Recompiled.exe` |
+| Nintendo 64 | [Ogre Battle 64 · Recomp](https://github.com/lfarroco/ogre-battle-64-recomp) | v0.9.1 | `ogrebattle64.exe` |
+| Nintendo 64 | [Pilotwings 64 · Birdman64](https://github.com/NoahVl/Birdman64) | v1.5.1 | `Birdman64.exe` |
+| Nintendo 64 | [Road Rash 64 · Recompiled](https://github.com/linkssy2/RoadRash64Recompiled) | v1.4.8 | escolha no NEXUS |
+| Nintendo 64 | [Virtual Pro Wrestling 2 · VPW2 Recompiled](https://github.com/jessetbh/VPW2Recomp) | v0.2.0 (beta) | `Vpw2Recompiled.exe` |
+| Nintendo 64 | [Wave Race 64 · Recomp](https://github.com/danielgomesvieira2000/wave-race-64-recomp) | v1.0.2 | `WaveRace64Recomp.exe` |
+| GameCube | [Soulcalibur II · RingOut](https://github.com/jackpoison-prog/RingOut) | v1.7 | `RingOut.exe` |
+| GameCube | [The Legend of Zelda: The Wind Waker · BlueWake](https://github.com/chrissotraidis/bluewake) | v0.10.0 | `BlueWake.exe` |
+| Nintendo DS | [Chrono Trigger (DS) · Egg of Time](https://github.com/power-pudu/egg-of-time) | v0.8.0 | `Egg of Time.exe` |
+| Nintendo DS | [Mario Kart DS · DS Kart Recompiled](https://github.com/AlonsoTlol/DS-Kart-Recompiled) | v0.2.4 | `Launcher.exe` |
+| Nintendo DS | [Metroid Prime Hunters · Recomp](https://github.com/mstan/MetroidPrimeHuntersRecomp) | v0.7.12-alpha | escolha no NEXUS |
+| Super Nintendo | [Super Metroid · Recomp](https://github.com/mstan/SuperMetroidRecomp) | v0.4.2 | `SuperMetroidSNESRecomp.exe` |
+| Super Nintendo | [The Legend of Zelda: A Link to the Past · SNES Recomp](https://github.com/mstan/ZeldaAlttPSNESRecomp) | v0.6.6 | `ZeldaALttPSNESRecomp.exe` |
+| Game Boy | [Pokémon Gold, Silver e Crystal · Gen2Recomped](https://github.com/UNDERdecoded/Gen2Recomped) | v0.8.49 | `Gen2Recomped.exe` |
+| Game Boy | [Pokémon Red, Blue e Yellow · Gen1Recomp](https://github.com/bryanthaboi/gen1recomp) | v0.4.0 | `gen1recomp.exe` |
+| Outras | [CPS-2 Recomp (Street Fighter Alpha 2, Vampire Savior…)](https://github.com/tmcleroy/cps2recomp) | v1.3.0 | escolha no NEXUS |
+| Outras | [Harry Potter and the Philosopher's Stone (PC) · Flipendo](https://github.com/kroplabeskidu/flipendo) | v1.3 | `SurrealEngine.exe` |
+| Outras | [Medal of Honor: Allied Assault · OpenMoHAA](https://github.com/openmoh/openmohaa) | v0.82.1 | escolha no NEXUS |
+| Outras | [The Legend of Zelda: Ocarina of Time 3D · TriAevum](https://github.com/coccofresco/TriAevum) | v0.8.0-beta.1.2 (beta) | `TriAevumForge.exe` |
+| Outras | [Ultimate Mortal Kombat 3 · iOS Decompiled](https://github.com/MaryNCRT/Ultimate-Mortal-Kombat-3-iOS-Decompiled) | v0.1.23-beta (beta) | escolha no NEXUS |
+
+**Sem pacote Windows instalável:** [Midnight Club: Los Angeles · LARecomp](https://github.com/mzzvxm/LARecomp) (Xbox 360), [God of War: Ascension · PC Port](https://github.com/otavix010/gow-ascension-pc) (PlayStation 3), [Ace Combat 5: The Unsung War · Static Recompilation](https://github.com/sal063/Ace-Combat-5-Static-recompilation) (PlayStation 2), [Burnout Dominator · Reversed](https://github.com/literalynn/BurnoutDominatorReversed) (PlayStation 2), [God of War (PS2) · Native Port](https://github.com/Waffle565/God-Of-War-Native-Port) (PlayStation 2), [God of War (PS2) · Tobiichi Port](https://github.com/YYOzcan/Tobiichi-Port) (PlayStation 2), [NBA Street V3 · Street Recomp](https://github.com/recomp-code/street-recomp-v3) (PlayStation 2), [Daytona USA (arcade) · Recomp](https://github.com/alphanu1/daytona-arcade-recomp) (Outras).
+
+**Não incluídos:** builds só para Android, iPhone, Mac ou Switch homebrew; ferramentas genéricas (RecompOne); forks de emuladores; Rogue Galaxy (o ZIP não traz executável Windows); e o Forza Horizon ReImagined, que já estava no catálogo sob o novo dono do repositório.
+
+Total do catálogo: **367 fontes**, **335 perfis GitHub integrados**, **1 importação oficial** e **31 exceções**.
+
 ## Revisão Switch — 03/11/2026
 
 Onze fontes novas de Nintendo Switch com download e atualização integrados, uma com o Setup do autor e cinco projetos em desenvolvimento, incluindo a primeira recompilação de Switch 2. Datas são da Release consultada em 03/11. Somente pacotes Windows; projetos só para iPhone, Android ou Mac não foram incluídos.

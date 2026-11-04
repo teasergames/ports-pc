@@ -81,6 +81,7 @@ namespace Nexus {
       Reject(()=>PortCatalog.Parse(catalogJson.Replace("https://almost-there-games.itch.io/azimuth","https://example.com/azimuth")),"remote catalog cannot add untrusted download sites");
       Reject(()=>PortCatalog.Parse(catalogJson.Replace("\"PackageKind\":\"Zip\"","\"PackageKind\":\"Msi\"")),"remote catalog rejects unknown package formats");
       Reject(()=>PortCatalog.Parse("[]"),"empty remote catalog rejected");
+      string linuxJson;using(var s=System.Reflection.Assembly.GetExecutingAssembly().GetManifestResourceStream("Nexus.ports.json"))using(var r=new StreamReader(s))linuxJson=r.ReadToEnd();Check(linuxJson.Contains("\"LinuxAssetPattern\"")&&PortCatalog.Parse(linuxJson).Count==entries.Count,"catalog with Linux package fields still validates on Windows (1.7.x clients)");
       Check(!PortCatalog.Supported(new PortEntry{MinNexusVersion="99.0.0"})&&PortCatalog.Supported(new PortEntry{MinNexusVersion="1.0.0"})&&PortCatalog.Supported(new PortEntry()),"profiles requiring a newer NEXUS stay hidden");
       Check(Store.Parse("{\"Version\":1,\"Games\":[],\"SortMode\":\"other\"}").SortMode=="favorites"&&Store.Parse("{\"Version\":1,\"Games\":[],\"SortMode\":\"recent\"}").SortMode=="recent","sort preference is validated and persisted");
       string appFolder=Path.Combine(root,"nexus app ç"),dataFolder=Path.Combine(root,"nexus data");Directory.CreateDirectory(appFolder);

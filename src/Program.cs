@@ -20,9 +20,9 @@ using Microsoft.Win32;
 
 [assembly: AssemblyTitle("NEXUS · Ports PC")]
 [assembly: AssemblyProduct("NEXUS Ports PC")]
-[assembly: AssemblyVersion("1.7.5.0")]
-[assembly: AssemblyFileVersion("1.7.5.0")]
-[assembly: AssemblyInformationalVersion("1.7.5")]
+[assembly: AssemblyVersion("1.8.0.0")]
+[assembly: AssemblyFileVersion("1.8.0.0")]
+[assembly: AssemblyInformationalVersion("1.8.0")]
 [assembly: System.Runtime.Versioning.TargetFramework(".NETFramework,Version=v4.8")]
 namespace Nexus {
   public static class Program {

@@ -2,7 +2,7 @@
 
 **Sua biblioteca. Seu universo.**
 
-Reúna seus ports de console em um só launcher para **Windows 11 x64**. Organize sua coleção, personalize as artworks, encontre os projetos por plataforma e abra seus jogos e configurações em um único lugar.
+Reúna seus ports de console em um só launcher para **Windows 11 x64** e **Linux x86_64** (AppImage). Organize sua coleção, personalize as artworks, encontre os projetos por plataforma e abra seus jogos e configurações em um único lugar.
 
 [**Baixar NEXUS**](https://github.com/teasergames/ports-pc/releases/latest) · [Releases e novidades](https://github.com/teasergames/ports-pc/releases) · [Catálogo de projetos](CATALOG.md) · [Relatar um problema](https://github.com/teasergames/ports-pc/issues/new/choose)
 
@@ -36,6 +36,14 @@ Reúna seus ports de console em um só launcher para **Windows 11 x64**. Organiz
 O NEXUS é portátil: não precisa de instalação tradicional, conta, Node.js ou Python para funcionar. O aplicativo utiliza o **.NET Framework 4.8**, disponível no Windows 11. O executável ainda não possui assinatura digital.
 
 **Requisitos do launcher:** Windows 11 x64. Os requisitos dos jogos são próprios de cada port: confira a página do autor para CPU, placa de vídeo, drivers, espaço livre e versão do dump. A compatibilidade do NEXUS com o Windows não garante a execução de todos os jogos em qualquer PC.
+
+### No Linux
+
+1. Na [última versão](https://github.com/teasergames/ports-pc/releases/latest), baixe `Nexus-Ports-PC-v…-Linux-x86_64.AppImage`.
+2. Dê permissão de execução e abra: `chmod +x Nexus-Ports-PC-v*-Linux-x86_64.AppImage` e depois `./Nexus-Ports-PC-v*-Linux-x86_64.AppImage`. Em distribuições sem FUSE 2, use `--appimage-extract-and-run`.
+3. A biblioteca fica em `~/.local/share/NexusPortsPC` (ou `$XDG_DATA_HOME`). Os ports vão para a pasta `ports` ao lado do AppImage quando ela é gravável.
+
+A edição Linux é nativa (Avalonia, .NET autocontido; não precisa instalar nada). No catálogo, o filtro **Só com build Linux** mostra os projetos que publicam pacotes Linux: o NEXUS baixa o AppImage ou o arquivo `.tar.gz`/`.zip` Linux da Release, confere o SHA-256 e cadastra o programa. Para os demais projetos, que só têm pacote Windows, abra a página do projeto e adicione o `.exe` à biblioteca: ele abre pelo **Wine** ou pelo **umu-launcher (Proton)** quando um deles está instalado (ou pelo programa indicado em `NEXUS_WINE`). O NEXUS para Linux também se atualiza sozinho quando é aberto pelo AppImage.
 
 ## Como adicionar seus jogos
 

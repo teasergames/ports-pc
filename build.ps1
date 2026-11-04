@@ -37,5 +37,8 @@ $manifest = Join-Path $projectRoot 'dist\nexus-update.json'
 Remove-Item -LiteralPath $manifest -ErrorAction SilentlyContinue
 if ($version -notmatch '-') {
   $data = [ordered]@{ tag_name = 'v' + $version; asset = Split-Path $named -Leaf; size = (Get-Item -LiteralPath $named).Length; digest = 'sha256:' + (Get-FileHash -LiteralPath $named -Algorithm SHA256).Hash.ToLowerInvariant() }
+  # The Linux AppImage (built by the Linux CI and placed in dist\linux) shares the same manifest.
+  $appImage = Join-Path $projectRoot ('dist\linux\Nexus-Ports-PC-v' + $version + '-Linux-x86_64.AppImage')
+  if (Test-Path -LiteralPath $appImage) { $data.linux_asset = Split-Path $appImage -Leaf; $data.linux_size = (Get-Item -LiteralPath $appImage).Length; $data.linux_digest = 'sha256:' + (Get-FileHash -LiteralPath $appImage -Algorithm SHA256).Hash.ToLowerInvariant() }
   [IO.File]::WriteAllText($manifest, (ConvertTo-Json $data), (New-Object Text.UTF8Encoding $false))
 }Write-Output ('Pronto: ' + (Join-Path $destination 'Nexus.exe'))

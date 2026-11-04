@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=NEXUS
+Comment=Biblioteca e instalador de ports e recompilações de PC
+Exec=Nexus
+Icon=nexus
+Categories=Game;
+Terminal=false

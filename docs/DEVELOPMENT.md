@@ -66,6 +66,7 @@ Os perfis ficam em `assets/ports.json`, as referências de origem em `assets/cat
 - `ProjectType` (obrigatório): `Port`, `Recompilação`, `Decompilação`, `Reimplementação` ou `Compatibilidade`. É o filtro **Tipo de projeto**.
 - O filtro **Instalação** não é um campo: vem de `ProjectOnly`, `ManualPackage` e `PackageKind` (`PortEntry.InstallMode`), para nunca divergir do instalador. `Kind` continua como rótulo livre; `"Em desenvolvimento"` em um perfil `ProjectOnly` o separa dos manuais.
 - `ManualPackageFile`: nome do ZIP pedido no diálogo de importação de perfis fora do GitHub (`ManualPackage`). Os sites aceitos ficam em `PortCatalog.TrustedManualSources`.
+- `LinuxAssetPattern` / `LinuxPackageKind` (opcionais, edição Linux): regex do pacote Linux x86_64 na mesma Release e o formato, `AppImage` (padrão terminando em `AppImage$`) ou `Archive` (`.zip`, `.tar.gz`, `.tgz`). O padrão precisa casar com um único asset que publique `digest` SHA-256. `LinuxPlayNames` dá prioridade a programas do pacote e `LinuxNotes` acrescenta notas. A edição Windows ignora esses campos.
 - `MinNexusVersion` (opcional): oculta o perfil em versões do NEXUS anteriores à indicada. Use quando o perfil depender de um recurso novo do launcher.
 
 O CI valida `assets/ports.json` contra [`assets/ports.schema.json`](../assets/ports.schema.json) antes do build, e `PortCatalog.Parse` repete as regras no aplicativo.
@@ -85,6 +86,22 @@ O cache embutido em `assets/releases-cache.json` é um retrato auditado e os tes
 ### Página do catálogo
 
 [`docs/catalogo/index.html`](catalogo/index.html) lê o mesmo `ports.json` e oferece busca e filtros. Para publicá-la, ative **Settings → Pages → Deploy from a branch → `main` / `docs`**; o endereço fica `https://teasergames.github.io/ports-pc/catalogo/`.
+
+## Edição Linux
+
+O código fica em `desktop/`: `Nexus.Core` (biblioteca, catálogo, instalador, capas e atualização) e `Nexus.Desktop` (interface Avalonia 11, sem XAML), ambos em .NET 10. A biblioteca e o catálogo usam os mesmos arquivos `assets/ports.json` e `assets/releases-cache.json` da edição Windows.
+
+```bash
+dotnet run --project desktop/Nexus.Core.Tests -c Release
+dotnet run --project desktop/Nexus.Desktop -- --data-dir /tmp/nexus-dev
+./packaging/linux/build-appimage.sh
+```
+
+- Os testes do núcleo rodam também no Windows; as verificações de permissões, ELF, links simbólicos e Wine só rodam em Linux.
+- `--smoke-test`, `--catalog-smoke` e `--editor-smoke <png>` renderizam a interface e saem com código 1 em caso de falha; `--storage-smoke` testa a gravação da biblioteca.
+- `build-appimage.sh` (somente Linux x86_64) restaura com `packages.lock.json` em modo travado, publica autocontido e gera `dist/linux/Nexus-Ports-PC-v<versão>-Linux-x86_64.AppImage`. O `appimagetool` e o runtime type2 são conferidos por SHA-256.
+- O workflow `Linux AppImage` executa os testes, empacota e renderiza a interface sob Xvfb a cada push. O artefato serve de asset da Release.
+- A versão vem de `<Version>` em `desktop/Nexus.Desktop/Nexus.Desktop.csproj`, mantida igual à da edição Windows. Com o AppImage em `dist/linux`, `build.ps1` acrescenta `linux_asset`, `linux_size` e `linux_digest` ao `nexus-update.json`, usado pelo atualizador Linux quando a API do GitHub limita as consultas.
 
 ## Dados e privacidade
 

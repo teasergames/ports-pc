@@ -1,0 +1,42 @@
+name: Linux AppImage
+on:
+  push:
+    branches: [main]
+    tags: ['v*']
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  appimage:
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '10.0.x'
+      - name: Install graphical test dependencies
+        run: sudo apt-get update && sudo apt-get install -y xvfb libice6 libsm6 libfontconfig1
+      - name: Core tests (library, catalog, installer, launcher)
+        run: dotnet run --project desktop/Nexus.Core.Tests -c Release
+      - name: Build self-contained AppImage
+        run: ./packaging/linux/build-appimage.sh
+      - name: Validate packaged runtime, storage and interface
+        run: |
+          app="$(ls dist/linux/Nexus-Ports-PC-v*-Linux-x86_64.AppImage)"
+          export APPIMAGE_EXTRACT_AND_RUN=1
+          "$app" --version
+          "$app" --data-dir "$RUNNER_TEMP/nexus-storage" --storage-smoke
+          for mode in smoke-test catalog-smoke editor-smoke; do
+            xvfb-run -a "$app" --data-dir "$RUNNER_TEMP/nexus-ui" --$mode "$RUNNER_TEMP/nexus-$mode.png"
+            test -s "$RUNNER_TEMP/nexus-$mode.png"
+          done
+          cp "$RUNNER_TEMP"/nexus-*.png dist/linux/
+      - uses: actions/upload-artifact@v4
+        with:
+          name: Nexus-Linux-x86_64
+          path: |
+            dist/linux/Nexus-Ports-PC-v*-Linux-x86_64.AppImage
+            dist/linux/Nexus-Ports-PC-v*-Linux-x86_64.AppImage.sha256
+            dist/linux/nexus-*.png
+          if-no-files-found: error

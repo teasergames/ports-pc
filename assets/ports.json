@@ -13,7 +13,9 @@
     "Notes": "Configure sua pasta do jogo no launcher original antes de jogar.",
     "Platform": "PlayStation 4",
     "Kind": "Port",
-    "ProjectType": "Port"
+    "ProjectType": "Port",
+    "LinuxAssetPattern": "^gow3\\-x86_64\\.AppImage$",
+    "LinuxPackageKind": "AppImage"
   },
   {
     "Id": "bloodborne",
@@ -134,7 +136,9 @@
     "Notes": "Jogar usa a entrada direta; Configurar abre o launcher Qt do port.",
     "Platform": "PlayStation 4",
     "Kind": "Port",
-    "ProjectType": "Port"
+    "ProjectType": "Port",
+    "LinuxAssetPattern": "^infamous\\-linux\\-x86_64\\.tar\\.gz$",
+    "LinuxPackageKind": "Archive"
   },
   {
     "Id": "last-guardian",
@@ -150,7 +154,9 @@
     "Notes": "Configure a pasta do jogo no launcher original antes de jogar.",
     "Platform": "PlayStation 4",
     "Kind": "Port",
-    "ProjectType": "Port"
+    "ProjectType": "Port",
+    "LinuxAssetPattern": "^tlg\\-linux\\-x86_64\\.tar\\.gz$",
+    "LinuxPackageKind": "Archive"
   },
   {
     "Id": "ctr",
@@ -231,7 +237,9 @@
     "ConfigNames": [],
     "Notes": "Port do Xbox original. Na primeira abertura, selecione sua imagem do disco. Opções no menu do jogo; não possui launcher de configuração separado.",
     "ArtworkTitle": "Halo: Combat Evolved",
-    "ProjectOnly": false
+    "ProjectOnly": false,
+    "LinuxAssetPattern": "^halo\\-linux\\-release\\.zip$",
+    "LinuxPackageKind": "Archive"
   },
   {
     "Id": "unleashed",
@@ -302,7 +310,9 @@
     ],
     "Notes": "Jogar usa a entrada direta e Configurar abre o launcher bilíngue. Forneça seus arquivos PS4.",
     "ArtworkTitle": "Gravity Rush 2",
-    "ProjectOnly": false
+    "ProjectOnly": false,
+    "LinuxAssetPattern": "^gr2\\-linux\\-x86_64\\.tar\\.gz$",
+    "LinuxPackageKind": "Archive"
   },
   {
     "Id": "skate3",
@@ -475,7 +485,9 @@
     ],
     "Kind": "Builder / recompilação",
     "ProjectType": "Recompilação",
-    "Notes": "Prévia jogável. Jogar e Configurar abrem o launcher original. Forneça seu disco e use Verify and build; a preparação pode levar 20–60 minutos e requer cerca de 30 GB. O NEXUS não inicia a compilação nem instala ferramentas automaticamente."
+    "Notes": "Prévia jogável. Jogar e Configurar abrem o launcher original. Forneça seu disco e use Verify and build; a preparação pode levar 20–60 minutos e requer cerca de 30 GB. O NEXUS não inicia a compilação nem instala ferramentas automaticamente.",
+    "LinuxAssetPattern": "^PinyonShift\\-Launcher\\-linux\\-x86_64\\.tar\\.gz$",
+    "LinuxPackageKind": "Archive"
   },
   {
     "Id": "azimuth",
@@ -513,7 +525,9 @@
     "AllowPrerelease": false,
     "Kind": "Port / runtime PS4",
     "ProjectType": "Port",
-    "ArtworkTitle": "Knack"
+    "ArtworkTitle": "Knack",
+    "LinuxAssetPattern": "^knack\\-x86_64\\.AppImage$",
+    "LinuxPackageKind": "AppImage"
   },
   {
     "Id": "knack2",
@@ -604,7 +618,9 @@
     "Kind": "Recompilação",
     "ProjectType": "Recompilação",
     "ArtworkTitle": "Lost Odyssey",
-    "ConfigurationArguments": "--setup-only"
+    "ConfigurationArguments": "--setup-only",
+    "LinuxAssetPattern": "^LostOdysseyRecomp\\-linux\\-x64\\-v[0-9][0-9A-Za-z.\\-]*\\.AppImage$",
+    "LinuxPackageKind": "AppImage"
   },
   {
     "Id": "blue-dragon",
@@ -620,7 +636,9 @@
     "AllowPrerelease": false,
     "Kind": "Recompilação",
     "ProjectType": "Recompilação",
-    "ArtworkTitle": "Blue Dragon (video game)"
+    "ArtworkTitle": "Blue Dragon (video game)",
+    "LinuxAssetPattern": "^reblue\\-[0-9][0-9A-Za-z.\\-]*\\-x86_64\\.AppImage$",
+    "LinuxPackageKind": "AppImage"
   },
   {
     "Id": "pgr4",
@@ -653,7 +671,9 @@
     "AllowPrerelease": true,
     "Kind": "Recompilação",
     "ProjectType": "Recompilação",
-    "ArtworkTitle": "Conker: Live & Reloaded"
+    "ArtworkTitle": "Conker: Live & Reloaded",
+    "LinuxAssetPattern": "^conker-lr-recomp-linux-.*\\.tar\\.gz$",
+    "LinuxPackageKind": "Archive"
   },
   {
     "Id": "las-recomp",
@@ -671,7 +691,9 @@
     "AllowPrerelease": true,
     "Kind": "Recompilação",
     "ProjectType": "Recompilação",
-    "ArtworkTitle": "The Legend of Zelda: Link's Awakening (2019 video game)"
+    "ArtworkTitle": "The Legend of Zelda: Link's Awakening (2019 video game)",
+    "LinuxAssetPattern": "^LAS[. ]Recomp-.*-linux-x86_64\\.AppImage$",
+    "LinuxPackageKind": "AppImage"
   },
   {
     "Id": "smo",
@@ -717,7 +739,9 @@
     "ProjectOnly": false,
     "Kind": "Port / recompilação",
     "ProjectType": "Recompilação",
-    "Notes": "Selecione sua ROM norte-americana no menu inicial. Opções no próprio jogo; requer SSE4.1 e GPU Direct3D 12 ou Vulkan 1.2."
+    "Notes": "Selecione sua ROM norte-americana no menu inicial. Opções no próprio jogo; requer SSE4.1 e GPU Direct3D 12 ou Vulkan 1.2.",
+    "LinuxAssetPattern": "^Zelda64Recompiled\\-v[0-9][0-9A-Za-z.\\-]*\\-Linux\\-X64\\.zip$",
+    "LinuxPackageKind": "Archive"
   },
   {
     "Id": "rl-dusklight",
@@ -751,7 +775,9 @@
     "ProjectOnly": false,
     "Kind": "Port / recompilação",
     "ProjectType": "Recompilação",
-    "Notes": "Na primeira abertura, selecione sua ROM compatível de Ocarina of Time. Opções no menu interno, tecla Esc."
+    "Notes": "Na primeira abertura, selecione sua ROM compatível de Ocarina of Time. Opções no menu interno, tecla Esc.",
+    "LinuxAssetPattern": "^SoH-.*\\.AppImage$",
+    "LinuxPackageKind": "AppImage"
   },
   {
     "Id": "rl-spaghettikart",
@@ -767,7 +793,9 @@
     "ProjectOnly": false,
     "Kind": "Port / recompilação",
     "ProjectType": "Recompilação",
-    "Notes": "Na primeira abertura, selecione sua ROM USA de Mario Kart 64 em formato .z64. Opções internas, tecla Esc."
+    "Notes": "Na primeira abertura, selecione sua ROM USA de Mario Kart 64 em formato .z64. Opções internas, tecla Esc.",
+    "LinuxAssetPattern": "^spaghetti\\-linux\\.zip$",
+    "LinuxPackageKind": "Archive"
   },
   {
     "Id": "rl-2ship2harkinian",
@@ -783,7 +811,9 @@
     "ProjectOnly": false,
     "Kind": "Port / recompilação",
     "ProjectType": "Recompilação",
-    "Notes": "Selecione sua ROM compatível de Majora’s Mask no aplicativo original. Menu de opções interno, tecla F1. É uma alternativa ao Zelda 64: Recompiled."
+    "Notes": "Selecione sua ROM compatível de Majora’s Mask no aplicativo original. Menu de opções interno, tecla F1. É uma alternativa ao Zelda 64: Recompiled.",
+    "LinuxAssetPattern": "^2Ship-.*-Linux\\.zip$",
+    "LinuxPackageKind": "Archive"
   },
   {
     "Id": "rl-starship",
@@ -815,7 +845,9 @@
     "ProjectOnly": false,
     "Kind": "Port / recompilação",
     "ProjectType": "Recompilação",
-    "Notes": "Selecione sua ROM norte-americana 1.0 de Banjo-Kazooie no menu inicial. Opções dentro do aplicativo; requer SSE4.1 e GPU Direct3D 12 ou Vulkan 1.2."
+    "Notes": "Selecione sua ROM norte-americana 1.0 de Banjo-Kazooie no menu inicial. Opções dentro do aplicativo; requer SSE4.1 e GPU Direct3D 12 ou Vulkan 1.2.",
+    "LinuxAssetPattern": "^BanjoRecompiled\\-v[0-9][0-9A-Za-z.\\-]*\\-Linux\\-X64\\.tar\\.gz$",
+    "LinuxPackageKind": "Archive"
   },
   {
     "Id": "rl-ghostship",
@@ -831,7 +863,9 @@
     "ProjectOnly": false,
     "Kind": "Port / recompilação",
     "ProjectType": "Recompilação",
-    "Notes": "Selecione sua ROM compatível de Super Mario 64 no aplicativo. Opções internas, tecla Esc. O pacote Windows usa o nome Nautilus."
+    "Notes": "Selecione sua ROM compatível de Super Mario 64 no aplicativo. Opções internas, tecla Esc. O pacote Windows usa o nome Nautilus.",
+    "LinuxAssetPattern": "^Nautilus-.*-Linux\\.zip$",
+    "LinuxPackageKind": "Archive"
   },
   {
     "Id": "rl-donkey-kong-64-recompiled",
@@ -847,7 +881,9 @@
     "ProjectOnly": false,
     "Kind": "Port / recompilação",
     "ProjectType": "Recompilação",
-    "Notes": "Selecione sua ROM USA de Donkey Kong 64 no menu inicial. Opções internas. Requer CPU AVX e GPU Direct3D 12 ou Vulkan 1.2."
+    "Notes": "Selecione sua ROM USA de Donkey Kong 64 no menu inicial. Opções internas. Requer CPU AVX e GPU Direct3D 12 ou Vulkan 1.2.",
+    "LinuxAssetPattern": "^DK64Recompiled-Linux-X64-.*\\.zip$",
+    "LinuxPackageKind": "Archive"
   },
   {
     "Id": "rl-conkerbfdreloaded",
@@ -1535,7 +1571,9 @@
     "Kind": "Recompilação",
     "ProjectType": "Recompilação",
     "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Jogar e Configurar abrem skyrecomp.exe. Na primeira abertura, escolha a pasta dos seus arquivos de Skyward Sword HD v1.0.0, sem updates; nas próximas aberturas o launcher vai direto para Jogar. Requer AVX2 e Vulkan 1.3. O perfil usa o pacote Windows padrão, não a edição visual de 2 GB com texturas 4K. Experimental.",
-    "PackageKind": "Zip"
+    "PackageKind": "Zip",
+    "LinuxAssetPattern": "^Sky\\.Recomp-v[0-9]+\\.[0-9]+\\.[0-9]+-linux-x86_64\\.AppImage$",
+    "LinuxPackageKind": "AppImage"
   },
   {
     "Id": "rl-nocturnerecomp",
@@ -4661,7 +4699,9 @@
     "Kind": "Recompilação",
     "ProjectType": "Recompilação",
     "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Jogar e Configurar abrem UltraTears Launcher.exe. Selecione seu dump com o update 1.4.3; o launcher compila o jogo no seu PC. Requer AVX2, Vulkan 1.3, 16 GB de RAM, 4 GB de vídeo e cerca de 40 GB livres. Projeto separado dos outros perfis de TotK. Em desenvolvimento.",
-    "PackageKind": "Zip"
+    "PackageKind": "Zip",
+    "LinuxAssetPattern": "^UltraTears\\.AppImage$",
+    "LinuxPackageKind": "AppImage"
   },
   {
     "Id": "acnhrecomp",
@@ -4680,7 +4720,9 @@
     "Kind": "Recompilação",
     "ProjectType": "Recompilação",
     "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Jogar e Configurar abrem ACNHRecomp Launcher.exe, que inicia acnh.exe. Prepare os arquivos a partir da sua própria cópia (versão 3.0.2) seguindo a wiki do projeto; o recomp não descriptografa contêineres. Gráficos NVN traduzidos para Vulkan. O modo 60 fps ainda não é nativo. Mods (tradução PT-BR, speedfix) ficam numa Release separada do autor.",
-    "PackageKind": "Zip"
+    "PackageKind": "Zip",
+    "LinuxAssetPattern": "^ACNHRecomp\\-v[0-9][0-9A-Za-z.\\-]*\\-linux\\-x64\\.tar\\.gz$",
+    "LinuxPackageKind": "Archive"
   },
   {
     "Id": "primerecomp",
@@ -4699,7 +4741,9 @@
     "Kind": "Recompilação",
     "ProjectType": "Recompilação",
     "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Jogar e Configurar abrem primerecomp.exe. Selecione seus arquivos de Metroid Prime Remastered v1.0.0, sem updates (pasta extraída com exefs e romfs, ou dump com suas chaves). Atualizações do port reaproveitam arquivos, saves e configurações. Requer AVX2 e Vulkan.",
-    "PackageKind": "Zip"
+    "PackageKind": "Zip",
+    "LinuxAssetPattern": "^PrimeRecomp\\-v[0-9][0-9A-Za-z.\\-]*\\-linux\\-x86_64\\.AppImage$",
+    "LinuxPackageKind": "AppImage"
   },
   {
     "Id": "za-recomp",
@@ -4737,7 +4781,9 @@
     "Kind": "Recompilação",
     "ProjectType": "Recompilação",
     "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Jogar e Configurar abrem HWDER Setup.exe. No Setup, selecione seu .nsp, as prod.keys e o update opcional; o Setup compila o jogo e pode criar atalho ou adicionar à Steam. Requer AVX2 e Vulkan 1.2. Substitui o perfil HWDER de sonsegajp, cujo repositório foi removido do GitHub.",
-    "PackageKind": "Zip"
+    "PackageKind": "Zip",
+    "LinuxAssetPattern": "^HWDER\\-linux\\-x86_64\\-v[0-9][0-9A-Za-z.\\-]*\\.tar\\.gz$",
+    "LinuxPackageKind": "Archive"
   },
   {
     "Id": "udpre",
@@ -4794,7 +4840,9 @@
     "Kind": "Recompilação",
     "ProjectType": "Recompilação",
     "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Jogar e Configurar abrem sm35recomp.exe. A tela de preparação confere seu dump com o update 1.0.2, suas prod.keys e firmware e recompila o jogo. Online pelo serviço Nextendo. O autor marca o build Windows como compilado mas não testado. Requer AVX2 e Vulkan 1.3.",
-    "PackageKind": "Zip"
+    "PackageKind": "Zip",
+    "LinuxAssetPattern": "^SM35Recomp\\-linux\\-x86_64\\.tar\\.gz$",
+    "LinuxPackageKind": "Archive"
   },
   {
     "Id": "xcx-recomp",
@@ -4813,7 +4861,9 @@
     "Kind": "Recompilação",
     "ProjectType": "Recompilação",
     "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Jogar e Configurar abrem XCX-Setup.exe. No Setup, selecione seus NSP (jogo base e update 2.0.0; DLC opcional) e as prod.keys e escolha a pasta; ao concluir, use Editar cadastro para apontar Jogar para o xcx.exe da pasta escolhida. Para atualizar, rode o Setup novo na mesma pasta. Requer AVX2, Vulkan 1.3 e cerca de 36 GiB livres durante a preparação. Builds de teste do autor são ignorados.",
-    "PackageKind": "Zip"
+    "PackageKind": "Zip",
+    "LinuxAssetPattern": "^XCX\\-Setup\\-[0-9][0-9A-Za-z.\\-]*\\-linux\\.AppImage$",
+    "LinuxPackageKind": "AppImage"
   },
   {
     "Id": "cruisn-blast",
@@ -5023,7 +5073,9 @@
     "ProjectType": "Recompilação",
     "Kind": "Recompilação",
     "PackageKind": "Zip",
-    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Jogar e Configurar abrem earthworm_jim_hd.exe; na primeira abertura, prepare seus próprios arquivos no port. Recompilação da versão Xbox Live Arcade. Beta. Requer sua própria cópia."
+    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Jogar e Configurar abrem earthworm_jim_hd.exe; na primeira abertura, prepare seus próprios arquivos no port. Recompilação da versão Xbox Live Arcade. Beta. Requer sua própria cópia.",
+    "LinuxAssetPattern": "^EarthwormJimHD\\-v[0-9][0-9A-Za-z.\\-]*\\-linux\\-x86_64\\.AppImage$",
+    "LinuxPackageKind": "AppImage"
   },
   {
     "Id": "re-wor",
@@ -5088,7 +5140,9 @@
     "Kind": "Instalação integrada",
     "DiscoverExecutable": true,
     "PackageKind": "Zip",
-    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Se houver mais de um aplicativo, escolha o principal e o de configuração na janela do NEXUS. Recompilação do jogo de Kinect para controle comum. Beta, atualizado com frequência. Requer seu próprio disco."
+    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Se houver mais de um aplicativo, escolha o principal e o de configuração na janela do NEXUS. Recompilação do jogo de Kinect para controle comum. Beta, atualizado com frequência. Requer seu próprio disco.",
+    "LinuxAssetPattern": "^FreeRidersRecompiled\\-[0-9][0-9A-Za-z.\\-]*\\-linux\\-x64\\.tar\\.gz$",
+    "LinuxPackageKind": "Archive"
   },
   {
     "Id": "blast-corps",
@@ -5126,7 +5180,9 @@
     "ProjectType": "Recompilação",
     "Kind": "Recompilação",
     "PackageKind": "Zip",
-    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Jogar e Configurar abrem ConkerRecomp.exe; na primeira abertura, prepare seus próprios arquivos no port. N64Recomp com RT64. O pacote de mods do autor é separado. Requer sua própria ROM."
+    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Jogar e Configurar abrem ConkerRecomp.exe; na primeira abertura, prepare seus próprios arquivos no port. N64Recomp com RT64. O pacote de mods do autor é separado. Requer sua própria ROM.",
+    "LinuxAssetPattern": "^ConkerRecompiled\\-V[0-9][0-9A-Za-z.\\-]*\\-Linux\\.tar\\.gz$",
+    "LinuxPackageKind": "Archive"
   },
   {
     "Id": "mk64-recomp",
@@ -5145,7 +5201,9 @@
     "ProjectType": "Recompilação",
     "Kind": "Recompilação",
     "PackageKind": "Zip",
-    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Jogar e Configurar abrem MarioKart64Recompiled.exe; na primeira abertura, prepare seus próprios arquivos no port. N64Recomp com RT64: widescreen, altas taxas de quadros e mods. Requer sua própria ROM."
+    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Jogar e Configurar abrem MarioKart64Recompiled.exe; na primeira abertura, prepare seus próprios arquivos no port. N64Recomp com RT64: widescreen, altas taxas de quadros e mods. Requer sua própria ROM.",
+    "LinuxAssetPattern": "^MarioKart64Recompiled\\-v[0-9][0-9A-Za-z.\\-]*\\-Linux\\-X64\\-Release\\.zip$",
+    "LinuxPackageKind": "Archive"
   },
   {
     "Id": "birdman64",
@@ -5164,7 +5222,9 @@
     "ProjectType": "Recompilação",
     "Kind": "Recompilação",
     "PackageKind": "Zip",
-    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Jogar e Configurar abrem Birdman64.exe; na primeira abertura, prepare seus próprios arquivos no port. Recompilação de Pilotwings 64. Requer sua própria ROM."
+    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Jogar e Configurar abrem Birdman64.exe; na primeira abertura, prepare seus próprios arquivos no port. Recompilação de Pilotwings 64. Requer sua própria ROM.",
+    "LinuxAssetPattern": "^Birdman64-x86_64\\.AppImage$",
+    "LinuxPackageKind": "AppImage"
   },
   {
     "Id": "roadrash64",
@@ -5180,7 +5240,9 @@
     "Kind": "Instalação integrada",
     "DiscoverExecutable": true,
     "PackageKind": "Zip",
-    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Se houver mais de um aplicativo, escolha o principal e o de configuração na janela do NEXUS. N64Recomp com RT64. O mod opcional de texturas é um download separado. Requer sua própria ROM."
+    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Se houver mais de um aplicativo, escolha o principal e o de configuração na janela do NEXUS. N64Recomp com RT64. O mod opcional de texturas é um download separado. Requer sua própria ROM.",
+    "LinuxAssetPattern": "^RoadRash64Recompiled\\-v[0-9][0-9A-Za-z.\\-]*\\-Linux\\-Experimental\\.zip$",
+    "LinuxPackageKind": "Archive"
   },
   {
     "Id": "waverace64",
@@ -5199,7 +5261,9 @@
     "ProjectType": "Recompilação",
     "Kind": "Recompilação",
     "PackageKind": "Zip",
-    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Jogar e Configurar abrem WaveRace64Recomp.exe; na primeira abertura, prepare seus próprios arquivos no port. N64Recomp com RT64. Requer sua própria ROM."
+    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Jogar e Configurar abrem WaveRace64Recomp.exe; na primeira abertura, prepare seus próprios arquivos no port. N64Recomp com RT64. Requer sua própria ROM.",
+    "LinuxAssetPattern": "^WaveRace64Recomp\\-[0-9][0-9A-Za-z.\\-]*\\-linux\\-x86_64\\.tar\\.gz$",
+    "LinuxPackageKind": "Archive"
   },
   {
     "Id": "body-harvest",
@@ -5215,7 +5279,9 @@
     "Kind": "Instalação integrada",
     "DiscoverExecutable": true,
     "PackageKind": "Zip",
-    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Se houver mais de um aplicativo, escolha o principal e o de configuração na janela do NEXUS. Feito a partir da decompilação com N64Recomp; o autor relata jogo completo com áudio. Widescreen e pacotes de texturas. Beta. Requer sua própria ROM."
+    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Se houver mais de um aplicativo, escolha o principal e o de configuração na janela do NEXUS. Feito a partir da decompilação com N64Recomp; o autor relata jogo completo com áudio. Widescreen e pacotes de texturas. Beta. Requer sua própria ROM.",
+    "LinuxAssetPattern": "^adams\\-ant\\-farm\\-linux\\-x86_64\\-v[0-9][0-9A-Za-z.\\-]*\\.tar\\.gz$",
+    "LinuxPackageKind": "Archive"
   },
   {
     "Id": "ogre-battle-64",
@@ -5234,7 +5300,9 @@
     "ProjectType": "Recompilação",
     "Kind": "Recompilação",
     "PackageKind": "Zip",
-    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Jogar e Configurar abrem ogrebattle64.exe; na primeira abertura, prepare seus próprios arquivos no port. Recompilação de Ogre Battle 64. Beta. Requer sua própria ROM."
+    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Jogar e Configurar abrem ogrebattle64.exe; na primeira abertura, prepare seus próprios arquivos no port. Recompilação de Ogre Battle 64. Beta. Requer sua própria ROM.",
+    "LinuxAssetPattern": "^ogre\\-battle\\-64\\-recomp\\-linux\\-x86_64\\.tar\\.gz$",
+    "LinuxPackageKind": "Archive"
   },
   {
     "Id": "vpw2-recomp",
@@ -5292,7 +5360,9 @@
     "ProjectType": "Recompilação",
     "Kind": "Recompilação",
     "PackageKind": "Zip",
-    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Jogar e Configurar abrem TwistedMetal4_Recompiled.exe; na primeira abertura, prepare seus próprios arquivos no port. Port psxrecomp de Twisted Metal 4. Requer seu próprio disco."
+    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Jogar e Configurar abrem TwistedMetal4_Recompiled.exe; na primeira abertura, prepare seus próprios arquivos no port. Port psxrecomp de Twisted Metal 4. Requer seu próprio disco.",
+    "LinuxAssetPattern": "^twistedmetal4\\-[0-9][0-9A-Za-z.\\-]*\\-linux\\-x64\\.zip$",
+    "LinuxPackageKind": "Archive"
   },
   {
     "Id": "dw2-pc",
@@ -5311,7 +5381,9 @@
     "ProjectType": "Recompilação",
     "Kind": "Recompilação",
     "PackageKind": "Zip",
-    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Jogar e Configurar abrem dw2.exe; na primeira abertura, prepare seus próprios arquivos no port. Port nativo de Digimon World 2. Beta. Requer seu próprio disco."
+    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Jogar e Configurar abrem dw2.exe; na primeira abertura, prepare seus próprios arquivos no port. Port nativo de Digimon World 2. Beta. Requer seu próprio disco.",
+    "LinuxAssetPattern": "^DW2\\-PC\\-linux\\-x64\\.zip$",
+    "LinuxPackageKind": "Archive"
   },
   {
     "Id": "rage-racer",
@@ -5330,7 +5402,9 @@
     "ProjectType": "Recompilação",
     "Kind": "Recompilação",
     "PackageKind": "Zip",
-    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Jogar e Configurar abrem Rage-Racer.exe; na primeira abertura, prepare seus próprios arquivos no port. Port nativo em alpha; o editor separado do autor não é instalado. Requer seu próprio disco."
+    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Jogar e Configurar abrem Rage-Racer.exe; na primeira abertura, prepare seus próprios arquivos no port. Port nativo em alpha; o editor separado do autor não é instalado. Requer seu próprio disco.",
+    "LinuxAssetPattern": "^Rage-Racer-[0-9].*-linux-x86_64\\.zip$",
+    "LinuxPackageKind": "Archive"
   },
   {
     "Id": "vigilante-8",
@@ -5393,7 +5467,9 @@
     "Kind": "Instalação integrada",
     "DiscoverExecutable": true,
     "PackageKind": "Installer",
-    "Notes": "O NEXUS baixa e verifica o instalador oficial, abre o assistente do autor e cadastra o aplicativo que você selecionar ao concluir. Atualizações também usam esse assistente. Jogos de PS2 decompilados e reconstruídos: Ratchet & Clank jogável, os seguintes em andamento. O launcher do autor instala e atualiza os jogos a partir dos seus discos."
+    "Notes": "O NEXUS baixa e verifica o instalador oficial, abre o assistente do autor e cadastra o aplicativo que você selecionar ao concluir. Atualizações também usam esse assistente. Jogos de PS2 decompilados e reconstruídos: Ratchet & Clank jogável, os seguintes em andamento. O launcher do autor instala e atualiza os jogos a partir dos seus discos.",
+    "LinuxAssetPattern": "^OpenRAC\\.Launcher_[0-9.]+_amd64\\.AppImage$",
+    "LinuxPackageKind": "AppImage"
   },
   {
     "Id": "fukami",
@@ -5412,7 +5488,9 @@
     "ProjectType": "Recompilação",
     "Kind": "Recompilação",
     "PackageKind": "Zip",
-    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Jogar e Configurar abrem Fukami.exe; na primeira abertura, prepare seus próprios arquivos no port. Port nativo de Ridge Racer V. Requer seu próprio disco."
+    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Jogar e Configurar abrem Fukami.exe; na primeira abertura, prepare seus próprios arquivos no port. Port nativo de Ridge Racer V. Requer seu próprio disco.",
+    "LinuxAssetPattern": "^Fukami\\-[0-9][0-9A-Za-z.\\-]*\\-linux\\-x86_64\\.tar\\.gz$",
+    "LinuxPackageKind": "Archive"
   },
   {
     "Id": "ace-combat-5",
@@ -5459,7 +5537,9 @@
     "ProjectType": "Recompilação",
     "Kind": "Recompilação",
     "PackageKind": "Zip",
-    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Jogar e Configurar abrem God Of War - PC Launcher.exe; na primeira abertura, prepare seus próprios arquivos no port. Launcher portátil que prepara o port a partir do seu disco."
+    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Jogar e Configurar abrem God Of War - PC Launcher.exe; na primeira abertura, prepare seus próprios arquivos no port. Launcher portátil que prepara o port a partir do seu disco.",
+    "LinuxAssetPattern": "^God\\.Of\\.War\\.-\\.PC\\.Launcher_[0-9.]+_amd64\\.AppImage$",
+    "LinuxPackageKind": "AppImage"
   },
   {
     "Id": "tobiichi-port",
@@ -5492,7 +5572,9 @@
     "ProjectType": "Recompilação",
     "Kind": "Recompilação",
     "PackageKind": "Zip",
-    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Jogar e Configurar abrem HauntingGround.exe; na primeira abertura, prepare seus próprios arquivos no port. Recompilação PS2 em estágio inicial. Requer seu próprio disco."
+    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Jogar e Configurar abrem HauntingGround.exe; na primeira abertura, prepare seus próprios arquivos no port. Recompilação PS2 em estágio inicial. Requer seu próprio disco.",
+    "LinuxAssetPattern": "^HauntingGround\\-Recomp\\-[0-9][0-9A-Za-z.\\-]*\\-linux\\-x64\\.tar\\.gz$",
+    "LinuxPackageKind": "Archive"
   },
   {
     "Id": "road-trip",
@@ -5635,7 +5717,9 @@
     "Kind": "Instalação integrada",
     "DiscoverExecutable": true,
     "PackageKind": "Zip",
-    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Se houver mais de um aplicativo, escolha o principal e o de configuração na janela do NEXUS. Loader que roda o código x86 do jogo com kernel reescrito e camada D3D8→D3D9; missões 1–5 testadas, 60 fps e mouse/teclado. Protótipo. Requer seu próprio disco."
+    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Se houver mais de um aplicativo, escolha o principal e o de configuração na janela do NEXUS. Loader que roda o código x86 do jogo com kernel reescrito e camada D3D8→D3D9; missões 1–5 testadas, 60 fps e mouse/teclado. Protótipo. Requer seu próprio disco.",
+    "LinuxAssetPattern": "^cod_bro\\-[0-9][0-9A-Za-z.\\-]*\\-linux\\.tar\\.gz$",
+    "LinuxPackageKind": "Archive"
   },
   {
     "Id": "conker-reloaded",
@@ -5651,7 +5735,9 @@
     "Kind": "Instalação integrada",
     "DiscoverExecutable": true,
     "PackageKind": "Zip",
-    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Se houver mais de um aplicativo, escolha o principal e o de configuração na janela do NEXUS. Recompilação da versão Xbox. Requer seu próprio disco."
+    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Se houver mais de um aplicativo, escolha o principal e o de configuração na janela do NEXUS. Recompilação da versão Xbox. Requer seu próprio disco.",
+    "LinuxAssetPattern": "^ConkerRecompedReloaded\\-x86_64\\.AppImage$",
+    "LinuxPackageKind": "AppImage"
   },
   {
     "Id": "arizona-vamp-clergyman",
@@ -5729,7 +5815,9 @@
     "ProjectType": "Recompilação",
     "Kind": "Recompilação",
     "PackageKind": "Zip",
-    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Jogar e Configurar abrem RingOut.exe; na primeira abertura, prepare seus próprios arquivos no port. Port da versão GameCube. O NEXUS usa o ZIP portátil; o Setup e o pacote Steam Deck do autor são alternativas. Requer seu próprio disco."
+    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Jogar e Configurar abrem RingOut.exe; na primeira abertura, prepare seus próprios arquivos no port. Port da versão GameCube. O NEXUS usa o ZIP portátil; o Setup e o pacote Steam Deck do autor são alternativas. Requer seu próprio disco.",
+    "LinuxAssetPattern": "^RingOut\\-[0-9][0-9A-Za-z.\\-]*\\-linux\\-x86_64\\.zip$",
+    "LinuxPackageKind": "Archive"
   },
   {
     "Id": "bluewake",
@@ -5748,7 +5836,9 @@
     "ProjectType": "Recompilação",
     "Kind": "Recompilação",
     "PackageKind": "Zip",
-    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Jogar e Configurar abrem BlueWake.exe; na primeira abertura, prepare seus próprios arquivos no port. Port nativo de The Wind Waker de GameCube. Beta. Requer seu próprio disco."
+    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Jogar e Configurar abrem BlueWake.exe; na primeira abertura, prepare seus próprios arquivos no port. Port nativo de The Wind Waker de GameCube. Beta. Requer seu próprio disco.",
+    "LinuxAssetPattern": "^BlueWake\\-v[0-9][0-9A-Za-z.\\-]*\\-linux\\-x86_64\\.AppImage$",
+    "LinuxPackageKind": "AppImage"
   },
   {
     "Id": "lcs-native",
@@ -5802,7 +5892,9 @@
     "Kind": "Instalação integrada",
     "DiscoverExecutable": true,
     "PackageKind": "Zip",
-    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Se houver mais de um aplicativo, escolha o principal e o de configuração na janela do NEXUS. Ports nativos dos Monster Hunter clássicos por recompilação estática, começando por Freedom Unite. Requer sua própria cópia."
+    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Se houver mais de um aplicativo, escolha o principal e o de configuração na janela do NEXUS. Ports nativos dos Monster Hunter clássicos por recompilação estática, começando por Freedom Unite. Requer sua própria cópia.",
+    "LinuxAssetPattern": "^MHForever\\-[0-9][0-9A-Za-z.\\-]*\\-linux\\-x64\\.tar\\.gz$",
+    "LinuxPackageKind": "Archive"
   },
   {
     "Id": "flipendo",
@@ -5821,7 +5913,9 @@
     "ProjectType": "Reimplementação",
     "Kind": "Recompilação",
     "PackageKind": "Zip",
-    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Jogar e Configurar abrem SurrealEngine.exe; na primeira abertura, prepare seus próprios arquivos no port. Engine aberta para os dois primeiros Harry Potter de PC: Pedra Filosofal completo, Câmara Secreta em andamento. Requer os arquivos do jogo original."
+    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Jogar e Configurar abrem SurrealEngine.exe; na primeira abertura, prepare seus próprios arquivos no port. Engine aberta para os dois primeiros Harry Potter de PC: Pedra Filosofal completo, Câmara Secreta em andamento. Requer os arquivos do jogo original.",
+    "LinuxAssetPattern": "^flipendo\\-v[0-9][0-9A-Za-z.\\-]*\\-linux\\.zip$",
+    "LinuxPackageKind": "Archive"
   },
   {
     "Id": "openmohaa",
@@ -5837,7 +5931,9 @@
     "Kind": "Instalação integrada",
     "DiscoverExecutable": true,
     "PackageKind": "Zip",
-    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Se houver mais de um aplicativo, escolha o principal e o de configuração na janela do NEXUS. Engine aberta (base ioquake3) para Allied Assault e expansões, campanha e multiplayer com bots. Requer os arquivos do jogo original."
+    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Se houver mais de um aplicativo, escolha o principal e o de configuração na janela do NEXUS. Engine aberta (base ioquake3) para Allied Assault e expansões, campanha e multiplayer com bots. Requer os arquivos do jogo original.",
+    "LinuxAssetPattern": "^openmohaa\\-v[0-9][0-9A-Za-z.\\-]*\\-linux\\-amd64\\.zip$",
+    "LinuxPackageKind": "Archive"
   },
   {
     "Id": "gen2recomped",
@@ -5856,7 +5952,9 @@
     "ProjectType": "Recompilação",
     "Kind": "Recompilação",
     "PackageKind": "Zip",
-    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Jogar e Configurar abrem Gen2Recomped.exe; na primeira abertura, prepare seus próprios arquivos no port. Recompilação dos Pokémon de Game Boy Color. Requer suas próprias ROMs."
+    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Jogar e Configurar abrem Gen2Recomped.exe; na primeira abertura, prepare seus próprios arquivos no port. Recompilação dos Pokémon de Game Boy Color. Requer suas próprias ROMs.",
+    "LinuxAssetPattern": "^Gen2Recomped\\-[0-9][0-9A-Za-z.\\-]*\\-linux\\.zip$",
+    "LinuxPackageKind": "Archive"
   },
   {
     "Id": "gen1recomp",
@@ -5875,7 +5973,9 @@
     "ProjectType": "Recompilação",
     "Kind": "Recompilação",
     "PackageKind": "Zip",
-    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Jogar e Configurar abrem gen1recomp.exe; na primeira abertura, prepare seus próprios arquivos no port. Recompilação dos Pokémon de Game Boy, com suporte a mods. Requer suas próprias ROMs."
+    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Jogar e Configurar abrem gen1recomp.exe; na primeira abertura, prepare seus próprios arquivos no port. Recompilação dos Pokémon de Game Boy, com suporte a mods. Requer suas próprias ROMs.",
+    "LinuxAssetPattern": "^gen1recomp\\-[0-9][0-9A-Za-z.\\-]*\\-linux\\-x86_64\\.AppImage$",
+    "LinuxPackageKind": "AppImage"
   },
   {
     "Id": "re1-pc-decomp",
@@ -5894,7 +5994,10 @@
     "ProjectType": "Decompilação",
     "Kind": "Recompilação",
     "PackageKind": "Zip",
-    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Jogar e Configurar abrem residentevil.exe; na primeira abertura, prepare seus próprios arquivos no port. Port a partir da decompilação. O migrador de arquivos do autor é um download separado. Requer seus próprios arquivos do jogo."
+    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Jogar e Configurar abrem residentevil.exe; na primeira abertura, prepare seus próprios arquivos no port. Port a partir da decompilação. O migrador de arquivos do autor é um download separado. Requer seus próprios arquivos do jogo.",
+    "LinuxAssetPattern": "^residentevil-[0-9.]+-linux-x86\\.tar\\.gz$",
+    "LinuxPackageKind": "Archive",
+    "LinuxNotes": "A build Linux é de 32 bits (x86): instale as bibliotecas i386 da sua distribuição."
   },
   {
     "Id": "egg-of-time",
@@ -5913,7 +6016,9 @@
     "ProjectType": "Recompilação",
     "Kind": "Recompilação",
     "PackageKind": "Zip",
-    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Jogar e Configurar abrem Egg of Time.exe; na primeira abertura, prepare seus próprios arquivos no port. Versão DS recompilada para C: widescreen, altas resoluções e taxas de quadros, mods. Monta-se no primeiro início a partir da sua ROM USA."
+    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Jogar e Configurar abrem Egg of Time.exe; na primeira abertura, prepare seus próprios arquivos no port. Versão DS recompilada para C: widescreen, altas resoluções e taxas de quadros, mods. Monta-se no primeiro início a partir da sua ROM USA.",
+    "LinuxAssetPattern": "^EggOfTime-v[0-9.]+-x86_64\\.AppImage$",
+    "LinuxPackageKind": "AppImage"
   },
   {
     "Id": "daytona-recomp",
@@ -5959,7 +6064,9 @@
     "Kind": "Instalação integrada",
     "DiscoverExecutable": true,
     "PackageKind": "Zip",
-    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Se houver mais de um aplicativo, escolha o principal e o de configuração na janela do NEXUS. Recompilação de jogos do arcade Capcom CPS-2. Requer suas próprias ROMs."
+    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Se houver mais de um aplicativo, escolha o principal e o de configuração na janela do NEXUS. Recompilação de jogos do arcade Capcom CPS-2. Requer suas próprias ROMs.",
+    "LinuxAssetPattern": "^CPS2Recomp\\-linux\\-x86_64\\.tar\\.gz$",
+    "LinuxPackageKind": "Archive"
   },
   {
     "Id": "super-metroid-recomp",
@@ -5978,7 +6085,9 @@
     "ProjectType": "Recompilação",
     "Kind": "Recompilação",
     "PackageKind": "Zip",
-    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Jogar e Configurar abrem SuperMetroidSNESRecomp.exe; na primeira abertura, prepare seus próprios arquivos no port. Recompilação da versão SNES. Beta. Requer sua própria ROM."
+    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Jogar e Configurar abrem SuperMetroidSNESRecomp.exe; na primeira abertura, prepare seus próprios arquivos no port. Recompilação da versão SNES. Beta. Requer sua própria ROM.",
+    "LinuxAssetPattern": "^supermetroid\\-[0-9][0-9A-Za-z.\\-]*\\-linux\\-x64\\.zip$",
+    "LinuxPackageKind": "Archive"
   },
   {
     "Id": "alttp-snes-recomp",
@@ -6017,7 +6126,9 @@
     "AllowPrerelease": true,
     "Kind": "Recompilação",
     "PackageKind": "Zip",
-    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Jogar e Configurar abrem TriAevumForge.exe; na primeira abertura, prepare seus próprios arquivos no port. Port de Ocarina of Time 3D (3DS), publicado como beta. Requer sua própria cópia."
+    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Jogar e Configurar abrem TriAevumForge.exe; na primeira abertura, prepare seus próprios arquivos no port. Port de Ocarina of Time 3D (3DS), publicado como beta. Requer sua própria cópia.",
+    "LinuxAssetPattern": "^TriAevum\\-v[0-9][0-9A-Za-z.\\-]*\\-Linux\\-x86_64\\.AppImage$",
+    "LinuxPackageKind": "AppImage"
   },
   {
     "Id": "umk3-decomp",
@@ -6034,7 +6145,9 @@
     "Kind": "Instalação integrada",
     "DiscoverExecutable": true,
     "PackageKind": "Zip",
-    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Se houver mais de um aplicativo, escolha o principal e o de configuração na janela do NEXUS. Port para PC a partir da versão iOS decompilada. Beta. Requer seus próprios arquivos."
+    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Se houver mais de um aplicativo, escolha o principal e o de configuração na janela do NEXUS. Port para PC a partir da versão iOS decompilada. Beta. Requer seus próprios arquivos.",
+    "LinuxAssetPattern": "^UMK3\\-PC\\-[0-9][0-9A-Za-z.\\-]*\\-linux\\-x64\\.tar\\.gz$",
+    "LinuxPackageKind": "Archive"
   },
   {
     "Id": "demons-souls-recomp",
@@ -6110,7 +6223,9 @@
     "ProjectType": "Recompilação",
     "Kind": "Recompilação",
     "PackageKind": "Zip",
-    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Jogar e Configurar abrem Launcher.exe; na primeira abertura, prepare seus próprios arquivos no port. Port nativo de Mario Kart DS por recompilação estática, com launcher. Requer sua própria ROM."
+    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Jogar e Configurar abrem Launcher.exe; na primeira abertura, prepare seus próprios arquivos no port. Port nativo de Mario Kart DS por recompilação estática, com launcher. Requer sua própria ROM.",
+    "LinuxAssetPattern": "^DS\\-Kart\\-Recompiled\\-Linux\\-v[0-9][0-9A-Za-z.\\-]*\\.zip$",
+    "LinuxPackageKind": "Archive"
   },
   {
     "Id": "gow-ascension",

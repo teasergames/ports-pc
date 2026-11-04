@@ -1,5 +1,9 @@
 # Catálogo de ports
 
+## Builds Linux — 04/11/2026
+
+57 perfis também publicam um pacote Linux x86_64 na mesma Release (AppImage ou .tar.gz/.zip). O NEXUS para Linux instala esses pacotes com conferência de SHA-256; na edição Windows nada muda. Ficaram de fora builds ARM, Flatpak, .deb e Steam Deck. Resident Evil (decomp) publica uma build Linux de 32 bits.
+
 ## Revisão multiplataforma — 04/11/2026
 
 60 fontes novas de outras plataformas com download e atualização integrados e 8 sem pacote Windows instalável. Cada perfil foi testado contra as Releases atuais com a regra do NEXUS (somente estáveis, salvo os marcados beta; exatamente um arquivo compatível) e os executáveis foram conferidos no índice de cada ZIP oficial, lido remotamente. Quando o ZIP tem mais de um aplicativo principal, o NEXUS pede a escolha na instalação. Não foram executados launchers, compiladores ou jogos.

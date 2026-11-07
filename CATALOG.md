@@ -1,8 +1,12 @@
 # Catálogo de ports
 
+## Removido por segurança — 07/11/2026
+
+- **Torchlight (Xbox 360) · Recompiled** (`retrogameworld/TorchlightRecomp`): o pacote `Torchlight-Recompiled-v1.0.zip` é marcado como malicioso por 11 de 66 antivírus no VirusTotal (Trojan.Lazy), com sinais de ofuscação e de detecção de depurador. A conta e o repositório foram criados em 03 e 04/11 e o repositório não tem código-fonte. Se você instalou esse pacote, apague a pasta dele e rode uma verificação completa do antivírus.
+
 ## Novos ports e recomps — 06/11/2026
 
-42 fontes novas publicadas entre 31/10 e 06/11, todas com download e atualização integrados. Cada perfil foi conferido nas Releases atuais (exatamente um pacote, com SHA-256 publicado) e os ZIPs foram inspecionados sem baixar o jogo inteiro. 12 também têm build Linux nativa.
+41 fontes novas publicadas entre 31/10 e 06/11, todas com download e atualização integrados. Cada perfil foi conferido nas Releases atuais (exatamente um pacote, com SHA-256 publicado) e os ZIPs foram inspecionados sem baixar o jogo inteiro. 12 também têm build Linux nativa.
 
 | Plataforma | Projeto | Release | Jogar | Linux |
 |---|---|---|---|---|
@@ -16,7 +20,6 @@
 | Xbox 360 | [Grand Theft Auto V (Xbox 360) · GTA V Recomp](https://github.com/andrewnakas/gtav-recomp) | v0.3.0 | escolha no NEXUS | sim |
 | Xbox 360 | [Ninja Gaiden II (Xbox 360) · IzunaRecomp](https://github.com/YaibaKamikaze/IzunaRecomp) | v0.2.0 | escolha no NEXUS | — |
 | Xbox 360 | [Top Spin 4 · Recomp](https://github.com/shaneomac1337/Top-Spin-4-Recomp) | v1.0.0 | escolha no NEXUS | — |
-| Xbox 360 | [Torchlight (Xbox 360) · Recompiled](https://github.com/retrogameworld/TorchlightRecomp) | v1.0 | escolha no NEXUS | — |
 | Xbox | [Far Cry Instincts · Recomp](https://github.com/bassobr/Far-Cry-Instincts-Recomp) | v0.1.2 | `FarCryInstincts.exe` | — |
 | Xbox | [Forza Motorsport (2005) · Redline Recompiled](https://github.com/DivxPlays/redline-recompiled) | v0.1.0 | `RedlineLauncher.exe` | — |
 | Xbox | [Grabbed by the Ghoulies · PC Recomp](https://github.com/SeveerJ/Ghoulies_PC_Recomp) | v0.1_Beta | assistente do autor | — |
@@ -51,7 +54,7 @@
 
 Ficaram de fora: projetos só para macOS, Android, PS4/PS5 com desbloqueio ou homebrew de Switch; Metroid Prime 4 do linuxopt (só AppImage, sem pacote Windows); Arceuszada (só .rar); Battlefield: Bad Company (ZIP da Release corrompido); PES 2017 PRO17PORT (origem não confirmada); Woohoo! Flight School (apenas kit de build em pré-release); e recomps ainda sem Release, como os de Ocarina of Time do jaigner-hub, Chiuauaa e Mars7x.
 
-Total do catálogo: **407 fontes**, **375 perfis GitHub integrados**, **1 importação oficial** e **31 exceções**; **70** com build Linux.
+Total do catálogo: **406 fontes**, **374 perfis GitHub integrados**, **1 importação oficial** e **31 exceções**; **70** com build Linux.
 
 ## Repositórios renomeados — 04/11/2026
 

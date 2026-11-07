@@ -6610,22 +6610,6 @@
     "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Jogar e Configurar abrem FarCryInstincts.exe; na primeira abertura, prepare seus próprios arquivos no port. Recompilação da versão Xbox original para Windows x64. Requer seu próprio disco."
   },
   {
-    "Id": "torchlight-recomp",
-    "Name": "Torchlight (Xbox 360) · Recompiled",
-    "Repository": "retrogameworld/TorchlightRecomp",
-    "Platform": "Xbox 360",
-    "AssetPattern": "^Torchlight-Recompiled-v[0-9.]+\\.zip$",
-    "PlayNames": [],
-    "ConfigNames": [],
-    "ArtworkTitle": "Torchlight (video game)",
-    "ProjectOnly": false,
-    "ProjectType": "Recompilação",
-    "Kind": "Instalação integrada",
-    "DiscoverExecutable": true,
-    "PackageKind": "Zip",
-    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Se houver mais de um aplicativo, escolha o principal e o de configuração na janela do NEXUS. Recompilação da versão Xbox Live Arcade. Requer sua própria cópia."
-  },
-  {
     "Id": "sonic06-recomp",
     "Name": "Sonic the Hedgehog (2006) · Soleanna",
     "Repository": "DrummingBird1/sonic06-recomp",

@@ -6212,5 +6212,772 @@
     "Kind": "Em desenvolvimento",
     "ProjectType": "Recompilação",
     "Notes": "As Releases ainda não trazem pacote Windows; o port é compilado a partir do seu próprio disco."
+  },
+  {
+    "Id": "pokopia-recomp",
+    "Name": "Pokémon Pokopia · Pokopia Recomp",
+    "Repository": "drakolordx7/switch2-recomp",
+    "Platform": "Nintendo Switch",
+    "AssetPattern": "^PokopiaRecomp-[0-9.]+-win64\\.zip$",
+    "PlayNames": [
+      "PokopiaLauncher.exe"
+    ],
+    "ConfigNames": [
+      "PokopiaLauncher.exe"
+    ],
+    "ArtworkTitle": "Pokémon Pokopia",
+    "ProjectOnly": false,
+    "ProjectType": "Recompilação",
+    "Kind": "Recompilação",
+    "PackageKind": "Zip",
+    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Jogar e Configurar abrem PokopiaLauncher.exe; na primeira abertura, prepare seus próprios arquivos no port. Jogo de Switch 2. O PokopiaLauncher compila o jogo no seu PC (cerca de 7 minutos) e depois gera o cache de shaders (1 a 2 horas). Requer sua cópia 2.0.1a e Vulkan 1.3."
+  },
+  {
+    "Id": "gtav-recomp",
+    "Name": "Grand Theft Auto V (Xbox 360) · GTA V Recomp",
+    "Repository": "andrewnakas/gtav-recomp",
+    "Platform": "Xbox 360",
+    "AssetPattern": "^gtav-recomp-windows-x64\\.zip$",
+    "PlayNames": [],
+    "ConfigNames": [],
+    "ArtworkTitle": "Grand Theft Auto V",
+    "ProjectOnly": false,
+    "ProjectType": "Recompilação",
+    "Kind": "Instalação integrada",
+    "DiscoverExecutable": true,
+    "PackageKind": "Zip",
+    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Se houver mais de um aplicativo, escolha o principal e o de configuração na janela do NEXUS. Recompilação ReXGlue da versão Xbox 360 (TU27). Requer sua própria cópia.",
+    "LinuxAssetPattern": "^gtav\\-recomp\\-linux\\-x64\\.tar\\.gz$",
+    "LinuxPackageKind": "Archive"
+  },
+  {
+    "Id": "xc2-recomp",
+    "Name": "Xenoblade Chronicles 2 · XC2 Recomp",
+    "Repository": "AksharDP/xc2-recomp",
+    "Platform": "Nintendo Switch",
+    "AssetPattern": "^XC2-Setup-[0-9.]+-windows\\.zip$",
+    "PlayNames": [
+      "XC2-Setup.exe"
+    ],
+    "ConfigNames": [
+      "XC2-Setup.exe"
+    ],
+    "ArtworkTitle": "Xenoblade Chronicles 2",
+    "ProjectOnly": false,
+    "ProjectType": "Recompilação",
+    "Kind": "Recompilação",
+    "PackageKind": "Zip",
+    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Jogar e Configurar abrem XC2-Setup.exe; na primeira abertura, prepare seus próprios arquivos no port. Desenvolvimento inicial: vai do começo até Goldmouth, 60 fps, resolução até ~3040x1710. O jogo é montado a partir da sua cópia com o update 3.0.1.",
+    "LinuxAssetPattern": "^XC2\\-Setup\\-[0-9][0-9A-Za-z.\\-]*\\-linux\\.AppImage$",
+    "LinuxPackageKind": "AppImage"
+  },
+  {
+    "Id": "gos-recomp",
+    "Name": "Castlevania: Grimoire of Souls · GoS Recomp",
+    "Repository": "BLSNCVS/Castlevania-Grimoire-of-Souls-Recomp",
+    "Platform": "Outras",
+    "AssetPattern": "^GoSRecomp-[0-9.]+\\.zip$",
+    "PlayNames": [],
+    "ConfigNames": [],
+    "ArtworkTitle": "Castlevania: Grimoire of Souls",
+    "ProjectOnly": false,
+    "ProjectType": "Recompilação",
+    "Kind": "Instalação integrada",
+    "DiscoverExecutable": true,
+    "PackageKind": "Zip",
+    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Se houver mais de um aplicativo, escolha o principal e o de configuração na janela do NEXUS. Versão Apple Arcade (macOS) rodando nativa no Windows. Requer seus próprios arquivos do jogo."
+  },
+  {
+    "Id": "soulcalibur2-xbox",
+    "Name": "Soulcalibur II (Xbox) · Soulcalibur2 Recomp",
+    "Repository": "tmcleroy/soulcalibur2-recomp",
+    "Platform": "Xbox",
+    "AssetPattern": "^Soulcalibur2Recomp-windows-x64\\.zip$",
+    "PlayNames": [],
+    "ConfigNames": [],
+    "ArtworkTitle": "Soulcalibur II",
+    "ProjectOnly": false,
+    "ProjectType": "Recompilação",
+    "Kind": "Instalação integrada",
+    "DiscoverExecutable": true,
+    "PackageKind": "Zip",
+    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Se houver mais de um aplicativo, escolha o principal e o de configuração na janela do NEXUS. Port nativo da versão Xbox, com Link e Heihachi a partir das suas cópias GameCube/PS2. Beta. Requer seu próprio disco.",
+    "LinuxAssetPattern": "^Soulcalibur2Recomp\\-linux\\-x86_64\\.tar\\.gz$",
+    "LinuxPackageKind": "Archive"
+  },
+  {
+    "Id": "ratchet-tod",
+    "Name": "Ratchet & Clank Future: Tools of Destruction · ToD Recomp",
+    "Repository": "Re-TeRo17/ratchet-tod-recomp",
+    "Platform": "PlayStation 3",
+    "AssetPattern": "^tod-recomp-[0-9.]+-win64\\.zip$",
+    "PlayNames": [],
+    "ConfigNames": [],
+    "ArtworkTitle": "Ratchet & Clank Future: Tools of Destruction",
+    "ProjectOnly": false,
+    "ProjectType": "Recompilação",
+    "Kind": "Instalação integrada",
+    "DiscoverExecutable": true,
+    "PackageKind": "Zip",
+    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Se houver mais de um aplicativo, escolha o principal e o de configuração na janela do NEXUS. Recompilação estática de PS3 com 4K, 60 fps e DualSense. Requer seu próprio disco."
+  },
+  {
+    "Id": "ocarina-recomp-sw2",
+    "Name": "Zelda: Ocarina of Time (Switch 2) · Ocarina Recomp",
+    "Repository": "sostenesfreitas/ocarina-recomp",
+    "Platform": "Nintendo Switch",
+    "AssetPattern": "^Instalar-Ocarina\\.exe$",
+    "PlayNames": [],
+    "ConfigNames": [],
+    "ArtworkTitle": "The Legend of Zelda: Ocarina of Time",
+    "ProjectOnly": false,
+    "ProjectType": "Recompilação",
+    "Kind": "Instalação integrada",
+    "DiscoverExecutable": true,
+    "PackageKind": "Installer",
+    "Notes": "O NEXUS baixa e verifica o instalador oficial, abre o assistente do autor e cadastra o aplicativo que você selecionar ao concluir. Atualizações também usam esse assistente. Experimental, testado só no começo do jogo. O instalador gera o ocarina.exe no seu PC a partir da sua cópia da versão Switch 2."
+  },
+  {
+    "Id": "hotd-rewrithe",
+    "Name": "The House of the Dead · ReWrithe",
+    "Repository": "TawhidI-602/The-House-of-the-Dead-ReWrithe",
+    "Platform": "Outras",
+    "AssetPattern": "^hotd-rewrithe-v[0-9.]+-win64\\.zip$",
+    "PlayNames": [],
+    "ConfigNames": [],
+    "ArtworkTitle": "The House of the Dead (video game)",
+    "ProjectOnly": false,
+    "ProjectType": "Reimplementação",
+    "Kind": "Instalação integrada",
+    "DiscoverExecutable": true,
+    "PackageKind": "Zip",
+    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Se houver mais de um aplicativo, escolha o principal e o de configuração na janela do NEXUS. Reescrita do jogo de arcade combinada com o port de PC de 1998. Requer seus próprios arquivos do port de PC.",
+    "LinuxAssetPattern": "^hotd\\-rewrithe\\-v[0-9][0-9A-Za-z.\\-]*\\-linux\\-x86_64\\.tar\\.gz$",
+    "LinuxPackageKind": "Archive"
+  },
+  {
+    "Id": "izuna-recomp",
+    "Name": "Ninja Gaiden II (Xbox 360) · IzunaRecomp",
+    "Repository": "YaibaKamikaze/IzunaRecomp",
+    "Platform": "Xbox 360",
+    "AssetPattern": "^IzunaRecomp-[0-9.]+-windows\\.zip$",
+    "PlayNames": [],
+    "ConfigNames": [],
+    "ArtworkTitle": "Ninja Gaiden II",
+    "ProjectOnly": false,
+    "ProjectType": "Recompilação",
+    "Kind": "Instalação integrada",
+    "DiscoverExecutable": true,
+    "PackageKind": "Zip",
+    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Se houver mais de um aplicativo, escolha o principal e o de configuração na janela do NEXUS. Recompilação com o Kasumi Renderer (Vulkan). Prévia aberta: se travar, desative o patch de pular a intro. Requer seu próprio disco."
+  },
+  {
+    "Id": "safehouse",
+    "Name": "Sly Cooper · SafeHouse",
+    "Repository": "FridiNaTor1/SafeHouse",
+    "Platform": "PlayStation 2",
+    "AssetPattern": "^SafeHouse-Launcher-Windows-x86_64-Portable\\.zip$",
+    "PlayNames": [
+      "SafeHouse.exe"
+    ],
+    "ConfigNames": [
+      "SafeHouse.exe"
+    ],
+    "ArtworkTitle": "Sly Cooper and the Thievius Raccoonus",
+    "ProjectOnly": false,
+    "ProjectType": "Recompilação",
+    "Kind": "Recompilação",
+    "PackageKind": "Zip",
+    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Jogar e Configurar abrem SafeHouse.exe; na primeira abertura, prepare seus próprios arquivos no port. Launcher e ports nativos dos jogos Sly Cooper. Requer suas próprias imagens de disco.",
+    "LinuxAssetPattern": "^SafeHouse\\-Launcher\\-Linux\\-x86_64\\.AppImage$",
+    "LinuxPackageKind": "AppImage"
+  },
+  {
+    "Id": "b3-express",
+    "Name": "Bayonetta 3 · B3-Express",
+    "Repository": "LuvAbyss/B3-Express",
+    "Platform": "Nintendo Switch",
+    "AssetPattern": "^B3-Express-[0-9.]+-windows-x64\\.zip$",
+    "PlayNames": [
+      "B3-Express.exe"
+    ],
+    "ConfigNames": [
+      "B3-Express.exe"
+    ],
+    "ArtworkTitle": "Bayonetta 3",
+    "ProjectOnly": false,
+    "ProjectType": "Recompilação",
+    "Kind": "Recompilação",
+    "PackageKind": "Zip",
+    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Jogar e Configurar abrem B3-Express.exe; na primeira abertura, prepare seus próprios arquivos no port. Recompilação ScarletNX da versão 1.2.0 com renderizador NVN próprio. Requer sua própria cópia."
+  },
+  {
+    "Id": "tsukihime-pc",
+    "Name": "Tsukihime: A Piece of Blue Glass Moon · PC Port",
+    "Repository": "Take00C/Tsukihime-Native-PC-Port",
+    "Platform": "PlayStation 4",
+    "AssetPattern": "^Tsukihime-v[0-9.]+-win-x64\\.zip$",
+    "PlayNames": [],
+    "ConfigNames": [],
+    "ArtworkTitle": "Tsukihime -A piece of blue glass moon-",
+    "ProjectOnly": false,
+    "ProjectType": "Port",
+    "Kind": "Instalação integrada",
+    "DiscoverExecutable": true,
+    "PackageKind": "Zip",
+    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Se houver mais de um aplicativo, escolha o principal e o de configuração na janela do NEXUS. Port nativo que lê direto os arquivos extraídos do seu PS4. Na primeira vez use o TsukihimeLauncher para escolher a pasta do jogo.",
+    "LinuxAssetPattern": "^Tsukihime\\-v[0-9][0-9A-Za-z.\\-]*\\-linux\\-x64\\.tar\\.gz$",
+    "LinuxPackageKind": "Archive"
+  },
+  {
+    "Id": "red-dead-revolver",
+    "Name": "Red Dead Revolver · Red Dead Revolver PC",
+    "Repository": "dennisabalo18-bot/red-dead-revolver-pc",
+    "Platform": "Xbox",
+    "AssetPattern": "^RedDeadRevolverPC\\.zip$",
+    "PlayNames": [],
+    "ConfigNames": [],
+    "ArtworkTitle": "Red Dead Revolver",
+    "ProjectOnly": false,
+    "ProjectType": "Recompilação",
+    "Kind": "Instalação integrada",
+    "DiscoverExecutable": true,
+    "PackageKind": "Zip",
+    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Se houver mais de um aplicativo, escolha o principal e o de configuração na janela do NEXUS. Recompilação estática da versão Xbox europeia (PAL). Requer seu próprio disco."
+  },
+  {
+    "Id": "f1-ce-ps3",
+    "Name": "Formula One Championship Edition · F1 CE Recomp",
+    "Repository": "mauricristiano95-hub/F1_CE_PS3",
+    "Platform": "PlayStation 3",
+    "AssetPattern": "^F1CE_launcher\\.zip$",
+    "PlayNames": [],
+    "ConfigNames": [],
+    "ArtworkTitle": "Formula One Championship Edition",
+    "ProjectOnly": false,
+    "ProjectType": "Recompilação",
+    "Kind": "Instalação integrada",
+    "DiscoverExecutable": true,
+    "PackageKind": "Zip",
+    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Se houver mais de um aplicativo, escolha o principal e o de configuração na janela do NEXUS. Recompilação estática de PS3 em estágio inicial. Lê a pasta PS3_GAME da sua cópia."
+  },
+  {
+    "Id": "army-of-two-tdc",
+    "Name": "Army of Two: The Devil's Cartel · Recomp",
+    "Repository": "BrewSparrow/ArmyOfTwoTDC-Recomp",
+    "Platform": "Xbox 360",
+    "AssetPattern": "^Ao2TDC-win64\\.zip$",
+    "PlayNames": [
+      "ArmyOfTwoTDC X360 Recomp.exe"
+    ],
+    "ConfigNames": [
+      "ArmyOfTwoTDC X360 Recomp.exe"
+    ],
+    "ArtworkTitle": "Army of Two: The Devil's Cartel",
+    "ProjectOnly": false,
+    "ProjectType": "Recompilação",
+    "Kind": "Recompilação",
+    "PackageKind": "Zip",
+    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Jogar e Configurar abrem ArmyOfTwoTDC X360 Recomp.exe; na primeira abertura, prepare seus próprios arquivos no port. Recompilação da versão Xbox 360. Requer seu próprio disco."
+  },
+  {
+    "Id": "tourline-prologue",
+    "Name": "Gran Turismo 5 Prologue · Tourline Prologue",
+    "Repository": "mathewdouglas/Tourline-Prologue",
+    "Platform": "PlayStation 3",
+    "AssetPattern": "^tourline-prologue-v[0-9.]+-windows-x64-[0-9a-f]+\\.zip$",
+    "PlayNames": [
+      "tourline-prologue.exe"
+    ],
+    "ConfigNames": [
+      "tourline-prologue.exe"
+    ],
+    "ArtworkTitle": "Gran Turismo 5 Prologue",
+    "ProjectOnly": false,
+    "ProjectType": "Recompilação",
+    "Kind": "Recompilação",
+    "PackageKind": "Zip",
+    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Jogar e Configurar abrem tourline-prologue.exe; na primeira abertura, prepare seus próprios arquivos no port. Recompilação nativa de GT5 Prologue (BCUS98158 v03.00). Requer sua própria cópia."
+  },
+  {
+    "Id": "top-spin-4",
+    "Name": "Top Spin 4 · Recomp",
+    "Repository": "shaneomac1337/Top-Spin-4-Recomp",
+    "Platform": "Xbox 360",
+    "AssetPattern": "^TopSpin4Recomp-[0-9.]+\\.zip$",
+    "PlayNames": [],
+    "ConfigNames": [],
+    "ArtworkTitle": "Top Spin 4",
+    "ProjectOnly": false,
+    "ProjectType": "Recompilação",
+    "Kind": "Instalação integrada",
+    "DiscoverExecutable": true,
+    "PackageKind": "Zip",
+    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Se houver mais de um aplicativo, escolha o principal e o de configuração na janela do NEXUS. Port não oficial com renderizador Vulkan. Requer seu próprio disco."
+  },
+  {
+    "Id": "redline-recompiled",
+    "Name": "Forza Motorsport (2005) · Redline Recompiled",
+    "Repository": "DivxPlays/redline-recompiled",
+    "Platform": "Xbox",
+    "AssetPattern": "^RedlineRecompiled-[0-9.]+\\.zip$",
+    "PlayNames": [
+      "RedlineLauncher.exe"
+    ],
+    "ConfigNames": [
+      "RedlineLauncher.exe"
+    ],
+    "ArtworkTitle": "Forza Motorsport (2005 video game)",
+    "ProjectOnly": false,
+    "ProjectType": "Recompilação",
+    "Kind": "Recompilação",
+    "PackageKind": "Zip",
+    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Jogar e Configurar abrem RedlineLauncher.exe; na primeira abertura, prepare seus próprios arquivos no port. Port do Forza Motorsport original de Xbox: até 144 fps e 4x a resolução. Requer seu próprio disco."
+  },
+  {
+    "Id": "colosseum-launcher",
+    "Name": "Pokémon Colosseum · Colosseum Launcher",
+    "Repository": "chasem-dev/colosseum-launcher",
+    "Platform": "GameCube",
+    "AssetPattern": "^Colosseum-Launcher-[0-9.]+-win-portable\\.exe$",
+    "PlayNames": [
+      "Colosseum-Launcher-0.1.3-win-portable.exe"
+    ],
+    "ConfigNames": [
+      "Colosseum-Launcher-0.1.3-win-portable.exe"
+    ],
+    "ArtworkTitle": "Pokémon Colosseum",
+    "ProjectOnly": false,
+    "ProjectType": "Recompilação",
+    "Kind": "Recompilação",
+    "PackageKind": "Executable",
+    "Notes": "O NEXUS baixa o executável portátil oficial. Jogar e Configurar abrem Colosseum-Launcher-0.1.3-win-portable.exe. O launcher guia a preparação, baixa as ferramentas e monta o port nativo. Requer a imagem do seu disco norte-americano.",
+    "LinuxAssetPattern": "^Colosseum\\-Launcher\\.AppImage$",
+    "LinuxPackageKind": "AppImage"
+  },
+  {
+    "Id": "spiderman-2002",
+    "Name": "Spider-Man (2002) · Spider-Man PC",
+    "Repository": "xdivorex-gif/spiderman-2002-pc",
+    "Platform": "Xbox",
+    "AssetPattern": "^SpiderManSetup\\.exe$",
+    "PlayNames": [],
+    "ConfigNames": [],
+    "ArtworkTitle": "Spider-Man (2002 video game)",
+    "ProjectOnly": false,
+    "ProjectType": "Recompilação",
+    "Kind": "Instalação integrada",
+    "DiscoverExecutable": true,
+    "PackageKind": "Installer",
+    "Notes": "O NEXUS baixa e verifica o instalador oficial, abre o assistente do autor e cadastra o aplicativo que você selecionar ao concluir. Atualizações também usam esse assistente. Port nativo não oficial da versão Xbox. Requer sua própria cópia."
+  },
+  {
+    "Id": "winback-recomp",
+    "Name": "WinBack: Covert Operations · Recompiled",
+    "Repository": "RetroPulse03/WinBackRecomp",
+    "Platform": "Nintendo 64",
+    "AssetPattern": "^WinBackRecompiled-v[0-9.]+-Windows-x64\\.zip$",
+    "PlayNames": [
+      "WinBackRecompiled.exe"
+    ],
+    "ConfigNames": [
+      "WinBackRecompiled.exe"
+    ],
+    "ArtworkTitle": "WinBack",
+    "ProjectOnly": false,
+    "ProjectType": "Recompilação",
+    "Kind": "Recompilação",
+    "PackageKind": "Zip",
+    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Jogar e Configurar abrem WinBackRecompiled.exe; na primeira abertura, prepare seus próprios arquivos no port. Recompilação estática de N64. Requer sua própria ROM."
+  },
+  {
+    "Id": "far-cry-instincts",
+    "Name": "Far Cry Instincts · Recomp",
+    "Repository": "bassobr/Far-Cry-Instincts-Recomp",
+    "Platform": "Xbox",
+    "AssetPattern": "^FarCryInstincts-Recomp-v[0-9.]+-win64\\.zip$",
+    "PlayNames": [
+      "FarCryInstincts.exe"
+    ],
+    "ConfigNames": [
+      "FarCryInstincts.exe"
+    ],
+    "ArtworkTitle": "Far Cry Instincts",
+    "ProjectOnly": false,
+    "ProjectType": "Recompilação",
+    "Kind": "Recompilação",
+    "PackageKind": "Zip",
+    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Jogar e Configurar abrem FarCryInstincts.exe; na primeira abertura, prepare seus próprios arquivos no port. Recompilação da versão Xbox original para Windows x64. Requer seu próprio disco."
+  },
+  {
+    "Id": "torchlight-recomp",
+    "Name": "Torchlight (Xbox 360) · Recompiled",
+    "Repository": "retrogameworld/TorchlightRecomp",
+    "Platform": "Xbox 360",
+    "AssetPattern": "^Torchlight-Recompiled-v[0-9.]+\\.zip$",
+    "PlayNames": [],
+    "ConfigNames": [],
+    "ArtworkTitle": "Torchlight (video game)",
+    "ProjectOnly": false,
+    "ProjectType": "Recompilação",
+    "Kind": "Instalação integrada",
+    "DiscoverExecutable": true,
+    "PackageKind": "Zip",
+    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Se houver mais de um aplicativo, escolha o principal e o de configuração na janela do NEXUS. Recompilação da versão Xbox Live Arcade. Requer sua própria cópia."
+  },
+  {
+    "Id": "sonic06-recomp",
+    "Name": "Sonic the Hedgehog (2006) · Soleanna",
+    "Repository": "DrummingBird1/sonic06-recomp",
+    "Platform": "PlayStation 3",
+    "AssetPattern": "^Soleanna-[0-9.]+\\.exe$",
+    "PlayNames": [
+      "Soleanna-0.1.0.exe"
+    ],
+    "ConfigNames": [
+      "Soleanna-0.1.0.exe"
+    ],
+    "ArtworkTitle": "Sonic the Hedgehog (2006 video game)",
+    "ProjectOnly": false,
+    "ProjectType": "Recompilação",
+    "Kind": "Recompilação",
+    "PackageKind": "Executable",
+    "Notes": "O NEXUS baixa o executável portátil oficial. Jogar e Configurar abrem Soleanna-0.1.0.exe. Versão inicial: todas as fases e chefes iniciam, mas ainda não foram jogadas até o fim. O launcher monta o jogo a partir do seu disco de PS3."
+  },
+  {
+    "Id": "streets-of-rage",
+    "Name": "Streets of Rage Collection · Recomp",
+    "Repository": "OriginalSwayze/Streets-Of-Rage-Recomp",
+    "Platform": "Outras",
+    "AssetPattern": "^Streets-of-Rage-Collection-Setup-v[0-9.]+\\.exe$",
+    "PlayNames": [],
+    "ConfigNames": [],
+    "ArtworkTitle": "Streets of Rage",
+    "ProjectOnly": false,
+    "ProjectType": "Recompilação",
+    "Kind": "Instalação integrada",
+    "DiscoverExecutable": true,
+    "PackageKind": "Installer",
+    "Notes": "O NEXUS baixa e verifica o instalador oficial, abre o assistente do autor e cadastra o aplicativo que você selecionar ao concluir. Atualizações também usam esse assistente. Recompilação dos jogos de Mega Drive com instalador do autor. Requer suas próprias ROMs."
+  },
+  {
+    "Id": "battle-stadium-don",
+    "Name": "Battle Stadium D.O.N · PC Port",
+    "Repository": "dvilelaf/battlestadium-don",
+    "Platform": "PlayStation 2",
+    "AssetPattern": "^don-windows-[0-9a-f]+\\.zip$",
+    "PlayNames": [
+      "Battle Stadium DON.exe"
+    ],
+    "ConfigNames": [
+      "Battle Stadium DON.exe"
+    ],
+    "ArtworkTitle": "Battle Stadium D.O.N",
+    "ProjectOnly": false,
+    "ProjectType": "Recompilação",
+    "Kind": "Recompilação",
+    "PackageKind": "Zip",
+    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Jogar e Configurar abrem Battle Stadium DON.exe; na primeira abertura, prepare seus próprios arquivos no port. Port por recompilação estática da versão PS2. Requer seu próprio disco.",
+    "LinuxAssetPattern": "^BattleStadiumDON\\-[0-9][0-9A-Za-z.\\-]*\\-x86_64\\.AppImage$",
+    "LinuxPackageKind": "AppImage"
+  },
+  {
+    "Id": "pmd-sky-recomp",
+    "Name": "Pokémon Mystery Dungeon: Explorers of Sky · SkyRecompiled",
+    "Repository": "DarthMDev/pmd-sky-recomp",
+    "Platform": "Nintendo DS",
+    "AssetPattern": "^SkyRecompiled-v.*-windows-x64\\.zip$",
+    "PlayNames": [
+      "nds_runner.exe"
+    ],
+    "ConfigNames": [
+      "nds_runner.exe"
+    ],
+    "ArtworkTitle": "Pokémon Mystery Dungeon: Explorers of Time and Explorers of Darkness",
+    "ProjectOnly": false,
+    "ProjectType": "Recompilação",
+    "Kind": "Recompilação",
+    "PackageKind": "Zip",
+    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Jogar e Configurar abrem nds_runner.exe; na primeira abertura, prepare seus próprios arquivos no port. Recompilação AOT em alpha. Requer sua própria ROM.",
+    "LinuxAssetPattern": "^SkyRecompiled\\-v[0-9][0-9A-Za-z.\\-]*\\-linux\\-x86_64\\.tar\\.gz$",
+    "LinuxPackageKind": "Archive"
+  },
+  {
+    "Id": "pokepark-wii",
+    "Name": "PokéPark Wii · Wiicompiled",
+    "Repository": "MildRain479/PokePark-Wiicompiled",
+    "Platform": "Wii",
+    "AssetPattern": "^PokePark-Wiicompiled-v.*-windows-x64\\.zip$",
+    "PlayNames": [
+      "PokePark.exe"
+    ],
+    "ConfigNames": [
+      "PokePark.exe"
+    ],
+    "ArtworkTitle": "PokéPark Wii: Pikachu's Adventure",
+    "ProjectOnly": false,
+    "ProjectType": "Recompilação",
+    "Kind": "Recompilação",
+    "PackageKind": "Zip",
+    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Jogar e Configurar abrem PokePark.exe; na primeira abertura, prepare seus próprios arquivos no port. Port nativo em beta aberta. Requer seu próprio disco."
+  },
+  {
+    "Id": "tiger-woods-2004",
+    "Name": "Tiger Woods PGA Tour 2004 · XBE Recomp",
+    "Repository": "projectedan/TigerWoods2004-XBE-Recomp",
+    "Platform": "Xbox",
+    "AssetPattern": "^TW2004\\.zip$",
+    "PlayNames": [
+      "TW2004.exe"
+    ],
+    "ConfigNames": [
+      "TW2004.exe"
+    ],
+    "ArtworkTitle": "Tiger Woods PGA Tour 2004",
+    "ProjectOnly": false,
+    "ProjectType": "Recompilação",
+    "Kind": "Recompilação",
+    "PackageKind": "Zip",
+    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Jogar e Configurar abrem TW2004.exe; na primeira abertura, prepare seus próprios arquivos no port. Port nativo da versão Xbox. Beta. Requer seu próprio disco."
+  },
+  {
+    "Id": "fe3h-recomp",
+    "Name": "Fire Emblem: Three Houses · FE3H PC Recomp",
+    "Repository": "jaigner-hub/fe3h-pc-recomp",
+    "Platform": "Nintendo Switch",
+    "AssetPattern": "^FE3H-Setup-[0-9.]+-windows\\.zip$",
+    "PlayNames": [
+      "FE3H-Setup.exe"
+    ],
+    "ConfigNames": [
+      "FE3H-Setup.exe"
+    ],
+    "ArtworkTitle": "Fire Emblem: Three Houses",
+    "ProjectOnly": false,
+    "ProjectType": "Recompilação",
+    "AllowPrerelease": true,
+    "Kind": "Recompilação",
+    "PackageKind": "Zip",
+    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Jogar e Configurar abrem FE3H-Setup.exe; na primeira abertura, prepare seus próprios arquivos no port. Pré-release experimental. Recompilação estática da versão Switch. Requer sua própria cópia."
+  },
+  {
+    "Id": "mp4-recomp",
+    "Name": "Metroid Prime 4: Beyond · MP4 PC Recomp",
+    "Repository": "jaigner-hub/metroid-prime-4-recomp",
+    "Platform": "Nintendo Switch",
+    "AssetPattern": "^MP4-Setup-[0-9.]+-windows\\.zip$",
+    "PlayNames": [
+      "MP4-Setup.exe"
+    ],
+    "ConfigNames": [
+      "MP4-Setup.exe"
+    ],
+    "ArtworkTitle": "Metroid Prime 4: Beyond",
+    "ProjectOnly": false,
+    "ProjectType": "Recompilação",
+    "Kind": "Recompilação",
+    "PackageKind": "Zip",
+    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Jogar e Configurar abrem MP4-Setup.exe; na primeira abertura, prepare seus próprios arquivos no port. Jogável do começo até o primeiro chefe, com som e controle ou teclado e mouse. Requer sua cópia da versão Switch 1."
+  },
+  {
+    "Id": "nimbus-dbz",
+    "Name": "Dragon Ball Z (Budokai, Sagas e outros) · Nimbus",
+    "Repository": "thebabyhippo303/nimbus-recompilation-project",
+    "Platform": "GameCube",
+    "AssetPattern": "^Nimbus-Alpha-[0-9.]+-Windows-x64\\.zip$",
+    "PlayNames": [],
+    "ConfigNames": [],
+    "ArtworkTitle": "Dragon Ball Z: Budokai",
+    "ProjectOnly": false,
+    "ProjectType": "Recompilação",
+    "Kind": "Instalação integrada",
+    "DiscoverExecutable": true,
+    "PackageKind": "Zip",
+    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Se houver mais de um aplicativo, escolha o principal e o de configuração na janela do NEXUS. Seis ports nativos num pacote: Budokai, Budokai 2 e Sagas (GameCube), Supersonic Warriors e Taiketsu (GBA) e Tenkaichi Tag Team (PSP). Alpha. Requer suas próprias cópias."
+  },
+  {
+    "Id": "shadow-the-hedgehog",
+    "Name": "Shadow the Hedgehog · Native Port",
+    "Repository": "FlyinRabit205/STH-Recompiled",
+    "Platform": "Xbox",
+    "AssetPattern": "^ShadowNativePort-v[0-9.]+-Windows\\.zip$",
+    "PlayNames": [
+      "Shadow.exe"
+    ],
+    "ConfigNames": [
+      "Setup.exe"
+    ],
+    "ArtworkTitle": "Shadow the Hedgehog (video game)",
+    "ProjectOnly": false,
+    "ProjectType": "Recompilação",
+    "Kind": "Recompilação",
+    "PackageKind": "Zip",
+    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Configurar abre o Setup.exe, que monta o jogo a partir do seu ISO norte-americano de Xbox (alguns minutos, uma vez); Jogar abre o Shadow.exe. Suporte opcional ao pacote de texturas HD."
+  },
+  {
+    "Id": "nhl-legacy",
+    "Name": "NHL Legacy Edition · Native",
+    "Repository": "csrpfivem/PS3NHLLegacyRecomp",
+    "Platform": "PlayStation 3",
+    "AssetPattern": "^NHL-Legacy-Native_v[0-9.]+\\.zip$",
+    "PlayNames": [],
+    "ConfigNames": [],
+    "ArtworkTitle": "NHL Legacy Edition",
+    "ProjectOnly": false,
+    "ProjectType": "Recompilação",
+    "Kind": "Instalação integrada",
+    "DiscoverExecutable": true,
+    "PackageKind": "Zip",
+    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Se houver mais de um aplicativo, escolha o principal e o de configuração na janela do NEXUS. Recompilação estática da versão PS3. Requer sua própria cópia."
+  },
+  {
+    "Id": "goemon-great-adventure",
+    "Name": "Goemon's Great Adventure · Recompiled",
+    "Repository": "DreaXer/GGARecomp",
+    "Platform": "Nintendo 64",
+    "AssetPattern": "^GGARecompiled-v[0-9.]+-windows\\.zip$",
+    "PlayNames": [
+      "GGARecompiled.exe"
+    ],
+    "ConfigNames": [
+      "GGARecompiled.exe"
+    ],
+    "ArtworkTitle": "Goemon's Great Adventure",
+    "ProjectOnly": false,
+    "ProjectType": "Recompilação",
+    "AllowPrerelease": true,
+    "Kind": "Recompilação",
+    "PackageKind": "Zip",
+    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Jogar e Configurar abrem GGARecompiled.exe; na primeira abertura, prepare seus próprios arquivos no port. Pré-release da recompilação N64. Requer sua própria ROM."
+  },
+  {
+    "Id": "frightworks",
+    "Name": "Scooby-Doo! Night of 100 Frights · FrightWorks",
+    "Repository": "FrightWorks/FrightWorks-no100f",
+    "Platform": "GameCube",
+    "AssetPattern": "^FrightWorks-[0-9.]+\\.zip$",
+    "PlayNames": [
+      "FrightWorks.exe"
+    ],
+    "ConfigNames": [
+      "FrightWorks.exe"
+    ],
+    "ArtworkTitle": "Scooby-Doo! Night of 100 Frights",
+    "ProjectOnly": false,
+    "ProjectType": "Recompilação",
+    "Kind": "Recompilação",
+    "PackageKind": "Zip",
+    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Jogar e Configurar abrem FrightWorks.exe; na primeira abertura, prepare seus próprios arquivos no port. Port de PC baseado no Scooby-Doo: Refrightened. Requer seu próprio disco de GameCube."
+  },
+  {
+    "Id": "moh-frontline",
+    "Name": "Medal of Honor: Frontline · Recomp",
+    "Repository": "goodshepherd23/MOHFrontline-Recomp",
+    "Platform": "GameCube",
+    "AssetPattern": "^MOHFrontline-Recomp-v[0-9.]+-windows-x64\\.zip$",
+    "PlayNames": [
+      "MOHFrontline.exe"
+    ],
+    "ConfigNames": [
+      "MOHFrontline.exe"
+    ],
+    "ArtworkTitle": "Medal of Honor: Frontline",
+    "ProjectOnly": false,
+    "ProjectType": "Recompilação",
+    "Kind": "Recompilação",
+    "PackageKind": "Zip",
+    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Jogar e Configurar abrem MOHFrontline.exe; na primeira abertura, prepare seus próprios arquivos no port. Recompilação estática da versão GameCube (USA). Requer seu próprio disco."
+  },
+  {
+    "Id": "quarantine-recomp",
+    "Name": "Quarantine (DOS) · Recomp",
+    "Repository": "ACR-GD/quarantine-recomp",
+    "Platform": "Outras",
+    "AssetPattern": "^Quarantine-[0-9.]+-Windows-x64\\.zip$",
+    "PlayNames": [
+      "Quarantine.exe"
+    ],
+    "ConfigNames": [
+      "Quarantine.exe"
+    ],
+    "ArtworkTitle": "Quarantine (video game)",
+    "ProjectOnly": false,
+    "ProjectType": "Recompilação",
+    "Kind": "Recompilação",
+    "PackageKind": "Zip",
+    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Jogar e Configurar abrem Quarantine.exe; na primeira abertura, prepare seus próprios arquivos no port. Recompilação estática do jogo de DOS de 1994. Requer seus próprios arquivos do jogo.",
+    "LinuxAssetPattern": "^Quarantine\\-[0-9][0-9A-Za-z.\\-]*\\-Linux\\-x64\\.tar\\.gz$",
+    "LinuxPackageKind": "Archive"
+  },
+  {
+    "Id": "rayman2-n64",
+    "Name": "Rayman 2 (N64) · Rayman 2 Recompiled",
+    "Repository": "n64hub/rayman-2-recomp",
+    "Platform": "Nintendo 64",
+    "AssetPattern": "^Rayman2Recompiled-v[0-9.]+-windows-x64\\.zip$",
+    "PlayNames": [
+      "Rayman2Recompiled.exe"
+    ],
+    "ConfigNames": [
+      "Rayman2Recompiled.exe"
+    ],
+    "ArtworkTitle": "Rayman 2: The Great Escape",
+    "ProjectOnly": false,
+    "ProjectType": "Recompilação",
+    "Kind": "Recompilação",
+    "PackageKind": "Zip",
+    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Jogar e Configurar abrem Rayman2Recompiled.exe; na primeira abertura, prepare seus próprios arquivos no port. Recompilação da versão N64 (USA), escrita com IA segundo o autor. Requer sua própria ROM.",
+    "LinuxAssetPattern": "^Rayman2Recompiled\\-v[0-9][0-9A-Za-z.\\-]*\\-linux\\-x64\\.tar\\.gz$",
+    "LinuxPackageKind": "Archive"
+  },
+  {
+    "Id": "ghoulies-pc",
+    "Name": "Grabbed by the Ghoulies · PC Recomp",
+    "Repository": "SeveerJ/Ghoulies_PC_Recomp",
+    "Platform": "Xbox",
+    "AssetPattern": "^GhouliesPC_Setup_v.*\\.exe$",
+    "PlayNames": [],
+    "ConfigNames": [],
+    "ArtworkTitle": "Grabbed by the Ghoulies",
+    "ProjectOnly": false,
+    "ProjectType": "Recompilação",
+    "Kind": "Instalação integrada",
+    "DiscoverExecutable": true,
+    "PackageKind": "Installer",
+    "Notes": "O NEXUS baixa e verifica o instalador oficial, abre o assistente do autor e cadastra o aplicativo que você selecionar ao concluir. Atualizações também usam esse assistente. Port nativo do jogo da Rare para Xbox, com instalador do autor. Beta. Requer seu próprio disco."
+  },
+  {
+    "Id": "nhl-hitz-2003",
+    "Name": "NHL Hitz 2003 · Recomp",
+    "Repository": "dalves408/nhlhitz2003recomp",
+    "Platform": "Xbox",
+    "AssetPattern": "^NHLHitz2003-[0-9.]+-Windows-x64\\.zip$",
+    "PlayNames": [],
+    "ConfigNames": [],
+    "ArtworkTitle": "NHL Hitz 2003",
+    "ProjectOnly": false,
+    "ProjectType": "Recompilação",
+    "Kind": "Instalação integrada",
+    "DiscoverExecutable": true,
+    "PackageKind": "Zip",
+    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Se houver mais de um aplicativo, escolha o principal e o de configuração na janela do NEXUS. Recompilação estática da versão Xbox para Windows x64. Requer seu próprio disco.",
+    "LinuxAssetPattern": "^NHLHitz2003\\-[0-9][0-9A-Za-z.\\-]*\\-Standalone\\.AppImage$",
+    "LinuxPackageKind": "AppImage"
+  },
+  {
+    "Id": "beyond-oasis",
+    "Name": "Beyond Oasis · Recomp",
+    "Repository": "OriginalSwayze/beyond-oasis-recomp",
+    "Platform": "Outras",
+    "AssetPattern": "^Beyond-Oasis-Setup-v[0-9.]+\\.exe$",
+    "PlayNames": [],
+    "ConfigNames": [],
+    "ArtworkTitle": "Beyond Oasis",
+    "ProjectOnly": false,
+    "ProjectType": "Recompilação",
+    "Kind": "Instalação integrada",
+    "DiscoverExecutable": true,
+    "PackageKind": "Installer",
+    "Notes": "O NEXUS baixa e verifica o instalador oficial, abre o assistente do autor e cadastra o aplicativo que você selecionar ao concluir. Atualizações também usam esse assistente. Recompilação do jogo de Mega Drive. Requer sua própria ROM."
   }
 ]

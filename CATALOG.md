@@ -1,5 +1,58 @@
 # Catálogo de ports
 
+## Novos ports e recomps — 06/11/2026
+
+42 fontes novas publicadas entre 31/10 e 06/11, todas com download e atualização integrados. Cada perfil foi conferido nas Releases atuais (exatamente um pacote, com SHA-256 publicado) e os ZIPs foram inspecionados sem baixar o jogo inteiro. 12 também têm build Linux nativa.
+
+| Plataforma | Projeto | Release | Jogar | Linux |
+|---|---|---|---|---|
+| Nintendo Switch | [Bayonetta 3 · B3-Express](https://github.com/LuvAbyss/B3-Express) | 0.2.0 | `B3-Express.exe` | — |
+| Nintendo Switch | [Fire Emblem: Three Houses · FE3H PC Recomp](https://github.com/jaigner-hub/fe3h-pc-recomp) | v0.2.0 (beta) | `FE3H-Setup.exe` | — |
+| Nintendo Switch | [Metroid Prime 4: Beyond · MP4 PC Recomp](https://github.com/jaigner-hub/metroid-prime-4-recomp) | v0.2.0 | `MP4-Setup.exe` | — |
+| Nintendo Switch | [Pokémon Pokopia · Pokopia Recomp](https://github.com/drakolordx7/switch2-recomp) | v0.2.0 | `PokopiaLauncher.exe` | — |
+| Nintendo Switch | [Xenoblade Chronicles 2 · XC2 Recomp](https://github.com/AksharDP/xc2-recomp) | v0.1.11 | `XC2-Setup.exe` | sim |
+| Nintendo Switch | [Zelda: Ocarina of Time (Switch 2) · Ocarina Recomp](https://github.com/sostenesfreitas/ocarina-recomp) | v0.1.5 | assistente do autor | — |
+| Xbox 360 | [Army of Two: The Devil's Cartel · Recomp](https://github.com/BrewSparrow/ArmyOfTwoTDC-Recomp) | 1.0 | `ArmyOfTwoTDC X360 Recomp.exe` | — |
+| Xbox 360 | [Grand Theft Auto V (Xbox 360) · GTA V Recomp](https://github.com/andrewnakas/gtav-recomp) | v0.3.0 | escolha no NEXUS | sim |
+| Xbox 360 | [Ninja Gaiden II (Xbox 360) · IzunaRecomp](https://github.com/YaibaKamikaze/IzunaRecomp) | v0.2.0 | escolha no NEXUS | — |
+| Xbox 360 | [Top Spin 4 · Recomp](https://github.com/shaneomac1337/Top-Spin-4-Recomp) | v1.0.0 | escolha no NEXUS | — |
+| Xbox 360 | [Torchlight (Xbox 360) · Recompiled](https://github.com/retrogameworld/TorchlightRecomp) | v1.0 | escolha no NEXUS | — |
+| Xbox | [Far Cry Instincts · Recomp](https://github.com/bassobr/Far-Cry-Instincts-Recomp) | v0.1.2 | `FarCryInstincts.exe` | — |
+| Xbox | [Forza Motorsport (2005) · Redline Recompiled](https://github.com/DivxPlays/redline-recompiled) | v0.1.0 | `RedlineLauncher.exe` | — |
+| Xbox | [Grabbed by the Ghoulies · PC Recomp](https://github.com/SeveerJ/Ghoulies_PC_Recomp) | v0.1_Beta | assistente do autor | — |
+| Xbox | [NHL Hitz 2003 · Recomp](https://github.com/dalves408/nhlhitz2003recomp) | v1.0.3 | escolha no NEXUS | sim |
+| Xbox | [Red Dead Revolver · Red Dead Revolver PC](https://github.com/dennisabalo18-bot/red-dead-revolver-pc) | v1.3.1 | escolha no NEXUS | — |
+| Xbox | [Shadow the Hedgehog · Native Port](https://github.com/FlyinRabit205/STH-Recompiled) | v1.2 | `Shadow.exe` | — |
+| Xbox | [Soulcalibur II (Xbox) · Soulcalibur2 Recomp](https://github.com/tmcleroy/soulcalibur2-recomp) | v0.3.0-beta.1 | escolha no NEXUS | sim |
+| Xbox | [Spider-Man (2002) · Spider-Man PC](https://github.com/xdivorex-gif/spiderman-2002-pc) | v0.1.2 | assistente do autor | — |
+| Xbox | [Tiger Woods PGA Tour 2004 · XBE Recomp](https://github.com/projectedan/TigerWoods2004-XBE-Recomp) | v0.7.2-beta | `TW2004.exe` | — |
+| PlayStation 4 | [Tsukihime: A Piece of Blue Glass Moon · PC Port](https://github.com/Take00C/Tsukihime-Native-PC-Port) | v0.1.6 | escolha no NEXUS | sim |
+| PlayStation 3 | [Formula One Championship Edition · F1 CE Recomp](https://github.com/mauricristiano95-hub/F1_CE_PS3) | 0.0.3 | escolha no NEXUS | — |
+| PlayStation 3 | [Gran Turismo 5 Prologue · Tourline Prologue](https://github.com/mathewdouglas/Tourline-Prologue) | v0.2.4 | `tourline-prologue.exe` | — |
+| PlayStation 3 | [NHL Legacy Edition · Native](https://github.com/csrpfivem/PS3NHLLegacyRecomp) | v1.0.0 | escolha no NEXUS | — |
+| PlayStation 3 | [Ratchet & Clank Future: Tools of Destruction · ToD Recomp](https://github.com/Re-TeRo17/ratchet-tod-recomp) | v1.1 | escolha no NEXUS | — |
+| PlayStation 3 | [Sonic the Hedgehog (2006) · Soleanna](https://github.com/DrummingBird1/sonic06-recomp) | v0.1.0 | `Soleanna-0.1.0.exe` | — |
+| PlayStation 2 | [Battle Stadium D.O.N · PC Port](https://github.com/dvilelaf/battlestadium-don) | v1.0 | `Battle Stadium DON.exe` | sim |
+| PlayStation 2 | [Sly Cooper · SafeHouse](https://github.com/FridiNaTor1/SafeHouse) | v0.1.13 | `SafeHouse.exe` | sim |
+| GameCube | [Dragon Ball Z (Budokai, Sagas e outros) · Nimbus](https://github.com/thebabyhippo303/nimbus-recompilation-project) | alpha-1.6 | escolha no NEXUS | — |
+| GameCube | [Medal of Honor: Frontline · Recomp](https://github.com/goodshepherd23/MOHFrontline-Recomp) | v0.2.0 | `MOHFrontline.exe` | — |
+| GameCube | [Pokémon Colosseum · Colosseum Launcher](https://github.com/chasem-dev/colosseum-launcher) | v0.1.3 | `Colosseum-Launcher-0.1.3-win-portable.exe` | sim |
+| GameCube | [Scooby-Doo! Night of 100 Frights · FrightWorks](https://github.com/FrightWorks/FrightWorks-no100f) | v1.1.1 | `FrightWorks.exe` | — |
+| Wii | [PokéPark Wii · Wiicompiled](https://github.com/MildRain479/PokePark-Wiicompiled) | v0.1.3-beta | `PokePark.exe` | — |
+| Nintendo 64 | [Goemon's Great Adventure · Recompiled](https://github.com/DreaXer/GGARecomp) | v0.1.0 (beta) | `GGARecompiled.exe` | — |
+| Nintendo 64 | [Rayman 2 (N64) · Rayman 2 Recompiled](https://github.com/n64hub/rayman-2-recomp) | v0.1.11 | `Rayman2Recompiled.exe` | sim |
+| Nintendo 64 | [WinBack: Covert Operations · Recompiled](https://github.com/RetroPulse03/WinBackRecomp) | v0.2.2 | `WinBackRecompiled.exe` | — |
+| Nintendo DS | [Pokémon Mystery Dungeon: Explorers of Sky · SkyRecompiled](https://github.com/DarthMDev/pmd-sky-recomp) | v0.1.0-alpha | `nds_runner.exe` | sim |
+| Outras | [Beyond Oasis · Recomp](https://github.com/OriginalSwayze/beyond-oasis-recomp) | v1.5 | assistente do autor | — |
+| Outras | [Castlevania: Grimoire of Souls · GoS Recomp](https://github.com/BLSNCVS/Castlevania-Grimoire-of-Souls-Recomp) | 1.0.7 | escolha no NEXUS | — |
+| Outras | [Quarantine (DOS) · Recomp](https://github.com/ACR-GD/quarantine-recomp) | v0.1.0 | `Quarantine.exe` | sim |
+| Outras | [Streets of Rage Collection · Recomp](https://github.com/OriginalSwayze/Streets-Of-Rage-Recomp) | v2.6.2 | assistente do autor | — |
+| Outras | [The House of the Dead · ReWrithe](https://github.com/TawhidI-602/The-House-of-the-Dead-ReWrithe) | v1.3.0 | escolha no NEXUS | sim |
+
+Ficaram de fora: projetos só para macOS, Android, PS4/PS5 com desbloqueio ou homebrew de Switch; Metroid Prime 4 do linuxopt (só AppImage, sem pacote Windows); Arceuszada (só .rar); Battlefield: Bad Company (ZIP da Release corrompido); PES 2017 PRO17PORT (origem não confirmada); Woohoo! Flight School (apenas kit de build em pré-release); e recomps ainda sem Release, como os de Ocarina of Time do jaigner-hub, Chiuauaa e Mars7x.
+
+Total do catálogo: **407 fontes**, **375 perfis GitHub integrados**, **1 importação oficial** e **31 exceções**; **70** com build Linux.
+
 ## Repositórios renomeados — 04/11/2026
 
 - **God of War III**: o gow3_pc virou [SpartanPort](https://github.com/FelipePrado0/SpartanPort). O perfil passou a baixar `spartanport-windows.zip` (e o AppImage no Linux), e o perfil duplicado "SpartanPort" foi unificado nele.

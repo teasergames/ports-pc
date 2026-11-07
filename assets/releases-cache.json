@@ -7840,5 +7840,1235 @@
         }
       ]
     }
+  },
+  {
+    "Repository": "drakolordx7/switch2-recomp",
+    "CheckedUtc": "2026-11-07T00:05:40.623490+00:00",
+    "Release": {
+      "tag_name": "v0.2.0",
+      "html_url": "https://github.com/drakolordx7/switch2-recomp/releases/tag/v0.2.0",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "PokopiaRecomp-0.2.0-win64.zip",
+          "size": 171179854,
+          "browser_download_url": "https://github.com/drakolordx7/switch2-recomp/releases/download/v0.2.0/PokopiaRecomp-0.2.0-win64.zip",
+          "digest": "sha256:fd2630b439917a874676ed8bea53d6aff95ece443ab999568633a1acc716572a"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "andrewnakas/gtav-recomp",
+    "CheckedUtc": "2026-11-07T00:05:40.623490+00:00",
+    "Release": {
+      "tag_name": "v0.3.0",
+      "html_url": "https://github.com/andrewnakas/gtav-recomp/releases/tag/v0.3.0",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "gtav-recomp-linux-x64.tar.gz",
+          "size": 155071186,
+          "browser_download_url": "https://github.com/andrewnakas/gtav-recomp/releases/download/v0.3.0/gtav-recomp-linux-x64.tar.gz",
+          "digest": "sha256:92ca0afb6271ac94d2bff3567c896dd98de84a2517afa403f9b154463af8466b"
+        },
+        {
+          "name": "gtav-recomp-macos-arm64.zip",
+          "size": 138121116,
+          "browser_download_url": "https://github.com/andrewnakas/gtav-recomp/releases/download/v0.3.0/gtav-recomp-macos-arm64.zip",
+          "digest": "sha256:c70222bc145fbf9e15c877730bbea5f07e0c01ef224e2f57f332ceda341831ec"
+        },
+        {
+          "name": "gtav-recomp-src-v0.3.0.tar.xz",
+          "size": 133886188,
+          "browser_download_url": "https://github.com/andrewnakas/gtav-recomp/releases/download/v0.3.0/gtav-recomp-src-v0.3.0.tar.xz",
+          "digest": "sha256:e0cc7ff6f045b8ff7b0f225178e8c800a66d2c774acd4e623e899e379eb5028c"
+        },
+        {
+          "name": "gtav-recomp-windows-x64.zip",
+          "size": 98934566,
+          "browser_download_url": "https://github.com/andrewnakas/gtav-recomp/releases/download/v0.3.0/gtav-recomp-windows-x64.zip",
+          "digest": "sha256:fb92dc92dad774ba2b8b20ac6f5162e557306161e6dd9608cb76b28c2aa76303"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "AksharDP/xc2-recomp",
+    "CheckedUtc": "2026-11-07T00:05:40.623490+00:00",
+    "Release": {
+      "tag_name": "v0.1.11",
+      "html_url": "https://github.com/AksharDP/xc2-recomp/releases/tag/v0.1.11",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "XC2-Setup-0.1.11-linux.AppImage",
+          "size": 218700280,
+          "browser_download_url": "https://github.com/AksharDP/xc2-recomp/releases/download/v0.1.11/XC2-Setup-0.1.11-linux.AppImage",
+          "digest": "sha256:c62c0903c6270be42ac13ead35e5859bbac1c0b7b6b9b2dd03a7a6e62017494c"
+        },
+        {
+          "name": "XC2-Setup-0.1.11-windows.zip",
+          "size": 182331350,
+          "browser_download_url": "https://github.com/AksharDP/xc2-recomp/releases/download/v0.1.11/XC2-Setup-0.1.11-windows.zip",
+          "digest": "sha256:4f6c7f9c7ee6a172b2660c7a8238a740a7abb589876893c8bbf284775944ed1b"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "BLSNCVS/Castlevania-Grimoire-of-Souls-Recomp",
+    "CheckedUtc": "2026-11-07T00:05:40.623490+00:00",
+    "Release": {
+      "tag_name": "1.0.7",
+      "html_url": "https://github.com/BLSNCVS/Castlevania-Grimoire-of-Souls-Recomp/releases/tag/1.0.7",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "GoSRecomp-1.0.7.zip",
+          "size": 132696422,
+          "browser_download_url": "https://github.com/BLSNCVS/Castlevania-Grimoire-of-Souls-Recomp/releases/download/1.0.7/GoSRecomp-1.0.7.zip",
+          "digest": "sha256:78146500b6fd846a8fd170a57a47ab102b487107e898214d32beecc96838a6dd"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "tmcleroy/soulcalibur2-recomp",
+    "CheckedUtc": "2026-11-07T00:05:40.623490+00:00",
+    "Release": {
+      "tag_name": "v0.3.0-beta.1",
+      "html_url": "https://github.com/tmcleroy/soulcalibur2-recomp/releases/tag/v0.3.0-beta.1",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "SHA256SUMS.txt",
+          "size": 398,
+          "browser_download_url": "https://github.com/tmcleroy/soulcalibur2-recomp/releases/download/v0.3.0-beta.1/SHA256SUMS.txt",
+          "digest": "sha256:669e4f02aa513e16735a80320dfa1a9677957a83ec00bf16d4deba33ae535686"
+        },
+        {
+          "name": "Soulcalibur2Recomp-android.apk",
+          "size": 14378740,
+          "browser_download_url": "https://github.com/tmcleroy/soulcalibur2-recomp/releases/download/v0.3.0-beta.1/Soulcalibur2Recomp-android.apk",
+          "digest": "sha256:5c9ae062a2b906d037234f47a6778e8f7f109b7bd647bf7ea15003de185ea5e2"
+        },
+        {
+          "name": "Soulcalibur2Recomp-linux-x86_64.tar.gz",
+          "size": 21538405,
+          "browser_download_url": "https://github.com/tmcleroy/soulcalibur2-recomp/releases/download/v0.3.0-beta.1/Soulcalibur2Recomp-linux-x86_64.tar.gz",
+          "digest": "sha256:b9f229771150b8e07a7bc7f82a17de0d4479d82b32bb81a624640aa35baa489d"
+        },
+        {
+          "name": "Soulcalibur2Recomp-macOS.zip",
+          "size": 23514765,
+          "browser_download_url": "https://github.com/tmcleroy/soulcalibur2-recomp/releases/download/v0.3.0-beta.1/Soulcalibur2Recomp-macOS.zip",
+          "digest": "sha256:8e4fce884068d1c4dd4b7febabaea10aa5846ba245cc88fedf379ac6f0d5f002"
+        },
+        {
+          "name": "Soulcalibur2Recomp-windows-x64.zip",
+          "size": 18107924,
+          "browser_download_url": "https://github.com/tmcleroy/soulcalibur2-recomp/releases/download/v0.3.0-beta.1/Soulcalibur2Recomp-windows-x64.zip",
+          "digest": "sha256:ba1e25b8c7c6d3f00780e7ca44522d95523ecf21464ca952be86fa2996868c48"
+        },
+        {
+          "name": "update-linux-x86_64.txt",
+          "size": 11855,
+          "browser_download_url": "https://github.com/tmcleroy/soulcalibur2-recomp/releases/download/v0.3.0-beta.1/update-linux-x86_64.txt",
+          "digest": "sha256:bcb17c5cb07d15101e750f79176639831165d109ffcf944f442d97ecfa8ea619"
+        },
+        {
+          "name": "update-macos.txt",
+          "size": 13799,
+          "browser_download_url": "https://github.com/tmcleroy/soulcalibur2-recomp/releases/download/v0.3.0-beta.1/update-macos.txt",
+          "digest": "sha256:2cd49c48046edddf3be0302725896268cac7944c130180323e6cd53c231020c1"
+        },
+        {
+          "name": "update-windows-x64.txt",
+          "size": 12136,
+          "browser_download_url": "https://github.com/tmcleroy/soulcalibur2-recomp/releases/download/v0.3.0-beta.1/update-windows-x64.txt",
+          "digest": "sha256:c794ccd1026c9e089cea80a98acd16229199624fdff8134b90e4edf6b906a384"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "Re-TeRo17/ratchet-tod-recomp",
+    "CheckedUtc": "2026-11-07T00:05:40.623490+00:00",
+    "Release": {
+      "tag_name": "v1.1",
+      "html_url": "https://github.com/Re-TeRo17/ratchet-tod-recomp/releases/tag/v1.1",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "tod-recomp-1.1-win64.zip",
+          "size": 78877173,
+          "browser_download_url": "https://github.com/Re-TeRo17/ratchet-tod-recomp/releases/download/v1.1/tod-recomp-1.1-win64.zip",
+          "digest": "sha256:c82103f5cbe96e4343e6f2b15f2622e509bfb10c575e4e52363b748106ec3c00"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "sostenesfreitas/ocarina-recomp",
+    "CheckedUtc": "2026-11-07T00:05:40.623490+00:00",
+    "Release": {
+      "tag_name": "v0.1.5",
+      "html_url": "https://github.com/sostenesfreitas/ocarina-recomp/releases/tag/v0.1.5",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "Instalar-Ocarina.exe",
+          "size": 75281,
+          "browser_download_url": "https://github.com/sostenesfreitas/ocarina-recomp/releases/download/v0.1.5/Instalar-Ocarina.exe",
+          "digest": "sha256:c9992c4ad0fc5c5213dffc601ca415a249151ba266f02d69ee60f78ae92b848d"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "TawhidI-602/The-House-of-the-Dead-ReWrithe",
+    "CheckedUtc": "2026-11-07T00:05:40.623490+00:00",
+    "Release": {
+      "tag_name": "v1.3.0",
+      "html_url": "https://github.com/TawhidI-602/The-House-of-the-Dead-ReWrithe/releases/tag/v1.3.0",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "hotd-rewrithe-v1.3.0-linux-x86_64.tar.gz",
+          "size": 25944340,
+          "browser_download_url": "https://github.com/TawhidI-602/The-House-of-the-Dead-ReWrithe/releases/download/v1.3.0/hotd-rewrithe-v1.3.0-linux-x86_64.tar.gz",
+          "digest": "sha256:5a3b1d6f1e49c224677f21bdebd8b0335a27babf7c4159546ef9be6a097f3f92"
+        },
+        {
+          "name": "hotd-rewrithe-v1.3.0-macos-universal.zip",
+          "size": 29694367,
+          "browser_download_url": "https://github.com/TawhidI-602/The-House-of-the-Dead-ReWrithe/releases/download/v1.3.0/hotd-rewrithe-v1.3.0-macos-universal.zip",
+          "digest": "sha256:1da7d6a9817673f74e98412059f96c067d64ff726eae0dca7d719bb5f8615834"
+        },
+        {
+          "name": "hotd-rewrithe-v1.3.0-win64.zip",
+          "size": 26418838,
+          "browser_download_url": "https://github.com/TawhidI-602/The-House-of-the-Dead-ReWrithe/releases/download/v1.3.0/hotd-rewrithe-v1.3.0-win64.zip",
+          "digest": "sha256:ebe69028a262b4a41ab2a07a338dc37537558e2cad94d79b15989f033ac0fa2c"
+        },
+        {
+          "name": "SHA256SUMS-linux.txt",
+          "size": 107,
+          "browser_download_url": "https://github.com/TawhidI-602/The-House-of-the-Dead-ReWrithe/releases/download/v1.3.0/SHA256SUMS-linux.txt",
+          "digest": "sha256:c0e9b3eb4d2eb8d646ecf0bd2927387b99b1e5d0c2a3bdd7cb3389b36fa347c9"
+        },
+        {
+          "name": "SHA256SUMS-macos.txt",
+          "size": 107,
+          "browser_download_url": "https://github.com/TawhidI-602/The-House-of-the-Dead-ReWrithe/releases/download/v1.3.0/SHA256SUMS-macos.txt",
+          "digest": "sha256:a4464ec72fdd3964c977af89c9c47bb9bc1f5220fb004fb132c954999b8e2c6a"
+        },
+        {
+          "name": "SHA256SUMS.txt",
+          "size": 92894,
+          "browser_download_url": "https://github.com/TawhidI-602/The-House-of-the-Dead-ReWrithe/releases/download/v1.3.0/SHA256SUMS.txt",
+          "digest": "sha256:d45b0ef54e2e9e2a085aecadf744728436420400de63cee3510ee3ed5c4c33e4"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "YaibaKamikaze/IzunaRecomp",
+    "CheckedUtc": "2026-11-07T00:05:40.623490+00:00",
+    "Release": {
+      "tag_name": "v0.2.0",
+      "html_url": "https://github.com/YaibaKamikaze/IzunaRecomp/releases/tag/v0.2.0",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "IzunaRecomp-0.2.0-windows.zip",
+          "size": 108592634,
+          "browser_download_url": "https://github.com/YaibaKamikaze/IzunaRecomp/releases/download/v0.2.0/IzunaRecomp-0.2.0-windows.zip",
+          "digest": "sha256:d3037ea7011c291793b54f9da5e4f84107671b5734dc9048c91e2adc7dab47a3"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "FridiNaTor1/SafeHouse",
+    "CheckedUtc": "2026-11-07T00:05:40.623490+00:00",
+    "Release": {
+      "tag_name": "v0.1.13",
+      "html_url": "https://github.com/FridiNaTor1/SafeHouse/releases/tag/v0.1.13",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "SafeHouse-Launcher-Linux-x86_64.AppImage",
+          "size": 28776952,
+          "browser_download_url": "https://github.com/FridiNaTor1/SafeHouse/releases/download/v0.1.13/SafeHouse-Launcher-Linux-x86_64.AppImage",
+          "digest": "sha256:8b6b61a4e6703fe6a6ba308740c30c966a0563f16e74da810c809146bd87b5ae"
+        },
+        {
+          "name": "SafeHouse-Launcher-Linux-x86_64.tar.gz",
+          "size": 29745744,
+          "browser_download_url": "https://github.com/FridiNaTor1/SafeHouse/releases/download/v0.1.13/SafeHouse-Launcher-Linux-x86_64.tar.gz",
+          "digest": "sha256:d5cdffcad7676fa0520f08f8db48ad1d338822126344f9a5e60575aab3ce5e8e"
+        },
+        {
+          "name": "SafeHouse-Launcher-macOS-arm64.dmg",
+          "size": 14927648,
+          "browser_download_url": "https://github.com/FridiNaTor1/SafeHouse/releases/download/v0.1.13/SafeHouse-Launcher-macOS-arm64.dmg",
+          "digest": "sha256:95d83edf490b90e24666f897c3bb9531c6425bdd6e470151a962f6e8d943f1bb"
+        },
+        {
+          "name": "SafeHouse-Launcher-macOS-arm64.zip",
+          "size": 14245925,
+          "browser_download_url": "https://github.com/FridiNaTor1/SafeHouse/releases/download/v0.1.13/SafeHouse-Launcher-macOS-arm64.zip",
+          "digest": "sha256:7ed60c9ab9fa14481733dea9bed649a045f29843cc5f44c0f8d2ac622c95f249"
+        },
+        {
+          "name": "SafeHouse-Launcher-macOS-x86_64.dmg",
+          "size": 15822718,
+          "browser_download_url": "https://github.com/FridiNaTor1/SafeHouse/releases/download/v0.1.13/SafeHouse-Launcher-macOS-x86_64.dmg",
+          "digest": "sha256:e25ee37b011b7569d28a2a11b7b725de573c66e5d0d9e142e5b701a8e6f5a4e0"
+        },
+        {
+          "name": "SafeHouse-Launcher-macOS-x86_64.zip",
+          "size": 14972026,
+          "browser_download_url": "https://github.com/FridiNaTor1/SafeHouse/releases/download/v0.1.13/SafeHouse-Launcher-macOS-x86_64.zip",
+          "digest": "sha256:db8accd30b5f9fe0c29de5d612b7b962843b7ab102ed60cd1db9737453d18809"
+        },
+        {
+          "name": "SafeHouse-Launcher-Windows-x86_64-Portable.zip",
+          "size": 27769941,
+          "browser_download_url": "https://github.com/FridiNaTor1/SafeHouse/releases/download/v0.1.13/SafeHouse-Launcher-Windows-x86_64-Portable.zip",
+          "digest": "sha256:86c4ef91e567f340a114f64287b6320a455b72c327a914a3966547f3d688277e"
+        },
+        {
+          "name": "SafeHouse-Launcher-Windows-x86_64-Setup.exe",
+          "size": 18176552,
+          "browser_download_url": "https://github.com/FridiNaTor1/SafeHouse/releases/download/v0.1.13/SafeHouse-Launcher-Windows-x86_64-Setup.exe",
+          "digest": "sha256:10fa169793c6acf340011350a06fbd8b1984f42ee1993375a20c85512c1fe000"
+        },
+        {
+          "name": "SafeHouse-update.json",
+          "size": 1934,
+          "browser_download_url": "https://github.com/FridiNaTor1/SafeHouse/releases/download/v0.1.13/SafeHouse-update.json",
+          "digest": "sha256:353c227cdfc130493b9e0bd8a32e4965adad5fd86320e3c6cabb585a02eb77d8"
+        },
+        {
+          "name": "SHA256SUMS",
+          "size": 929,
+          "browser_download_url": "https://github.com/FridiNaTor1/SafeHouse/releases/download/v0.1.13/SHA256SUMS",
+          "digest": "sha256:711191bf52fa817a8935b0e75563cef780b76bc89c5d4d00765d1803edb04dc3"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "LuvAbyss/B3-Express",
+    "CheckedUtc": "2026-11-07T00:05:40.623490+00:00",
+    "Release": {
+      "tag_name": "0.2.0",
+      "html_url": "https://github.com/LuvAbyss/B3-Express/releases/tag/0.2.0",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "B3-Express-0.2.0-windows-x64.zip",
+          "size": 88061267,
+          "browser_download_url": "https://github.com/LuvAbyss/B3-Express/releases/download/0.2.0/B3-Express-0.2.0-windows-x64.zip",
+          "digest": "sha256:36a01ea6e6bae02597b322415365fcb579fa1f8b5ab5e60e49add4798efd3371"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "Take00C/Tsukihime-Native-PC-Port",
+    "CheckedUtc": "2026-11-07T00:05:40.623490+00:00",
+    "Release": {
+      "tag_name": "v0.1.6",
+      "html_url": "https://github.com/Take00C/Tsukihime-Native-PC-Port/releases/tag/v0.1.6",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "RELEASE_NOTES_v0.1.6.md",
+          "size": 2536,
+          "browser_download_url": "https://github.com/Take00C/Tsukihime-Native-PC-Port/releases/download/v0.1.6/RELEASE_NOTES_v0.1.6.md",
+          "digest": "sha256:b887f6394d35fa0bffcb7eb642d929240a125c370bfa7e58f1afe40fc79e505f"
+        },
+        {
+          "name": "SHA256SUMS.txt",
+          "size": 195,
+          "browser_download_url": "https://github.com/Take00C/Tsukihime-Native-PC-Port/releases/download/v0.1.6/SHA256SUMS.txt",
+          "digest": "sha256:a8d2f3be15e34eaee63f197843d8909f96102bc5dac23697cb64e150664fabfb"
+        },
+        {
+          "name": "Tsukihime-v0.1.6-linux-x64.tar.gz",
+          "size": 95122909,
+          "browser_download_url": "https://github.com/Take00C/Tsukihime-Native-PC-Port/releases/download/v0.1.6/Tsukihime-v0.1.6-linux-x64.tar.gz",
+          "digest": "sha256:c37d33df2d8030488cf19dee9a09129c85a98c5ad661e46e3773b51c1d2609aa"
+        },
+        {
+          "name": "Tsukihime-v0.1.6-win-x64.zip",
+          "size": 107932793,
+          "browser_download_url": "https://github.com/Take00C/Tsukihime-Native-PC-Port/releases/download/v0.1.6/Tsukihime-v0.1.6-win-x64.zip",
+          "digest": "sha256:7ded533676452216370b80954ae334ca81bd7e6f34037d1a3a5b83478455c8d1"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "dennisabalo18-bot/red-dead-revolver-pc",
+    "CheckedUtc": "2026-11-07T00:05:40.623490+00:00",
+    "Release": {
+      "tag_name": "v1.3.1",
+      "html_url": "https://github.com/dennisabalo18-bot/red-dead-revolver-pc/releases/tag/v1.3.1",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "RedDeadRevolverPC.zip",
+          "size": 49536063,
+          "browser_download_url": "https://github.com/dennisabalo18-bot/red-dead-revolver-pc/releases/download/v1.3.1/RedDeadRevolverPC.zip",
+          "digest": "sha256:44a9ab3a0f24ff7670fcbae7629353822220de6de62b7c78d7a8eda46de40075"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "mauricristiano95-hub/F1_CE_PS3",
+    "CheckedUtc": "2026-11-07T00:05:40.623490+00:00",
+    "Release": {
+      "tag_name": "0.0.3",
+      "html_url": "https://github.com/mauricristiano95-hub/F1_CE_PS3/releases/tag/0.0.3",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "F1CE_launcher.zip",
+          "size": 13851043,
+          "browser_download_url": "https://github.com/mauricristiano95-hub/F1_CE_PS3/releases/download/0.0.3/F1CE_launcher.zip",
+          "digest": "sha256:df3b9f98f7944bf9ccdbc8b9dbbc984cdd4d5adae15d2a0a407de9c83c1688df"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "BrewSparrow/ArmyOfTwoTDC-Recomp",
+    "CheckedUtc": "2026-11-07T00:05:40.623490+00:00",
+    "Release": {
+      "tag_name": "1.0",
+      "html_url": "https://github.com/BrewSparrow/ArmyOfTwoTDC-Recomp/releases/tag/1.0",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "Ao2TDC-win64.zip",
+          "size": 136751771,
+          "browser_download_url": "https://github.com/BrewSparrow/ArmyOfTwoTDC-Recomp/releases/download/1.0/Ao2TDC-win64.zip",
+          "digest": "sha256:79a2d0f8dee3ed6976785e60ff58164c64b307bd19c1cd42668580cce91b8321"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "mathewdouglas/Tourline-Prologue",
+    "CheckedUtc": "2026-11-07T00:05:40.623490+00:00",
+    "Release": {
+      "tag_name": "v0.2.4",
+      "html_url": "https://github.com/mathewdouglas/Tourline-Prologue/releases/tag/v0.2.4",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "tourline-prologue-v0.2.4-windows-x64-2087532747013c95907e662f8a09c676e44581e1.zip",
+          "size": 95117213,
+          "browser_download_url": "https://github.com/mathewdouglas/Tourline-Prologue/releases/download/v0.2.4/tourline-prologue-v0.2.4-windows-x64-2087532747013c95907e662f8a09c676e44581e1.zip",
+          "digest": "sha256:a7afc6750bed5b87917dda9013cba2b9d314de4168bc1a0ca8c401f13e983aaa"
+        },
+        {
+          "name": "tourline-prologue-v0.2.4-windows-x64-2087532747013c95907e662f8a09c676e44581e1.zip.sha256",
+          "size": 148,
+          "browser_download_url": "https://github.com/mathewdouglas/Tourline-Prologue/releases/download/v0.2.4/tourline-prologue-v0.2.4-windows-x64-2087532747013c95907e662f8a09c676e44581e1.zip.sha256",
+          "digest": "sha256:f4917c3e1b02462be9fcb033f652330f515498f1793ec0867b7fc9abab547081"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "shaneomac1337/Top-Spin-4-Recomp",
+    "CheckedUtc": "2026-11-07T00:05:40.623490+00:00",
+    "Release": {
+      "tag_name": "v1.0.0",
+      "html_url": "https://github.com/shaneomac1337/Top-Spin-4-Recomp/releases/tag/v1.0.0",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "TopSpin4Recomp-1.0.0.zip",
+          "size": 84542886,
+          "browser_download_url": "https://github.com/shaneomac1337/Top-Spin-4-Recomp/releases/download/v1.0.0/TopSpin4Recomp-1.0.0.zip",
+          "digest": "sha256:d344b92f46187fb89e6ccd9f73413c126c67f9823e93f466d21c048e8287e08c"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "DivxPlays/redline-recompiled",
+    "CheckedUtc": "2026-11-07T00:05:40.623490+00:00",
+    "Release": {
+      "tag_name": "v0.1.0",
+      "html_url": "https://github.com/DivxPlays/redline-recompiled/releases/tag/v0.1.0",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "RedlineRecompiled-0.1.0.zip",
+          "size": 4781983,
+          "browser_download_url": "https://github.com/DivxPlays/redline-recompiled/releases/download/v0.1.0/RedlineRecompiled-0.1.0.zip",
+          "digest": "sha256:9c87c1da38dc0a6a0cc6d2a89f7d93aa458f65d00c89bf44102ae5c3c424f624"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "chasem-dev/colosseum-launcher",
+    "CheckedUtc": "2026-11-07T00:05:40.623490+00:00",
+    "Release": {
+      "tag_name": "v0.1.3",
+      "html_url": "https://github.com/chasem-dev/colosseum-launcher/releases/tag/v0.1.3",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "colo-build-tools-linux-x64-2026-11-05.1.tar.gz",
+          "size": 551230689,
+          "browser_download_url": "https://github.com/chasem-dev/colosseum-launcher/releases/download/v0.1.3/colo-build-tools-linux-x64-2026-11-05.1.tar.gz",
+          "digest": "sha256:714ece3ea6fb50b33caabd473bb4e873508516513f01a155c34dbc5417e12efc"
+        },
+        {
+          "name": "colo-build-tools-macos-arm64-2026-11-05.1.tar.gz",
+          "size": 313729882,
+          "browser_download_url": "https://github.com/chasem-dev/colosseum-launcher/releases/download/v0.1.3/colo-build-tools-macos-arm64-2026-11-05.1.tar.gz",
+          "digest": "sha256:c41e005a4bdf64adfb1473de44f52a5cef78cd1a8fdbc195390e2acaf8c7c475"
+        },
+        {
+          "name": "colo-build-tools-macos-x64-2026-11-05.1.tar.gz",
+          "size": 329906681,
+          "browser_download_url": "https://github.com/chasem-dev/colosseum-launcher/releases/download/v0.1.3/colo-build-tools-macos-x64-2026-11-05.1.tar.gz",
+          "digest": "sha256:bfa1a7e3c6d692d8baa334719b766685f388aa70e5504317c2f84f75b4608019"
+        },
+        {
+          "name": "colo-build-tools-windows-x64-2026-11-05.2.tar.gz",
+          "size": 498960348,
+          "browser_download_url": "https://github.com/chasem-dev/colosseum-launcher/releases/download/v0.1.3/colo-build-tools-windows-x64-2026-11-05.2.tar.gz",
+          "digest": "sha256:a3a916d192b16638548613423e6a6cbba23c05d3441583ae2792ab77fff98f93"
+        },
+        {
+          "name": "Colosseum-Launcher-0.1.3-mac-universal.dmg",
+          "size": 234361546,
+          "browser_download_url": "https://github.com/chasem-dev/colosseum-launcher/releases/download/v0.1.3/Colosseum-Launcher-0.1.3-mac-universal.dmg",
+          "digest": "sha256:7967b6495e03c99b5cad3e74b7949045f57a45a060a2d48a79f0b6ad2a59dd09"
+        },
+        {
+          "name": "Colosseum-Launcher-0.1.3-mac-universal.dmg.blockmap",
+          "size": 243747,
+          "browser_download_url": "https://github.com/chasem-dev/colosseum-launcher/releases/download/v0.1.3/Colosseum-Launcher-0.1.3-mac-universal.dmg.blockmap",
+          "digest": "sha256:d25d145029c20bf730a8d8c2a6cbead1fcfb3069ba84d8802c3252737267e00e"
+        },
+        {
+          "name": "Colosseum-Launcher-0.1.3-mac-universal.zip",
+          "size": 227118826,
+          "browser_download_url": "https://github.com/chasem-dev/colosseum-launcher/releases/download/v0.1.3/Colosseum-Launcher-0.1.3-mac-universal.zip",
+          "digest": "sha256:490f63ad3ddea876a240e1f108851ee44e2db602de6fe20e6aa3ea128792d6c5"
+        },
+        {
+          "name": "Colosseum-Launcher-0.1.3-mac-universal.zip.blockmap",
+          "size": 239370,
+          "browser_download_url": "https://github.com/chasem-dev/colosseum-launcher/releases/download/v0.1.3/Colosseum-Launcher-0.1.3-mac-universal.zip.blockmap",
+          "digest": "sha256:d33dc20006743846c8b16dc062d20cd79b98d041bac88d6955328308a857b9d2"
+        },
+        {
+          "name": "Colosseum-Launcher-0.1.3-win-portable.exe",
+          "size": 123628598,
+          "browser_download_url": "https://github.com/chasem-dev/colosseum-launcher/releases/download/v0.1.3/Colosseum-Launcher-0.1.3-win-portable.exe",
+          "digest": "sha256:2704b8ba7fd945f1c5cffea0787ebc07a2cf4566adb364d844d63ce7aea83f67"
+        },
+        {
+          "name": "Colosseum-Launcher-Setup-0.1.3.exe",
+          "size": 123869486,
+          "browser_download_url": "https://github.com/chasem-dev/colosseum-launcher/releases/download/v0.1.3/Colosseum-Launcher-Setup-0.1.3.exe",
+          "digest": "sha256:db47f5e0ae7f1ad2f416edab37faac4ce18c3e54a815feb40475109198e6b571"
+        },
+        {
+          "name": "Colosseum-Launcher-Setup-0.1.3.exe.blockmap",
+          "size": 131727,
+          "browser_download_url": "https://github.com/chasem-dev/colosseum-launcher/releases/download/v0.1.3/Colosseum-Launcher-Setup-0.1.3.exe.blockmap",
+          "digest": "sha256:cc0f44d1884e8a3fd8d0a5b6f1d9eedc73f1e6335f951e048c44cb112d503832"
+        },
+        {
+          "name": "Colosseum-Launcher.AppImage",
+          "size": 120975169,
+          "browser_download_url": "https://github.com/chasem-dev/colosseum-launcher/releases/download/v0.1.3/Colosseum-Launcher.AppImage",
+          "digest": "sha256:6f7272f79ea5fea1268c85158c58b11d4e07e19b092d06a2a0aff91636649cd4"
+        },
+        {
+          "name": "latest-linux.yml",
+          "size": 376,
+          "browser_download_url": "https://github.com/chasem-dev/colosseum-launcher/releases/download/v0.1.3/latest-linux.yml",
+          "digest": "sha256:ad24649c0d0de25a40b3a2e19ec2659c0ce1aa4773cd3bf11159c3f8de6be574"
+        },
+        {
+          "name": "latest-mac.yml",
+          "size": 554,
+          "browser_download_url": "https://github.com/chasem-dev/colosseum-launcher/releases/download/v0.1.3/latest-mac.yml",
+          "digest": "sha256:82c1bcc01cb2386d5cdef58dd8be471b2b0d6cb8b694c68b6ca6f49e0ffe1c26"
+        },
+        {
+          "name": "latest.yml",
+          "size": 365,
+          "browser_download_url": "https://github.com/chasem-dev/colosseum-launcher/releases/download/v0.1.3/latest.yml",
+          "digest": "sha256:5a4f666ab5d30f50ba5170dcf31cb822b57824d181ae0aa2b728c0c41bc9d0b8"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "xdivorex-gif/spiderman-2002-pc",
+    "CheckedUtc": "2026-11-07T00:05:40.623490+00:00",
+    "Release": {
+      "tag_name": "v0.1.2",
+      "html_url": "https://github.com/xdivorex-gif/spiderman-2002-pc/releases/tag/v0.1.2",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "SpiderManSetup.exe",
+          "size": 220399616,
+          "browser_download_url": "https://github.com/xdivorex-gif/spiderman-2002-pc/releases/download/v0.1.2/SpiderManSetup.exe",
+          "digest": "sha256:589638bb68951f1e3b3fcd33bde62aabb9cad09b35d9b8216b06e54322451127"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "RetroPulse03/WinBackRecomp",
+    "CheckedUtc": "2026-11-07T00:05:40.623490+00:00",
+    "Release": {
+      "tag_name": "v0.2.2",
+      "html_url": "https://github.com/RetroPulse03/WinBackRecomp/releases/tag/v0.2.2",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "WinBackRecompiled-v0.2.2-Windows-x64.zip",
+          "size": 16691339,
+          "browser_download_url": "https://github.com/RetroPulse03/WinBackRecomp/releases/download/v0.2.2/WinBackRecompiled-v0.2.2-Windows-x64.zip",
+          "digest": "sha256:05872911d7333be55a387042735e3570ca3868073e5668551fdad52897a47467"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "bassobr/Far-Cry-Instincts-Recomp",
+    "CheckedUtc": "2026-11-07T00:05:40.623490+00:00",
+    "Release": {
+      "tag_name": "v0.1.2",
+      "html_url": "https://github.com/bassobr/Far-Cry-Instincts-Recomp/releases/tag/v0.1.2",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "FarCryInstincts-Recomp-v0.1.2-win64.zip",
+          "size": 65704056,
+          "browser_download_url": "https://github.com/bassobr/Far-Cry-Instincts-Recomp/releases/download/v0.1.2/FarCryInstincts-Recomp-v0.1.2-win64.zip",
+          "digest": "sha256:3459ecbf74e14f1f4b3ce5b20171090498762db71a5d3c43a03a4261d7d66aa3"
+        },
+        {
+          "name": "SHA256SUMS",
+          "size": 106,
+          "browser_download_url": "https://github.com/bassobr/Far-Cry-Instincts-Recomp/releases/download/v0.1.2/SHA256SUMS",
+          "digest": "sha256:d1ad0f7836cac73a17605399beaad27a6dff71e56ee3769b297457ec2410cfb3"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "retrogameworld/TorchlightRecomp",
+    "CheckedUtc": "2026-11-07T00:05:40.623490+00:00",
+    "Release": {
+      "tag_name": "v1.0",
+      "html_url": "https://github.com/retrogameworld/TorchlightRecomp/releases/tag/v1.0",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "Torchlight-Recompiled-v1.0.zip",
+          "size": 32901051,
+          "browser_download_url": "https://github.com/retrogameworld/TorchlightRecomp/releases/download/v1.0/Torchlight-Recompiled-v1.0.zip",
+          "digest": "sha256:a80810626cdf4758777bc6b106fdfa489b5261b0c031d1ced7133968613f08dc"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "DrummingBird1/sonic06-recomp",
+    "CheckedUtc": "2026-11-07T00:05:40.623490+00:00",
+    "Release": {
+      "tag_name": "v0.1.0",
+      "html_url": "https://github.com/DrummingBird1/sonic06-recomp/releases/tag/v0.1.0",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "screenshot-crisis-city.jpg",
+          "size": 660778,
+          "browser_download_url": "https://github.com/DrummingBird1/sonic06-recomp/releases/download/v0.1.0/screenshot-crisis-city.jpg",
+          "digest": "sha256:c33988f5fb07983a4ff2b8ca8730a5286a16a82c2c4f6e18afc053d07b14caa0"
+        },
+        {
+          "name": "screenshot-soleanna.jpg",
+          "size": 535608,
+          "browser_download_url": "https://github.com/DrummingBird1/sonic06-recomp/releases/download/v0.1.0/screenshot-soleanna.jpg",
+          "digest": "sha256:4850c5e6bdf58f40aeb97029c28f39831217ad48eab1c50d3c973d1a9289b63f"
+        },
+        {
+          "name": "screenshot-wave-ocean-jump.jpg",
+          "size": 383735,
+          "browser_download_url": "https://github.com/DrummingBird1/sonic06-recomp/releases/download/v0.1.0/screenshot-wave-ocean-jump.jpg",
+          "digest": "sha256:642814954acb46106ba15550a44c75ee1af0d8cfb317afabb18b3646a86b6e9c"
+        },
+        {
+          "name": "screenshot-wave-ocean.jpg",
+          "size": 418298,
+          "browser_download_url": "https://github.com/DrummingBird1/sonic06-recomp/releases/download/v0.1.0/screenshot-wave-ocean.jpg",
+          "digest": "sha256:7ae86743f8a73c401492392bf1942e2071c149d135d840256e5ae0f7c4c4fe07"
+        },
+        {
+          "name": "Soleanna-0.1.0.exe",
+          "size": 573440,
+          "browser_download_url": "https://github.com/DrummingBird1/sonic06-recomp/releases/download/v0.1.0/Soleanna-0.1.0.exe",
+          "digest": "sha256:937520b70f0d4f94a39f8235f6984f836a34b7e8ebb5b5f4616ade2e4bc6fabc"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "OriginalSwayze/Streets-Of-Rage-Recomp",
+    "CheckedUtc": "2026-11-07T00:05:40.623490+00:00",
+    "Release": {
+      "tag_name": "v2.6.2",
+      "html_url": "https://github.com/OriginalSwayze/Streets-Of-Rage-Recomp/releases/tag/v2.6.2",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "Streets-of-Rage-Collection-Setup-v2.6.2.exe",
+          "size": 12335091,
+          "browser_download_url": "https://github.com/OriginalSwayze/Streets-Of-Rage-Recomp/releases/download/v2.6.2/Streets-of-Rage-Collection-Setup-v2.6.2.exe",
+          "digest": "sha256:7c3ca3471430b160e002caa92ee2dffb99384c925e35d48cfa17b9112465614e"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "dvilelaf/battlestadium-don",
+    "CheckedUtc": "2026-11-07T00:05:40.623490+00:00",
+    "Release": {
+      "tag_name": "v1.0",
+      "html_url": "https://github.com/dvilelaf/battlestadium-don/releases/tag/v1.0",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "BattleStadiumDON-1.0-x86_64.AppImage",
+          "size": 107940344,
+          "browser_download_url": "https://github.com/dvilelaf/battlestadium-don/releases/download/v1.0/BattleStadiumDON-1.0-x86_64.AppImage",
+          "digest": "sha256:fe8578be5745ac85ab6f7567844a2ed98ffcd3433800f030862c0040edf82294"
+        },
+        {
+          "name": "don-linux-5d2b93e.tar.gz",
+          "size": 118914264,
+          "browser_download_url": "https://github.com/dvilelaf/battlestadium-don/releases/download/v1.0/don-linux-5d2b93e.tar.gz",
+          "digest": "sha256:cc14361584db68d11b6685df025e3ee591a4a1f0743f2f8c01ece7b53da347d3"
+        },
+        {
+          "name": "don-windows-f537322.zip",
+          "size": 86101876,
+          "browser_download_url": "https://github.com/dvilelaf/battlestadium-don/releases/download/v1.0/don-windows-f537322.zip",
+          "digest": "sha256:924746533d4a4663943dde24625878c17b43bc97ad817bf8ac238fd567a2be36"
+        },
+        {
+          "name": "SHA256SUMS",
+          "size": 284,
+          "browser_download_url": "https://github.com/dvilelaf/battlestadium-don/releases/download/v1.0/SHA256SUMS",
+          "digest": "sha256:0b9f3bc32904a1d45f827cbd624d5a78f50a184d9708cf1124f53611f88410f0"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "DarthMDev/pmd-sky-recomp",
+    "CheckedUtc": "2026-11-07T00:05:40.623490+00:00",
+    "Release": {
+      "tag_name": "v0.1.0-alpha",
+      "html_url": "https://github.com/DarthMDev/pmd-sky-recomp/releases/tag/v0.1.0-alpha",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "SkyRecompiled-v0.1.0-alpha-ios.ipa",
+          "size": 1700465,
+          "browser_download_url": "https://github.com/DarthMDev/pmd-sky-recomp/releases/download/v0.1.0-alpha/SkyRecompiled-v0.1.0-alpha-ios.ipa",
+          "digest": "sha256:5d3c8c2b967b0d03476a9aad5f976ee441b835cb6e4ab81f044d2c4cdd5124a8"
+        },
+        {
+          "name": "SkyRecompiled-v0.1.0-alpha-linux-x86_64.tar.gz",
+          "size": 53203354,
+          "browser_download_url": "https://github.com/DarthMDev/pmd-sky-recomp/releases/download/v0.1.0-alpha/SkyRecompiled-v0.1.0-alpha-linux-x86_64.tar.gz",
+          "digest": "sha256:040ceb212d76d5340440427bcb22353775e9493edc8cacb7bb1f76b5e4cb3049"
+        },
+        {
+          "name": "SkyRecompiled-v0.1.0-alpha-macos-arm64.zip",
+          "size": 92185110,
+          "browser_download_url": "https://github.com/DarthMDev/pmd-sky-recomp/releases/download/v0.1.0-alpha/SkyRecompiled-v0.1.0-alpha-macos-arm64.zip",
+          "digest": "sha256:d6dd864b77860a83a1306707508b1c61ed71ba1e0ea950333e0d2479c18f2aa4"
+        },
+        {
+          "name": "SkyRecompiled-v0.1.0-alpha-windows-x64.zip",
+          "size": 3969340,
+          "browser_download_url": "https://github.com/DarthMDev/pmd-sky-recomp/releases/download/v0.1.0-alpha/SkyRecompiled-v0.1.0-alpha-windows-x64.zip",
+          "digest": "sha256:fd0c9484e3551a8f27c1d8c6ce2c89b981237886d0e0c311494a669fbedabb12"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "MildRain479/PokePark-Wiicompiled",
+    "CheckedUtc": "2026-11-07T00:05:40.623490+00:00",
+    "Release": {
+      "tag_name": "v0.1.3-beta",
+      "html_url": "https://github.com/MildRain479/PokePark-Wiicompiled/releases/tag/v0.1.3-beta",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "PokePark-Wiicompiled-v0.1.3-beta-android-arm64.apk",
+          "size": 29075839,
+          "browser_download_url": "https://github.com/MildRain479/PokePark-Wiicompiled/releases/download/v0.1.3-beta/PokePark-Wiicompiled-v0.1.3-beta-android-arm64.apk",
+          "digest": "sha256:e15f14868d72138ff21edf0107dcacfc2fab5823ec6484b24c607f9c375afefd"
+        },
+        {
+          "name": "PokePark-Wiicompiled-v0.1.3-beta-windows-x64.zip",
+          "size": 12546311,
+          "browser_download_url": "https://github.com/MildRain479/PokePark-Wiicompiled/releases/download/v0.1.3-beta/PokePark-Wiicompiled-v0.1.3-beta-windows-x64.zip",
+          "digest": "sha256:359727b7c6caf543df4e6a26d26eb96b4e810ee37df8d2a68f63c5b507f94fb1"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "projectedan/TigerWoods2004-XBE-Recomp",
+    "CheckedUtc": "2026-11-07T00:05:40.623490+00:00",
+    "Release": {
+      "tag_name": "v0.7.2-beta",
+      "html_url": "https://github.com/projectedan/TigerWoods2004-XBE-Recomp/releases/tag/v0.7.2-beta",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "TW2004.zip",
+          "size": 79841644,
+          "browser_download_url": "https://github.com/projectedan/TigerWoods2004-XBE-Recomp/releases/download/v0.7.2-beta/TW2004.zip",
+          "digest": "sha256:89b43f7a95e095fde5b0ba5ecbe9ee0e3496e2fce94d75eae9b7ed4dfe344c98"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "jaigner-hub/fe3h-pc-recomp",
+    "CheckedUtc": "2026-11-07T00:05:40.623490+00:00",
+    "Release": {
+      "tag_name": "v0.2.0",
+      "html_url": "https://github.com/jaigner-hub/fe3h-pc-recomp/releases/tag/v0.2.0",
+      "draft": false,
+      "prerelease": true,
+      "assets": [
+        {
+          "name": "FE3H-Setup-0.2.0-windows.zip",
+          "size": 130910323,
+          "browser_download_url": "https://github.com/jaigner-hub/fe3h-pc-recomp/releases/download/v0.2.0/FE3H-Setup-0.2.0-windows.zip",
+          "digest": "sha256:9834bdf78a6b8b6891cf4f9d2bef536de90329cd7910a9a5654e1a9a7517723e"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "jaigner-hub/metroid-prime-4-recomp",
+    "CheckedUtc": "2026-11-07T00:05:40.623490+00:00",
+    "Release": {
+      "tag_name": "v0.2.0",
+      "html_url": "https://github.com/jaigner-hub/metroid-prime-4-recomp/releases/tag/v0.2.0",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "MP4-Setup-0.2.0-windows.zip",
+          "size": 132994061,
+          "browser_download_url": "https://github.com/jaigner-hub/metroid-prime-4-recomp/releases/download/v0.2.0/MP4-Setup-0.2.0-windows.zip",
+          "digest": "sha256:156925b18f1275af4ca03755b501ce4a4615dcedf65b3e997d676babd5c7a3b3"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "thebabyhippo303/nimbus-recompilation-project",
+    "CheckedUtc": "2026-11-07T00:05:40.623490+00:00",
+    "Release": {
+      "tag_name": "alpha-1.6",
+      "html_url": "https://github.com/thebabyhippo303/nimbus-recompilation-project/releases/tag/alpha-1.6",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "Nimbus-Alpha-1.6-Android-arm64.apk",
+          "size": 216137581,
+          "browser_download_url": "https://github.com/thebabyhippo303/nimbus-recompilation-project/releases/download/alpha-1.6/Nimbus-Alpha-1.6-Android-arm64.apk",
+          "digest": "sha256:7dfba5a6cc204029881218048feab7ca4ffc1f989adb0a8578cd3688a8dc62cd"
+        },
+        {
+          "name": "Nimbus-Alpha-1.6-Android-arm64.apk.sha256",
+          "size": 101,
+          "browser_download_url": "https://github.com/thebabyhippo303/nimbus-recompilation-project/releases/download/alpha-1.6/Nimbus-Alpha-1.6-Android-arm64.apk.sha256",
+          "digest": "sha256:389ec36803fa6b819d6419fdca0286a84628e4593dba13dbc76b80639484339e"
+        },
+        {
+          "name": "Nimbus-Alpha-1.6-Linux-x86_64.run",
+          "size": 242294777,
+          "browser_download_url": "https://github.com/thebabyhippo303/nimbus-recompilation-project/releases/download/alpha-1.6/Nimbus-Alpha-1.6-Linux-x86_64.run",
+          "digest": "sha256:1cd7414d4c091e77f4dfb6618144ecadcfb64b681623236f386d66e1bae01ab6"
+        },
+        {
+          "name": "Nimbus-Alpha-1.6-Linux-x86_64.run.sha256",
+          "size": 100,
+          "browser_download_url": "https://github.com/thebabyhippo303/nimbus-recompilation-project/releases/download/alpha-1.6/Nimbus-Alpha-1.6-Linux-x86_64.run.sha256",
+          "digest": "sha256:bb562ae98dd5e49908d0ce4976f949b18e0469bfcd3d9c7e2bf39197a7202495"
+        },
+        {
+          "name": "Nimbus-Alpha-1.6-Windows-x64.zip",
+          "size": 159784427,
+          "browser_download_url": "https://github.com/thebabyhippo303/nimbus-recompilation-project/releases/download/alpha-1.6/Nimbus-Alpha-1.6-Windows-x64.zip",
+          "digest": "sha256:f0c5437f2a17dffc6d5c0dae0794cd0bb223c84bc630c1f7c9d9fb53b1a84bab"
+        },
+        {
+          "name": "Nimbus-Alpha-1.6-Windows-x64.zip.sha256",
+          "size": 99,
+          "browser_download_url": "https://github.com/thebabyhippo303/nimbus-recompilation-project/releases/download/alpha-1.6/Nimbus-Alpha-1.6-Windows-x64.zip.sha256",
+          "digest": "sha256:43a8ac25c378ae7a99e2dc653d1197b6fe637b0f0182516edfb71a89f346daa6"
+        },
+        {
+          "name": "RELEASE-NOTES.txt",
+          "size": 1890,
+          "browser_download_url": "https://github.com/thebabyhippo303/nimbus-recompilation-project/releases/download/alpha-1.6/RELEASE-NOTES.txt",
+          "digest": "sha256:5dca4f514c5c200e714b6c91ff5e15c311351beecb174fc77424c363b0e9fdb9"
+        },
+        {
+          "name": "release.json",
+          "size": 2254,
+          "browser_download_url": "https://github.com/thebabyhippo303/nimbus-recompilation-project/releases/download/alpha-1.6/release.json",
+          "digest": "sha256:e8af88bcad9a2836074dc3808642c0fc3b635d6b6afaf84e007691bfbeb95268"
+        },
+        {
+          "name": "SHA256SUMS",
+          "size": 300,
+          "browser_download_url": "https://github.com/thebabyhippo303/nimbus-recompilation-project/releases/download/alpha-1.6/SHA256SUMS",
+          "digest": "sha256:441397253335ec0ea122b74f116b77f23683fef2a00236ef9836edd17750221f"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "FlyinRabit205/STH-Recompiled",
+    "CheckedUtc": "2026-11-07T00:05:40.623490+00:00",
+    "Release": {
+      "tag_name": "v1.2",
+      "html_url": "https://github.com/FlyinRabit205/STH-Recompiled/releases/tag/v1.2",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "ShadowNativePort-v1.2-Linux.zip",
+          "size": 53469245,
+          "browser_download_url": "https://github.com/FlyinRabit205/STH-Recompiled/releases/download/v1.2/ShadowNativePort-v1.2-Linux.zip",
+          "digest": "sha256:e65e85e8e3bcb71075fcf24e11e45eb2c389f787bab0c8cc682bd61543d5896c"
+        },
+        {
+          "name": "ShadowNativePort-v1.2-Windows.zip",
+          "size": 54039647,
+          "browser_download_url": "https://github.com/FlyinRabit205/STH-Recompiled/releases/download/v1.2/ShadowNativePort-v1.2-Windows.zip",
+          "digest": "sha256:04bcb149d41db8e5add855fe76f4bdc0dca390c8d50c7b9bbde8fbb49f10f5d2"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "csrpfivem/PS3NHLLegacyRecomp",
+    "CheckedUtc": "2026-11-07T00:05:40.623490+00:00",
+    "Release": {
+      "tag_name": "v1.0.0",
+      "html_url": "https://github.com/csrpfivem/PS3NHLLegacyRecomp/releases/tag/v1.0.0",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "NHL-Legacy-Native_v1.0.0.zip",
+          "size": 175473155,
+          "browser_download_url": "https://github.com/csrpfivem/PS3NHLLegacyRecomp/releases/download/v1.0.0/NHL-Legacy-Native_v1.0.0.zip",
+          "digest": "sha256:e283588084e599e4242c28467ae2047f25af386531a381b045e60e7e20543028"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "DreaXer/GGARecomp",
+    "CheckedUtc": "2026-11-07T00:05:40.623490+00:00",
+    "Release": {
+      "tag_name": "v0.1.0",
+      "html_url": "https://github.com/DreaXer/GGARecomp/releases/tag/v0.1.0",
+      "draft": false,
+      "prerelease": true,
+      "assets": [
+        {
+          "name": "GGARecompiled-v0.1.0-windows.zip",
+          "size": 26923971,
+          "browser_download_url": "https://github.com/DreaXer/GGARecomp/releases/download/v0.1.0/GGARecompiled-v0.1.0-windows.zip",
+          "digest": "sha256:879d20ea8896d8cdfe69533565f771ceffe802b13321b1e2da0390ea7697eeb4"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "FrightWorks/FrightWorks-no100f",
+    "CheckedUtc": "2026-11-07T00:05:40.623490+00:00",
+    "Release": {
+      "tag_name": "v1.1.1",
+      "html_url": "https://github.com/FrightWorks/FrightWorks-no100f/releases/tag/v1.1.1",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "assets.win.json",
+          "size": 203,
+          "browser_download_url": "https://github.com/FrightWorks/FrightWorks-no100f/releases/download/v1.1.1/assets.win.json",
+          "digest": "sha256:a0a4b073844fe0f314ec0251cddeda33fc755df7db043f9c5bb91d25c504883e"
+        },
+        {
+          "name": "FrightWorks-1.1.0-full.nupkg",
+          "size": 702208702,
+          "browser_download_url": "https://github.com/FrightWorks/FrightWorks-no100f/releases/download/v1.1.1/FrightWorks-1.1.0-full.nupkg",
+          "digest": "sha256:01526994c1f48671b546aa30fa8f4e4b7dd1a0667e157d14a26e252c4558de8e"
+        },
+        {
+          "name": "FrightWorks-1.1.1-delta.nupkg",
+          "size": 3219266,
+          "browser_download_url": "https://github.com/FrightWorks/FrightWorks-no100f/releases/download/v1.1.1/FrightWorks-1.1.1-delta.nupkg",
+          "digest": "sha256:15fd0e6afd117427ceadda530b1012b2598a03bef82ceb32fb096bd64912334a"
+        },
+        {
+          "name": "FrightWorks-1.1.1-full.nupkg",
+          "size": 702298106,
+          "browser_download_url": "https://github.com/FrightWorks/FrightWorks-no100f/releases/download/v1.1.1/FrightWorks-1.1.1-full.nupkg",
+          "digest": "sha256:dca9d9ac12d48fc54b41673d2d0373dbcee98c476147769fab994d7c2f225321"
+        },
+        {
+          "name": "FrightWorks-1.1.1.zip",
+          "size": 699097011,
+          "browser_download_url": "https://github.com/FrightWorks/FrightWorks-no100f/releases/download/v1.1.1/FrightWorks-1.1.1.zip",
+          "digest": "sha256:915ac5fae5e94363dcd1cb2e04272baf70c7ceae7486cfa1248dd9904c775a73"
+        },
+        {
+          "name": "FrightWorks-win-Setup.exe",
+          "size": 709891066,
+          "browser_download_url": "https://github.com/FrightWorks/FrightWorks-no100f/releases/download/v1.1.1/FrightWorks-win-Setup.exe",
+          "digest": "sha256:402483d242c5ac728caea9caa2638b513ccf42cca7616a35ea80a7da45eb19f0"
+        },
+        {
+          "name": "RELEASES",
+          "size": 162,
+          "browser_download_url": "https://github.com/FrightWorks/FrightWorks-no100f/releases/download/v1.1.1/RELEASES",
+          "digest": "sha256:4abfb765d19ba188be54514b8b2079516312280d39671c093fa3243923c4a5c4"
+        },
+        {
+          "name": "releases.win.json",
+          "size": 747,
+          "browser_download_url": "https://github.com/FrightWorks/FrightWorks-no100f/releases/download/v1.1.1/releases.win.json",
+          "digest": "sha256:f1e1feefdd342b99bfa19045dadaa3301240f4631e0e481a8dfa1abe4f44a3be"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "goodshepherd23/MOHFrontline-Recomp",
+    "CheckedUtc": "2026-11-07T00:05:40.623490+00:00",
+    "Release": {
+      "tag_name": "v0.2.0",
+      "html_url": "https://github.com/goodshepherd23/MOHFrontline-Recomp/releases/tag/v0.2.0",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "MOHFrontline-Recomp-v0.2.0-windows-x64.zip",
+          "size": 10387011,
+          "browser_download_url": "https://github.com/goodshepherd23/MOHFrontline-Recomp/releases/download/v0.2.0/MOHFrontline-Recomp-v0.2.0-windows-x64.zip",
+          "digest": "sha256:c4040e053d7c462f77a9c64b88ab0ed2f2dce49a581b03ca130100f23de1bc37"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "ACR-GD/quarantine-recomp",
+    "CheckedUtc": "2026-11-07T00:05:40.623490+00:00",
+    "Release": {
+      "tag_name": "v0.1.0",
+      "html_url": "https://github.com/ACR-GD/quarantine-recomp/releases/tag/v0.1.0",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "Quarantine-0.1.0-Linux-x64.tar.gz",
+          "size": 4659629,
+          "browser_download_url": "https://github.com/ACR-GD/quarantine-recomp/releases/download/v0.1.0/Quarantine-0.1.0-Linux-x64.tar.gz",
+          "digest": "sha256:c8ebee5e54a292ee21b808fa20918b4bebca1e24f2e12af028eba96b3a61a3f9"
+        },
+        {
+          "name": "Quarantine-0.1.0-macOS.zip",
+          "size": 7899678,
+          "browser_download_url": "https://github.com/ACR-GD/quarantine-recomp/releases/download/v0.1.0/Quarantine-0.1.0-macOS.zip",
+          "digest": "sha256:1e06a12cc5922e8b1e46c2739a3afe93f262112e2e15cb8e1dde2f7f648363b3"
+        },
+        {
+          "name": "Quarantine-0.1.0-Windows-x64.zip",
+          "size": 3594169,
+          "browser_download_url": "https://github.com/ACR-GD/quarantine-recomp/releases/download/v0.1.0/Quarantine-0.1.0-Windows-x64.zip",
+          "digest": "sha256:cf83d7fb13cc3a9e78b7b427f6254abd908f4cbdcf9dcaaabe307752fc17c81f"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "n64hub/rayman-2-recomp",
+    "CheckedUtc": "2026-11-07T00:05:40.623490+00:00",
+    "Release": {
+      "tag_name": "v0.1.11",
+      "html_url": "https://github.com/n64hub/rayman-2-recomp/releases/tag/v0.1.11",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "Rayman2Recompiled-v0.1.11-linux-x64.tar.gz",
+          "size": 13794874,
+          "browser_download_url": "https://github.com/n64hub/rayman-2-recomp/releases/download/v0.1.11/Rayman2Recompiled-v0.1.11-linux-x64.tar.gz",
+          "digest": "sha256:5e555b5acdd2dc21faf0696557d0193d8211d8e50c29525f61bcfe61148f0ea7"
+        },
+        {
+          "name": "Rayman2Recompiled-v0.1.11-windows-x64.zip",
+          "size": 22411081,
+          "browser_download_url": "https://github.com/n64hub/rayman-2-recomp/releases/download/v0.1.11/Rayman2Recompiled-v0.1.11-windows-x64.zip",
+          "digest": "sha256:64d14634f3c2af94ea118ce75d3691426858e4d912ae86222220d5d8eb7b4452"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "SeveerJ/Ghoulies_PC_Recomp",
+    "CheckedUtc": "2026-11-07T00:05:40.623490+00:00",
+    "Release": {
+      "tag_name": "v0.1_Beta",
+      "html_url": "https://github.com/SeveerJ/Ghoulies_PC_Recomp/releases/tag/v0.1_Beta",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "GhouliesPC_Setup_v0.1_beta.exe",
+          "size": 1967482,
+          "browser_download_url": "https://github.com/SeveerJ/Ghoulies_PC_Recomp/releases/download/v0.1_Beta/GhouliesPC_Setup_v0.1_beta.exe",
+          "digest": "sha256:1d62d5e22792f05e00c2aa53b6cfc7fb2de58915a3b9bfe20de306e9e00c0a05"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "dalves408/nhlhitz2003recomp",
+    "CheckedUtc": "2026-11-07T00:05:40.623490+00:00",
+    "Release": {
+      "tag_name": "v1.0.3",
+      "html_url": "https://github.com/dalves408/nhlhitz2003recomp/releases/tag/v1.0.3",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "NHLHitz2003-1.0.3-Linux-x64.tar.gz",
+          "size": 9079309,
+          "browser_download_url": "https://github.com/dalves408/nhlhitz2003recomp/releases/download/v1.0.3/NHLHitz2003-1.0.3-Linux-x64.tar.gz",
+          "digest": "sha256:39d555f1a7d0f25cb5b5b2f06bf375ff5698c82bf0d1e69a1bc013ab56ddf608"
+        },
+        {
+          "name": "NHLHitz2003-1.0.3-Standalone.AppImage",
+          "size": 9554424,
+          "browser_download_url": "https://github.com/dalves408/nhlhitz2003recomp/releases/download/v1.0.3/NHLHitz2003-1.0.3-Standalone.AppImage",
+          "digest": "sha256:9f5e8cb3a51deae84b41e0b9d36b36970ecd97c344bbbb07551b359325b67552"
+        },
+        {
+          "name": "NHLHitz2003-1.0.3-Windows-x64.zip",
+          "size": 13773438,
+          "browser_download_url": "https://github.com/dalves408/nhlhitz2003recomp/releases/download/v1.0.3/NHLHitz2003-1.0.3-Windows-x64.zip",
+          "digest": "sha256:6ad05001bb1072c4f32c4f45141802113cd20387a6df10f44ec233c2144d4fdd"
+        },
+        {
+          "name": "NHLHitz2003-Setup-1.0.3.exe",
+          "size": 11094215,
+          "browser_download_url": "https://github.com/dalves408/nhlhitz2003recomp/releases/download/v1.0.3/NHLHitz2003-Setup-1.0.3.exe",
+          "digest": "sha256:8e19da4e471a8a3d76b643b89cb9bd48285747da01b82e5ec5e03370ee4cd8fb"
+        },
+        {
+          "name": "SHA256SUMS.txt",
+          "size": 399,
+          "browser_download_url": "https://github.com/dalves408/nhlhitz2003recomp/releases/download/v1.0.3/SHA256SUMS.txt",
+          "digest": "sha256:e909a90d2ba8707ff1da37eb336be4cfc4603a6c3506f76af43b5db78a0327ef"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "OriginalSwayze/beyond-oasis-recomp",
+    "CheckedUtc": "2026-11-07T00:05:40.623490+00:00",
+    "Release": {
+      "tag_name": "v1.5",
+      "html_url": "https://github.com/OriginalSwayze/beyond-oasis-recomp/releases/tag/v1.5",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "Beyond-Oasis-Recomp-v1.5.zip",
+          "size": 9812880,
+          "browser_download_url": "https://github.com/OriginalSwayze/beyond-oasis-recomp/releases/download/v1.5/Beyond-Oasis-Recomp-v1.5.zip",
+          "digest": "sha256:d00f41e666d5c4ae853699b9871de3878899e5276384fc70b7bbe23b6b3c6a64"
+        },
+        {
+          "name": "Beyond-Oasis-Setup-v1.5.exe",
+          "size": 12200208,
+          "browser_download_url": "https://github.com/OriginalSwayze/beyond-oasis-recomp/releases/download/v1.5/Beyond-Oasis-Setup-v1.5.exe",
+          "digest": "sha256:6699504433b32ff2e4ea56273f9dd3a7b0c87e9b23bc164542ad9205c420c099"
+        }
+      ]
+    }
   }
 ]

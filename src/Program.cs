@@ -172,7 +172,9 @@ namespace Nexus {
       Find<Border>("UpdatesBadge").Visibility=count>0?Visibility.Visible:Visibility.Collapsed;Find<TextBlock>("UpdatesBadgeText").Text=count.ToString();
     }
     void OpenCatalog(CatalogTab tab){
-      var window=new CatalogWindow(Window,store.Root,library,delegate(Game game){int index=library.Games.FindIndex(g=>g.Id==game.Id);Game previous=index<0?null:library.Games[index];if(index<0)library.Games.Add(game);else library.Games[index]=game;try{Save();}catch{if(index<0)library.Games.Remove(game);else library.Games[index]=previous;throw;}updatable.Remove(game.Id);selected=game;Refresh();ResolveArtwork(game);},tab);
+      var window=new CatalogWindow(Window,store.Root,library,delegate(Game game){int index=library.Games.FindIndex(g=>g.Id==game.Id);Game previous=index<0?null:library.Games[index];if(index<0)library.Games.Add(game);else library.Games[index]=game;try{Save();}catch{if(index<0)library.Games.Remove(game);else library.Games[index]=previous;throw;}updatable.Remove(game.Id);selected=game;Refresh();
+        // Updates keep the artwork and cover; only missing images are looked up (the cover right away, so the card never falls back to the cropped backdrop).
+        if(String.IsNullOrEmpty(game.Artwork)||!File.Exists(game.Artwork))ResolveArtwork(game);if(String.IsNullOrEmpty(game.Cover)||!File.Exists(game.Cover))ResolveCover(game);},tab);
       window.ShowDialog();
       foreach(Game game in library.Games)if(window.UpdatesFound.Contains(game.Repository??"")&&UpdateManager.Managed(game))updatable.Add(game.Id);
       if(!smoke)Save();UpdateCatalogBadge(window.Entries);UpdateUpdatesBadge();Refresh();
@@ -259,9 +261,9 @@ namespace Nexus {
     Grid Artwork(Game g,double width,double height,bool badges,bool cover=false){
       var art=new Grid{Width=width,Height=height,Background=Frozen(Color.FromRgb(37,43,53))};ImageSource coverImage=cover?LoadImage(g.Cover):null,source=coverImage??LoadImage(g.Artwork);
       // Covers with the card shape (SteamGridDB 600×900) fill it. Other box art (Wikipedia scans, landscape
-      // N64 boxes) is shown whole over a blurred copy of itself, so the card never shows empty bars.
+      // N64 boxes), and the panoramic backdrop shown while a game has no cover yet, appear whole over a blurred copy, never cropped.
       double ratio=source==null||source.Height<=0?0:source.Width/source.Height,shape=width/height;
-      bool whole=coverImage!=null&&Math.Abs(ratio-shape)/shape>0.06;
+      bool whole=cover&&Math.Abs(ratio-shape)/shape>0.06;
       if(source!=null&&whole){
         art.Children.Add(new Image{Source=source,Stretch=Stretch.UniformToFill,Effect=new System.Windows.Media.Effects.BlurEffect{Radius=28},Margin=new Thickness(-20)});
         art.Children.Add(new System.Windows.Shapes.Rectangle{Fill=Frozen(Color.FromArgb(120,16,17,21))});

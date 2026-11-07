@@ -1,5 +1,5 @@
 <Project Sdk="Microsoft.NET.Sdk">
-  <PropertyGroup><OutputType>WinExe</OutputType><TargetFramework>net10.0</TargetFramework><ImplicitUsings>enable</ImplicitUsings><Nullable>enable</Nullable><AssemblyName>Nexus</AssemblyName><Version>1.8.0</Version><InformationalVersion>1.8.0</InformationalVersion><IncludeSourceRevisionInInformationalVersion>false</IncludeSourceRevisionInInformationalVersion><RestorePackagesWithLockFile>true</RestorePackagesWithLockFile><RuntimeIdentifiers>linux-x64</RuntimeIdentifiers><ApplicationIcon>../../assets/nexus.ico</ApplicationIcon></PropertyGroup>
+  <PropertyGroup><OutputType>WinExe</OutputType><TargetFramework>net10.0</TargetFramework><ImplicitUsings>enable</ImplicitUsings><Nullable>enable</Nullable><AssemblyName>Nexus</AssemblyName><Version>1.8.1</Version><InformationalVersion>1.8.1</InformationalVersion><IncludeSourceRevisionInInformationalVersion>false</IncludeSourceRevisionInInformationalVersion><RestorePackagesWithLockFile>true</RestorePackagesWithLockFile><RuntimeIdentifiers>linux-x64</RuntimeIdentifiers><ApplicationIcon>../../assets/nexus.ico</ApplicationIcon></PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Avalonia.Fonts.Inter" Version="11.3.22" />
     <PackageReference Include="Avalonia.Desktop" Version="11.3.22" />

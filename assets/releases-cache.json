@@ -9052,5 +9052,575 @@
         }
       ]
     }
+  },
+  {
+    "Repository": "Goldoire/fefw-recomp",
+    "CheckedUtc": "2026-11-11T00:11:50.829676+00:00",
+    "Release": {
+      "tag_name": "v0.1.6",
+      "html_url": "https://github.com/Goldoire/fefw-recomp/releases/tag/v0.1.6",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "fefw-recomp-0.1.6-win64.zip",
+          "size": 163946410,
+          "browser_download_url": "https://github.com/Goldoire/fefw-recomp/releases/download/v0.1.6/fefw-recomp-0.1.6-win64.zip",
+          "digest": "sha256:098859626dd446dc24679edbdfb62176f66860129d379199b9e31f2a769e7964"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "adriadam10/mkw-recomp",
+    "CheckedUtc": "2026-11-11T00:11:50.829676+00:00",
+    "Release": {
+      "tag_name": "v0.1.7",
+      "html_url": "https://github.com/adriadam10/mkw-recomp/releases/tag/v0.1.7",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "mkw-recomp-0.1.7-windows-x64.zip",
+          "size": 173082131,
+          "browser_download_url": "https://github.com/adriadam10/mkw-recomp/releases/download/v0.1.7/mkw-recomp-0.1.7-windows-x64.zip",
+          "digest": "sha256:633055e440f8000a33506ac77906f76530784c391177287c143dedc3413cd8d9"
+        },
+        {
+          "name": "mkw-recomp-0.1.7-x86_64.AppImage",
+          "size": 153258488,
+          "browser_download_url": "https://github.com/adriadam10/mkw-recomp/releases/download/v0.1.7/mkw-recomp-0.1.7-x86_64.AppImage",
+          "digest": "sha256:b3918f33eeaf1efe9ed24420dca202106bb85aea1680a8dd2a1d00f5f984404d"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "saulob/13-sentinels-aegis-rim-pc",
+    "CheckedUtc": "2026-11-11T00:11:50.829676+00:00",
+    "Release": {
+      "tag_name": "v0.1.0",
+      "html_url": "https://github.com/saulob/13-sentinels-aegis-rim-pc/releases/tag/v0.1.0",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "13SentinelsAegisRimPC-v0.1.0-windows-x64.zip",
+          "size": 63614016,
+          "browser_download_url": "https://github.com/saulob/13-sentinels-aegis-rim-pc/releases/download/v0.1.0/13SentinelsAegisRimPC-v0.1.0-windows-x64.zip",
+          "digest": "sha256:38eae395367bef6e65e32d9897e69732b877d3669f787ccefe571c0ee72c6ce3"
+        },
+        {
+          "name": "13SentinelsAegisRimPC-v0.1.0-windows-x64.zip.sha256",
+          "size": 112,
+          "browser_download_url": "https://github.com/saulob/13-sentinels-aegis-rim-pc/releases/download/v0.1.0/13SentinelsAegisRimPC-v0.1.0-windows-x64.zip.sha256",
+          "digest": "sha256:453f4fd96db390dd93d9be2f3aa73ebaf9bb63b36b8a58c516a7808a09400b51"
+        },
+        {
+          "name": "13SentinelsAegisRimPC-v0.1.0-x86_64.AppImage",
+          "size": 20748608,
+          "browser_download_url": "https://github.com/saulob/13-sentinels-aegis-rim-pc/releases/download/v0.1.0/13SentinelsAegisRimPC-v0.1.0-x86_64.AppImage",
+          "digest": "sha256:2f902c70be6a83ba69b7ff96938ed8149302464c0efda8026c95bf9f6b62b83a"
+        },
+        {
+          "name": "13SentinelsAegisRimPC-v0.1.0-x86_64.AppImage.sha256",
+          "size": 111,
+          "browser_download_url": "https://github.com/saulob/13-sentinels-aegis-rim-pc/releases/download/v0.1.0/13SentinelsAegisRimPC-v0.1.0-x86_64.AppImage.sha256",
+          "digest": "sha256:98db2c155d5ef1c588252a5bce5203f3c9065ae01e69db066d1d1f0b3b8b0f6b"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "kayliox/transformers-armada-recomp",
+    "CheckedUtc": "2026-11-11T00:11:50.829676+00:00",
+    "Release": {
+      "tag_name": "setup-v0.4.8",
+      "html_url": "https://github.com/kayliox/transformers-armada-recomp/releases/tag/setup-v0.4.8",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "tfa-setup.exe",
+          "size": 5179904,
+          "browser_download_url": "https://github.com/kayliox/transformers-armada-recomp/releases/download/setup-v0.4.8/tfa-setup.exe",
+          "digest": "sha256:074d350768448a7cc180a5268185c8745ed26a9b49eb5aafddd6ffd6764992cb"
+        },
+        {
+          "name": "TransformersArmada-v0.4.8-Windows-x64.zip",
+          "size": 2364472,
+          "browser_download_url": "https://github.com/kayliox/transformers-armada-recomp/releases/download/setup-v0.4.8/TransformersArmada-v0.4.8-Windows-x64.zip",
+          "digest": "sha256:6f21ce27f19a3a1770a7bd6e502a932b527801e6e3093ec034d40e3cc4ede984"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "rcostanza/resogun-recomp",
+    "CheckedUtc": "2026-11-11T00:11:50.829676+00:00",
+    "Release": {
+      "tag_name": "v0.8",
+      "html_url": "https://github.com/rcostanza/resogun-recomp/releases/tag/v0.8",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "resogun-pc-v0.8-2026-11-10-linux.tar.gz",
+          "size": 6101106,
+          "browser_download_url": "https://github.com/rcostanza/resogun-recomp/releases/download/v0.8/resogun-pc-v0.8-2026-11-10-linux.tar.gz",
+          "digest": "sha256:6e6e60aa87cb78d631695094e4fbe861837ce5ea4e480faa811d675b7f5eb0a4"
+        },
+        {
+          "name": "resogun-pc-v0.8-2026-11-10.zip",
+          "size": 21534671,
+          "browser_download_url": "https://github.com/rcostanza/resogun-recomp/releases/download/v0.8/resogun-pc-v0.8-2026-11-10.zip",
+          "digest": "sha256:c3a0917666bd291b87855194f94ddc3d1c1800ca3acb78f2bc9919f16a59243e"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "rcostanza/Deception-IV-NightmarePrincess-recomp",
+    "CheckedUtc": "2026-11-11T00:11:50.829676+00:00",
+    "Release": {
+      "tag_name": "v0.1",
+      "html_url": "https://github.com/rcostanza/Deception-IV-NightmarePrincess-recomp/releases/tag/v0.1",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "deception-pc-v0.1-2026-11-09-linux.tar.gz",
+          "size": 6075489,
+          "browser_download_url": "https://github.com/rcostanza/Deception-IV-NightmarePrincess-recomp/releases/download/v0.1/deception-pc-v0.1-2026-11-09-linux.tar.gz",
+          "digest": "sha256:1386260641d973bf053df88f8a4467a5b04d75f1d062880f1d595838f36914fd"
+        },
+        {
+          "name": "deception-pc-v0.1-2026-11-09.zip",
+          "size": 21364167,
+          "browser_download_url": "https://github.com/rcostanza/Deception-IV-NightmarePrincess-recomp/releases/download/v0.1/deception-pc-v0.1-2026-11-09.zip",
+          "digest": "sha256:3632e60380fa41033c3198e0d95d92ed6d46367b7a89f555213b000e5510069f"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "zexk/portable-ops-native",
+    "CheckedUtc": "2026-11-11T00:11:50.829676+00:00",
+    "Release": {
+      "tag_name": "v0.1.0-rc1",
+      "html_url": "https://github.com/zexk/portable-ops-native/releases/tag/v0.1.0-rc1",
+      "draft": false,
+      "prerelease": true,
+      "assets": [
+        {
+          "name": "ffmpeg-7.1.5.tar.xz",
+          "size": 11050340,
+          "browser_download_url": "https://github.com/zexk/portable-ops-native/releases/download/v0.1.0-rc1/ffmpeg-7.1.5.tar.xz",
+          "digest": "sha256:de668509caf9e35e3cd162473441fdb29538c6d96ed080292b3cf9e6fc5d558f"
+        },
+        {
+          "name": "portable-ops-native-0.1.0-rc1-linux-x86_64.tar.gz",
+          "size": 105070874,
+          "browser_download_url": "https://github.com/zexk/portable-ops-native/releases/download/v0.1.0-rc1/portable-ops-native-0.1.0-rc1-linux-x86_64.tar.gz",
+          "digest": "sha256:7ad5ebbd7652136ffa9b090f4cf67e29cfac85e4eaa2ea9bbc1b664e0a798938"
+        },
+        {
+          "name": "portable-ops-plus-native-0.1.0-rc1-linux-x86_64.tar.gz",
+          "size": 382900523,
+          "browser_download_url": "https://github.com/zexk/portable-ops-native/releases/download/v0.1.0-rc1/portable-ops-plus-native-0.1.0-rc1-linux-x86_64.tar.gz",
+          "digest": "sha256:29b00ac7f5853f5bc607eb39666ee81df4de00172cf02f2b82a5a14239632a41"
+        },
+        {
+          "name": "PortableOpsNative-0.1.0-rc1-windows-x64.zip",
+          "size": 106145068,
+          "browser_download_url": "https://github.com/zexk/portable-ops-native/releases/download/v0.1.0-rc1/PortableOpsNative-0.1.0-rc1-windows-x64.zip",
+          "digest": "sha256:c29f37227766a9d5a707ab171e82161375fb80f867b795c258ff2d90f1165dfa"
+        },
+        {
+          "name": "PortableOpsPlusNative-0.1.0-rc1-windows-x64.zip",
+          "size": 405842011,
+          "browser_download_url": "https://github.com/zexk/portable-ops-native/releases/download/v0.1.0-rc1/PortableOpsPlusNative-0.1.0-rc1-windows-x64.zip",
+          "digest": "sha256:acab2924a25844a7a31d69c6e3a0195acfaeec7dd4dafe8a909645d0e997020c"
+        },
+        {
+          "name": "SHA256SUMS",
+          "size": 547,
+          "browser_download_url": "https://github.com/zexk/portable-ops-native/releases/download/v0.1.0-rc1/SHA256SUMS",
+          "digest": "sha256:0bd30d84ba1f44a939596e5d790f00a5d6f4b0f0df3e05074e362a68ede5e460"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "BTr-RJ/RoadRashTrilogy_Recomp",
+    "CheckedUtc": "2026-11-11T00:11:50.829676+00:00",
+    "Release": {
+      "tag_name": "v0.60",
+      "html_url": "https://github.com/BTr-RJ/RoadRashTrilogy_Recomp/releases/tag/v0.60",
+      "draft": false,
+      "prerelease": true,
+      "assets": [
+        {
+          "name": "RoadRashTrilogyRecomp-0.60-source.zip",
+          "size": 16912139,
+          "browser_download_url": "https://github.com/BTr-RJ/RoadRashTrilogy_Recomp/releases/download/v0.60/RoadRashTrilogyRecomp-0.60-source.zip",
+          "digest": "sha256:fe39dbe94ba3491b0d0666c5408ce12ca9da332f1d4aea72292187cbe88f899f"
+        },
+        {
+          "name": "RoadRashTrilogyRecomp-0.60-Windows-x64-offline.zip",
+          "size": 217325758,
+          "browser_download_url": "https://github.com/BTr-RJ/RoadRashTrilogy_Recomp/releases/download/v0.60/RoadRashTrilogyRecomp-0.60-Windows-x64-offline.zip",
+          "digest": "sha256:a46fb2fc63e2eec4318730c0db363d20927dc0f95c744e331ef218f1fb06d051"
+        },
+        {
+          "name": "RoadRashTrilogyRecomp-0.60-Windows-x64.zip",
+          "size": 95857340,
+          "browser_download_url": "https://github.com/BTr-RJ/RoadRashTrilogy_Recomp/releases/download/v0.60/RoadRashTrilogyRecomp-0.60-Windows-x64.zip",
+          "digest": "sha256:7f4dd8a35e707ab6b73e9e68960deb3af7b609c4c0b2b9ecaed007cd89bd73fd"
+        },
+        {
+          "name": "SHA256SUMS.txt",
+          "size": 333,
+          "browser_download_url": "https://github.com/BTr-RJ/RoadRashTrilogy_Recomp/releases/download/v0.60/SHA256SUMS.txt",
+          "digest": "sha256:a525ef117fab28f6d7331c9c889b58b1eda8cd75fd040913261056967cccd21c"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "xPXavierx/bleach-soul-resurreccion-recomp",
+    "CheckedUtc": "2026-11-11T00:11:50.829676+00:00",
+    "Release": {
+      "tag_name": "v1.1.1",
+      "html_url": "https://github.com/xPXavierx/bleach-soul-resurreccion-recomp/releases/tag/v1.1.1",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "attestation.jsonl",
+          "size": 11517,
+          "browser_download_url": "https://github.com/xPXavierx/bleach-soul-resurreccion-recomp/releases/download/v1.1.1/attestation.jsonl",
+          "digest": "sha256:243c97c0d33d4a6488d3e5972c1b1951fe36c550c0ca3f4b6e7a0d843cd0a4ce"
+        },
+        {
+          "name": "Bleach.Soul.Resurreccion.-.Setup.exe",
+          "size": 96164546,
+          "browser_download_url": "https://github.com/xPXavierx/bleach-soul-resurreccion-recomp/releases/download/v1.1.1/Bleach.Soul.Resurreccion.-.Setup.exe",
+          "digest": "sha256:a03980a6ff8942ee3003c3f453b72688d1b1a060fa7347e33c131496ea845208"
+        },
+        {
+          "name": "build_a.json",
+          "size": 144517,
+          "browser_download_url": "https://github.com/xPXavierx/bleach-soul-resurreccion-recomp/releases/download/v1.1.1/build_a.json",
+          "digest": "sha256:99a42650d68111c6fedf8cc9d6d96ac2e35ac2e155bad96c36533b44878027fa"
+        },
+        {
+          "name": "build_b.json",
+          "size": 144517,
+          "browser_download_url": "https://github.com/xPXavierx/bleach-soul-resurreccion-recomp/releases/download/v1.1.1/build_b.json",
+          "digest": "sha256:99a42650d68111c6fedf8cc9d6d96ac2e35ac2e155bad96c36533b44878027fa"
+        },
+        {
+          "name": "release-verification-attestation.jsonl",
+          "size": 11597,
+          "browser_download_url": "https://github.com/xPXavierx/bleach-soul-resurreccion-recomp/releases/download/v1.1.1/release-verification-attestation.jsonl",
+          "digest": "sha256:77cf7917139c0ac27d7d24da836ef622d4e9ce40dd3fed28468ed9086e576a93"
+        },
+        {
+          "name": "release-verification.json",
+          "size": 1387,
+          "browser_download_url": "https://github.com/xPXavierx/bleach-soul-resurreccion-recomp/releases/download/v1.1.1/release-verification.json",
+          "digest": "sha256:45d8db2d45eccf66e3bbef3236aa26a41bd53e2343412d15bc4ba46688d00a9f"
+        },
+        {
+          "name": "SHA256SUMS.txt",
+          "size": 103,
+          "browser_download_url": "https://github.com/xPXavierx/bleach-soul-resurreccion-recomp/releases/download/v1.1.1/SHA256SUMS.txt",
+          "digest": "sha256:a2512755c3caca00274346c8614ec016a1e0d25568cedc8170d077825e036df5"
+        },
+        {
+          "name": "summary.md",
+          "size": 651,
+          "browser_download_url": "https://github.com/xPXavierx/bleach-soul-resurreccion-recomp/releases/download/v1.1.1/summary.md",
+          "digest": "sha256:dcdc89c3d4d8190dce66e4c3e7d486e43682191dd8e43152df6c8de2bc07e52b"
+        },
+        {
+          "name": "verification.json",
+          "size": 735,
+          "browser_download_url": "https://github.com/xPXavierx/bleach-soul-resurreccion-recomp/releases/download/v1.1.1/verification.json",
+          "digest": "sha256:e697aec0a3a355503f4489b2c88471ca00928c862ce33fbe284098b41d1f7bea"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "kayochiaradia/mtf-recomp",
+    "CheckedUtc": "2026-11-11T00:11:50.829676+00:00",
+    "Release": {
+      "tag_name": "v0.1.0-beta.6",
+      "html_url": "https://github.com/kayochiaradia/mtf-recomp/releases/tag/v0.1.0-beta.6",
+      "draft": false,
+      "prerelease": true,
+      "assets": [
+        {
+          "name": "MTF-Setup-0.1.0-beta.6-windows.zip",
+          "size": 169457656,
+          "browser_download_url": "https://github.com/kayochiaradia/mtf-recomp/releases/download/v0.1.0-beta.6/MTF-Setup-0.1.0-beta.6-windows.zip",
+          "digest": "sha256:ecca9c27bdc5774254d803e0d8662551fda6551a9af64a15f18973187c97192d"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "SerenityG4K/SpaceAnimalsRecomp",
+    "CheckedUtc": "2026-11-11T00:11:50.829676+00:00",
+    "Release": {
+      "tag_name": "v1.0.2",
+      "html_url": "https://github.com/SerenityG4K/SpaceAnimalsRecomp/releases/tag/v1.0.2",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "SHA256SUMS.txt",
+          "size": 205,
+          "browser_download_url": "https://github.com/SerenityG4K/SpaceAnimalsRecomp/releases/download/v1.0.2/SHA256SUMS.txt",
+          "digest": "sha256:efd84449df6960ee6e58a8e8731bac6b6329aa7fe4a6e05a0ca3d6781c388169"
+        },
+        {
+          "name": "SpaceAnimalsRecomp-1.0.2-update.zip",
+          "size": 60212483,
+          "browser_download_url": "https://github.com/SerenityG4K/SpaceAnimalsRecomp/releases/download/v1.0.2/SpaceAnimalsRecomp-1.0.2-update.zip",
+          "digest": "sha256:34de4311b96da08ef9a82b887e5ce6920319e4abef48fda037511f0926022a44"
+        },
+        {
+          "name": "SpaceAnimalsRecomp-1.0.2-windows.zip",
+          "size": 150228207,
+          "browser_download_url": "https://github.com/SerenityG4K/SpaceAnimalsRecomp/releases/download/v1.0.2/SpaceAnimalsRecomp-1.0.2-windows.zip",
+          "digest": "sha256:e7adef3799dc5152ac6864b6d13aca9d125bd7d80fd87883466642c54d9a0188"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "Guuzzeji/otogi-xunchain",
+    "CheckedUtc": "2026-11-11T00:11:50.829676+00:00",
+    "Release": {
+      "tag_name": "v0.7.0",
+      "html_url": "https://github.com/Guuzzeji/otogi-xunchain/releases/tag/v0.7.0",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "OFL-ShipporiMinchoB1.txt",
+          "size": 4399,
+          "browser_download_url": "https://github.com/Guuzzeji/otogi-xunchain/releases/download/v0.7.0/OFL-ShipporiMinchoB1.txt",
+          "digest": "sha256:41fba056279be5f45ff9a99e44b7b53897b42732f5806d8e666e0ab49ac6bd38"
+        },
+        {
+          "name": "otogi-xunchain-setup.exe",
+          "size": 8521216,
+          "browser_download_url": "https://github.com/Guuzzeji/otogi-xunchain/releases/download/v0.7.0/otogi-xunchain-setup.exe",
+          "digest": "sha256:33d979462681e11e83b8f429e7d609d709b9474be21ec8e21c5f17b60c9b81c0"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "almost-drowned-rat/Orta-Recompiled",
+    "CheckedUtc": "2026-11-11T00:11:50.829676+00:00",
+    "Release": {
+      "tag_name": "v1.0.0",
+      "html_url": "https://github.com/almost-drowned-rat/Orta-Recompiled/releases/tag/v1.0.0",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "Orta-Recompiled-v1.0.0-win64.zip",
+          "size": 209472895,
+          "browser_download_url": "https://github.com/almost-drowned-rat/Orta-Recompiled/releases/download/v1.0.0/Orta-Recompiled-v1.0.0-win64.zip",
+          "digest": "sha256:3371352a975bbf5ec272f20cadf43f86d0a4aed95dd015b28260f3c640bd12bb"
+        },
+        {
+          "name": "SHA256SUMS.txt",
+          "size": 351,
+          "browser_download_url": "https://github.com/almost-drowned-rat/Orta-Recompiled/releases/download/v1.0.0/SHA256SUMS.txt",
+          "digest": "sha256:bf6a85e7e14a33d59c31fe41b72adfc51fb6a5dd4053ce209478fdc773ca8738"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "rsantos722/imsa-wcr-m2-recomp",
+    "CheckedUtc": "2026-11-11T00:11:50.829676+00:00",
+    "Release": {
+      "tag_name": "v1.0.1",
+      "html_url": "https://github.com/rsantos722/imsa-wcr-m2-recomp/releases/tag/v1.0.1",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "imsa-wcr-m2-recomp-1.0.1-linux-x86_64.AppImage",
+          "size": 38795768,
+          "browser_download_url": "https://github.com/rsantos722/imsa-wcr-m2-recomp/releases/download/v1.0.1/imsa-wcr-m2-recomp-1.0.1-linux-x86_64.AppImage",
+          "digest": "sha256:bd0227d1a5501a58b8068e4802604ad30e42596a9cce46fcfe781ab1947d8386"
+        },
+        {
+          "name": "imsa-wcr-m2-recomp-1.0.1-linux-x86_64.AppImage.sha256",
+          "size": 113,
+          "browser_download_url": "https://github.com/rsantos722/imsa-wcr-m2-recomp/releases/download/v1.0.1/imsa-wcr-m2-recomp-1.0.1-linux-x86_64.AppImage.sha256",
+          "digest": "sha256:4e314a971ba72f96f16ee97a2a948514998e1082e2f7c0b20328e92379e5dbbb"
+        },
+        {
+          "name": "imsa-wcr-m2-recomp-1.0.1-linux-x86_64.tar.gz",
+          "size": 9611741,
+          "browser_download_url": "https://github.com/rsantos722/imsa-wcr-m2-recomp/releases/download/v1.0.1/imsa-wcr-m2-recomp-1.0.1-linux-x86_64.tar.gz",
+          "digest": "sha256:b51d245ea1e5e89e8478ff55c413b70f084cd03f232a9943b150a840a37368ca"
+        },
+        {
+          "name": "imsa-wcr-m2-recomp-1.0.1-linux-x86_64.tar.gz.sha256",
+          "size": 111,
+          "browser_download_url": "https://github.com/rsantos722/imsa-wcr-m2-recomp/releases/download/v1.0.1/imsa-wcr-m2-recomp-1.0.1-linux-x86_64.tar.gz.sha256",
+          "digest": "sha256:005c181acaae9ddadd8705a72760edb5a1078778f1f633a080594ec0399b21ee"
+        },
+        {
+          "name": "imsa-wcr-m2-recomp-1.0.1-macos-arm64.dmg",
+          "size": 9319141,
+          "browser_download_url": "https://github.com/rsantos722/imsa-wcr-m2-recomp/releases/download/v1.0.1/imsa-wcr-m2-recomp-1.0.1-macos-arm64.dmg",
+          "digest": "sha256:1845ea92550af7f2f8214e0d9e46dbb9bdea28e7bb2bc7a4cf713b5a35b1d8d5"
+        },
+        {
+          "name": "imsa-wcr-m2-recomp-1.0.1-macos-arm64.dmg.sha256",
+          "size": 107,
+          "browser_download_url": "https://github.com/rsantos722/imsa-wcr-m2-recomp/releases/download/v1.0.1/imsa-wcr-m2-recomp-1.0.1-macos-arm64.dmg.sha256",
+          "digest": "sha256:77ffc690eb6476aebfbf4cef990663431cbba59e6a45e6ad16a4972183a8219e"
+        },
+        {
+          "name": "imsa-wcr-m2-recomp-1.0.1-windows-x86_64.zip",
+          "size": 15125795,
+          "browser_download_url": "https://github.com/rsantos722/imsa-wcr-m2-recomp/releases/download/v1.0.1/imsa-wcr-m2-recomp-1.0.1-windows-x86_64.zip",
+          "digest": "sha256:8fdde5bfefa1e054b19526dd2ecdbc4bc86cc626aaa54fd5bb60688c597daa96"
+        },
+        {
+          "name": "imsa-wcr-m2-recomp-1.0.1-windows-x86_64.zip.sha256",
+          "size": 110,
+          "browser_download_url": "https://github.com/rsantos722/imsa-wcr-m2-recomp/releases/download/v1.0.1/imsa-wcr-m2-recomp-1.0.1-windows-x86_64.zip.sha256",
+          "digest": "sha256:b75650c4ab5e4051eb860d7a7ea1ee99d9a73ee46ec4f0bcf4e078fac44b0044"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "MotaviaWorks/PSIVRecomp",
+    "CheckedUtc": "2026-11-11T00:11:50.829676+00:00",
+    "Release": {
+      "tag_name": "v0.2.0-alpha",
+      "html_url": "https://github.com/MotaviaWorks/PSIVRecomp/releases/tag/v0.2.0-alpha",
+      "draft": false,
+      "prerelease": true,
+      "assets": [
+        {
+          "name": "PSIV-Recomp-0.2.0-alpha-android-arm64.apk",
+          "size": 9019130,
+          "browser_download_url": "https://github.com/MotaviaWorks/PSIVRecomp/releases/download/v0.2.0-alpha/PSIV-Recomp-0.2.0-alpha-android-arm64.apk",
+          "digest": "sha256:a3aad640e2fbceb26d517688c4b1aab1d5b34ad3a59db1fcc6a2bcd03ce4f7f3"
+        },
+        {
+          "name": "PSIV-Recomp-0.2.0-alpha-linux-x86_64.tar.gz",
+          "size": 9297660,
+          "browser_download_url": "https://github.com/MotaviaWorks/PSIVRecomp/releases/download/v0.2.0-alpha/PSIV-Recomp-0.2.0-alpha-linux-x86_64.tar.gz",
+          "digest": "sha256:a8d39592247e6b476652bb00b12a71f2690823c412c4f5b0baf565ebd933f625"
+        },
+        {
+          "name": "PSIV-Recomp-0.2.0-alpha-windows-x64.zip",
+          "size": 7893995,
+          "browser_download_url": "https://github.com/MotaviaWorks/PSIVRecomp/releases/download/v0.2.0-alpha/PSIV-Recomp-0.2.0-alpha-windows-x64.zip",
+          "digest": "sha256:f957386475c5d95c3c8e88fe74cae7aad992a3bef4f7f868694a756db6e0f1aa"
+        },
+        {
+          "name": "SHA256SUMS.txt",
+          "size": 324,
+          "browser_download_url": "https://github.com/MotaviaWorks/PSIVRecomp/releases/download/v0.2.0-alpha/SHA256SUMS.txt",
+          "digest": "sha256:5822b486eac5225a7b2cf9e788bab38d008d87efa9f0af2bccb2d2640a6c87de"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "astromen2009/Syphon-Filter-3-pc-port",
+    "CheckedUtc": "2026-11-11T00:11:50.829676+00:00",
+    "Release": {
+      "tag_name": "v0.9.1",
+      "html_url": "https://github.com/astromen2009/Syphon-Filter-3-pc-port/releases/tag/v0.9.1",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "Release.0.9.1.zip",
+          "size": 4255014,
+          "browser_download_url": "https://github.com/astromen2009/Syphon-Filter-3-pc-port/releases/download/v0.9.1/Release.0.9.1.zip",
+          "digest": "sha256:e1607aa43b63b4af1e6c60ee81dc28b3589d8ce8b9876f1d3fc22b1040ea950a"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "BioRhythmicStudios/Maximo-GTG",
+    "CheckedUtc": "2026-11-11T00:11:50.829676+00:00",
+    "Release": {
+      "tag_name": "1.0.1",
+      "html_url": "https://github.com/BioRhythmicStudios/Maximo-GTG/releases/tag/1.0.1",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "MaximoLauncher-1.0.1-rc.zip",
+          "size": 2489642,
+          "browser_download_url": "https://github.com/BioRhythmicStudios/Maximo-GTG/releases/download/1.0.1/MaximoLauncher-1.0.1-rc.zip",
+          "digest": "sha256:63d3acfae6373db75f4d327d0a8961d4062ec93f0c2eae00e021bd048763b3fe"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "thegh0sts/bourne-conspiracy-x360-recomp",
+    "CheckedUtc": "2026-11-11T00:11:50.829676+00:00",
+    "Release": {
+      "tag_name": "0.2.0",
+      "html_url": "https://github.com/thegh0sts/bourne-conspiracy-x360-recomp/releases/tag/0.2.0",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "BourneConspiracy.exe",
+          "size": 45658707,
+          "browser_download_url": "https://github.com/thegh0sts/bourne-conspiracy-x360-recomp/releases/download/0.2.0/BourneConspiracy.exe",
+          "digest": "sha256:c2424ba5ef733b48002822b44350861741d5751024f5bca51d274a7824725a6b"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "josiahg2502-glitch/Kirby-Redream",
+    "CheckedUtc": "2026-11-11T00:11:50.829676+00:00",
+    "Release": {
+      "tag_name": "v1.0.0",
+      "html_url": "https://github.com/josiahg2502-glitch/Kirby-Redream/releases/tag/v1.0.0",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "Kirby-Redream-PC-Setup.exe",
+          "size": 5032448,
+          "browser_download_url": "https://github.com/josiahg2502-glitch/Kirby-Redream/releases/download/v1.0.0/Kirby-Redream-PC-Setup.exe",
+          "digest": "sha256:2aeceacacc7b4a6429c21bd76fce731a86e1d313f7fddd5452f380599019d0ee"
+        },
+        {
+          "name": "Kirby-Redream-PC.zip",
+          "size": 4845741,
+          "browser_download_url": "https://github.com/josiahg2502-glitch/Kirby-Redream/releases/download/v1.0.0/Kirby-Redream-PC.zip",
+          "digest": "sha256:679cce623e71056c61ea191314541336fbd98a507bfab2ff308df527b975ede9"
+        }
+      ]
+    }
   }
 ]

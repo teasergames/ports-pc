@@ -6963,5 +6963,372 @@
     "DiscoverExecutable": true,
     "PackageKind": "Installer",
     "Notes": "O NEXUS baixa e verifica o instalador oficial, abre o assistente do autor e cadastra o aplicativo que você selecionar ao concluir. Atualizações também usam esse assistente. Recompilação do jogo de Mega Drive. Requer sua própria ROM."
+  },
+  {
+    "Id": "fefw-recomp",
+    "Name": "Fire Emblem: Fortune's Weave · FEFW Recomp",
+    "Repository": "Goldoire/fefw-recomp",
+    "Platform": "Nintendo Switch",
+    "AssetPattern": "^fefw-recomp-[0-9.]+-win64\\.zip$",
+    "PlayNames": [
+      "fefw-launcher.exe"
+    ],
+    "ConfigNames": [
+      "fefw-launcher.exe"
+    ],
+    "ArtworkTitle": "Fire Emblem: Fortune's Weave",
+    "ProjectOnly": false,
+    "ProjectType": "Recompilação",
+    "Kind": "Recompilação",
+    "PackageKind": "Zip",
+    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Jogar e Configurar abrem fefw-launcher.exe; na primeira abertura, prepare seus próprios arquivos no port. Recompilação estática do jogo de Switch 2 com renderizador Vulkan. Requer sua própria cópia."
+  },
+  {
+    "Id": "mkw-recomp",
+    "Name": "Mario Kart World · MKW Recomp",
+    "Repository": "adriadam10/mkw-recomp",
+    "Platform": "Nintendo Switch",
+    "AssetPattern": "^mkw-recomp-[0-9.]+-windows-x64\\.zip$",
+    "PlayNames": [
+      "mkw.exe"
+    ],
+    "ConfigNames": [
+      "mkw.exe"
+    ],
+    "ArtworkTitle": "Mario Kart World",
+    "ProjectOnly": false,
+    "ProjectType": "Recompilação",
+    "Kind": "Recompilação",
+    "PackageKind": "Zip",
+    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Jogar e Configurar abrem mkw.exe; na primeira abertura, prepare seus próprios arquivos no port. Recompilação estática da versão 1.0.0 do jogo de Switch 2, com NVN2 reimplementado em Vulkan. Em desenvolvimento. Requer sua própria cópia.",
+    "LinuxAssetPattern": "^mkw\\-recomp\\-[0-9][0-9A-Za-z.\\-]*\\-x86_64\\.AppImage$",
+    "LinuxPackageKind": "AppImage"
+  },
+  {
+    "Id": "13-sentinels-pc",
+    "Name": "13 Sentinels: Aegis Rim · PC Port",
+    "Repository": "saulob/13-sentinels-aegis-rim-pc",
+    "Platform": "PlayStation 4",
+    "AssetPattern": "^13SentinelsAegisRimPC-v[0-9.]+-windows-x64\\.zip$",
+    "PlayNames": [
+      "13_sentinels_aegis_rim.exe"
+    ],
+    "ConfigNames": [
+      "13_sentinels_aegis_rim.exe"
+    ],
+    "ArtworkTitle": "13 Sentinels: Aegis Rim",
+    "ProjectOnly": false,
+    "ProjectType": "Port",
+    "Kind": "Recompilação",
+    "PackageKind": "Zip",
+    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Jogar abre 13_sentinels_aegis_rim.exe e Configurar abre 13_sentinels_aegis_rim.exe. Port nativo da versão PS4 com o launcher TRG, que instala direto o seu PKG. Primeira versão. Requer sua própria cópia.",
+    "LinuxAssetPattern": "^13SentinelsAegisRimPC\\-v[0-9][0-9A-Za-z.\\-]*\\-x86_64\\.AppImage$",
+    "LinuxPackageKind": "AppImage"
+  },
+  {
+    "Id": "transformers-armada",
+    "Name": "Transformers (PS2) · PC Port",
+    "Repository": "kayliox/transformers-armada-recomp",
+    "Platform": "PlayStation 2",
+    "AssetPattern": "^tfa-setup\\.exe$",
+    "PlayNames": [],
+    "ConfigNames": [],
+    "ArtworkTitle": "Transformers (2004 video game)",
+    "ProjectOnly": false,
+    "ProjectType": "Recompilação",
+    "Kind": "Instalação integrada",
+    "DiscoverExecutable": true,
+    "PackageKind": "Installer",
+    "Notes": "O NEXUS baixa e verifica o instalador oficial, abre o assistente do autor e cadastra o aplicativo que você selecionar ao concluir. Atualizações também usam esse assistente. O instalador monta o jogo no seu PC a partir da sua ISO (Transformers USA, SLUS-20668), com renderizador Direct3D 12 e widescreen."
+  },
+  {
+    "Id": "resogun-recomp",
+    "Name": "Resogun · Recompiled",
+    "Repository": "rcostanza/resogun-recomp",
+    "Platform": "PlayStation 4",
+    "AssetPattern": "^resogun-pc-v[0-9.]+-[0-9-]+\\.zip$",
+    "PlayNames": [
+      "resogun.exe"
+    ],
+    "ConfigNames": [
+      "resogun-setup.exe"
+    ],
+    "ArtworkTitle": "Resogun",
+    "ProjectOnly": false,
+    "ProjectType": "Recompilação",
+    "Kind": "Recompilação",
+    "PackageKind": "Zip",
+    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Jogar abre resogun.exe e Configurar abre resogun-setup.exe. Recompilação da versão PS4 com Vulkan e até 180 fps. Na primeira vez, use Configurar para apontar o seu dump (CUSA00038 com o update 1.10).",
+    "LinuxAssetPattern": "^resogun-pc-v[0-9.]+-[0-9-]+-linux\\.tar\\.gz$",
+    "LinuxPackageKind": "Archive"
+  },
+  {
+    "Id": "deception-iv-recomp",
+    "Name": "Deception IV: The Nightmare Princess · Recompiled",
+    "Repository": "rcostanza/Deception-IV-NightmarePrincess-recomp",
+    "Platform": "PlayStation 4",
+    "AssetPattern": "^deception-pc-v[0-9.]+-[0-9-]+\\.zip$",
+    "PlayNames": [
+      "deception.exe"
+    ],
+    "ConfigNames": [
+      "deception-setup.exe"
+    ],
+    "ArtworkTitle": "Deception IV: The Nightmare Princess",
+    "ProjectOnly": false,
+    "ProjectType": "Recompilação",
+    "Kind": "Recompilação",
+    "PackageKind": "Zip",
+    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Jogar abre deception.exe e Configurar abre deception-setup.exe. Recompilação da versão PS4 com Vulkan. Na primeira vez, use Configurar para apontar o seu dump (CUSA02859 com o update 1.01).",
+    "LinuxAssetPattern": "^deception-pc-v[0-9.]+-[0-9-]+-linux\\.tar\\.gz$",
+    "LinuxPackageKind": "Archive"
+  },
+  {
+    "Id": "portable-ops-native",
+    "Name": "Metal Gear Solid: Portable Ops · Portable Ops Native",
+    "Repository": "zexk/portable-ops-native",
+    "Platform": "PSP",
+    "AssetPattern": "^PortableOpsNative-.*-windows-x64\\.zip$",
+    "PlayNames": [
+      "PortableOpsNative.exe"
+    ],
+    "ConfigNames": [
+      "PortableOpsNative.exe"
+    ],
+    "ArtworkTitle": "Metal Gear Solid: Portable Ops",
+    "ProjectOnly": false,
+    "ProjectType": "Recompilação",
+    "AllowPrerelease": true,
+    "Kind": "Recompilação",
+    "PackageKind": "Zip",
+    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Jogar e Configurar abrem PortableOpsNative.exe; na primeira abertura, prepare seus próprios arquivos no port. Recompilação estática da versão ULUS-10202 (1.02) com Vulkan e SDL3. Release candidate. Requer seu próprio UMD. O Portable Ops+ sai na mesma Release, em um pacote separado, para instalar manualmente.",
+    "LinuxAssetPattern": "^portable-ops-native-.*-linux-x86_64\\.tar\\.gz$",
+    "LinuxPackageKind": "Archive"
+  },
+  {
+    "Id": "road-rash-trilogy",
+    "Name": "Road Rash Trilogy · Recomp",
+    "Repository": "BTr-RJ/RoadRashTrilogy_Recomp",
+    "Platform": "Outras",
+    "AssetPattern": "^RoadRashTrilogyRecomp-[0-9.]+-Windows-x64\\.zip$",
+    "PlayNames": [
+      "RoadRashTrilogyRecomp.exe"
+    ],
+    "ConfigNames": [
+      "RoadRashTrilogyRecomp.exe"
+    ],
+    "ArtworkTitle": "Road Rash",
+    "ProjectOnly": false,
+    "ProjectType": "Recompilação",
+    "AllowPrerelease": true,
+    "Kind": "Recompilação",
+    "PackageKind": "Zip",
+    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Jogar e Configurar abrem RoadRashTrilogyRecomp.exe; na primeira abertura, prepare seus próprios arquivos no port. Road Rash, Road Rash II e Road Rash 3 de Mega Drive. O instalador monta os jogos a partir das suas ROMs. Teste público."
+  },
+  {
+    "Id": "bleach-sr-recomp",
+    "Name": "Bleach: Soul Resurrección · PC Recomp",
+    "Repository": "xPXavierx/bleach-soul-resurreccion-recomp",
+    "Platform": "PlayStation 3",
+    "AssetPattern": "^Bleach\\.Soul\\.Resurreccion\\.-\\.Setup\\.exe$",
+    "PlayNames": [],
+    "ConfigNames": [],
+    "ArtworkTitle": "Bleach: Soul Resurrección",
+    "ProjectOnly": false,
+    "ProjectType": "Recompilação",
+    "Kind": "Instalação integrada",
+    "DiscoverExecutable": true,
+    "PackageKind": "Installer",
+    "Notes": "O NEXUS baixa e verifica o instalador oficial, abre o assistente do autor e cadastra o aplicativo que você selecionar ao concluir. Atualizações também usam esse assistente. Recompilação estática da versão PS3 (BLUS30769, sem updates) com DirectX 12. Requer sua própria cópia."
+  },
+  {
+    "Id": "mtf-recomp",
+    "Name": "Mario Tennis Fever · MTF Recomp",
+    "Repository": "kayochiaradia/mtf-recomp",
+    "Platform": "Nintendo Switch",
+    "AssetPattern": "^MTF-Setup-.*-windows\\.zip$",
+    "PlayNames": [
+      "MTF-Setup.exe"
+    ],
+    "ConfigNames": [
+      "MTF-Setup.exe"
+    ],
+    "ArtworkTitle": "Mario Tennis Fever",
+    "ProjectOnly": false,
+    "ProjectType": "Recompilação",
+    "AllowPrerelease": true,
+    "Kind": "Recompilação",
+    "PackageKind": "Zip",
+    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Jogar e Configurar abrem MTF-Setup.exe; na primeira abertura, prepare seus próprios arquivos no port. Recompilação estática do jogo de Switch 2 (versão 1.1.1). O MTF-Setup monta o jogo a partir do seu .nup. Beta."
+  },
+  {
+    "Id": "starfox-remake-recomp",
+    "Name": "Star Fox (Switch 2) · StarFox Remake Recompiled",
+    "Repository": "SerenityG4K/SpaceAnimalsRecomp",
+    "Platform": "Nintendo Switch",
+    "AssetPattern": "^SpaceAnimalsRecomp-[0-9.]+-windows\\.zip$",
+    "PlayNames": [
+      "lanceur.exe"
+    ],
+    "ConfigNames": [
+      "lanceur.exe"
+    ],
+    "ArtworkTitle": "Star Fox (2026 video game)",
+    "ProjectOnly": false,
+    "ProjectType": "Recompilação",
+    "Kind": "Recompilação",
+    "PackageKind": "Zip",
+    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Jogar e Configurar abrem lanceur.exe; na primeira abertura, prepare seus próprios arquivos no port. Recompilação estática do Star Fox de Switch 2 (update 2.0.0). Projeto feito quase todo com IA, como o autor declara. Requer sua própria cópia."
+  },
+  {
+    "Id": "otogi-xunchain",
+    "Name": "Otogi: Myth of Demons · Otogi XUnchain",
+    "Repository": "Guuzzeji/otogi-xunchain",
+    "Platform": "Xbox",
+    "AssetPattern": "^otogi-xunchain-setup\\.exe$",
+    "PlayNames": [],
+    "ConfigNames": [],
+    "ArtworkTitle": "Otogi: Myth of Demons",
+    "ProjectOnly": false,
+    "ProjectType": "Recompilação",
+    "Kind": "Instalação integrada",
+    "DiscoverExecutable": true,
+    "PackageKind": "Installer",
+    "Notes": "O NEXUS baixa e verifica o instalador oficial, abre o assistente do autor e cadastra o aplicativo que você selecionar ao concluir. Atualizações também usam esse assistente. Recompilação estática da versão Xbox com widescreen, alta taxa de quadros e até 4x a resolução. Requer seu próprio disco."
+  },
+  {
+    "Id": "orta-recompiled",
+    "Name": "Panzer Dragoon Orta · Orta Recompiled",
+    "Repository": "almost-drowned-rat/Orta-Recompiled",
+    "Platform": "Xbox",
+    "AssetPattern": "^Orta-Recompiled-v[0-9.]+-win64\\.zip$",
+    "PlayNames": [
+      "Panzer Dragoon Orta Recomp.exe"
+    ],
+    "ConfigNames": [
+      "Panzer Dragoon Orta Recomp.exe"
+    ],
+    "ArtworkTitle": "Panzer Dragoon Orta",
+    "ProjectOnly": false,
+    "ProjectType": "Recompilação",
+    "Kind": "Recompilação",
+    "PackageKind": "Zip",
+    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Jogar e Configurar abrem Panzer Dragoon Orta Recomp.exe; na primeira abertura, prepare seus próprios arquivos no port. Recompilação estática da versão europeia (PAL) com Vulkan, jogável do início ao fim. Requer seu próprio disco."
+  },
+  {
+    "Id": "imsa-wcr-m2",
+    "Name": "IMSA World Championship Racing · M2 Recomp",
+    "Repository": "rsantos722/imsa-wcr-m2-recomp",
+    "Platform": "Outras",
+    "AssetPattern": "^imsa-wcr-m2-recomp-[0-9.]+-windows-x86_64\\.zip$",
+    "PlayNames": [
+      "IMSA WCR M2 Recomp.exe"
+    ],
+    "ConfigNames": [
+      "IMSA WCR M2 Recomp.exe"
+    ],
+    "ArtworkTitle": "Panasonic M2",
+    "ProjectOnly": false,
+    "ProjectType": "Recompilação",
+    "Kind": "Recompilação",
+    "PackageKind": "Zip",
+    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Jogar e Configurar abrem IMSA WCR M2 Recomp.exe; na primeira abertura, prepare seus próprios arquivos no port. Recompilação do jogo inédito do Panasonic M2 e do shooter2d que vem no disco. Na primeira abertura, o launcher pede a sua ISO.",
+    "LinuxAssetPattern": "^imsa\\-wcr\\-m2\\-recomp\\-[0-9][0-9A-Za-z.\\-]*\\-linux\\-x86_64\\.AppImage$",
+    "LinuxPackageKind": "AppImage"
+  },
+  {
+    "Id": "psiv-recomp",
+    "Name": "Phantasy Star IV · PSIV Recomp",
+    "Repository": "MotaviaWorks/PSIVRecomp",
+    "Platform": "Outras",
+    "AssetPattern": "^PSIV-Recomp-.*-windows-x64\\.zip$",
+    "PlayNames": [
+      "psiv.exe"
+    ],
+    "ConfigNames": [
+      "psiv.exe"
+    ],
+    "ArtworkTitle": "Phantasy Star IV",
+    "ProjectOnly": false,
+    "ProjectType": "Recompilação",
+    "AllowPrerelease": true,
+    "Kind": "Recompilação",
+    "PackageKind": "Zip",
+    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Jogar e Configurar abrem psiv.exe; na primeira abertura, prepare seus próprios arquivos no port. Recompilação estática da versão de Mega Drive (EUA). Alpha. Requer sua própria ROM.",
+    "LinuxAssetPattern": "^PSIV\\-Recomp\\-[0-9][0-9A-Za-z.\\-]*\\-linux\\-x86_64\\.tar\\.gz$",
+    "LinuxPackageKind": "Archive"
+  },
+  {
+    "Id": "syphon-filter-3",
+    "Name": "Syphon Filter 3 · PC",
+    "Repository": "astromen2009/Syphon-Filter-3-pc-port",
+    "Platform": "PlayStation",
+    "AssetPattern": "^Release\\.[0-9.]+\\.zip$",
+    "PlayNames": [
+      "sf3_nativo.exe"
+    ],
+    "ConfigNames": [
+      "sf3_nativo.exe"
+    ],
+    "ArtworkTitle": "Syphon Filter 3",
+    "ProjectOnly": false,
+    "ProjectType": "Port",
+    "Kind": "Recompilação",
+    "PackageKind": "Zip",
+    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Jogar e Configurar abrem sf3_nativo.exe; na primeira abertura, prepare seus próprios arquivos no port. Roda o executável original da versão norte-americana com renderizador nativo, widescreen e PGXP. Requer seu próprio disco (.bin + .cue)."
+  },
+  {
+    "Id": "maximo-gtg",
+    "Name": "Maximo: Ghosts to Glory · Maximo-GTG",
+    "Repository": "BioRhythmicStudios/Maximo-GTG",
+    "Platform": "PlayStation 2",
+    "AssetPattern": "^MaximoLauncher.*\\.zip$",
+    "PlayNames": [
+      "MaximoLauncher.exe"
+    ],
+    "ConfigNames": [
+      "MaximoLauncher.exe"
+    ],
+    "ArtworkTitle": "Maximo: Ghosts to Glory",
+    "ProjectOnly": false,
+    "ProjectType": "Recompilação",
+    "Kind": "Recompilação",
+    "PackageKind": "Zip",
+    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Jogar e Configurar abrem MaximoLauncher.exe; na primeira abertura, prepare seus próprios arquivos no port. O launcher monta o port nativo no seu PC a partir do seu disco europeu (SLES-50703)."
+  },
+  {
+    "Id": "bourne-conspiracy",
+    "Name": "The Bourne Conspiracy · X360 Recomp",
+    "Repository": "thegh0sts/bourne-conspiracy-x360-recomp",
+    "Platform": "Xbox 360",
+    "AssetPattern": "^BourneConspiracy\\.exe$",
+    "PlayNames": [
+      "BourneConspiracy.exe"
+    ],
+    "ConfigNames": [
+      "BourneConspiracy.exe"
+    ],
+    "ArtworkTitle": "Robert Ludlum's The Bourne Conspiracy",
+    "ProjectOnly": false,
+    "ProjectType": "Recompilação",
+    "Kind": "Recompilação",
+    "PackageKind": "Executable",
+    "Notes": "O NEXUS baixa o executável portátil oficial. Jogar e Configurar abrem BourneConspiracy.exe. Recompilação ReXGlue em estágio inicial, testada nas primeiras fases. Requer sua própria cópia."
+  },
+  {
+    "Id": "kirby-redream",
+    "Name": "Kirby's Return to Dream Land Deluxe · Kirby: Redream",
+    "Repository": "josiahg2502-glitch/Kirby-Redream",
+    "Platform": "Nintendo Switch",
+    "AssetPattern": "^Kirby-Redream-PC-Setup\\.exe$",
+    "PlayNames": [],
+    "ConfigNames": [],
+    "ArtworkTitle": "Kirby's Return to Dream Land Deluxe",
+    "ProjectOnly": false,
+    "ProjectType": "Recompilação",
+    "Kind": "Instalação integrada",
+    "DiscoverExecutable": true,
+    "PackageKind": "Installer",
+    "Notes": "O NEXUS baixa e verifica o instalador oficial, abre o assistente do autor e cadastra o aplicativo que você selecionar ao concluir. Atualizações também usam esse assistente. O instalador monta o port nativo no seu PC a partir da sua cópia e das suas chaves. Requer Vulkan 1.3 e cerca de 15 GB livres."
   }
 ]

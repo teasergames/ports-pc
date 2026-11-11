@@ -15,7 +15,7 @@ namespace Nexus {
     static int checks;static void Check(bool value,string name){if(!value)throw new Exception("Catalog: "+name);checks++;}
     static void Reject(Action action,string name){try{action();}catch{checks++;return;}throw new Exception("Catalog: expected rejection "+name);}
     public static int Run(string root){
-      checks=0;var entries=PortCatalog.LoadEntries();Check(entries.Count==406,"406 catalog profiles");Check(entries.Select(e=>e.Identity).Distinct(StringComparer.OrdinalIgnoreCase).Count()==406,"distinct sources including Shadow forks");
+      checks=0;var entries=PortCatalog.LoadEntries();Check(entries.Count==425,"425 catalog profiles");Check(entries.Select(e=>e.Identity).Distinct(StringComparer.OrdinalIgnoreCase).Count()==425,"distinct sources including Shadow forks");
       var entry=entries.First(e=>e.Id=="gow3");string url="https://github.com/"+entry.Repository+"/releases/download/test/spartanport-windows.zip";
       var payload=new {tag_name="test",html_url="https://github.com/"+entry.Repository+"/releases/tag/test",draft=false,prerelease=false,assets=new[]{new{name="spartanport-windows.zip",size=100,browser_download_url=url,digest=(string)null},new{name="source.zip",size=100,browser_download_url=url,digest=(string)null},new{name="linux.AppImage",size=100,browser_download_url=url,digest=(string)null}}};
       string json=new JavaScriptSerializer().Serialize(payload);Check(PortCatalog.ParseRelease(entry,json).AssetName=="spartanport-windows.zip","select Windows asset without source/linux files");
@@ -70,7 +70,7 @@ namespace Nexus {
       Check(PortCatalog.Filter(entries,Platforms.All[0],"HarbourMasters",1).Count==5,"catalog search finds repositories across titles");
       Check(PortCatalog.Filter(entries,"PlayStation 3","",2).All(e=>e.ProjectOnly)&&PortCatalog.Filter(entries,"PlayStation 3","",2).Count>0,"manual filter keeps unvalidated profiles explicit");
       Check(PortCatalog.Filter(entries,"Xbox","Mario Kart",0).Count==0,"catalog search respects platform");
-      Check(entries.Count(e=>!e.ProjectOnly&&!e.ManualPackage)==374&&entries.Count(e=>e.ManualPackage)==1&&entries.Count(e=>e.ProjectOnly)==31,"catalog install modes reflect actual validated coverage");
+      Check(entries.Count(e=>!e.ProjectOnly&&!e.ManualPackage)==393&&entries.Count(e=>e.ManualPackage)==1&&entries.Count(e=>e.ProjectOnly)==31,"catalog install modes reflect actual validated coverage");
       Check(entries.All(e=>ProjectTypes.All.Contains(e.ProjectType)),"every profile declares a known project type");
       Check(entries.First(e=>e.Id=="azimuth").InstallMode==InstallModes.OfficialSite&&entries.First(e=>e.Id=="totk").InstallMode==InstallModes.Wizard&&entries.First(e=>e.Id=="gow3").InstallMode==InstallModes.Integrated,"installation mode derives from package flags");
       Check(entries.Where(e=>e.ProjectOnly).All(e=>!InstallModes.Automatic(e.InstallMode))&&entries.Where(e=>!e.ProjectOnly).All(e=>InstallModes.Automatic(e.InstallMode)),"manual and in-development profiles never look automatic");

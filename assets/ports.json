@@ -7330,5 +7330,23 @@
     "DiscoverExecutable": true,
     "PackageKind": "Installer",
     "Notes": "O NEXUS baixa e verifica o instalador oficial, abre o assistente do autor e cadastra o aplicativo que você selecionar ao concluir. Atualizações também usam esse assistente. O instalador monta o port nativo no seu PC a partir da sua cópia e das suas chaves. Requer Vulkan 1.3 e cerca de 15 GB livres."
+  },
+  {
+    "Id": "hookshot",
+    "Name": "Zelda: Ocarina of Time (Switch 2) · Hookshot",
+    "Repository": "NotRexed/Hookshot",
+    "Platform": "Nintendo Switch",
+    "AssetPattern": "^HookshotBuilder\\.exe$",
+    "PlayNames": [],
+    "ConfigNames": [],
+    "ArtworkTitle": "The Legend of Zelda: Ocarina of Time",
+    "ProjectOnly": false,
+    "ProjectType": "Recompilação",
+    "Kind": "Instalação integrada",
+    "DiscoverExecutable": true,
+    "PackageKind": "Installer",
+    "Notes": "O NEXUS baixa e verifica o instalador oficial, abre o assistente do autor e cadastra o aplicativo que você selecionar ao concluir. Atualizações também usam esse assistente. O HookshotBuilder baixa as ferramentas de build das Releases do projeto (com SHA-256 conferido) e monta o jogo no seu PC a partir da sua cópia da versão Switch 2. Atenção: alguns antivírus, entre eles o Microsoft Defender, marcam o HookshotBuilder.exe como trojan (3 de 68 no VirusTotal em 10/11/2026). O autor afirma que é falso positivo e o código-fonte é aberto (GPL-3.0).",
+    "LinuxAssetPattern": "^Hookshot-v[0-9.]+-x86_64\\.AppImage$",
+    "LinuxPackageKind": "AppImage"
   }
 ]

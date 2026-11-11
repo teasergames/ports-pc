@@ -6,7 +6,7 @@
 
 ## Novos ports e recomps — 10/11/2026
 
-19 fontes novas publicadas entre 04/11 e 10/11, escolhidas entre os projetos mais populares do período. Todas têm download e atualização integrados, e 7 também têm build Linux nativa.
+20 fontes novas publicadas entre 04/11 e 10/11, escolhidas entre os projetos mais populares do período. Todas têm download e atualização integrados, e 8 também têm build Linux nativa.
 
 Antes de entrar, cada projeto passou pela mesma checagem da auditoria de 07/11:
 
@@ -15,6 +15,7 @@ Antes de entrar, cada projeto passou pela mesma checagem da auditoria de 07/11:
 
 | Plataforma | Projeto | Release | Jogar | Linux |
 |---|---|---|---|---|
+| Nintendo Switch | [Zelda: Ocarina of Time (Switch 2) · Hookshot](https://github.com/NotRexed/Hookshot) | v2.0.14 | assistente do autor | sim |
 | Nintendo Switch | [Fire Emblem: Fortune's Weave · FEFW Recomp](https://github.com/Goldoire/fefw-recomp) | v0.1.6 | `fefw-launcher.exe` | — |
 | Nintendo Switch | [Kirby's Return to Dream Land Deluxe · Kirby: Redream](https://github.com/josiahg2502-glitch/Kirby-Redream) | v1.0.0 | assistente do autor | — |
 | Nintendo Switch | [Mario Kart World · MKW Recomp](https://github.com/adriadam10/mkw-recomp) | v0.1.7 | `mkw.exe` | sim |
@@ -35,7 +36,9 @@ Antes de entrar, cada projeto passou pela mesma checagem da auditoria de 07/11:
 | Xbox | [Panzer Dragoon Orta · Orta Recompiled](https://github.com/almost-drowned-rat/Orta-Recompiled) | v1.0.0 | `Panzer Dragoon Orta Recomp.exe` | — |
 | Xbox 360 | [The Bourne Conspiracy · X360 Recomp](https://github.com/thegh0sts/bourne-conspiracy-x360-recomp) | 0.2.0 | `BourneConspiracy.exe` | — |
 
-Ficaram de fora: **Hookshot** (Ocarina of Time de Switch 2), porque o `HookshotBuilder.exe` é marcado como trojan por 3 de 68 antivírus no VirusTotal, entre eles o Microsoft Defender, que bloquearia a instalação; o **Portable Ops+**, que sai na mesma Release do Portable Ops e por isso não pode ter um perfil próprio; recompiladores genéricos sem jogo, como o SwitchRECOMP; projetos de contas com menos de um mês (Fire Emblem Awakening, Afro Samurai, Castlevania: Curse of Darkness QOL e o multiplayer de Ocarina of Time); projetos só para Linux, Android, iOS, PS Vita ou PS4/PS5 com desbloqueio; e os que ainda não têm Release, como Mario Kart World do STS78721 e Star Wars Trilogy.
+O **Hookshot** entrou com um aviso: o `HookshotBuilder.exe` é marcado como trojan por 3 de 68 antivírus no VirusTotal, entre eles o Microsoft Defender. O autor afirma que é falso positivo de um downloader sem assinatura; o código é aberto (GPL-3.0) e o builder baixa só partes com SHA-256 fixo das Releases do projeto e o llvm-mingw oficial.
+
+Ficaram de fora: o **Portable Ops+**, que sai na mesma Release do Portable Ops e por isso não pode ter um perfil próprio; recompiladores genéricos sem jogo, como o SwitchRECOMP; projetos de contas com menos de um mês (Fire Emblem Awakening, Afro Samurai, Castlevania: Curse of Darkness QOL e o multiplayer de Ocarina of Time); projetos só para Linux, Android, iOS, PS Vita ou PS4/PS5 com desbloqueio; e os que ainda não têm Release, como Mario Kart World do STS78721 e Star Wars Trilogy.
 
 ## Novos ports e recomps — 06/11/2026
 
@@ -87,7 +90,7 @@ Ficaram de fora: **Hookshot** (Ocarina of Time de Switch 2), porque o `HookshotB
 
 Ficaram de fora: projetos só para macOS, Android, PS4/PS5 com desbloqueio ou homebrew de Switch; Metroid Prime 4 do linuxopt (só AppImage, sem pacote Windows); Arceuszada (só .rar); Battlefield: Bad Company (ZIP da Release corrompido); PES 2017 PRO17PORT (origem não confirmada); Woohoo! Flight School (apenas kit de build em pré-release); e recomps ainda sem Release, como os de Ocarina of Time do jaigner-hub, Chiuauaa e Mars7x.
 
-Total do catálogo: **425 fontes**, **393 perfis GitHub integrados**, **1 importação oficial** e **31 exceções**; **77** com build Linux.
+Total do catálogo: **426 fontes**, **394 perfis GitHub integrados**, **1 importação oficial** e **31 exceções**; **78** com build Linux.
 
 ## Repositórios renomeados — 04/11/2026
 

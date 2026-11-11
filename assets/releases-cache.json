@@ -9622,5 +9622,41 @@
         }
       ]
     }
+  },
+  {
+    "Repository": "NotRexed/Hookshot",
+    "CheckedUtc": "2026-11-11T00:28:59.826129+00:00",
+    "Release": {
+      "tag_name": "v2.0.14",
+      "html_url": "https://github.com/NotRexed/Hookshot/releases/tag/v2.0.14",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "hookshot-linux.txt",
+          "size": 1377,
+          "browser_download_url": "https://github.com/NotRexed/Hookshot/releases/download/v2.0.14/hookshot-linux.txt",
+          "digest": "sha256:d09f1c65dba6fbc0b75c5f679ccbdb4edf5e8d381009c9d693241393dc6e49a8"
+        },
+        {
+          "name": "hookshot-setup.txt",
+          "size": 1659,
+          "browser_download_url": "https://github.com/NotRexed/Hookshot/releases/download/v2.0.14/hookshot-setup.txt",
+          "digest": "sha256:76f00a7530ca6e8ccf274331e8159559da75075273039a433349e112ccd5000e"
+        },
+        {
+          "name": "Hookshot-v2.0.14-x86_64.AppImage",
+          "size": 231860728,
+          "browser_download_url": "https://github.com/NotRexed/Hookshot/releases/download/v2.0.14/Hookshot-v2.0.14-x86_64.AppImage",
+          "digest": "sha256:a6964ac29b732ce7f7989cd436e7c35834cf3ca18c2c6dc32109c63a53b43419"
+        },
+        {
+          "name": "HookshotBuilder.exe",
+          "size": 182784,
+          "browser_download_url": "https://github.com/NotRexed/Hookshot/releases/download/v2.0.14/HookshotBuilder.exe",
+          "digest": "sha256:6e64916c1a52fe3d93eaf82560b2222affb7f2c38038e746cf738bb713ae17bb"
+        }
+      ]
+    }
   }
 ]

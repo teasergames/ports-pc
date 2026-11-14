@@ -9658,5 +9658,581 @@
         }
       ]
     }
+  },
+  {
+    "Repository": "rigaz29/Ascension-R",
+    "CheckedUtc": "2026-11-14T03:03:56+00:00",
+    "Release": {
+      "tag_name": "v0.1.0-alpha.10",
+      "html_url": "https://github.com/rigaz29/Ascension-R/releases/tag/v0.1.0-alpha.10",
+      "draft": false,
+      "prerelease": true,
+      "assets": [
+        {
+          "name": "Ascension-R-0.1.0-alpha.10-kit-win64.zip",
+          "size": 151765382,
+          "browser_download_url": "https://github.com/rigaz29/Ascension-R/releases/download/v0.1.0-alpha.10/Ascension-R-0.1.0-alpha.10-kit-win64.zip",
+          "digest": "sha256:7dc83874313dd5aa10bb54ee83f5c09f2eab2cf0dfaa6ffeb5d7e9c70fcda664"
+        },
+        {
+          "name": "audit.txt",
+          "size": 1962,
+          "browser_download_url": "https://github.com/rigaz29/Ascension-R/releases/download/v0.1.0-alpha.10/audit.txt",
+          "digest": "sha256:dff3a12cf5967d95037a27b0943462a2687c0423360613b421cd74d85cfa929a"
+        },
+        {
+          "name": "ffmpeg-8.1.3.tar.xz",
+          "size": 11732036,
+          "browser_download_url": "https://github.com/rigaz29/Ascension-R/releases/download/v0.1.0-alpha.10/ffmpeg-8.1.3.tar.xz",
+          "digest": "sha256:7138d28c96d9d3e3af4ee3d8cad72741f8ffb40da90c1112235dea3ecd3178a3"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "Simon3Sarkis/super-odyssey-pc-recomp",
+    "CheckedUtc": "2026-11-14T03:03:56+00:00",
+    "Release": {
+      "tag_name": "v0.2.9",
+      "html_url": "https://github.com/Simon3Sarkis/super-odyssey-pc-recomp/releases/tag/v0.2.9",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "Super.Odyssey.PC.Recomp-0.2.9-linux-x86_64.AppImage",
+          "size": 84654584,
+          "browser_download_url": "https://github.com/Simon3Sarkis/super-odyssey-pc-recomp/releases/download/v0.2.9/Super.Odyssey.PC.Recomp-0.2.9-linux-x86_64.AppImage",
+          "digest": "sha256:d9b2ffbb36cfd69c2cffbabde8fe34d1cce134391660ea6dd39b226eb8887e26"
+        },
+        {
+          "name": "Super.Odyssey.PC.Recomp-0.2.9-windows.zip",
+          "size": 208698433,
+          "browser_download_url": "https://github.com/Simon3Sarkis/super-odyssey-pc-recomp/releases/download/v0.2.9/Super.Odyssey.PC.Recomp-0.2.9-windows.zip",
+          "digest": "sha256:393882cebd9a51d40c58b2a7d3dcc979d06f95f4a819799d2aeb517d84fae20a"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "gamboozino/ng2recomp",
+    "CheckedUtc": "2026-11-14T03:03:56+00:00",
+    "Release": {
+      "tag_name": "v0.6.0",
+      "html_url": "https://github.com/gamboozino/ng2recomp/releases/tag/v0.6.0",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "NinjaGaiden2-windows-x64-audio-test.zip",
+          "size": 159024514,
+          "browser_download_url": "https://github.com/gamboozino/ng2recomp/releases/download/v0.6.0/NinjaGaiden2-windows-x64-audio-test.zip",
+          "digest": "sha256:1f5fa0b7f4a1ff4bb4be07445b747cec3fcd8e98307f2c691043d3f03e4323bb"
+        },
+        {
+          "name": "NinjaGaiden2-windows-x64-flare-test.zip",
+          "size": 159028366,
+          "browser_download_url": "https://github.com/gamboozino/ng2recomp/releases/download/v0.6.0/NinjaGaiden2-windows-x64-flare-test.zip",
+          "digest": "sha256:086583d35a9a3242b712d3d104599ae1beae729dcdb9b4218a61cd6ce8e2cf1f"
+        },
+        {
+          "name": "NinjaGaiden2-windows-x64.zip",
+          "size": 159024511,
+          "browser_download_url": "https://github.com/gamboozino/ng2recomp/releases/download/v0.6.0/NinjaGaiden2-windows-x64.zip",
+          "digest": "sha256:807e21c03b25ae67b5247851d28f07fd7731f7acbad1e9275a83092b34d929c2"
+        },
+        {
+          "name": "NinjaGaiden2-x86_64.AppImage",
+          "size": 90438136,
+          "browser_download_url": "https://github.com/gamboozino/ng2recomp/releases/download/v0.6.0/NinjaGaiden2-x86_64.AppImage",
+          "digest": "sha256:09f11ba81e073868b086b922d85671800a7af7725ceb447b61648d2d3ce00915"
+        },
+        {
+          "name": "NinjaGaiden2-x86_64.AppImage.zsync",
+          "size": 309347,
+          "browser_download_url": "https://github.com/gamboozino/ng2recomp/releases/download/v0.6.0/NinjaGaiden2-x86_64.AppImage.zsync",
+          "digest": "sha256:2ff3dabffd82807318e5d16019f31f900a0e28082e67f2e9948e77915495415c"
+        },
+        {
+          "name": "SHA256SUMS.txt",
+          "size": 190,
+          "browser_download_url": "https://github.com/gamboozino/ng2recomp/releases/download/v0.6.0/SHA256SUMS.txt",
+          "digest": "sha256:4bdb36d847031446f95538d69e2f51f1422644d40f0388396e6bcaa34071c5f8"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "jmars125/xc3-recomp",
+    "CheckedUtc": "2026-11-14T03:03:56+00:00",
+    "Release": {
+      "tag_name": "v0.2.14",
+      "html_url": "https://github.com/jmars125/xc3-recomp/releases/tag/v0.2.14",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "XC3-Setup-0.2.14-linux.AppImage",
+          "size": 225040888,
+          "browser_download_url": "https://github.com/jmars125/xc3-recomp/releases/download/v0.2.14/XC3-Setup-0.2.14-linux.AppImage",
+          "digest": "sha256:22b332dbc445cd36a38b5f98c19b2f9e09e99c0475c3bc8eaee9e422c0f586ca"
+        },
+        {
+          "name": "XC3-Setup-0.2.14-windows.zip",
+          "size": 179197240,
+          "browser_download_url": "https://github.com/jmars125/xc3-recomp/releases/download/v0.2.14/XC3-Setup-0.2.14-windows.zip",
+          "digest": "sha256:c491ed9dfe543243d9a6a934a53f3fb1d02f1b27fd377d28e695162ddc61dd13"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "cheviman/outrunners-port",
+    "CheckedUtc": "2026-11-14T03:03:56+00:00",
+    "Release": {
+      "tag_name": "v1.3.1",
+      "html_url": "https://github.com/cheviman/outrunners-port/releases/tag/v1.3.1",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "outrunners-anbernic.zip",
+          "size": 5851468,
+          "browser_download_url": "https://github.com/cheviman/outrunners-port/releases/download/v1.3.1/outrunners-anbernic.zip",
+          "digest": "sha256:103b6b82ce6852f6aa34f648fc39e150ea672225a6c530390ed5772dccc18b85"
+        },
+        {
+          "name": "outrunners-android.zip",
+          "size": 5575880,
+          "browser_download_url": "https://github.com/cheviman/outrunners-port/releases/download/v1.3.1/outrunners-android.zip",
+          "digest": "sha256:a8da1bfdb81350338b3919b854906ec3d28dc96b4a18ce745abb84ccb6b88ce7"
+        },
+        {
+          "name": "outrunners-linux-x64.tar.gz",
+          "size": 3004244,
+          "browser_download_url": "https://github.com/cheviman/outrunners-port/releases/download/v1.3.1/outrunners-linux-x64.tar.gz",
+          "digest": "sha256:33df0167e37b790e06f7bfc70702900ebba4ded98ad25629621033ae133b4d3c"
+        },
+        {
+          "name": "outrunners-macos-universal.zip",
+          "size": 4831753,
+          "browser_download_url": "https://github.com/cheviman/outrunners-port/releases/download/v1.3.1/outrunners-macos-universal.zip",
+          "digest": "sha256:ae0da9536b9fd3908a7c4c2c0fcdf6a3f94bb8a96c0acbbf87c64d60aed77f81"
+        },
+        {
+          "name": "outrunners-switch.zip",
+          "size": 7808504,
+          "browser_download_url": "https://github.com/cheviman/outrunners-port/releases/download/v1.3.1/outrunners-switch.zip",
+          "digest": "sha256:7fb79381ee1d14da8c5df1ab23e824a19b75b879a6af08d4b77c7048acd18272"
+        },
+        {
+          "name": "outrunners-windows-x64.zip",
+          "size": 2233128,
+          "browser_download_url": "https://github.com/cheviman/outrunners-port/releases/download/v1.3.1/outrunners-windows-x64.zip",
+          "digest": "sha256:49c7059d5ab35803abea06a81d341d24aa35c3ce44e89c1be073eec791e56e94"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "SamiEnazi/infamous2-port",
+    "CheckedUtc": "2026-11-14T03:03:56+00:00",
+    "Release": {
+      "tag_name": "v0.5.4",
+      "html_url": "https://github.com/SamiEnazi/infamous2-port/releases/tag/v0.5.4",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "inFAMOUS2-port-v0.5.4-Linux-x64.zip",
+          "size": 38297016,
+          "browser_download_url": "https://github.com/SamiEnazi/infamous2-port/releases/download/v0.5.4/inFAMOUS2-port-v0.5.4-Linux-x64.zip",
+          "digest": "sha256:68a7b509d4352988f15231391065eee986dd9e7fdc431adecb82af94ecfe299e"
+        },
+        {
+          "name": "inFAMOUS2-port-v0.5.4-Windows-x64.zip",
+          "size": 38353859,
+          "browser_download_url": "https://github.com/SamiEnazi/infamous2-port/releases/download/v0.5.4/inFAMOUS2-port-v0.5.4-Windows-x64.zip",
+          "digest": "sha256:7a8fd349d4b44fa73d440caea3e933165348394113b915fb92ca5349f02a6c7a"
+        },
+        {
+          "name": "Setup.exe",
+          "size": 125952,
+          "browser_download_url": "https://github.com/SamiEnazi/infamous2-port/releases/download/v0.5.4/Setup.exe",
+          "digest": "sha256:11f3e200d78066f0b724f23303e3db77ce6683b5bab541c44f1294846a4426d4"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "miroslavdanutalexandru-alt/Resistance-Fall-of-Man-Recomp",
+    "CheckedUtc": "2026-11-14T03:03:56+00:00",
+    "Release": {
+      "tag_name": "v0.2.3-beta",
+      "html_url": "https://github.com/miroslavdanutalexandru-alt/Resistance-Fall-of-Man-Recomp/releases/tag/v0.2.3-beta",
+      "draft": false,
+      "prerelease": true,
+      "assets": [
+        {
+          "name": "ResistancePort-0.2.3-beta-source.zip",
+          "size": 25730678,
+          "browser_download_url": "https://github.com/miroslavdanutalexandru-alt/Resistance-Fall-of-Man-Recomp/releases/download/v0.2.3-beta/ResistancePort-0.2.3-beta-source.zip",
+          "digest": "sha256:907f9732781e276b261760bebfb76aec810fa6b4b708bb6383b8dde406f74cb8"
+        },
+        {
+          "name": "ResistancePort-0.2.3-beta-Windows-x64.zip",
+          "size": 25988236,
+          "browser_download_url": "https://github.com/miroslavdanutalexandru-alt/Resistance-Fall-of-Man-Recomp/releases/download/v0.2.3-beta/ResistancePort-0.2.3-beta-Windows-x64.zip",
+          "digest": "sha256:e52a37afb5a005ccbfba11b7fb4d26d223734cf700dcca2e05d1fc4f194da636"
+        },
+        {
+          "name": "ResistancePort-Setup-0.2.3-beta.exe",
+          "size": 12422607,
+          "browser_download_url": "https://github.com/miroslavdanutalexandru-alt/Resistance-Fall-of-Man-Recomp/releases/download/v0.2.3-beta/ResistancePort-Setup-0.2.3-beta.exe",
+          "digest": "sha256:d0440469ed962a2a16fb741dafdeffbc0e6668af9fd9dde6c70669295163273e"
+        },
+        {
+          "name": "SHA256SUMS.txt",
+          "size": 316,
+          "browser_download_url": "https://github.com/miroslavdanutalexandru-alt/Resistance-Fall-of-Man-Recomp/releases/download/v0.2.3-beta/SHA256SUMS.txt",
+          "digest": "sha256:d0777eb01643c2a751dc2c2aca86c91bb22d8c61f1bb8ce8c5f1d363be36736c"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "miroslavdanutalexandru-alt/Resistance3Port",
+    "CheckedUtc": "2026-11-14T03:03:56+00:00",
+    "Release": {
+      "tag_name": "v0.2.3-beta",
+      "html_url": "https://github.com/miroslavdanutalexandru-alt/Resistance3Port/releases/tag/v0.2.3-beta",
+      "draft": false,
+      "prerelease": true,
+      "assets": [
+        {
+          "name": "Resistance3Port-0.2.3-beta-source.zip",
+          "size": 12909197,
+          "browser_download_url": "https://github.com/miroslavdanutalexandru-alt/Resistance3Port/releases/download/v0.2.3-beta/Resistance3Port-0.2.3-beta-source.zip",
+          "digest": "sha256:de0b134eabee2188368ef48072eedb8c26ed490247f61ed21d7ec904d22bd0cb"
+        },
+        {
+          "name": "Resistance3Port-0.2.3-beta-Windows-x64.zip",
+          "size": 13225910,
+          "browser_download_url": "https://github.com/miroslavdanutalexandru-alt/Resistance3Port/releases/download/v0.2.3-beta/Resistance3Port-0.2.3-beta-Windows-x64.zip",
+          "digest": "sha256:8fe9634f46e919893b2901096ce2677b1df439afd749b3d7998bd0b836dd8b5d"
+        },
+        {
+          "name": "Resistance3Port-Setup-0.2.3-beta.exe",
+          "size": 11301176,
+          "browser_download_url": "https://github.com/miroslavdanutalexandru-alt/Resistance3Port/releases/download/v0.2.3-beta/Resistance3Port-Setup-0.2.3-beta.exe",
+          "digest": "sha256:d697b144acd825ac2753a8e74fcc363825643b2b099d2e706cfc49e57a68fe94"
+        },
+        {
+          "name": "SHA256SUMS.txt",
+          "size": 319,
+          "browser_download_url": "https://github.com/miroslavdanutalexandru-alt/Resistance3Port/releases/download/v0.2.3-beta/SHA256SUMS.txt",
+          "digest": "sha256:f45ef94f757f3e40f103a1e1658859c39aab7c295dd573b4c2f4a11959ca7e8e"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "MIXIDtheSilly/kart-recomp",
+    "CheckedUtc": "2026-11-14T03:03:56+00:00",
+    "Release": {
+      "tag_name": "v0.1",
+      "html_url": "https://github.com/MIXIDtheSilly/kart-recomp/releases/tag/v0.1",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "kart-recomp-0.1-windows.zip",
+          "size": 3399490,
+          "browser_download_url": "https://github.com/MIXIDtheSilly/kart-recomp/releases/download/v0.1/kart-recomp-0.1-windows.zip",
+          "digest": "sha256:845fa2f5eb240328df45384f92b770611be6df9a8debc02ebcf084aee822b776"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "junminlee2004/GR2port",
+    "CheckedUtc": "2026-11-14T03:03:56+00:00",
+    "Release": {
+      "tag_name": "v1.04",
+      "html_url": "https://github.com/junminlee2004/GR2port/releases/tag/v1.04",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "GR2port.build.e7ad2ad3.Linux.zip",
+          "size": 82350879,
+          "browser_download_url": "https://github.com/junminlee2004/GR2port/releases/download/v1.04/GR2port.build.e7ad2ad3.Linux.zip",
+          "digest": "sha256:a12f5322449409b49bd97a1f0e97ed2c9a997158263fe77734c96c01ba385abf"
+        },
+        {
+          "name": "GR2port.build.e7ad2ad3.Windows.zip",
+          "size": 87098133,
+          "browser_download_url": "https://github.com/junminlee2004/GR2port/releases/download/v1.04/GR2port.build.e7ad2ad3.Windows.zip",
+          "digest": "sha256:de468179c872ed0fb8ce5a2e356347b123ac027eb09a0c20fa511d9bf639170f"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "OpenGP-dev/OpenGP",
+    "CheckedUtc": "2026-11-14T03:03:56+00:00",
+    "Release": {
+      "tag_name": "v1.0.4",
+      "html_url": "https://github.com/OpenGP-dev/OpenGP/releases/tag/v1.0.4",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "OpenGP-1.0.4-linux-x64.tar.gz",
+          "size": 47821872,
+          "browser_download_url": "https://github.com/OpenGP-dev/OpenGP/releases/download/v1.0.4/OpenGP-1.0.4-linux-x64.tar.gz",
+          "digest": "sha256:51e187b7455d1513e87504b31d6f6138cefc60844b298c3aaaf307231bf8e49d"
+        },
+        {
+          "name": "OpenGP-1.0.4-macos-arm64.tar.gz",
+          "size": 54016134,
+          "browser_download_url": "https://github.com/OpenGP-dev/OpenGP/releases/download/v1.0.4/OpenGP-1.0.4-macos-arm64.tar.gz",
+          "digest": "sha256:f74933cadec6e0eb1e50a9d0ec39ade8caafda2b69590c5a7ae075c6046d83b1"
+        },
+        {
+          "name": "OpenGP-1.0.4-windows-x64.zip",
+          "size": 42960921,
+          "browser_download_url": "https://github.com/OpenGP-dev/OpenGP/releases/download/v1.0.4/OpenGP-1.0.4-windows-x64.zip",
+          "digest": "sha256:0fcecedfecb268b9969ff9e6492ad88fafc95ca04328e86d56f33fbcd890b5df"
+        },
+        {
+          "name": "SHA256SUMS",
+          "size": 289,
+          "browser_download_url": "https://github.com/OpenGP-dev/OpenGP/releases/download/v1.0.4/SHA256SUMS",
+          "digest": "sha256:059e0c5f6e18ead857f4f04b5bc53c464882a13aa2fedc5a706b93d8d42f7a71"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "TheRealAfsan/Shinobi-PS2-Recomp",
+    "CheckedUtc": "2026-11-14T03:03:56+00:00",
+    "Release": {
+      "tag_name": "v0.4.2",
+      "html_url": "https://github.com/TheRealAfsan/Shinobi-PS2-Recomp/releases/tag/v0.4.2",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "Shinobi-PS2-Recomp-v0.4.2-Windows-x64.zip",
+          "size": 79640184,
+          "browser_download_url": "https://github.com/TheRealAfsan/Shinobi-PS2-Recomp/releases/download/v0.4.2/Shinobi-PS2-Recomp-v0.4.2-Windows-x64.zip",
+          "digest": "sha256:cfd38dce4216b8bfaffa471fdd8bccb4bd12c088f37adef858f66477c9b65753"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "CaduGimenes/SanctuaryPort",
+    "CheckedUtc": "2026-11-14T03:03:56+00:00",
+    "Release": {
+      "tag_name": "v0.6.1",
+      "html_url": "https://github.com/CaduGimenes/SanctuaryPort/releases/tag/v0.6.1",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "SanctuaryPort-linux-x86_64.AppImage",
+          "size": 136751608,
+          "browser_download_url": "https://github.com/CaduGimenes/SanctuaryPort/releases/download/v0.6.1/SanctuaryPort-linux-x86_64.AppImage",
+          "digest": "sha256:064bd4da5bcff3076d062123cb6b5bc9a202fddb9b2c92c78ff5f55419e6e774"
+        },
+        {
+          "name": "SanctuaryPort-windows.zip",
+          "size": 92807696,
+          "browser_download_url": "https://github.com/CaduGimenes/SanctuaryPort/releases/download/v0.6.1/SanctuaryPort-windows.zip",
+          "digest": "sha256:3397f49ef8676db0d61474cd41a599b72f8359ceb98025e2bb5af54ee79ce089"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "Korvonordico/shadow-of-rome-recompiled",
+    "CheckedUtc": "2026-11-14T03:03:56+00:00",
+    "Release": {
+      "tag_name": "v2.9.2",
+      "html_url": "https://github.com/Korvonordico/shadow-of-rome-recompiled/releases/tag/v2.9.2",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "ShadowOfRome-2.9.2-windows.zip",
+          "size": 39588320,
+          "browser_download_url": "https://github.com/Korvonordico/shadow-of-rome-recompiled/releases/download/v2.9.2/ShadowOfRome-2.9.2-windows.zip",
+          "digest": "sha256:48c26dfe55c59f52ca381414e9ef35b6f5908ee0b7d722ac3a74d45bde08a8f3"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "CaiusCodes/Perfect-Dark-XBLA-PC-Recomp",
+    "CheckedUtc": "2026-11-14T03:03:56+00:00",
+    "Release": {
+      "tag_name": "v0.9.1b",
+      "html_url": "https://github.com/CaiusCodes/Perfect-Dark-XBLA-PC-Recomp/releases/tag/v0.9.1b",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "Perfect-Dark-XBLA-PC-Recomp-v0.9.1b.zip",
+          "size": 23930948,
+          "browser_download_url": "https://github.com/CaiusCodes/Perfect-Dark-XBLA-PC-Recomp/releases/download/v0.9.1b/Perfect-Dark-XBLA-PC-Recomp-v0.9.1b.zip",
+          "digest": "sha256:d7038c3a04ec9ce1d4c707f29db2e40bc04308b98aaa51e50705cc88b447b970"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "tukidev-lgtm/Tera-recomp",
+    "CheckedUtc": "2026-11-14T03:03:56+00:00",
+    "Release": {
+      "tag_name": "v0.4.0",
+      "html_url": "https://github.com/tukidev-lgtm/Tera-recomp/releases/tag/v0.4.0",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "Tera-Setup-Windows-x64.zip",
+          "size": 145126410,
+          "browser_download_url": "https://github.com/tukidev-lgtm/Tera-recomp/releases/download/v0.4.0/Tera-Setup-Windows-x64.zip",
+          "digest": "sha256:33854d5febff973a5d3bd8e65b7c5c07f6c5617ce0a1f7e51b7a083659b98c09"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "almost-drowned-rat/THPS2X-Recompiled",
+    "CheckedUtc": "2026-11-14T03:03:56+00:00",
+    "Release": {
+      "tag_name": "v1.2.4",
+      "html_url": "https://github.com/almost-drowned-rat/THPS2X-Recompiled/releases/tag/v1.2.4",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "SHA256SUMS.txt",
+          "size": 341,
+          "browser_download_url": "https://github.com/almost-drowned-rat/THPS2X-Recompiled/releases/download/v1.2.4/SHA256SUMS.txt",
+          "digest": "sha256:cb0b32e82aa1dc11f51339f9541a02a50e5260352677427e19f94421524a9c61"
+        },
+        {
+          "name": "THPS2X-Recompiled-v1.2.4-win64.zip",
+          "size": 214402644,
+          "browser_download_url": "https://github.com/almost-drowned-rat/THPS2X-Recompiled/releases/download/v1.2.4/THPS2X-Recompiled-v1.2.4-win64.zip",
+          "digest": "sha256:6bcc1bb5e35202ac5046878103b9eca5f32f16b97e74a38d29f00ed410987565"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "rcostanza/dead-nation-ps4-recomp",
+    "CheckedUtc": "2026-11-14T03:03:56+00:00",
+    "Release": {
+      "tag_name": "v0.1",
+      "html_url": "https://github.com/rcostanza/dead-nation-ps4-recomp/releases/tag/v0.1",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "deadnation-pc-v0.1-2026-11-12-linux-x64.tar.gz",
+          "size": 6746805,
+          "browser_download_url": "https://github.com/rcostanza/dead-nation-ps4-recomp/releases/download/v0.1/deadnation-pc-v0.1-2026-11-12-linux-x64.tar.gz",
+          "digest": "sha256:257eafdf9264b2e9e5b9f5e3ea3aea41a24df308d8747efbacd049e9ec7a2344"
+        },
+        {
+          "name": "deadnation-pc-v0.1-2026-11-12-windows-x64.zip",
+          "size": 24343537,
+          "browser_download_url": "https://github.com/rcostanza/dead-nation-ps4-recomp/releases/download/v0.1/deadnation-pc-v0.1-2026-11-12-windows-x64.zip",
+          "digest": "sha256:7f40a79c220713417be5eb7ea63f4f47d69002ce36a752572cd0ece105741e84"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "arcanite24/lavender-shift",
+    "CheckedUtc": "2026-11-14T03:03:56+00:00",
+    "Release": {
+      "tag_name": "v0.1.0",
+      "html_url": "https://github.com/arcanite24/lavender-shift/releases/tag/v0.1.0",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "android-shell-ffb4cdfc153d-android-arm64.tar.xz",
+          "size": 43177420,
+          "browser_download_url": "https://github.com/arcanite24/lavender-shift/releases/download/v0.1.0/android-shell-ffb4cdfc153d-android-arm64.tar.xz",
+          "digest": "sha256:fa3a10af1969efa5a486862fdccb44787ad3afb6f2af38eabaec321e0151f225"
+        },
+        {
+          "name": "LavenderShift-0.1.0-windows-x64.zip",
+          "size": 66661204,
+          "browser_download_url": "https://github.com/arcanite24/lavender-shift/releases/download/v0.1.0/LavenderShift-0.1.0-windows-x64.zip",
+          "digest": "sha256:aaa6e5a2ce2318d9669bbfb85554e364ff249b94bd15c67c78e9fc5dc1792257"
+        },
+        {
+          "name": "LavenderShift-0.1.0-windows-x64.zip.sha256",
+          "size": 102,
+          "browser_download_url": "https://github.com/arcanite24/lavender-shift/releases/download/v0.1.0/LavenderShift-0.1.0-windows-x64.zip.sha256",
+          "digest": "sha256:64a6d7ce15c8d2a5715ab3d4d8db00cc1c7fa03d0aaca31ac72d4a54d0de6309"
+        },
+        {
+          "name": "llvm-20.1.8-lavender1-windows-x64.zip",
+          "size": 89394220,
+          "browser_download_url": "https://github.com/arcanite24/lavender-shift/releases/download/v0.1.0/llvm-20.1.8-lavender1-windows-x64.zip",
+          "digest": "sha256:e83ac1547906139f0f185e15cc34042ee0692b6ae9992e9fb57d11bad1aaf9ec"
+        },
+        {
+          "name": "shiftglue-kit-ffb4cdfc153d-windows-x64.zip",
+          "size": 23792569,
+          "browser_download_url": "https://github.com/arcanite24/lavender-shift/releases/download/v0.1.0/shiftglue-kit-ffb4cdfc153d-windows-x64.zip",
+          "digest": "sha256:e0c56ae6e6bf19374d14105a8d7bc79d2299f4ff6b68b48ba3f7cbbb5cc29126"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "geno55/kigold-recomp",
+    "CheckedUtc": "2026-11-14T03:03:56+00:00",
+    "Release": {
+      "tag_name": "v0.3.3",
+      "html_url": "https://github.com/geno55/kigold-recomp/releases/tag/v0.3.3",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "kigold-recomp-v0.3.3-windows-x64.zip",
+          "size": 18246437,
+          "browser_download_url": "https://github.com/geno55/kigold-recomp/releases/download/v0.3.3/kigold-recomp-v0.3.3-windows-x64.zip",
+          "digest": "sha256:643e2f7d72a537216353d277de2927fb2f44afc1aed5a1ce2085108195e4a13a"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "Starkka15/spyro-aht-pc",
+    "CheckedUtc": "2026-11-14T03:03:56+00:00",
+    "Release": {
+      "tag_name": "v1.1.1",
+      "html_url": "https://github.com/Starkka15/spyro-aht-pc/releases/tag/v1.1.1",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "SpyroAHT-PC-1.1.1-Setup.exe",
+          "size": 16697119,
+          "browser_download_url": "https://github.com/Starkka15/spyro-aht-pc/releases/download/v1.1.1/SpyroAHT-PC-1.1.1-Setup.exe",
+          "digest": "sha256:fd3ee14a83fbf3be7a8ad02a359a6de184da078a3ca9417bbc9fbd5a1e0298b3"
+        }
+      ]
+    }
   }
 ]

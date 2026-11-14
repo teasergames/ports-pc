@@ -4,6 +4,43 @@
 
 - **Torchlight (Xbox 360) · Recompiled** (`retrogameworld/TorchlightRecomp`): o pacote `Torchlight-Recompiled-v1.0.zip` é marcado como malicioso por 11 de 66 antivírus no VirusTotal (Trojan.Lazy), com sinais de ofuscação e de detecção de depurador. A conta e o repositório foram criados em 03 e 04/11 e o repositório não tem código-fonte. Se você instalou esse pacote, apague a pasta dele e rode uma verificação completa do antivírus.
 
+## Novos ports e recomps — 14/11/2026
+
+23 fontes novas publicadas entre 10/11 e 14/11, com a mesma checagem de segurança da lista anterior (código-fonte publicado, pacote enviado pelo autor ou pelo GitHub Actions, SHA-256 na Release e índice dos ZIPs lido remotamente). 21 têm download e atualização integrados, e 9 delas também têm build Linux nativa.
+
+| Plataforma | Projeto | Release | Jogar | Linux |
+|---|---|---|---|---|
+| Nintendo 64 | [Killer Instinct Gold · Recompiled](https://github.com/geno55/kigold-recomp) | v0.3.3 | `kig.exe` | — |
+| Nintendo Switch | [Mario Kart World · kart-recomp](https://github.com/MIXIDtheSilly/kart-recomp) | v0.1 | `launcher.exe` | — |
+| Nintendo Switch | [Pokémon Scarlet · Tera Recomp](https://github.com/tukidev-lgtm/Tera-recomp) | v0.4.0 | `Tera-Setup.exe` | — |
+| Nintendo Switch | [Super Mario Odyssey · Super Odyssey PC Recomp](https://github.com/Simon3Sarkis/super-odyssey-pc-recomp) | v0.2.9 | `SuperOdysseyRecomp.exe` | sim |
+| Nintendo Switch | [Xenoblade Chronicles 3 · XC3 Recomp](https://github.com/jmars125/xc3-recomp) | v0.2.14 | `XC3-Setup.exe` | sim |
+| Outras | [Mario Kart Arcade GP 1 e 2 · OpenGP](https://github.com/OpenGP-dev/OpenGP) | v1.0.4 | `OpenGP.exe` | sim |
+| Outras | [OutRunners · OutRunners Port](https://github.com/cheviman/outrunners-port) | v1.3.1 | escolha na instalação | sim |
+| PlayStation 2 | [Shadow of Rome · Recompiled](https://github.com/Korvonordico/shadow-of-rome-recompiled) | v2.9.2 | `ShadowOfRome.exe` | — |
+| PlayStation 2 | [Shinobi (PS2) · Shinobi Recomp](https://github.com/TheRealAfsan/Shinobi-PS2-Recomp) | v0.4.2 | `Shinobi Launcher.exe` | — |
+| PlayStation 3 | [God of War: Ascension · Ascension-R](https://github.com/rigaz29/Ascension-R) | v0.1.0-alpha.10 (pré-release) | `Ascension-R.exe` | — |
+| PlayStation 3 | [Resistance 3 · Native PC Port](https://github.com/miroslavdanutalexandru-alt/Resistance3Port) | v0.2.3-beta (pré-release) | `Setup.exe` | — |
+| PlayStation 3 | [Resistance: Fall of Man · Native PC Port](https://github.com/miroslavdanutalexandru-alt/Resistance-Fall-of-Man-Recomp) | v0.2.3-beta (pré-release) | `Setup.exe` | — |
+| PlayStation 3 | [inFAMOUS 2 · Native PC Port](https://github.com/SamiEnazi/infamous2-port) | v0.5.4 | `Setup.exe` | sim |
+| PlayStation 4 | [Dead Nation · Recompiled](https://github.com/rcostanza/dead-nation-ps4-recomp) | v0.1 | `deadnation.exe` | sim |
+| PlayStation 4 | [Diablo III: Ultimate Evil Edition · SanctuaryPort](https://github.com/CaduGimenes/SanctuaryPort) | v0.6.1 | `Play SanctuaryPort.exe` | sim |
+| PlayStation 4 | [Gravity Rush 2 · GR2port](https://github.com/junminlee2004/GR2port) | v1.04 | `Gravity Rush 2™.exe` | sim |
+| Xbox | [Spyro: A Hero's Tail · PC Port](https://github.com/Starkka15/spyro-aht-pc) | v1.1.1 | assistente do autor | — |
+| Xbox | [Tony Hawk's Pro Skater 2X · Recompiled](https://github.com/almost-drowned-rat/THPS2X-Recompiled) | v1.2.4 | `THPS 2X Recomp.exe` | — |
+| Xbox 360 | [Forza Horizon 2 (Xbox 360) · Lavender Shift](https://github.com/arcanite24/lavender-shift) | v0.1.0 | `LavenderShiftLauncher.exe` | — |
+| Xbox 360 | [Ninja Gaiden II · Ninja Gaiden II Recompiled](https://github.com/gamboozino/ng2recomp) | v0.6.0 | `ng2.exe` | sim |
+| Xbox 360 | [Perfect Dark (Xbox 360) · XBLA PC Recomp](https://github.com/CaiusCodes/Perfect-Dark-XBLA-PC-Recomp) | v0.9.1b | `Perfect Dark.exe` | — |
+
+Entraram como página do projeto, sem instalação integrada:
+
+- **[TimeSplitters 2 · Native PC Port](https://github.com/Destinity13/TimeSplitters-2-Native-Recomp-Windows-Linux-SteamDeck)** (v1.0.1): o pacote Windows abre por um script (`TS2-Recomp.bat`) que compila o jogo a partir do seu disco, e o NEXUS ainda não executa scripts.
+- **[God of War (PS2) · God of War Native PC](https://github.com/Vnnc1/gow-native-pc)** (v0.5.0): o ZIP Windows traz só o código e o `build.cmd`, sem executável pronto.
+
+**God of War: Ascension do Bilal Reloaded:** o port dele (v0.1.17) é distribuído só pelo Discord do autor, com o Patreon como apoio opcional. Não existe Release no GitHub com SHA-256, e o NEXUS só instala pacotes que consegue verificar e atualizar a partir de uma Release. Por isso ele não entra no catálogo. No lugar, entrou o **Ascension-R** (rigaz29), outra recompilação do mesmo jogo com Release pública; o projeto do otavix010, que ainda não tem pacote Windows, continua listado.
+
+Ficaram de fora: Recompia (conta criada há 5 dias), o port de Pokémon XD (conta com menos de um mês), SR-Source de Sonic Riders (quase sem código-fonte) e ProjectReLink (repositório de um dia com instalador mínimo).
+
 ## Novos ports e recomps — 10/11/2026
 
 20 fontes novas publicadas entre 04/11 e 10/11, escolhidas entre os projetos mais populares do período. Todas têm download e atualização integrados, e 8 também têm build Linux nativa.
@@ -90,7 +127,7 @@ Ficaram de fora: o **Portable Ops+**, que sai na mesma Release do Portable Ops e
 
 Ficaram de fora: projetos só para macOS, Android, PS4/PS5 com desbloqueio ou homebrew de Switch; Metroid Prime 4 do linuxopt (só AppImage, sem pacote Windows); Arceuszada (só .rar); Battlefield: Bad Company (ZIP da Release corrompido); PES 2017 PRO17PORT (origem não confirmada); Woohoo! Flight School (apenas kit de build em pré-release); e recomps ainda sem Release, como os de Ocarina of Time do jaigner-hub, Chiuauaa e Mars7x.
 
-Total do catálogo: **426 fontes**, **394 perfis GitHub integrados**, **1 importação oficial** e **31 exceções**; **78** com build Linux.
+Total do catálogo: **449 fontes**, **415 perfis GitHub integrados**, **1 importação oficial** e **33 exceções**; **87** com build Linux.
 
 ## Repositórios renomeados — 04/11/2026
 

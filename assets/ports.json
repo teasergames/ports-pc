@@ -7348,5 +7348,447 @@
     "Notes": "O NEXUS baixa e verifica o instalador oficial, abre o assistente do autor e cadastra o aplicativo que você selecionar ao concluir. Atualizações também usam esse assistente. O HookshotBuilder baixa as ferramentas de build das Releases do projeto (com SHA-256 conferido) e monta o jogo no seu PC a partir da sua cópia da versão Switch 2. Atenção: alguns antivírus, entre eles o Microsoft Defender, marcam o HookshotBuilder.exe como trojan (3 de 68 no VirusTotal em 10/11/2026). O autor afirma que é falso positivo e o código-fonte é aberto (GPL-3.0).",
     "LinuxAssetPattern": "^Hookshot-v[0-9.]+-x86_64\\.AppImage$",
     "LinuxPackageKind": "AppImage"
+  },
+  {
+    "Id": "ascension-r",
+    "Name": "God of War: Ascension · Ascension-R",
+    "Repository": "rigaz29/Ascension-R",
+    "Platform": "PlayStation 3",
+    "AssetPattern": "^Ascension-R-.*-kit-win64\\.zip$",
+    "PlayNames": [
+      "Ascension-R.exe"
+    ],
+    "ConfigNames": [
+      "Ascension-R.exe"
+    ],
+    "ArtworkTitle": "God of War: Ascension",
+    "ProjectOnly": false,
+    "ProjectType": "Recompilação",
+    "AllowPrerelease": true,
+    "Kind": "Recompilação",
+    "PackageKind": "Zip",
+    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Jogar e Configurar abrem Ascension-R.exe; na primeira abertura, prepare seus próprios arquivos no port. Recompilação estática com ps3recomp e renderizador Direct3D 12. Alpha. O kit monta o jogo no seu PC a partir do seu próprio disco."
+  },
+  {
+    "Id": "super-odyssey-recomp",
+    "Name": "Super Mario Odyssey · Super Odyssey PC Recomp",
+    "Repository": "Simon3Sarkis/super-odyssey-pc-recomp",
+    "Platform": "Nintendo Switch",
+    "AssetPattern": "^Super\\.Odyssey\\.PC\\.Recomp-[0-9.]+-windows\\.zip$",
+    "PlayNames": [
+      "SuperOdysseyRecomp.exe"
+    ],
+    "ConfigNames": [
+      "SuperOdysseyRecomp.exe"
+    ],
+    "ArtworkTitle": "Super Mario Odyssey",
+    "ProjectOnly": false,
+    "ProjectType": "Recompilação",
+    "Kind": "Recompilação",
+    "PackageKind": "Zip",
+    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Jogar e Configurar abrem SuperOdysseyRecomp.exe; na primeira abertura, prepare seus próprios arquivos no port. Recompilação estática. Requer as pastas exefs e romfs extraídas da sua própria cópia.",
+    "LinuxAssetPattern": "^Super\\.Odyssey\\.PC\\.Recomp\\-[0-9][0-9A-Za-z.\\-]*\\-linux\\-x86_64\\.AppImage$",
+    "LinuxPackageKind": "AppImage"
+  },
+  {
+    "Id": "gow-native-pc",
+    "Name": "God of War (PS2) · God of War Native PC",
+    "Repository": "Vnnc1/gow-native-pc",
+    "Platform": "PlayStation 2",
+    "AssetPattern": "",
+    "PlayNames": [],
+    "ConfigNames": [],
+    "ArtworkTitle": "God of War (2005 video game)",
+    "ProjectOnly": true,
+    "ProjectType": "Recompilação",
+    "Kind": "Preparação manual",
+    "Notes": "O ZIP Windows traz o código e o build.cmd, sem executável pronto: o jogo é compilado no seu PC a partir do seu disco. Recompilação estática da versão SCUS-97399 com alvo de 60 fps e suporte a traduções de fãs."
+  },
+  {
+    "Id": "ng2recomp",
+    "Name": "Ninja Gaiden II · Ninja Gaiden II Recompiled",
+    "Repository": "gamboozino/ng2recomp",
+    "Platform": "Xbox 360",
+    "AssetPattern": "^NinjaGaiden2-windows-x64\\.zip$",
+    "PlayNames": [
+      "ng2.exe"
+    ],
+    "ConfigNames": [
+      "ng2.exe"
+    ],
+    "ArtworkTitle": "Ninja Gaiden II",
+    "ProjectOnly": false,
+    "ProjectType": "Recompilação",
+    "Kind": "Recompilação",
+    "PackageKind": "Zip",
+    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Jogar e Configurar abrem ng2.exe. Recompilação ReXGlue com renderizador Vulkan próprio. Requer seu próprio disco.",
+    "LinuxAssetPattern": "^NinjaGaiden2\\-x86_64\\.AppImage$",
+    "LinuxPackageKind": "AppImage"
+  },
+  {
+    "Id": "xc3-recomp",
+    "Name": "Xenoblade Chronicles 3 · XC3 Recomp",
+    "Repository": "jmars125/xc3-recomp",
+    "Platform": "Nintendo Switch",
+    "AssetPattern": "^XC3-Setup-[0-9.]+-windows\\.zip$",
+    "PlayNames": [
+      "XC3-Setup.exe"
+    ],
+    "ConfigNames": [
+      "XC3-Setup.exe"
+    ],
+    "ArtworkTitle": "Xenoblade Chronicles 3",
+    "ProjectOnly": false,
+    "ProjectType": "Recompilação",
+    "Kind": "Recompilação",
+    "PackageKind": "Zip",
+    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Jogar e Configurar abrem XC3-Setup.exe; na primeira abertura, prepare seus próprios arquivos no port. Recompilação estática derivada do XCX Recomp e do TotK Recomp. O jogo é montado a partir da sua própria cópia.",
+    "LinuxAssetPattern": "^XC3\\-Setup\\-[0-9][0-9A-Za-z.\\-]*\\-linux\\.AppImage$",
+    "LinuxPackageKind": "AppImage"
+  },
+  {
+    "Id": "outrunners-port",
+    "Name": "OutRunners · OutRunners Port",
+    "Repository": "cheviman/outrunners-port",
+    "Platform": "Outras",
+    "AssetPattern": "^outrunners-windows-x64\\.zip$",
+    "PlayNames": [],
+    "ConfigNames": [],
+    "ArtworkTitle": "OutRunners",
+    "ProjectOnly": false,
+    "ProjectType": "Port",
+    "Kind": "Instalação integrada",
+    "DiscoverExecutable": true,
+    "PackageKind": "Zip",
+    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Se houver mais de um aplicativo, escolha o principal e o de configuração na janela do NEXUS. Port nativo do arcade da Sega de 1992, feito a partir da decompilação. Requer suas próprias ROMs.",
+    "LinuxAssetPattern": "^outrunners\\-linux\\-x64\\.tar\\.gz$",
+    "LinuxPackageKind": "Archive"
+  },
+  {
+    "Id": "infamous2-port",
+    "Name": "inFAMOUS 2 · Native PC Port",
+    "Repository": "SamiEnazi/infamous2-port",
+    "Platform": "PlayStation 3",
+    "AssetPattern": "^inFAMOUS2-port-v[0-9.]+-Windows-x64\\.zip$",
+    "PlayNames": [
+      "Setup.exe"
+    ],
+    "ConfigNames": [
+      "Setup.exe"
+    ],
+    "ArtworkTitle": "Infamous 2",
+    "ProjectOnly": false,
+    "ProjectType": "Recompilação",
+    "Kind": "Recompilação",
+    "PackageKind": "Zip",
+    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Jogar e Configurar abrem Setup.exe; o Setup prepara o port e depois abre o jogo. Recompilação da versão PS3. O Setup recompila o jogo no seu PC a partir da sua própria cópia.",
+    "LinuxAssetPattern": "^inFAMOUS2\\-port\\-v[0-9][0-9A-Za-z.\\-]*\\-Linux\\-x64\\.zip$",
+    "LinuxPackageKind": "Archive"
+  },
+  {
+    "Id": "resistance-fom",
+    "Name": "Resistance: Fall of Man · Native PC Port",
+    "Repository": "miroslavdanutalexandru-alt/Resistance-Fall-of-Man-Recomp",
+    "Platform": "PlayStation 3",
+    "AssetPattern": "^ResistancePort-.*-Windows-x64\\.zip$",
+    "PlayNames": [
+      "Setup.exe"
+    ],
+    "ConfigNames": [
+      "Setup.exe"
+    ],
+    "ArtworkTitle": "Resistance: Fall of Man",
+    "ProjectOnly": false,
+    "ProjectType": "Recompilação",
+    "AllowPrerelease": true,
+    "Kind": "Recompilação",
+    "PackageKind": "Zip",
+    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Jogar e Configurar abrem Setup.exe; o Setup prepara o port e depois abre o jogo. Recompilação estática com Direct3D 12, DLSS/DLAA e FSR 3.1. Beta. Requer seu próprio disco."
+  },
+  {
+    "Id": "resistance-3",
+    "Name": "Resistance 3 · Native PC Port",
+    "Repository": "miroslavdanutalexandru-alt/Resistance3Port",
+    "Platform": "PlayStation 3",
+    "AssetPattern": "^Resistance3Port-.*-Windows-x64\\.zip$",
+    "PlayNames": [
+      "Setup.exe"
+    ],
+    "ConfigNames": [
+      "Setup.exe"
+    ],
+    "ArtworkTitle": "Resistance 3",
+    "ProjectOnly": false,
+    "ProjectType": "Recompilação",
+    "AllowPrerelease": true,
+    "Kind": "Recompilação",
+    "PackageKind": "Zip",
+    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Jogar e Configurar abrem Setup.exe; o Setup prepara o port e depois abre o jogo. Recompilação estática em andamento, com 60 fps, teclado e mouse e DLSS/FSR. Beta. Requer seu próprio disco."
+  },
+  {
+    "Id": "kart-recomp",
+    "Name": "Mario Kart World · kart-recomp",
+    "Repository": "MIXIDtheSilly/kart-recomp",
+    "Platform": "Nintendo Switch",
+    "AssetPattern": "^kart-recomp-[0-9.]+-windows\\.zip$",
+    "PlayNames": [
+      "launcher.exe"
+    ],
+    "ConfigNames": [
+      "launcher.exe"
+    ],
+    "ArtworkTitle": "Mario Kart World",
+    "ProjectOnly": false,
+    "ProjectType": "Recompilação",
+    "Kind": "Recompilação",
+    "PackageKind": "Zip",
+    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Jogar e Configurar abrem launcher.exe; na primeira abertura, prepare seus próprios arquivos no port. Recompilação estática do jogo de kart de Switch 2 com Vulkan. Funciona com as versões 1.0.0 e 1.8.0. Requer seu próprio dump."
+  },
+  {
+    "Id": "gr2port",
+    "Name": "Gravity Rush 2 · GR2port",
+    "Repository": "junminlee2004/GR2port",
+    "Platform": "PlayStation 4",
+    "AssetPattern": "^GR2port\\.build\\.[0-9a-f]+\\.Windows\\.zip$",
+    "PlayNames": [
+      "Gravity Rush 2™.exe"
+    ],
+    "ConfigNames": [
+      "Gravity Rush 2™.exe"
+    ],
+    "ArtworkTitle": "Gravity Rush 2",
+    "ProjectOnly": false,
+    "ProjectType": "Port",
+    "Kind": "Recompilação",
+    "PackageKind": "Zip",
+    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Jogar e Configurar abrem Gravity Rush 2™.exe; na primeira abertura, prepare seus próprios arquivos no port. Port nativo que executa o código x86-64 do PS4 com renderizador Vulkan reescrito. Requer sua própria cópia.",
+    "LinuxAssetPattern": "^GR2port\\.build\\.[0-9a-f]+\\.Linux\\.zip$",
+    "LinuxPackageKind": "Archive"
+  },
+  {
+    "Id": "opengp",
+    "Name": "Mario Kart Arcade GP 1 e 2 · OpenGP",
+    "Repository": "OpenGP-dev/OpenGP",
+    "Platform": "Outras",
+    "AssetPattern": "^OpenGP-[0-9.]+-windows-x64\\.zip$",
+    "PlayNames": [
+      "OpenGP.exe"
+    ],
+    "ConfigNames": [
+      "OpenGP.exe"
+    ],
+    "ArtworkTitle": "Mario Kart Arcade GP",
+    "ProjectOnly": false,
+    "ProjectType": "Recompilação",
+    "Kind": "Recompilação",
+    "PackageKind": "Zip",
+    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Jogar e Configurar abrem OpenGP.exe. Recompilação estática dos dois jogos de arcade do Triforce. Requer seus próprios arquivos.",
+    "LinuxAssetPattern": "^OpenGP\\-[0-9][0-9A-Za-z.\\-]*\\-linux\\-x64\\.tar\\.gz$",
+    "LinuxPackageKind": "Archive"
+  },
+  {
+    "Id": "shinobi-ps2",
+    "Name": "Shinobi (PS2) · Shinobi Recomp",
+    "Repository": "TheRealAfsan/Shinobi-PS2-Recomp",
+    "Platform": "PlayStation 2",
+    "AssetPattern": "^Shinobi-PS2-Recomp-v[0-9.]+-Windows-x64\\.zip$",
+    "PlayNames": [
+      "Shinobi Launcher.exe"
+    ],
+    "ConfigNames": [
+      "Shinobi Launcher.exe"
+    ],
+    "ArtworkTitle": "Shinobi (2002 video game)",
+    "ProjectOnly": false,
+    "ProjectType": "Recompilação",
+    "Kind": "Recompilação",
+    "PackageKind": "Zip",
+    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Jogar e Configurar abrem Shinobi Launcher.exe; na primeira abertura, prepare seus próprios arquivos no port. Port nativo da versão norte-americana com launcher, até 8K e mods. Requer sua imagem de disco."
+  },
+  {
+    "Id": "sanctuary-port",
+    "Name": "Diablo III: Ultimate Evil Edition · SanctuaryPort",
+    "Repository": "CaduGimenes/SanctuaryPort",
+    "Platform": "PlayStation 4",
+    "AssetPattern": "^SanctuaryPort-windows\\.zip$",
+    "PlayNames": [
+      "Play SanctuaryPort.exe"
+    ],
+    "ConfigNames": [
+      "Play SanctuaryPort.exe"
+    ],
+    "ArtworkTitle": "Diablo III: Reaper of Souls",
+    "ProjectOnly": false,
+    "ProjectType": "Port",
+    "Kind": "Port",
+    "PackageKind": "Zip",
+    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Jogar e Configurar abrem Play SanctuaryPort.exe. Executa a versão PS4 (CUSA00243 1.47 ou CUSA00242 1.00) nativamente no PC. Requer sua própria cópia.",
+    "LinuxAssetPattern": "^SanctuaryPort\\-linux\\-x86_64\\.AppImage$",
+    "LinuxPackageKind": "AppImage"
+  },
+  {
+    "Id": "shadow-of-rome",
+    "Name": "Shadow of Rome · Recompiled",
+    "Repository": "Korvonordico/shadow-of-rome-recompiled",
+    "Platform": "PlayStation 2",
+    "AssetPattern": "^ShadowOfRome-[0-9.]+-windows\\.zip$",
+    "PlayNames": [
+      "ShadowOfRome.exe"
+    ],
+    "ConfigNames": [
+      "ShadowOfRome.exe"
+    ],
+    "ArtworkTitle": "Shadow of Rome",
+    "ProjectOnly": false,
+    "ProjectType": "Recompilação",
+    "Kind": "Recompilação",
+    "PackageKind": "Zip",
+    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Jogar e Configurar abrem ShadowOfRome.exe. Recompilação estática com até 8x a resolução, 60 fps e widescreen. Requer seu próprio disco."
+  },
+  {
+    "Id": "timesplitters-2",
+    "Name": "TimeSplitters 2 · Native PC Port",
+    "Repository": "Destinity13/TimeSplitters-2-Native-Recomp-Windows-Linux-SteamDeck",
+    "Platform": "PlayStation 2",
+    "AssetPattern": "",
+    "PlayNames": [],
+    "ConfigNames": [],
+    "ArtworkTitle": "TimeSplitters 2",
+    "ProjectOnly": true,
+    "ProjectType": "Recompilação",
+    "Kind": "Preparação manual",
+    "Notes": "O pacote Windows abre por um script (TS2-Recomp.bat) que compila o jogo a partir do seu disco, e o NEXUS ainda não executa scripts. Baixe pela página do projeto. Recompilação da versão NTSC-U com 60 fps, 16:9, até 4K, tela dividida e multiplayer online."
+  },
+  {
+    "Id": "perfect-dark-xbla",
+    "Name": "Perfect Dark (Xbox 360) · XBLA PC Recomp",
+    "Repository": "CaiusCodes/Perfect-Dark-XBLA-PC-Recomp",
+    "Platform": "Xbox 360",
+    "AssetPattern": "^Perfect-Dark-XBLA-PC-Recomp-v[0-9][0-9A-Za-z.]*\\.zip$",
+    "PlayNames": [
+      "Perfect Dark.exe"
+    ],
+    "ConfigNames": [
+      "Perfect Dark.exe"
+    ],
+    "ArtworkTitle": "Perfect Dark",
+    "ProjectOnly": false,
+    "ProjectType": "Recompilação",
+    "Kind": "Recompilação",
+    "PackageKind": "Zip",
+    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Jogar e Configurar abrem Perfect Dark.exe. Recompilação ReXGlue do remaster de 2010 com até 4K e 60 fps e multiplayer em LAN. Requer sua própria cópia."
+  },
+  {
+    "Id": "tera-recomp",
+    "Name": "Pokémon Scarlet · Tera Recomp",
+    "Repository": "tukidev-lgtm/Tera-recomp",
+    "Platform": "Nintendo Switch",
+    "AssetPattern": "^Tera-Setup-Windows-x64\\.zip$",
+    "PlayNames": [
+      "Tera-Setup.exe"
+    ],
+    "ConfigNames": [
+      "Tera-Setup.exe"
+    ],
+    "ArtworkTitle": "Pokémon Scarlet and Violet",
+    "ProjectOnly": false,
+    "ProjectType": "Recompilação",
+    "Kind": "Recompilação",
+    "PackageKind": "Zip",
+    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Jogar e Configurar abrem Tera-Setup.exe; na primeira abertura, prepare seus próprios arquivos no port. Recompilação estática com renderizador Vulkan. O jogo é montado a partir da sua própria cópia."
+  },
+  {
+    "Id": "thps2x-recompiled",
+    "Name": "Tony Hawk's Pro Skater 2X · Recompiled",
+    "Repository": "almost-drowned-rat/THPS2X-Recompiled",
+    "Platform": "Xbox",
+    "AssetPattern": "^THPS2X-Recompiled-v[0-9.]+-win64\\.zip$",
+    "PlayNames": [
+      "THPS 2X Recomp.exe"
+    ],
+    "ConfigNames": [
+      "THPS 2X Recomp.exe"
+    ],
+    "ArtworkTitle": "Tony Hawk's Pro Skater 2",
+    "ProjectOnly": false,
+    "ProjectType": "Recompilação",
+    "Kind": "Recompilação",
+    "PackageKind": "Zip",
+    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Jogar e Configurar abrem THPS 2X Recomp.exe; na primeira abertura, prepare seus próprios arquivos no port. Recompilação estática da versão norte-americana com Vulkan, 120 fps e trilhas personalizadas. Requer seu próprio disco."
+  },
+  {
+    "Id": "dead-nation-recomp",
+    "Name": "Dead Nation · Recompiled",
+    "Repository": "rcostanza/dead-nation-ps4-recomp",
+    "Platform": "PlayStation 4",
+    "AssetPattern": "^deadnation-pc-v[0-9.]+-[0-9-]+-windows-x64\\.zip$",
+    "PlayNames": [
+      "deadnation.exe"
+    ],
+    "ConfigNames": [
+      "deadnation-setup.exe"
+    ],
+    "ArtworkTitle": "Dead Nation",
+    "ProjectOnly": false,
+    "ProjectType": "Recompilação",
+    "Kind": "Recompilação",
+    "PackageKind": "Zip",
+    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Jogar abre deadnation.exe e Configurar abre deadnation-setup.exe. Executa a versão PS4 nativamente com Vulkan. Requer seu próprio dump.",
+    "LinuxAssetPattern": "^deadnation-pc-v[0-9.]+-[0-9-]+-linux-x64\\.tar\\.gz$",
+    "LinuxPackageKind": "Archive"
+  },
+  {
+    "Id": "lavender-shift",
+    "Name": "Forza Horizon 2 (Xbox 360) · Lavender Shift",
+    "Repository": "arcanite24/lavender-shift",
+    "Platform": "Xbox 360",
+    "AssetPattern": "^LavenderShift-[0-9.]+-windows-x64\\.zip$",
+    "PlayNames": [
+      "LavenderShiftLauncher.exe"
+    ],
+    "ConfigNames": [
+      "LavenderShiftLauncher.exe"
+    ],
+    "ArtworkTitle": "Forza Horizon 2",
+    "ProjectOnly": false,
+    "ProjectType": "Recompilação",
+    "Kind": "Recompilação",
+    "PackageKind": "Zip",
+    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Jogar e Configurar abrem LavenderShiftLauncher.exe; na primeira abertura, prepare seus próprios arquivos no port. Recompilação estática. O launcher prepara tudo a partir da sua ISO norte-americana com o title update 2."
+  },
+  {
+    "Id": "kigold-recomp",
+    "Name": "Killer Instinct Gold · Recompiled",
+    "Repository": "geno55/kigold-recomp",
+    "Platform": "Nintendo 64",
+    "AssetPattern": "^kigold-recomp-v[0-9.]+-windows-x64\\.zip$",
+    "PlayNames": [
+      "kig.exe"
+    ],
+    "ConfigNames": [
+      "kig.exe"
+    ],
+    "ArtworkTitle": "Killer Instinct Gold",
+    "ProjectOnly": false,
+    "ProjectType": "Recompilação",
+    "Kind": "Recompilação",
+    "PackageKind": "Zip",
+    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Jogar e Configurar abrem kig.exe; na primeira abertura, prepare seus próprios arquivos no port. Recompilação N64Recomp com RT64. Requer sua própria ROM."
+  },
+  {
+    "Id": "spyro-aht-pc",
+    "Name": "Spyro: A Hero's Tail · PC Port",
+    "Repository": "Starkka15/spyro-aht-pc",
+    "Platform": "Xbox",
+    "AssetPattern": "^SpyroAHT-PC-[0-9.]+-Setup\\.exe$",
+    "PlayNames": [],
+    "ConfigNames": [],
+    "ArtworkTitle": "Spyro: A Hero's Tail",
+    "ProjectOnly": false,
+    "ProjectType": "Recompilação",
+    "Kind": "Instalação integrada",
+    "DiscoverExecutable": true,
+    "PackageKind": "Installer",
+    "Notes": "O NEXUS baixa e verifica o instalador oficial, abre o assistente do autor e cadastra o aplicativo que você selecionar ao concluir. Atualizações também usam esse assistente. Recompilação estática da versão Xbox com xboxrecomp. Requer seu próprio disco."
   }
 ]

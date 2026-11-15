@@ -7790,5 +7790,592 @@
     "DiscoverExecutable": true,
     "PackageKind": "Installer",
     "Notes": "O NEXUS baixa e verifica o instalador oficial, abre o assistente do autor e cadastra o aplicativo que você selecionar ao concluir. Atualizações também usam esse assistente. Recompilação estática da versão Xbox com xboxrecomp. Requer seu próprio disco."
+  },
+  {
+    "Id": "the-darkness-recomp",
+    "Name": "The Darkness · The Darkness Recomp",
+    "Repository": "portingpete/The-Darkness-Recomp",
+    "Platform": "Xbox 360",
+    "AssetPattern": "^The-Darkness-Recomp-v[0-9.]+-windows-x64\\.zip$",
+    "PlayNames": [
+      "DarkRecomp.exe"
+    ],
+    "ConfigNames": [
+      "DarkRecompSettings.exe"
+    ],
+    "ArtworkTitle": "The Darkness (video game)",
+    "ProjectOnly": false,
+    "ProjectType": "Recompilação",
+    "AllowPrerelease": true,
+    "Kind": "Recompilação",
+    "PackageKind": "Zip",
+    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Jogar abre DarkRecomp.exe e Configurar abre DarkRecompSettings.exe. Recompilação estática com Direct3D 11, teclado e mouse e opções gráficas. Pré-release. Requer seu próprio disco."
+  },
+  {
+    "Id": "medievil-recomp",
+    "Name": "MediEvil · MediEvil Recomp",
+    "Repository": "BlackLabelHQ/MediEvilRecomp",
+    "Platform": "PlayStation",
+    "AssetPattern": "^MediEvilRecomp-v[0-9.]+-windows-x64\\.zip$",
+    "PlayNames": [
+      "medievil.exe"
+    ],
+    "ConfigNames": [
+      "medievil.exe"
+    ],
+    "ArtworkTitle": "MediEvil (1998 video game)",
+    "ProjectOnly": false,
+    "ProjectType": "Recompilação",
+    "Kind": "Recompilação",
+    "PackageKind": "Zip",
+    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Jogar e Configurar abrem medievil.exe; na primeira abertura, prepare seus próprios arquivos no port. Recompilação estática da versão norte-americana de PS1. Requer seu próprio disco.",
+    "LinuxAssetPattern": "^MediEvilRecomp\\-v[0-9][0-9A-Za-z.\\-]*\\-linux\\-x64\\.tar\\.gz$",
+    "LinuxPackageKind": "Archive"
+  },
+  {
+    "Id": "recvx-enhanced",
+    "Name": "Resident Evil Code: Veronica X · Enhanced Port",
+    "Repository": "aikatore/recvx-enhanced-port",
+    "Platform": "PlayStation 2",
+    "AssetPattern": "^recvx-enhanced-port-[0-9.]+-windows-x86\\.zip$",
+    "PlayNames": [
+      "recvx.exe"
+    ],
+    "ConfigNames": [
+      "recvx.exe"
+    ],
+    "ArtworkTitle": "Resident Evil – Code: Veronica",
+    "ProjectOnly": false,
+    "ProjectType": "Recompilação",
+    "AllowPrerelease": true,
+    "Kind": "Recompilação",
+    "PackageKind": "Zip",
+    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Jogar e Configurar abrem recvx.exe; na primeira abertura, prepare seus próprios arquivos no port. Port da versão PS2 (SLUS-20184) com co-op online, câmera em terceira pessoa e renderização melhorada. Pré-release. Lê a sua própria imagem de disco."
+  },
+  {
+    "Id": "issn-pc",
+    "Name": "inFAMOUS Second Son · ISSN PC",
+    "Repository": "Liondarkz/issn_pc",
+    "Platform": "PlayStation 4",
+    "AssetPattern": "^issn-windows\\.zip$",
+    "PlayNames": [
+      "Play inFAMOUS Second Son.exe"
+    ],
+    "ConfigNames": [
+      "Play inFAMOUS Second Son.exe"
+    ],
+    "ArtworkTitle": "Infamous Second Son",
+    "ProjectOnly": false,
+    "ProjectType": "Port",
+    "Kind": "Port",
+    "PackageKind": "Zip",
+    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Jogar e Configurar abrem Play inFAMOUS Second Son.exe. Port nativo com Vulkan, FSR 4, DLSS, mouse 1:1 e suporte a controle. Requer sua própria cópia."
+  },
+  {
+    "Id": "reuc-recomp",
+    "Name": "Resident Evil: The Umbrella Chronicles · REUC Recomp",
+    "Repository": "solleo95/reuc-recomp",
+    "Platform": "Wii",
+    "AssetPattern": "^UC-Windows-[0-9.]+\\.zip$",
+    "PlayNames": [
+      "uc_launcher.exe"
+    ],
+    "ConfigNames": [
+      "uc_launcher.exe"
+    ],
+    "ArtworkTitle": "Resident Evil: The Umbrella Chronicles",
+    "ProjectOnly": false,
+    "ProjectType": "Recompilação",
+    "Kind": "Recompilação",
+    "PackageKind": "Zip",
+    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Jogar e Configurar abrem uc_launcher.exe. Recompilação estática com FPS destravado, mira com mouse, DLSS e FSR 3.1. Requer seu próprio disco.",
+    "LinuxAssetPattern": "^UC\\-Linux\\-[0-9][0-9A-Za-z.\\-]*\\.zip$",
+    "LinuxPackageKind": "Archive"
+  },
+  {
+    "Id": "melee-unlocked",
+    "Name": "Super Smash Bros. Melee · Melee Unlocked",
+    "Repository": "Hero88go/melee-unlocked",
+    "Platform": "GameCube",
+    "AssetPattern": "^MeleeUnlocked-[0-9.]+-win64\\.zip$",
+    "PlayNames": [
+      "MeleeUnlockedLauncher.exe"
+    ],
+    "ConfigNames": [
+      "MeleeUnlockedLauncher.exe"
+    ],
+    "ArtworkTitle": "Super Smash Bros. Melee",
+    "ProjectOnly": false,
+    "ProjectType": "Decompilação",
+    "Kind": "Decompilação",
+    "PackageKind": "Zip",
+    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Jogar e Configurar abrem MeleeUnlockedLauncher.exe. Port compilado a partir da decompilação, com FPS destravado. Requer seu próprio disco.",
+    "LinuxAssetPattern": "^MeleeUnlocked\\-[0-9][0-9A-Za-z.\\-]*\\-linux\\-x86_64\\.tar\\.gz$",
+    "LinuxPackageKind": "Archive"
+  },
+  {
+    "Id": "opentricky",
+    "Name": "SSX Tricky · OpenTricky",
+    "Repository": "GiZcesi/OpenTricky",
+    "Platform": "Xbox",
+    "AssetPattern": "^OpenTricky-[0-9.]+-win64\\.zip$",
+    "PlayNames": [
+      "OpenTricky.exe"
+    ],
+    "ConfigNames": [
+      "OpenTricky.exe"
+    ],
+    "ArtworkTitle": "SSX Tricky",
+    "ProjectOnly": false,
+    "ProjectType": "Recompilação",
+    "Kind": "Recompilação",
+    "PackageKind": "Zip",
+    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Jogar e Configurar abrem OpenTricky.exe; na primeira abertura, prepare seus próprios arquivos no port. Recompilação estática da versão Xbox norte-americana com xboxrecomp, Direct3D 11 e qualquer resolução. Requer seu próprio disco."
+  },
+  {
+    "Id": "ttt2-ultimate",
+    "Name": "Tekken Tag Tournament 2 · Ultimate Edition",
+    "Repository": "Petexy/Tekken-Tag-2-Ultimate-Edition",
+    "Platform": "Wii U",
+    "AssetPattern": "^Ultimate_Launcher-x86_64\\.exe$",
+    "PlayNames": [
+      "Ultimate_Launcher-x86_64.exe"
+    ],
+    "ConfigNames": [
+      "Ultimate_Launcher-x86_64.exe"
+    ],
+    "ArtworkTitle": "Tekken Tag Tournament 2",
+    "ProjectOnly": false,
+    "ProjectType": "Recompilação",
+    "Kind": "Recompilação",
+    "PackageKind": "Executable",
+    "Notes": "O NEXUS baixa o executável portátil oficial. Jogar e Configurar abrem Ultimate_Launcher-x86_64.exe. Recompilação estática da versão Wii U com suporte a mods e personagens novos. O launcher prepara o jogo a partir da sua cópia.",
+    "LinuxAssetPattern": "^Ultimate_Launcher\\-x86_64\\.AppImage$",
+    "LinuxPackageKind": "AppImage"
+  },
+  {
+    "Id": "astralchain-pc",
+    "Name": "Astral Chain · AstralChain-PC",
+    "Repository": "Puddz/AstralChain-PC",
+    "Platform": "Nintendo Switch",
+    "AssetPattern": "^AstralChain-PC-[0-9]{4}-[0-9]{2}-[0-9]{2}\\.zip$",
+    "PlayNames": [
+      "Astral Chain Launcher.exe"
+    ],
+    "ConfigNames": [
+      "Astral Chain Launcher.exe"
+    ],
+    "ArtworkTitle": "Astral Chain",
+    "ProjectOnly": false,
+    "ProjectType": "Recompilação",
+    "Kind": "Recompilação",
+    "PackageKind": "Zip",
+    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Jogar e Configurar abrem Astral Chain Launcher.exe; na primeira abertura, prepare seus próprios arquivos no port. Recompilação estática. Requer seu próprio dump e suas chaves."
+  },
+  {
+    "Id": "rusty-mcla",
+    "Name": "Midnight Club: Los Angeles · Rusty MCLA",
+    "Repository": "holdmysocks/rusty-mcla",
+    "Platform": "Xbox 360",
+    "AssetPattern": "^RustyMCLA\\.exe$",
+    "PlayNames": [
+      "RustyMCLA.exe"
+    ],
+    "ConfigNames": [
+      "RustyMCLA.exe"
+    ],
+    "ArtworkTitle": "Midnight Club: Los Angeles",
+    "ProjectOnly": false,
+    "ProjectType": "Reimplementação",
+    "Kind": "Recompilação",
+    "PackageKind": "Executable",
+    "Notes": "O NEXUS baixa o executável portátil oficial. Jogar e Configurar abrem RustyMCLA.exe. Motor novo que lê os dados da sua ISO do Complete Edition. O launcher portátil baixa o jogo da própria Release."
+  },
+  {
+    "Id": "eidos",
+    "Name": "Pokémon Black e White · Eidos",
+    "Repository": "Project-Holon/eidos",
+    "Platform": "Nintendo DS",
+    "AssetPattern": "^eidos-[0-9.]+-windows\\.zip$",
+    "PlayNames": [
+      "eidos.exe"
+    ],
+    "ConfigNames": [
+      "eidos.exe"
+    ],
+    "ArtworkTitle": "Pokémon Black and White",
+    "ProjectOnly": false,
+    "ProjectType": "Port",
+    "Kind": "Recompilação",
+    "PackageKind": "Zip",
+    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Jogar e Configurar abrem eidos.exe; na primeira abertura, prepare seus próprios arquivos no port. Port nativo baseado no aletheia. Requer sua própria ROM.",
+    "LinuxAssetPattern": "^eidos-[0-9.]+-linux-x86_64\\.AppImage$",
+    "LinuxPackageKind": "AppImage"
+  },
+  {
+    "Id": "tmnt-port",
+    "Name": "Teenage Mutant Ninja Turtles (arcade) · TMNT Port",
+    "Repository": "cheviman/tmnt-port",
+    "Platform": "Outras",
+    "AssetPattern": "^tmnt-windows-x64\\.zip$",
+    "PlayNames": [
+      "TMNT.exe"
+    ],
+    "ConfigNames": [
+      "TMNT.exe"
+    ],
+    "ArtworkTitle": "Teenage Mutant Ninja Turtles (1989 arcade game)",
+    "ProjectOnly": false,
+    "ProjectType": "Port",
+    "Kind": "Port",
+    "PackageKind": "Zip",
+    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Jogar e Configurar abrem TMNT.exe. Port nativo do arcade da Konami de 1989, feito a partir da decompilação verificada. Requer suas próprias ROMs.",
+    "LinuxAssetPattern": "^tmnt\\-linux\\-x64\\.tar\\.gz$",
+    "LinuxPackageKind": "Archive"
+  },
+  {
+    "Id": "superwonders",
+    "Name": "Super Mario Bros. Wonder · SuperWonders",
+    "Repository": "vfjoo888/SuperWonders",
+    "Platform": "Nintendo Switch",
+    "AssetPattern": "^SuperWonders-v[0-9.]+-Windows-x64\\.zip$",
+    "PlayNames": [
+      "wonder.exe"
+    ],
+    "ConfigNames": [
+      "wonder.exe"
+    ],
+    "ArtworkTitle": "Super Mario Bros. Wonder",
+    "ProjectOnly": false,
+    "ProjectType": "Recompilação",
+    "Kind": "Recompilação",
+    "PackageKind": "Zip",
+    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Jogar e Configurar abrem wonder.exe; na primeira abertura, prepare seus próprios arquivos no port. Recompilação estática. Requer seu próprio dump.",
+    "LinuxAssetPattern": "^SuperWonders\\-v[0-9][0-9A-Za-z.\\-]*\\-Linux\\-x64\\.AppImage$",
+    "LinuxPackageKind": "AppImage"
+  },
+  {
+    "Id": "goldeneye-xbla-pc",
+    "Name": "GoldenEye 007 (XBLA) · XBLA PC Recomp",
+    "Repository": "CaiusCodes/GoldenEye-007-XBLA-PC-Recomp",
+    "Platform": "Xbox 360",
+    "AssetPattern": "^GoldenEye-007-XBLA-PC-Recomp-v[0-9][0-9A-Za-z.]*\\.zip$",
+    "PlayNames": [
+      "GoldenEye 007.exe"
+    ],
+    "ConfigNames": [
+      "GoldenEye 007.exe"
+    ],
+    "ArtworkTitle": "GoldenEye 007 (1997 video game)",
+    "ProjectOnly": false,
+    "ProjectType": "Recompilação",
+    "Kind": "Recompilação",
+    "PackageKind": "Zip",
+    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Jogar e Configurar abrem GoldenEye 007.exe. Recompilação ReXGlue do remaster inédito para XBLA. Requer sua própria cópia.",
+    "PreferRootExecutable": true
+  },
+  {
+    "Id": "infamous2-recomp",
+    "Name": "inFAMOUS 2 · inFamous2 Recomp",
+    "Repository": "bhuiyah/infamous2-recomp",
+    "Platform": "PlayStation 3",
+    "AssetPattern": "^inFamous2Recomp-v[0-9.]+-windows\\.zip$",
+    "PlayNames": [
+      "inFamous2Launcher.exe"
+    ],
+    "ConfigNames": [
+      "inFamous2Launcher.exe"
+    ],
+    "ArtworkTitle": "Infamous 2",
+    "ProjectOnly": false,
+    "ProjectType": "Recompilação",
+    "Kind": "Recompilação",
+    "PackageKind": "Zip",
+    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Jogar e Configurar abrem inFamous2Launcher.exe; na primeira abertura, prepare seus próprios arquivos no port. Recompilação estática; o launcher monta o jogo a partir da sua própria cópia."
+  },
+  {
+    "Id": "racing-8-dx",
+    "Name": "Mario Kart 8 Deluxe · Racing 8 DX Recomp",
+    "Repository": "galarianpikachu2021-hue/Racing-8-DX-Recomp",
+    "Platform": "Nintendo Switch",
+    "AssetPattern": "^KartRecomp-windows-x64\\.zip$",
+    "PlayNames": [
+      "kartrecomp.exe"
+    ],
+    "ConfigNames": [
+      "kartrecomp-setup.exe"
+    ],
+    "ArtworkTitle": "Mario Kart 8 Deluxe",
+    "ProjectOnly": false,
+    "ProjectType": "Recompilação",
+    "Kind": "Recompilação",
+    "PackageKind": "Zip",
+    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Jogar abre kartrecomp.exe e Configurar abre kartrecomp-setup.exe. Recompilação estática sem JIT, com FSR 3.1, geração de quadros, DLSS experimental e HDR10. Requer seu próprio dump.",
+    "LinuxAssetPattern": "^Racing_8_DX_Recomp\\-x86_64\\.AppImage$",
+    "LinuxPackageKind": "AppImage"
+  },
+  {
+    "Id": "fm2-regpu",
+    "Name": "Forza Motorsport 2 · ReGPU",
+    "Repository": "zer0ducksgiven/Forza-Motorsport-2-ReGPU",
+    "Platform": "Xbox 360",
+    "AssetPattern": "^FM2-Setup-[0-9.]+\\.exe$",
+    "PlayNames": [],
+    "ConfigNames": [],
+    "ArtworkTitle": "Forza Motorsport 2",
+    "ProjectOnly": false,
+    "ProjectType": "Recompilação",
+    "Kind": "Instalação integrada",
+    "DiscoverExecutable": true,
+    "PackageKind": "Installer",
+    "Notes": "O NEXUS baixa e verifica o instalador oficial, abre o assistente do autor e cadastra o aplicativo que você selecionar ao concluir. Atualizações também usam esse assistente. Recompilação estática do código da CPU com renderizador Direct3D 12 nativo. Requer seu próprio disco.",
+    "LinuxAssetPattern": "^FM2\\-Linux\\-[0-9][0-9A-Za-z.\\-]*\\.tar\\.gz$",
+    "LinuxPackageKind": "Archive"
+  },
+  {
+    "Id": "parasite-eve-pc",
+    "Name": "Parasite Eve · PC Port",
+    "Repository": "khasinski/parasite-eve-pc",
+    "Platform": "PlayStation",
+    "AssetPattern": "^Parasite-Eve-[0-9.]+-windows-x86_64-experimental\\.zip$",
+    "PlayNames": [
+      "parasite-eve-pc.exe"
+    ],
+    "ConfigNames": [
+      "parasite-eve-pc.exe"
+    ],
+    "ArtworkTitle": "Parasite Eve (video game)",
+    "ProjectOnly": false,
+    "ProjectType": "Port",
+    "Kind": "Recompilação",
+    "PackageKind": "Zip",
+    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Jogar e Configurar abrem parasite-eve-pc.exe; na primeira abertura, prepare seus próprios arquivos no port. Port nativo baseado na decompilação e no PsyZ. Build experimental. Requer seu próprio disco.",
+    "LinuxAssetPattern": "^Parasite-Eve-[0-9.]+-linux-x86_64\\.tar\\.gz$",
+    "LinuxPackageKind": "Archive"
+  },
+  {
+    "Id": "ultracombo",
+    "Name": "Killer Instinct (arcade) · UltraCombo",
+    "Repository": "thefixinhixon/UltraCombo",
+    "Platform": "Outras",
+    "AssetPattern": "^UltraCombo-Windows\\.zip$",
+    "PlayNames": [
+      "UltraCombo.exe"
+    ],
+    "ConfigNames": [
+      "UltraCombo.exe"
+    ],
+    "ArtworkTitle": "Killer Instinct (1994 video game)",
+    "ProjectOnly": false,
+    "ProjectType": "Port",
+    "AllowPrerelease": true,
+    "Kind": "Recompilação",
+    "PackageKind": "Zip",
+    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Jogar e Configurar abrem UltraCombo.exe; na primeira abertura, prepare seus próprios arquivos no port. Ports nativos dos arcades de Killer Instinct. Pré-release. Requer seus próprios arquivos.",
+    "LinuxAssetPattern": "^UltraCombo\\-x86_64\\.AppImage$",
+    "LinuxPackageKind": "AppImage"
+  },
+  {
+    "Id": "chaotix-recompiled",
+    "Name": "Knuckles' Chaotix · Chaotix Recompiled",
+    "Repository": "YuutaTsubasa/ChaotixRecompiled",
+    "Platform": "Outras",
+    "AssetPattern": "^ChaotixRecompiled-[0-9.]+-windows-x64\\.zip$",
+    "PlayNames": [
+      "ChaotixRecompiled.exe"
+    ],
+    "ConfigNames": [
+      "ChaotixRecompiled.exe"
+    ],
+    "ArtworkTitle": "Knuckles' Chaotix",
+    "ProjectOnly": false,
+    "ProjectType": "Recompilação",
+    "Kind": "Recompilação",
+    "PackageKind": "Zip",
+    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Jogar e Configurar abrem ChaotixRecompiled.exe; na primeira abertura, prepare seus próprios arquivos no port. Recompilação estática do jogo de 32X com widescreen real. Requer sua própria ROM.",
+    "LinuxAssetPattern": "^ChaotixRecompiled\\-[0-9][0-9A-Za-z.\\-]*\\-linux\\-x64\\.tar\\.gz$",
+    "LinuxPackageKind": "Archive"
+  },
+  {
+    "Id": "crashwoc-nuworld",
+    "Name": "Crash Bandicoot: The Wrath of Cortex · NuWorld",
+    "Repository": "denzi-gh/crashwoc-nuworld",
+    "Platform": "PlayStation 2",
+    "AssetPattern": "^CrashWOC-NuWorld-v[0-9.]+-windows-x64\\.zip$",
+    "PlayNames": [
+      "NuWorld.exe"
+    ],
+    "ConfigNames": [
+      "NuWorld.exe"
+    ],
+    "ArtworkTitle": "Crash Bandicoot: The Wrath of Cortex",
+    "ProjectOnly": false,
+    "ProjectType": "Decompilação",
+    "Kind": "Recompilação",
+    "PackageKind": "Zip",
+    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Jogar e Configurar abrem NuWorld.exe; na primeira abertura, prepare seus próprios arquivos no port. Port nativo feito a partir da decompilação da versão PS2. Requer seu próprio disco.",
+    "LinuxAssetPattern": "^CrashWOC\\-NuWorld\\-v[0-9][0-9A-Za-z.\\-]*\\-linux\\-x86_64\\.tar\\.gz$",
+    "LinuxPackageKind": "Archive"
+  },
+  {
+    "Id": "smb-nes-recomp",
+    "Name": "Super Mario Bros. · NES Recomp",
+    "Repository": "mstan/SuperMarioBrosNESRecomp",
+    "Platform": "Outras",
+    "AssetPattern": "^SuperMarioBrosRecomp-windows-x64\\.zip$",
+    "PlayNames": [
+      "SuperMarioBrosRecomp.exe"
+    ],
+    "ConfigNames": [
+      "SuperMarioBrosRecomp.exe"
+    ],
+    "ArtworkTitle": "Super Mario Bros.",
+    "ProjectOnly": false,
+    "ProjectType": "Recompilação",
+    "Kind": "Recompilação",
+    "PackageKind": "Zip",
+    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Jogar e Configurar abrem SuperMarioBrosRecomp.exe. Recompilação estática do jogo de NES com o nesrecomp. Requer sua própria ROM."
+  },
+  {
+    "Id": "emerald-recomp",
+    "Name": "Pokémon Emerald · Emerald Recomp",
+    "Repository": "mstan/EmeraldRecomp",
+    "Platform": "Game Boy Advance",
+    "AssetPattern": "^EmeraldRecomp-windows-x64-v[0-9.]+\\.zip$",
+    "PlayNames": [
+      "EmeraldRecomp.exe"
+    ],
+    "ConfigNames": [
+      "EmeraldRecomp.exe"
+    ],
+    "ArtworkTitle": "Pokémon Emerald",
+    "ProjectOnly": false,
+    "ProjectType": "Recompilação",
+    "Kind": "Recompilação",
+    "PackageKind": "Zip",
+    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Jogar e Configurar abrem EmeraldRecomp.exe; na primeira abertura, prepare seus próprios arquivos no port. Recompilação estática com o gbarecomp. Requer sua própria ROM.",
+    "LinuxAssetPattern": "^EmeraldRecomp\\-linux\\-x86_64\\-v[0-9][0-9A-Za-z.\\-]*\\.AppImage$",
+    "LinuxPackageKind": "AppImage"
+  },
+  {
+    "Id": "odyssey-recomp",
+    "Name": "Super Mario Odyssey · Odyssey Recomp",
+    "Repository": "rwwo8/OdysseyRecomp",
+    "Platform": "Nintendo Switch",
+    "AssetPattern": "^Odyssey\\.Recomp-[0-9.]+-windows\\.zip$",
+    "PlayNames": [
+      "OdysseyRecomp.exe"
+    ],
+    "ConfigNames": [
+      "OdysseyRecomp.exe"
+    ],
+    "ArtworkTitle": "Super Mario Odyssey",
+    "ProjectOnly": false,
+    "ProjectType": "Recompilação",
+    "Kind": "Recompilação",
+    "PackageKind": "Zip",
+    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Jogar e Configurar abrem OdysseyRecomp.exe; na primeira abertura, prepare seus próprios arquivos no port. Recompilação estática da versão 1.0.0. Requer seu próprio dump.",
+    "LinuxAssetPattern": "^Odyssey\\.Recomp\\-[0-9][0-9A-Za-z.\\-]*\\-linux\\-x86_64\\.tar\\.gz$",
+    "LinuxPackageKind": "Archive"
+  },
+  {
+    "Id": "sonic-riders-recomp",
+    "Name": "Sonic Riders · Sonic Riders Recomp",
+    "Repository": "teclilla18/sonic-riders-recomp",
+    "Platform": "GameCube",
+    "AssetPattern": "^SonicRiders-PC-Setup-v[0-9.]+\\.zip$",
+    "PlayNames": [
+      "SonicRidersLauncher.exe"
+    ],
+    "ConfigNames": [
+      "SonicRidersLauncher.exe"
+    ],
+    "ArtworkTitle": "Sonic Riders",
+    "ProjectOnly": false,
+    "ProjectType": "Recompilação",
+    "Kind": "Recompilação",
+    "PackageKind": "Zip",
+    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Jogar e Configurar abrem SonicRidersLauncher.exe; na primeira abertura, prepare seus próprios arquivos no port. Recompilação estática da versão GameCube. O Setup monta o jogo a partir do seu disco.",
+    "LinuxAssetPattern": "^SonicRiders\\-Linux\\-Setup\\-v[0-9][0-9A-Za-z.\\-]*\\.zip$",
+    "LinuxPackageKind": "Archive"
+  },
+  {
+    "Id": "live-and-recompiled",
+    "Name": "Conker: Live & Reloaded · Live and Recompiled",
+    "Repository": "giacomozama/live-and-recompiled",
+    "Platform": "Xbox",
+    "AssetPattern": "^LiveAndRecompiled-v[0-9.]+-windows-x86_64\\.zip$",
+    "PlayNames": [
+      "setup-windows.exe"
+    ],
+    "ConfigNames": [
+      "setup-windows.exe"
+    ],
+    "ArtworkTitle": "Conker: Live & Reloaded",
+    "ProjectOnly": false,
+    "ProjectType": "Recompilação",
+    "Kind": "Recompilação",
+    "PackageKind": "Zip",
+    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Jogar e Configurar abrem setup-windows.exe; na primeira abertura, prepare seus próprios arquivos no port. Recompilação estática da versão do Xbox original. Requer seu próprio disco.",
+    "LinuxAssetPattern": "^LiveAndRecompiled\\-v[0-9][0-9A-Za-z.\\-]*\\-linux\\-x86_64\\.tar\\.gz$",
+    "LinuxPackageKind": "Archive"
+  },
+  {
+    "Id": "reshadowtower",
+    "Name": "Shadow Tower · ReShadowTower",
+    "Repository": "JFryy/reshadowtower",
+    "Platform": "PlayStation",
+    "AssetPattern": "^ReShadowTower-[0-9.]+-windows-x64-setup\\.exe$",
+    "PlayNames": [],
+    "ConfigNames": [],
+    "ArtworkTitle": "Shadow Tower",
+    "ProjectOnly": false,
+    "ProjectType": "Recompilação",
+    "Kind": "Instalação integrada",
+    "DiscoverExecutable": true,
+    "PackageKind": "Installer",
+    "Notes": "O NEXUS baixa e verifica o instalador oficial, abre o assistente do autor e cadastra o aplicativo que você selecionar ao concluir. Atualizações também usam esse assistente. Recompilação com controles modernos e melhorias gráficas. Requer seu próprio disco.",
+    "LinuxAssetPattern": "^ReShadowTower\\-[0-9][0-9A-Za-z.\\-]*\\-x86_64\\.AppImage$",
+    "LinuxPackageKind": "AppImage"
+  },
+  {
+    "Id": "starcraft64-recomp",
+    "Name": "StarCraft 64 · StarCraft64 Recomp",
+    "Repository": "n0madic/StarCraft64-recomp",
+    "Platform": "Nintendo 64",
+    "AssetPattern": "^StarCraft64-[0-9.]+-launcher-windows-x86_64\\.zip$",
+    "PlayNames": [
+      "StarCraft64.exe"
+    ],
+    "ConfigNames": [
+      "sc64_setup.exe"
+    ],
+    "ArtworkTitle": "StarCraft 64",
+    "ProjectOnly": false,
+    "ProjectType": "Recompilação",
+    "Kind": "Recompilação",
+    "PackageKind": "Zip",
+    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Jogar abre StarCraft64.exe e Configurar abre sc64_setup.exe. Recompilação estática. O launcher pede a sua própria ROM.",
+    "LinuxAssetPattern": "^StarCraft64\\-[0-9][0-9A-Za-z.\\-]*\\-launcher\\-linux\\-x86_64\\.tar\\.gz$",
+    "LinuxPackageKind": "Archive"
+  },
+  {
+    "Id": "nfshp2-port",
+    "Name": "Need for Speed: Hot Pursuit 2 · PS2 Port",
+    "Repository": "ZloiKILLER/nfshp2-port-win",
+    "Platform": "PlayStation 2",
+    "AssetPattern": "^speed\\.exe$",
+    "PlayNames": [
+      "speed.exe"
+    ],
+    "ConfigNames": [
+      "speed.exe"
+    ],
+    "ArtworkTitle": "Need for Speed: Hot Pursuit 2",
+    "ProjectOnly": false,
+    "ProjectType": "Recompilação",
+    "Kind": "Recompilação",
+    "PackageKind": "Executable",
+    "Notes": "O NEXUS baixa o executável portátil oficial. Jogar e Configurar abrem speed.exe. Recompilação da versão PS2 da Black Box. Requer seu próprio disco."
   }
 ]

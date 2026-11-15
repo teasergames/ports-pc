@@ -10234,5 +10234,1091 @@
         }
       ]
     }
+  },
+  {
+    "Repository": "portingpete/The-Darkness-Recomp",
+    "CheckedUtc": "2026-11-15T02:31:11+00:00",
+    "Release": {
+      "tag_name": "v0.1.10",
+      "html_url": "https://github.com/portingpete/The-Darkness-Recomp/releases/tag/v0.1.10",
+      "draft": false,
+      "prerelease": true,
+      "assets": [
+        {
+          "name": "SHA256SUMS.txt",
+          "size": 802,
+          "browser_download_url": "https://github.com/portingpete/The-Darkness-Recomp/releases/download/v0.1.10/SHA256SUMS.txt",
+          "digest": "sha256:9d583d8cd47be0e2aa5f7f1794a62990b26906422e7bc2bcaee356c2e186e171"
+        },
+        {
+          "name": "START_HERE.txt",
+          "size": 6095,
+          "browser_download_url": "https://github.com/portingpete/The-Darkness-Recomp/releases/download/v0.1.10/START_HERE.txt",
+          "digest": "sha256:4cea1e0734f7b52791c0451b6bad49b00c95bcadb518a0a0f1df47b8f339e0f9"
+        },
+        {
+          "name": "The-Darkness-Recomp-v0.1.10-diagnostic-launchers.zip",
+          "size": 1812,
+          "browser_download_url": "https://github.com/portingpete/The-Darkness-Recomp/releases/download/v0.1.10/The-Darkness-Recomp-v0.1.10-diagnostic-launchers.zip",
+          "digest": "sha256:51212776be7ade34a3394a967ef1a8b7e22c1c565524b0178d70583b61a270c7"
+        },
+        {
+          "name": "The-Darkness-Recomp-v0.1.10-diagnostic-launchers.zip.sha256",
+          "size": 120,
+          "browser_download_url": "https://github.com/portingpete/The-Darkness-Recomp/releases/download/v0.1.10/The-Darkness-Recomp-v0.1.10-diagnostic-launchers.zip.sha256",
+          "digest": "sha256:a2332bf0a54ea6b2eedae3d1a2fae3f8e614731691ec42cd4a27fcf51b6855e0"
+        },
+        {
+          "name": "The-Darkness-Recomp-v0.1.10-steam-deck-x86_64.AppImage",
+          "size": 40880632,
+          "browser_download_url": "https://github.com/portingpete/The-Darkness-Recomp/releases/download/v0.1.10/The-Darkness-Recomp-v0.1.10-steam-deck-x86_64.AppImage",
+          "digest": "sha256:ae91e5320a396748a289c5b4495178de345fc2269decea142847048b72c52497"
+        },
+        {
+          "name": "The-Darkness-Recomp-v0.1.10-steam-deck-x86_64.AppImage.sha256",
+          "size": 121,
+          "browser_download_url": "https://github.com/portingpete/The-Darkness-Recomp/releases/download/v0.1.10/The-Darkness-Recomp-v0.1.10-steam-deck-x86_64.AppImage.sha256",
+          "digest": "sha256:44d3135ae1a1f4ab157b7c58a7b2425d3d539ca02257f591a44bd0434461191e"
+        },
+        {
+          "name": "The-Darkness-Recomp-v0.1.10-windows-x64.zip",
+          "size": 41776055,
+          "browser_download_url": "https://github.com/portingpete/The-Darkness-Recomp/releases/download/v0.1.10/The-Darkness-Recomp-v0.1.10-windows-x64.zip",
+          "digest": "sha256:46773f866bbbaac51fec5f958d2dc7dcdc8cc7624503fbee771e7e89eb07dec3"
+        },
+        {
+          "name": "The-Darkness-Recomp-v0.1.10-windows-x64.zip.sha256",
+          "size": 111,
+          "browser_download_url": "https://github.com/portingpete/The-Darkness-Recomp/releases/download/v0.1.10/The-Darkness-Recomp-v0.1.10-windows-x64.zip.sha256",
+          "digest": "sha256:0074ad7fc26f466e22a5df7f8e7e77e9d437fb4be5d9363f97fbf20833275957"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "BlackLabelHQ/MediEvilRecomp",
+    "CheckedUtc": "2026-11-15T02:31:11+00:00",
+    "Release": {
+      "tag_name": "v1.0.4",
+      "html_url": "https://github.com/BlackLabelHQ/MediEvilRecomp/releases/tag/v1.0.4",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "MediEvilRecomp-v1.0.4-linux-x64.tar.gz",
+          "size": 52004538,
+          "browser_download_url": "https://github.com/BlackLabelHQ/MediEvilRecomp/releases/download/v1.0.4/MediEvilRecomp-v1.0.4-linux-x64.tar.gz",
+          "digest": "sha256:7e118bd369f2dfd82c053f8d23f52007e8a7a0c70389a9caec54bea2121fcf69"
+        },
+        {
+          "name": "MediEvilRecomp-v1.0.4-macos-arm64.zip",
+          "size": 47846364,
+          "browser_download_url": "https://github.com/BlackLabelHQ/MediEvilRecomp/releases/download/v1.0.4/MediEvilRecomp-v1.0.4-macos-arm64.zip",
+          "digest": "sha256:df8e1fc4dc9c79e5708e1cb8db37764ba773dc73c651d99730fb8ed2678f6907"
+        },
+        {
+          "name": "MediEvilRecomp-v1.0.4-macos-x64.zip",
+          "size": 51110311,
+          "browser_download_url": "https://github.com/BlackLabelHQ/MediEvilRecomp/releases/download/v1.0.4/MediEvilRecomp-v1.0.4-macos-x64.zip",
+          "digest": "sha256:986c0032bab207f155eac340261a0074a663d324dd1e627c35828732958af44e"
+        },
+        {
+          "name": "MediEvilRecomp-v1.0.4-windows-arm64.zip",
+          "size": 46299870,
+          "browser_download_url": "https://github.com/BlackLabelHQ/MediEvilRecomp/releases/download/v1.0.4/MediEvilRecomp-v1.0.4-windows-arm64.zip",
+          "digest": "sha256:a5088548f96a016163d8f482fccfccca154a52b5be08e0c6894b03219ac0d2a5"
+        },
+        {
+          "name": "MediEvilRecomp-v1.0.4-windows-x64.zip",
+          "size": 48933609,
+          "browser_download_url": "https://github.com/BlackLabelHQ/MediEvilRecomp/releases/download/v1.0.4/MediEvilRecomp-v1.0.4-windows-x64.zip",
+          "digest": "sha256:dc351a0b3131cc2efaee2817f67796a34ca647a6e13d72ede7b7062545ac7520"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "aikatore/recvx-enhanced-port",
+    "CheckedUtc": "2026-11-15T02:31:11+00:00",
+    "Release": {
+      "tag_name": "v0.7.9",
+      "html_url": "https://github.com/aikatore/recvx-enhanced-port/releases/tag/v0.7.9",
+      "draft": false,
+      "prerelease": true,
+      "assets": [
+        {
+          "name": "recvx-enhanced-port-0.7.9-linux-i686-debug.tar.gz",
+          "size": 17151657,
+          "browser_download_url": "https://github.com/aikatore/recvx-enhanced-port/releases/download/v0.7.9/recvx-enhanced-port-0.7.9-linux-i686-debug.tar.gz",
+          "digest": "sha256:5dd0377f024ca33833c4bb7087a1a240f11d006887bf071a153ae0642ee22590"
+        },
+        {
+          "name": "recvx-enhanced-port-0.7.9-linux-i686.tar.gz",
+          "size": 4188163,
+          "browser_download_url": "https://github.com/aikatore/recvx-enhanced-port/releases/download/v0.7.9/recvx-enhanced-port-0.7.9-linux-i686.tar.gz",
+          "digest": "sha256:572f6884d4bbc8f629957efa3924f1ad570657244387fabd98a695c7259fca11"
+        },
+        {
+          "name": "recvx-enhanced-port-0.7.9-windows-x86-debug.zip",
+          "size": 18004213,
+          "browser_download_url": "https://github.com/aikatore/recvx-enhanced-port/releases/download/v0.7.9/recvx-enhanced-port-0.7.9-windows-x86-debug.zip",
+          "digest": "sha256:ac302aa4ca1b6f150e29afcf131fc36aa9958f23fb7cb5a247db87200ce8a528"
+        },
+        {
+          "name": "recvx-enhanced-port-0.7.9-windows-x86.zip",
+          "size": 4275922,
+          "browser_download_url": "https://github.com/aikatore/recvx-enhanced-port/releases/download/v0.7.9/recvx-enhanced-port-0.7.9-windows-x86.zip",
+          "digest": "sha256:8264883b43d18eb7c3b06a49ee037bd71981356abeb3caa76514db95df09e14e"
+        },
+        {
+          "name": "recvx-server-0.7.9-linux-x86_64.tar.gz",
+          "size": 564706,
+          "browser_download_url": "https://github.com/aikatore/recvx-enhanced-port/releases/download/v0.7.9/recvx-server-0.7.9-linux-x86_64.tar.gz",
+          "digest": "sha256:52d68fc25bd69f9c33cf568bd15b0151385e1f8a907d43ef6bc9125956ab03bc"
+        },
+        {
+          "name": "SHA256SUMS",
+          "size": 553,
+          "browser_download_url": "https://github.com/aikatore/recvx-enhanced-port/releases/download/v0.7.9/SHA256SUMS",
+          "digest": "sha256:4d676871099c5b48e96352483cfe08632b63a6efbf7ff398b7b6dc5a8fa6ec89"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "Liondarkz/issn_pc",
+    "CheckedUtc": "2026-11-15T02:31:11+00:00",
+    "Release": {
+      "tag_name": "windows-v0.3.7.4",
+      "html_url": "https://github.com/Liondarkz/issn_pc/releases/tag/windows-v0.3.7.4",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "issn-windows.zip",
+          "size": 123215439,
+          "browser_download_url": "https://github.com/Liondarkz/issn_pc/releases/download/windows-v0.3.7.4/issn-windows.zip",
+          "digest": "sha256:e365113de0dc4d1deb6a5786fc54da3592426ef0c91957a8fc5c556247f5adea"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "solleo95/reuc-recomp",
+    "CheckedUtc": "2026-11-15T02:31:11+00:00",
+    "Release": {
+      "tag_name": "0.4.0",
+      "html_url": "https://github.com/solleo95/reuc-recomp/releases/tag/0.4.0",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "UC-Linux-0.4.0.zip",
+          "size": 36292021,
+          "browser_download_url": "https://github.com/solleo95/reuc-recomp/releases/download/0.4.0/UC-Linux-0.4.0.zip",
+          "digest": "sha256:bdb383a3ccdfbd2ebc417318c84b2e902267c498f31446173d37d9143adb44e3"
+        },
+        {
+          "name": "UC-Windows-0.4.0.zip",
+          "size": 141484747,
+          "browser_download_url": "https://github.com/solleo95/reuc-recomp/releases/download/0.4.0/UC-Windows-0.4.0.zip",
+          "digest": "sha256:4f0dc005cd113260b6dcd74506d00d6944263bff29e1007af5bfbe566576a749"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "Hero88go/melee-unlocked",
+    "CheckedUtc": "2026-11-15T02:31:11+00:00",
+    "Release": {
+      "tag_name": "v0.9.120",
+      "html_url": "https://github.com/Hero88go/melee-unlocked/releases/tag/v0.9.120",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "MeleeUnlocked-0.9.120-compat-win64.zip",
+          "size": 79549598,
+          "browser_download_url": "https://github.com/Hero88go/melee-unlocked/releases/download/v0.9.120/MeleeUnlocked-0.9.120-compat-win64.zip",
+          "digest": "sha256:14498e777a8c189d5d12a67c142a3d5d94ccef96f6007702685c45b2b2bef0e1"
+        },
+        {
+          "name": "MeleeUnlocked-0.9.120-linux-x86_64.tar.gz",
+          "size": 462296533,
+          "browser_download_url": "https://github.com/Hero88go/melee-unlocked/releases/download/v0.9.120/MeleeUnlocked-0.9.120-linux-x86_64.tar.gz",
+          "digest": "sha256:84af08a072628ff3e70136834dfbb06b9d36139bea7d027276aa0646497c5b45"
+        },
+        {
+          "name": "MeleeUnlocked-0.9.120-RTX-Pack.zip",
+          "size": 467271460,
+          "browser_download_url": "https://github.com/Hero88go/melee-unlocked/releases/download/v0.9.120/MeleeUnlocked-0.9.120-RTX-Pack.zip",
+          "digest": "sha256:b043571e1704972cb49ecaf2afb82f6db5214982430b4a3a158495ab26696701"
+        },
+        {
+          "name": "MeleeUnlocked-0.9.120-win64.zip",
+          "size": 453324756,
+          "browser_download_url": "https://github.com/Hero88go/melee-unlocked/releases/download/v0.9.120/MeleeUnlocked-0.9.120-win64.zip",
+          "digest": "sha256:e17e3f5b5e0a6ac3c1a845a0ec30f14bc7c065807d801a835326a06534fce66d"
+        },
+        {
+          "name": "MeleeUnlocked-DLSS5-Model.zip",
+          "size": 188430374,
+          "browser_download_url": "https://github.com/Hero88go/melee-unlocked/releases/download/v0.9.120/MeleeUnlocked-DLSS5-Model.zip",
+          "digest": "sha256:3c7576572e25482408d0c775917753a78575db30249fbac44eca4e2289cd9145"
+        },
+        {
+          "name": "MeleeUnlocked-XeSS.zip",
+          "size": 59668945,
+          "browser_download_url": "https://github.com/Hero88go/melee-unlocked/releases/download/v0.9.120/MeleeUnlocked-XeSS.zip",
+          "digest": "sha256:4fb89b07a3e356daa8152c51f6c46f06acaa66ae41f8c2f799da23dbb50a1249"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "GiZcesi/OpenTricky",
+    "CheckedUtc": "2026-11-15T02:31:11+00:00",
+    "Release": {
+      "tag_name": "v0.1.6",
+      "html_url": "https://github.com/GiZcesi/OpenTricky/releases/tag/v0.1.6",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "OpenTricky-0.1.6-win64.zip",
+          "size": 73111069,
+          "browser_download_url": "https://github.com/GiZcesi/OpenTricky/releases/download/v0.1.6/OpenTricky-0.1.6-win64.zip",
+          "digest": "sha256:4aa84e7a99d593c2c1db97e6b3126ba43e5b6d2dc11e5dc9188a4851e6917d9d"
+        },
+        {
+          "name": "SHA256SUMS.txt",
+          "size": 93,
+          "browser_download_url": "https://github.com/GiZcesi/OpenTricky/releases/download/v0.1.6/SHA256SUMS.txt",
+          "digest": "sha256:5fe9b6eb2aea8bd06b0cff9ecf178015223b8bb763ec49111ce40cc173e844c0"
+        },
+        {
+          "name": "SHA256SUMS.txt.sig",
+          "size": 64,
+          "browser_download_url": "https://github.com/GiZcesi/OpenTricky/releases/download/v0.1.6/SHA256SUMS.txt.sig",
+          "digest": "sha256:7aff570d98b941bb7d19e12ab0f8db39031e9879c5ae83e782ce2c77e20aaa48"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "Petexy/Tekken-Tag-2-Ultimate-Edition",
+    "CheckedUtc": "2026-11-15T02:31:11+00:00",
+    "Release": {
+      "tag_name": "v0.6.2",
+      "html_url": "https://github.com/Petexy/Tekken-Tag-2-Ultimate-Edition/releases/tag/v0.6.2",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "Ultimate_Launcher-x86_64.AppImage",
+          "size": 3660280,
+          "browser_download_url": "https://github.com/Petexy/Tekken-Tag-2-Ultimate-Edition/releases/download/v0.6.2/Ultimate_Launcher-x86_64.AppImage",
+          "digest": "sha256:f1938a8b72edc73ab5688c15705fe92b814adde7d42571fb2997ef2b9ad41c8a"
+        },
+        {
+          "name": "Ultimate_Launcher-x86_64.exe",
+          "size": 9041408,
+          "browser_download_url": "https://github.com/Petexy/Tekken-Tag-2-Ultimate-Edition/releases/download/v0.6.2/Ultimate_Launcher-x86_64.exe",
+          "digest": "sha256:cd36a22691d06b933efd33a413e527eca1416d5a54093ad3dff755928b117f81"
+        },
+        {
+          "name": "Ultimate_Launcher-x86_64.tar.gz",
+          "size": 3084865,
+          "browser_download_url": "https://github.com/Petexy/Tekken-Tag-2-Ultimate-Edition/releases/download/v0.6.2/Ultimate_Launcher-x86_64.tar.gz",
+          "digest": "sha256:2ebd3799eb5a2c0889961d2466f0d496363e816bdea306873d9a269434c653bc"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "Puddz/AstralChain-PC",
+    "CheckedUtc": "2026-11-15T02:31:11+00:00",
+    "Release": {
+      "tag_name": "2026-11-13",
+      "html_url": "https://github.com/Puddz/AstralChain-PC/releases/tag/2026-11-13",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "AstralChain-PC-2026-11-13.zip",
+          "size": 6949753,
+          "browser_download_url": "https://github.com/Puddz/AstralChain-PC/releases/download/2026-11-13/AstralChain-PC-2026-11-13.zip",
+          "digest": "sha256:baea5f331dd54f6727c4d73b357be8ecd205d084dda9d72d83f7057d7e7179c7"
+        },
+        {
+          "name": "AstralChain-PC-dlss-fsr-2026-11-13.zip",
+          "size": 6997923,
+          "browser_download_url": "https://github.com/Puddz/AstralChain-PC/releases/download/2026-11-13/AstralChain-PC-dlss-fsr-2026-11-13.zip",
+          "digest": "sha256:d1185e8d5ef7d4e791cbb1ea6453655b17227206ad477b9ed67507235a7d32b3"
+        },
+        {
+          "name": "AstralChain-PC-texture-dump-2026-11-13.zip",
+          "size": 6967014,
+          "browser_download_url": "https://github.com/Puddz/AstralChain-PC/releases/download/2026-11-13/AstralChain-PC-texture-dump-2026-11-13.zip",
+          "digest": "sha256:61fd9bf2fa18a5faa1d2db2b404f5aacd09ac1458cdd4de61736937cfe8bf258"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "holdmysocks/rusty-mcla",
+    "CheckedUtc": "2026-11-15T02:31:11+00:00",
+    "Release": {
+      "tag_name": "v0.22.0",
+      "html_url": "https://github.com/holdmysocks/rusty-mcla/releases/tag/v0.22.0",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "game-0.22.0.zip",
+          "size": 70336732,
+          "browser_download_url": "https://github.com/holdmysocks/rusty-mcla/releases/download/v0.22.0/game-0.22.0.zip",
+          "digest": "sha256:80567583e4874eece57792907d32983686eb5c89cef1cc47db241ed80a0200ef"
+        },
+        {
+          "name": "manifest.json",
+          "size": 2246,
+          "browser_download_url": "https://github.com/holdmysocks/rusty-mcla/releases/download/v0.22.0/manifest.json",
+          "digest": "sha256:0e1deb3be870cd19903d6e08b5178c9264a0cd2b1b393bdf7d600eebfd1238d6"
+        },
+        {
+          "name": "manifest.unsigned.json",
+          "size": 1956,
+          "browser_download_url": "https://github.com/holdmysocks/rusty-mcla/releases/download/v0.22.0/manifest.unsigned.json",
+          "digest": "sha256:a9946c34eeff670d2e7bdeb78f61c2ff692c30cc6e553f6e299b4db5719dac7b"
+        },
+        {
+          "name": "RustyMCLA.exe",
+          "size": 8869376,
+          "browser_download_url": "https://github.com/holdmysocks/rusty-mcla/releases/download/v0.22.0/RustyMCLA.exe",
+          "digest": "sha256:fe2fab7c6a697c22632ee7e88b94c2f0bd672f03e524a19148124c04f533ae6a"
+        },
+        {
+          "name": "SHA256SUMS.txt",
+          "size": 163,
+          "browser_download_url": "https://github.com/holdmysocks/rusty-mcla/releases/download/v0.22.0/SHA256SUMS.txt",
+          "digest": "sha256:445580963a455eca979513e9b41e20957cad5f507e93d2cd10a4983fd4eedf98"
+        },
+        {
+          "name": "THIRD-PARTY-NOTICES.md",
+          "size": 784372,
+          "browser_download_url": "https://github.com/holdmysocks/rusty-mcla/releases/download/v0.22.0/THIRD-PARTY-NOTICES.md",
+          "digest": "sha256:fea7d14a23955e3c25d5dc85c1f1255a1b21045f068035d1a4788f192c808784"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "Project-Holon/eidos",
+    "CheckedUtc": "2026-11-15T02:31:11+00:00",
+    "Release": {
+      "tag_name": "v0.2.5",
+      "html_url": "https://github.com/Project-Holon/eidos/releases/tag/v0.2.5",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "eidos-0.2.5-linux-x86_64.AppImage",
+          "size": 14735864,
+          "browser_download_url": "https://github.com/Project-Holon/eidos/releases/download/v0.2.5/eidos-0.2.5-linux-x86_64.AppImage",
+          "digest": "sha256:7cf2f1d7a7f3c14b11a3b473801f60728bb8b79136cc0b236e110fdb76aa3535"
+        },
+        {
+          "name": "eidos-0.2.5-macos.zip",
+          "size": 12008039,
+          "browser_download_url": "https://github.com/Project-Holon/eidos/releases/download/v0.2.5/eidos-0.2.5-macos.zip",
+          "digest": "sha256:f29d2dc17906c9922bbe2d75569b3ee756c20901bae10d304c97ebcafb7a4bb5"
+        },
+        {
+          "name": "eidos-0.2.5-switch.zip",
+          "size": 12125545,
+          "browser_download_url": "https://github.com/Project-Holon/eidos/releases/download/v0.2.5/eidos-0.2.5-switch.zip",
+          "digest": "sha256:4bcc55d3ce157389c72827062af19d8fc10d981144614318d94f8b9f5446336e"
+        },
+        {
+          "name": "eidos-0.2.5-vita.vpk",
+          "size": 7801530,
+          "browser_download_url": "https://github.com/Project-Holon/eidos/releases/download/v0.2.5/eidos-0.2.5-vita.vpk",
+          "digest": "sha256:1618f15919a12321ed55c6e6d1564208b127d6ee7dbd7be594f3c5cb635c16f0"
+        },
+        {
+          "name": "eidos-0.2.5-windows.zip",
+          "size": 14245720,
+          "browser_download_url": "https://github.com/Project-Holon/eidos/releases/download/v0.2.5/eidos-0.2.5-windows.zip",
+          "digest": "sha256:6ac76c24093cd3c3278c34c3ddd589d78cf6d6c2ede2a68d1b7f7597374d861c"
+        },
+        {
+          "name": "eidos-android.apk",
+          "size": 70741460,
+          "browser_download_url": "https://github.com/Project-Holon/eidos/releases/download/v0.2.5/eidos-android.apk",
+          "digest": "sha256:7dca71b083d73c5c8bc4917ee3ba5892561310590e67bfc648ff948acee7403d"
+        },
+        {
+          "name": "eidos-ios.ipa",
+          "size": 11962855,
+          "browser_download_url": "https://github.com/Project-Holon/eidos/releases/download/v0.2.5/eidos-ios.ipa",
+          "digest": "sha256:6e854838e34cf760acfa59de22913d0a5e3934d2c6d18fa9298f501c76a72a46"
+        },
+        {
+          "name": "eidos-launcher-linux-x86_64.AppImage",
+          "size": 85088760,
+          "browser_download_url": "https://github.com/Project-Holon/eidos/releases/download/v0.2.5/eidos-launcher-linux-x86_64.AppImage",
+          "digest": "sha256:ed0e338a6632baf03383e2f8f2776363a36b58dbd25a6e64c4f926b5ae83e876"
+        },
+        {
+          "name": "eidos-launcher-macos.app.tar.gz",
+          "size": 6372646,
+          "browser_download_url": "https://github.com/Project-Holon/eidos/releases/download/v0.2.5/eidos-launcher-macos.app.tar.gz",
+          "digest": "sha256:4b290446b97c14549826b6484bfc77d68b53c389a82df0ad112184b1b94ba1ae"
+        },
+        {
+          "name": "eidos-launcher-macos.dmg",
+          "size": 6760831,
+          "browser_download_url": "https://github.com/Project-Holon/eidos/releases/download/v0.2.5/eidos-launcher-macos.dmg",
+          "digest": "sha256:5b6d40015de439a4570ccab491e91ccb8c4ce0e251ecbdac46ee4b203fc288aa"
+        },
+        {
+          "name": "eidos-launcher-windows-setup.exe",
+          "size": 3917131,
+          "browser_download_url": "https://github.com/Project-Holon/eidos/releases/download/v0.2.5/eidos-launcher-windows-setup.exe",
+          "digest": "sha256:d5b02142fbc709392412a44fb4a50e19fd1bdbdec4163292753d266e3573a67f"
+        },
+        {
+          "name": "latest.json",
+          "size": 1942,
+          "browser_download_url": "https://github.com/Project-Holon/eidos/releases/download/v0.2.5/latest.json",
+          "digest": "sha256:4c289dfb813ab06e1539d1440874cdd004a9a56849c07699e7e3fa48fb9d6f02"
+        },
+        {
+          "name": "SHA256SUMS",
+          "size": 1009,
+          "browser_download_url": "https://github.com/Project-Holon/eidos/releases/download/v0.2.5/SHA256SUMS",
+          "digest": "sha256:93dabab932b387fc6c20022cc136bba6545c66d127997dbd6625ec8f99229d17"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "cheviman/tmnt-port",
+    "CheckedUtc": "2026-11-15T02:31:11+00:00",
+    "Release": {
+      "tag_name": "v1.0.6",
+      "html_url": "https://github.com/cheviman/tmnt-port/releases/tag/v1.0.6",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "tmnt-anbernic.zip",
+          "size": 8626377,
+          "browser_download_url": "https://github.com/cheviman/tmnt-port/releases/download/v1.0.6/tmnt-anbernic.zip",
+          "digest": "sha256:94b0fe9f735783abba6bb3fa3dd238024c17af30eda1ec89c049bd41588fc869"
+        },
+        {
+          "name": "tmnt-android.zip",
+          "size": 10467428,
+          "browser_download_url": "https://github.com/cheviman/tmnt-port/releases/download/v1.0.6/tmnt-android.zip",
+          "digest": "sha256:7b526b1e6a09d0c3611d102ffec1fa0a9b32ea7807aa88f4bf738de654443010"
+        },
+        {
+          "name": "tmnt-arcade-macos-universal.zip",
+          "size": 3997797,
+          "browser_download_url": "https://github.com/cheviman/tmnt-port/releases/download/v1.0.6/tmnt-arcade-macos-universal.zip",
+          "digest": "sha256:d1a8939110f79df2d861c73a6166f1a451fb50c47bce934b16fe84c834104eac"
+        },
+        {
+          "name": "tmnt-linux-x64.tar.gz",
+          "size": 4280555,
+          "browser_download_url": "https://github.com/cheviman/tmnt-port/releases/download/v1.0.6/tmnt-linux-x64.tar.gz",
+          "digest": "sha256:66e4acda0b8acc2fe284a6c993414a3419d70875331bc27210ab95896fb3de9e"
+        },
+        {
+          "name": "tmnt-macos-universal.zip",
+          "size": 4165150,
+          "browser_download_url": "https://github.com/cheviman/tmnt-port/releases/download/v1.0.6/tmnt-macos-universal.zip",
+          "digest": "sha256:6bd87ba961a6ec7a083a5c9b0270732526a35cc559db81d1788cdca340260bf6"
+        },
+        {
+          "name": "tmnt-switch.zip",
+          "size": 18875478,
+          "browser_download_url": "https://github.com/cheviman/tmnt-port/releases/download/v1.0.6/tmnt-switch.zip",
+          "digest": "sha256:0993a33c0e8405bce19d3e0735a227ab2610ec6806a63a817b6178ae06f5eff9"
+        },
+        {
+          "name": "tmnt-windows-x64.zip",
+          "size": 2910663,
+          "browser_download_url": "https://github.com/cheviman/tmnt-port/releases/download/v1.0.6/tmnt-windows-x64.zip",
+          "digest": "sha256:30cf9f2a63030634c7820c85eaeaffb5b70bbe4888a388dced2769586422448b"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "vfjoo888/SuperWonders",
+    "CheckedUtc": "2026-11-15T02:31:11+00:00",
+    "Release": {
+      "tag_name": "v0.4.0",
+      "html_url": "https://github.com/vfjoo888/SuperWonders/releases/tag/v0.4.0",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "SuperWonders-v0.4.0-Linux-x64.AppImage",
+          "size": 200747512,
+          "browser_download_url": "https://github.com/vfjoo888/SuperWonders/releases/download/v0.4.0/SuperWonders-v0.4.0-Linux-x64.AppImage",
+          "digest": "sha256:9988f7c0b2a46475d7fa46f2f8427e73d2f3b04187848a4bc807e3aed56c857d"
+        },
+        {
+          "name": "SuperWonders-v0.4.0-Linux-x64.tar.gz",
+          "size": 303294973,
+          "browser_download_url": "https://github.com/vfjoo888/SuperWonders/releases/download/v0.4.0/SuperWonders-v0.4.0-Linux-x64.tar.gz",
+          "digest": "sha256:fd344a93c8073c32de8751eb5ee1ca773aad03dbdc521c7a67a3c80ae83f921d"
+        },
+        {
+          "name": "SuperWonders-v0.4.0-Windows-x64.zip",
+          "size": 136159901,
+          "browser_download_url": "https://github.com/vfjoo888/SuperWonders/releases/download/v0.4.0/SuperWonders-v0.4.0-Windows-x64.zip",
+          "digest": "sha256:95c20739dd7f41c0331c0ac25e446f145cd17f41f3c61a7ab3dd0aacb5983e36"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "CaiusCodes/GoldenEye-007-XBLA-PC-Recomp",
+    "CheckedUtc": "2026-11-15T02:31:11+00:00",
+    "Release": {
+      "tag_name": "v0.9.7c",
+      "html_url": "https://github.com/CaiusCodes/GoldenEye-007-XBLA-PC-Recomp/releases/tag/v0.9.7c",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "GoldenEye-007-XBLA-PC-Recomp-v0.9.7c.zip",
+          "size": 25992987,
+          "browser_download_url": "https://github.com/CaiusCodes/GoldenEye-007-XBLA-PC-Recomp/releases/download/v0.9.7c/GoldenEye-007-XBLA-PC-Recomp-v0.9.7c.zip",
+          "digest": "sha256:c7f2c57888b9d1488ca15a9c469249f5e5ef2aa799a54f655cd2f3505c4b90e6"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "bhuiyah/infamous2-recomp",
+    "CheckedUtc": "2026-11-15T02:31:11+00:00",
+    "Release": {
+      "tag_name": "v0.1.40",
+      "html_url": "https://github.com/bhuiyah/infamous2-recomp/releases/tag/v0.1.40",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "inFamous2Launcher.exe",
+          "size": 178688,
+          "browser_download_url": "https://github.com/bhuiyah/infamous2-recomp/releases/download/v0.1.40/inFamous2Launcher.exe",
+          "digest": "sha256:8a93b9828587aea4b682fb3c3c2a6caa022bddedfc26d8f5179c78e868e962ec"
+        },
+        {
+          "name": "inFamous2Recomp-v0.1.40-windows.zip",
+          "size": 5221788,
+          "browser_download_url": "https://github.com/bhuiyah/infamous2-recomp/releases/download/v0.1.40/inFamous2Recomp-v0.1.40-windows.zip",
+          "digest": "sha256:45081a4ac5ca6e7f8857063d1ff8606ffcf7ab63c6973ccca5eee76c3f156be5"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "galarianpikachu2021-hue/Racing-8-DX-Recomp",
+    "CheckedUtc": "2026-11-15T02:31:11+00:00",
+    "Release": {
+      "tag_name": "v0.2.4",
+      "html_url": "https://github.com/galarianpikachu2021-hue/Racing-8-DX-Recomp/releases/tag/v0.2.4",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "KartRecomp-windows-x64.zip",
+          "size": 213289258,
+          "browser_download_url": "https://github.com/galarianpikachu2021-hue/Racing-8-DX-Recomp/releases/download/v0.2.4/KartRecomp-windows-x64.zip",
+          "digest": "sha256:8a54f6404037ef1fb913acd47ca7a069d6cc9d90822a65a0d63ed52970db411a"
+        },
+        {
+          "name": "KartRecomp-windows-x64.zip.sha256",
+          "size": 93,
+          "browser_download_url": "https://github.com/galarianpikachu2021-hue/Racing-8-DX-Recomp/releases/download/v0.2.4/KartRecomp-windows-x64.zip.sha256",
+          "digest": "sha256:60d6fddd35e5e8714e74c8bdbd775f1ee911e50041e0a2204679546eddd395e3"
+        },
+        {
+          "name": "Racing_8_DX_Recomp-x86_64.AppImage",
+          "size": 198191608,
+          "browser_download_url": "https://github.com/galarianpikachu2021-hue/Racing-8-DX-Recomp/releases/download/v0.2.4/Racing_8_DX_Recomp-x86_64.AppImage",
+          "digest": "sha256:5ca28f228165a07c0a794532a597a1e34fa65e08cc89fdf934e7208f0b0cbdcd"
+        },
+        {
+          "name": "Racing_8_DX_Recomp-x86_64.AppImage.sha256",
+          "size": 101,
+          "browser_download_url": "https://github.com/galarianpikachu2021-hue/Racing-8-DX-Recomp/releases/download/v0.2.4/Racing_8_DX_Recomp-x86_64.AppImage.sha256",
+          "digest": "sha256:2535f8ae20d5ed10acc5235a420b3ece78e672b45c9869e609c83408b7ab4b24"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "zer0ducksgiven/Forza-Motorsport-2-ReGPU",
+    "CheckedUtc": "2026-11-15T02:31:11+00:00",
+    "Release": {
+      "tag_name": "v0.12.1",
+      "html_url": "https://github.com/zer0ducksgiven/Forza-Motorsport-2-ReGPU/releases/tag/v0.12.1",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "FM2-0.12.1-patch.zip",
+          "size": 54352050,
+          "browser_download_url": "https://github.com/zer0ducksgiven/Forza-Motorsport-2-ReGPU/releases/download/v0.12.1/FM2-0.12.1-patch.zip",
+          "digest": "sha256:569ebe6e1a812bc842c6234d3402023d4805d64712f3252241d721d552906c3e"
+        },
+        {
+          "name": "FM2-Linux-0.12.1.tar.gz",
+          "size": 142859629,
+          "browser_download_url": "https://github.com/zer0ducksgiven/Forza-Motorsport-2-ReGPU/releases/download/v0.12.1/FM2-Linux-0.12.1.tar.gz",
+          "digest": "sha256:971a4b3d48f06d712ff14870c22d90cb05bfdddfe6195f9c9fec60c7e72da51b"
+        },
+        {
+          "name": "FM2-Setup-0.12.1.exe",
+          "size": 103950845,
+          "browser_download_url": "https://github.com/zer0ducksgiven/Forza-Motorsport-2-ReGPU/releases/download/v0.12.1/FM2-Setup-0.12.1.exe",
+          "digest": "sha256:2c98f11f226e6067ce9b3b5f8e9a71b4916f999f092d9b4a0142996c7bbf0712"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "khasinski/parasite-eve-pc",
+    "CheckedUtc": "2026-11-15T02:31:11+00:00",
+    "Release": {
+      "tag_name": "0.12",
+      "html_url": "https://github.com/khasinski/parasite-eve-pc/releases/tag/0.12",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "Parasite-Eve-0.12-linux-arm64.tar.gz",
+          "size": 14217044,
+          "browser_download_url": "https://github.com/khasinski/parasite-eve-pc/releases/download/0.12/Parasite-Eve-0.12-linux-arm64.tar.gz",
+          "digest": "sha256:074d5cfaa37f5a9cd19bfe3c846fcf8b89e17a21ba8027cf8fd22699416e29ac"
+        },
+        {
+          "name": "Parasite-Eve-0.12-linux-x86_64.tar.gz",
+          "size": 14880597,
+          "browser_download_url": "https://github.com/khasinski/parasite-eve-pc/releases/download/0.12/Parasite-Eve-0.12-linux-x86_64.tar.gz",
+          "digest": "sha256:5b6fd5b40091f8180fecfe653356b7a531d4f642dcf9a85c939b5f3d03f832bf"
+        },
+        {
+          "name": "Parasite-Eve-0.12-macos-arm64.zip",
+          "size": 15229191,
+          "browser_download_url": "https://github.com/khasinski/parasite-eve-pc/releases/download/0.12/Parasite-Eve-0.12-macos-arm64.zip",
+          "digest": "sha256:2d5a652c1cb50e864c5613e1104ba4b9833be1045d71264afd2dadcacfd96da4"
+        },
+        {
+          "name": "Parasite-Eve-0.12-windows-x86_64-experimental.zip",
+          "size": 18031277,
+          "browser_download_url": "https://github.com/khasinski/parasite-eve-pc/releases/download/0.12/Parasite-Eve-0.12-windows-x86_64-experimental.zip",
+          "digest": "sha256:b25ddc00613c0e52a56dd8b5e6d922a95e417a5e6e8956a1a2522e76dff36b15"
+        },
+        {
+          "name": "Parasite-Eve-Save-Editor-0.12-linux-arm64.tar.gz",
+          "size": 7709456,
+          "browser_download_url": "https://github.com/khasinski/parasite-eve-pc/releases/download/0.12/Parasite-Eve-Save-Editor-0.12-linux-arm64.tar.gz",
+          "digest": "sha256:e98e447ed7d228604d7a097ce3d91066f5bbb595d16956edb6cf9eea0e564587"
+        },
+        {
+          "name": "Parasite-Eve-Save-Editor-0.12-linux-x86_64.tar.gz",
+          "size": 7706251,
+          "browser_download_url": "https://github.com/khasinski/parasite-eve-pc/releases/download/0.12/Parasite-Eve-Save-Editor-0.12-linux-x86_64.tar.gz",
+          "digest": "sha256:d591306d6ad4a839eae6d587a1e5e6158f32fabf606309acdcae964a243dee8f"
+        },
+        {
+          "name": "Parasite-Eve-Save-Editor-0.12-windows-x86_64.zip",
+          "size": 4061788,
+          "browser_download_url": "https://github.com/khasinski/parasite-eve-pc/releases/download/0.12/Parasite-Eve-Save-Editor-0.12-windows-x86_64.zip",
+          "digest": "sha256:05078d24423c6531fb72fd81aa439021a0d72947bfee14b544383e924d324bd5"
+        },
+        {
+          "name": "SHA256SUMS",
+          "size": 769,
+          "browser_download_url": "https://github.com/khasinski/parasite-eve-pc/releases/download/0.12/SHA256SUMS",
+          "digest": "sha256:38828b21a568bf7bfbc6c4a2f6536cf9bcbbf9626ac5b9b400d4c88254a46347"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "thefixinhixon/UltraCombo",
+    "CheckedUtc": "2026-11-15T02:31:11+00:00",
+    "Release": {
+      "tag_name": "v1.2.6",
+      "html_url": "https://github.com/thefixinhixon/UltraCombo/releases/tag/v1.2.6",
+      "draft": false,
+      "prerelease": true,
+      "assets": [
+        {
+          "name": "UltraCombo-Linux.tar.xz",
+          "size": 45010200,
+          "browser_download_url": "https://github.com/thefixinhixon/UltraCombo/releases/download/v1.2.6/UltraCombo-Linux.tar.xz",
+          "digest": "sha256:80c1d06799ee2b91f68797dc7b22dab2e591c5cdc74f919bcf84275e1e8625c6"
+        },
+        {
+          "name": "UltraCombo-Windows.zip",
+          "size": 79061755,
+          "browser_download_url": "https://github.com/thefixinhixon/UltraCombo/releases/download/v1.2.6/UltraCombo-Windows.zip",
+          "digest": "sha256:da79e7a91ea189d9756a78491d0b01958117a4bcae76210c356ff450a7202faa"
+        },
+        {
+          "name": "UltraCombo-x86_64.AppImage",
+          "size": 55310840,
+          "browser_download_url": "https://github.com/thefixinhixon/UltraCombo/releases/download/v1.2.6/UltraCombo-x86_64.AppImage",
+          "digest": "sha256:13bc333ce083d624d8aead5740278ec9a8e1004ab105fa0d9bd8023f19603e12"
+        },
+        {
+          "name": "UltraCombo-x86_64.AppImage.zsync",
+          "size": 189279,
+          "browser_download_url": "https://github.com/thefixinhixon/UltraCombo/releases/download/v1.2.6/UltraCombo-x86_64.AppImage.zsync",
+          "digest": "sha256:4f5c2adf07ea4a8e4c4f22b5e0931fa733535a4ec6fd6b8c19e1470863ee795b"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "YuutaTsubasa/ChaotixRecompiled",
+    "CheckedUtc": "2026-11-15T02:31:11+00:00",
+    "Release": {
+      "tag_name": "v0.15.22",
+      "html_url": "https://github.com/YuutaTsubasa/ChaotixRecompiled/releases/tag/v0.15.22",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "ChaotixRecompiled-0.15.22-android-armeabi-v7a.apk",
+          "size": 12174853,
+          "browser_download_url": "https://github.com/YuutaTsubasa/ChaotixRecompiled/releases/download/v0.15.22/ChaotixRecompiled-0.15.22-android-armeabi-v7a.apk",
+          "digest": "sha256:62e99745fc771276d78a3e1052ed171a29bec6f57402f24cb26e156d944f2ff2"
+        },
+        {
+          "name": "ChaotixRecompiled-0.15.22-android.apk",
+          "size": 33110024,
+          "browser_download_url": "https://github.com/YuutaTsubasa/ChaotixRecompiled/releases/download/v0.15.22/ChaotixRecompiled-0.15.22-android.apk",
+          "digest": "sha256:add32be1e518c44be489f46e35443f6f037c3ac8f51206b23dd07db388630b61"
+        },
+        {
+          "name": "ChaotixRecompiled-0.15.22-ios-arm64.ipa",
+          "size": 6111338,
+          "browser_download_url": "https://github.com/YuutaTsubasa/ChaotixRecompiled/releases/download/v0.15.22/ChaotixRecompiled-0.15.22-ios-arm64.ipa",
+          "digest": "sha256:f220b15feb296f3335e8d7fcd8374608032f02a746c5b250d901aafc2f1ce58d"
+        },
+        {
+          "name": "ChaotixRecompiled-0.15.22-linux-x64.tar.gz",
+          "size": 5364153,
+          "browser_download_url": "https://github.com/YuutaTsubasa/ChaotixRecompiled/releases/download/v0.15.22/ChaotixRecompiled-0.15.22-linux-x64.tar.gz",
+          "digest": "sha256:02fc17216adb3408758f9460f31d4d49c6d8af305ffe44c40ae54be48b073d06"
+        },
+        {
+          "name": "ChaotixRecompiled-0.15.22-macos-arm64.zip",
+          "size": 5224299,
+          "browser_download_url": "https://github.com/YuutaTsubasa/ChaotixRecompiled/releases/download/v0.15.22/ChaotixRecompiled-0.15.22-macos-arm64.zip",
+          "digest": "sha256:55cbb1fed7895126a32fe6f7e636011c0cc0918b4354fa4b0d5d3eb0ea03abdc"
+        },
+        {
+          "name": "ChaotixRecompiled-0.15.22-windows-x64.zip",
+          "size": 9882340,
+          "browser_download_url": "https://github.com/YuutaTsubasa/ChaotixRecompiled/releases/download/v0.15.22/ChaotixRecompiled-0.15.22-windows-x64.zip",
+          "digest": "sha256:e5b03f24aa629f2af6dcf788fcd70450dc3d1ecfd6d4b4b17cafaca1d8588a3d"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "denzi-gh/crashwoc-nuworld",
+    "CheckedUtc": "2026-11-15T02:31:11+00:00",
+    "Release": {
+      "tag_name": "v0.8.1",
+      "html_url": "https://github.com/denzi-gh/crashwoc-nuworld/releases/tag/v0.8.1",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "CrashWOC-NuWorld-v0.8.1-linux-x86_64.tar.gz",
+          "size": 4729530,
+          "browser_download_url": "https://github.com/denzi-gh/crashwoc-nuworld/releases/download/v0.8.1/CrashWOC-NuWorld-v0.8.1-linux-x86_64.tar.gz",
+          "digest": "sha256:bd7e005d4a1f0bd76fd8bfb4c8e9517713c00602bf074fa16de2dc77cf1f028a"
+        },
+        {
+          "name": "CrashWOC-NuWorld-v0.8.1-windows-x64.zip",
+          "size": 4664937,
+          "browser_download_url": "https://github.com/denzi-gh/crashwoc-nuworld/releases/download/v0.8.1/CrashWOC-NuWorld-v0.8.1-windows-x64.zip",
+          "digest": "sha256:9a8a05c4744c56dc1c21fd1ebe58714f74fd11cef543c937c3e75dd54e3f957f"
+        },
+        {
+          "name": "SHA256SUMS",
+          "size": 216,
+          "browser_download_url": "https://github.com/denzi-gh/crashwoc-nuworld/releases/download/v0.8.1/SHA256SUMS",
+          "digest": "sha256:9e226cfb3951e7538d54344cacb5528904f6f19e391913a26e63332f0f4e3a71"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "mstan/SuperMarioBrosNESRecomp",
+    "CheckedUtc": "2026-11-15T02:31:11+00:00",
+    "Release": {
+      "tag_name": "v1.12.8",
+      "html_url": "https://github.com/mstan/SuperMarioBrosNESRecomp/releases/tag/v1.12.8",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "BUILDINFO-v1.12.8.json",
+          "size": 1039,
+          "browser_download_url": "https://github.com/mstan/SuperMarioBrosNESRecomp/releases/download/v1.12.8/BUILDINFO-v1.12.8.json",
+          "digest": "sha256:84d38b9b211adbbcedbe999eb9887a12c7bb2a3acd549a105da0fe9263f6193d"
+        },
+        {
+          "name": "SHA256SUMS-v1.12.8.txt",
+          "size": 194,
+          "browser_download_url": "https://github.com/mstan/SuperMarioBrosNESRecomp/releases/download/v1.12.8/SHA256SUMS-v1.12.8.txt",
+          "digest": "sha256:0511c1efe71af319421099068a6ec31867cf4dc13e9c1d78414ce41def9bcfde"
+        },
+        {
+          "name": "SuperMarioBrosRecomp-windows-x64.zip",
+          "size": 34692096,
+          "browser_download_url": "https://github.com/mstan/SuperMarioBrosNESRecomp/releases/download/v1.12.8/SuperMarioBrosRecomp-windows-x64.zip",
+          "digest": "sha256:7ae713ffbe4d3de2b5225269fd477c7d1b35d5c22ef558faea0924b563fb582d"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "mstan/EmeraldRecomp",
+    "CheckedUtc": "2026-11-15T02:31:11+00:00",
+    "Release": {
+      "tag_name": "v0.1.7",
+      "html_url": "https://github.com/mstan/EmeraldRecomp/releases/tag/v0.1.7",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "BUILDINFO-v0.1.7.json",
+          "size": 5215,
+          "browser_download_url": "https://github.com/mstan/EmeraldRecomp/releases/download/v0.1.7/BUILDINFO-v0.1.7.json",
+          "digest": "sha256:689082b538254e5caad0db9e68a7f98ca59fb566e709b21b09c680d0ccc4d268"
+        },
+        {
+          "name": "EmeraldRecomp-android-arm64-v0.1.7.apk",
+          "size": 60637240,
+          "browser_download_url": "https://github.com/mstan/EmeraldRecomp/releases/download/v0.1.7/EmeraldRecomp-android-arm64-v0.1.7.apk",
+          "digest": "sha256:4c181b3d372c568e550a0bec29ea827689ddeb23a273c5685235839b4db12ac5"
+        },
+        {
+          "name": "EmeraldRecomp-linux-x86_64-v0.1.7.AppImage",
+          "size": 78162424,
+          "browser_download_url": "https://github.com/mstan/EmeraldRecomp/releases/download/v0.1.7/EmeraldRecomp-linux-x86_64-v0.1.7.AppImage",
+          "digest": "sha256:758694068b3fc189df1433e2c201e3b064960e8c625192b2101101864cd3fae3"
+        },
+        {
+          "name": "EmeraldRecomp-windows-x64-v0.1.7.zip",
+          "size": 83231175,
+          "browser_download_url": "https://github.com/mstan/EmeraldRecomp/releases/download/v0.1.7/EmeraldRecomp-windows-x64-v0.1.7.zip",
+          "digest": "sha256:a12790eb11eb08816c7e2c187334c5f40552eff4458aa19c579df940624c203b"
+        },
+        {
+          "name": "SHA256SUMS-v0.1.7.txt",
+          "size": 409,
+          "browser_download_url": "https://github.com/mstan/EmeraldRecomp/releases/download/v0.1.7/SHA256SUMS-v0.1.7.txt",
+          "digest": "sha256:517dd6746f639c810dd6c8c706de4b255dc4b5d039d443aff0ec149d601717a3"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "rwwo8/OdysseyRecomp",
+    "CheckedUtc": "2026-11-15T02:31:11+00:00",
+    "Release": {
+      "tag_name": "0.2.5",
+      "html_url": "https://github.com/rwwo8/OdysseyRecomp/releases/tag/0.2.5",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "Odyssey.Recomp-0.2.5-linux-x86_64.tar.gz",
+          "size": 162283306,
+          "browser_download_url": "https://github.com/rwwo8/OdysseyRecomp/releases/download/0.2.5/Odyssey.Recomp-0.2.5-linux-x86_64.tar.gz",
+          "digest": "sha256:5636bd0d08f5e9d93a6debdd2dfa05e745f6cfff4a0163602ef17436a7e04643"
+        },
+        {
+          "name": "Odyssey.Recomp-0.2.5-windows.zip",
+          "size": 85937011,
+          "browser_download_url": "https://github.com/rwwo8/OdysseyRecomp/releases/download/0.2.5/Odyssey.Recomp-0.2.5-windows.zip",
+          "digest": "sha256:336e247793b9a77dd788b9b8169a562bafaa6e6cee65f1181c57d77da0289d44"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "teclilla18/sonic-riders-recomp",
+    "CheckedUtc": "2026-11-15T02:31:11+00:00",
+    "Release": {
+      "tag_name": "v0.8.3",
+      "html_url": "https://github.com/teclilla18/sonic-riders-recomp/releases/tag/v0.8.3",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "SonicRiders-Android-Setup-v0.8.3.zip",
+          "size": 5325764,
+          "browser_download_url": "https://github.com/teclilla18/sonic-riders-recomp/releases/download/v0.8.3/SonicRiders-Android-Setup-v0.8.3.zip",
+          "digest": "sha256:c3a55944f8251f5f11163a44919f9372ea957cf9f25f9b59e94bdfd5e1c0f66a"
+        },
+        {
+          "name": "SonicRiders-Linux-Setup-v0.8.3.zip",
+          "size": 4498082,
+          "browser_download_url": "https://github.com/teclilla18/sonic-riders-recomp/releases/download/v0.8.3/SonicRiders-Linux-Setup-v0.8.3.zip",
+          "digest": "sha256:6f3f46c49149e76566cd0591b9447c8da72d5f1f994e43dbbe10a8c32d50ca15"
+        },
+        {
+          "name": "SonicRiders-PC-Setup-v0.8.3.zip",
+          "size": 5323420,
+          "browser_download_url": "https://github.com/teclilla18/sonic-riders-recomp/releases/download/v0.8.3/SonicRiders-PC-Setup-v0.8.3.zip",
+          "digest": "sha256:a4a31d51bafb02cd5f8dc27c4f8f62fd27ee44ea7877ef0973c702069a011496"
+        },
+        {
+          "name": "SonicRiders-Switch-Setup-v0.8.3.zip",
+          "size": 5325051,
+          "browser_download_url": "https://github.com/teclilla18/sonic-riders-recomp/releases/download/v0.8.3/SonicRiders-Switch-Setup-v0.8.3.zip",
+          "digest": "sha256:cd411fcf347f7fdd3c85e09f1147af8868e28398e729f1db9edff9431c0e88d6"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "giacomozama/live-and-recompiled",
+    "CheckedUtc": "2026-11-15T02:31:11+00:00",
+    "Release": {
+      "tag_name": "v4.0.0",
+      "html_url": "https://github.com/giacomozama/live-and-recompiled/releases/tag/v4.0.0",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "LiveAndRecompiled-v4.0.0-linux-x86_64.tar.gz",
+          "size": 66346853,
+          "browser_download_url": "https://github.com/giacomozama/live-and-recompiled/releases/download/v4.0.0/LiveAndRecompiled-v4.0.0-linux-x86_64.tar.gz",
+          "digest": "sha256:28c63ccd419379f53a574889a94525eea177654b7bd7919087b90a2a4b0d28bc"
+        },
+        {
+          "name": "LiveAndRecompiled-v4.0.0-windows-x86_64.zip",
+          "size": 99787395,
+          "browser_download_url": "https://github.com/giacomozama/live-and-recompiled/releases/download/v4.0.0/LiveAndRecompiled-v4.0.0-windows-x86_64.zip",
+          "digest": "sha256:ebaee5c05ac958868f9b9891e9fd98aa4ee07886ff7de2bfdb44ec1c30b5951f"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "JFryy/reshadowtower",
+    "CheckedUtc": "2026-11-15T02:31:11+00:00",
+    "Release": {
+      "tag_name": "v0.3.1",
+      "html_url": "https://github.com/JFryy/reshadowtower/releases/tag/v0.3.1",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "ReShadowTower-0.3.1-windows-x64-setup.exe",
+          "size": 152151835,
+          "browser_download_url": "https://github.com/JFryy/reshadowtower/releases/download/v0.3.1/ReShadowTower-0.3.1-windows-x64-setup.exe",
+          "digest": "sha256:bc4a34a1a781b5ddf95104844dda895b0b4b02f857593e5e144863837941415f"
+        },
+        {
+          "name": "ReShadowTower-0.3.1-windows-x64-setup.exe.sha256",
+          "size": 109,
+          "browser_download_url": "https://github.com/JFryy/reshadowtower/releases/download/v0.3.1/ReShadowTower-0.3.1-windows-x64-setup.exe.sha256",
+          "digest": "sha256:b327db498bb437200e73667c3e8f5a71e85f5871695cf701d957d621b3d6de49"
+        },
+        {
+          "name": "ReShadowTower-0.3.1-x86_64.AppImage",
+          "size": 273705464,
+          "browser_download_url": "https://github.com/JFryy/reshadowtower/releases/download/v0.3.1/ReShadowTower-0.3.1-x86_64.AppImage",
+          "digest": "sha256:0bb11777b997599c74c6b3560f8d855ea13f8f6f4ffcab0c1b7f1c4689689a04"
+        },
+        {
+          "name": "ReShadowTower-0.3.1-x86_64.AppImage.sha256",
+          "size": 102,
+          "browser_download_url": "https://github.com/JFryy/reshadowtower/releases/download/v0.3.1/ReShadowTower-0.3.1-x86_64.AppImage.sha256",
+          "digest": "sha256:8c7a934073e3b34d87ae2067b68f2b486cc8ffb709da4a43ee640640d10dc4cf"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "n0madic/StarCraft64-recomp",
+    "CheckedUtc": "2026-11-15T02:31:11+00:00",
+    "Release": {
+      "tag_name": "v0.2.0",
+      "html_url": "https://github.com/n0madic/StarCraft64-recomp/releases/tag/v0.2.0",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "SHA256SUMS.txt",
+          "size": 445,
+          "browser_download_url": "https://github.com/n0madic/StarCraft64-recomp/releases/download/v0.2.0/SHA256SUMS.txt",
+          "digest": "sha256:1391f40a7a6a2317087b41606ee3fe26941a465aeb3b1a5c0c33d5eccb8dd1e3"
+        },
+        {
+          "name": "StarCraft64-0.2.0-launcher-android-arm64.apk",
+          "size": 8217410,
+          "browser_download_url": "https://github.com/n0madic/StarCraft64-recomp/releases/download/v0.2.0/StarCraft64-0.2.0-launcher-android-arm64.apk",
+          "digest": "sha256:2b33f3aaffe8ced646f860e4e2459b28f933f90ddce4ce80ab573d2301645b9e"
+        },
+        {
+          "name": "StarCraft64-0.2.0-launcher-linux-x86_64.tar.gz",
+          "size": 7313118,
+          "browser_download_url": "https://github.com/n0madic/StarCraft64-recomp/releases/download/v0.2.0/StarCraft64-0.2.0-launcher-linux-x86_64.tar.gz",
+          "digest": "sha256:efd35d8b6eca6116d23daf2fe0cbee49b21196a52847e38ab4c1bc17ac5300ab"
+        },
+        {
+          "name": "StarCraft64-0.2.0-launcher-macos-arm64.zip",
+          "size": 4084443,
+          "browser_download_url": "https://github.com/n0madic/StarCraft64-recomp/releases/download/v0.2.0/StarCraft64-0.2.0-launcher-macos-arm64.zip",
+          "digest": "sha256:ebdf5adb1966a3bba702b91e0feaa43d08104394129ed27ac223767703ff83ab"
+        },
+        {
+          "name": "StarCraft64-0.2.0-launcher-windows-x86_64.zip",
+          "size": 6892597,
+          "browser_download_url": "https://github.com/n0madic/StarCraft64-recomp/releases/download/v0.2.0/StarCraft64-0.2.0-launcher-windows-x86_64.zip",
+          "digest": "sha256:273596e9169c22afca1100f744716d6665678a5427a28b076a2191028591b70b"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "ZloiKILLER/nfshp2-port-win",
+    "CheckedUtc": "2026-11-15T02:31:11+00:00",
+    "Release": {
+      "tag_name": "0.13",
+      "html_url": "https://github.com/ZloiKILLER/nfshp2-port-win/releases/tag/0.13",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "speed.exe",
+          "size": 28354048,
+          "browser_download_url": "https://github.com/ZloiKILLER/nfshp2-port-win/releases/download/0.13/speed.exe",
+          "digest": "sha256:3e985020f6f67e1086080d7320b73176cd9a1bd34fcae2d093e73ceeddb9d15e"
+        }
+      ]
+    }
   }
 ]

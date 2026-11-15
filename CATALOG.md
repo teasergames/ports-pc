@@ -4,6 +4,44 @@
 
 - **Torchlight (Xbox 360) · Recompiled** (`retrogameworld/TorchlightRecomp`): o pacote `Torchlight-Recompiled-v1.0.zip` é marcado como malicioso por 11 de 66 antivírus no VirusTotal (Trojan.Lazy), com sinais de ofuscação e de detecção de depurador. A conta e o repositório foram criados em 03 e 04/11 e o repositório não tem código-fonte. Se você instalou esse pacote, apague a pasta dele e rode uma verificação completa do antivírus.
 
+## Novos ports e recomps — 14/11/2026 (2ª leva)
+
+29 fontes novas com Release publicada entre 11/11 e 14/11. Todas têm download e atualização integrados, e 19 também têm build Linux nativa. A checagem de segurança é a mesma das listas anteriores: código-fonte publicado, conta do autor com mais de um mês, pacote enviado pelo autor ou pelo GitHub Actions, SHA-256 na Release e índice dos ZIPs lido remotamente. Os scripts que fazem download baixam só do próprio projeto ou de fontes oficiais.
+
+| Plataforma | Projeto | Release | Jogar | Linux |
+|---|---|---|---|---|
+| Game Boy Advance | [Pokémon Emerald · Emerald Recomp](https://github.com/mstan/EmeraldRecomp) | v0.1.7 | `EmeraldRecomp.exe` | sim |
+| GameCube | [Sonic Riders · Sonic Riders Recomp](https://github.com/teclilla18/sonic-riders-recomp) | v0.8.3 | `SonicRidersLauncher.exe` | sim |
+| GameCube | [Super Smash Bros. Melee · Melee Unlocked](https://github.com/Hero88go/melee-unlocked) | v0.9.120 | `MeleeUnlockedLauncher.exe` | sim |
+| Nintendo 64 | [StarCraft 64 · StarCraft64 Recomp](https://github.com/n0madic/StarCraft64-recomp) | v0.2.0 | `StarCraft64.exe` | sim |
+| Nintendo DS | [Pokémon Black e White · Eidos](https://github.com/Project-Holon/eidos) | v0.2.5 | `eidos.exe` | sim |
+| Nintendo Switch | [Astral Chain · AstralChain-PC](https://github.com/Puddz/AstralChain-PC) | 2026-11-13 | `Astral Chain Launcher.exe` | — |
+| Nintendo Switch | [Mario Kart 8 Deluxe · Racing 8 DX Recomp](https://github.com/galarianpikachu2021-hue/Racing-8-DX-Recomp) | v0.2.4 | `kartrecomp.exe` | sim |
+| Nintendo Switch | [Super Mario Bros. Wonder · SuperWonders](https://github.com/vfjoo888/SuperWonders) | v0.4.0 | `wonder.exe` | sim |
+| Nintendo Switch | [Super Mario Odyssey · Odyssey Recomp](https://github.com/rwwo8/OdysseyRecomp) | 0.2.5 | `OdysseyRecomp.exe` | sim |
+| Outras | [Killer Instinct (arcade) · UltraCombo](https://github.com/thefixinhixon/UltraCombo) | v1.2.6 (pré-release) | `UltraCombo.exe` | sim |
+| Outras | [Knuckles' Chaotix · Chaotix Recompiled](https://github.com/YuutaTsubasa/ChaotixRecompiled) | v0.15.22 | `ChaotixRecompiled.exe` | sim |
+| Outras | [Super Mario Bros. · NES Recomp](https://github.com/mstan/SuperMarioBrosNESRecomp) | v1.12.8 | `SuperMarioBrosRecomp.exe` | — |
+| Outras | [Teenage Mutant Ninja Turtles (arcade) · TMNT Port](https://github.com/cheviman/tmnt-port) | v1.0.6 | `TMNT.exe` | sim |
+| PlayStation | [MediEvil · MediEvil Recomp](https://github.com/BlackLabelHQ/MediEvilRecomp) | v1.0.4 | `medievil.exe` | sim |
+| PlayStation | [Parasite Eve · PC Port](https://github.com/khasinski/parasite-eve-pc) | 0.12 | `parasite-eve-pc.exe` | sim |
+| PlayStation | [Shadow Tower · ReShadowTower](https://github.com/JFryy/reshadowtower) | v0.3.1 | assistente do autor | sim |
+| PlayStation 2 | [Crash Bandicoot: The Wrath of Cortex · NuWorld](https://github.com/denzi-gh/crashwoc-nuworld) | v0.8.1 | `NuWorld.exe` | sim |
+| PlayStation 2 | [Need for Speed: Hot Pursuit 2 · PS2 Port](https://github.com/ZloiKILLER/nfshp2-port-win) | 0.13 | `speed.exe` | — |
+| PlayStation 2 | [Resident Evil Code: Veronica X · Enhanced Port](https://github.com/aikatore/recvx-enhanced-port) | v0.7.9 (pré-release) | `recvx.exe` | — |
+| PlayStation 3 | [inFAMOUS 2 · inFamous2 Recomp](https://github.com/bhuiyah/infamous2-recomp) | v0.1.40 | `inFamous2Launcher.exe` | — |
+| PlayStation 4 | [inFAMOUS Second Son · ISSN PC](https://github.com/Liondarkz/issn_pc) | windows-v0.3.7.4 | `Play inFAMOUS Second Son.exe` | — |
+| Wii | [Resident Evil: The Umbrella Chronicles · REUC Recomp](https://github.com/solleo95/reuc-recomp) | 0.4.0 | `uc_launcher.exe` | sim |
+| Wii U | [Tekken Tag Tournament 2 · Ultimate Edition](https://github.com/Petexy/Tekken-Tag-2-Ultimate-Edition) | v0.6.2 | `Ultimate_Launcher-x86_64.exe` | sim |
+| Xbox | [Conker: Live & Reloaded · Live and Recompiled](https://github.com/giacomozama/live-and-recompiled) | v4.0.0 | `setup-windows.exe` | sim |
+| Xbox | [SSX Tricky · OpenTricky](https://github.com/GiZcesi/OpenTricky) | v0.1.6 | `OpenTricky.exe` | — |
+| Xbox 360 | [Forza Motorsport 2 · ReGPU](https://github.com/zer0ducksgiven/Forza-Motorsport-2-ReGPU) | v0.12.1 | assistente do autor | sim |
+| Xbox 360 | [GoldenEye 007 (XBLA) · XBLA PC Recomp](https://github.com/CaiusCodes/GoldenEye-007-XBLA-PC-Recomp) | v0.9.7c | `GoldenEye 007.exe` | — |
+| Xbox 360 | [Midnight Club: Los Angeles · Rusty MCLA](https://github.com/holdmysocks/rusty-mcla) | v0.22.0 | `RustyMCLA.exe` | — |
+| Xbox 360 | [The Darkness · The Darkness Recomp](https://github.com/portingpete/The-Darkness-Recomp) | v0.1.10 (pré-release) | `DarkRecomp.exe` | — |
+
+Ficaram de fora: projetos de contas com menos de um mês (Metroid: Samus Returns, Ratchet & Clank 1, Parasite Eve II, PROTOTYPE e SplatPC); o SpeedBreaker, cuja Release estável só traz build Linux; o The Legend of Zelda de NES, que só publica uma prévia; e projetos só para Android, iOS, macOS, PS Vita, Switch ou Meta Quest.
+
 ## Novos ports e recomps — 14/11/2026
 
 23 fontes novas publicadas entre 10/11 e 14/11, com a mesma checagem de segurança da lista anterior (código-fonte publicado, pacote enviado pelo autor ou pelo GitHub Actions, SHA-256 na Release e índice dos ZIPs lido remotamente). 21 têm download e atualização integrados, e 9 delas também têm build Linux nativa.
@@ -127,7 +165,7 @@ Ficaram de fora: o **Portable Ops+**, que sai na mesma Release do Portable Ops e
 
 Ficaram de fora: projetos só para macOS, Android, PS4/PS5 com desbloqueio ou homebrew de Switch; Metroid Prime 4 do linuxopt (só AppImage, sem pacote Windows); Arceuszada (só .rar); Battlefield: Bad Company (ZIP da Release corrompido); PES 2017 PRO17PORT (origem não confirmada); Woohoo! Flight School (apenas kit de build em pré-release); e recomps ainda sem Release, como os de Ocarina of Time do jaigner-hub, Chiuauaa e Mars7x.
 
-Total do catálogo: **449 fontes**, **415 perfis GitHub integrados**, **1 importação oficial** e **33 exceções**; **87** com build Linux.
+Total do catálogo: **478 fontes**, **444 perfis GitHub integrados**, **1 importação oficial** e **33 exceções**; **106** com build Linux.
 
 ## Repositórios renomeados — 04/11/2026
 

@@ -320,10 +320,38 @@ public sealed class MainWindow : Window
         ToolTip.SetTip(button, game.Name);
         button.Click += (_, _) => Select(game);
         button.DoubleTapped += (_, _) => { Select(game); Start(false); };
+        button.AddHandler(PointerReleasedEvent, (_, e) =>
+        {
+            if (e.InitialPressMouseButton != MouseButton.Right) return;
+            e.Handled = true; Select(game); GameMenu(game).ShowAt(this, true);
+        }, Avalonia.Interactivity.RoutingStrategies.Tunnel | Avalonia.Interactivity.RoutingStrategies.Bubble, true);
         return button;
     }
 
     void Select(Game game) { selected = game; RefreshGrid(); RefreshHero(); }
+
+    // Right-click on a card: the hero actions and the "⋯" menu, bound to that game.
+    MenuFlyout GameMenu(Game game)
+    {
+        var flyout = new MenuFlyout();
+        MenuItem Item(string header, Action action) { var item = new MenuItem { Header = header }; item.Click += (_, _) => { if (!Library.Games.Contains(game)) return; selected = game; action(); }; flyout.Items.Add(item); return item; }
+        bool managed = !string.IsNullOrEmpty(game.CatalogId);
+        var entry = managed ? Catalog.Entries.FirstOrDefault(e => e.Id == game.CatalogId) : null;
+        Item("Jogar", () => Start(false));
+        if (!string.IsNullOrWhiteSpace(game.ConfigurationExecutable)) Item("Configurar", () => Start(true));
+        Item(game.Favorite ? "Remover dos favoritos" : "Favoritar", () => Commit(() => game.Favorite = !game.Favorite));
+        flyout.Items.Add(new Separator());
+        if (entry is not null) Item("Abrir projeto", () => Try(() => Launch.OpenUrl(entry.ProjectUrl)));
+        Item("Abrir pasta do port", () => Try(() => Launch.OpenFolder(game.ManagedInstallationRoot ?? Path.GetDirectoryName(game.Executable)!)));
+        if (entry is not null) Item("Atualizar port", () => ShowCatalog(CatalogTab.All, entry));
+        Item("Editar cadastro…", async () => await Edit(game));
+        Item("Buscar capa oficial", () => { game.Cover = null; game.CoverSource = null; coverRequests.Remove(game.Id); _ = FetchCover(game, true); });
+        flyout.Items.Add(new Separator());
+        Item("Remover da biblioteca…", async () => { if (await Dialogs.Confirm(this, "Remover " + game.Name + " da biblioteca? Os arquivos do jogo são preservados.", "Remover")) Commit(() => Library.Games.Remove(game)); });
+        if (managed && !string.IsNullOrEmpty(game.ManagedInstallationRoot)) Item("Desinstalar port…", async () => await Uninstall());
+        return flyout;
+    }
+
 
     void RefreshHero()
     {

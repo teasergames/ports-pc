@@ -183,6 +183,35 @@ namespace Nexus {
     void Save(){store.Save(library);}
     void Status(string text){if(!closing)Find<TextBlock>("StatusLabel").Text=text;}
     static void OpenMenu(Button button){var menu=button.ContextMenu;menu.PlacementTarget=button;menu.Placement=PlacementMode.Bottom;menu.IsOpen=true;}
+    // Right-click (or the Menu key) on a card: the same actions as the hero buttons and the "More" menu, for that game.
+    void ShowGameMenu(UIElement target){
+      if(selected==null)return;Game game=selected;var menu=new ContextMenu();
+      if(target!=null){menu.PlacementTarget=target;menu.Placement=PlacementMode.Bottom;}else{menu.PlacementTarget=Window;menu.Placement=PlacementMode.MousePoint;}
+      Item(menu,"Jogar",delegate{Launch();});
+      if(Find<Button>("ConfigureButton").Visibility==Visibility.Visible)Item(menu,"Configurar",delegate{Configure();});
+      Item(menu,game.Favorite?"Remover dos favoritos":"Favoritar",delegate{ToggleFavorite();});
+      menu.Items.Add(new Separator());
+      PortEntry profile=Profile(game);
+      if(profile!=null)Item(menu,"Abrir projeto",delegate{OpenUrl(profile.ProjectUrl);});
+      Item(menu,"Abrir pasta do port",delegate{OpenFolder();});
+      if(updatable.Contains(game.Id))Item(menu,"Atualizar port…",delegate{OpenCatalog(CatalogTab.Updates);});
+      Item(menu,"Editar cadastro",delegate{Edit();});
+      if(PortMove.Supports(game))Item(menu,"Mover para outra pasta…",delegate{MovePort();});
+      Item(menu,"Buscar artwork novamente",delegate{ResolveArtwork(game);ResolveCover(game);});
+      menu.Items.Add(new Separator());
+      Item(menu,"Remover da coleção",delegate{RemoveFromCollection();});
+      var delete=Item(menu,"Excluir port e arquivos…",delegate{DeletePort();});var danger=Window.TryFindResource("Danger") as Brush;if(danger!=null)delete.Foreground=danger;
+      menu.IsOpen=true;
+    }
+    MenuItem Item(ContextMenu menu,string header,Action action){
+      Game game=selected;var item=new MenuItem{Header=header};
+      // Each action runs on the game the menu was opened for, even if the selection changed meanwhile.
+      item.Click+=delegate{if(!library.Games.Contains(game))return;selected=game;action();};menu.Items.Add(item);return item;
+    }
+    void OpenUrl(string url){
+      try{Process.Start(new ProcessStartInfo(url){UseShellExecute=true});}
+      catch(Exception ex){Status("Não foi possível abrir o projeto: "+ex.Message);}
+    }
 
     public void Refresh(){
       bool has=selected!=null;
@@ -303,6 +332,7 @@ namespace Nexus {
       AutomationProperties.SetName(button,"Selecionar "+g.Name);Game current=g;
       button.Click+=delegate{Select(current,false);};
       button.MouseDoubleClick+=delegate{Select(current,false);Launch();};
+      button.PreviewMouseRightButtonUp+=delegate(object s,MouseButtonEventArgs e){e.Handled=true;Select(current,false);ShowGameMenu(null);};
       return button;
     }
     void Select(Game game,bool focus){
@@ -324,6 +354,7 @@ namespace Nexus {
         case Key.Up:if(Move(-Columns()))e.Handled=true;break;
         case Key.Down:if(Move(Columns()))e.Handled=true;break;
         case Key.Enter:if((onCard||focused==null)&&selected!=null){Launch();e.Handled=true;}break;
+        case Key.Apps:if(onCard&&selected!=null){ShowGameMenu(focused);e.Handled=true;}break;
       }
     }
     void OnPad(PadButton button){

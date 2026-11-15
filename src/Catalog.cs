@@ -16,7 +16,7 @@ namespace Nexus {
   public class PortEntry {
     public string Id {get;set;}public string Name {get;set;}public string Repository {get;set;}public string AssetPattern {get;set;}
     public string ConfigurationArguments {get;set;}public string[] PlayNames {get;set;}public string[] ConfigNames {get;set;}public string Arguments {get;set;}public string ArtworkTitle {get;set;}public string Notes {get;set;}
-    public string Platform {get;set;}public string Kind {get;set;}public bool ProjectOnly {get;set;}
+    public string Platform {get;set;}public string Console {get;set;}public string Kind {get;set;}public bool ProjectOnly {get;set;}
     public bool AllowPrerelease {get;set;}public bool ManualPackage {get;set;}public string SourceUrl {get;set;}
     public bool DiscoverExecutable {get;set;}public string PackageKind {get;set;}
     public bool PreferRootExecutable {get;set;}public bool UsesInstaller {get{return PackageKind=="Installer"||PackageKind=="InstallerZip";}}
@@ -100,6 +100,8 @@ namespace Nexus {
         if (e.ManualPackage && (e.ProjectOnly || !TrustedManualSources.Contains(e.SourceUrl) || String.IsNullOrEmpty(e.ManualPackageFile)))
           throw new InvalidDataException("Fonte externa inválida.");
         if (!Platforms.All.Skip(1).Contains(e.Platform)) throw new InvalidDataException("Plataforma inválida.");
+        // Consoles added after 1.8.2 travel in Console, with Platform "Outras", so older versions still accept the catalog.
+        if (e.Console != null) { if ((e.Platform != "Outras" && e.Platform != e.Console) || !Platforms.All.Skip(1).Contains(e.Console)) throw new InvalidDataException("Console inválido: " + e.Id); e.Platform = e.Console; }
         if (!ProjectTypes.All.Contains(e.ProjectType)) throw new InvalidDataException("Tipo de projeto inválido: " + e.Id);
         if (!PackageKinds.Contains(e.PackageKind)) throw new InvalidDataException("Formato de pacote desconhecido: " + e.Id);
         if (e.MinNexusVersion != null) SelfUpdater.StableVersion(e.MinNexusVersion);

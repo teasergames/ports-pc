@@ -58,6 +58,9 @@ try
     string sample = "[{\"Id\":\"game\",\"Name\":\"Game\",\"Repository\":\"owner/game\",\"Platform\":\"Nintendo 64\",\"ProjectType\":\"Recompilação\",\"AssetPattern\":\"^game-windows\\\\.zip$\",\"PlayNames\":[],\"ConfigNames\":[],\"LinuxAssetPattern\":\"^game-.*-linux\\\\.tar\\\\.gz$\",\"LinuxPackageKind\":\"Archive\"}]";
     var parsed = Catalog.Parse(sample).Single();
     Check(parsed.HasLinux && parsed.LinuxPackageKind == "Archive", "sample Linux profile parses");
+    Check(Catalog.Parse(sample.Replace("\"Platform\":\"Nintendo 64\"", "\"Platform\":\"Outras\",\"Console\":\"Arcade\"")).Single().Platform == "Arcade", "Console moves a profile out of Outras");
+    Reject(() => Catalog.Parse(sample.Replace("\"Platform\":\"Nintendo 64\"", "\"Platform\":\"Nintendo 64\",\"Console\":\"Arcade\"")), "Console requires Platform Outras");
+    Check(catalog.Entries.First(e => e.Id == "astrobot-pc").Platform == "PlayStation 5", "embedded catalog applies Console");
     Reject(() => Catalog.Parse(sample.Replace("\"Archive\"", "\"Deb\"")), "unknown Linux package kind");
     Reject(() => Catalog.Parse(sample.Replace("\"Archive\"", "\"AppImage\"")), "AppImage kind needs AppImage pattern");
     Reject(() => Catalog.Parse(sample.Replace("linux\\\\.tar\\\\.gz$", "linux\\\\.deb$")), "archive pattern must end in a supported format");

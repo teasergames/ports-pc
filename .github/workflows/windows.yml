@@ -26,20 +26,24 @@ jobs:
           $testData = Join-Path $env:RUNNER_TEMP 'nexus-smoke'
           New-Item -ItemType Directory -Path $testData -Force | Out-Null
           $fixtureExe = (Resolve-Path ./dist/Nexus/Nexus.exe).Path
-          $platforms = @('PlayStation 4','PlayStation 3','PlayStation 2','PlayStation','PSP','Xbox','Xbox 360','Xbox One','Nintendo Switch','Nintendo 64','GameCube','Wii','Wii U','Super Nintendo','Game Boy','Game Boy Advance','Nintendo DS','Dreamcast','Outras')
+          $platforms = @('PlayStation 5','PlayStation 4','PlayStation 3','PlayStation 2','PlayStation','PSP','Xbox','Xbox 360','Xbox One','Nintendo Switch','Nintendo 64','GameCube','Wii','Wii U','Super Nintendo','Game Boy','Game Boy Advance','Nintendo DS','Nintendo 3DS','NES','Mega Drive','Sega 32X','Dreamcast','Arcade','PC','Mobile','Outras')
           $fixtures = foreach ($platform in $platforms) { @{Id=[guid]::NewGuid().ToString('N');Name="Fixture $platform";Executable=$fixtureExe;Platform=$platform;ConfigurationExecutable=$(if ($platform -eq 'PlayStation 4') {$fixtureExe} else {$null})} }
           @{Version=1;Games=@($fixtures);OnlineArtwork=$false} | ConvertTo-Json -Depth 5 | Set-Content (Join-Path $testData 'library.json') -Encoding utf8
           $image = Join-Path $env:RUNNER_TEMP 'nexus-preview.png'
           foreach ($viewCase in @(@('grid',140),@('grid',340),@('list',48),@('list',132))) {
+            Remove-Item $image -ErrorAction SilentlyContinue
             $process = Start-Process ./dist/Nexus/Nexus.exe -ArgumentList @('--data-dir', "`"$testData`"", '--smoke-test', "`"$image`"", '--preview-view', $viewCase[0], '--preview-size', $viewCase[1]) -Wait -PassThru -WindowStyle Hidden
             if ($process.ExitCode -ne 0 -or !(Test-Path $image)) { throw 'Interface smoke test failed' }
           }
+          Remove-Item $image -ErrorAction SilentlyContinue
           $catalog = Start-Process ./dist/Nexus/Nexus.exe -ArgumentList @('--data-dir', "`"$testData`"", '--smoke-test', "`"$image`"", '--catalog-smoke') -Wait -PassThru -WindowStyle Hidden
           if ($catalog.ExitCode -ne 0 -or !(Test-Path $image)) { throw 'Catalog smoke test failed' }
           foreach ($mode in @('--updates-smoke','--package-smoke','--self-update-smoke','--removal-smoke','--install-location-smoke','--move-smoke')) {
+            Remove-Item $image -ErrorAction SilentlyContinue
             $extra = Start-Process ./dist/Nexus/Nexus.exe -ArgumentList @('--data-dir', "`"$testData`"", '--smoke-test', "`"$image`"", $mode) -Wait -PassThru -WindowStyle Hidden
             if ($extra.ExitCode -ne 0 -or !(Test-Path $image)) { throw "Installer/update interface smoke failed: $mode" }
           }
+          Remove-Item $image -ErrorAction SilentlyContinue
           $content = Start-Process ./dist/Nexus/Nexus.exe -ArgumentList @('--data-dir', "`"$testData`"", '--smoke-test', "`"$image`"", '--content-smoke') -Wait -PassThru -WindowStyle Hidden
           if ($content.ExitCode -ne 0 -or !(Test-Path $image)) { throw 'Content setup smoke test failed' }
       - name: Validate launcher update handoff and rollback

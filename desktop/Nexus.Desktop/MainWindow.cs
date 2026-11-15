@@ -53,6 +53,7 @@ public sealed class MainWindow : Window
     {
         instanceLock = new FileStream(Path.Combine(Store.Root, "native.lock"), FileMode.OpenOrCreate, FileAccess.ReadWrite, FileShare.None);
         Library = Store.Load();
+        RefinePlatforms();
         Title = "NEXUS · Ports PC"; Width = 1280; Height = 820; MinWidth = 960; MinHeight = 620; Background = Ui.Background;
         try { using var icon = typeof(MainWindow).Assembly.GetManifestResourceStream("Nexus.icon.png"); if (icon is not null) Icon = new WindowIcon(icon); } catch (Exception) { }
         Closed += (_, _) => { shutdown.Cancel(); foreach (var b in thumbnails.Values) b.Dispose(); Catalog.Dispose(); instanceLock.Dispose(); };
@@ -153,7 +154,7 @@ public sealed class MainWindow : Window
     {
         try
         {
-            if (!Program.Offline && await Catalog.RefreshFromRemote(Store.Root, Token)) catalogView.Reload();
+            if (!Program.Offline && await Catalog.RefreshFromRemote(Store.Root, Token)) { catalogView.Reload(); RefinePlatforms(); RefreshGrid(); }
             catalogView.UpdateBadges();
         }
         catch (Exception ex) when (ex is not OperationCanceledException) { }
@@ -329,6 +330,13 @@ public sealed class MainWindow : Window
     }
 
     void Select(Game game) { selected = game; RefreshGrid(); RefreshHero(); }
+
+    // Games installed while their console was still filed under "Outras" move to the console the catalog now names.
+    void RefinePlatforms()
+    {
+        foreach (var game in Library.Games.Where(g => g.Platform == "Outras" && !string.IsNullOrEmpty(g.CatalogId)))
+            if (Catalog.Entries.FirstOrDefault(e => e.Id == game.CatalogId) is { Platform: not "Outras" } entry) game.Platform = entry.Platform;
+    }
 
     // Right-click on a card: the hero actions and the "⋯" menu, bound to that game.
     MenuFlyout GameMenu(Game game)

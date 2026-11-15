@@ -16,6 +16,10 @@
       "Platform": {
         "enum": ["PlayStation 4", "PlayStation 3", "PlayStation 2", "PlayStation", "PSP", "Xbox", "Xbox 360", "Xbox One", "Nintendo Switch", "Nintendo 64", "GameCube", "Wii", "Wii U", "Super Nintendo", "Game Boy", "Game Boy Advance", "Nintendo DS", "Dreamcast", "Outras"]
       },
+      "Console": {
+        "description": "Console mais específico que Platform, para versões 1.8.3+. Exige Platform \"Outras\", que versões antigas continuam aceitando.",
+        "enum": ["PlayStation 5", "PlayStation 4", "PlayStation 3", "PlayStation 2", "PlayStation", "PSP", "Xbox", "Xbox 360", "Xbox One", "Nintendo Switch", "Nintendo 64", "GameCube", "Wii", "Wii U", "NES", "Super Nintendo", "Game Boy", "Game Boy Advance", "Nintendo DS", "Nintendo 3DS", "Mega Drive", "Sega 32X", "Dreamcast", "Arcade", "PC", "Mobile"]
+      },
       "ProjectType": { "enum": ["Port", "Recompilação", "Decompilação", "Reimplementação", "Compatibilidade"] },
       "Kind": { "type": "string", "description": "Rótulo livre exibido nas notas; o filtro usa ProjectType e o modo de instalação." },
       "PackageKind": { "enum": [null, "Zip", "Installer", "Executable", "InstallerZip"] },

@@ -4,17 +4,20 @@ using System.IO;
 using System.Collections.Generic;
 namespace Nexus {
   public static class Platforms {
-    public static readonly string[] All={"Todas as plataformas","PlayStation 4","PlayStation 3","PlayStation 2","PlayStation","PSP","Xbox","Xbox 360","Xbox One","Nintendo Switch","Nintendo 64","GameCube","Wii","Wii U","Super Nintendo","Game Boy","Game Boy Advance","Nintendo DS","Dreamcast","Outras"};
+    public static readonly string[] All={"Todas as plataformas","PlayStation 5","PlayStation 4","PlayStation 3","PlayStation 2","PlayStation","PSP","Xbox","Xbox 360","Xbox One","Nintendo Switch","Nintendo 64","GameCube","Wii","Wii U","NES","Super Nintendo","Game Boy","Game Boy Advance","Nintendo DS","Nintendo 3DS","Mega Drive","Sega 32X","Dreamcast","Arcade","PC","Mobile","Outras"};
+    // Platforms every NEXUS version accepts in a profile's Platform field; newer ones go in Console (see PortCatalog.Parse).
+    public static readonly string[] Legacy={"PlayStation 4","PlayStation 3","PlayStation 2","PlayStation","PSP","Xbox","Xbox 360","Xbox One","Nintendo Switch","Nintendo 64","GameCube","Wii","Wii U","Super Nintendo","Game Boy","Game Boy Advance","Nintendo DS","Dreamcast","Outras"};
     static readonly Dictionary<string,string> shortNames=new Dictionary<string,string>{
-      {"PlayStation 4","PS4"},{"PlayStation 3","PS3"},{"PlayStation 2","PS2"},{"PlayStation","PS1"},{"PSP","PSP"},
+      {"PlayStation 5","PS5"},{"PlayStation 4","PS4"},{"PlayStation 3","PS3"},{"PlayStation 2","PS2"},{"PlayStation","PS1"},{"PSP","PSP"},
       {"Xbox","Xbox"},{"Xbox 360","X360"},{"Xbox One","XB1"},{"Nintendo Switch","Switch"},{"Nintendo 64","N64"},
       {"GameCube","GC"},{"Wii","Wii"},{"Wii U","Wii U"},{"Super Nintendo","SNES"},{"Game Boy","GB"},
-      {"Game Boy Advance","GBA"},{"Nintendo DS","NDS"},{"Dreamcast","DC"},{"Outras","Outras"}};
+      {"Game Boy Advance","GBA"},{"Nintendo DS","NDS"},{"Nintendo 3DS","3DS"},{"NES","NES"},{"Mega Drive","MD"},{"Sega 32X","32X"},{"Dreamcast","DC"},{"Arcade","Arcade"},{"PC","PC"},{"Mobile","Mobile"},{"Outras","Outras"}};
     // Compact label for badges on cards and filter chips.
     public static string ShortName(string platform){string value;return platform!=null&&shortNames.TryGetValue(platform,out value)?value:platform;}
     public static string Resolve(Game game){
-      if(All.Skip(1).Contains(game.Platform))return game.Platform;
       var entry=PortCatalog.LoadEntries().FirstOrDefault(e=>!String.IsNullOrEmpty(game.Repository)&&e.Identity==game.Repository);
+      // Games installed while their console was still filed under "Outras" follow the profile's current console.
+      if(All.Skip(1).Contains(game.Platform)&&!(game.Platform=="Outras"&&entry!=null))return game.Platform;
       if(entry!=null)return entry.Platform;
       entry=PortCatalog.LoadEntries().FirstOrDefault(e=>e.PlayNames.Any(n=>n.Equals(Path.GetFileName(game.Executable),StringComparison.OrdinalIgnoreCase)));if(entry!=null)return entry.Platform;
       string title=Ports.PortTitle(game);return new[]{"God of War III","Bloodborne","Shadow of the Colossus","Uncharted: The Nathan Drake Collection"}.Contains(title)?"PlayStation 4":"Outras";

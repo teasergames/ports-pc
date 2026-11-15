@@ -2509,7 +2509,7 @@
     "Id": "rl-mercenaries-recompiled",
     "Name": "Mercenaries: Playground of Destruction · Mercenaries Recompiled",
     "Repository": "KraftMacAndChee/Mercenaries-Recompiled",
-    "Platform": "Outras",
+    "Platform": "Xbox",
     "AssetPattern": "^Mercenaries\\.Recompiled\\.Public\\..*\\.zip$",
     "PlayNames": [],
     "ConfigNames": [],
@@ -2734,6 +2734,7 @@
     "Name": "Virtua Fighter · VF1 Recomp",
     "Repository": "mr-finster/vf1-recomp",
     "Platform": "Outras",
+    "Console": "Arcade",
     "AssetPattern": "^VirtuaFighterRecomp\\-windows\\.zip$",
     "PlayNames": [],
     "ConfigNames": [],
@@ -3970,6 +3971,7 @@
     "Name": "Discord Times · Razdor",
     "Repository": "indicozy/razdor",
     "Platform": "Outras",
+    "Console": "PC",
     "AssetPattern": "^Razdor\\.exe$",
     "PlayNames": [],
     "ConfigNames": [],
@@ -4059,6 +4061,7 @@
     "Name": "Atlantis: The Lost Tales · Atlantis Native",
     "Repository": "ripleyXLR8/atlantis-native",
     "Platform": "Outras",
+    "Console": "PC",
     "AssetPattern": "^atlantis\\-native\\-windows\\-x64\\.zip$",
     "PlayNames": [],
     "ConfigNames": [],
@@ -5873,6 +5876,7 @@
     "Name": "Harry Potter and the Philosopher's Stone (PC) · Flipendo",
     "Repository": "kroplabeskidu/flipendo",
     "Platform": "Outras",
+    "Console": "PC",
     "AssetPattern": "^flipendo-v[0-9.]+-windows\\.zip$",
     "PlayNames": [
       "SurrealEngine.exe"
@@ -5894,6 +5898,7 @@
     "Name": "Medal of Honor: Allied Assault · OpenMoHAA",
     "Repository": "openmoh/openmohaa",
     "Platform": "Outras",
+    "Console": "PC",
     "AssetPattern": "^openmohaa-v[0-9.]+-windows-x64\\.zip$",
     "PlayNames": [],
     "ConfigNames": [],
@@ -5997,6 +6002,7 @@
     "Name": "Daytona USA (arcade) · Recomp",
     "Repository": "alphanu1/daytona-arcade-recomp",
     "Platform": "Outras",
+    "Console": "Arcade",
     "AssetPattern": "",
     "PlayNames": [],
     "ConfigNames": [],
@@ -6027,6 +6033,7 @@
     "Name": "CPS-2 Recomp (Street Fighter Alpha 2, Vampire Savior…)",
     "Repository": "tmcleroy/cps2recomp",
     "Platform": "Outras",
+    "Console": "Arcade",
     "AssetPattern": "^CPS2Recomp-windows-x64\\.zip$",
     "PlayNames": [],
     "ConfigNames": [],
@@ -6085,6 +6092,7 @@
     "Name": "The Legend of Zelda: Ocarina of Time 3D · TriAevum",
     "Repository": "coccofresco/TriAevum",
     "Platform": "Outras",
+    "Console": "Nintendo 3DS",
     "AssetPattern": "^TriAevum-v[0-9.]+-beta[0-9.]*-Windows-x64\\.zip$",
     "PlayNames": [
       "TriAevumForge.exe"
@@ -6107,6 +6115,7 @@
     "Name": "Ultimate Mortal Kombat 3 · iOS Decompiled",
     "Repository": "MaryNCRT/Ultimate-Mortal-Kombat-3-iOS-Decompiled",
     "Platform": "Outras",
+    "Console": "Mobile",
     "AssetPattern": "^UMK3-PC-[0-9.]+-beta\\.zip$",
     "PlayNames": [],
     "ConfigNames": [],
@@ -6276,6 +6285,7 @@
     "Name": "Castlevania: Grimoire of Souls · GoS Recomp",
     "Repository": "BLSNCVS/Castlevania-Grimoire-of-Souls-Recomp",
     "Platform": "Outras",
+    "Console": "Mobile",
     "AssetPattern": "^GoSRecomp-[0-9.]+\\.zip$",
     "PlayNames": [],
     "ConfigNames": [],
@@ -6342,6 +6352,7 @@
     "Name": "The House of the Dead · ReWrithe",
     "Repository": "TawhidI-602/The-House-of-the-Dead-ReWrithe",
     "Platform": "Outras",
+    "Console": "Arcade",
     "AssetPattern": "^hotd-rewrithe-v[0-9.]+-win64\\.zip$",
     "PlayNames": [],
     "ConfigNames": [],
@@ -6633,6 +6644,7 @@
     "Name": "Streets of Rage Collection · Recomp",
     "Repository": "OriginalSwayze/Streets-Of-Rage-Recomp",
     "Platform": "Outras",
+    "Console": "Mega Drive",
     "AssetPattern": "^Streets-of-Rage-Collection-Setup-v[0-9.]+\\.exe$",
     "PlayNames": [],
     "ConfigNames": [],
@@ -6877,6 +6889,7 @@
     "Name": "Quarantine (DOS) · Recomp",
     "Repository": "ACR-GD/quarantine-recomp",
     "Platform": "Outras",
+    "Console": "PC",
     "AssetPattern": "^Quarantine-[0-9.]+-Windows-x64\\.zip$",
     "PlayNames": [
       "Quarantine.exe"
@@ -6953,6 +6966,7 @@
     "Name": "Beyond Oasis · Recomp",
     "Repository": "OriginalSwayze/beyond-oasis-recomp",
     "Platform": "Outras",
+    "Console": "Mega Drive",
     "AssetPattern": "^Beyond-Oasis-Setup-v[0-9.]+\\.exe$",
     "PlayNames": [],
     "ConfigNames": [],
@@ -7110,6 +7124,7 @@
     "Name": "Road Rash Trilogy · Recomp",
     "Repository": "BTr-RJ/RoadRashTrilogy_Recomp",
     "Platform": "Outras",
+    "Console": "Mega Drive",
     "AssetPattern": "^RoadRashTrilogyRecomp-[0-9.]+-Windows-x64\\.zip$",
     "PlayNames": [
       "RoadRashTrilogyRecomp.exe"
@@ -7241,6 +7256,7 @@
     "Name": "Phantasy Star IV · PSIV Recomp",
     "Repository": "MotaviaWorks/PSIVRecomp",
     "Platform": "Outras",
+    "Console": "Mega Drive",
     "AssetPattern": "^PSIV-Recomp-.*-windows-x64\\.zip$",
     "PlayNames": [
       "psiv.exe"
@@ -7451,6 +7467,7 @@
     "Name": "OutRunners · OutRunners Port",
     "Repository": "cheviman/outrunners-port",
     "Platform": "Outras",
+    "Console": "Arcade",
     "AssetPattern": "^outrunners-windows-x64\\.zip$",
     "PlayNames": [],
     "ConfigNames": [],
@@ -7570,6 +7587,7 @@
     "Name": "Mario Kart Arcade GP 1 e 2 · OpenGP",
     "Repository": "OpenGP-dev/OpenGP",
     "Platform": "Outras",
+    "Console": "Arcade",
     "AssetPattern": "^OpenGP-[0-9.]+-windows-x64\\.zip$",
     "PlayNames": [
       "OpenGP.exe"
@@ -8017,6 +8035,7 @@
     "Name": "Teenage Mutant Ninja Turtles (arcade) · TMNT Port",
     "Repository": "cheviman/tmnt-port",
     "Platform": "Outras",
+    "Console": "Arcade",
     "AssetPattern": "^tmnt-windows-x64\\.zip$",
     "PlayNames": [
       "TMNT.exe"
@@ -8158,6 +8177,7 @@
     "Name": "Killer Instinct (arcade) · UltraCombo",
     "Repository": "thefixinhixon/UltraCombo",
     "Platform": "Outras",
+    "Console": "Arcade",
     "AssetPattern": "^UltraCombo-Windows\\.zip$",
     "PlayNames": [
       "UltraCombo.exe"
@@ -8180,6 +8200,7 @@
     "Name": "Knuckles' Chaotix · Chaotix Recompiled",
     "Repository": "YuutaTsubasa/ChaotixRecompiled",
     "Platform": "Outras",
+    "Console": "Sega 32X",
     "AssetPattern": "^ChaotixRecompiled-[0-9.]+-windows-x64\\.zip$",
     "PlayNames": [
       "ChaotixRecompiled.exe"
@@ -8222,6 +8243,7 @@
     "Name": "Super Mario Bros. · NES Recomp",
     "Repository": "mstan/SuperMarioBrosNESRecomp",
     "Platform": "Outras",
+    "Console": "NES",
     "AssetPattern": "^SuperMarioBrosRecomp-windows-x64\\.zip$",
     "PlayNames": [
       "SuperMarioBrosRecomp.exe"
@@ -8402,6 +8424,7 @@
     "Name": "Astro Bot · AstroHybrid",
     "Repository": "imnotsharingmyname/pcportastrobot",
     "Platform": "Outras",
+    "Console": "PlayStation 5",
     "AssetPattern": "^AstroBotPC-AstroHybrid-[0-9.]+\\.zip$",
     "PlayNames": [
       "AstroHybrid.exe"

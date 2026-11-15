@@ -4,16 +4,20 @@
 
 - **Torchlight (Xbox 360) · Recompiled** (`retrogameworld/TorchlightRecomp`): o pacote `Torchlight-Recompiled-v1.0.zip` é marcado como malicioso por 11 de 66 antivírus no VirusTotal (Trojan.Lazy), com sinais de ofuscação e de detecção de depurador. A conta e o repositório foram criados em 03 e 04/11 e o repositório não tem código-fonte. Se você instalou esse pacote, apague a pasta dele e rode uma verificação completa do antivírus.
 
+## Consoles separados de "Outras" — 15/11/2026
+
+A partir do NEXUS 1.8.3, o filtro **Outras** foi dividido em consoles próprios: **PlayStation 5**, **NES**, **Nintendo 3DS**, **Mega Drive**, **Sega 32X**, **Arcade**, **PC** e **Mobile**. Mercenaries foi para **Xbox**. Só ficaram em Outras os jogos de consoles com um único port no catálogo: Laser Lords (Philips CD-i) e IMSA World Championship Racing (Panasonic M2).
+
+O console novo vai no campo `Console`, e o `Platform` desses perfis continua `Outras`. Assim, as versões 1.8.2 e anteriores ignoram o campo novo e seguem aceitando o catálogo (nelas esses jogos continuam em Outras). Jogos já instalados passam para o console certo sozinhos.
+
 ## Novos ports — 15/11/2026
 
 | Plataforma | Projeto | Release | Jogar | Linux |
 |---|---|---|---|---|
 | PlayStation 3 | [God of War: Ascension · GoW Ascension Recomp (Bilal Reloaded)](https://github.com/bc160201983/GoW-Ascension-Recomp) | v0.1.31 | `God of War Ascension Launcher.exe` | — |
-| Outras (PS5) | [Astro Bot · AstroHybrid](https://github.com/imnotsharingmyname/pcportastrobot) | v1.0.9 | `AstroHybrid.exe` | — |
+| PlayStation 5 | [Astro Bot · AstroHybrid](https://github.com/imnotsharingmyname/pcportastrobot) | v1.0.9 | `AstroHybrid.exe` | — |
 
 O **God of War: Ascension do Bilal Reloaded** agora tem código aberto e Release no GitHub, publicada em 14/11 com SHA-256, e entrou com download e atualização integrados. Ele pede o disco europeu BCES01741 (versão 1.00), CPU com AVX2 e placa DirectX 12 com Shader Model 6. O autor avisou no README que o projeto deve receber poucas atualizações daqui em diante.
-
-O **Astro Bot** é de PS5, plataforma que o NEXUS ainda não tem como filtro; por isso aparece em Outras.
 
 ## Novos ports e recomps — 14/11/2026 (2ª leva)
 

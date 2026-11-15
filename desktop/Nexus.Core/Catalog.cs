@@ -8,7 +8,7 @@ namespace Nexus.Native;
 
 public static class Platforms
 {
-    public static readonly string[] All = { "PlayStation 4", "PlayStation 3", "PlayStation 2", "PlayStation", "PSP", "Xbox", "Xbox 360", "Xbox One", "Nintendo Switch", "Nintendo 64", "GameCube", "Wii", "Wii U", "Super Nintendo", "Game Boy", "Game Boy Advance", "Nintendo DS", "Dreamcast", "Outras" };
+    public static readonly string[] All = { "PlayStation 5", "PlayStation 4", "PlayStation 3", "PlayStation 2", "PlayStation", "PSP", "Xbox", "Xbox 360", "Xbox One", "Nintendo Switch", "Nintendo 64", "GameCube", "Wii", "Wii U", "NES", "Super Nintendo", "Game Boy", "Game Boy Advance", "Nintendo DS", "Nintendo 3DS", "Mega Drive", "Sega 32X", "Dreamcast", "Arcade", "PC", "Mobile", "Outras" };
 }
 
 public sealed class PortEntry
@@ -17,6 +17,7 @@ public sealed class PortEntry
     public string Name { get; set; } = "";
     public string Repository { get; set; } = "";
     public string Platform { get; set; } = "Outras";
+    public string? Console { get; set; }
     public string ArtworkTitle { get; set; } = "";
     public string ProjectType { get; set; } = "";
     public string Notes { get; set; } = "";
@@ -87,6 +88,12 @@ public sealed class Catalog : IDisposable
                 throw new InvalidDataException("Entrada do catálogo inválida.");
             if (!e.ManualPackage && !Regex.IsMatch(e.Repository ?? "", "^[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+$")) throw new InvalidDataException("Repositório inválido: " + e.Id);
             if (!Platforms.All.Contains(e.Platform)) throw new InvalidDataException("Plataforma inválida: " + e.Id);
+            // Consoles added after 1.8.2 travel in Console, with Platform "Outras", so older versions still accept the catalog.
+            if (e.Console is not null)
+            {
+                if ((e.Platform != "Outras" && e.Platform != e.Console) || !Platforms.All.Contains(e.Console) || e.Console == "Outras") throw new InvalidDataException("Console inválido: " + e.Id);
+                e.Platform = e.Console;
+            }
             if (e.HasLinux)
             {
                 if (!LinuxKinds.Contains(e.LinuxPackageKind) || e.ManualPackage) throw new InvalidDataException("Perfil Linux inválido: " + e.Id);

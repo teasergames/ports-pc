@@ -11320,5 +11320,53 @@
         }
       ]
     }
+  },
+  {
+    "Repository": "bc160201983/GoW-Ascension-Recomp",
+    "CheckedUtc": "2026-11-15T02:39:39+00:00",
+    "Release": {
+      "tag_name": "v0.1.31",
+      "html_url": "https://github.com/bc160201983/GoW-Ascension-Recomp/releases/tag/v0.1.31",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "GodOfWarAscension-0.1.31-update.zip",
+          "size": 105224295,
+          "browser_download_url": "https://github.com/bc160201983/GoW-Ascension-Recomp/releases/download/v0.1.31/GodOfWarAscension-0.1.31-update.zip",
+          "digest": "sha256:cae6a3f9d44d93d68ffd3705b2c2addb503c3ae10d63aedd03790d8f6c69ec5b"
+        },
+        {
+          "name": "GodOfWarAscension-0.1.31-windows.zip",
+          "size": 197158807,
+          "browser_download_url": "https://github.com/bc160201983/GoW-Ascension-Recomp/releases/download/v0.1.31/GodOfWarAscension-0.1.31-windows.zip",
+          "digest": "sha256:8843c4b52e873e372ee8b1caf9700bb0542a7c3200c9203f69049a8c4fb2c7c1"
+        },
+        {
+          "name": "SHA256SUMS.txt",
+          "size": 205,
+          "browser_download_url": "https://github.com/bc160201983/GoW-Ascension-Recomp/releases/download/v0.1.31/SHA256SUMS.txt",
+          "digest": "sha256:6c46c4d61fe6c74de5daecfb66979c59ffb12e43a91a2f772bc07f403c582c0d"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "imnotsharingmyname/pcportastrobot",
+    "CheckedUtc": "2026-11-15T02:39:39+00:00",
+    "Release": {
+      "tag_name": "v1.0.9",
+      "html_url": "https://github.com/imnotsharingmyname/pcportastrobot/releases/tag/v1.0.9",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "AstroBotPC-AstroHybrid-1.0.9.zip",
+          "size": 198603573,
+          "browser_download_url": "https://github.com/imnotsharingmyname/pcportastrobot/releases/download/v1.0.9/AstroBotPC-AstroHybrid-1.0.9.zip",
+          "digest": "sha256:9c9f0fe4e28251de2e9e41a7571b86ace82d00d29ab67393c4820e94af4f47a4"
+        }
+      ]
+    }
   }
 ]

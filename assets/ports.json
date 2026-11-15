@@ -8377,5 +8377,43 @@
     "Kind": "Recompilação",
     "PackageKind": "Executable",
     "Notes": "O NEXUS baixa o executável portátil oficial. Jogar e Configurar abrem speed.exe. Recompilação da versão PS2 da Black Box. Requer seu próprio disco."
+  },
+  {
+    "Id": "gow-ascension-recomp",
+    "Name": "God of War: Ascension · GoW Ascension Recomp (Bilal Reloaded)",
+    "Repository": "bc160201983/GoW-Ascension-Recomp",
+    "Platform": "PlayStation 3",
+    "AssetPattern": "^GodOfWarAscension-[0-9.]+-windows\\.zip$",
+    "PlayNames": [
+      "God of War Ascension Launcher.exe"
+    ],
+    "ConfigNames": [
+      "God of War Ascension Launcher.exe"
+    ],
+    "ArtworkTitle": "God of War: Ascension",
+    "ProjectOnly": false,
+    "ProjectType": "Recompilação",
+    "Kind": "Recompilação",
+    "PackageKind": "Zip",
+    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Jogar e Configurar abrem God of War Ascension Launcher.exe; na primeira abertura, prepare seus próprios arquivos no port. Recompilação estática do Bilal Reloaded, só a campanha. Requer seu próprio disco europeu (BCES01741, versão 1.00), CPU com AVX2 e placa DirectX 12 com Shader Model 6. O autor avisou que o projeto deve receber poucas atualizações."
+  },
+  {
+    "Id": "astrobot-pc",
+    "Name": "Astro Bot · AstroHybrid",
+    "Repository": "imnotsharingmyname/pcportastrobot",
+    "Platform": "Outras",
+    "AssetPattern": "^AstroBotPC-AstroHybrid-[0-9.]+\\.zip$",
+    "PlayNames": [
+      "AstroHybrid.exe"
+    ],
+    "ConfigNames": [
+      "AstroHybrid.exe"
+    ],
+    "ArtworkTitle": "Astro Bot",
+    "ProjectOnly": false,
+    "ProjectType": "Port",
+    "Kind": "Port",
+    "PackageKind": "Zip",
+    "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Jogar e Configurar abrem AstroHybrid.exe; na primeira abertura, prepare seus próprios arquivos no port. Port nativo da versão PS5 (PPSA21567, testado na 01.019.000) com Vulkan, DLSS, Frame Generation e Reflex. O AstroHybrid monta o jogo a partir do seu próprio dump."
   }
 ]

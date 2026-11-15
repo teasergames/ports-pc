@@ -4,6 +4,17 @@
 
 - **Torchlight (Xbox 360) · Recompiled** (`retrogameworld/TorchlightRecomp`): o pacote `Torchlight-Recompiled-v1.0.zip` é marcado como malicioso por 11 de 66 antivírus no VirusTotal (Trojan.Lazy), com sinais de ofuscação e de detecção de depurador. A conta e o repositório foram criados em 03 e 04/11 e o repositório não tem código-fonte. Se você instalou esse pacote, apague a pasta dele e rode uma verificação completa do antivírus.
 
+## Novos ports — 15/11/2026
+
+| Plataforma | Projeto | Release | Jogar | Linux |
+|---|---|---|---|---|
+| PlayStation 3 | [God of War: Ascension · GoW Ascension Recomp (Bilal Reloaded)](https://github.com/bc160201983/GoW-Ascension-Recomp) | v0.1.31 | `God of War Ascension Launcher.exe` | — |
+| Outras (PS5) | [Astro Bot · AstroHybrid](https://github.com/imnotsharingmyname/pcportastrobot) | v1.0.9 | `AstroHybrid.exe` | — |
+
+O **God of War: Ascension do Bilal Reloaded** agora tem código aberto e Release no GitHub, publicada em 14/11 com SHA-256, e entrou com download e atualização integrados. Ele pede o disco europeu BCES01741 (versão 1.00), CPU com AVX2 e placa DirectX 12 com Shader Model 6. O autor avisou no README que o projeto deve receber poucas atualizações daqui em diante.
+
+O **Astro Bot** é de PS5, plataforma que o NEXUS ainda não tem como filtro; por isso aparece em Outras.
+
 ## Novos ports e recomps — 14/11/2026 (2ª leva)
 
 29 fontes novas com Release publicada entre 11/11 e 14/11. Todas têm download e atualização integrados, e 19 também têm build Linux nativa. A checagem de segurança é a mesma das listas anteriores: código-fonte publicado, conta do autor com mais de um mês, pacote enviado pelo autor ou pelo GitHub Actions, SHA-256 na Release e índice dos ZIPs lido remotamente. Os scripts que fazem download baixam só do próprio projeto ou de fontes oficiais.
@@ -75,7 +86,7 @@ Entraram como página do projeto, sem instalação integrada:
 - **[TimeSplitters 2 · Native PC Port](https://github.com/Destinity13/TimeSplitters-2-Native-Recomp-Windows-Linux-SteamDeck)** (v1.0.1): o pacote Windows abre por um script (`TS2-Recomp.bat`) que compila o jogo a partir do seu disco, e o NEXUS ainda não executa scripts.
 - **[God of War (PS2) · God of War Native PC](https://github.com/Vnnc1/gow-native-pc)** (v0.5.0): o ZIP Windows traz só o código e o `build.cmd`, sem executável pronto.
 
-**God of War: Ascension do Bilal Reloaded:** o port dele (v0.1.17) é distribuído só pelo Discord do autor, com o Patreon como apoio opcional. Não existe Release no GitHub com SHA-256, e o NEXUS só instala pacotes que consegue verificar e atualizar a partir de uma Release. Por isso ele não entra no catálogo. No lugar, entrou o **Ascension-R** (rigaz29), outra recompilação do mesmo jogo com Release pública; o projeto do otavix010, que ainda não tem pacote Windows, continua listado.
+**God of War: Ascension do Bilal Reloaded** (atualizado em 15/11: o código e a Release foram publicados no GitHub e o port entrou no catálogo; veja acima). Até 14/11, o port dele (v0.1.17) era distribuído só pelo Discord do autor, com o Patreon como apoio opcional. Não existia Release no GitHub com SHA-256, e o NEXUS só instala pacotes que consegue verificar e atualizar a partir de uma Release. Por isso ele não entra no catálogo. No lugar, entrou o **Ascension-R** (rigaz29), outra recompilação do mesmo jogo com Release pública; o projeto do otavix010, que ainda não tem pacote Windows, continua listado.
 
 Ficaram de fora: Recompia (conta criada há 5 dias), o port de Pokémon XD (conta com menos de um mês), SR-Source de Sonic Riders (quase sem código-fonte) e ProjectReLink (repositório de um dia com instalador mínimo).
 
@@ -165,7 +176,7 @@ Ficaram de fora: o **Portable Ops+**, que sai na mesma Release do Portable Ops e
 
 Ficaram de fora: projetos só para macOS, Android, PS4/PS5 com desbloqueio ou homebrew de Switch; Metroid Prime 4 do linuxopt (só AppImage, sem pacote Windows); Arceuszada (só .rar); Battlefield: Bad Company (ZIP da Release corrompido); PES 2017 PRO17PORT (origem não confirmada); Woohoo! Flight School (apenas kit de build em pré-release); e recomps ainda sem Release, como os de Ocarina of Time do jaigner-hub, Chiuauaa e Mars7x.
 
-Total do catálogo: **478 fontes**, **444 perfis GitHub integrados**, **1 importação oficial** e **33 exceções**; **106** com build Linux.
+Total do catálogo: **480 fontes**, **446 perfis GitHub integrados**, **1 importação oficial** e **33 exceções**; **106** com build Linux.
 
 ## Repositórios renomeados — 04/11/2026
 

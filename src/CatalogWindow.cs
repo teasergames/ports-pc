@@ -31,7 +31,7 @@ namespace Nexus {
     readonly PortCatalog catalog=new PortCatalog();readonly ListBox list;readonly TextBlock title,repo,version,details,status,subtitle,resultLabel;readonly TextBox destination;readonly Button download,choose,cancel,refresh;readonly ProgressBar progress;
     readonly CheckBox acceptBeta;readonly Button importZip,checkUpdates,project;readonly TextBox search;readonly Action<Game> added;readonly List<Game> games;readonly Library library;readonly string dataRoot;CancellationTokenSource request,installation,updateChecks;PortEntry selected;PortRelease release;bool busy,closed;
     readonly Dictionary<string,PortRelease> available=new Dictionary<string,PortRelease>();
-    readonly StackPanel platformList;readonly WrapPanel typeChips,modeChips,badges;readonly ToggleButton newsTab,updatesTab,allTab;readonly ComboBox sort;
+    readonly StackPanel platformList;readonly WrapPanel typeChips,modeChips,badges;readonly ToggleButton newsTab,installedTab,updatesTab,allTab;readonly ComboBox sort;
     readonly CatalogQuery query=new CatalogQuery{Platform=Platforms.All[0]};readonly HashSet<string> seenAtOpen;
     CatalogTab tab;
     readonly SolidColorBrush muted=new SolidColorBrush(Color.FromRgb(167,178,194));
@@ -72,7 +72,7 @@ namespace Nexus {
       var middle=new DockPanel{Margin=new Thickness(22,18,22,18)};Grid.SetColumn(middle,1);columns.Children.Add(middle);
       var toolbar=new DockPanel{Margin=new Thickness(0,0,0,12),LastChildFill=false};DockPanel.SetDock(toolbar,Dock.Top);middle.Children.Add(toolbar);
       var tabGroup=new Border{Style=ThemeStyle("SegmentGroup")};var tabRow=new StackPanel{Orientation=Orientation.Horizontal};tabGroup.Child=tabRow;toolbar.Children.Add(tabGroup);
-      newsTab=TabButton("Novidades",CatalogTab.News);allTab=TabButton("Todos",CatalogTab.All);updatesTab=TabButton("Atualizações",CatalogTab.Updates);tabRow.Children.Add(newsTab);tabRow.Children.Add(updatesTab);tabRow.Children.Add(allTab);
+      newsTab=TabButton("Novidades",CatalogTab.News);allTab=TabButton("Todos",CatalogTab.All);installedTab=TabButton("Instalados",CatalogTab.Installed);updatesTab=TabButton("Atualizações",CatalogTab.Updates);tabRow.Children.Add(newsTab);tabRow.Children.Add(installedTab);tabRow.Children.Add(updatesTab);tabRow.Children.Add(allTab);
       sort=new ComboBox{Width=170,Margin=new Thickness(10,0,0,0),VerticalAlignment=VerticalAlignment.Center};sort.Items.Add("Ordenar por nome");sort.Items.Add("Ordenar por plataforma");sort.Items.Add("Ordenar por tipo");sort.SelectedIndex=0;sort.SelectionChanged+=delegate{if(!busy)FilterEntries();};DockPanel.SetDock(sort,Dock.Right);toolbar.Children.Add(sort);
       resultLabel=new TextBlock{Foreground=muted,FontSize=13,VerticalAlignment=VerticalAlignment.Center,Margin=new Thickness(14,0,0,0)};toolbar.Children.Add(resultLabel);
       list=new ListBox{Background=Brushes.Transparent,Foreground=Foreground,BorderThickness=new Thickness(0),Padding=new Thickness(0)};
@@ -137,7 +137,7 @@ namespace Nexus {
     void UpdateTabs(){
       int news=catalog.Entries.Count(e=>!seenAtOpen.Contains(e.Id)),updates=catalog.Entries.Count(HasUpdate);
       ((TextBlock)newsTab.Content).Text=news>0?"Novidades · "+news:"Novidades";((TextBlock)updatesTab.Content).Text=updates>0?"Atualizações · "+updates:"Atualizações";
-      newsTab.IsChecked=tab==CatalogTab.News;updatesTab.IsChecked=tab==CatalogTab.Updates;allTab.IsChecked=tab==CatalogTab.All;
+      newsTab.IsChecked=tab==CatalogTab.News;installedTab.IsChecked=tab==CatalogTab.Installed;updatesTab.IsChecked=tab==CatalogTab.Updates;allTab.IsChecked=tab==CatalogTab.All;
       subtitle.Text=catalog.Entries.Count+" projetos · "+catalog.Entries.Select(e=>e.Platform).Distinct().Count()+" plataformas · somente ports para Windows";
     }
     public void SetPlatform(string platform){query.Platform=platform;RefreshPlatforms();if(!busy)FilterEntries();}
@@ -166,6 +166,7 @@ namespace Nexus {
       if(list==null)return;if(request!=null){request.Cancel();request=null;}selected=null;release=null;list.Items.Clear();
       IEnumerable<PortEntry> entries=PortCatalog.Filter(catalog.Entries,query);
       if(tab==CatalogTab.News)entries=entries.Where(e=>!seenAtOpen.Contains(e.Id));
+      if(tab==CatalogTab.Installed)entries=entries.Where(e=>Installed(e)!=null);
       if(tab==CatalogTab.Updates)entries=entries.Where(HasUpdate);
       if(sort!=null&&sort.SelectedIndex==1)entries=entries.OrderBy(e=>Array.IndexOf(Platforms.All,e.Platform)).ThenBy(e=>e.Name,StringComparer.CurrentCultureIgnoreCase);
       if(sort!=null&&sort.SelectedIndex==2)entries=entries.OrderBy(e=>Array.IndexOf(ProjectTypes.All,e.ProjectType)).ThenBy(e=>e.Name,StringComparer.CurrentCultureIgnoreCase);

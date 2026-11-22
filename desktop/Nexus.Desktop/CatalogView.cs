@@ -8,7 +8,7 @@ using Nexus.Native;
 
 namespace Nexus.Desktop;
 
-public enum CatalogTab { All, News, Updates }
+public enum CatalogTab { All, News, Installed, Updates }
 
 public sealed class CatalogView : Grid
 {
@@ -16,7 +16,7 @@ public sealed class CatalogView : Grid
     readonly ListBox platforms = new() { Background = Brushes.Transparent };
     readonly CheckBox linuxOnly = new() { Content = "Só com build Linux", IsChecked = true, Margin = new Thickness(0, 14, 0, 0) };
     readonly ListBox list = new() { Background = Brushes.Transparent };
-    readonly ToggleButton tabAll = new() { Content = "Todos", Classes = { "chip" } }, tabNews = new() { Content = "Novidades", Classes = { "chip" } }, tabUpdates = new() { Content = "Atualizações", Classes = { "chip" } };
+    readonly ToggleButton tabAll = new() { Content = "Todos", Classes = { "chip" } }, tabNews = new() { Content = "Novidades", Classes = { "chip" } }, tabInstalled = new() { Content = "Instalados", Classes = { "chip" } }, tabUpdates = new() { Content = "Atualizações", Classes = { "chip" } };
     readonly TextBlock count = new() { Foreground = Ui.TextMuted, FontSize = 12, VerticalAlignment = VerticalAlignment.Center, Margin = new Thickness(8, 0, 0, 8) };
     // Detail panel
     readonly TextBlock title = new() { FontSize = 20, FontWeight = FontWeight.Bold, Foreground = Ui.Text, TextWrapping = TextWrapping.Wrap };
@@ -50,7 +50,7 @@ public sealed class CatalogView : Grid
 
         var middle = new Grid { RowDefinitions = new RowDefinitions("Auto,*") };
         var tabs = new StackPanel { Orientation = Orientation.Horizontal };
-        tabs.Children.Add(tabAll); tabs.Children.Add(tabNews); tabs.Children.Add(tabUpdates); tabs.Children.Add(count);
+        tabs.Children.Add(tabAll); tabs.Children.Add(tabNews); tabs.Children.Add(tabInstalled); tabs.Children.Add(tabUpdates); tabs.Children.Add(count);
         middle.Children.Add(tabs);
         var listFrame = new Border { Background = Ui.Surface, CornerRadius = new CornerRadius(12), Padding = new Thickness(6), Child = list };
         Grid.SetRow(listFrame, 1); middle.Children.Add(listFrame);
@@ -72,7 +72,7 @@ public sealed class CatalogView : Grid
         var detailFrame = new Border { Background = Ui.Surface, CornerRadius = new CornerRadius(12), Padding = new Thickness(20), Margin = new Thickness(16, 0, 0, 0), Child = new ScrollViewer { Content = detail } };
         Grid.SetColumn(detailFrame, 2); Children.Add(detailFrame);
 
-        tabAll.Click += (_, _) => SetTab(CatalogTab.All); tabNews.Click += (_, _) => SetTab(CatalogTab.News); tabUpdates.Click += (_, _) => SetTab(CatalogTab.Updates);
+        tabAll.Click += (_, _) => SetTab(CatalogTab.All); tabNews.Click += (_, _) => SetTab(CatalogTab.News); tabInstalled.Click += (_, _) => SetTab(CatalogTab.Installed); tabUpdates.Click += (_, _) => SetTab(CatalogTab.Updates);
         platforms.SelectionChanged += (_, _) => { if (platforms.SelectedItem is ListBoxItem { Tag: string p } && p != platform) { platform = p; RefreshList(); } };
         linuxOnly.IsCheckedChanged += (_, _) => { RefreshPlatforms(); RefreshList(); };
         list.SelectionChanged += (_, _) => { if (list.SelectedItem is ListBoxItem { Tag: PortEntry e }) ShowDetail(e); };
@@ -117,7 +117,7 @@ public sealed class CatalogView : Grid
     void SetTab(CatalogTab next)
     {
         tab = next;
-        tabAll.IsChecked = tab == CatalogTab.All; tabNews.IsChecked = tab == CatalogTab.News; tabUpdates.IsChecked = tab == CatalogTab.Updates;
+        tabAll.IsChecked = tab == CatalogTab.All; tabNews.IsChecked = tab == CatalogTab.News; tabInstalled.IsChecked = tab == CatalogTab.Installed; tabUpdates.IsChecked = tab == CatalogTab.Updates;
         RefreshList();
         if (tab == CatalogTab.Updates) _ = CheckUpdates();
     }
@@ -140,12 +140,13 @@ public sealed class CatalogView : Grid
 
     void RefreshList()
     {
-        var source = Entries.Where(e => (linuxOnly.IsChecked != true || e.HasLinux || tab == CatalogTab.Updates) && (platform == "" || e.Platform == platform)
+        var source = Entries.Where(e => (linuxOnly.IsChecked != true || e.HasLinux || tab is CatalogTab.Installed or CatalogTab.Updates) && (platform == "" || e.Platform == platform)
             && (searchText == "" || e.Name.Contains(searchText, StringComparison.CurrentCultureIgnoreCase) || e.Repository.Contains(searchText, StringComparison.OrdinalIgnoreCase)));
         source = tab switch
         {
             CatalogTab.News => source.Where(e => !main.Library.SeenCatalogIds.Contains(e.Id)),
-            CatalogTab.Updates => source.Where(e => Installed(e) is not null),
+            CatalogTab.Installed => source.Where(e => Installed(e) is not null),
+            CatalogTab.Updates => source.Where(e => UpdatesAvailable().Contains(e)),
             _ => source
         };
         var entries = source.OrderBy(e => e.Name, StringComparer.CurrentCultureIgnoreCase).ToList();

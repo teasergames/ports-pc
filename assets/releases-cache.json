@@ -11368,5 +11368,131 @@
         }
       ]
     }
+  },
+  {
+    "Repository": "AmarilloNL/ssx-recomp",
+    "CheckedUtc": "2026-11-20T12:00:00Z",
+    "Release": {
+      "tag_name": "v1.7.1",
+      "html_url": "https://github.com/AmarilloNL/ssx-recomp/releases/tag/v1.7.1",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "ssx-recomp.exe",
+          "size": 416256,
+          "digest": "sha256:b01b4fda0fe2df78e66ac5123309122bdf45b4af0d20bfc3327ffb8549d424d2",
+          "browser_download_url": "https://github.com/AmarilloNL/ssx-recomp/releases/download/v1.7.1/ssx-recomp.exe"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "RivierGrullon/kirby-epic-yarn-recomp",
+    "CheckedUtc": "2026-11-20T12:00:00Z",
+    "Release": {
+      "tag_name": "v0.1.4",
+      "html_url": "https://github.com/RivierGrullon/kirby-epic-yarn-recomp/releases/tag/v0.1.4",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "Kirby-Setup-windows-x86_64.zip",
+          "size": 54421372,
+          "digest": "sha256:ad5b22851fa79b9e68ffba95b04ddbd59cf551a16634b66bc89e5e2f35fad51d",
+          "browser_download_url": "https://github.com/RivierGrullon/kirby-epic-yarn-recomp/releases/download/v0.1.4/Kirby-Setup-windows-x86_64.zip"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "miroslavdanutalexandru-alt/Resistance2Port",
+    "CheckedUtc": "2026-11-22T11:55:18.687604+00:00",
+    "Release": {
+      "tag_name": "v0.3.0-beta.1",
+      "html_url": "https://github.com/miroslavdanutalexandru-alt/Resistance2Port/releases/tag/v0.3.0-beta.1",
+      "draft": false,
+      "prerelease": true,
+      "assets": [
+        {
+          "name": "Resistance2Port-Setup-0.3.0-beta.1.exe",
+          "size": 46273196,
+          "digest": "sha256:5803a6fdb8c7aefdb4a4d85fa4ee9c5a3350be18192306c515b289085fa833ff",
+          "browser_download_url": "https://github.com/miroslavdanutalexandru-alt/Resistance2Port/releases/download/v0.3.0-beta.1/Resistance2Port-Setup-0.3.0-beta.1.exe"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "phobos665/split2-recomp",
+    "CheckedUtc": "2026-11-22T11:55:18.689108+00:00",
+    "Release": {
+      "tag_name": "v0.5.2",
+      "html_url": "https://github.com/phobos665/split2-recomp/releases/tag/v0.5.2",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "split2-v0.5.2-windows-x86_64.zip",
+          "size": 157509199,
+          "digest": "sha256:283a2a8e741e0440fc0bbb4baf8ac6f062147205da73b551504e8daa1c18fdf9",
+          "browser_download_url": "https://github.com/phobos665/split2-recomp/releases/download/v0.5.2/split2-v0.5.2-windows-x86_64.zip"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "RyGT-Team/rygt7",
+    "CheckedUtc": "2026-11-22T12:01:23.183809+00:00",
+    "Release": {
+      "tag_name": "gt7-2026-11-16",
+      "html_url": "https://github.com/RyGT-Team/rygt7/releases/tag/gt7-2026-11-16",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "RyGT7-2026-11-16.zip",
+          "size": 101963567,
+          "digest": "sha256:6b5308f03c8b712913b7641ada32d2f93e0be979b87e9c7af4359489d6add0c0",
+          "browser_download_url": "https://github.com/RyGT-Team/rygt7/releases/download/gt7-2026-11-16/RyGT7-2026-11-16.zip"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "ScreamAngel/gow3_launcher",
+    "CheckedUtc": "2026-11-22T12:01:23.192325+00:00",
+    "Release": {
+      "tag_name": "v2.2",
+      "html_url": "https://github.com/ScreamAngel/gow3_launcher/releases/tag/v2.2",
+      "draft": false,
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "gow3-launcher-v2.2.zip",
+          "size": 149706557,
+          "digest": "sha256:43a023ee8dbf93ae62318cd0989cad41768f837b6aafca1caf7eb5ba40869be4",
+          "browser_download_url": "https://github.com/ScreamAngel/gow3_launcher/releases/download/v2.2/gow3-launcher-v2.2.zip"
+        }
+      ]
+    }
+  },
+  {
+    "Repository": "OTPR26/Ocarina-ReTuned",
+    "CheckedUtc": "2026-11-22T12:01:23.200345+00:00",
+    "Release": {
+      "tag_name": "v0.7.2",
+      "html_url": "https://github.com/OTPR26/Ocarina-ReTuned/releases/tag/v0.7.2",
+      "draft": false,
+      "prerelease": true,
+      "assets": [
+        {
+          "name": "Ocarina-ReTuned-0.6.9-Windows-x64.zip",
+          "size": 222757385,
+          "digest": "sha256:210cd40ecdd3a3acadfb00bfc8891656e3d8c3f4fe772dbae0f0d4152953fae0",
+          "browser_download_url": "https://github.com/OTPR26/Ocarina-ReTuned/releases/download/v0.7.2/Ocarina-ReTuned-0.6.9-Windows-x64.zip"
+        }
+      ]
+    }
   }
 ]

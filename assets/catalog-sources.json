@@ -3366,6 +3366,97 @@
       "VerifiedVersion": "v0.70-plus4",
       "ReleasePublishedUtc": "2026-10-31T07:15:42Z",
       "PackageValidation": "Official generic Windows ZIP downloaded; published SHA-256 and AMD64 PE checked. Launcher source confirms --play vs configuration. No vendor program executed."
+    },
+    {
+      "Id": "ssx-2012",
+      "NexusId": "ssx-2012",
+      "Repository": "AmarilloNL/ssx-recomp",
+      "DiscoveryUrl": "https://github.com/AmarilloNL/ssx-recomp",
+      "VerifiedRepositoryUrl": "https://github.com/AmarilloNL/ssx-recomp",
+      "CheckedDate": "2026-11-20",
+      "Status": "automatic",
+      "IntegrationMode": "Executable",
+      "VerifiedVersion": "v1.7.1",
+      "ReleasePublishedUtc": "2026-11-18T19:35:32Z",
+      "PackageValidation": "Official Windows asset downloaded and SHA-256 verified."
+    },
+    {
+      "Id": "kirby-epic-yarn",
+      "NexusId": "kirby-epic-yarn",
+      "Repository": "RivierGrullon/kirby-epic-yarn-recomp",
+      "DiscoveryUrl": "https://github.com/RivierGrullon/kirby-epic-yarn-recomp",
+      "VerifiedRepositoryUrl": "https://github.com/RivierGrullon/kirby-epic-yarn-recomp",
+      "CheckedDate": "2026-11-20",
+      "Status": "automatic",
+      "IntegrationMode": "InstallerZip",
+      "VerifiedVersion": "v0.1.4",
+      "ReleasePublishedUtc": "2026-11-19T17:37:27Z",
+      "PackageValidation": "Official Windows asset downloaded and SHA-256 verified."
+    },
+    {
+      "Id": "resistance-2",
+      "NexusId": "resistance-2",
+      "Repository": "miroslavdanutalexandru-alt/Resistance2Port",
+      "DiscoveryUrl": "https://github.com/miroslavdanutalexandru-alt/Resistance2Port",
+      "VerifiedRepositoryUrl": "https://github.com/miroslavdanutalexandru-alt/Resistance2Port",
+      "CheckedDate": "2026-11-22",
+      "Status": "automatic",
+      "IntegrationMode": "Installer",
+      "VerifiedVersion": "v0.3.0-beta.1",
+      "ReleasePublishedUtc": "2026-11-20T23:09:47Z",
+      "PackageValidation": "Official Windows asset downloaded and SHA-256 verified."
+    },
+    {
+      "Id": "split2",
+      "NexusId": "split2",
+      "Repository": "phobos665/split2-recomp",
+      "DiscoveryUrl": "https://github.com/phobos665/split2-recomp",
+      "VerifiedRepositoryUrl": "https://github.com/phobos665/split2-recomp",
+      "CheckedDate": "2026-11-22",
+      "Status": "automatic",
+      "IntegrationMode": "Zip",
+      "VerifiedVersion": "v0.5.2",
+      "ReleasePublishedUtc": "2026-10-27T21:04:07Z",
+      "PackageValidation": "Official Windows asset downloaded and SHA-256 verified."
+    },
+    {
+      "Id": "rygt7",
+      "NexusId": "rygt7",
+      "Repository": "RyGT-Team/rygt7",
+      "DiscoveryUrl": "https://github.com/RyGT-Team/rygt7",
+      "VerifiedRepositoryUrl": "https://github.com/RyGT-Team/rygt7",
+      "CheckedDate": "2026-11-22",
+      "Status": "automatic",
+      "IntegrationMode": "Zip",
+      "VerifiedVersion": "gt7-2026-11-16",
+      "ReleasePublishedUtc": "2026-11-17T00:29:43Z",
+      "PackageValidation": "Official Windows ZIP downloaded, SHA-256 verified and executable path inspected; no vendor execution."
+    },
+    {
+      "Id": "gow3-screamangel",
+      "NexusId": "gow3-screamangel",
+      "Repository": "ScreamAngel/gow3_launcher",
+      "DiscoveryUrl": "https://github.com/ScreamAngel/gow3_launcher",
+      "VerifiedRepositoryUrl": "https://github.com/ScreamAngel/gow3_launcher",
+      "CheckedDate": "2026-11-22",
+      "Status": "automatic",
+      "IntegrationMode": "Zip",
+      "VerifiedVersion": "v2.2",
+      "ReleasePublishedUtc": "2026-11-09T16:44:16Z",
+      "PackageValidation": "Official Windows ZIP downloaded, SHA-256 verified and executable path inspected; no vendor execution."
+    },
+    {
+      "Id": "ocarina-retuned",
+      "NexusId": "ocarina-retuned",
+      "Repository": "OTPR26/Ocarina-ReTuned",
+      "DiscoveryUrl": "https://github.com/OTPR26/Ocarina-ReTuned",
+      "VerifiedRepositoryUrl": "https://github.com/OTPR26/Ocarina-ReTuned",
+      "CheckedDate": "2026-11-22",
+      "Status": "automatic",
+      "IntegrationMode": "Zip",
+      "VerifiedVersion": "v0.7.2",
+      "ReleasePublishedUtc": "2026-11-20T15:21:03Z",
+      "PackageValidation": "Official Windows ZIP downloaded, SHA-256 verified and executable path inspected; no vendor execution."
     }
   ]
 }

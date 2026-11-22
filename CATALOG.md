@@ -1,5 +1,22 @@
 # Catálogo de ports
 
+## Revisão 1.8.4
+
+NEXUS 1.8.4 incorpora as novas fontes à base publicada 1.8.3.
+
+- SSX (2012) — Xbox 360 ([projeto](https://github.com/AmarilloNL/ssx-recomp)).
+- Kirby’s Epic Yarn — Wii ([projeto](https://github.com/RivierGrullon/kirby-epic-yarn-recomp)).
+- Resistance 2 — PlayStation 3 ([projeto](https://github.com/miroslavdanutalexandru-alt/Resistance2Port)).
+- TimeSplitters 2 — Xbox ([projeto](https://github.com/phobos665/split2-recomp)).
+- Gran Turismo 7 · ryGT7 — PlayStation 4 ([projeto](https://github.com/RyGT-Team/rygt7)).
+- God of War III · ScreamAngel Launcher — PlayStation 4 ([projeto](https://github.com/ScreamAngel/gow3_launcher)).
+- The Legend of Zelda: Ocarina of Time 3D · Ocarina ReTuned — Nintendo 3DS ([projeto](https://github.com/OTPR26/Ocarina-ReTuned)).
+
+Corrigida a seleção dos ZIPs de Astral Chain com sufixo de revisão, como 2026-11-19.2. Ascension-R, os outros perfis de Ascension, SpartanPort, Hookshot e TriAevum já fazem parte do catálogo.
+
+Os instaladores exigem seus próprios dumps. O NEXUS não distribui arquivos dos jogos. Pacotes oficiais conferidos por SHA-256. Gameplay não testado.
+
+
 ## Removido por segurança — 07/11/2026
 
 - **Torchlight (Xbox 360) · Recompiled** (`retrogameworld/TorchlightRecomp`): o pacote `Torchlight-Recompiled-v1.0.zip` é marcado como malicioso por 11 de 66 antivírus no VirusTotal (Trojan.Lazy), com sinais de ofuscação e de detecção de depurador. A conta e o repositório foram criados em 03 e 04/11 e o repositório não tem código-fonte. Se você instalou esse pacote, apague a pasta dele e rode uma verificação completa do antivírus.
@@ -180,7 +197,7 @@ Ficaram de fora: o **Portable Ops+**, que sai na mesma Release do Portable Ops e
 
 Ficaram de fora: projetos só para macOS, Android, PS4/PS5 com desbloqueio ou homebrew de Switch; Metroid Prime 4 do linuxopt (só AppImage, sem pacote Windows); Arceuszada (só .rar); Battlefield: Bad Company (ZIP da Release corrompido); PES 2017 PRO17PORT (origem não confirmada); Woohoo! Flight School (apenas kit de build em pré-release); e recomps ainda sem Release, como os de Ocarina of Time do jaigner-hub, Chiuauaa e Mars7x.
 
-Total do catálogo: **480 fontes**, **446 perfis GitHub integrados**, **1 importação oficial** e **33 exceções**; **106** com build Linux.
+Total do catálogo: **487 fontes**, **453 perfis GitHub integrados**, **1 importação oficial** e **33 exceções**; **106** com build Linux.
 
 ## Repositórios renomeados — 04/11/2026
 

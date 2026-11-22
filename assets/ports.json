@@ -7976,7 +7976,7 @@
     "Name": "Astral Chain · AstralChain-PC",
     "Repository": "Puddz/AstralChain-PC",
     "Platform": "Nintendo Switch",
-    "AssetPattern": "^AstralChain-PC-[0-9]{4}-[0-9]{2}-[0-9]{2}\\.zip$",
+    "AssetPattern": "^AstralChain-PC-\\d{4}-\\d{2}-\\d{2}(?:\\.\\d+)?\\.zip$",
     "PlayNames": [
       "Astral Chain Launcher.exe"
     ],
@@ -8438,5 +8438,129 @@
     "Kind": "Port",
     "PackageKind": "Zip",
     "Notes": "O NEXUS baixa o ZIP Windows da última Release e o instala aqui. Jogar e Configurar abrem AstroHybrid.exe; na primeira abertura, prepare seus próprios arquivos no port. Port nativo da versão PS5 (PPSA21567, testado na 01.019.000) com Vulkan, DLSS, Frame Generation e Reflex. O AstroHybrid monta o jogo a partir do seu próprio dump."
+  },
+  {
+    "Id": "ssx-2012",
+    "Name": "SSX (2012)",
+    "ArtworkTitle": "SSX (2012)",
+    "Repository": "AmarilloNL/ssx-recomp",
+    "Platform": "Xbox 360",
+    "Kind": "Port",
+    "PackageKind": "Executable",
+    "AssetPattern": "^ssx-recomp\\.exe$",
+    "PlayNames": [
+      "ssx-recomp.exe"
+    ],
+    "ConfigNames": [],
+    "Notes": "Abra o launcher e selecione a ISO americana do seu disco de Xbox 360. Após a compilação inicial, clique em Play SSX.",
+    "ProjectType": "Recompilação"
+  },
+  {
+    "Id": "kirby-epic-yarn",
+    "Name": "Kirby’s Epic Yarn",
+    "ArtworkTitle": "Kirby’s Epic Yarn",
+    "Repository": "RivierGrullon/kirby-epic-yarn-recomp",
+    "Platform": "Wii",
+    "Kind": "Assistente de preparação",
+    "PackageKind": "InstallerZip",
+    "AssetPattern": "^Kirby-Setup-windows-x86_64\\.zip$",
+    "PlayNames": [
+      "Kirby-Setup.exe"
+    ],
+    "ConfigNames": [],
+    "Notes": "Prepare sua cópia de Wii (RK5E01) com o assistente e selecione o executável gerado para a biblioteca.",
+    "ProjectType": "Recompilação"
+  },
+  {
+    "Id": "resistance-2",
+    "Name": "Resistance 2",
+    "Repository": "miroslavdanutalexandru-alt/Resistance2Port",
+    "Platform": "PlayStation 3",
+    "ArtworkTitle": "Resistance 2",
+    "PlayNames": [],
+    "ConfigNames": [],
+    "PackageKind": "Installer",
+    "Kind": "Instalação integrada",
+    "AllowPrerelease": true,
+    "DiscoverExecutable": true,
+    "AssetPattern": "^Resistance2Port-Setup-[0-9][\\w.-]*\\.exe$",
+    "Notes": "Beta pública. Prepare sua cópia descriptografada de PS3 com o instalador do autor. Use uma pasta sem espaços. Depois selecione o launcher instalado no NEXUS. Ao atualizar, use o mesmo destino.",
+    "ProjectType": "Recompilação"
+  },
+  {
+    "Id": "split2",
+    "Name": "TimeSplitters 2",
+    "Repository": "phobos665/split2-recomp",
+    "Platform": "Xbox",
+    "ArtworkTitle": "TimeSplitters 2",
+    "PlayNames": [
+      "split2.exe"
+    ],
+    "ConfigNames": [],
+    "PackageKind": "Zip",
+    "Kind": "Port",
+    "AllowPrerelease": false,
+    "DiscoverExecutable": false,
+    "AssetPattern": "^split2-v[0-9][\\w.-]*-windows-x86_64\\.zip$",
+    "Notes": "No launcher, selecione seu disco de Xbox (PAL ou EUA) ou a pasta extraída para preparar o jogo.",
+    "ProjectType": "Recompilação"
+  },
+  {
+    "Id": "rygt7",
+    "Name": "Gran Turismo 7 · ryGT7",
+    "Repository": "RyGT-Team/rygt7",
+    "Platform": "PlayStation 4",
+    "ArtworkTitle": "Gran Turismo 7",
+    "PackageKind": "Zip",
+    "AssetPattern": "^RyGT7-\\d{4}-\\d{2}-\\d{2}\\.zip$",
+    "PlayNames": [
+      "RyGT7.exe"
+    ],
+    "ConfigNames": [
+      "RyGT7.exe"
+    ],
+    "AllowPrerelease": false,
+    "Notes": "Selecione seu dump descriptografado CUSA24769, atualização e módulos/fontes do próprio PS4 no launcher. Use Set up e depois Play. Preserve as pastas de origem. Projeto experimental.",
+    "Kind": "Port",
+    "ProjectType": "Compatibilidade"
+  },
+  {
+    "Id": "gow3-screamangel",
+    "Name": "God of War III · ScreamAngel Launcher",
+    "Repository": "ScreamAngel/gow3_launcher",
+    "Platform": "PlayStation 4",
+    "ArtworkTitle": "God of War III",
+    "PackageKind": "Zip",
+    "AssetPattern": "^gow3-launcher-v[0-9.]+\\.zip$",
+    "PlayNames": [
+      "gow3-launcher-win.exe"
+    ],
+    "ConfigNames": [
+      "gow3-launcher-win.exe"
+    ],
+    "AllowPrerelease": false,
+    "Notes": "Launcher alternativo. Configure seu próprio dump no launcher e use o botão de iniciar dele.",
+    "Kind": "Launcher alternativo",
+    "ProjectType": "Compatibilidade"
+  },
+  {
+    "Id": "ocarina-retuned",
+    "Name": "The Legend of Zelda: Ocarina of Time 3D · Ocarina ReTuned",
+    "Repository": "OTPR26/Ocarina-ReTuned",
+    "Platform": "Outras",
+    "ArtworkTitle": "The Legend of Zelda: Ocarina of Time 3D",
+    "PackageKind": "Zip",
+    "AssetPattern": "^Ocarina-ReTuned-[0-9.]+-Windows-x64\\.zip$",
+    "PlayNames": [
+      "OcarinaReTuned.exe"
+    ],
+    "ConfigNames": [
+      "OcarinaReTuned.exe"
+    ],
+    "AllowPrerelease": true,
+    "Notes": "Prepare sua própria cópia de Ocarina of Time 3D no aplicativo. Fork de TriAevum em versão Preview. Configurações na interface do port.",
+    "Kind": "Port",
+    "ProjectType": "Recompilação",
+    "Console": "Nintendo 3DS"
   }
 ]
